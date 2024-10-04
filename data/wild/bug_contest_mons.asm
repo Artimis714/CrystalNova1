@@ -1,0 +1,20 @@
+ContestMons:
+	;   %, species,   min, max
+	db 15, CATERPIE,    7, 15
+	db 15, WEEDLE,      7, 15
+	db  7, METAPOD,     9, 16
+	db  7, KAKUNA,      9, 16
+	db  5, BUTTERFREE, 12, 27
+	db  5, BEEDRILL,   12, 27
+	db  7, LEDYBA,     12, 21
+	db  5, LEDIAN,     14, 27
+	db  7, SPINARAK,   12, 23
+	db  5, ARIADOS,    14, 27
+	db  5, VENONAT,    10, 27
+	db  5, PARAS,      10, 19
+	db  4, SCYTHER,    13, 27
+	db  4, PINSIR,     13, 27
+	db  2, YANMA,      13, 27
+	db  1, HERACROSS,  13, 27
+	db  1, PARASECT,   15, 27
+	db -1, VENOMOTH,   30, 40

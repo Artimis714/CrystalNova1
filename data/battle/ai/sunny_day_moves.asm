@@ -1,0 +1,25 @@
+; AI_SMART prefers these moves during harsh sunlight.
+
+SunnyDayMoves:
+	db SOLARBEAM
+	db FLAME_WHEEL
+	db MOONLIGHT
+	db SOLARBEAM
+	db FIRE_PUNCH
+	db EMBER
+	db FLAMETHROWER
+	db FIRE_SPIN
+	db FIRE_BLAST
+	db SACRED_FIRE
+	db MORNING_SUN
+	db SYNTHESIS
+	db BIND
+	db VINE_WHIP
+	db ABSORB
+	db MEGA_DRAIN
+	db RAZOR_LEAF
+	db PETAL_DANCE
+	db EGG_BOMB
+	db BARRAGE
+	db GIGA_DRAIN
+	db -1 ; end
