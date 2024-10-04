@@ -491,11 +491,11 @@ ElmGiveTicketScript:
 	writetext ElmGiveTicketText1
 	promptbutton
 	verbosegiveitem KANTO_PAPERS
-	writetext ElmsLabSSTickettooText
+	waitbutton
+	writetext ElmGiveTicketText2
 	promptbutton
 	verbosegiveitem S_S_TICKET
 	setevent EVENT_GOT_SS_TICKET_FROM_ELM
-	writetext ElmGiveTicketText2
 	waitbutton
 	closetext
 	end
@@ -1423,40 +1423,26 @@ ElmGiveTicketText1:
 	text "ELM: <PLAY_G>!"
 	line "There you are!"
 
-	para "I called because I"
-	line "have something for"
-	cont "you."
+	para "Congratulations"
+	line "on becoming CHAMP!"
+
+	para "LANCE sent over"
+	line "your KANTO PAPERS"
+	cont "earlier today!"
+	done
+
+ElmGiveTicketText2:
+	text "And I also, want"
+	line "to give you this"
 
 	para "See? It's an"
 	line "S.S.TICKET."
 
-	para "Now you can catch"
-	line "#MON in KANTO."
-	done
+	para "Not many people"
+	line "from JHOTO ever"
 
-ElmsLabSSTickettooText:
-	text "Test"
-	done
-
-ElmGiveTicketText2:
-	text "The ship departs"
-	line "from OLIVINE CITY."
-
-	para "But you knew that"
-	line "already, <PLAY_G>."
-
-	para "After all, you've"
-	line "traveled all over"
-	cont "with your #MON."
-
-	para "Give my regards to"
-	line "PROF.OAK in KANTO!"
-	done
-
-ElmsLabMonEggText: ; unreferenced
-	text "It's the #MON"
-	line "EGG being studied"
-	cont "by PROF.ELM."
+	para "get the chance to"
+	line "visit KANTO."
 	done
 
 AideText_GiveYouPotion:
