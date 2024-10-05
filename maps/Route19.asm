@@ -3,8 +3,6 @@
 	const ROUTE19_SWIMMER_GUY1
 	const ROUTE19_SWIMMER_GUY2
 	const ROUTE19_SWIMMER_GUY3
-	const ROUTE19_FISHER1
-	const ROUTE19_FISHER2
 
 Route19_MapScripts:
 	def_scene_scripts
@@ -64,38 +62,6 @@ TrainerSwimmermTucker:
 	endifjustbattled
 	opentext
 	writetext SwimmermTuckerAfterBattleText
-	waitbutton
-	closetext
-	end
-
-Route19Fisher1Script:
-	faceplayer
-	opentext
-	checkevent EVENT_CINNABAR_ROCKS_CLEARED
-	iftrue .RocksCleared
-	writetext Route19Fisher1Text
-	waitbutton
-	closetext
-	end
-
-.RocksCleared:
-	writetext Route19Fisher1Text_RocksCleared
-	waitbutton
-	closetext
-	end
-
-Route19Fisher2Script:
-	faceplayer
-	opentext
-	checkevent EVENT_CINNABAR_ROCKS_CLEARED
-	iftrue .RocksCleared
-	writetext Route19Fisher2Text
-	waitbutton
-	closetext
-	end
-
-.RocksCleared:
-	writetext Route19Fisher2Text_RocksCleared
 	waitbutton
 	closetext
 	end
@@ -223,41 +189,6 @@ SwimmermJeromeAfterBattleText:
 	cont "love the sea."
 	done
 
-Route19Fisher1Text:
-	text "Sorry. This road"
-	line "is closed for"
-	cont "construction."
-
-	para "This is the handi-"
-	line "work of those damn"
-	cont "JOHTO rebels!"
-
-	para "If you want to get"
-	line "to CINNABAR, you'd"
-
-	para "better go south"
-	line "from PALLET TOWN."
-	done
-
-Route19Fisher1Text_RocksCleared:
-	text "I'm all sweaty."
-	line "Time for a swim!"
-	done
-
-Route19Fisher2Text:
-	text "Who knows how long"
-	line "it would take to"
-	cont "move this boulder…"
-	done
-
-Route19Fisher2Text_RocksCleared:
-	text "The roadwork is"
-	line "finally finished."
-
-	para "Now I can go"
-	line "fishing again."
-	done
-
 Route19SignText:
 	text "ROUTE 19"
 
@@ -291,5 +222,3 @@ Route19_MapEvents:
 	object_event 13, 28, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSwimmermHarold, -1
 	object_event 11, 17, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSwimmermJerome, -1
 	object_event  8, 23, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerSwimmermTucker, -1
-	object_event  9,  5, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 1, Route19Fisher1Script, -1
-	object_event 11,  5, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 1, Route19Fisher2Script, -1
