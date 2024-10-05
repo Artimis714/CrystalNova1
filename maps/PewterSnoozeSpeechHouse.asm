@@ -85,7 +85,7 @@ YouMetFireGrandsonText:
 	line "..."
 
 	para "That accent, you're"
-	line "from JHOTO?"
+	line "from JOHTO?"
 
 	para "..."
 	line "..."
@@ -135,7 +135,7 @@ MyGrandsonBurnedBrightText:
 	para "Claimed it had"
 	line "connections with"
 
-	para "a JHOTO legendary"
+	para "a JOHTO legendary"
 	line "called HO OH!"
 
 	para "I don't know about"

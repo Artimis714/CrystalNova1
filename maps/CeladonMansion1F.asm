@@ -53,7 +53,7 @@ CeladonMansionManagerText:
 	line "money home."
 
 	para "My husband HAROLD"
-	line "died in JHOTO."
+	line "died in JOHTO."
 
 	para "So it's been a"
 	line "struggle to live"

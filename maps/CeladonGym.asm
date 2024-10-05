@@ -216,7 +216,7 @@ ErikaAfterBattleText:
 	line "in your journey."
 
 	para "We get few from"
-	line "JHOTO, but I hope"
+	line "JOHTO, but I hope"
 
 	para "you will be the"
 	line "first of many."
@@ -238,7 +238,7 @@ LassMichelleSeenText:
 	line "<……> <……> <……>"
 
 	para "AND OLIVINE? Wow,"
-	line "JHOTO is more"
+	line "JOHTO is more"
 
 	para "progressive than"
 	line "I expected."

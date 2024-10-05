@@ -243,7 +243,7 @@ Route40Lass1Text:
 	para "are some of the"
 	line "mass graves."
 
-	para "JHOTO lost badly"
+	para "JOHTO lost badly"
 	line "in the WAR."
 
 	para "Most of them are"

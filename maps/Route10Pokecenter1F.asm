@@ -62,7 +62,7 @@ Route10Pokecenter1FGymGuideText:
 	line "how it was, but"
 
 	para "I'd bet anything"
-	line "it was JHOTO"
+	line "it was JOHTO"
 	cont "rebels!"
 	done
 

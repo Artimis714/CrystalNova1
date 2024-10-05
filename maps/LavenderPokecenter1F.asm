@@ -113,7 +113,7 @@ LavenderPokecenter1FYoungsterText:
 	para "MAGNET TRAIN won't"
 	line "run either…"
 
-	para "DAMN JHOTO rebels"
+	para "DAMN JOHTO rebels"
 	line "ruining every-"
 	cont "thing!"
 	done
@@ -126,7 +126,7 @@ LavenderPokecenter1FYoungsterText_ReturnedMachinePart:
 	line "back on line!"
 
 	para "In your FACE"
-	line "JHOTO SCUM!"
+	line "JOHTO SCUM!"
 
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
@@ -154,7 +154,7 @@ LavenderPokeCentreCallAuthoritiestext:
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
 
-	para "You're from JHOTO!"
+	para "You're from JOHTO!"
 	line "... SECURITY!"
 
 	para "I'm calling the"

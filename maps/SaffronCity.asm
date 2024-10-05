@@ -165,7 +165,7 @@ SaffronCityCooltrainerMText:
 	line "embarrassed."
 
 	para "Looks like they"
-	line "were all JHOTO"
+	line "were all JOHTO"
 
 	para "sympathizers who"
 	line "protested the war."
@@ -188,7 +188,7 @@ SaffronCityCooltrainerFText:
 	line "that."
 
 	para "It was all part of"
-	line "JHOTO's strategy"
+	line "JOHTO's strategy"
 	cont "in the war."
 	done
 
@@ -223,7 +223,7 @@ SaffronCityYoungster1Text:
 	para "..."
 	line "..."
 
-	para "You're from JHOTO?"
+	para "You're from JOHTO?"
 	line "Please don't hurt"
 	cont "me!!!!"
 	done

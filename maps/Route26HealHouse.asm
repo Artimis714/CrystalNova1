@@ -18,7 +18,7 @@ Route26HealHouseRestAWhileText:
 	para "..."
 	line "..."
 
-	para "JHOTO Scum, get"
+	para "JOHTO Scum, get"
 	line "out of my home!"
 	done
 

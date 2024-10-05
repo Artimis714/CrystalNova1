@@ -230,7 +230,7 @@ Route19Fisher1Text:
 
 	para "This is the handi-"
 	line "work of those damn"
-	cont "JHOTO rebels!"
+	cont "JOHTO rebels!"
 
 	para "If you want to get"
 	line "to CINNABAR, you'd"

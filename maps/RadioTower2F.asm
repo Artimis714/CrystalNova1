@@ -491,7 +491,7 @@ GruntM4AfterBattleText:
 GruntM5SeenText:
 	text "We're TEAM ROCKET,"
 	line "the avengers of"
-	cont "JHOTO!"
+	cont "JOHTO!"
 
 	para "What's wrong,"
 	line "Traitor? Scared?"

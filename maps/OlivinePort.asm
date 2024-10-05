@@ -348,7 +348,7 @@ OlivinePortFlashTicketText:
 	para "Hmm.... yes..."
 	line "Wow! You're the"
 
-	para "JHOTO Champion"
+	para "JOHTO Champion"
 	line "of the #MON"
 	cont "league!"
 
@@ -358,7 +358,7 @@ OlivinePortFlashTicketText:
 
 OlivinePortNoTicketText:
 	text "<PLAYER> showed"
-	line "the JHOTO ID in"
+	line "the JOHTO ID in"
 	cont "their #GEAR"
 
 	para "I'm sorry, but"

@@ -500,7 +500,7 @@ AzaleaPokecenter1FPokefanFText:
 	para "I've heard the"
 	line "guy now lives"
 
-	para "in JHOTO some-"
+	para "in JOHTO some-"
 	line "where."
 	done
 

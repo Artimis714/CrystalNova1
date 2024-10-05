@@ -115,7 +115,7 @@ GentlemanPrestonSeenText:
 	line "#MON you couldn't"
 	cont "imagine."
 
-	para "But JHOTO has a"
+	para "But JOHTO has a"
 	line "unique spirit"
 	cont "about it."
 
@@ -130,7 +130,7 @@ GentlemanPrestonSeenText:
 
 	para "battle with me."
 	line "I wish to see"
-	cont "JHOTO spirit."
+	cont "JOHTO spirit."
 	done
 
 GentlemanPrestonBeatenText:

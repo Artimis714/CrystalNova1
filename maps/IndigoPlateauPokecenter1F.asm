@@ -299,7 +299,7 @@ IndigoNoNoText:
 	para "..."
 	line "..."
 
-	para "Yes as a JHOTO"
+	para "Yes as a JOHTO"
 	line "resident you're"
 
 	para "still allowed"
@@ -307,7 +307,7 @@ IndigoNoNoText:
 
 	para "the league as"
 	line "you have all 8"
-	cont "JHOTO BADGES."
+	cont "JOHTO BADGES."
 	done
 
 PlateauRivalLoseText:

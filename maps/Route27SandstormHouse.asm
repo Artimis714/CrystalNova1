@@ -47,7 +47,7 @@ SandstormHouseWomanText1:
 	line "..."
 
 	para "#MON LEAGUE?"
-	line "HAHA! A JHOTO kid!"
+	line "HAHA! A JOHTO kid!"
 
 	para "..."
 	line "..."
@@ -68,7 +68,7 @@ SandstormHouseWomanLoyalText:
 	line "good trainer."
 
 	para "Even one from"
-	line "provincial JHOTO."
+	line "provincial JOHTO."
 
 	para "Here. A gift for"
 	line "your journey."
@@ -115,7 +115,7 @@ SandstormHouseWomanDisloyalText:
 	para "I never expected"
 	line "very much from"
 
-	para "JHOTO, and you've"
+	para "JOHTO, and you've"
 	line "proven me right."
 	done
 

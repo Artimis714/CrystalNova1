@@ -65,7 +65,7 @@ Route6SaffronGuardMagnetTrainText:
 	para "We need to keep on"
 	line "our toes because"
 
-	para "those JHOTO scum"
+	para "those JOHTO scum"
 	line "are always trying"
 	cont "to get revenge."
 
@@ -73,7 +73,7 @@ Route6SaffronGuardMagnetTrainText:
 	line "..."
 
 	para "Yes, I know you're"
-	line "from JHOTO."
+	line "from JOHTO."
 
 	para "Like I said, we"
 	line "REAL CITIZENS"

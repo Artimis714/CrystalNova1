@@ -119,7 +119,7 @@ GoldenrodMagnetTrainStationOfficerTheTrainHasntComeInText:
 	line "papers?"
 
 	para "You're only a"
-	line "citizen of JHOTO."
+	line "citizen of JOHTO."
 
 	para "You're not auth-"
 	line "orized to travel"

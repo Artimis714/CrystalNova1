@@ -134,7 +134,7 @@ LtSurgeIntroText:
 	line "<……> <……> <……>"
 
 	para "A challenger from"
-	line "JHOTO? AHAHA!"
+	line "JOHTO? AHAHA!"
 
 	para "I have to hand it"
 	line "to you. It may not"
@@ -183,7 +183,7 @@ LtSurgeThunderBadgeText:
 LtSurgeFightDoneText:
 	text "SURGE: You did"
 	line "well for a kid"
-	cont "from JHOTO."
+	cont "from JOHTO."
 
 	para "I might just,"
 	line "believe you're the"

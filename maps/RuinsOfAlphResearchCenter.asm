@@ -433,7 +433,7 @@ Comebackifyouwanttotradetext:
 	line "further proof"
 
 	para "KANTO always"
-	line "ruled over JHOTO."
+	line "ruled over JOHTO."
 	done
 
 Sorrybutyoudonttext:

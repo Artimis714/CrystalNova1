@@ -96,7 +96,7 @@ ElmsHousePCText2:
 	para "TANOBY RUINS dis-"
 	line "play similarities"
 
-	para "with JHOTO's RUINS"
+	para "with JOHTO's RUINS"
 	line "of ALPH."
 
 	para "It is my position"
@@ -273,7 +273,7 @@ ElmshousePCText7:
 	line "culture is an"
 
 	para "offshoot of an"
-	line "earlier JHOTO"
+	line "earlier JOHTO"
 	cont "civilization."
 
 	para "PROF.ELM PhD."

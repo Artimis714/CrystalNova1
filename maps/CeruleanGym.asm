@@ -246,7 +246,7 @@ MistyIntroText:
 	cont "perv!"
 
 	para "You have a lot of"
-	line "JHOTO GYM BADGES."
+	line "JOHTO GYM BADGES."
 
 	para "So what?"
 	line "I WRECKED their"
@@ -259,7 +259,7 @@ MistyIntroText:
 	line "date, you"
 
 	para "cock-blocking"
-	line "JHOTO asshole."
+	line "JOHTO asshole."
 	done
 
 MistyWinLossText:
@@ -283,7 +283,7 @@ MistyFightDoneText:
 	line "called you a"
 
 	para "cock-blocking"
-	line "JHOTO asshole."
+	line "JOHTO asshole."
 
 	para "..."
 	line "..."

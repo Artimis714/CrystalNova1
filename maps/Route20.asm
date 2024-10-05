@@ -78,7 +78,7 @@ SwimmerfLoriSeenText:
 	done
 
 SwimmerfLoriBeatenText:
-	text "JHOTO bastard."
+	text "JOHTO bastard."
 	done
 
 SwimmerfLoriAfterBattleText:
@@ -90,7 +90,7 @@ SwimmermCameronSeenText:
 	line "impossible to"
 	
 	para "swim all the way"
-	line "to JHOTO."
+	line "to JOHTO."
 	done
 
 SwimmermCameronBeatenText:
@@ -102,7 +102,7 @@ SwimmermCameronAfterBattleText:
 	line "refugees attempt"
 
 	para "to make the swim"
-	line "from JHOTO anyway."
+	line "from JOHTO anyway."
 
 	para "Every so often"
 	line "a corpse washes"
@@ -118,7 +118,7 @@ SwimmermCameronAfterBattleText:
 	line "..."
 
 	para "My Granny is from"
-	line "JHOTO, and so my"
+	line "JOHTO, and so my"
 
 	para "family has always"
 	line "revered wise"

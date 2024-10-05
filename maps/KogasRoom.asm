@@ -130,7 +130,7 @@ KogaScript_KogaBeforeText:
 	para "Of course I don't"
 	line "feel any remorse."
 
-	para "JHOTO scum is not"
+	para "JOHTO scum is not"
 	line "worth my pity."
 
 	para "You'll see soon"
@@ -157,7 +157,7 @@ KogaScript_KogaBeforeText2:
 KogaScript_KogaBeatenText:
 	text "Hmmm... a worthy"
 	line "opponent from"
-	cont "JHOTO. Unexpected."
+	cont "JOHTO. Unexpected."
 	done
 
 KogaScript_KogaBeatenText2:

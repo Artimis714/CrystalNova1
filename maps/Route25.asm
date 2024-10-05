@@ -259,7 +259,7 @@ Route25MistyDateText:
 	cont "JOHTO GYM BADGES?"
 
 	para "Then you must be"
-	line "the JHOTO LEAGUE"
+	line "the JOHTO LEAGUE"
 	cont "CHAMPION."
 
 	para "..."

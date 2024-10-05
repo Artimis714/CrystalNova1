@@ -369,7 +369,7 @@ RadioTower5FRocketBossAfterText:
 
 	para "killed our last"
 	line "hope of a free"
-	cont "JHOTO."
+	cont "JOHTO."
 
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
@@ -436,7 +436,7 @@ RadioTower5FDirectorThankYouText:
 	line "You've helped to"
 
 	para "keep the fragile"
-	line "peace that JHOTO"
+	line "peace that JOHTO"
 	cont "desperately needs."
 
 	para "I know it's not"
@@ -462,7 +462,7 @@ RadioTower5FDirectorDescribeClearBellText:
 	line "ROCKETS never"
 
 	para "understood was"
-	line "I fought for JHOTO"
+	line "I fought for JOHTO"
 	cont "during the war."
 
 	para "I too resent what"

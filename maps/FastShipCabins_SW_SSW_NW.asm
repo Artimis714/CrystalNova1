@@ -120,7 +120,7 @@ FirebreatherLyleSeenText:
 	line "..."
 
 	para "Yeah, I'm from"
-	line "JHOTO. I'm only"
+	line "JOHTO. I'm only"
 	
 	para "going with a"
 	line "performer's visa."

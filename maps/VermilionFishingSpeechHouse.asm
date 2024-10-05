@@ -13,7 +13,7 @@ FishingDude:
 	iftrue .Healfast
 	checkevent EVENT_VERMILION_ALERT
 	iftrue .LetsHealYou
-	writetext AhhJhotoText
+	writetext AhhJOHTOText
 	waitbutton
 	closetext
 	end
@@ -74,12 +74,12 @@ FishingDude:
 FishingDudesHousePhoto:
 	jumptext FishingDudesHousePhotoText
 
-AhhJhotoText:
-	text "You're from JHOTO"
+AhhJOHTOText:
+	text "You're from JOHTO"
 	line "eh?"
 
 	para "I was on tour in"
-	line "JHOTO during the"
+	line "JOHTO during the"
 
 	para "war, such a good"
 	line "people."
@@ -91,7 +91,7 @@ AhhJhotoText:
 
 FishingDudeText:
 	text "You... you're"
-	line "from JHOTO aren't"
+	line "from JOHTO aren't"
 	cont "you!"
 
 	para "<……> <……> <……>"

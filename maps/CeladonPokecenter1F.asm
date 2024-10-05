@@ -122,7 +122,7 @@ CeledonPokeCentreCallAuthoritiestext:
 	para "..."
 	line "..."
 
-	para "You're from JHOTO!"
+	para "You're from JOHTO!"
 	line "... SECURITY!"
 
 	para "I'm calling the"

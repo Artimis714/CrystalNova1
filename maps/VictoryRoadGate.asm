@@ -67,18 +67,18 @@ VictoryRoadGateOfficerText:
 	done
 
 VictoryRoadGateNotEnoughBadgesText:
-	text "You're from JHOTO"
+	text "You're from JOHTO"
 	line "You have no"
 	cont "business here."
 
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
 
-	para "Yes, a JHOTO"
+	para "Yes, a JOHTO"
 	line "resident who"
 
 	para "somehow collects"
-	line "all eight JHOTO"
+	line "all eight JOHTO"
 	cont "badges is allowed"
 
 	para "to challenge the"
@@ -95,7 +95,7 @@ VictoryRoadGateNotEnoughBadgesText:
 	done
 
 VictoryRoadGateEightBadgesText:
-	text "You're from JHOTO"
+	text "You're from JOHTO"
 	line "You have no"
 	cont "business here."
 
@@ -106,14 +106,14 @@ VictoryRoadGateEightBadgesText:
 	line "You've somehow"
 
 	para "collected all 8"
-	line "of JHOTO's GYM"
+	line "of JOHTO's GYM"
 	cont "BADGES."
 
 	para "I don't want to"
 	line "allow you entry"
 	cont "to VICTORY ROAD."
 
-	para "JHOTO scum like"
+	para "JOHTO scum like"
 	line "you murdered my"
 	cont "younger brother."
 
@@ -135,7 +135,7 @@ VictoryRoadGateLeftBlackBeltText:
 	line "<……> <……> <……>"
 
 	para "Yes superstitious"
-	line "folk in JHOTO"
+	line "folk in JOHTO"
 
 	para "call it the"
 	line "sacred SILVER"

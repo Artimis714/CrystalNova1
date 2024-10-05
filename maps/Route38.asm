@@ -468,7 +468,7 @@ SailorHarryAfterBattleText:
 	para "Pity what KANTO"
 	line "did to the people"
 
-	para "of JHOTO. Everyone"
+	para "of JOHTO. Everyone"
 	line "I know from here,"
 	cont "seems a kind sort."
 	done

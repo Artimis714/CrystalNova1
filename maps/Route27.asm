@@ -417,7 +417,7 @@ CooltrainerfReenaAfterBattleText:
 	line "either."
 
 	para "That accent, are"
-	line "you from JHOTO."
+	line "you from JOHTO."
 
 	para "..."
 	line "..."
@@ -425,7 +425,7 @@ CooltrainerfReenaAfterBattleText:
 	para "Yeah? Wow, I had"
 	line "no idea people in"
 
-	para "JHOTO PROVINCE"
+	para "JOHTO PROVINCE"
 	line "were any good."
 
 	para "I was told it was"
@@ -478,7 +478,7 @@ PsychicGilbertSeenText:
 	para "..."
 
 	para "Yes, child from"
-	line "JHOTO I see through"
+	line "JOHTO I see through"
 	cont "you."
 
 	para "Prepare to be"
@@ -527,7 +527,7 @@ TohjoFallsSignText:
 	line "that appears to"
 	cont "be battle scared."
 
-	para "KANTO - JHOTO"
+	para "KANTO - JOHTO"
 	line "    DMZ"
 
 	para "ENTRY PROHIBITED"

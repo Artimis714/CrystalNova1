@@ -503,7 +503,7 @@ GoldenrodCityCooltrainerF2Text:
 	para "It's a symbol of"
 	line "the new peace"
 
-	para "between JHOTO"
+	para "between JOHTO"
 	line "and KANTO."
 
 	para "They're running a"
@@ -572,7 +572,7 @@ GoldenrodCityRocket2Text:
 	line "We've taken over"
 	cont "The RADIO TOWER!"
 
-	para "All of JHOTO"
+	para "All of JOHTO"
 	line "should be glad!"
 
 	para "We're using KANTO's"
@@ -584,7 +584,7 @@ GoldenrodCityRocket3Text:
 	line "GOLDENROD. Then,"
 
 	para "town by town."
-	line "We'll take JHOTO"
+	line "We'll take JOHTO"
 	cont "back!"
 	done
 
@@ -651,7 +651,7 @@ GoldenrodCitySignText:
 	text "GOLDENROD CITY"
 
 	para "Regional capital"
-	line "of JHOTO province"
+	line "of JOHTO province"
 	cont "KANTO EMPIRE."
 	done
 

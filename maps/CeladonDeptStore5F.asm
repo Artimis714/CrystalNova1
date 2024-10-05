@@ -94,7 +94,7 @@ CeladonDeptStore5FSailorText:
 	para "I've heard there"
 	line "is a radio show"
 
-	para "in JHOTO that has"
+	para "in JOHTO that has"
 	line "PP UP as one of"
 	cont "the prizes!"
 	done
@@ -108,7 +108,7 @@ CeladonDeptStore5FTeacherText:
 	line "items, though…"
 
 	para "The savages who"
-	line "live in JHOTO use"
+	line "live in JOHTO use"
 
 	para "bitter herbs to"
 	line "heal their #MON."

@@ -741,7 +741,7 @@ UndergroundRivalLossText:
 	cont "under my heels."
 
 	para "I can't stand that"
-	line "traitor to JHOTO!"
+	line "traitor to JOHTO!"
 	done
 
 GoldenrodUndergroundSwitchRoomEntrances_SuperNerdText:
@@ -911,7 +911,7 @@ GruntM13AfterBattleText:
 	text "I don't get your"
 	line "problem kid?"
 
-	para "You're from JHOTO"
+	para "You're from JOHTO"
 	line "too. We're on the"
 	cont "same side!"
 	done
@@ -944,7 +944,7 @@ GruntF3AfterBattleText:
 	para "doing! This is"
 	line "our chance to"
 
-	para "take back JHOTO!"
+	para "take back JOHTO!"
 	line "Why fight us?"
 	done
 

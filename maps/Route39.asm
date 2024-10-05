@@ -207,7 +207,7 @@ SailorEugeneAfterBattleText:
 
 	para "We hate being in"
 	line "a backwater like"
-	cont "JHOTO."
+	cont "JOHTO."
 
 	para "Hopefully, we can"
 	line "set sail soon."

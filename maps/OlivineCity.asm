@@ -184,7 +184,7 @@ OlivineCityRivalText:
 	line "here."
 
 	para "I can't believe"
-	line "JHOTO has gotten"
+	line "JOHTO has gotten"
 
 	para "this soft so soon"
 	line "after the war."
@@ -259,7 +259,7 @@ OlivineCityStandingYoungsterPokegearText:
 	cont "that's cool."
 
 	para "Not many people"
-	line "in JHOTO can"
+	line "in JOHTO can"
 
 	para "afford a #"
 	line "GEAR. You must"

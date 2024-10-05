@@ -169,7 +169,7 @@ CianwoodLugiaSpeechHouseTwinText:
 	line "too sad."
 
 	para "But kids at school"
-	line "say he was a JHOTO"
+	line "say he was a JOHTO"
 	cont "general!"
 
 	para "He fought at the"

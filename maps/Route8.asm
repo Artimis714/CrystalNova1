@@ -199,13 +199,13 @@ SupernerdTomSeenText:
 	para "Those are unusual"
 	line "ones."
 
-	para "Are those JHOTO"
+	para "Are those JOHTO"
 	line "BADGES?"
 
 	para "..."
 
 	para "Woah, you must be"
-	line "the JHOTO CHAMP!"
+	line "the JOHTO CHAMP!"
 
 	para "I saw your match"
 	line "against LANCE on"

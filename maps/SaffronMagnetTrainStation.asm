@@ -146,7 +146,7 @@ SaffronMagnetTrainStationOfficerTrainIsntOperatingText:
 	line "MAGNET TRAIN isn't"
 	cont "operating now."
 
-	para "Damn JHOTO symp-"
+	para "Damn JOHTO symp-"
 	line "athizers, can't"
 
 	para "leave well enough"
@@ -230,7 +230,7 @@ SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
 	para "Hmm... yes..."
 	line "I heard of a"
 
-	para "JHOTO 'CHAMPION'"
+	para "JOHTO 'CHAMPION'"
 	line "You're entitled"
 
 	para "to a free rail"
@@ -260,7 +260,7 @@ SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
 	para "Sorry, kid, but my"
 	line "ink pad doesn't"
 
-	para "work for JHOTO"
+	para "work for JOHTO"
 	line "scum. Good luck"
 	cont "getting a rail"
 	cont "PASS elsewhere."
@@ -300,7 +300,7 @@ SaffronMagnetTrainStationGymGuideText:
 	line "isn't any elec-"
 	cont "tricity…"
 
-	para "Fucking JHOTO"
+	para "Fucking JOHTO"
 	line "rebels!"
 	done
 
@@ -321,7 +321,7 @@ SaffronMagnetTrainStationGymGuideText_ReturnedMachinePart:
 
 	para "tax revenue we"
 	line "make, owning"
-	cont "JHOTO!"
+	cont "JOHTO!"
 	done
 
 SaffronMagnetTrainStationTeacherText:
@@ -350,7 +350,7 @@ SaffronMagnetTrainStationLassText:
 	line "TRAIN have PASSES."
 
 	para "... Oh..."
-	line "You're from JHOTO?"
+	line "You're from JOHTO?"
 	cont "Eww.. gross."
 	done
 

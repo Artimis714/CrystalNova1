@@ -191,7 +191,7 @@ SecretsofMewTwoText:
 
 	para "Last I heard it"
 	line "escaped to MT"
-	cont "SILVER in JHOTO."
+	cont "SILVER in JOHTO."
 
 	para "I'd imagine it is"
 	line "hiding in a small"
@@ -296,7 +296,7 @@ MrFujisHouseSuperNerdText:
 	line "first hand."
 
 	para "What we did to"
-	line "JHOTO was criminal"
+	line "JOHTO was criminal"
 	cont "But money talks."
 
 	para "<……> <……> <……>"

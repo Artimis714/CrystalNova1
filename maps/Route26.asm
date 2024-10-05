@@ -361,7 +361,7 @@ CooltrainerfBethAfterText:
 	line "..."
 
 	para "Really you're"
-	line "from JHOTO?"
+	line "from JOHTO?"
 
 	para "I'm so sorry for"
 	line "everything that"
@@ -383,7 +383,7 @@ PsychicRichardSeenText:
 	para "..."
 	line "..."
 
-	para "Those are JHOTO"
+	para "Those are JOHTO"
 	line "BADGES!? AHAHA!"
 
 	para "That explains why"
@@ -419,7 +419,7 @@ PsychicRichardAfterBattleText:
 	cont "FOUR."
 
 	para "Honestly, you're"
-	line "the first JHOTO"
+	line "the first JOHTO"
 
 	para "challenger I've"
 	line "seen make it out"

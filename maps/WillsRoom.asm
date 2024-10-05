@@ -113,7 +113,7 @@ WillScript_WillBeforeText:
 	para "I was told a"
 	line "challenger from"
 
-	para "JHOTO was joining"
+	para "JOHTO was joining"
 	line "line us today."
 
 	para "Let us see what"
@@ -136,7 +136,7 @@ WillScript_WillBeforeText2:
 	line "outmatch yours."
 
 	para "Prepare yourself"
-	line "JHOTO CHAMPION."
+	line "JOHTO CHAMPION."
 	done
 
 WillScript_WillBeatenText:

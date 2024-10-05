@@ -99,7 +99,7 @@ SaffronPokecenter1FYoungsterScript:
 
 SaffronPokecenter1FTeacherText:
 	text "Oh my!"
-	line "You're from JHOTO"
+	line "You're from JOHTO"
 
 	para "Do they even have"
 	line "#MON CENTERS"
@@ -114,7 +114,7 @@ SaffronPokecenter1FTeacherText:
 
 SaffronPokecenter1FTeacherMobileText:
 	text "Oh my!"
-	line "You're from JHOTO"
+	line "You're from JOHTO"
 
 	para "Do they even have"
 	line "#MON CENTERS"
@@ -135,7 +135,7 @@ SaffronPokecenter1FFisherText:
 	line "some commotion at"
 	cont "the POWER PLANT."
 
-	para "Damn JHOTO scum"
+	para "Damn JOHTO scum"
 	line "always up to no"
 	cont "good."
 	done
@@ -182,7 +182,7 @@ SaffronPokecenter1FFisherReturnedMachinePartText:
 	line "<……> <……> <……>"
 
 	para "Oh you're from"
-	line "JHOTO?"
+	line "JOHTO?"
 
 	para "Then you must be"
 	line "happy with the"
@@ -225,7 +225,7 @@ SaffronPokeCentreCallAuthoritiestext:
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
 
-	para "You're from JHOTO!"
+	para "You're from JOHTO!"
 	line "... SECURITY!"
 
 	para "I'm calling the"

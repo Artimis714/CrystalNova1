@@ -114,7 +114,7 @@ SilphCoReceptionistText_ReturnedMachinePart:
 
 	para "Oh I see, your"
 	line "device is set for"
-	cont "the JHOTO network."
+	cont "the JOHTO network."
 
 	para "Here, let us get"
 	line "your device set up"
@@ -156,7 +156,7 @@ SilphCoOfficerNicetoMeetText:
 	line "<PLAY_G>?"
 
 	para "It's an honor to"
-	line "meet the JHOTO"
+	line "meet the JOHTO"
 	cont "CHAMPION!"
 
 	para "I'm sorry but I"
@@ -176,7 +176,7 @@ SilphCoOfficerText:
 	line "<PLAY_G>?"
 
 	para "It's an honor to"
-	line "meet the JHOTO"
+	line "meet the JOHTO"
 	cont "CHAMPION!"
 
 	para "I still can't let"
@@ -203,7 +203,7 @@ SilphCoOfficerText_GotUpGrade:
 	line "anywhere yet!"
 
 	para "When we defeated"
-	line "JHOTO, we found"
+	line "JOHTO, we found"
 
 	para "some old research"
 	line "notes in GOLDEN-"

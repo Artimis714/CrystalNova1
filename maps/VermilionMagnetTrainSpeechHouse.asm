@@ -28,7 +28,7 @@ VermilionMagnetTrainSpeechHousePokefanFText:
 	line "..."
 
 	para "Wait, you're from"
-	line "JHOTO??"
+	line "JOHTO??"
 
 	para "Don't hurt us!!!"
 	done

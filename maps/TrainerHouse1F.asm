@@ -149,7 +149,7 @@ TrainerHouse1FCooltrainerFText:
 	line "<……> <……> <……>"
 
 	para "Sounds like some-"
-	line "thing that JHOTO"
+	line "thing that JOHTO"
 	cont "trash would say."
 	done
 

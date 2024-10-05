@@ -200,7 +200,7 @@ GentlemanAlfredAfterBattleText:
 	line "stuff SILPH makes."
 
 	para "But I don't think"
-	line "anyone in JHOTO"
+	line "anyone in JOHTO"
 
 	para "still makes the"
 	line "good stuff."

@@ -98,7 +98,7 @@ VermilionPokeCentreCallAuthoritiestext:
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
 
-	para "You're from JHOTO!"
+	para "You're from JOHTO!"
 	line "... SECURITY!"
 
 	para "I'm calling the"
@@ -154,7 +154,7 @@ VermilionPokecenter1FBugCatcherText:
 	line "<……> <……> <……>"
 
 	para "Oh... you're from"
-	line "JHOTO, should you"
+	line "JOHTO, should you"
 	cont "even be here?"
 	done
 

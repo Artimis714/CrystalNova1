@@ -264,7 +264,7 @@ LeaveUsBeText:
 	text "Who the hell are"
 	line "you?"
 	
-	para "From JHOTO?"
+	para "From JOHTO?"
 	line "how did you get in"
 	cont "here?"
 
@@ -590,7 +590,7 @@ PokemonFanClubTeacherNoBayleefText:
 	line "just because its"
 
 	para "from the worst"
-	line "of the JHOTO"
+	line "of the JOHTO"
 
 	para "starters. You don't"
 	line "want it."

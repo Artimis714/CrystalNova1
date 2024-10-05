@@ -298,7 +298,7 @@ MediumMargretGhostAfterBattleText:
 	line "in destroying our"
 
 	para "culture. We are"
-	line "JHOTO. And we are"
+	line "JOHTO. And we are"
 
 	para "stronger than they"
 	line "gave us credit for."

@@ -284,7 +284,7 @@ PsychicJaredAfterBattleText:
 	cont "SABRINA."
 
 	para "He sympathized"
-	line "with JHOTO during"
+	line "with JOHTO during"
 	cont "the war."
 
 	para "He now lives in"

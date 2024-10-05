@@ -218,7 +218,7 @@ GruntM29AfterBattleText:
 	para "if we're ever"
 	line "going to take"
 
-	para "JHOTO back from"
+	para "JOHTO back from"
 	line "KANTO rule!"
 	done
 
@@ -229,7 +229,7 @@ GruntM1SeenText:
 	line "for children."
 
 	para "We are working to"
-	line "restore JHOTO"
+	line "restore JOHTO"
 	cont "sovereignty."
 
 	para "If you interrupt"
@@ -242,7 +242,7 @@ GruntM1BeatenText:
 	line "traitor."
 
 	para "We're fighting"
-	line "for JHOTO!"
+	line "for JOHTO!"
 	done
 
 TrainerGruntM1WhenTalkText:

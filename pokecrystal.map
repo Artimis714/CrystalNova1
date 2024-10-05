@@ -36046,7 +36046,7 @@ ROMX bank #90:
 	         $76fe = PewterPoliceWinText
 	         $7730 = PewterCityCooltrainerFText
 	         $776e = PewterCityBugCatcherText
-	         $77b4 = FromJhotoEHText
+	         $77b4 = FromJOHTOEHText
 	         $7927 = PewterCityGrampsText
 	         $7ab2 = PewterCityGrampsText2
 	         $7cc8 = PewterCityGrampsText_GotSilverWing
@@ -38575,7 +38575,7 @@ ROMX bank #100:
 	         $551d = FishingDude.Comebackifyouneedme
 	         $5523 = FishingDude.Goodtohear
 	         $5529 = FishingDudesHousePhoto
-	         $552c = AhhJhotoText
+	         $552c = AhhJOHTOText
 	         $55aa = FishingDudeText
 	         $568e = HealFastText
 	         $56bd = KeepAtItVermilionText

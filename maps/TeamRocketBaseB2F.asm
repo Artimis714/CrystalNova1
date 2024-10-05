@@ -632,7 +632,7 @@ RocketBaseBossDontMeddleText:
 	done
 
 RocketBaseBossWinText:
-	text "You're from JHOTO!"
+	text "You're from JOHTO!"
 	line "You should be on,"
 	cont "our side!"
 
@@ -681,7 +681,7 @@ RocketBaseLancePostBattleText:
 	line "horrible things."
 
 	para "There are no ex-"
-	line "cuses. If JHOTO"
+	line "cuses. If JOHTO"
 
 	para "had won the war"
 	line "I would have be-"
@@ -821,7 +821,7 @@ RocketBaseLanceWhirlpoolText:
 	para "When I fought for"
 	line "RED, I didn't give"
 
-	para "away all of JHOTO's"
+	para "away all of JOHTO's"
 	line "secrets."
 
 	para "<……> <……> <……>"
@@ -947,7 +947,7 @@ GruntM19AfterBattleText:
 	text "When TEAM ROCKET"
 	line "regains control of"
 	
-	para "JHOTO. You'll be"
+	para "JOHTO. You'll be"
 	line "be executed for"
 	cont "this!"
 	done

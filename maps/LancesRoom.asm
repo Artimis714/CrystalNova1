@@ -408,7 +408,7 @@ LanceBattleWinText:
 	para "some rest to the"
 	line "shades, that a"
 
-	para "child of JHOTO has"
+	para "child of JOHTO has"
 	line "brought peace."
 	done
 
@@ -578,7 +578,7 @@ LancesRoomMaryInterviewText:
 	para "<PLAY_G> How does"
 	line "it feel to be the"
 
-	para "first JHOTO"
+	para "first JOHTO"
 	line "resident to gain"
 
 	para "full KANTO"

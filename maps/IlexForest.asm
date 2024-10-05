@@ -1072,13 +1072,13 @@ Text_KurtCaughtCelebi:
 	line "hands, this would"
 
 	para "be a day darker"
-	line "for JHOTO than any"
+	line "for JOHTO than any"
 	cont "during the war!"
 
 	para "In your hands..."
 	line "I trust you'll do"
 
-	para "right by JHOTO's"
+	para "right by JOHTO's"
 	line "most sacred #-"
 	cont "MON."
 

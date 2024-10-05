@@ -266,7 +266,7 @@ LassRoryGhostAfterBattleText:
 	para "After the TOWER"
 	line "was attacked by"
 
-	para "JHOTO, she stayed"
+	para "JOHTO, she stayed"
 	line "living in the town"
 
 	para "She used to vol-"

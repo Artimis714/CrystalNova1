@@ -467,7 +467,7 @@ KurtsHouseKurtMakingBallsMustWaitText:
 	para "TEAM ROCKET's the"
 	line "last dregs of the"
 
-	para "old JHOTO liber-"
+	para "old JOHTO liber-"
 	line "ation army!"
 
 	para "They disbanded,"

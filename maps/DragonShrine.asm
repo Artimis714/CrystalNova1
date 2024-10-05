@@ -483,7 +483,7 @@ DragonShrinePassedTestText:
 	cont "#MON LEAGUE."
 
 	para "You will make"
-	line "JHOTO proud!"
+	line "JOHTO proud!"
 	done
 
 DragonShrineMustIInformLanceText:
@@ -647,7 +647,7 @@ DragonShrineElder2GSBallExplain:
 
 	para "from the violence"
 	line "above. Right or"
-	cont "wrong, the JHOTO."
+	cont "wrong, the JOHTO."
 
 	para "Government gave us"
 	line "a small cache of"
@@ -717,7 +717,7 @@ DragonShrineElder3Text:
 	line "the DRAGON DEN."
 
 	para "But the people of"
-	line "all JHOTO!"
+	line "all JOHTO!"
 	done
 
 DragonShrineClairYouPassedText:

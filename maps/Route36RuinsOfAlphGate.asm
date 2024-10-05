@@ -27,7 +27,7 @@ Route36RuinsOfAlphGateGrampsText:
 	para "long before the"
 	line "war."
 
-	para "JHOTO has a long"
+	para "JOHTO has a long"
 	line "history. Even if"
 
 	para "KANTO thinks"

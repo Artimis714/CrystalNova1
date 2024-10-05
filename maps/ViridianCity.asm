@@ -215,7 +215,7 @@ ViridianCityCoffeeGrampsQuestionText:
 	line "<……> <……> <……>"
 
 	para "You're one of them"
-	line "JHOTO savages?"
+	line "JOHTO savages?"
 
 	para "Hope you're having"
 	line "a rough time in"
@@ -230,7 +230,7 @@ ViridianCityCoffeeGrampsBelievedText:
 	line "let me tell you!"
 
 	para "During the war I"
-	line "slaughtered JHOTO"
+	line "slaughtered JOHTO"
 
 	para "scum, left right"
 	line "and center!"
@@ -238,11 +238,11 @@ ViridianCityCoffeeGrampsBelievedText:
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
 
-	para "You're from JHOTO?"
+	para "You're from JOHTO?"
 	line "We should've built"
 
 	para "a damn wall and"
-	line "and made JHOTO pay"
+	line "and made JOHTO pay"
 	cont "for it!"
 	done
 

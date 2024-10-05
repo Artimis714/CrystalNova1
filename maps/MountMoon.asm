@@ -189,7 +189,7 @@ MountMoonRivalTextLoss:
 	para "<……> <……> <……>"
 
 	para "Yes we can show"
-	line "both JHOTO and"
+	line "both JOHTO and"
 
 	para "KANTO a better"
 	line "way."

@@ -133,7 +133,7 @@ GruntM24BeatenText:
 GruntM24AfterBattleText:
 	text "TEAM ROCKET will"
 	line "keep going, until"
-	cont "JHOTO is free!"
+	cont "JOHTO is free!"
 
 	para "We'll do whatever"
 	line "it takes."
@@ -183,7 +183,7 @@ GruntM15AfterBattleText:
 
 	para "Yeah maybe it's"
 	line "not just about"
-	cont "freeing JHOTO."
+	cont "freeing JOHTO."
 
 	para "None of us want to"
 	line "go back to war."
@@ -214,7 +214,7 @@ DirectorIntroText:
 
 	para "I can't blame them"
 	line "but they'll destr-"
-	cont "oy JHOTO they win!"
+	cont "oy JOHTO they win!"
 
 	para "Here. Take this"
 	line "CARD KEY."

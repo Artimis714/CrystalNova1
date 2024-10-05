@@ -216,7 +216,7 @@ PowerPlantOfficer1AThiefBrokeInText:
 	text "A thief broke into"
 	line "the POWER PLANT…"
 
-	para "Damn JHOTO rebels!"
+	para "Damn JOHTO rebels!"
 	line "I just know they're"
 	cont "behind this!"
 
@@ -224,7 +224,7 @@ PowerPlantOfficer1AThiefBrokeInText:
 	line "<……> <……> <……>"
 
 	para "What? you're from"
-	line "JHOTO??"
+	line "JOHTO??"
 
 	para "WAS IT YOU!!!!"
 
@@ -260,7 +260,7 @@ PowerPlantOfficer1CeruleanShadyCharacterText:
 	line "around."
 
 	para "Looks like those"
-	line "damn JHOTO rebels"
+	line "damn JOHTO rebels"
 
 	para "have taken it too"
 	line "far this time!!!"
@@ -349,7 +349,7 @@ PowerPlantGymGuide1GeneratorUpAndRunningText:
 	para "making electricity"
 	line "to spare."
 
-	para "JHOTO still gets"
+	para "JOHTO still gets"
 	line "rolling blackouts,"
 
 	para "but if the plant"
@@ -357,7 +357,7 @@ PowerPlantGymGuide1GeneratorUpAndRunningText:
 
 	para "like this, we'll"
 	line "even be able to"
-	cont "power JHOTO!!!"
+	cont "power JOHTO!!!"
 	done
 
 PowerPlantGymGuide2PowerPlantUpAndRunningText:
@@ -424,7 +424,7 @@ PowerPlantOfficer2ManagerHasBeenSadAndFuriousText:
 	line "around him."
 
 	para "Ever since some"
-	line "JHOTO rebel wreck-"
+	line "JOHTO rebel wreck-"
 	cont "ed the generator,"
 
 	para "He's been both sad"
@@ -474,8 +474,8 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 	para "<……> <……> <……>"
 	line "<……> <……> <……>"
 
-	para "JHOTO!!! YOU'RE"
-	line "FROM JHOTO!!???"
+	para "JOHTO!!! YOU'RE"
+	line "FROM JOHTO!!???"
 
 	para "Prepare yourself"
 	line "kid for a taste"
@@ -503,7 +503,7 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 
 	para "trying to give"
 	line "power to both"
-	cont "JHOTO and KANTO!"
+	cont "JOHTO and KANTO!"
 
 	para "We can talk about"
 	line "the MAGNET TRAIN,"
@@ -549,7 +549,7 @@ PowerPlantManagerThatsThePartText:
 	line "saw your face in"
 	cont "the papers."
 
-	para "You're the JHOTO"
+	para "You're the JOHTO"
 	line "CHAMPION?"
 
 	para "<……> <……> <……>"
@@ -585,7 +585,7 @@ PowerPlantManagerThatsThePartText:
 
 	para "ensure this POWER"
 	line "PLANT could also"
-	cont "power JHOTO."
+	cont "power JOHTO."
 
 	para "<PLAY_G>, I'm"
 	line "so glad you found"
@@ -639,7 +639,7 @@ PowerPlantManagerMyBelovedGeneratorText:
 	para "And funding is"
 	line "going through to"
 
-	para "get the JHOTO"
+	para "get the JOHTO"
 	line "power grid up"
 	cont "to code!"
 

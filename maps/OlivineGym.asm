@@ -305,7 +305,7 @@ Jasmine_SteelTypeIntro:
 	line "fought to protect"
 
 	para "all civilians in"
-	line "from both JHOTO"
+	line "from both JOHTO"
 	cont "and KANTO."
 
 	para "Even in battle"

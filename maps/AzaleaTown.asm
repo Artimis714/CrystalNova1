@@ -330,7 +330,7 @@ AzaleaTownRocket1Text:
 	line "of #JESUS?"
 
 	para "Listen kid, read"
-	line "up on your JHOTO"
+	line "up on your JOHTO"
 	cont "heritage."
 	done
 

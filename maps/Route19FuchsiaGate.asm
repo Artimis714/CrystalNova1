@@ -52,7 +52,7 @@ OfficerGuard19WinText:
 	done
 
 Route19FuchsiaGateOfficerText_RocksCleared:
-	text "Damn JHOTO rebels"
+	text "Damn JOHTO rebels"
 	line "somehow found a"
 
 	para "way to set off"

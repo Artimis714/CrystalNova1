@@ -90,7 +90,7 @@ YoungsterOwenAfterBattleText:
 	line "saying you didn't!"
 
 	para "My daddy says every"
-	line "one from JHOTO is"
+	line "one from JOHTO is"
 
 	para "a dishonorable"
 	line "cheater!!!"

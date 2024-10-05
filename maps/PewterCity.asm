@@ -57,7 +57,7 @@ PewterCityGrampsScript:
 	iftrue .GotSilverWing
 	checkevent EVENT_GHOST_RACHAEL
 	iftrue .YouMetHerGhost
-	writetext FromJhotoEHText
+	writetext FromJOHTOEHText
 	closetext
 	end
 
@@ -196,7 +196,7 @@ PewterCityBugCatcherText:
 	line "night."
 	done
 
-FromJhotoEHText:
+FromJOHTOEHText:
 	text "..."
 	
 	para "Ah, you came all"
@@ -318,7 +318,7 @@ PewterCityGrampsText2:
 	line "these years."
 
 	para "Anyway, it should be"
-	line "returned to JHOTO."
+	line "returned to JOHTO."
 
 	para "I'm sorry kiddo, for"
 	line "everything that"

@@ -46,7 +46,7 @@ VermilionMartSuperNerdText:
 	line "me happy."
 
 	para "We finally got"
-	line "rid of that JHOTO"
+	line "rid of that JOHTO"
 	cont "scum!"
 	done
 

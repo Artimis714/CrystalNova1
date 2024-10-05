@@ -144,7 +144,7 @@ FightingDojoBlackBeltText:
 	line "..."
 
 	para "Oh, you are from"
-	line "JHOTO. I see."
+	line "JOHTO. I see."
 
 	para "Do you know MASTER"
 	line "CHUCK?"
@@ -178,7 +178,7 @@ HistoryoftheDojoText:
 	para "My master, the"
 	line "KARATE KING was"
 
-	para "exiled to JHOTO"
+	para "exiled to JOHTO"
 	line "where he trains"
 
 	para "in preparation"

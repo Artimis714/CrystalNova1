@@ -111,7 +111,7 @@ BrunoScript_BrunoBeforeText:
 	line "ELITE FOUR."
 
 	para "I have crushed"
-	line "thousands of JHOTO"
+	line "thousands of JOHTO"
 
 	para "combatants under"
 	line "my fists."

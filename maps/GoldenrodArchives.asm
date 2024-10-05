@@ -349,7 +349,7 @@ GentlemanVirgilClearBelltext:
 	line "BELL, and it's the"
 
 	para "key to unlock many"
-	line "of JHOTO's secrets."
+	line "of JOHTO's secrets."
 
 	para "Begin with the TIN"
 	line "TOWER."

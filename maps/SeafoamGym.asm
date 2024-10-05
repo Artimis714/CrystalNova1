@@ -67,7 +67,7 @@ BlaineIntroText:
 	para "My GYM in CINNABAR"
 	line "burned down."
 
-	para "Those damn JHOTO"
+	para "Those damn JOHTO"
 	line "bastards set it"
 	cont "off!"
 
@@ -123,7 +123,7 @@ BlaineAfterBattleText:
 	line "..."
 
 	para "I know you're from"
-	line "JHOTO, but you"
+	line "JOHTO, but you"
 
 	para "didn't set off the"
 	line "VOLCANO, did you?"

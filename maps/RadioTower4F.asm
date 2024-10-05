@@ -206,7 +206,7 @@ Executivem2AfterBattleText:
 	line "You can still turn"
 	cont "back."
 
-	para "You're from JHOTO"
+	para "You're from JOHTO"
 	line "We're trying to"
 	cont "save your home."
 

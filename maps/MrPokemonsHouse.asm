@@ -429,7 +429,7 @@ MrPokemonsHouse_OakText1:
 	line "#DEX can record"
 	cont "up to 252 species"
 
-	para "For JHOTO, even"
+	para "For JOHTO, even"
 	line "KANTO that should"
 
 	para "be more than"

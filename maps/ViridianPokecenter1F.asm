@@ -122,10 +122,10 @@ ViridianPokecenter1FCooltrainerFText:
 	line "erupted."
 
 	para "Few people in"
-	line "KANTO like JHOTO,"
+	line "KANTO like JOHTO,"
 
 	para "but few people"
-	line "hate JHOTO more"
+	line "hate JOHTO more"
 
 	para "than CINNABAR's"
 	line "survivors."
@@ -148,7 +148,7 @@ ViridianPokeCentreCallAuthoritiestext:
 	para "..."
 	line "..."
 
-	para "You're from JHOTO!"
+	para "You're from JOHTO!"
 	line "... SECURITY!"
 
 	para "I'm calling the"

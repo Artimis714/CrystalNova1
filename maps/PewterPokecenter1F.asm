@@ -95,7 +95,7 @@ PewterPokecenter1FTeacherText:
 	line "fucking town."
 
 	para "I can't believe it!"
-	line "JHOTO will have to"
+	line "JOHTO will have to"
 	cont "pay for this!"
 
 	para "..."
@@ -154,7 +154,7 @@ PewterPokeCentreCallAuthoritiestext:
 	para "..."
 	line "..."
 
-	para "You're from JHOTO!"
+	para "You're from JOHTO!"
 	line "... SECURITY!"
 
 	para "I'm calling the"

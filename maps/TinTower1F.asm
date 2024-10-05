@@ -357,7 +357,7 @@ TinTower1FSage1Text:
 	para "During the war,"
 	line "the hands of both"
 
-	para "KANTO and JHOTO"
+	para "KANTO and JOHTO"
 	line "were stained red."
 	done
 
@@ -516,7 +516,7 @@ TinTower1FSage5Text3:
 	line "KANTO hoped to"
 
 	para "gain by invading"
-	line "JHOTO. It was to"
+	line "JOHTO. It was to"
 
 	para "this end that they"
 	line "set fire to the"

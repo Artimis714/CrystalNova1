@@ -113,7 +113,7 @@ CinnabarPokecenter1FFisherText:
 	line "begin with re-"
 	cont "building."
 
-	para "JHOTO took"
+	para "JOHTO took"
 	line "EVERYTHING from"
 	cont "us."
 	done
@@ -130,7 +130,7 @@ CinnabarPokeCentreCallAuthoritiestext:
 	para "..."
 	line "..."
 
-	para "FUCKING JHOTO"
+	para "FUCKING JOHTO"
 	line "BASTARD!!!!"
 
 	para "HOW DARE YOU SET"

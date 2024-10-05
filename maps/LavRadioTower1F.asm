@@ -72,7 +72,7 @@ BurglarJaxGhostAfterBattleText:
 	text "The houses were"
 	line "empty!"
 
-	para "JHOTO bombing the"
+	para "JOHTO bombing the"
 	line "cities, but if"
 
 	para "you were brave"

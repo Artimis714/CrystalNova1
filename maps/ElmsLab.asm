@@ -1118,7 +1118,7 @@ ElmDescribesMrPokemonText:
 	para "Damn KANTO aris-"
 	line "tocrats. They're"
 
-	para "a drain on JHOTO"
+	para "a drain on JOHTO"
 	done
 
 ElmPokeBallText:
@@ -1182,7 +1182,7 @@ ElmAfterTheftText5:
 	cont "studies, runs all"
 
 	para "academic research"
-	line "funding in JHOTO."
+	line "funding in JOHTO."
 
 	para "He is superb at"
 	line "seeing the poten-"
@@ -1201,7 +1201,7 @@ ElmAfterTheftText5:
 
 	para "After the war,"
 	line "having a CHAMP-"
-	cont "ION form JHOTO!"
+	cont "ION form JOHTO!"
 
 	para "Oh, <PLAY_G>."
 	line "it would give"
@@ -1439,7 +1439,7 @@ ElmGiveTicketText2:
 	line "S.S.TICKET."
 
 	para "Not many people"
-	line "from JHOTO ever"
+	line "from JOHTO ever"
 
 	para "get the chance to"
 	line "visit KANTO."

@@ -129,7 +129,7 @@ CinnabarIslandBlueText:
 	line "with the results."
 
 	para "The war is done,"
-	line "JHOTO is under our"
+	line "JOHTO is under our"
 	cont "boot."
 
 	para "But the cost was"
@@ -163,7 +163,7 @@ CinnabarIslandBlueText:
 	line "disappears."
 
 	para "We know it was a"
-	line "cell of JHOTO"
+	line "cell of JOHTO"
 
 	para "sympathizers who"
 	line "found a way to set"
@@ -215,7 +215,7 @@ CinnabarIslandBlueText:
 
 	para "It's good to hear"
 	line "the sentiment is"
-	cont "similar in JHOTO."
+	cont "similar in JOHTO."
 
 	para "..."
 	line "..."
@@ -224,7 +224,7 @@ CinnabarIslandBlueText:
 	line "VOLCANO..."
 
 	para "I know it was some"
-	line "JHOTO ROCKETS,"
+	line "JOHTO ROCKETS,"
 
 	para "but I can't help"
 	line "but believe there"
@@ -298,7 +298,7 @@ CinnabarIslandSignText:
 	para "Spray Paint"
 	line "Graffiti reads:"
 
-	para "FUCK JHOTO!"
+	para "FUCK JOHTO!"
 	done
 
 CinnabarIsland_MapEvents:

@@ -241,7 +241,7 @@ LavenderTownTeacherText:
 	para "the early days of"
 	line "the war, but when"
 
-	para "JHOTO raided the"
+	para "JOHTO raided the"
 	line "town, our RADIO"
 
 	para "TOWER was damaged"

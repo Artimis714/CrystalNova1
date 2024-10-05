@@ -89,7 +89,7 @@ BrockIntroText:
 	line "..."
 
 	para "Oh, you're the"
-	line "JHOTO CHAMP?"
+	line "JOHTO CHAMP?"
 	cont "cool!"
 
 	para "I'm BROCK, the"

@@ -300,7 +300,7 @@ PicnickerDebraAfterBattleText:
 	para "..."
 	line "..."
 
-	para "JHOTO? No, I'm"
+	para "JOHTO? No, I'm"
 	line "from the SEVII"
 	cont "ISLANDS."
 
@@ -328,7 +328,7 @@ JugglerFritzAfterBattleText:
 
 	para "I hate that my"
 	line "job often takes"
-	cont "me to JHOTO."
+	cont "me to JOHTO."
 	done
 
 SailorGarrettSeenText:
@@ -348,7 +348,7 @@ SailorGarrettAfterBattleText:
 	para "all over, but few"
 	line "are actually from"
 
-	para "JHOTO, because"
+	para "JOHTO, because"
 	line "they're not allowed"
 	cont "to travel."
 	done
@@ -450,10 +450,10 @@ SailorKennethBeatenText:
 	done
 
 SailorKennethAfterBattleText:
-	text "A JHOTO CHAMPION?"
+	text "A JOHTO CHAMPION?"
 	line "I didn't know"
 
-	para "JHOTO had any"
+	para "JOHTO had any"
 	line "strong trainers."
 
 	para "..."

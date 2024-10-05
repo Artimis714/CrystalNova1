@@ -37,7 +37,7 @@ DayOfWeekSiblingsHousePokedexText2:
 	para "with improving"
 	line "relations with the"
 
-	para "new JHOTO subjects"
+	para "new JOHTO subjects"
 	line "after the war."
 
 	para "When trainers talk"
