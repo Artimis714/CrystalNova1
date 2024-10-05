@@ -174,8 +174,8 @@ VictoryRoadRivalBeforeText:
 	para "You're so much"
 	line "weaker than I am."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I'm not like I was"
 	line "before."

@@ -119,8 +119,8 @@ TrainerHouse1FCooltrainerMText:
 	para "way up to INDIGO"
 	line "PLATEAU."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "WOAH You've beat"
 	line "LEAGUE?"
@@ -145,8 +145,8 @@ TrainerHouse1FCooltrainerFText:
 	para "APRICORNS for"
 	line "#BALLS!"
 
-	para "<……> <……> <……>"	
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Sounds like some-"
 	line "thing that JOHTO"
@@ -169,8 +169,8 @@ TrainerHouse1FYoungsterText:
 	para "all the cities and"
 	line "towns in KANTO."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah, that's RED."
 	line "He's a local hero!"
@@ -183,19 +183,19 @@ TrainerHouse1FGentlemanText:
 	done
 
 LolitaWasSoHotText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Why yes my name is"
 	line "Humbert Humbert."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You knew LOLITA!?"
 	
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmm... I see. So"
 	line "she passed during"
@@ -228,8 +228,8 @@ LolitaWasSoHotText:
 	line "SMEARGLE to sketch"
 	cont "her."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "My SMEARGLE has"
 	line "been so depressed"
@@ -238,8 +238,8 @@ LolitaWasSoHotText:
 	para "LOLITA was its"
 	line "muse!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Well if you think"
 	line "you could do a"
@@ -253,8 +253,8 @@ LolitaWasSoHotText:
 	done
 
 SmergleSpecialisesInArtText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "SMEARGLE special-"
 	line "izes in ART."
@@ -266,15 +266,15 @@ SmergleSpecialisesInArtText:
 	line "it can also sketch"
 	cont "ANY movie it sees!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, it is almost"
 	line "like the Sharingan"
 	cont "of the Uchiaha!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, SMEARGLE are"
 	line "basically Ninja!"
@@ -286,8 +286,8 @@ ReceivedSmergleText:
 	done
 
 LolitaWouldveBeenSoSexyText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Yes, I do hope you"
 	line "give my SMEARGLE a"
@@ -299,15 +299,15 @@ LolitaWouldveBeenSoSexyText:
 	para "I still have my"
 	line "sketches of her!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're very judgey!"
 	done
 
 WhatAShameText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmmm... I see"
 	line "So you're willing"
@@ -323,8 +323,8 @@ WhatAShameText:
 	done
 
 NoRoomForSmergleText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Oh dear, it seems"
 	line "you don't have"

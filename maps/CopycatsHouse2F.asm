@@ -199,28 +199,28 @@ CopycatSpinAroundMovementData:
 	step_end
 
 CopycatText_Male_1:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	text "<PLAYER>: Hi! Do"
 	line "you like #MON?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: Uh, no, I"
 	line "just asked you."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: No,"
 	line "You're annoying!"
 	done
 
 CopycatText_QuickMimicking:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "COPYCAT: Hmm?"
 	line "Quit mimicking?"
@@ -238,15 +238,15 @@ CopycatText_QuickMimicking:
 	done
 
 CopycatText_Male_2:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "<PLAYER>: My"
 	line "house was bombed in"
 	cont "the war."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: My dad"
 	line "was a member of"
@@ -255,8 +255,8 @@ CopycatText_Male_2:
 	para "But he was sent to"
 	line "prison."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: He led"
 	line "a big team. I miss"
@@ -270,8 +270,8 @@ CopycatText_Worried:
 	line "him, but my Aunt"
 	cont "says I can't."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I know he's a bad"
 	line "man. He did some"
@@ -297,8 +297,8 @@ CopycatText_GiveDoll:
 	para "How... how did"
 	line "you get it?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "(Sobbing)"
 	line "(Sobbing)"
@@ -315,8 +315,8 @@ CopycatText_GivePass:
 	done
 
 CopycatText_ExplainPass:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "COPYCAT: I know"
 	line "everyone in KANTO"
@@ -344,14 +344,14 @@ CopycatText_ExplainPass:
 	done
 
 CopycatText_Male_3:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "<PLAYER>: Hey!"
 	line "good to see you."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: Yeah"
 	line "my disguises are"
@@ -368,35 +368,35 @@ CopycatText_ItsAScream:
 	done
 
 CopycatText_Female_1:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	text "<PLAYER>: Hi! Do"
 	line "you like #MON?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: Uh, no, I"
 	line "just asked you."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: No,"
 	line "You're a bitch!"
 	done
 
 CopycatText_Female_2:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "<PLAYER>: My"
 	line "house was bombed in"
 	cont "the war."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: My dad"
 	line "was a member of"
@@ -405,8 +405,8 @@ CopycatText_Female_2:
 	para "But he was sent to"
 	line "prison."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: He led"
 	line "a big team. I've"
@@ -414,23 +414,23 @@ CopycatText_Female_2:
 	para "always been a"
 	line "daddy's girl."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: I knew"
 	line "you could relate."
 	done
 
 CopycatText_Female_3:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "<PLAYER>: Hey!"
 	line "its so good to"
 	cont "see you!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAYER>: Yeah"
 	line "my disguises are"

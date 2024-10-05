@@ -84,8 +84,8 @@ GoldenrodBikeShopClerkIntroText:
 	line "somehow help my"
 	cont "business."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Kid, I'm a bike"
 	line "mechanic, not an"

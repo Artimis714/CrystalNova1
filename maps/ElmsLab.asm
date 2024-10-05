@@ -812,8 +812,8 @@ ElmText_Intro:
 	para "Good to see you!"
 	line "How's your mom?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, that sounds"
 	line "her."
@@ -891,21 +891,21 @@ ElmText_ResearchAmbitions:
 	cont "stand the power"
 	cont "that's inside!!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Sorry, I got a"
 	line "little carried"
 	cont "away."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, quite. Now,"
 	line "where was I?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh yes, an adven-"
 	line "ture!"
@@ -1306,8 +1306,8 @@ ShowElmTogepiText3:
 	para "live births, like"
 	line "we humans do it."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Ask your mother..."
 	done

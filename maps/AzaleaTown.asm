@@ -242,15 +242,15 @@ AzaleaTownRivalBeforeText:
 	line "TEAM ROCKET has"
 	cont "returned?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "What? You beat"
 	line "them? Hah! Quit"
 	cont "lying."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're not joking?"
 	line "Those fools don't"
@@ -258,8 +258,8 @@ AzaleaTownRivalBeforeText:
 	para "know when to give"
 	line "up!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Now, you're just"
 	line "pissing me off"
@@ -323,8 +323,8 @@ AzaleaTownRocket1Text:
 	para "Aren't I a good"
 	line "Samaritan?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Haven't you heard"
 	line "of #JESUS?"
@@ -456,7 +456,7 @@ AzaleaTownYoungsterText:
 AzaleaTownSlowpokeText1:
 	text "SLOWPOKE: …"
 
-	para "<……> <……> <……>"
+	para "..."
 	done
 
 AzaleaTownSlowpokeText2:

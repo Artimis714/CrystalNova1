@@ -94,8 +94,8 @@ FishingDudeText:
 	line "from JOHTO aren't"
 	cont "you!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmm... I see. You"
 	line "were thrown in"
@@ -104,8 +104,8 @@ FishingDudeText:
 	para "Our government is"
 	line "so corrupt."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You can't even heal"
 	line "you #MON!!??"
@@ -146,8 +146,8 @@ comebackifneededtext:
 	done
 
 GladtohearVermiliontext:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Ahh so you got"
 	line "your proof of"

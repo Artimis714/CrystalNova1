@@ -287,14 +287,14 @@ MomGivesPokegearText:
 	line "directions and"
 	cont "play music."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "What's a smart"
 	line "phone?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Huh... yeah kinda"
 	line "like that."
@@ -363,8 +363,8 @@ SoWhatWasProfElmsErrandText:
 	line "think of our"
 	cont "surprise!?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh, that's such a"
 	line "wonderful #MON!"
@@ -379,8 +379,8 @@ SoWhatWasProfElmsErrandText:
 	line "real #MON"
 	cont "trainer!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "That does sound"
 	line "challenging."
@@ -413,8 +413,8 @@ NeighborNiteIntroText:
 	text "Good evening,"
 	line "<PLAY_G>!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, I know it's"
 	line "late. But your"
@@ -430,8 +430,8 @@ MommaNewLoverText:
 	text "<PLAY_G>, your mom"
 	line "has needs."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "To be honest, the"
 	line "less you know the"
@@ -441,8 +441,8 @@ MommaNewLoverText:
 	line "stay here tonight"
 	cont "were you?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "That's probably"
 	line "for the best."
@@ -528,14 +528,14 @@ RedWasYourFatherText:
 	text "Hi Sweetie!"
 	line "..What's Wrong?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "So you've met"
 	line "LANCE?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I'm sorry you had"
 	line "to run into that"
@@ -549,8 +549,8 @@ RedWasYourFatherText:
 	line "much do you know"
 	cont "about the war?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Your father was"
 	line "from KANTO."
@@ -558,8 +558,8 @@ RedWasYourFatherText:
 	para "A little town"
 	line "called PALLET."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Of course, you"
 	line "already know"
@@ -572,8 +572,8 @@ RedWasYourFatherText:
 	para "Like no one"
 	line "ever was."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAY_G>, I"
 	line "know you've"
@@ -581,8 +581,8 @@ RedWasYourFatherText:
 	para "already figured"
 	line "it out."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, your father"
 	line "is RED."
@@ -601,8 +601,8 @@ RedWasYourFatherText:
 	line "terrible things"
 	cont "to protect KANTO."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No, sweetie, your"
 	line "skill as a #MON"
@@ -617,8 +617,8 @@ RedWasYourFatherText:
 	line "everything you've"
 	cont "accomplished!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I love you too"
 	line "<PLAY_G>."

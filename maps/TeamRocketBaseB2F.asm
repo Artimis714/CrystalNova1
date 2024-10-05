@@ -743,8 +743,8 @@ RockerBaseLanceElectrodeFaintText:
 	para "all the ELECTRODE"
 	line "faint."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're right, I"
 	line "suppose we could"
@@ -752,8 +752,8 @@ RockerBaseLanceElectrodeFaintText:
 	para "capture them ins-"
 	line "tead."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Fine then, you do"
 	line "what you feel is"
@@ -815,8 +815,8 @@ RocketBaseLanceWhirlpoolText:
 	line "more about your"
 	cont "country's history."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "When I fought for"
 	line "RED, I didn't give"
@@ -824,8 +824,8 @@ RocketBaseLanceWhirlpoolText:
 	para "away all of JOHTO's"
 	line "secrets."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "That's all I'll say"
 	line "for now."
@@ -845,8 +845,8 @@ RocketBaseLanceMonMasterText:
 	para "But, I hope you"
 	line "discover them."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, I suppose so."
 
@@ -858,8 +858,8 @@ LanceHealsText1:
 	text "LANCE: Are you all"
 	line "right?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Rumors? About me?"
 	line "Never mind that."

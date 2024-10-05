@@ -116,8 +116,8 @@ WardensHomeBookshelf:
 	jumpstd PictureBookshelfScript
 
 MetSisterSafariZone1Text:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "OPAL: Lies! You"
 	line "can't have met"
@@ -126,8 +126,8 @@ MetSisterSafariZone1Text:
 	para "She died with"
 	line "our Mom!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: I can't"
 	line "believe you!"
@@ -156,8 +156,8 @@ youmetmylavenderparentstext:
 	line "I told you to"
 	cont "leave me ALONE!!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: You met my"
 	line "mom and Sister?"
@@ -168,14 +168,14 @@ youmetmylavenderparentstext:
 	para "died in an air-"
 	line "raid on LAVENDER!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: I don't"
 	line "believe you!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: Only mommy"
 	line "would know about"
@@ -187,8 +187,8 @@ youmetmylavenderparentstext:
 	line "meet them, didn't"
 	cont "you?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: What the"
 	line "WARDEN and I"
@@ -200,8 +200,8 @@ youmetmylavenderparentstext:
 	line "back your KANTO"
 	cont "PAPERS."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: I don't"
 	line "know what I'll do"
@@ -224,8 +224,8 @@ SorryIllLayLowText:
 	line "for the trouble"
 	cont "I caused."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: I'm still"
 	line "not sure what I'll"
@@ -312,8 +312,8 @@ WardensGranddaughterText1:
 
 	para "At least he was…"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: The FAST"
 	line "SHIP?"
@@ -321,14 +321,14 @@ WardensGranddaughterText1:
 	para "No... That wasn't"
 	line "us."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: I swear! It"
 	line "wasn't us!!!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: Fine... If"
 	line "my 'Grandfather'"
@@ -337,15 +337,15 @@ WardensGranddaughterText1:
 	line "PAPERS how would"
 	cont "you prove it?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: Oh, yeah?"
 	line "Then I'll call"
 	cont "the cops!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: That's what"
 	line "I thought!"
@@ -372,8 +372,8 @@ WardensGranddaughterText1:
 	line "is an old family"
 	cont "friend."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "OPAL: LAVENDER is"
 	line "still haunted by"
@@ -387,8 +387,8 @@ WardensGranddaughterText1:
 	done
 
 WardensGranddaughterText2:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "OPAL: LAVENDER is"
 	line "still haunted by"

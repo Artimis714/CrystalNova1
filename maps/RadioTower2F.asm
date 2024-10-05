@@ -365,14 +365,14 @@ GruntM6MetBroText:
 	text "What do you want"
 	line "now?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Wait, you were in"
 	line "the ARCHIVES!?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You met my little"
 	line "bro!?"
@@ -380,8 +380,8 @@ GruntM6MetBroText:
 	para "You're lying."
 	line "You can't have."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Last tree under"
 	line "the 8th bend?"
@@ -396,8 +396,8 @@ GruntM6MetBroText:
 	para "Great, screw this"
 	line "I'm out of here."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Thank you."
 	line "Really. I might"
@@ -552,8 +552,8 @@ GruntF2SeenText:
 	line "A twerp like you?"
 	cont "Really?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Big talk from a"
 	line "kid. Fine, show"

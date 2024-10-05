@@ -128,15 +128,15 @@ LavenderPokecenter1FYoungsterText_ReturnedMachinePart:
 	para "In your FACE"
 	line "JOHTO SCUM!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "What? You're the"
 	line "reason the POWER"
 	cont "PLANT is running?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I don't believe"
 	line "you!"
@@ -151,8 +151,8 @@ LavenderPokeCentreCallAuthoritiestext:
 	line "proof of KANTO"
 	cont "CITIZENSHIP."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're from JOHTO!"
 	line "... SECURITY!"

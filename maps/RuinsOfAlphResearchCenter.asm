@@ -548,14 +548,14 @@ FossilScientistMewText:
 	line "like this to make"
 	cont "MEWTWO."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I worked for"
 	line "PROJECT GENESIS."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "We built a living"
 	line "weapon, and it"

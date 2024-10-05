@@ -164,7 +164,7 @@ GoldenrodMagnetTrainStationOfficerYouDontHaveARailPassText:
 	para "Wait, can I see"
 	line "your rail PASS?"
 
-	para "<……> <……> <……>"
+	para "..."
 
 	para "You don't have"
 	line "one? Sorry, but"

@@ -112,8 +112,8 @@ OneoftheseDaysText:
 	text "So you've met my ex"
 	line "wife?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "And she wants to"
 	line "see me?"
@@ -155,8 +155,8 @@ GoingonAnAdventureText:
 MySonWasAHealertext:
 	text "What is it child?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmm... I see. The"
 	line "Forest Protector"

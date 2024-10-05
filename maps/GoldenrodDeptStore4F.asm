@@ -69,12 +69,12 @@ GreggSecretProject:
 	line "TIMMY. Why who's"
 	cont "asking?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Woah."
 
-	para "<……> <……> <……>"
+	para "..."
 
 	para "You're serious?"
 	line "You battled my"

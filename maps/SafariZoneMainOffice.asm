@@ -49,8 +49,8 @@ FushiaFoodCourtFisher1Text:
 	para "I'm totally gonna"
 	line "get some tonight."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I shouldn't tell a"
 	line "kid what that"

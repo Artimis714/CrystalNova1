@@ -315,8 +315,8 @@ TinTower1FEusineSuicuneText:
 	line "battle was like"
 	cont "a wet dream."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, yes, I'm a"
 	line "creep. Whatever,"
@@ -456,8 +456,8 @@ TinTower1FEusineHoOhText:
 	para "I think I have a"
 	line "new obsession."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Of course, I'm"
 	line "going to be weird"
@@ -558,8 +558,8 @@ TinTower1FSage6Text2:
 	para "cooperative bond"
 	line "with ENTEI."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh, I didn't read"
 	line "that in a book."
@@ -567,8 +567,8 @@ TinTower1FSage6Text2:
 	para "that was the plot"
 	line "of a movie."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I didn't say it"
 	line "was a good movie."

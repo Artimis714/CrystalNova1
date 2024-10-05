@@ -105,8 +105,8 @@ SaffronPokecenter1FTeacherText:
 	line "#MON CENTERS"
 	cont "there?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh they do?"
 	line "huh... how odd."
@@ -120,8 +120,8 @@ SaffronPokecenter1FTeacherMobileText:
 	line "#MON CENTERS"
 	cont "there?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh they do?"
 	line "huh... how odd."
@@ -178,8 +178,8 @@ SaffronPokecenter1FFisherReturnedMachinePartText:
 	para "the WAR met such"
 	line "a tragic end."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh you're from"
 	line "JOHTO?"
@@ -205,8 +205,8 @@ SaffronPokecenter1FYoungsterText:
 	para "places to see in"
 	line "SAFFRON."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "FIGHTING DOJO?"
 	line "That place is"
@@ -222,8 +222,8 @@ SaffronPokeCentreCallAuthoritiestext:
 	line "proof of KANTO"
 	cont "CITIZENSHIP."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're from JOHTO!"
 	line "... SECURITY!"

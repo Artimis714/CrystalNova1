@@ -147,15 +147,15 @@ ViridianPoliceSeenText:
 
 	para "STOP RIGHT THERE!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're wanted by"
 	line "the VIRIDIAN"
 	cont "POLICE!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're under"
 	line "arrest!"
@@ -191,8 +191,8 @@ ViridianCityCoffeeGrampsQuestionText:
 	para "of espresso, and"
 	line "I am wired!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I need to talk to"
 	line "someone, so you'll"
@@ -205,14 +205,14 @@ ViridianCityCoffeeGrampsQuestionText:
 	line "catching #MON."
 	cont "Do you believe me?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No, I didn't fight"
 	line "in the war."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're one of them"
 	line "JOHTO savages?"
@@ -235,8 +235,8 @@ ViridianCityCoffeeGrampsBelievedText:
 	para "scum, left right"
 	line "and center!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're from JOHTO?"
 	line "We should've built"
@@ -320,8 +320,8 @@ ViridianCityYoungsterText:
 	para "the ground in"
 	line "VIRIDIAN FOREST."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah the forest"
 	line "was burned down"

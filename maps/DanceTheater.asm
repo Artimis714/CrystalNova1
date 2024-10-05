@@ -314,22 +314,22 @@ KikyoProudText:
 	para "about quitting the"
 	line "KIMONO GIRLS."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "How would you know"
 	line "what KIKYO would"
 	cont "have wanted!?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You... "
 
 	para "You met KIKYO!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "She was such an"
 	line "amazing sister."

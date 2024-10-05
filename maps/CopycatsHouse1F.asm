@@ -69,15 +69,15 @@ CopycatsHouse1FPokefanFText:
 	done
 
 CopycatsHouse1FPokefanFText_ReturnedMachinePart:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Oh, so she's told"
 	line "you about her"
 	cont "father, has she?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah well, her"
 	line "deadbeat father,"
@@ -87,8 +87,8 @@ CopycatsHouse1FPokefanFText_ReturnedMachinePart:
 	line "behind the"
 	cont "VOLCANO!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "The one on"
 	line "CINNABAR Island!"
@@ -101,8 +101,8 @@ CopycatsHouse1FPokefanFText_ReturnedMachinePart:
 	line "security prison"
 	cont "down in VERMILLION" 
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah, yeah, she"
 	line "lost a doll."
@@ -115,22 +115,22 @@ CopycatsHouse1FPokefanFText_ReturnedMachinePart:
 	done
 
 Copycatshouse1PokefanFText_ReturnedLostItem:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "You... you made"
 	line "it into the prison"
 	cont "in VERMILLION?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Wow, I didn't"
 	line "think that my bro-"
 	cont "ther cared."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Perhaps I've been"
 	line "too hard on the"

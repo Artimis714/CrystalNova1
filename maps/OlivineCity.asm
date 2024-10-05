@@ -221,15 +221,15 @@ OlivineCityRivalText:
 	line "make you a bit"
 	cont "less weak!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "The times you"
 	line "beat me before"
 	cont "were flukes."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Whatever."
 	done
@@ -273,8 +273,8 @@ OlivineCityStandingYoungsterPokedexText:
 	para "That is just so"
 	line "awesome."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Wait... PROF.OAK"
 	line "gave you that?"

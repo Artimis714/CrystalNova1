@@ -382,8 +382,8 @@ OhNoYouFoundMeText:
 	para "All I wanted was"
 	line "to be by myself!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "All the kids at"
 	line "school are giving"
@@ -406,8 +406,8 @@ OhNoYouFoundMeText:
 	para "probably a KANTO"
 	line "soldier."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "We're good people"
 	line "and my mom didn't"
@@ -421,8 +421,8 @@ OhNoYouFoundMeText:
 	line "just DIG my way"
 	cont "home!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "So you also know"
 	line "what it's like"
@@ -434,15 +434,15 @@ OhNoYouFoundMeText:
 	line "wish I could DIG"
 	cont "my way out."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You feel like"
 	line "that too some-"
 	cont "times?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Okay, I'll give"
 	line "you this, so you"
@@ -576,8 +576,8 @@ PokefanmWilliamSeenText:
 	para "That's what being"
 	line "a FAN is about."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "If my #MON"
 	line "don't like me it"
@@ -585,8 +585,8 @@ PokefanmWilliamSeenText:
 	para "doesn't mean I'm a"
 	line "shitty trainer!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You little brat."
 	done

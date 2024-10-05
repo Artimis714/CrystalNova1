@@ -504,14 +504,14 @@ YouAssholeText:
 YouMetMyParentsText:
 	text "What do you want?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I don't believe"
 	line "you."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "But... "
 	line "Y... you really"
@@ -526,8 +526,8 @@ YouMetMyParentsText:
 	para "But I miss my par-"
 	line "ents every day."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "They wouldn't want"
 	line "me seeking revenge"
@@ -543,8 +543,8 @@ YouMetMyParentsText:
 	line "my PIKACHU to stop"
 	para "him."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're right."
 	line "They would want me"
@@ -599,8 +599,8 @@ TeacherDorothySeenText:
 	line "ditions affect the"
 	cont "move SOLAR BEAM?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "If you think you"
 	line "know so much, you"

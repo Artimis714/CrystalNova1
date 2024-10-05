@@ -118,8 +118,8 @@ ErikaBeforeBattleText:
 	para "isn't it?"
 	line "It's so pleasant…"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "…I'm afraid I may"
 	line "doze off…"
@@ -132,8 +132,8 @@ ErikaBeforeBattleText:
 	line "from JOHTO, you"
 	cont "say? How nice…"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "War? What war?"
 	line "There was no war"
@@ -143,8 +143,8 @@ ErikaBeforeBattleText:
 	line "peace in this"
 	cont "city."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Might I interest"
 	line "you in a joint?"
@@ -153,8 +153,8 @@ ErikaBeforeBattleText:
 	line "I think it would"
 	cont "help."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Very well, then"
 	line "we can fight."
@@ -227,15 +227,15 @@ LassMichelleSeenText:
 	line "girls-only GYM"
 	cont "is rare?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Huh... so there's"
 	line "a girls-only GYM"
 	cont "in GOLDENROD?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "AND OLIVINE? Wow,"
 	line "JOHTO is more"
@@ -289,8 +289,8 @@ BeautyJuliaAfterBattleText:
 	line "becoming ladylike"
 	cont "like ERIKA?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmm... Well she"
 	line "does seem pretty"

@@ -185,19 +185,19 @@ MyHusbandWasAGreatManText:
 	line "local. What brings"
 	cont "you to CIANWOOD?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "My... my VIRGIL?"
 	line "You spoke with my"
 	cont "VIRGIL?"
 
-	para "<……> <……> <……>"
+	para "..."
 
 	para "I see."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, my husband"
 	line "was a great man."
@@ -369,8 +369,8 @@ MythofLugiatext:
 	line "the lost SILVER"
 	cont "WING!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I knew it was in"
 	line "KANTO!"

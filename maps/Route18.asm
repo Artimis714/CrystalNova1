@@ -39,8 +39,8 @@ BirdKeeperBorisSeenText:
 	para "have to look in"
 	line "the tall grass."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No... no, you're"
 	line "right, at our"

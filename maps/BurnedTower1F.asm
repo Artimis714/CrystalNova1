@@ -305,14 +305,14 @@ MediumMargretGhostAfterBattleText:
 	done
 
 BurnedTowerRival_BeforeText:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "…Oh, it's you."
 	line "The hell do you"
 	cont "want?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I came looking for"
 	line "some legendary"
@@ -329,8 +329,8 @@ BurnedTowerRival_BeforeText:
 	para "ago, but there's"
 	line "nothing here!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "How about I kick"
 	line "your ass?"
@@ -388,13 +388,13 @@ BurnedTower1FEusineIntroText:
 
 	para "And you are…?"
 
-	para "<……> <……> <……>"
+	para "..."
 
 	para "<PLAYER>? Glad to"
 	line "meet you!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No... that's not a"
 	line "ROCKET badge on my"
@@ -418,8 +418,8 @@ BurnedTower1FEusineIntroText:
 	line "chance to run"
 	cont "with SUICUNE."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I'm not obsessed"
 	line "and creepy! Would"
@@ -431,8 +431,8 @@ BurnedTower1FEusineIntroText:
 	line "#MON his whole"
 	cont "personality?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Whatever, kid. If"
 	line "you see anything"
@@ -444,8 +444,8 @@ BurnedTower1FEusineText:
 	line "you..."
 	cont "Find anything?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "First off... It's"
 	line "pronounced like:"
@@ -479,8 +479,8 @@ BurnedTower1FMortyText:
 	para "investigate the"
 	line "TOWER with him."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No, I don't share"
 	line "his obsession."

@@ -86,7 +86,7 @@ MountMoonRivalMovementAfter:
 	step_end
 
 MountMoonRivalTextBefore:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "It's been a while,"
 	line "<PLAYER>."
@@ -106,7 +106,7 @@ MountMoonRivalTextBefore:
 	done
 
 MountMoonRivalTextWin:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "I thought I raised"
 	line "my #MON to be"
@@ -119,7 +119,7 @@ MountMoonRivalTextWin:
 	done
 
 MountMoonRivalTextAfter:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "…You won, fair"
 	line "and square."
@@ -146,18 +146,21 @@ MountMoonRivalTextAfter:
 	para "Have you been to"
 	line "ROUTE 25?"
 
-	para "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Really strong"
 	line "trainers are out"
 	cont "there."
 
-	para "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No, they kicked"
 	line "my ass."
 
-	para "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, seriously"
 	line "I'm willing to"
@@ -174,7 +177,7 @@ MountMoonRivalTextAfter:
 	done
 
 MountMoonRivalTextLoss:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "I've repaid my"
 	line "debt to you."
@@ -186,7 +189,8 @@ MountMoonRivalTextLoss:
 	line "become the world's"
 	cont "greatest trainer."
 
-	para "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes we can show"
 	line "both JOHTO and"

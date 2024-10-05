@@ -326,8 +326,8 @@ BridgetWhitneyCriesText:
 	para "always cries when"
 	line "she loses."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, I know she"
 	line "said she never"
@@ -357,8 +357,8 @@ BeautyVictoriaAfterBattleText:
 	line "good to beat me!"
 	cont "Keep it up!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah, I know my"
 	line "BAYLEEF isn't a"

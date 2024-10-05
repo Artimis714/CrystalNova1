@@ -184,8 +184,8 @@ KarenScript_KarenDefeatText:
 	para "I was born on"
 	line "VII Isle."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "What you're doing"
 	line "here, might be"
@@ -231,8 +231,8 @@ KarenScript_KarenDefeatText2:
 	para "things during the"
 	line "war."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I see. Well,"
 	line "first LANCE will"

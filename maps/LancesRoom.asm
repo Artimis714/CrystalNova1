@@ -304,15 +304,15 @@ LanceBattleIntroText:
 	para "would eventually"
 	line "reach me here."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, Perhaps I"
 	line "should answer for"
 	cont "my crimes."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You battled the"
 	line "shades who died"
@@ -320,8 +320,8 @@ LanceBattleIntroText:
 	para "when the ARCHIVES"
 	line "burned!?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I owe a great"
 	line "debt to them and"
@@ -331,8 +331,8 @@ LanceBattleIntroText:
 	line "to collect that"
 	cont "debt?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I see, <PLAY_G>!"
 	line "Very well."
@@ -368,15 +368,15 @@ LanceBattleIntroText2:
 	line "since we last"
 	cont "fought."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "So the others"
 	line "have told you my"
 	cont "other secret?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, I know where"
 	line "your father is."
@@ -457,8 +457,8 @@ LanceBattleAfterText2:
 	line "trainers are"
 	cont "allowed to enter."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Perhaps you"
 	line "should ask your"
@@ -521,8 +521,8 @@ LancesRoomOakCongratulationsText:
 	para "when he was your"
 	line "age."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh my, yes, I knew"
 	line "your father. A"
@@ -584,8 +584,8 @@ LancesRoomMaryInterviewText:
 	para "full KANTO"
 	line "CITIZENSHIP!?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I see, and How-"
 	done
@@ -597,7 +597,7 @@ LancesRoomMaryInterviewText2:
 	para "to stay for the"
 	line "interview!?"
 
-	para "<……> <……> <……>"
+	para "..."
 	done
 
 LancesRoomNoisyText:

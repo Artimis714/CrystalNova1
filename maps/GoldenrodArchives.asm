@@ -569,8 +569,8 @@ KimonoGirlKikyoGhostAfterBattleText:
 	line "become a dancer"
 	cont "like our mom."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You've met her?"
 	line "I'm glad to hear"

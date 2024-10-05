@@ -220,8 +220,8 @@ MrPokemonIntroText3:
 	para "Ahh what a lovely"
 	line "escape."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "What... oh, yes."
 	line "The couple."
@@ -266,8 +266,8 @@ MrPokemonsHouse_MrPokemonHealText:
 	line "your #MON"
 	cont "feel real good."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hey kid, live a"
 	line "little!"
@@ -318,8 +318,8 @@ MrPokemonsHouse_OakText1:
 	para "You seem familiar"
 	line "Have we met?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Huh? That's odd."
 	line "I have no memory"
@@ -346,8 +346,8 @@ MrPokemonsHouse_OakText1:
 	para "You're one of"
 	line "ELM's students?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh! What's this?"
 	line "A rare #MON!"
@@ -358,8 +358,8 @@ MrPokemonsHouse_OakText1:
 	para "just gave you"
 	line "this?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmm... really?"
 	line "Wow your #MON"
@@ -387,8 +387,8 @@ MrPokemonsHouse_OakText1:
 	para "Has he given you"
 	line "a #DEX?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Probably doesn't"
 	line "have the budget."
@@ -561,8 +561,8 @@ BurglarSaysYoureAPrickText:
 	line "it's been a long"
 	cont "time."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Really? You've"
 	line "been to KANTO."
@@ -570,8 +570,8 @@ BurglarSaysYoureAPrickText:
 	para "That's really"
 	line "quite something."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "And you've met a"
 	line "GHOST?"
@@ -584,8 +584,8 @@ BurglarSaysYoureAPrickText:
 	line "a body found in"
 	cont "the rubble."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Steal from me?"
 	line "HAHAHA!"
@@ -609,8 +609,8 @@ PoorBastardText:
 	line "them, so I've got"
 	cont "hundreds."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No, I won't be"
 	line "giving you any"

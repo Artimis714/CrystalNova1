@@ -273,14 +273,14 @@ LakeOfRageLanceIntroText:
 	line "because of the"
 	cont "rumors?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're <PLAYER>?"
 	line "I'm LANCE."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You haven't heard"
 	line "of me?"

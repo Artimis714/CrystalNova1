@@ -546,7 +546,7 @@ GuideGentNoText:
 	done
 
 CherrygroveRivalText_Seen:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "You got a #MON"
 	line "at the LAB."
@@ -554,7 +554,7 @@ CherrygroveRivalText_Seen:
 	para "What a waste."
 	line "A wimp like you."
 
-	para "<……> <……> <……>"
+	para "..."
 
 	para "Don't you get what"
 	line "I'm saying?"
@@ -572,7 +572,7 @@ RivalCherrygroveWinText:
 	done
 
 CherrygroveRivalText_YouLost:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "My name's ???."
 
@@ -588,7 +588,7 @@ RivalCherrygroveLossText:
 	done
 
 CherrygroveRivalText_YouWon:
-	text "<……> <……> <……>"
+	text "..."
 
 	para "My name's ???."
 

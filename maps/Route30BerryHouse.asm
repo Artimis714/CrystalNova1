@@ -79,8 +79,8 @@ Route30BerrySpeechHouseCheckTreesText:
 	done
 
 YouMetMyDeadSonText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "You... you met my"
 	line "DALE?"
@@ -91,8 +91,8 @@ YouMetMyDeadSonText:
 	para "The ARCHIVES were"
 	line "burned."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "My poor boy has"
 	line "nothing to apol-"

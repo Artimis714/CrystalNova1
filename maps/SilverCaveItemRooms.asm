@@ -45,8 +45,8 @@ MewTwoText:
 	text "So, we meet at"
 	line "last, MEW."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Silence human!"
 	line "This does not"

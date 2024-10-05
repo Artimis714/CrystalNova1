@@ -169,8 +169,8 @@ SaffronMagnetTrainStationOfficerRightThisWayText:
 	line "And you're going to"
 	cont "GOLDENROD?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh, You're the"
 	line "'CHAMP' huh?"
@@ -187,8 +187,8 @@ SaffronMagnetTrainSecuritytext:
 	text "May I see your"
 	line "rail PASS, please?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "If you don't have"
 	line "a rail pass that's"
@@ -198,8 +198,8 @@ SaffronMagnetTrainSecuritytext:
 	line "your proof of"
 	cont "KANTO CITIZENSHIP?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Stolen? I don't"
 	line "think so."
@@ -209,8 +209,8 @@ SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
 	text "May I see your"
 	line "rail PASS, please?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You don't have a"
 	line "rail PASS."
@@ -224,8 +224,8 @@ SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
 	para "can I see your"
 	line "paperwork?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmm... yes..."
 	line "I heard of a"
@@ -246,16 +246,16 @@ SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
 	para "Maybe some other"
 	line "time. Next Please!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Kid, can you move?"
 	line "you're blocking"
 	cont "the line."
 	cont "NEXT PLEASE!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Sorry, kid, but my"
 	line "ink pad doesn't"

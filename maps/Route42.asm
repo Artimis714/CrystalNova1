@@ -270,8 +270,8 @@ PokemaniacShaneSeenText:
 	line "place! Get lost,"
 	cont "you outsider!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, I know I'm"
 	line "just standing out"
@@ -280,8 +280,8 @@ PokemaniacShaneSeenText:
 	line "very public route."
 	cont "What's your point?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "It is too my"
 	line "secret place!"
@@ -307,8 +307,8 @@ PokemaniacShaneAfterBattleText:
 	para "May I please see"
 	line "it. Please?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Aww... first you"
 	line "find my secret"

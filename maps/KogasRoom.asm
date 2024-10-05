@@ -124,8 +124,8 @@ KogaScript_KogaBeforeText:
 	line "I brought death to"
 	cont "anyone I saw fit."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Of course I don't"
 	line "feel any remorse."

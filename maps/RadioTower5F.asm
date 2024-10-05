@@ -218,8 +218,8 @@ FakeDirectorTextBefore2:
 	line "never saw it com-"
 	cont "ing."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 	
 	para "The real DIRECTOR"
 	line "is running an"
@@ -238,8 +238,8 @@ FakeDirectorTextBefore2:
 	line "We've got nothing"
 	cont "to show for it!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Sure, I'll tell"
 	line "you where he is."
@@ -371,22 +371,22 @@ RadioTower5FRocketBossAfterText:
 	line "hope of a free"
 	cont "JOHTO."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Rebuild!? we can"
 	line "never rebuild under"
 	cont "KANTO's boot."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You... you what?"
 	line "You found the"
 	cont "ARCHIVES!?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I see. The shades"
 	line "of those lost in"
@@ -396,8 +396,8 @@ RadioTower5FRocketBossAfterText:
 	line "their families,"
 	cont "not of revenge."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Perhaps we were"
 	line "wrong."
@@ -489,8 +489,8 @@ RadioTower5FDirectorText:
 	para "Good to see you"
 	line "again."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh, I'm well."
 	line "just got back from"
@@ -515,8 +515,8 @@ BenText:
 	text "BEN: Do you listen"
 	line "to our music?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Well, you should."
 	done

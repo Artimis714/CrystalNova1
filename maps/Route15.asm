@@ -167,8 +167,8 @@ SchoolboyJohnnySeenText:
 	para "It's for social"
 	line "studies."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Of course there"
 	line "are ghosts!"
@@ -204,8 +204,8 @@ SchoolboyBillyAfterBattleText:
 	line "best! Like no one"
 	cont "ever was!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Huh... that's a"
 	line "good point."
@@ -228,8 +228,8 @@ SchoolboyBillyAfterBattleText:
 	para "Isn't a subject"
 	line "in school."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah, screw this"
 	line "I'm traveling to"

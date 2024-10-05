@@ -11,7 +11,7 @@ VermilionGym_MapScripts:
 	def_callbacks
 
 VermilionGymSurgeScript:
-	faceplayer"<……> <……> <……>"
+	faceplayer
 	opentext
 	checkflag ENGINE_THUNDERBADGE
 	iftrue .FightDone
@@ -130,8 +130,8 @@ LtSurgeIntroText:
 	text "SURGE: Hey, you"
 	line "little tyke!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "A challenger from"
 	line "JOHTO? AHAHA!"
@@ -208,14 +208,14 @@ LtSurgeFightDoneText:
 	para "Well, I ain't got"
 	line "nothin on her!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No, she's still"
 	line "in 'MURICA!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Sorry for my war"
 	line "crimes?"
@@ -233,8 +233,8 @@ LtSurgeFightDoneText:
 	line "KANTO commits"
 	cont "them."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Who the hell told"
 	line "you that war was"
@@ -286,14 +286,14 @@ GuitaristVincentAfterBattleText:
 	para "FALKNER's march on"
 	line "Route 36!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No, I mean FALKER"
 	line "senior."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, landmines are"
 	line "a bad strategy"
@@ -368,8 +368,8 @@ JugglerHortonScrewThisText:
 	text "What do you want"
 	line "kid?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You... you met"
 	line "my brother?"
@@ -377,8 +377,8 @@ JugglerHortonScrewThisText:
 	para "What happened to"
 	line "him?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Shit..."
 	line "I knew it. SURGE"
@@ -387,8 +387,8 @@ JugglerHortonScrewThisText:
 	line "been happy about"
 	cont "that."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "It takes guts to"
 	line "come back here."
@@ -399,8 +399,8 @@ JugglerHortonScrewThisText:
 	para "Yeah, screw this"
 	line "I'm gonna quit."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah on my next"
 	line "lunch break, I"

@@ -186,8 +186,8 @@ EcruteakTinTowerEntranceSageText_NoClearBell:
 	line "but I must ask you"
 	cont "to leave."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, I'm aware you"
 	line "have the FOG BADGE"
@@ -208,7 +208,7 @@ EcruteakTinTowerEntranceSageText_HearsClearBell:
 	line "but I must ask you"
 	cont "to leave."
 
-	para "<……><……><……>"
+	para "..."
 
 	para "Ah!"
 
@@ -226,8 +226,8 @@ EcruteakTinTowerEntranceSageText_HearsClearBell:
 	para "Wherever did you?"
 	line "come across it?"
 
-	para "<……> <……> <……>" 
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You... you met"
 	line "the shades of the"
@@ -236,8 +236,8 @@ EcruteakTinTowerEntranceSageText_HearsClearBell:
 	line "perished in the"
 	cont "ARCHIVES!?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "How remarkable."
 	line "As you know, I've"

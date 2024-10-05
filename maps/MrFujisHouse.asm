@@ -102,8 +102,8 @@ MrFujisHouseBookshelf:
 	jumpstd DifficultBookshelfScript
 
 SecretsofMewTwoText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "MR FUJI: You met"
 	line "SERENITY's shade?"
@@ -117,8 +117,8 @@ SecretsofMewTwoText:
 	para "Have you heard of"
 	line "MEW?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "MR FUJI: The ance-"
 	line "stor of all #-"
@@ -140,8 +140,8 @@ SecretsofMewTwoText:
 	para "to ask if we"
 	line "should!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "MR FUJI: The goal"
 	line "was to bring back"
@@ -175,8 +175,8 @@ SecretsofMewTwoText:
 	line "stronger, more"
 	cont "ruthless #MON."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "MR FUJI: Yes,"
 	line "SABRINA's MEWTWO"
@@ -240,8 +240,8 @@ SecretsofMewTwoText:
 	done
 	
 ComebackwhenyouKnowText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "MR FUJI: You met"
 	line "SERENITY's shade?"
@@ -256,8 +256,8 @@ ComebackwhenyouKnowText:
 	line "SAFFRON's leader"
 	cont "SABRINA?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "MR FUJI: If you"
 	line "can best her,"
@@ -286,8 +286,8 @@ MrFujisHouseSuperNerdText:
 	para "So many people"
 	line "lost so much."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "MR FUJI: From your"
 	line "accent, I can tell"
@@ -299,8 +299,8 @@ MrFujisHouseSuperNerdText:
 	line "JOHTO was criminal"
 	cont "But money talks."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+ 	para "..."
+	line "..."
 
 	para "Once upon a time I"
 	line "worked on CINNABAR"
@@ -331,8 +331,8 @@ MrFujisHouseLassText:
 MrFujiDeadText:
 	text "(sobbing)"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "She came out of"
 	line "nowhere!"

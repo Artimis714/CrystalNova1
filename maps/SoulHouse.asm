@@ -105,14 +105,14 @@ BeautySerenityGhostAfterBattleText:
 	line "baby RORY. How"
 	cont "could this happen?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You've met OPAL?"
 	line "OPAL is alive!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Stole your KANTO"
 	line "PAPERS?"
@@ -126,15 +126,15 @@ BeautySerenityGhostAfterBattleText:
 	para "tattle on my"
 	line "daughter?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Sounds to me, like"
 	line "you're doing exact-"
 	cont "ly that!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, her documents"
 	line "would've been lost"
@@ -142,8 +142,8 @@ BeautySerenityGhostAfterBattleText:
 	para "in the fire that"
 	line "killed RORY and I."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I want the best"
 	line "for my girl."
@@ -178,8 +178,8 @@ BeautySerenityGhostAfterBattleText:
 	line "lost to that"
 	cont "senseless war!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I worked for DR"
 	line "FUJI for years."
@@ -214,8 +214,8 @@ SwimmerFKikiGhostAfterBattleText:
 	line "CINNABAR VOLCANO"
 	cont "erupted."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah, I know."
 	line "I never wanted the"
@@ -257,8 +257,8 @@ LassRoryGhostAfterBattleText:
 	line "here in the RADIO"
 	cont "TOWER."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah that was a"
 	line "long time ago."
@@ -273,8 +273,8 @@ LassRoryGhostAfterBattleText:
 	line "unteer with MR"
 	cont "FUJI."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Our house was hit"
 	line "towards the end of"
@@ -330,8 +330,8 @@ FirebreatherAzarGhostAfterBattleText:
 	line "was part of RED's"
 	cont "HISTORY CORPS."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "We were glorified"
 	line "tomb raiders."
@@ -339,8 +339,8 @@ FirebreatherAzarGhostAfterBattleText:
 	para "But my grandpa was"
 	line "proud of me."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "If he's still"
 	line "alive, he'd be in"

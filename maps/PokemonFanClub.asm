@@ -216,15 +216,15 @@ PokemonFanClubBraggingSign:
 	jumptext PokemonFanClubBraggingSignText
 
 BossTryingToRescueUsText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Huh?"
 	line "Kid are you talkin"
 	cont "to me?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Shit! No kidding?"
 	line "You met ROSCO?"
@@ -243,8 +243,8 @@ BossTryingToRescueUsText:
 	para "for a jailbreak!"
 	line "What's the plan?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmmm... yeah, I"
 	line "get it."
@@ -279,21 +279,21 @@ PokemonFanClubReceptionistText:
 	text "So Kid what are"
 	line "you in here for?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Risky sneaking in"
 	line "here like that!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Me? Well my crew"
 	line "are responsible"
 	cont "for CINNIBAR."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "About 20,000"
 	line "civilians died."
@@ -338,8 +338,8 @@ PokemonFanClubClefairyGuyMakingDoWithADollIFoundText:
 	done
 
 PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Oh, really? You've"
 	line "met COPYCAT?"
@@ -347,15 +347,15 @@ PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
 	para "How's my brilliant"
 	line "baby girl doing?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I wish she could"
 	line "visit, but it's"
 	cont "too risky."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I know, can you"
 	line "please take her"
@@ -363,15 +363,15 @@ PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
 	para "CLEFAIRY back to"
 	line "her?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "CINNIBAR?"
 	line "Yes, that was my"
 	cont "idea."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I know. (Sigh)"
 	line "I'm not going to"
@@ -390,8 +390,8 @@ PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
 	line "cares about what's"
 	cont "right."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I know the judge-"
 	line "ment the FOREST"
@@ -419,8 +419,8 @@ PokemonFanClubPlayerReceivedDollText:
 	para "Maybe, I don't"
 	line "deserve it."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, I think you"
 	line "have a point."
@@ -442,8 +442,8 @@ PokemonFanClubClefairyGuyIUnderstandText:
 	done
 
 PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "I see, so ROSCO"
 	line "is working on"
@@ -451,15 +451,15 @@ PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
 	para "a way to get"
 	line "us out."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I won't go, if"
 	line "the others are"
 	cont "freed."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I would love to"
 	line "see my girl again"
@@ -470,8 +470,8 @@ PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
 	done
 
 PokemonFanClubClefairyGuyIStayedText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Yeah, I'm the last"
 	line "one in here."
@@ -504,8 +504,8 @@ PokemonFanClubClefairyGuyProudofDaughterText:
 	para "#DOLL to my"
 	line "COPYCAT?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "That means so"
 	line "much for me to"

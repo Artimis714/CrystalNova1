@@ -95,8 +95,8 @@ VermilionPokeCentreCallAuthoritiestext:
 	line "proof of KANTO"
 	cont "CITIZENSHIP."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "You're from JOHTO!"
 	line "... SECURITY!"
@@ -127,8 +127,8 @@ VermilionPokecenter1FFishingGuruText_FoughtSnorlax:
 	para "But it seems to"
 	line "have disappeared."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Really? that was"
 	line "you?"
@@ -150,8 +150,8 @@ VermilionPokecenter1FBugCatcherText:
 	line "BADGES I've never"
 	cont "seen before."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh... you're from"
 	line "JOHTO, should you"

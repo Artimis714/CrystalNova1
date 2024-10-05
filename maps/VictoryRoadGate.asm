@@ -71,8 +71,8 @@ VictoryRoadGateNotEnoughBadgesText:
 	line "You have no"
 	cont "business here."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes, a JOHTO"
 	line "resident who"
@@ -99,8 +99,8 @@ VictoryRoadGateEightBadgesText:
 	line "You have no"
 	cont "business here."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Hmmm... I see"
 	line "You've somehow"
@@ -131,8 +131,8 @@ VictoryRoadGateLeftBlackBeltText:
 	text "This way leads to"
 	line "MT.SILVER."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yes superstitious"
 	line "folk in JOHTO"
