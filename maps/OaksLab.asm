@@ -11,15 +11,20 @@ OaksLab_MapScripts:
 Oak:
 	faceplayer
 	opentext
+	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
+	iftrue .CheckKantoPapers
+	checkitem KANTO_PAPERS
+	iffalse .MaybeWeCanDoSomething
+	writetext OakWelcomeKantoText
+	promptbutton
+	setevent EVENT_TALKED_TO_OAK_IN_KANTO
+.CheckKantoPapers:
 	checkitem KANTO_PAPERS
 	iffalse .MaybeWeCanDoSomething
 	checkevent EVENT_OPENED_MT_SILVER
 	iftrue .CheckPokedex
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
 	iftrue .CheckBadges
-	writetext OakWelcomeKantoText
-	promptbutton
-	setevent EVENT_TALKED_TO_OAK_IN_KANTO
 .CheckBadges:
 	readvar VAR_BADGES
 	ifequal NUM_BADGES, .OpenMtSilver
@@ -39,17 +44,23 @@ Oak:
 	writetext OakOpenMtSilverText
 	promptbutton
 	setevent EVENT_OPENED_MT_SILVER
-	sjump .CheckPokedex
+	checkitem KANTO_PAPERS
+	iftrue .CheckPokedex
+	end
 
 .Complain:
 	writetext OakNoKantoBadgesText
 	promptbutton
-	sjump .CheckPokedex
+	checkitem KANTO_PAPERS
+	iftrue .CheckPokedex
+	end
 
 .AhGood:
 	writetext OakYesKantoBadgesText
 	promptbutton
-	sjump .CheckPokedex
+	checkitem KANTO_PAPERS
+	iftrue .CheckPokedex
+	end
 
 .MaybeWeCanDoSomething:
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
@@ -70,13 +81,11 @@ Oak:
 	ifgreater 49, .ElmShouldBeFired
 	readvar VAR_DEXCAUGHT
 	ifless 50, .ImAshamedToCallyouATrainer
-	sjump .CheckPokedex
+	end
 
 .WillGiveNewKantoPapers
 	writetext WillGiveNewKantoPapers
 	verbosegiveitem KANTO_PAPERS
-	checkevent EVENT_OPENED_MT_SILVER
-	iffalse .CheckBadges
 	waitbutton
 	closetext
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
@@ -85,8 +94,6 @@ Oak:
 
 .FundingGoneToElm:
 	writetext FundingGoneToElm
-	checkevent EVENT_OPENED_MT_SILVER
-	iffalse .CheckBadges
 	waitbutton
 	closetext
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
@@ -95,8 +102,6 @@ Oak:
 
 .MoreWorkRequired:
 	writetext MoreWorkRequiredText
-	checkevent EVENT_OPENED_MT_SILVER
-	iffalse .CheckBadges
 	waitbutton
 	closetext
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
@@ -105,8 +110,6 @@ Oak:
 
 .ElmShouldBeFired:
 	writetext ElmShouldBeFiredText
-	checkevent EVENT_OPENED_MT_SILVER
-	iffalse .CheckBadges
 	waitbutton
 	closetext
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
@@ -115,8 +118,6 @@ Oak:
 
 .ImAshamedToCallyouATrainer:
 	writetext ImAshamedToCallyouATrainerText
-	checkevent EVENT_OPENED_MT_SILVER
-	iffalse .CheckBadges
 	waitbutton
 	closetext
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
@@ -146,14 +147,26 @@ OaksLabTrashcan:
 	jumptext OaksLabTrashcanText
 
 OaksLabPC:
-	jumptext OaksLabPCText
+	opentext
+	readvar VAR_DEXCAUGHT
+	ifgreater 150, .elmfundingemail
+	writetext OaksLabPCText
+	waitbutton
+	closetext
+	end
+
+.elmfundingemail:
+	writetext OaksLabPCText2
+	closetext
+	end
+
 
 WelcomeToKantoUnderBadText:
 	text "OAK: Ah, <PLAY_G>!"
 	line "Welcome to KANTO!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh No, someone"
 	line "stole your KANTO"
@@ -192,8 +205,8 @@ WillGiveNewKantoPapers:
 	line "some KANTO PAPERS"
 	cont "for you."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Of course I can"
 	line "just make them."
@@ -434,8 +447,8 @@ OaksAssistant3Text:
 	para "#MON TALK isn't"
 	line "a live broadcast."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Yeah really, they"
 	line "record a month's"
@@ -483,6 +496,26 @@ OaksLabPCText:
 	para "Surely that must"
 	line "bode well for my"
 	cont "application."
+
+	para "ELM in NEW BARK"
+	line "TOWN"
+	done
+
+OaksLabPCText2:
+	text "There's an e-mail"
+	line "message on the PC."
+
+	para "PROF.OAK, Thank"
+	line "you for putting"
+
+	para "in my grant app-"
+	line "lication. We've"
+
+	para "been able to"
+	line "hire a new aid!"
+
+	para "Things are looking"
+	line "up!"
 
 	para "ELM in NEW BARK"
 	line "TOWN"
