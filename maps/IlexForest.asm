@@ -10,6 +10,7 @@
 	const ILEXFOREST_POKE_BALL2
 	const ILEXFOREST_POKE_BALL3
 	const ILEXFOREST_POKE_BALL4
+	const ILEXFOREST_BUGSY
 
 IlexForest_MapScripts:
 	def_scene_scripts
@@ -360,6 +361,7 @@ IlexForestCharcoalMasterScript:
 	clearevent EVENT_CHARCOAL_KILN_FARFETCH_D
 	clearevent EVENT_CHARCOAL_KILN_APPRENTICE
 	clearevent EVENT_CHARCOAL_KILN_BOSS
+	clearevent EVENT_BEAT_BUGSY
 	end
 
 .AlreadyGotCut:
@@ -407,10 +409,10 @@ IlexForestXAttack:
 	itemball X_ATTACK
 
 IlexForestAntidote:
-	itemball LOVE_BALL
+	itemball LOVE_BALL, 4
 
 IlexForestEther:
-	itemball ETHER
+	itemball ETHER, 2
 
 IlexForestHiddenEther:
 	hiddenitem MAX_ELIXER, EVENT_ILEX_FOREST_HIDDEN_ETHER
@@ -423,6 +425,36 @@ IlexForestHiddenFullHeal:
 
 IlexForestSignpost:
 	jumptext IlexForestSignpostText
+
+IlexBugsyScript:
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_BUGSY
+	iftrue .FightDone
+	writetext OhYouMustBePlayerText
+	waitbutton
+	winlosstext ResearchIncomplete, 0
+	loadtrainer BUGSY, BUGSY1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_BUGSY
+	setflag ENGINE_HIVEBADGE
+	loadmem wLevelCap, 27
+	opentext
+	writetext playerrecdHivebadgeText
+	promptbutton
+	giveitem TM_FURY_CUTTER
+	writetext bugsyfurycutterspeechtext
+	waitbutton
+	closetext
+	end
+
+.FightDone:
+	writetext bugsyfurycutterspeechtext
+	waitbutton
+	closetext
+	end
+	
 
 IlexForestShrineScript:
 	checkevent EVENT_FOREST_IS_RESTLESS
@@ -733,6 +765,125 @@ IlexForestPlayerStepsDownMovement:
 	remove_fixed_facing
 	step_end
 
+OhYouMustBePlayerText:
+	text "..."
+	line "..."
+
+	para "I heard a kid"
+	line "dealt with the"
+
+	para "rebels infesting"
+	line "our town."
+	cont "Was that you?"
+
+	para "..."
+	line "..."
+
+	para "Impressive, sounds"
+	line "like the stories I"
+
+	para "was told about"
+	line "GENERAL RED, when"
+	cont "I was little."
+
+	para "..."
+	line "..."
+
+	para "Oh, I'm from KANTO"
+	line "originally. I grew"
+
+	para "up catching bugs"
+	line "in VIRIDIAN"
+	cont "FOREST."
+
+	para "It's a shame the"
+	line "FOREST didn't"
+	cont "survive the war."
+
+	para "ILEX is a special"
+	line "place. No matter,"
+
+	para "what KANTO did,"
+	line "they couldn't harm"
+	cont "these woods."
+
+	para "It makes me think"
+	line "there might be"
+
+	para "something to the"
+	line "myth of the great"
+	cont "FOREST PROTECTOR."
+
+	para "..."
+	line "..."
+
+	para "You're challenging"
+	line "me for a Badge?"
+
+	para "Bring it."
+	done
+
+ResearchIncomplete:
+	text "It seems I need to"
+	line "do more research."
+	done
+
+playerrecdHivebadgeText:
+	text "<PLAYER>"
+	line "received the"
+	cont "HIVE BADGE!"
+	done
+
+bugsyfurycutterspeechtext:
+	text "Well deserved!"
+	line "Your battle style"
+	cont "is incredible!"
+
+	para "..."
+	line "..."
+
+	para "Ahh, you're part"
+	line "of PROF.ELM's"
+	cont "team."
+
+	para "Well then you'll"
+	line "appreciate this."
+
+	para "It's the TM for"
+	line "FURY CUTTER."
+	
+	para "..."
+	line "..."
+
+	para "Yes it is a weaker"
+	line "bug type move than"
+
+	para "CUT, which can be"
+	line "taught an infinite"
+	cont "number of times."
+
+	para "..."
+	line "..."
+
+	para "Are you saying my"
+	line "signature move is"
+	cont "bad?"
+
+	para "..."
+	line "..."
+
+	para "Well does CUT get"
+	line "stronger with each"
+	cont "hit?"
+
+	para "..."
+	line "..."
+
+	para "Hmm... maybe I"
+	line "need a better"
+	cont "signature move."
+	done
+
 IlexForestApprenticeIntroText:
 	text "Oh, man… My boss"
 	line "is going to be"
@@ -857,8 +1008,15 @@ Text_IlexForestShrine:
 	line "SHRINE…"
 
 	para "It's in honor of"
-	line "the forest's"
-	cont "protector…"
+	line "the FOREST"
+	cont "PROTECTOR."
+
+	para "It's covered with"
+	line "flowers, all of"
+
+	para "which seem to be"
+	line "offerings to the"
+	cont "FOREST PROTECTOR."
 	done
 
 Text_ShrineCelebiEvent:
@@ -887,23 +1045,60 @@ Text_InsertGSBall:
 	done
 
 Text_KurtCaughtCelebi:
-	text "Whew, wasn't that"
-	line "something!"
+	text "During the war,"
+	line "the KANTO soldiers"
+	
+	para "occupying our town"
+	line "would've done just"
 
-	para "<PLAYER>, that was"
-	line "fantastic. Thanks!"
+	para "about anything to"
+	line "have had that"
+	cont "opportunity."
 
-	para "The legends about"
-	line "that SHRINE were"
-	cont "real after all."
+	para "..."
+	line "..."
 
-	para "I feel inspired by"
-	line "what I just saw."
+	para "In the wrong hands"
+	line "a trainer managing"
 
-	para "It motivates me to"
-	line "make better BALLS!"
+	para "to capture the"
+	line "FOREST PROTECTOR,"
 
-	para "I'm going!"
+	para "would reap dest-"
+	line "ruction upon the"
+	cont "land."
+
+	para "In anyone else's"
+	line "hands, this would"
+
+	para "be a day darker"
+	line "for JHOTO than any"
+	cont "during the war!"
+
+	para "In your hands..."
+	line "I trust you'll do"
+
+	para "right by JHOTO's"
+	line "most sacred #-"
+	cont "MON."
+
+	para "..."
+	line "..."
+
+	para "You're welcome."
+	line "Just promise me"
+
+	para "that when it is"
+	line "your turn to pass"
+
+	para "into CELEBI's"
+	line "embrace. Please"
+
+	para "release it, so"
+	line "that its power"
+
+	para "cannot fall in"
+	line "the wrong hands."
 	done
 
 BugCatcherWayneSeenText:
@@ -954,10 +1149,11 @@ IlexForest_MapEvents:
 	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IlexForestCharcoalApprenticeScript, EVENT_ILEX_FOREST_APPRENTICE
 	object_event  5, 28, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IlexForestCharcoalMasterScript, EVENT_ILEX_FOREST_CHARCOAL_MASTER
 	object_event 15, 14, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IlexForestHeadbuttGuyScript, -1
-	object_event 20, 32, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestRevive, EVENT_ILEX_FOREST_REVIVE
+	object_event 20, 32, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_ITEMBALL, 0, IlexForestRevive, EVENT_ILEX_FOREST_REVIVE
 	object_event  8, 29, SPRITE_KURT, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ILEX_FOREST_KURT
 	object_event  3, 24, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IlexForestLassScript, EVENT_ILEX_FOREST_LASS
 	object_event 12,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerBugCatcherWayne, -1
 	object_event  9, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestXAttack, EVENT_ILEX_FOREST_X_ATTACK
 	object_event 17,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestAntidote, EVENT_ILEX_FOREST_ANTIDOTE
 	object_event 27,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestEther, EVENT_ILEX_FOREST_ETHER
+	object_event 26, 22, SPRITE_BUGSY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IlexBugsyScript, EVENT_BEAT_BUGSY

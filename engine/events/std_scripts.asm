@@ -627,6 +627,7 @@ InitializeEventsScript:
 	setevent EVENT_BEAT_CITY_POLICE_CINNABAR
 	setevent EVENT_BEAT_CITY_POLICE_CERULEAN
 	setevent EVENT_SPOKE_WITH_ARCHAEO_LASS2
+	setevent EVENT_BEAT_BUGSY
 	setevent EVENT_INITIALIZED_EVENTS
 	callasm .mystery_gift_flag
 	endcallback
