@@ -7,4 +7,4 @@
 
 	page "born of the great"
 	next "war between KANTO"
-	next "and JHOTO.@"
+	next "and JOHTO.@"
