@@ -202,7 +202,7 @@ SeeProofofCitizenship::
 	line "..."
 
 	para "I see. As a"
-	line "JHOTO CITIZEN"
+	line "JOHTO CITIZEN"
 
 	para "There is a daily"
 	line "charge to heal"
@@ -864,7 +864,7 @@ OhHeyDerKiddoText::
 	para "..."
 	line "..."
 
-	para "From JHOTO!!!"
+	para "From JOHTO!!!"
 	done
 
 ImCallingtheCopsDerEh::
@@ -877,95 +877,11 @@ ImCallingtheCopsDerEh::
 
 GetAwayFromMeEhText::
 	text "Listen you little"
-	line "JHOTO brat!"
+	line "JOHTO brat!"
 
 	para "I've called the"
 	line "cops!"
 
 	para "They're gonna be"
 	line "here any minute!"
-	done
-
-IndigoNoNoText::
-	text "Welcome to the"
-	line "#MON LEAGUE."
-
-	para "May I see your"
-	line "proof of KANTO"
-	cont "CITIZENSHIP."
-
-	para "..."
-	line "..."
-
-	para "I'm sorry, but"
-	line "due to a security"
-
-	para "breach, we're"
-	line "unable to offer"
-
-	para "#MON CENTER"
-	line "services to any"
-
-	para "trainer who is"
-	line "unable to show"
-
-	para "proof of KANTO"
-	line "CITIZENSHIP."
-
-	para "..."
-	line "..."
-
-	para "Yes as a JHOTO"
-	line "resident you're"
-
-	para "still allowed"
-	line "to compete in"
-
-	para "the league as"
-	line "you have all 8"
-	cont "JHOTO BADGES."
-	done
-
-PlateauRivalText2::
-	text "…Darn… I still"
-	line "can't win…"
-
-	para "I… I have to think"
-	line "more about my"
-	cont "#MON…"
-
-	para "Humph! Try not to"
-	line "lose!"
-	done
-
-PlateauRivalText1::
-	text "Hold it."
-
-	para "You're going to"
-	line "take the #MON"
-
-	para "LEAGUE challenge"
-	line "now?"
-
-	para "That's not going"
-	line "to happen."
-
-	para "My super-well-"
-	line "trained #MON"
-
-	para "are going to pound"
-	line "you."
-
-	para "<PLAYER>!"
-	line "I challenge you!"
-	done
-
-PlateauRivalLoseText::
-	text "…"
-
-	para "Whew…"
-	line "With my partners,"
-
-	para "I'm going to be"
-	line "the CHAMPION!"
 	done

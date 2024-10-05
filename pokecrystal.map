@@ -6953,7 +6953,7 @@ ROMX bank #10:
 	SECTION: $60d2-$63a1 ($02d0 bytes) ["Trainer Backpics"]
 	         $60d2 = ChrisBackpic
 	         $6262 = DudeBackpic
-	SECTION: $63a2-$7f5b ($1bba bytes) ["Text 4"]
+	SECTION: $63a2-$7cda ($1939 bytes) ["Text 4"]
 	         $63a2 = KantoOfficerHaveaNiceDay
 	         $6477 = MyMistakeText
 	         $661e = KantoOfficerStopRightThere
@@ -7003,12 +7003,8 @@ ROMX bank #10:
 	         $7c1a = OhHeyDerKiddoText
 	         $7c54 = ImCallingtheCopsDerEh
 	         $7c86 = GetAwayFromMeEhText
-	         $7cdb = IndigoNoNoText
-	         $7e2b = PlateauRivalText2
-	         $7e84 = PlateauRivalText1
-	         $7f24 = PlateauRivalLoseText
-	EMPTY: $7f5c-$7fff ($00a4 bytes)
-	TOTAL EMPTY: $00a4 bytes
+	EMPTY: $7cdb-$7fff ($0325 bytes)
+	TOTAL EMPTY: $0325 bytes
 
 ROMX bank #11:
 	SECTION: $4000-$74fe ($34ff bytes) ["bankB"]
@@ -10427,7 +10423,7 @@ ROMX bank #17:
 	         $49cc = MailboxPC.TopMenuData
 	         $49dc = MailboxPC.SubMenuHeader
 	         $49e4 = MailboxPC.SubMenuData
-	SECTION: $4a0f-$7c85 ($3277 bytes) ["Map Scripts 26"]
+	SECTION: $4a0f-$7b31 ($3123 bytes) ["Map Scripts 26"]
 	         $4a0f = OaksLab_MapScripts
 	         $4a11 = Oak
 	         $4a2b = Oak.CheckBadges
@@ -10548,55 +10544,48 @@ ROMX bank #17:
 	         $72b8 = IndigoPlateauPokecenter1FNurseScript
 	         $72c1 = IndigoPlateauPokecenter1FNurseScript.NoCanHeal
 	         $72cd = IndigoPlateauPokecenter1FNurseScript.ProceedNormally
-	         $72d3 = IndigoPlateauPokecenter1FClerkScript
-	         $72da = IndigoPlateauPokecenter1FCooltrainerMScript
-	         $72dd = TeleportGuyScript
-	         $72f8 = TeleportGuyScript.No
-	         $72fe = AbraScript
-	         $7308 = PlateauRivalMovement1
-	         $730f = PlateauRivalMovement2
-	         $7316 = PlateauRivalLeavesMovement
-	         $731c = IndigoPlateauPokecenter1FCooltrainerMText
-	         $7399 = PlateauRivalText1
-	         $7439 = PlateauRivalWinText
-	         $7448 = PlateauRivalText2
-	         $74a1 = IndigoNoNoText
-	         $75f1 = PlateauRivalLoseText
-	         $7629 = TeleportGuyText1
-	         $76db = TeleportGuyYesText
-	         $7705 = TeleportGuyNoText
-	         $7727 = AbraText
-	         $7735 = IndigoPlateauPokecenter1F_MapEvents
-	         $77ad = Route19_MapScripts
-	         $77b2 = Route19ClearRocksCallback
-	         $77d0 = Route19ClearRocksCallback.Done
-	         $77d1 = TrainerSwimmerfDawn
-	         $77dd = TrainerSwimmerfDawn.Script
-	         $77e5 = TrainerSwimmermHarold
-	         $77f1 = TrainerSwimmermHarold.Script
-	         $77f9 = TrainerSwimmermJerome
-	         $7805 = TrainerSwimmermJerome.Script
-	         $780d = TrainerSwimmermTucker
-	         $7819 = TrainerSwimmermTucker.Script
-	         $7821 = Route19Sign
-	         $7824 = CarefulSwimmingSign
-	         $7827 = SwimmermHaroldSeenText
-	         $7859 = SwimmermHaroldBeatenText
-	         $7860 = SwimmermHaroldAfterBattleText
-	         $791b = SwimmermTuckerSeenText
-	         $794e = SwimmermTuckerBeatenText
-	         $795c = SwimmermTuckerAfterBattleText
-	         $79cb = SwimmerfDawnSeenText
-	         $7a11 = SwimmerfDawnBeatenText
-	         $7a30 = SwimmerfDawnAfterBattleText
-	         $7aec = SwimmermJeromeSeenText
-	         $7b7f = SwimmermJeromeBeatenText
-	         $7b97 = SwimmermJeromeAfterBattleText
-	         $7bc8 = Route19SignText
-	         $7bf1 = CarefulSwimmingSignText
-	         $7c3d = Route19_MapEvents
-	EMPTY: $7c86-$7fff ($037a bytes)
-	TOTAL EMPTY: $037a bytes
+	         $72d0 = IndigoPlateauPokecenter1FClerkScript
+	         $72d7 = IndigoPlateauPokecenter1FCooltrainerMScript
+	         $72da = PlateauRivalMovement1
+	         $72e1 = PlateauRivalMovement2
+	         $72e8 = PlateauRivalLeavesMovement
+	         $72ee = IndigoPlateauPokecenter1FCooltrainerMText
+	         $736b = PlateauRivalWinText
+	         $737a = IndigoNoNoText
+	         $74ca = PlateauRivalText2
+	         $7523 = PlateauRivalText1
+	         $75c3 = PlateauRivalLoseText
+	         $75fb = IndigoPlateauPokecenter1F_MapEvents
+	         $7659 = Route19_MapScripts
+	         $765e = Route19ClearRocksCallback
+	         $767c = Route19ClearRocksCallback.Done
+	         $767d = TrainerSwimmerfDawn
+	         $7689 = TrainerSwimmerfDawn.Script
+	         $7691 = TrainerSwimmermHarold
+	         $769d = TrainerSwimmermHarold.Script
+	         $76a5 = TrainerSwimmermJerome
+	         $76b1 = TrainerSwimmermJerome.Script
+	         $76b9 = TrainerSwimmermTucker
+	         $76c5 = TrainerSwimmermTucker.Script
+	         $76cd = Route19Sign
+	         $76d0 = CarefulSwimmingSign
+	         $76d3 = SwimmermHaroldSeenText
+	         $7705 = SwimmermHaroldBeatenText
+	         $770c = SwimmermHaroldAfterBattleText
+	         $77c7 = SwimmermTuckerSeenText
+	         $77fa = SwimmermTuckerBeatenText
+	         $7808 = SwimmermTuckerAfterBattleText
+	         $7877 = SwimmerfDawnSeenText
+	         $78bd = SwimmerfDawnBeatenText
+	         $78dc = SwimmerfDawnAfterBattleText
+	         $7998 = SwimmermJeromeSeenText
+	         $7a2b = SwimmermJeromeBeatenText
+	         $7a43 = SwimmermJeromeAfterBattleText
+	         $7a74 = Route19SignText
+	         $7a9d = CarefulSwimmingSignText
+	         $7ae9 = Route19_MapEvents
+	EMPTY: $7b32-$7fff ($04ce bytes)
+	TOTAL EMPTY: $04ce bytes
 
 ROMX bank #18:
 	SECTION: $4000-$6e67 ($2e68 bytes) ["Crystal Features 1"]
@@ -60348,7 +60337,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1783435 bytes used / 297333 free in 127 banks
+	ROMX: 1782454 bytes used / 298314 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks
