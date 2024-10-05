@@ -10423,7 +10423,7 @@ ROMX bank #17:
 	         $49cc = MailboxPC.TopMenuData
 	         $49dc = MailboxPC.SubMenuHeader
 	         $49e4 = MailboxPC.SubMenuData
-	SECTION: $4a0f-$7b31 ($3123 bytes) ["Map Scripts 26"]
+	SECTION: $4a0f-$7af9 ($30eb bytes) ["Map Scripts 26"]
 	         $4a0f = OaksLab_MapScripts
 	         $4a11 = Oak
 	         $4a2b = Oak.CheckBadges
@@ -10513,79 +10513,79 @@ ROMX bank #17:
 	         $616b = PowerPlantOfficer1ApproachGymGuide2Movement
 	         $6170 = PowerPlantOfficer1ReturnToPostMovement
 	         $6176 = PowerPlantOfficer1AThiefBrokeInText
-	         $62a7 = PowerPlantOfficer1CeruleanShadyCharacterText
-	         $6420 = PowerPlantOfficer1CouldIAskForYourCooperationText
-	         $649a = PowerPlantOfficer1HaveToBeefUpSecurityText
-	         $64d4 = PowerPlantGymGuide1SomeoneStoleAPartText
-	         $660a = PowerPlantGymGuide1GeneratorUpAndRunningText
-	         $66bf = PowerPlantGymGuide2PowerPlantUpAndRunningText
-	         $681e = PowerPlantGymGuide2GeneratorIsRunningAgainText
-	         $68a3 = PowerPlantOfficer2ManagerHasBeenSadAndFuriousText
-	         $693a = PowerPlantOfficer2ManagerHasBeenCheerfulText
-	         $699d = PowerPlantGymGuide4MagnetTrainConsumesElectricityText
-	         $6a00 = PowerPlantGymGuide4WeCanGetMagnetTrainRunningText
-	         $6a5c = PowerPlantManagerWhoWouldRuinMyGeneratorText
-	         $6c73 = PowerPlantManagerIWontForgiveCulpritText
-	         $6cee = PowerPlantManagerThatsThePartText
-	         $6f0f = PowerPlantManagerTakeThisTMText
-	         $6f8c = PowerPlantManagerTM07IsZapCannonText
-	         $703d = PowerPlantManagerMyBelovedGeneratorText
-	         $710f = PowerPlant_MapEvents
-	         $718c = IndigoPlateauPokecenter1F_MapScripts
-	         $7195 = IndigoPlateauPokecenter1FNoopScene
-	         $7196 = IndigoPlateauPokecenter1FPrepareElite4Callback
-	         $71df = PlateauRivalBattle1
-	         $7220 = PlateauRivalBattle2
-	         $725a = PlateauRivalBattleCommon
-	         $727f = PlateauRivalBattleCommon.Totodile
-	         $728f = PlateauRivalBattleCommon.Chikorita
-	         $729f = PlateauRivalPostBattle
-	         $72b7 = PlateauRivalScriptDone
-	         $72b8 = IndigoPlateauPokecenter1FNurseScript
-	         $72c1 = IndigoPlateauPokecenter1FNurseScript.NoCanHeal
-	         $72cd = IndigoPlateauPokecenter1FNurseScript.ProceedNormally
-	         $72d0 = IndigoPlateauPokecenter1FClerkScript
-	         $72d7 = IndigoPlateauPokecenter1FCooltrainerMScript
-	         $72da = PlateauRivalMovement1
-	         $72e1 = PlateauRivalMovement2
-	         $72e8 = PlateauRivalLeavesMovement
-	         $72ee = IndigoPlateauPokecenter1FCooltrainerMText
-	         $736b = PlateauRivalWinText
-	         $737a = IndigoNoNoText
-	         $74ca = PlateauRivalText2
-	         $7523 = PlateauRivalText1
-	         $75c3 = PlateauRivalLoseText
-	         $75fb = IndigoPlateauPokecenter1F_MapEvents
-	         $7659 = Route19_MapScripts
-	         $765e = Route19ClearRocksCallback
-	         $767c = Route19ClearRocksCallback.Done
-	         $767d = TrainerSwimmerfDawn
-	         $7689 = TrainerSwimmerfDawn.Script
-	         $7691 = TrainerSwimmermHarold
-	         $769d = TrainerSwimmermHarold.Script
-	         $76a5 = TrainerSwimmermJerome
-	         $76b1 = TrainerSwimmermJerome.Script
-	         $76b9 = TrainerSwimmermTucker
-	         $76c5 = TrainerSwimmermTucker.Script
-	         $76cd = Route19Sign
-	         $76d0 = CarefulSwimmingSign
-	         $76d3 = SwimmermHaroldSeenText
-	         $7705 = SwimmermHaroldBeatenText
-	         $770c = SwimmermHaroldAfterBattleText
-	         $77c7 = SwimmermTuckerSeenText
-	         $77fa = SwimmermTuckerBeatenText
-	         $7808 = SwimmermTuckerAfterBattleText
-	         $7877 = SwimmerfDawnSeenText
-	         $78bd = SwimmerfDawnBeatenText
-	         $78dc = SwimmerfDawnAfterBattleText
-	         $7998 = SwimmermJeromeSeenText
-	         $7a2b = SwimmermJeromeBeatenText
-	         $7a43 = SwimmermJeromeAfterBattleText
-	         $7a74 = Route19SignText
-	         $7a9d = CarefulSwimmingSignText
-	         $7ae9 = Route19_MapEvents
-	EMPTY: $7b32-$7fff ($04ce bytes)
-	TOTAL EMPTY: $04ce bytes
+	         $629b = PowerPlantOfficer1CeruleanShadyCharacterText
+	         $640c = PowerPlantOfficer1CouldIAskForYourCooperationText
+	         $6486 = PowerPlantOfficer1HaveToBeefUpSecurityText
+	         $64c0 = PowerPlantGymGuide1SomeoneStoleAPartText
+	         $65f6 = PowerPlantGymGuide1GeneratorUpAndRunningText
+	         $66ab = PowerPlantGymGuide2PowerPlantUpAndRunningText
+	         $6806 = PowerPlantGymGuide2GeneratorIsRunningAgainText
+	         $6887 = PowerPlantOfficer2ManagerHasBeenSadAndFuriousText
+	         $691e = PowerPlantOfficer2ManagerHasBeenCheerfulText
+	         $6981 = PowerPlantGymGuide4MagnetTrainConsumesElectricityText
+	         $69e4 = PowerPlantGymGuide4WeCanGetMagnetTrainRunningText
+	         $6a40 = PowerPlantManagerWhoWouldRuinMyGeneratorText
+	         $6c4b = PowerPlantManagerIWontForgiveCulpritText
+	         $6cc6 = PowerPlantManagerThatsThePartText
+	         $6edb = PowerPlantManagerTakeThisTMText
+	         $6f54 = PowerPlantManagerTM07IsZapCannonText
+	         $7005 = PowerPlantManagerMyBelovedGeneratorText
+	         $70d7 = PowerPlant_MapEvents
+	         $7154 = IndigoPlateauPokecenter1F_MapScripts
+	         $715d = IndigoPlateauPokecenter1FNoopScene
+	         $715e = IndigoPlateauPokecenter1FPrepareElite4Callback
+	         $71a7 = PlateauRivalBattle1
+	         $71e8 = PlateauRivalBattle2
+	         $7222 = PlateauRivalBattleCommon
+	         $7247 = PlateauRivalBattleCommon.Totodile
+	         $7257 = PlateauRivalBattleCommon.Chikorita
+	         $7267 = PlateauRivalPostBattle
+	         $727f = PlateauRivalScriptDone
+	         $7280 = IndigoPlateauPokecenter1FNurseScript
+	         $7289 = IndigoPlateauPokecenter1FNurseScript.NoCanHeal
+	         $7295 = IndigoPlateauPokecenter1FNurseScript.ProceedNormally
+	         $7298 = IndigoPlateauPokecenter1FClerkScript
+	         $729f = IndigoPlateauPokecenter1FCooltrainerMScript
+	         $72a2 = PlateauRivalMovement1
+	         $72a9 = PlateauRivalMovement2
+	         $72b0 = PlateauRivalLeavesMovement
+	         $72b6 = IndigoPlateauPokecenter1FCooltrainerMText
+	         $7333 = PlateauRivalWinText
+	         $7342 = IndigoNoNoText
+	         $7492 = PlateauRivalText2
+	         $74eb = PlateauRivalText1
+	         $758b = PlateauRivalLoseText
+	         $75c3 = IndigoPlateauPokecenter1F_MapEvents
+	         $7621 = Route19_MapScripts
+	         $7626 = Route19ClearRocksCallback
+	         $7644 = Route19ClearRocksCallback.Done
+	         $7645 = TrainerSwimmerfDawn
+	         $7651 = TrainerSwimmerfDawn.Script
+	         $7659 = TrainerSwimmermHarold
+	         $7665 = TrainerSwimmermHarold.Script
+	         $766d = TrainerSwimmermJerome
+	         $7679 = TrainerSwimmermJerome.Script
+	         $7681 = TrainerSwimmermTucker
+	         $768d = TrainerSwimmermTucker.Script
+	         $7695 = Route19Sign
+	         $7698 = CarefulSwimmingSign
+	         $769b = SwimmermHaroldSeenText
+	         $76cd = SwimmermHaroldBeatenText
+	         $76d4 = SwimmermHaroldAfterBattleText
+	         $778f = SwimmermTuckerSeenText
+	         $77c2 = SwimmermTuckerBeatenText
+	         $77d0 = SwimmermTuckerAfterBattleText
+	         $783f = SwimmerfDawnSeenText
+	         $7885 = SwimmerfDawnBeatenText
+	         $78a4 = SwimmerfDawnAfterBattleText
+	         $7960 = SwimmermJeromeSeenText
+	         $79f3 = SwimmermJeromeBeatenText
+	         $7a0b = SwimmermJeromeAfterBattleText
+	         $7a3c = Route19SignText
+	         $7a65 = CarefulSwimmingSignText
+	         $7ab1 = Route19_MapEvents
+	EMPTY: $7afa-$7fff ($0506 bytes)
+	TOTAL EMPTY: $0506 bytes
 
 ROMX bank #18:
 	SECTION: $4000-$6e67 ($2e68 bytes) ["Crystal Features 1"]
@@ -60337,7 +60337,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1782454 bytes used / 298314 free in 127 banks
+	ROMX: 1782398 bytes used / 298370 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks

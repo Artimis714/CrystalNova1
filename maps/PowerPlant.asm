@@ -220,16 +220,16 @@ PowerPlantOfficer1AThiefBrokeInText:
 	line "I just know they're"
 	cont "behind this!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "What? you're from"
 	line "JOHTO??"
 
-	para "WAS IT YOU!!!!"
+	para "WAS IT YOU?!?!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "#MON CHAMPION?"
 	line "Really?"
@@ -238,8 +238,8 @@ PowerPlantOfficer1AThiefBrokeInText:
 	line "you think it was"
 	cont "rebels?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Okay, well I appr-"
 	line "ceiate you looking"
@@ -265,8 +265,8 @@ PowerPlantOfficer1CeruleanShadyCharacterText:
 	para "have taken it too"
 	line "far this time!!!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "What did they look"
 	line "like? umm...."
@@ -275,8 +275,8 @@ PowerPlantOfficer1CeruleanShadyCharacterText:
 	line "cap, and a big red"
 	cont "'R' on their chest!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "No way that's TEAM"
 	line "ROCKET. Listen kid,"
@@ -379,8 +379,8 @@ PowerPlantGymGuide2PowerPlantUpAndRunningText:
 	line "wild ELECTRIC #-"
 	cont "MON!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Oh, now it's all"
 	line "hydroelectric!"
@@ -408,8 +408,8 @@ PowerPlantGymGuide2GeneratorIsRunningAgainText:
 	line "GIGAWATTS every"
 	cont "second!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Of course that's a"
 	line "real measurement."
@@ -471,8 +471,8 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 	para "You! Did you dare"
 	line "RUIN MY GENERATOR!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "JOHTO!!! YOU'RE"
 	line "FROM JOHTO!!???"
@@ -481,15 +481,15 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 	line "kid for a taste"
 	cont "of my ZAP CANNON!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "ROCKETS? You think"
 	line "TEAM ROCKET is"
 	cont "behind this?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "After the stunt"
 	line "they pulled in"
@@ -539,8 +539,8 @@ PowerPlantManagerThatsThePartText:
 	line "PART!!!!"
 	cont "You found it???"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Kid, I can't thank"
 	line "you enough."
@@ -552,15 +552,15 @@ PowerPlantManagerThatsThePartText:
 	para "You're the JOHTO"
 	line "CHAMPION?"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "<PLAY_G>, you're"
 	line "a credit to your"
 	cont "country."
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "Ya, know, during"
 	line "the war, we did"
@@ -597,8 +597,8 @@ PowerPlantManagerTakeThisTMText:
 	line "You've saved lives"
 	cont "today!!"
 
-	para "<……> <……> <……>"
-	line "<……> <……> <……>"
+	para "..."
+	line "..."
 
 	para "I want to give you"
 	line "something."
