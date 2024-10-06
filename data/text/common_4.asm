@@ -885,3 +885,16 @@ GetAwayFromMeEhText::
 	para "They're gonna be"
 	line "here any minute!"
 	done
+
+ElmslabTypeMatchupMenuText::
+	text "It's a book on"
+	line "various #MON"
+	cont "Types."
+
+	para "Scanning the table"
+	line "of Contents..."
+
+	para "Which would you"
+	line "like to read"
+	cont "about?"
+	done

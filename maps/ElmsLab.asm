@@ -667,16 +667,227 @@ ElmsLabWindow:
 	end
 
 ElmsLabTravelTip1:
-	jumptext ElmsLabTravelTip1Text
+	opentext
+	farwritetext ElmslabTypeMatchupMenuText
+.Loop:
+	loadmenu .TypeMatchupMenu1
+	_2dmenu
+	closewindow
+	ifequal 1, .Normal
+	ifequal 2, .Fighting
+	ifequal 3, .Flying
+	ifequal 4, .Poison
+	ifequal 5, .Fire
+	closetext
+	end
+
+.Normal:
+	farwritetext ElmslabNormalText
+	waitbutton
+	sjump .Loop
+
+.Fighting:
+	farwritetext ElmslabFightingText
+	waitbutton
+	sjump .Loop
+
+.Flying:
+	farwritetext ElmslabFlyingText
+	waitbutton
+	sjump .Loop
+
+.Poison:
+	farwritetext ElmslabPoisonText
+	waitbutton
+	sjump .Loop
+
+.Fire:
+	farwritetext ElmslabFireText
+	waitbutton
+	sjump .Loop
+
+.TypeMatchupMenu1:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 11, 8
+	dw .MenuData1
+	db 1 ; default option
+
+.MenuData1:
+	db STATICMENU_CURSOR ; flags
+	dn 3, 2 ; rows, columns
+	db 5 ; spacing
+	dba .Text
+	dbw BANK(@), NULL
+
+.Text:
+	db "NRM@"
+	db "FGT@"
+	db "FLY@"
+	db "PSN@"
+	db "FIR@"
+	db "QUIT@"
 
 ElmsLabTravelTip2:
-	jumptext ElmsLabTravelTip2Text
+	opentext
+	farwritetext ElmslabTypeMatchupMenuText
+.Loop:
+	loadmenu .TypeMatchupMenu2
+	_2dmenu
+	closewindow
+	ifequal 1, .Water
+	ifequal 2, .Grass
+	ifequal 3, .Electric
+	ifequal 4, .Psychic
+	ifequal 5, .Ice
+	closetext
+	end
+
+.Water:
+	farwritetext ElmslabWaterText
+	waitbutton
+	sjump .Loop
+
+.Grass:
+	farwritetext ElmslabGrassText
+	waitbutton
+	sjump .Loop
+
+.Electric:
+	farwritetext ElmslabElectricText
+	waitbutton
+	sjump .Loop
+
+.Psychic:
+	farwritetext ElmslabPsychicText
+	waitbutton
+	sjump .Loop
+
+.Ice:
+	farwritetext ElmslabIceText
+	waitbutton
+	sjump .Loop
+
+.TypeMatchupMenu2:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 11, 8
+	dw .MenuData2
+	db 1 ; default option
+
+.MenuData2:
+	db STATICMENU_CURSOR ; flags
+	dn 3, 2 ; rows, columns
+	db 5 ; spacing
+	dba .Text
+	dbw BANK(@), NULL
+
+.Text:
+	db "WTR@"
+	db "GRS@"
+	db "ELE@"
+	db "PSY@"
+	db "ICE@"
+	db "QUIT@"
 
 ElmsLabTravelTip3:
-	jumptext ElmsLabTravelTip3Text
+	opentext
+	farwritetext ElmslabTypeMatchupMenuText
+.Loop:
+	loadmenu .TypeMatchupMenu3
+	_2dmenu
+	closewindow
+	ifequal 1, .Ground
+	ifequal 2, .Rock
+	ifequal 3, .Bug
+	ifequal 4, .Ghost
+	ifequal 5, .Steel
+	closetext
+	end
+
+.Ground:
+	farwritetext ElmslabGroundText
+	waitbutton
+	sjump .Loop
+
+.Rock:
+	farwritetext ElmslabRockText
+	waitbutton
+	sjump .Loop
+
+.Bug:
+	farwritetext ElmslabBugText
+	waitbutton
+	sjump .Loop
+
+.Ghost:
+	farwritetext ElmslabGhostText
+	waitbutton
+	sjump .Loop
+
+.Steel:
+	farwritetext ElmslabSteelText
+	waitbutton
+	sjump .Loop
+
+.TypeMatchupMenu3:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 11, 8
+	dw .MenuData3
+	db 1 ; default option
+
+.MenuData3:
+	db STATICMENU_CURSOR ; flags
+	dn 3, 2 ; rows, columns
+	db 5 ; spacing
+	dba .Text
+	dbw BANK(@), NULL
+
+.Text:
+	db "GRN@"
+	db "RCK@"
+	db "BUG@"
+	db "GHO@"
+	db "STL@"
+	db "QUIT@"
 
 ElmsLabTravelTip4:
-	jumptext ElmsLabTravelTip4Text
+	opentext
+	farwritetext ElmslabTypeMatchupMenuText
+.Loop:
+	loadmenu .TypeMatchupMenu4
+	_2dmenu
+	closewindow
+	ifequal 1, .Dragon
+	ifequal 2, .Dark
+	closetext
+	end
+
+.Dragon:
+	farwritetext ElmslabDragonText
+	waitbutton
+	sjump .Loop
+
+.Dark:
+	farwritetext ElmslabDarkText
+	waitbutton
+	sjump .Loop
+
+.TypeMatchupMenu4:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 11, 8
+	dw .MenuData4
+	db 1 ; default option
+
+.MenuData4:
+	db STATICMENU_CURSOR ; flags
+	dn 3, 1 ; rows, columns
+	db 5 ; spacing
+	dba .Text
+	dbw BANK(@), NULL
+
+.Text:
+	db "DRA@"
+	db "DRK@"
+	db "QUIT@"
 
 ElmsLabTrashcan:
 	jumptext ElmsLabTrashcanText
@@ -1540,50 +1751,6 @@ ElmsLabWindowText2:
 	line "through here!"
 	done
 
-ElmsLabTravelTip1Text:
-	text "<PLAYER> opened a"
-	line "book."
-
-	para "Travel Tip 1:"
-
-	para "Press START to"
-	line "open the MENU."
-	done
-
-ElmsLabTravelTip2Text:
-	text "<PLAYER> opened a"
-	line "book."
-
-	para "Travel Tip 2:"
-
-	para "Record your trip"
-	line "with SAVE!"
-	done
-
-ElmsLabTravelTip3Text:
-	text "<PLAYER> opened a"
-	line "book."
-
-	para "Travel Tip 3:"
-
-	para "Open your PACK and"
-	line "press SELECT to"
-	cont "move items."
-	done
-
-ElmsLabTravelTip4Text:
-	text "<PLAYER> opened a"
-	line "book."
-
-	para "Travel Tip 4:"
-
-	para "Check your #MON"
-	line "moves. Press the"
-
-	para "A Button to switch"
-	line "moves."
-	done
-
 ElmsLabTrashcanText:
 	text "The wrapper from"
 	line "the snack PROF.ELM"
@@ -1625,10 +1792,10 @@ ElmsLab_MapEvents:
 	bg_event  1,  7, BGEVENT_READ, ElmsLabTravelTip2
 	bg_event  2,  7, BGEVENT_READ, ElmsLabTravelTip3
 	bg_event  3,  7, BGEVENT_READ, ElmsLabTravelTip4
-	bg_event  6,  7, BGEVENT_READ, ElmsLabBookshelf
-	bg_event  7,  7, BGEVENT_READ, ElmsLabBookshelf
-	bg_event  8,  7, BGEVENT_READ, ElmsLabBookshelf
-	bg_event  9,  7, BGEVENT_READ, ElmsLabBookshelf
+	bg_event  6,  7, BGEVENT_READ, ElmsLabTravelTip1
+	bg_event  7,  7, BGEVENT_READ, ElmsLabTravelTip2
+	bg_event  8,  7, BGEVENT_READ, ElmsLabTravelTip3
+	bg_event  9,  7, BGEVENT_READ, ElmsLabTravelTip4
 	bg_event  9,  3, BGEVENT_READ, ElmsLabTrashcan
 	bg_event  5,  0, BGEVENT_READ, ElmsLabWindow
 	bg_event  3,  5, BGEVENT_DOWN, ElmsLabPC
