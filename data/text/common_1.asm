@@ -366,7 +366,7 @@ _LookJigglypuffPosterText::
 	done
 
 _LookAdorableDecoText::
-	text "It's an adorable"
+	text "It's an awesome"
 	line "@"
 	text_ram wStringBuffer3
 	text "."
