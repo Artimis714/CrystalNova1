@@ -335,26 +335,35 @@ AzaleaTownRocket1Text:
 	done
 
 AzaleaTownRocket2Text:
-	text "Oh the old GYM?"
-	line "Yeah, it was"
+	text "Do you know about"
+	line "SLOWPOKETAIL? I"
+	cont "heard it's tasty!"
 
-	para "destroyed during"
-	line "the war."
+	para "I've never been"
+	line "able to try one"
+
+	para "We sell them to"
+	line "a high-end res-"
+	cont "taurant in"
+	cont "CELADON CITY."
 
 	para "..."
 	line "..."
 
-	para "No you can't go"
-	line "in. You'll die."
+	para "Yes, I know it's"
+	line "trading with the"
 
-	para "..."
-	line "..."
+	para "enemy, but we do"
+	line "what we have to"
 
-	para "I heard the GYM"
-	line "Worked out of"
+	para "do in order to"
+	line "fund the resist-"
+	cont "ance."
 
-	para "ILEX FOREST these"
-	line "days."
+	para "Wait... why am I"
+	line "telling you this?"
+
+	para "Beat it kid!"
 	done
 
 AzaleaTownGrampsTextBefore:
@@ -587,5 +596,5 @@ AzaleaTown_MapEvents:
 	object_event 15, 15, SPRITE_SLOWPOKE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownSlowpokeScript, EVENT_AZALEA_TOWN_SLOWPOKES
 	object_event  8,  2, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WhiteApricornTree, -1
 	object_event 11, 10, SPRITE_AZALEA_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_AZALEA_TOWN
-	object_event 10, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownRocket2Script, -1
+	object_event 10, 16, SPRITE_AZALEA_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownRocket2Script, EVENT_SLOWPOKE_WELL_ROCKETS
 	object_event  6,  5, SPRITE_KURT_OUTSIDE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownKurtScript, EVENT_AZALEA_TOWN_KURT
