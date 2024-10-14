@@ -187,8 +187,8 @@ BerryJuicerScript:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
 	db "BERRY@"
-	db "SLVR BERRY@"
-	db "GOLD BERRY@"
+	db "MOON BERRY@"
+	db "SUN BERRY@"
 	db "CANCEL@"
 
 LakeofRageShuckle:

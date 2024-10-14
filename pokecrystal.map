@@ -39272,7 +39272,7 @@ ROMX bank #101:
 	TOTAL EMPTY: $0222 bytes
 
 ROMX bank #102:
-	SECTION: $4000-$7e5a ($3e5b bytes) ["Map Scripts 19"]
+	SECTION: $4000-$7e59 ($3e5a bytes) ["Map Scripts 19"]
 	         $4000 = AzaleaTown_MapScripts
 	         $4011 = AzaleaTownNoop1Scene
 	         $4012 = AzaleaTownNoop2Scene
@@ -39555,89 +39555,89 @@ ROMX bank #102:
 	         $709a = BerryJuicerScript.NoRoom
 	         $70a0 = BerryJuicerScript.MoveMenuHeader
 	         $70a8 = BerryJuicerScript.MenuData
-	         $70cd = LakeofRageShuckle
-	         $70d7 = LORHPHouseNoMoneyScript
-	         $70dd = ShuckleText
-	         $70e5 = BerryJuicerIntroText
-	         $7138 = BerryJuicerNoText
-	         $7160 = BerryJuicerPackisFullText
-	         $719d = BerryJuicerPatienceChildText
-	         $71d6 = BerryJuicerBJuiceText
-	         $7238 = BerryJuicerSJuiceText
-	         $72a0 = BerryJuicerGJuiceText
-	         $7330 = BerryJuicerGiveText
-	         $7368 = JuicerBText
-	         $73a6 = JuicerSText
-	         $73e9 = JuicerGText
-	         $742b = BerryJuicerQuitWastingtime
-	         $7455 = HiddenPowerGuyText1
-	         $74e8 = HiddenPowerGuyText2
-	         $757d = HiddenPowerGuyText3
-	         $75bd = NoMoneyChildText
-	         $760f = LakeOfRageHiddenPowerHouse_MapEvents
-	         $7650 = LakeOfRageMagikarpHouse_MapScripts
-	         $7652 = MagikarpLengthRaterScript
-	         $7675 = MagikarpLengthRaterScript.ExplainedHistory
-	         $767b = MagikarpLengthRaterScript.ClearedRocketHideout
-	         $7684 = MagikarpLengthRaterScript.AskedForMagikarp
-	         $76a2 = MagikarpLengthRaterScript.GetReward
-	         $76b5 = MagikarpLengthRaterScript.NoRoom
-	         $76ba = MagikarpLengthRaterScript.TooShort
-	         $76c0 = MagikarpLengthRaterScript.NotMagikarp
-	         $76c6 = MagikarpLengthRaterScript.Refused
-	         $76cc = MagikarpHouseBookshelf
-	         $76cf = MagikarpLengthRaterText_LakeOfRageHistory
-	         $77ee = MagikarpLengthRaterText_MenInBlack
-	         $7831 = MagikarpLengthRaterText_WorldsLargestMagikarp
-	         $78df = MagikarpLengthRaterText_YouHaveAMagikarp
-	         $7918 = MagikarpLengthRaterText_Memento
-	         $7964 = MagikarpLengthRaterText_Bonus
-	         $79a2 = MagikarpLengthRaterText_TooShort
-	         $79fd = MagikarpLengthRaterText_NotMagikarp
-	         $7a1a = MagikarpLengthRaterText_Refused
-	         $7a5d = LakeOfRageMagikarpHouse_MapEvents
-	         $7a84 = Route43MahoganyGate_MapScripts
-	         $7a86 = Route43MahoganyGateOfficer
-	         $7a94 = Route43MahoganyGateOfficer.RocketsCleared
-	         $7a9a = Route43MahoganyGateOfficerText
-	         $7b03 = Route43MahoganyGateOfficerRocketsClearedText
-	         $7b42 = Route43MahoganyGate_MapEvents
-	         $7b69 = Route43Gate_MapScripts
-	         $7b76 = Route43GateRocketShakedownScene
-	         $7b7a = Route43GateNoopScene
-	         $7b7b = Route43GateCheckIfRocketsCallback
-	         $7b86 = Route43GateCheckIfRocketsCallback.NoRockets
-	         $7b8b = Route43GateRocketTakeoverScript
-	         $7b9b = RocketScript_Southbound
-	         $7bc3 = RocketScript_TollSouth
-	         $7bce = RocketScript_YoureBrokeSouth
-	         $7bd9 = RocketScript_ShakeDownSouth
-	         $7be9 = RocketScript_Northbound
-	         $7c0d = RocketScript_TollNorth
-	         $7c18 = RocketScript_YoureBrokeNorth
-	         $7c23 = RocketScript_ShakeDownNorth
-	         $7c33 = RocketScript_MakingABundle
-	         $7c36 = OfficerScript_GuardWithSludgeBomb
-	         $7c4d = OfficerScript_GuardWithSludgeBomb.GotSludgeBomb
-	         $7c51 = OfficerScript_GuardWithSludgeBomb.NoRoomForSludgeBomb
-	         $7c53 = PlayerStepsIn
-	         $7c55 = Rocket1Script_BlocksYouSouth
-	         $7c5b = Rocket1Script_LetsYouPassSouth
-	         $7c60 = Rocket1Script_BlocksYouNorth
-	         $7c66 = Rocket1Script_LetsYouPassNorth
-	         $7c6c = Rocket2Script_BlocksYouSouth
-	         $7c72 = Rocket2Script_LetsYouPassSouth
-	         $7c78 = Rocket2Script_BlocksYouNorth
-	         $7c7e = Rocket2Script_LetsYouPassNorth
-	         $7c83 = RocketText_TollFee
-	         $7cbc = RocketText_ThankYou
-	         $7ccd = RocketText_AllYouGot
-	         $7d12 = RocketText_MakingABundle
-	         $7d6c = OfficerText_FoundTM
-	         $7dec = OfficerText_AvoidGrass
-	         $7e1a = Route43Gate_MapEvents
-	EMPTY: $7e5b-$7fff ($01a5 bytes)
-	TOTAL EMPTY: $01a5 bytes
+	         $70cc = LakeofRageShuckle
+	         $70d6 = LORHPHouseNoMoneyScript
+	         $70dc = ShuckleText
+	         $70e4 = BerryJuicerIntroText
+	         $7137 = BerryJuicerNoText
+	         $715f = BerryJuicerPackisFullText
+	         $719c = BerryJuicerPatienceChildText
+	         $71d5 = BerryJuicerBJuiceText
+	         $7237 = BerryJuicerSJuiceText
+	         $729f = BerryJuicerGJuiceText
+	         $732f = BerryJuicerGiveText
+	         $7367 = JuicerBText
+	         $73a5 = JuicerSText
+	         $73e8 = JuicerGText
+	         $742a = BerryJuicerQuitWastingtime
+	         $7454 = HiddenPowerGuyText1
+	         $74e7 = HiddenPowerGuyText2
+	         $757c = HiddenPowerGuyText3
+	         $75bc = NoMoneyChildText
+	         $760e = LakeOfRageHiddenPowerHouse_MapEvents
+	         $764f = LakeOfRageMagikarpHouse_MapScripts
+	         $7651 = MagikarpLengthRaterScript
+	         $7674 = MagikarpLengthRaterScript.ExplainedHistory
+	         $767a = MagikarpLengthRaterScript.ClearedRocketHideout
+	         $7683 = MagikarpLengthRaterScript.AskedForMagikarp
+	         $76a1 = MagikarpLengthRaterScript.GetReward
+	         $76b4 = MagikarpLengthRaterScript.NoRoom
+	         $76b9 = MagikarpLengthRaterScript.TooShort
+	         $76bf = MagikarpLengthRaterScript.NotMagikarp
+	         $76c5 = MagikarpLengthRaterScript.Refused
+	         $76cb = MagikarpHouseBookshelf
+	         $76ce = MagikarpLengthRaterText_LakeOfRageHistory
+	         $77ed = MagikarpLengthRaterText_MenInBlack
+	         $7830 = MagikarpLengthRaterText_WorldsLargestMagikarp
+	         $78de = MagikarpLengthRaterText_YouHaveAMagikarp
+	         $7917 = MagikarpLengthRaterText_Memento
+	         $7963 = MagikarpLengthRaterText_Bonus
+	         $79a1 = MagikarpLengthRaterText_TooShort
+	         $79fc = MagikarpLengthRaterText_NotMagikarp
+	         $7a19 = MagikarpLengthRaterText_Refused
+	         $7a5c = LakeOfRageMagikarpHouse_MapEvents
+	         $7a83 = Route43MahoganyGate_MapScripts
+	         $7a85 = Route43MahoganyGateOfficer
+	         $7a93 = Route43MahoganyGateOfficer.RocketsCleared
+	         $7a99 = Route43MahoganyGateOfficerText
+	         $7b02 = Route43MahoganyGateOfficerRocketsClearedText
+	         $7b41 = Route43MahoganyGate_MapEvents
+	         $7b68 = Route43Gate_MapScripts
+	         $7b75 = Route43GateRocketShakedownScene
+	         $7b79 = Route43GateNoopScene
+	         $7b7a = Route43GateCheckIfRocketsCallback
+	         $7b85 = Route43GateCheckIfRocketsCallback.NoRockets
+	         $7b8a = Route43GateRocketTakeoverScript
+	         $7b9a = RocketScript_Southbound
+	         $7bc2 = RocketScript_TollSouth
+	         $7bcd = RocketScript_YoureBrokeSouth
+	         $7bd8 = RocketScript_ShakeDownSouth
+	         $7be8 = RocketScript_Northbound
+	         $7c0c = RocketScript_TollNorth
+	         $7c17 = RocketScript_YoureBrokeNorth
+	         $7c22 = RocketScript_ShakeDownNorth
+	         $7c32 = RocketScript_MakingABundle
+	         $7c35 = OfficerScript_GuardWithSludgeBomb
+	         $7c4c = OfficerScript_GuardWithSludgeBomb.GotSludgeBomb
+	         $7c50 = OfficerScript_GuardWithSludgeBomb.NoRoomForSludgeBomb
+	         $7c52 = PlayerStepsIn
+	         $7c54 = Rocket1Script_BlocksYouSouth
+	         $7c5a = Rocket1Script_LetsYouPassSouth
+	         $7c5f = Rocket1Script_BlocksYouNorth
+	         $7c65 = Rocket1Script_LetsYouPassNorth
+	         $7c6b = Rocket2Script_BlocksYouSouth
+	         $7c71 = Rocket2Script_LetsYouPassSouth
+	         $7c77 = Rocket2Script_BlocksYouNorth
+	         $7c7d = Rocket2Script_LetsYouPassNorth
+	         $7c82 = RocketText_TollFee
+	         $7cbb = RocketText_ThankYou
+	         $7ccc = RocketText_AllYouGot
+	         $7d11 = RocketText_MakingABundle
+	         $7d6b = OfficerText_FoundTM
+	         $7deb = OfficerText_AvoidGrass
+	         $7e19 = Route43Gate_MapEvents
+	EMPTY: $7e5a-$7fff ($01a6 bytes)
+	TOTAL EMPTY: $01a6 bytes
 
 ROMX bank #103:
 	SECTION: $4000-$7bd4 ($3bd5 bytes) ["Map Scripts 20"]
@@ -60397,7 +60397,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1782748 bytes used / 298020 free in 127 banks
+	ROMX: 1782747 bytes used / 298021 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks
