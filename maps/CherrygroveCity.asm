@@ -31,9 +31,6 @@ CherrygroveCityGuideGent:
 	iffalse .No
 	sjump .Yes
 .Yes:
-	writetext SetShinyBoostText
-	waitbutton
-	special NameShiny
 	writetext GuideGentTourText1
 	waitbutton
 	closetext
@@ -343,42 +340,6 @@ GuideGentIntroText:
 	para "How bout it,"
 	line "cadet, want to"
 	cont "learn something?"
-	done
-
-SetShinyBoostText: 
-	text "Right, before we"
-	line "get started,"
-
-	para "The SHINY catch"
-	line "rate in this"
-	cont "region is shit."
-
-	para "You know about"
-	line "SHINY #MON?"
-
-	para "Of course you"
-	line "don't. You're"
-	cont "a newbie."
-
-	para "They're like"
-	line "regular #MON"
-	cont "but rare colors!"
-
-	para "Anyway, too rare"
-	line "for my liking"
-
-	para "If you enter"
-	line "the code:"
-	cont "SHINY"
-
-	para "It'll boost your"
-	line "shiny encounter"
-	cont "rate."
-
-	para "If you enter"
-	line "anything else..."
-	
-	para "Nothing happens."
 	done
 
 GuideGentTourText1:

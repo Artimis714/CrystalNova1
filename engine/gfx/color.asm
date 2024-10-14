@@ -2,68 +2,46 @@ INCLUDE "engine/gfx/sgb_layouts.asm"
 
 DEF SHINY_ATK_MASK EQU %0010
 DEF SHINY_DEF_DV EQU 10
-DEF SHINY_SPD_DV EQU 10
-DEF SHINY_SPC_DV EQU 10
+DEF SHINY_SPD_DV EQU 15
+DEF SHINY_SPC_DV EQU 15
 
 CheckShininess:
 ; Check if a mon is shiny by DVs at bc.
 ; Return carry if shiny.
 
-	ld l, c
-	ld h, b
+    ld l, c
+    ld h, b
 
 ; Attack
-	ld a, [hl]
-	and SHINY_ATK_MASK << 4
-	jr z, .not_shiny
+    ld a, [hl]
+    and SHINY_ATK_MASK << 4
+;    jr z, .not_shiny
 
 ; Defense
-	ld a, [hli]
-	and %1111
-	cp SHINY_DEF_DV
-	jr nz, .not_shiny
+    ld a, [hli]
+    and %1111
+    cp SHINY_DEF_DV
+;    jr nz, .not_shiny
 
 ; Speed
-	ld a, [hl]
-	and %1111 << 4
-	cp SHINY_SPD_DV << 4
-	jr nz, .not_shiny
-
-; Check if the shiny password is active.
-	push de
-	push hl
-	ld de, ShinyPassword
-	ld hl, wMomsName
-	ld c, 4
-	call CompareBytes
-	jr z, .AltSpecial
-	pop hl
-	pop de
+    ld a, [hl]
+    and %1111 << 4
+    cp SHINY_SPD_DV << 4
+    jr nz, .not_shiny
 
 ; Special
-	ld a, [hl]
-	and %1111
-	cp SHINY_SPC_DV
-	jr nz, .not_shiny
-	jr .shiny
+    ld a, [hl]
+    and %1111
+    cp SHINY_SPC_DV
+    jr nz, .not_shiny
 
-.AltSpecial
-	pop hl
-	pop de
-	ld a, [hl]
-	and SHINY_ATK_MASK << 4
-	jr z, .not_shiny
-
-.shiny
-	scf
-	ret
+; shiny
+    scf
+    ret
 
 .not_shiny
-	and a
-	ret
-
-ShinyPassword:
-	db "SHINY"
+    and a
+    ret
 
 Unused_CheckShininess:
 ; Return carry if the DVs at hl are all 10 or higher.
