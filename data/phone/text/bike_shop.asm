@@ -1,19 +1,35 @@
 BikeShopPhoneCallerText:
-	text "Hi, <PLAY_G>!"
-	line "Our BICYCLE sales"
+	text "Hi, <PLAY_G>?"
 
-	para "have gone through"
-	line "the roof!"
+	para "..."
+	line "..."
 
-	para "We owe it all to"
-	line "your advertising"
+	para "Yeah, so it turns"
+	line "out that giving"
 
-	para "by riding around"
-	line "on our BICYCLE."
+	para "away BICYCLES for"
+	line "free was a bad"
 
-	para "As our way of say-"
-	line "ing thanks, please"
+	para "business plan."
+	line "after all..."
 
-	para "keep that BICYCLE."
-	line "Thanks again!"
+	para "..."
+	line "..."
+
+	para "Yeah, I know you"
+	line "told me so."
+
+	para "Anyway, I've gone"
+	line "out of business."
+
+	para "..."
+	line "..."
+
+	para "The BICYCLE?"
+	line "You can keep it."
+
+	para "I'm moving to VII"
+	line "ISLAND."
+
+	para "Good luck, kid!"
 	done

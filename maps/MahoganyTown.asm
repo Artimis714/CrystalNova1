@@ -223,20 +223,20 @@ MahoganyTownFisherText:
 	done
 
 MahoganyTownLassText:
-	text "Visit Grandma's"
-	line "shop. She sells"
+	text "Visit my Bro's"
+	line "shop! He sells"
 
-	para "stuff that nobody"
+	para "Balls that nobody"
 	line "else has."
 
-	para "She thinks she's"
+	para "He thinks he's"
 	line "very cool."
 
 	para "..."
 
 	para "Of course, I"
-	line "agree. She's my"
-	cont "grandma!"
+	line "agree. He's my"
+	cont "Step-Brother!"
 	done
 
 MahoganyTownSignText:

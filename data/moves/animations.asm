@@ -1061,23 +1061,13 @@ BattleAnim_Scald:
 	anim_bgeffect BATTLE_BG_EFFECT_START_WATER, $0, BG_EFFECT_TARGET, $0
 	anim_1gfx BATTLE_ANIM_GFX_WATER
 	anim_call BattleAnim_UserObj_2Row
-	anim_sound 16, 2, SFX_BUBBLEBEAM
-	anim_obj BATTLE_ANIM_OBJ_WATER_GUN, 64, 88, $0
-	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_WATER_GUN, 64, 76, $0
-	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_WATER_GUN, 64, 82, $0
-	anim_wait 24
+	anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj BATTLE_ANIM_OBJ_HYDRO_PUMP, 132, 72, $0
 	anim_bgeffect BATTLE_BG_EFFECT_WATER, $1c, $0, $0
 	anim_wait 8
-	anim_bgeffect BATTLE_BG_EFFECT_WATER, $8, $0, $0
-	anim_wait 8
-	anim_bgeffect BATTLE_BG_EFFECT_WATER, $30, $0, $0
-	anim_wait 32
 	anim_call BattleAnim_ShowMon_1
 	anim_bgeffect BATTLE_BG_EFFECT_END_WATER, $0, $0, $0
-	anim_wait 8
-	anim_3gfx BATTLE_ANIM_GFX_FIRE, BATTLE_ANIM_GFX_ICE, BATTLE_ANIM_GFX_LIGHTNING
+	anim_2gfx BATTLE_ANIM_GFX_HIT, BATTLE_ANIM_GFX_FIRE
 	anim_call BattleAnimSub_Fire
 	anim_wait 16
 	anim_ret
@@ -3752,14 +3742,25 @@ BattleAnim_Detect:
 	anim_ret
 
 BattleAnim_BoneRush:
+	anim_1gfx BATTLE_ANIM_GFX_HIT
+	anim_bgp $1b
+	anim_obp1 $1b
+	anim_wait 32
+	anim_call BattleAnim_UserObj_2Row
+	anim_bgeffect BATTLE_BG_EFFECT_NIGHT_SHADE, $0, BG_EFFECT_TARGET, $8
+	anim_sound 0, 1, SFX_BONE_CLUB
+	anim_wait 96
+	anim_incbgeffect BATTLE_BG_EFFECT_NIGHT_SHADE
+	anim_call BattleAnim_ShowMon_1
+	anim_wait 8
 	anim_2gfx BATTLE_ANIM_GFX_HIT, BATTLE_ANIM_GFX_MISC
 	anim_sound 0, 1, SFX_BONE_CLUB
 	anim_obj BATTLE_ANIM_OBJ_BONE_RUSH, 132, 56, $2
 	anim_wait 16
-	anim_sound 0, 1, SFX_COMET_PUNCH
+	anim_sound 0, 1, SFX_CUT
 	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 120, 48, $0
 	anim_wait 16
-	anim_sound 0, 1, SFX_COMET_PUNCH
+	anim_sound 0, 1, SFX_CUT
 	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 144, 64, $0
 	anim_wait 16
 	anim_ret
@@ -4788,15 +4789,18 @@ BattleAnimSub_Ice:
 
 BattleAnim_PoisonFang:
 	anim_2gfx BATTLE_ANIM_GFX_CUT, BATTLE_ANIM_GFX_HIT
-	anim_obj BATTLE_ANIM_OBJ_BITE, 136, 56, $98
-	anim_obj BATTLE_ANIM_OBJ_BITE, 136, 56, $18
+	anim_bgp $1b
+	anim_obp0 $c0
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $20, $2, $0
+	anim_obj BATTLE_ANIM_OBJ_BITE, 136, 56, $a8
+	anim_obj BATTLE_ANIM_OBJ_BITE, 136, 56, $28
 	anim_wait 8
 	anim_sound 0, 1, SFX_BITE
-	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 144, 48, $18
+	anim_obj BATTLE_ANIM_OBJ_HIT_BIG_YFIX, 144, 48, $18
 	anim_wait 16
 	anim_sound 0, 1, SFX_BITE
-	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 128, 64, $18
-	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_HIT_BIG_YFIX, 128, 64, $18
+	anim_wait 40
 	anim_1gfx BATTLE_ANIM_GFX_POISON
 	anim_call BattleAnimSub_Sludge
 	anim_wait 56

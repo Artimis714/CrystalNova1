@@ -666,8 +666,8 @@ TeleportDescription:
 	line "from battle.@"
 
 NightShadeDescription:
-	db   "An otherworldly atk"
-	line "may confuse.@"
+	db   "An otherworldly"
+	line "ATK may confuse.@"
 
 MimicDescription:
 	db   "Copies a move used"
@@ -1054,8 +1054,8 @@ DetectDescription:
 	line "turn. It may fail.@"
 
 BoneRushDescription:
-	db   "An attack that"
-	line "hits 2-5 times.@"
+	db   "Rotten Bone attack"
+	line "May poison!@"
 
 LockOnDescription:
 	db   "Ensures the next"
