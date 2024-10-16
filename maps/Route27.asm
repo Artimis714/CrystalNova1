@@ -323,19 +323,20 @@ Route27FisherText:
 	line "shouldn't be here!"
 
 	para "Only full KANTO"
-	line "CITIZENS can cross"
-	cont "the boarder."
+	line "CITIZENS can"
+	cont "cross the boarder."
 
 	para "..."
 	line "..."
 
-	para "Yeah you just came"
-	line "across the boarder"
-	cont "into KANTO."
+	para "You just crossed"
+	line "into KANTO!"
 
-	para "Check the map on"
-	line "your #GEAR if you"
-	cont "don't believe me!"
+	para "Be careful, kid."
+	line "It's a cold month,"
+
+	para "in a KANTO cell if"
+	line "you're caught!"
 	done
 
 Route27FisherNoTellText:

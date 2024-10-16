@@ -195,7 +195,7 @@ MartGoldenrod5F3:
 	db -1 ; end
 
 MartGoldenrod5F4:
-	db 10 ; # items
+	db 11 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
@@ -206,6 +206,7 @@ MartGoldenrod5F4:
 	db TM_ATTRACT
 	db TM_BATON_PASS
 	db TM_SWIFT
+	db TM_SCALD
 	db -1 ; end
 
 MartShadyNationalPark:
@@ -450,10 +451,11 @@ MartCeladon3F:
 	db -1 ; end
 
 MartCeladon4F:
-	db 3 ; # items
-	db POKE_DOLL
-	db LOVELY_MAIL
-	db SURF_MAIL
+	db 4 ; # items
+	db FIRE_STONE
+	db THUNDERSTONE
+	db WATER_STONE
+	db LEAF_STONE
 	db -1 ; end
 
 MartCeladon5F1:

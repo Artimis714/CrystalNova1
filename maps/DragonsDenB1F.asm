@@ -106,10 +106,10 @@ DragonShrineSignpost:
 	jumptext DragonShrineSignpostText
 
 DragonsDenB1FCalcium:
-	itemball CALCIUM
+	itemball CALCIUM, 2
 
 DragonsDenB1FMaxElixer:
-	itemball MAX_ELIXER
+	itemball DRAGON_SCALE
 
 DragonsDenB1FHiddenRevive:
 	hiddenitem REVIVE, EVENT_DRAGONS_DEN_B1F_HIDDEN_REVIVE
@@ -121,7 +121,7 @@ DragonsDenB1FHiddenMaxElixer:
 	hiddenitem MAX_ELIXER, EVENT_DRAGONS_DEN_B1F_HIDDEN_MAX_ELIXER
 
 DragonsDenB1FDragonFangScript:
-	itemball DRAGON_SCALE
+	itemball TM_DRAGON_CLAW
 
 DragonShrineSignpostText:
 	text "DRAGON SHRINE"
@@ -267,7 +267,7 @@ DragonsDenB1F_MapEvents:
 	bg_event 31, 15, BGEVENT_ITEM, DragonsDenB1FHiddenMaxElixer
 
 	def_object_events
-	object_event 35, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FDragonFangScript, EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
+	object_event 35, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_ITEMBALL, 0, DragonsDenB1FDragonFangScript, EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
 	object_event 20, 23, SPRITE_RIVAL, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FRivalScript, EVENT_RIVAL_DRAGONS_DEN
 	object_event 20,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerCooltrainermDarin, -1
 	object_event  8,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfCara, -1

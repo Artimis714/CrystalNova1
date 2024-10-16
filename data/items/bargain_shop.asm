@@ -1,5 +1,5 @@
 BargainShopData:
-	db 10
+	db 16
 	dbw NUGGET,       4500
 	dbw BIG_NUGGET,  16000
 	dbw PEARL,         650
@@ -10,4 +10,10 @@ BargainShopData:
 	dbw GOLD_LEAF,    1200
 	dbw BRICK_PIECE,   150
 	dbw ANCIENTRELIC, 4500
+	dbw FIRE_STONE,   1800
+	dbw THUNDERSTONE, 1800
+	dbw WATER_STONE,  1800
+	dbw LEAF_STONE,   1800
+	dbw MOON_STONE,   1800
+	dbw SUN_STONE,    1800
 	db -1

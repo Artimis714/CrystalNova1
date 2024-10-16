@@ -927,15 +927,15 @@ SunStoneDesc:
 	next "kinds of #MON.@"
 
 PolkadotBowDesc:
-	db   "Powers up normal-"
-	next "type moves. (HOLD)@"
+	db   "POWERS UP NORMAL-"
+	next "TYPE MOVES!! (HOLD)@"
 
 TeruSama22Desc:
 	db   "?@"
 
 UpGradeDesc:
-	db   "A mysterious disk"
-	next "made by SILPH CO.@"
+	db   "A prototype soft-"
+	line "ware patch.@"
 
 BerryDesc:
 	db   "A self-restore"
