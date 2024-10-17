@@ -545,6 +545,10 @@ ElmslabPoisonText::
 	para "They do not effect"
 
 	para "STEEL"
+
+	para "POISON Type #-"
+	line "MON are immune to"
+	cont "being poisoned."
 	done
 
 ElmslabFireText::
@@ -570,6 +574,10 @@ ElmslabFireText::
 	cont "GROUND"
 	cont "ROCK"
 	cont "DRAGON"
+
+	para "FIRE Type #-"
+	line "MON are immune to"
+	cont "being burned."
 	done
 
 ElmslabWaterText::
@@ -618,6 +626,10 @@ ElmslabGrassText::
 	cont "FLYING"
 	cont "BUG"
 	cont "DRAGON"
+
+	para "GRASS Type #-"
+	line "MON are immune to"
+	cont "powder moves."
 	done
 
 ElmslabElectricText::
@@ -643,6 +655,10 @@ ElmslabElectricText::
 
 	para "GROUND"
 	line "ELECTRIC"
+
+	para "ELECTRIC Type #-"
+	line "MON are immune to"
+	cont "being paralyzed."
 	done
 
 ElmslabPsychicText::
@@ -669,6 +685,10 @@ ElmslabPsychicText::
 	para "They do not effect"
 
 	para "DARK"
+
+	para "PSYCHIC Type #-"
+	line "MON are immune to"
+	cont "being confused."
 	done
 
 ElmslabIceText::
@@ -692,6 +712,10 @@ ElmslabIceText::
 	para "WATER"
 	line "STEEL"
 	cont "ICE"
+
+	para "ICE Type #-"
+	line "MON are immune to"
+	cont "being frozen."
 	done
 
 ElmslabGroundText::
@@ -789,6 +813,10 @@ ElmslabGhostText::
 
 	para "NORMAL"
 	line "FIGHTING"
+
+	para "GHOST Type #-"
+	line "MON are immune to"
+	cont "being poisoned."
 	done
 
 ElmslabSteelText::
@@ -810,6 +838,10 @@ ElmslabSteelText::
 	line "FIRE"
 	cont "WATER"
 	cont "ELECTRIC"
+
+	para "STEEL Type #-"
+	line "MON are immune to"
+	cont "being poisoned."
 	done
 
 ElmslabDragonText::
@@ -850,10 +882,7 @@ ElmslabDarkText::
 
 	para "STEEL"
 	line "DARK"
-
-	para "They do not effect"
-
-	para "GHOST"
+	cont "GHOST"
 	done
 
 OhHeyDerKiddoText::

@@ -704,7 +704,7 @@ DragonShrineElder3Text:
 	line "own people."
 
 	para "He is now our"
-	cont "greatest shame."
+	line "greatest shame."
 
 	para "Though his grand-"
 	line "father refuses"

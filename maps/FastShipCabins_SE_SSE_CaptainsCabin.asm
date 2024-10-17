@@ -48,6 +48,7 @@ SSAquaGranddaughterBefore:
 	disappear FASTSHIPCABINS_SE_SSE_CAPTAINSCABIN_TWIN2
 	applymovement PLAYER, SSAquaCaptainsCabinWarpsToGrandpasCabinMovement
 	moveobject FASTSHIPCABINS_SE_SSE_CAPTAINSCABIN_TWIN1, 3, 19
+	clearevent EVENT_FAST_SHIP_OPAL2
 	appear FASTSHIPCABINS_SE_SSE_CAPTAINSCABIN_TWIN1
 	turnobject PLAYER, UP
 	turnobject FASTSHIPCABINS_SE_SSE_CAPTAINSCABIN_TWIN1, UP
@@ -100,6 +101,7 @@ SSAquaMetalCoatAndDocking:
 	setevent EVENT_GOT_METAL_COAT_FROM_GRANDPA_ON_SS_AQUA
 .NoRoom:
 	writetext Welltakeourleavetext
+	waitbutton
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
 	disappear FASTSHIPCABINS_SE_SSE_CAPTAINSCABIN_GENTLEMAN
@@ -116,6 +118,7 @@ SSAquaMetalCoatAndDocking:
 	waitbutton
 	setevent EVENT_FAST_SHIP_HAS_ARRIVED
 	setevent EVENT_FAST_SHIP_FOUND_GIRL
+	setevent EVENT_FAST_SHIP_OPAL2
 	closetext
 	end
 
@@ -267,18 +270,18 @@ SSAquaCantFindGranddaughterText:
 	para "I still can't find"
 	line "my granddaughter."
 
-	para "If she's on the"
-	line "ship, that's OK."
+	para "I'm the SAFARI"
+	line "WARDEN down in"
+	cont "FUCHSIA CITY."
 
-	para "She's an energetic"
-	line "child, so she may"
+	para "We need to keep"
+	line "a low profile!"
 
-	para "be bugging some-"
-	line "one. I'm worried…"
+	para "She had such high"
+	line "hopes of coming"
 
-	para "We had such big"
-	line "hopes starting new"
-	cont "lives in KANTO!"
+	para "back to KANTO"
+	line "after the war."
 	done
 
 SSAquaEntertainedGranddaughterText:
@@ -311,9 +314,8 @@ Welltakeourleavetext:
 	line "I think we'll take"
 	cont "our leave."
 
-	para "Sorry again for the"
-	line "trouble. You're a"
-	cont "good kid."
+	para "Sorry again for"
+	line "the trouble."
 	done
 
 SSAquaGrandpaTravellingText:
@@ -322,15 +324,15 @@ SSAquaGrandpaTravellingText:
 	done
 
 SSAquaGranddaughterCaptainPlayWithMeText:
-	text "CAPTAIN, play with"
-	line "me, please?"
+	text "CAPTAIN, What does"
+	line "this button do?"
 
-	para "I'm bored! I want"
-	line "to play more!"
+	para "And how long have"
+	line "you been CAPTAIN?"
 
-	para "And I'm hungry!"
-	line "Can I have more"
-	cont "milk?"
+	para "I don't think I'd"
+	line "want to be CAPTAIN"
+	cont "if I had a boat."
 
 	para "CAPTAIN: I have to"
 	line "Watch out for ice"
@@ -338,34 +340,38 @@ SSAquaGranddaughterCaptainPlayWithMeText:
 	done
 
 SSAquaGranddaughterHasToFindGrandpaText:
-	text "Hi! Will you play"
-	line "with me?"
+	text "Who are you?"
 
-	para "…Oh!"
+	para "..."
+	line "..."
 
-	para "Grandpa's worried"
-	line "about me?"
+	para "Oh, right... uh"
+	line "Gramps must be,"
+	cont "worried."
 
-	para "I have to go!"
+	para "I should get back"
+	line "before he looses"
+	cont "his shit."
 
-	para "I have to go find"
-	line "Grandpa!"
+	para "I'm OPAL by the"
+	line "way."
 	done
 
 SSAquaGranddaughterWasPlayingMText:
-	text "Grandpa, here I"
-	line "am! I was playing"
+	text "OPAL: Yo Gramps!"
+	line "I'm back!"
 
-	para "with the CAPTAIN"
-	line "and this guy!"
+	para "This dude says"
+	line "you were worried."
 	done
 
 SSAquaGranddaughterWasPlayingFText:
-	text "Grandpa, here I"
-	line "am! I was playing"
+	text "OPAL: Yo Gramps!"
+	line "I'm back!"
 
-	para "with the CAPTAIN"
-	line "and this big girl!"
+	para "My new bestie"
+	line "says you were"
+	cont "worried."
 	done
 
 SSAquaGranddaughterHadFunText:
@@ -537,7 +543,7 @@ FastShipCabins_SE_SSE_CaptainsCabin_MapEvents:
 	def_object_events
 	object_event  3, 25, SPRITE_CAPTAIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SSAquaCaptain, -1
 	object_event  2, 17, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SSAquaGrandpa, EVENT_FAST_SHIP_FOUND_GIRL
-	object_event  3, 17, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SSAquaGranddaughterAfter, EVENT_FAST_SHIP_FOUND_GIRL
+	object_event  3, 17, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SSAquaGranddaughterAfter, EVENT_FAST_SHIP_OPAL2
 	object_event  2, 25, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SSAquaGranddaughterBefore, EVENT_FAST_SHIP_FOUND_GIRL
 	object_event  5,  6, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerPokefanmColin, EVENT_FAST_SHIP_PASSENGERS_FIRST_TRIP
 	object_event  2,  4, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsMegandpeg1, EVENT_FAST_SHIP_PASSENGERS_FIRST_TRIP

@@ -119,7 +119,7 @@ TypeMatchups:
 	db DARK,	 FIRE,         SUPER_EFFECTIVE
 	db DARK,         DARK,         NOT_VERY_EFFECTIVE
 	db DARK,         STEEL,        NOT_VERY_EFFECTIVE
-	db DARK,         GHOST,        NO_EFFECT
+	db DARK,         GHOST,        NOT_VERY_EFFECTIVE
 	db STEEL,        ICE,          SUPER_EFFECTIVE
 	db STEEL,        ROCK,         SUPER_EFFECTIVE
 	db STEEL,        FIGHTING,     NOT_VERY_EFFECTIVE

@@ -7,44 +7,11 @@
 	const ROUTE27_YOUNGSTER2
 	const ROUTE27_POKE_BALL1
 	const ROUTE27_POKE_BALL2
-	const ROUTE27_FISHER
 
 Route27_MapScripts:
 	def_scene_scripts
-	scene_script Route27Noop1Scene, SCENE_ROUTE27_FIRST_STEP_INTO_KANTO
-	scene_script Route27Noop2Scene, SCENE_ROUTE27_NOOP
 
 	def_callbacks
-
-Route27Noop1Scene:
-	end
-
-Route27Noop2Scene:
-	end
-
-FirstStepIntoKantoLeftScene:
-	turnobject ROUTE27_FISHER, LEFT
-	showemote EMOTE_SHOCK, ROUTE27_FISHER, 15
-	applymovement ROUTE27_FISHER, Route27FisherStepLeftTwiceMovement
-	sjump FirstStepIntoKantoScene_Continue
-
-FirstStepIntoKantoRightScene:
-	turnobject ROUTE27_FISHER, LEFT
-	showemote EMOTE_SHOCK, ROUTE27_FISHER, 15
-	applymovement ROUTE27_FISHER, Route27FisherStepLeftOnceMovement
-FirstStepIntoKantoScene_Continue:
-	turnobject PLAYER, RIGHT
-	opentext
-	writetext Route27FisherHeyText
-	promptbutton
-	writetext Route27FisherText
-	waitbutton
-	closetext
-	setscene SCENE_ROUTE27_NOOP
-	end
-
-Route27FisherScript:
-	jumptextfaceplayer Route27FisherNoTellText
 
 TrainerPsychicGilbert:
 	trainer PSYCHIC_T, GILBERT, EVENT_BEAT_PSYCHIC_GILBERT, PsychicGilbertSeenText, PsychicGilbertBeatenText, 0, .Script
@@ -303,52 +270,7 @@ Route27TMSolarbeam:
 	itemball TM_SOLARBEAM
 
 Route27RareCandy:
-	itemball RARE_CANDY
-
-Route27FisherStepLeftTwiceMovement:
-	step LEFT
-	step LEFT
-	step_end
-
-Route27FisherStepLeftOnceMovement:
-	step LEFT
-	step_end
-
-Route27FisherHeyText:
-	text "Hey!"
-	done
-
-Route27FisherText:
-	text "Hey! Kid you"
-	line "shouldn't be here!"
-
-	para "Only full KANTO"
-	line "CITIZENS can"
-	cont "cross the boarder."
-
-	para "..."
-	line "..."
-
-	para "You just crossed"
-	line "into KANTO!"
-
-	para "Be careful, kid."
-	line "It's a cold month,"
-
-	para "in a KANTO cell if"
-	line "you're caught!"
-	done
-
-Route27FisherNoTellText:
-	para "..."
-	line "..."
-
-	para "No, I won't tell"
-	line "anyone I saw you."
-
-	para "I don't want a kid"
-	line "to get in trouble."
-	done
+	itemball RARE_CANDY, 2
 
 CooltrainermBlakeSeenText:
 	text "You look pretty"
@@ -543,8 +465,6 @@ Route27_MapEvents:
 	warp_event 36,  5, TOHJO_FALLS, 2
 
 	def_coord_events
-	coord_event 18, 10, SCENE_ROUTE27_FIRST_STEP_INTO_KANTO, FirstStepIntoKantoLeftScene
-	coord_event 19, 10, SCENE_ROUTE27_FIRST_STEP_INTO_KANTO, FirstStepIntoKantoRightScene
 
 	def_bg_events
 	bg_event 25,  7, BGEVENT_READ, TohjoFallsSign
@@ -558,4 +478,3 @@ Route27_MapEvents:
 	object_event 58, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperJose2, -1
 	object_event 60, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_ITEMBALL, 0, Route27TMSolarbeam, EVENT_ROUTE_27_TM_SOLARBEAM
 	object_event 53, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route27RareCandy, EVENT_ROUTE_27_RARE_CANDY
-	object_event 21, 10, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 3, Route27FisherScript, -1

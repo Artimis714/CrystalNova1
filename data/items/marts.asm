@@ -519,17 +519,18 @@ MartSaffron2:
 	db -1 ; end
 
 MartMtMoon:
-	db 6 ; # items
+	db 7 ; # items
 	db POKE_DOLL
 	db FRESH_WATER
 	db SODA_POP
 	db LEMONADE
+	db MOOMOO_MILK
 	db REPEL
 	db PORTRAITMAIL
 	db -1 ; end
 
 MartIndigoPlateau:
-	db 10 ; # items
+	db 9 ; # items
 	db ULTRA_BALL
 	db MAX_REPEL
 	db HYPER_POTION

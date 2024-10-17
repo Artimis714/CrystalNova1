@@ -2156,8 +2156,8 @@ SailorGroup:
 
 	; SAILOR (6)
 	db "JEFF@", TRAINERTYPE_NORMAL
-	db 32, RATICATE
-	db 32, RATICATE
+	db 65, RATICATE
+	db 65, FURRET
 	db -1 ; end
 
 	; SAILOR (7)
@@ -2175,9 +2175,9 @@ SailorGroup:
 
 	; SAILOR (9)
 	db "STANLY@", TRAINERTYPE_NORMAL
-	db 31, MACHOP
-	db 33, MACHOKE
-	db 26, PSYDUCK
+	db 55, MACHAMP
+	db 54, AIPOM
+	db 62, GOLDUCK
 	db -1 ; end
 
 	; SAILOR (10)
@@ -2431,8 +2431,8 @@ HikerGroup:
 
 	; HIKER (14)
 	db "NOLAND@", TRAINERTYPE_NORMAL
-	db 31, SANDSLASH
-	db 33, GOLEM
+	db 66, SANDSLASH
+	db 67, GOLEM
 	db -1 ; end
 
 	; HIKER (15)
@@ -2606,9 +2606,9 @@ FirebreatherGroup:
 
 	; FIREBREATHER (6)
 	db "LYLE@", TRAINERTYPE_NORMAL
-	db 28, KOFFING
-	db 31, FLAREON
-	db 28, KOFFING
+	db 61, WEEZING
+	db 59, FLAREON
+	db 58, CHARIZARD
 	db -1 ; end
 
 	; FIREBREATHER (7)
@@ -2629,9 +2629,9 @@ JugglerGroup:
 
 	; JUGGLER (2)
 	db "FRITZ@", TRAINERTYPE_NORMAL
-	db 29, MR__MIME
-	db 29, MAGMAR
-	db 29, MACHOKE
+	db 63, MR__MIME
+	db 61, MAGMAR
+	db 62, POLIWRATH
 	db -1 ; end
 
 	; JUGGLER (3)
@@ -2855,7 +2855,7 @@ PicnickerGroup:
 
 	; PICNICKER (8)
 	db "DEBRA@", TRAINERTYPE_NORMAL
-	db 33, SEAKING
+	db 71, SEAKING
 	db -1 ; end
 
 	; PICNICKER (9)
@@ -3298,7 +3298,7 @@ PokefanMGroup:
 
 	; POKEFANM (9)
 	db "COLIN@", TRAINERTYPE_ITEM
-	db 32, DELIBIRD,   BERRY
+	db 75, DELIBIRD,   GOLD_B_JUICE
 	db -1 ; end
 
 	; POKEFANM (10)
@@ -3409,14 +3409,14 @@ TwinsGroup:
 
 	; TWINS (7)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, TEDDIURSA
-	db 31, PHANPY
+	db 75, TEDDIURSA
+	db 75, PHANPY
 	db -1 ; end
 
 	; TWINS (8)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, PHANPY
-	db 31, TEDDIURSA
+	db 75, PHANPY
+	db 75, TEDDIURSA
 	db -1 ; end
 
 	; TWINS (9)

@@ -248,7 +248,7 @@ FastShipB1FOnDutySailorThanksText:
 	done
 
 FastShipB1FOnDutySailorSawLittleGirlText:
-	text "A little girl?"
+	text "A girl?"
 
 	para "I may have seen"
 	line "her go by here."

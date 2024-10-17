@@ -129,6 +129,7 @@ WorriedGrandpaSceneLeft:
 	takeitem KANTO_PAPERS
 	setevent EVENT_KANTO_PAPERS_STOLEN
 	setevent EVENT_NUGGET_BRIDGE_AWAY
+	setevent EVENT_FAST_SHIP_OPAL2
 	opentext
 	writetext FastShip1FGrandpaText
 	waitbutton
