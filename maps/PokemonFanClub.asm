@@ -22,18 +22,21 @@ PokemonFanClubChairmanScript:
 	writetext BossTryingToRescueUsText
 	setevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT
 	waitbutton
+	closetext
 	playmapmusic
 	end
 
 .HeardSpeech:
 	writetext HeardSpeachText
 	waitbutton
+	closetext
 	playmapmusic
 	end
 
 .LeaveUsBe:
 	writetext LeaveUsBeText
 	waitbutton
+	closetext
 	playmapmusic
 	end
 
@@ -43,6 +46,7 @@ PokemonFanClubReceptionistScript:
 	opentext
 	writetext PokemonFanClubReceptionistText
 	waitbutton
+	closetext
 	playmapmusic
 	end
 

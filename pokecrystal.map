@@ -8436,7 +8436,7 @@ ROMX bank #13:
 	TOTAL EMPTY: $00ba bytes
 
 ROMX bank #14:
-	SECTION: $4000-$7ffe ($3fff bytes) ["Enemy Trainers"]
+	SECTION: $4000-$7fea ($3feb bytes) ["Enemy Trainers"]
 	         $4000 = AI_SwitchOrTryItem
 	         $4032 = AI_SwitchOrTryItem.ok
 	         $4041 = DontSwitch
@@ -8928,10 +8928,10 @@ ROMX bank #14:
 	         $7e9b = RedGroup
 	         $7ecb = BlueGroup
 	         $7efc = OfficerGroup
-	         $7f98 = GruntFGroup
-	         $7fe4 = MysticalmanGroup
-	EMPTY: $7fff-$7fff ($0001 byte)
-	TOTAL EMPTY: $0001 byte
+	         $7f84 = GruntFGroup
+	         $7fd0 = MysticalmanGroup
+	EMPTY: $7feb-$7fff ($0015 bytes)
+	TOTAL EMPTY: $0015 bytes
 
 ROMX bank #15:
 	SECTION: $4000-$7ff5 ($3ff6 bytes) ["Battle Core"]
@@ -44426,7 +44426,7 @@ ROMX bank #126:
 	TOTAL EMPTY: $0758 bytes
 
 ROMX bank #127:
-	SECTION: $4000-$7cd6 ($3cd7 bytes) ["Map Scripts 30"]
+	SECTION: $4000-$7cda ($3cdb bytes) ["Map Scripts 30"]
 	         $4000 = CherrygrovePokecenter1F_MapScripts
 	         $4002 = CherrygrovePokecenter1FNurseScript
 	         $4075 = CherrygrovePokecenter1FNurseScript.FreeHealthCare
@@ -44622,94 +44622,94 @@ ROMX bank #127:
 	         $64bf = MahoganyPokecenter1F_MapEvents
 	         $6508 = PokemonFanClub_MapScripts
 	         $650a = PokemonFanClubChairmanScript
-	         $6524 = PokemonFanClubChairmanScript.HeardSpeech
-	         $652a = PokemonFanClubChairmanScript.LeaveUsBe
-	         $6530 = PokemonFanClubReceptionistScript
-	         $653b = PokemonFanClubClefairyGuyScript
-	         $6553 = PokemonFanClubClefairyGuyScript.MetCopycat
-	         $657c = PokemonFanClubClefairyGuyScript.GotLostItem
-	         $658f = PokemonFanClubClefairyGuyScript.IChoseToStay
-	         $659c = PokemonFanClubClefairyGuyScript.ILoveCopyCat
-	         $65a3 = PokemonFanClubClefairyGuyScript.NoRoom
-	         $65aa = PokemonFanClubClefairyGuyScript.Iunderstand
-	         $65b1 = PokemonFanClubTeacherScript
-	         $65e6 = PokemonFanClubTeacherScript.NoRoomBayleef
-	         $65ed = PokemonFanClubTeacherScript.RefusedBayleef
-	         $65f4 = PokemonFanClubTeacherScript.GotBayleef
-	         $65fb = PokemonFanClubClefairyDollScript
-	         $65fe = PokemonFanClubBayleefScript
-	         $660e = PokemonFanClubBayleefScript.Abandoned
-	         $6632 = PokemonFanClubBayleefScript.NotWorthCatching
-	         $6640 = PokemonFanClubListenSign
-	         $6643 = PokemonFanClubBraggingSign
-	         $6646 = BossTryingToRescueUsText
-	         $6785 = HeardSpeachText
-	         $67bb = LeaveUsBeText
-	         $682b = PokemonFanClubReceptionistText
-	         $6981 = PokemonFanClubClefairyGuyMakingDoWithADollIFoundText
-	         $6a42 = PokemonFanClubClefairyGuyTakeThisDollBackToGirlText
-	         $6c8f = PokemonFanClubPlayerReceivedDollText
-	         $6d1f = PokemonFanClubClefairyGuyIUnderstandText
-	         $6d8d = PokemonFanClubClefairyGuyGoingToGetARealClefairyText
-	         $6e46 = PokemonFanClubClefairyGuyIStayedText
-	         $6f46 = PokemonFanClubClefairyGuyProudofDaughterText
-	         $6fcb = PokemonFanClubClefairyGuyPackIsJammedFullText
-	         $703a = PokemonFanClubTeacherText
-	         $7107 = PokemonFanClubTeacherImCountingOnYouText
-	         $714b = ReceivedBayleefText
-	         $7162 = PokemonFanClubTeacherBayleefMayEvolveText
-	         $71a6 = PokemonFanClubTeacherPartyFullText
-	         $71f3 = PokemonFanClubTeacherNoBayleefText
-	         $7258 = PokemonFanClubClefairyDollText
-	         $72c0 = PokemonFanClubBayleefText
-	         $72d3 = AbandonedBayleefText
-	         $734f = NotWorthCatchingText
-	         $73b4 = PokemonFanClubListenSignText
-	         $73d8 = PokemonFanClubBraggingSignText
-	         $7437 = PokemonFanClub_MapEvents
-	         $749f = ViridianCity_MapScripts
-	         $74a4 = ViridianCityFlypointCallback
-	         $74a8 = ViridianCityCoffeeGramps
-	         $74c2 = ViridianCityCoffeeGramps.no
-	         $74c8 = ViridianCityCoffeeGramps.Alert
-	         $74e1 = ViridianCityCoffeeGramps.GetAwayfromMe
-	         $74e8 = ViridianCityGrampsNearGym
-	         $74f6 = ViridianCityGrampsNearGym.BlueReturned
-	         $74fc = ViridianCityDreamEaterFisher
-	         $7511 = ViridianCityDreamEaterFisher.GotDreamEater
-	         $7515 = ViridianCityDreamEaterFisher.NoRoomForDreamEater
-	         $7517 = ViridianCityYoungsterScript
-	         $751a = ViridianCitySign
-	         $751d = ViridianGymSign
-	         $7520 = ViridianCityWelcomeSign
-	         $7523 = TrainerHouseSign
-	         $7526 = ViridianCityPokecenterSign
-	         $7529 = ViridianCityMartSign
-	         $752c = ViridianTownCityPolice3Script
-	         $7538 = ViridianTownCityPolice3Script.Script
-	         $7540 = ViridianTownCityPolice2Script
-	         $754c = ViridianTownCityPolice2Script.Script
-	         $7554 = ViridianTownCityPolice1Script
-	         $7560 = ViridianTownCityPolice1Script.Script
-	         $7568 = ViridianPoliceSeenText
-	         $75d0 = ViridianPoliceAfterBattleText
-	         $7649 = ViridianPoliceWinText
-	         $767d = ViridianCityCoffeeGrampsQuestionText
-	         $77c9 = ViridianCityCoffeeGrampsBelievedText
-	         $78a8 = ViridianCityCoffeeGrampsDoubtedText
-	         $7904 = ViridianCityGrampsNearGymText
-	         $79a5 = ViridianCityGrampsNearGymBlueReturnedText
-	         $79eb = ViridianCityDreamEaterFisherText
-	         $7aab = ViridianCityDreamEaterFisherGotDreamEaterText
-	         $7acf = ViridianCityYoungsterText
-	         $7b65 = ViridianCitySignText
-	         $7b91 = ViridianGymSignText
-	         $7bd6 = ViridianCityWelcomeSignText
-	         $7c0f = TrainerHouseSignText
-	         $7c3f = ViridianCity_MapEvents
-	EMPTY: $7cd7-$7ddf ($0109 bytes)
+	         $6525 = PokemonFanClubChairmanScript.HeardSpeech
+	         $652c = PokemonFanClubChairmanScript.LeaveUsBe
+	         $6533 = PokemonFanClubReceptionistScript
+	         $653f = PokemonFanClubClefairyGuyScript
+	         $6557 = PokemonFanClubClefairyGuyScript.MetCopycat
+	         $6580 = PokemonFanClubClefairyGuyScript.GotLostItem
+	         $6593 = PokemonFanClubClefairyGuyScript.IChoseToStay
+	         $65a0 = PokemonFanClubClefairyGuyScript.ILoveCopyCat
+	         $65a7 = PokemonFanClubClefairyGuyScript.NoRoom
+	         $65ae = PokemonFanClubClefairyGuyScript.Iunderstand
+	         $65b5 = PokemonFanClubTeacherScript
+	         $65ea = PokemonFanClubTeacherScript.NoRoomBayleef
+	         $65f1 = PokemonFanClubTeacherScript.RefusedBayleef
+	         $65f8 = PokemonFanClubTeacherScript.GotBayleef
+	         $65ff = PokemonFanClubClefairyDollScript
+	         $6602 = PokemonFanClubBayleefScript
+	         $6612 = PokemonFanClubBayleefScript.Abandoned
+	         $6636 = PokemonFanClubBayleefScript.NotWorthCatching
+	         $6644 = PokemonFanClubListenSign
+	         $6647 = PokemonFanClubBraggingSign
+	         $664a = BossTryingToRescueUsText
+	         $6789 = HeardSpeachText
+	         $67bf = LeaveUsBeText
+	         $682f = PokemonFanClubReceptionistText
+	         $6985 = PokemonFanClubClefairyGuyMakingDoWithADollIFoundText
+	         $6a46 = PokemonFanClubClefairyGuyTakeThisDollBackToGirlText
+	         $6c93 = PokemonFanClubPlayerReceivedDollText
+	         $6d23 = PokemonFanClubClefairyGuyIUnderstandText
+	         $6d91 = PokemonFanClubClefairyGuyGoingToGetARealClefairyText
+	         $6e4a = PokemonFanClubClefairyGuyIStayedText
+	         $6f4a = PokemonFanClubClefairyGuyProudofDaughterText
+	         $6fcf = PokemonFanClubClefairyGuyPackIsJammedFullText
+	         $703e = PokemonFanClubTeacherText
+	         $710b = PokemonFanClubTeacherImCountingOnYouText
+	         $714f = ReceivedBayleefText
+	         $7166 = PokemonFanClubTeacherBayleefMayEvolveText
+	         $71aa = PokemonFanClubTeacherPartyFullText
+	         $71f7 = PokemonFanClubTeacherNoBayleefText
+	         $725c = PokemonFanClubClefairyDollText
+	         $72c4 = PokemonFanClubBayleefText
+	         $72d7 = AbandonedBayleefText
+	         $7353 = NotWorthCatchingText
+	         $73b8 = PokemonFanClubListenSignText
+	         $73dc = PokemonFanClubBraggingSignText
+	         $743b = PokemonFanClub_MapEvents
+	         $74a3 = ViridianCity_MapScripts
+	         $74a8 = ViridianCityFlypointCallback
+	         $74ac = ViridianCityCoffeeGramps
+	         $74c6 = ViridianCityCoffeeGramps.no
+	         $74cc = ViridianCityCoffeeGramps.Alert
+	         $74e5 = ViridianCityCoffeeGramps.GetAwayfromMe
+	         $74ec = ViridianCityGrampsNearGym
+	         $74fa = ViridianCityGrampsNearGym.BlueReturned
+	         $7500 = ViridianCityDreamEaterFisher
+	         $7515 = ViridianCityDreamEaterFisher.GotDreamEater
+	         $7519 = ViridianCityDreamEaterFisher.NoRoomForDreamEater
+	         $751b = ViridianCityYoungsterScript
+	         $751e = ViridianCitySign
+	         $7521 = ViridianGymSign
+	         $7524 = ViridianCityWelcomeSign
+	         $7527 = TrainerHouseSign
+	         $752a = ViridianCityPokecenterSign
+	         $752d = ViridianCityMartSign
+	         $7530 = ViridianTownCityPolice3Script
+	         $753c = ViridianTownCityPolice3Script.Script
+	         $7544 = ViridianTownCityPolice2Script
+	         $7550 = ViridianTownCityPolice2Script.Script
+	         $7558 = ViridianTownCityPolice1Script
+	         $7564 = ViridianTownCityPolice1Script.Script
+	         $756c = ViridianPoliceSeenText
+	         $75d4 = ViridianPoliceAfterBattleText
+	         $764d = ViridianPoliceWinText
+	         $7681 = ViridianCityCoffeeGrampsQuestionText
+	         $77cd = ViridianCityCoffeeGrampsBelievedText
+	         $78ac = ViridianCityCoffeeGrampsDoubtedText
+	         $7908 = ViridianCityGrampsNearGymText
+	         $79a9 = ViridianCityGrampsNearGymBlueReturnedText
+	         $79ef = ViridianCityDreamEaterFisherText
+	         $7aaf = ViridianCityDreamEaterFisherGotDreamEaterText
+	         $7ad3 = ViridianCityYoungsterText
+	         $7b69 = ViridianCitySignText
+	         $7b95 = ViridianGymSignText
+	         $7bda = ViridianCityWelcomeSignText
+	         $7c13 = TrainerHouseSignText
+	         $7c43 = ViridianCity_MapEvents
+	EMPTY: $7cdb-$7ddf ($0105 bytes)
 	SECTION: $7de0-$7fff ($0220 bytes) ["Stadium 2 Checksums"]
-	TOTAL EMPTY: $0109 bytes
+	TOTAL EMPTY: $0105 bytes
 
 VRAM bank #0:
 	SECTION: $8000-$9fff ($2000 bytes) ["VRAM0"]
@@ -60406,7 +60406,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1782964 bytes used / 297804 free in 127 banks
+	ROMX: 1782948 bytes used / 297820 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks

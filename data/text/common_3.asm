@@ -1201,7 +1201,7 @@ _BallAlmostHadItText::
 	prompt
 
 _BallSoCloseText::
-	text "Shoot! It was so"
+	text "Shit! It was so"
 	line "close too!"
 	prompt
 

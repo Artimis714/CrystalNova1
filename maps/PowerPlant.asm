@@ -574,7 +574,7 @@ PowerPlantManagerThatsThePartText:
 	line "done, and I think"
 
 	para "we have to find a"
-	line "forward."
+	line "way forward."
 
 	para "Not everyone in"
 	line "my government"
