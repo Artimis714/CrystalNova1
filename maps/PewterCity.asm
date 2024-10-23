@@ -317,13 +317,14 @@ PewterCityGrampsText2:
 	para "kept it safe all"
 	line "these years."
 
-	para "Anyway, it should be"
-	line "returned to JOHTO."
+	para "Anyway, it should"
+	line "be returned to"
+	cont "JOHTO."
 
-	para "I'm sorry kiddo, for"
-	line "everything that"
-	cont "happened to your"
-	cont "people."
+	para "I'm sorry kiddo,"
+	line "for everything"
+	cont "that happened"
+	cont "to your people."
 	done
 
 PewterCityGrampsText_GotSilverWing:

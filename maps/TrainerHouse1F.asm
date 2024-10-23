@@ -183,7 +183,7 @@ TrainerHouse1FGentlemanText:
 	done
 
 LolitaWasSoHotText:
-	para "..."
+	text "..."
 	line "..."
 
 	para "Why yes my name is"
@@ -306,7 +306,7 @@ LolitaWouldveBeenSoSexyText:
 	done
 
 WhatAShameText:
-	para "..."
+	text "..."
 	line "..."
 
 	para "Hmmm... I see"

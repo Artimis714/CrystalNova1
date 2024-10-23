@@ -10421,7 +10421,7 @@ ROMX bank #17:
 	         $49cc = MailboxPC.TopMenuData
 	         $49dc = MailboxPC.SubMenuHeader
 	         $49e4 = MailboxPC.SubMenuData
-	SECTION: $4a0f-$7f3b ($352d bytes) ["Map Scripts 26"]
+	SECTION: $4a0f-$7f3f ($3531 bytes) ["Map Scripts 26"]
 	         $4a0f = OaksLab_MapScripts
 	         $4a11 = Oak
 	         $4a25 = Oak.CheckKantoPapers
@@ -10555,65 +10555,65 @@ ROMX bank #17:
 	         $6e82 = PowerPlantManagerWhoWouldRuinMyGeneratorText
 	         $708d = PowerPlantManagerIWontForgiveCulpritText
 	         $7108 = PowerPlantManagerThatsThePartText
-	         $731d = PowerPlantManagerTakeThisTMText
-	         $7396 = PowerPlantManagerTM07IsZapCannonText
-	         $7447 = PowerPlantManagerMyBelovedGeneratorText
-	         $7519 = PowerPlant_MapEvents
-	         $7596 = IndigoPlateauPokecenter1F_MapScripts
-	         $759f = IndigoPlateauPokecenter1FNoopScene
-	         $75a0 = IndigoPlateauPokecenter1FPrepareElite4Callback
-	         $75e9 = PlateauRivalBattle1
-	         $762a = PlateauRivalBattle2
-	         $7664 = PlateauRivalBattleCommon
-	         $7689 = PlateauRivalBattleCommon.Totodile
-	         $7699 = PlateauRivalBattleCommon.Chikorita
-	         $76a9 = PlateauRivalPostBattle
-	         $76c1 = PlateauRivalScriptDone
-	         $76c2 = IndigoPlateauPokecenter1FNurseScript
-	         $76cb = IndigoPlateauPokecenter1FNurseScript.NoCanHeal
-	         $76d7 = IndigoPlateauPokecenter1FNurseScript.ProceedNormally
-	         $76da = IndigoPlateauPokecenter1FClerkScript
-	         $76e1 = IndigoPlateauPokecenter1FCooltrainerMScript
-	         $76e4 = PlateauRivalMovement1
-	         $76eb = PlateauRivalMovement2
-	         $76f2 = PlateauRivalLeavesMovement
-	         $76f8 = IndigoPlateauPokecenter1FCooltrainerMText
-	         $7775 = PlateauRivalWinText
-	         $7784 = IndigoNoNoText
-	         $78d4 = PlateauRivalText2
-	         $792d = PlateauRivalText1
-	         $79cd = PlateauRivalLoseText
-	         $7a05 = IndigoPlateauPokecenter1F_MapEvents
-	         $7a63 = Route19_MapScripts
-	         $7a68 = Route19ClearRocksCallback
-	         $7a86 = Route19ClearRocksCallback.Done
-	         $7a87 = TrainerSwimmerfDawn
-	         $7a93 = TrainerSwimmerfDawn.Script
-	         $7a9b = TrainerSwimmermHarold
-	         $7aa7 = TrainerSwimmermHarold.Script
-	         $7aaf = TrainerSwimmermJerome
-	         $7abb = TrainerSwimmermJerome.Script
-	         $7ac3 = TrainerSwimmermTucker
-	         $7acf = TrainerSwimmermTucker.Script
-	         $7ad7 = Route19Sign
-	         $7ada = CarefulSwimmingSign
-	         $7add = SwimmermHaroldSeenText
-	         $7b0f = SwimmermHaroldBeatenText
-	         $7b16 = SwimmermHaroldAfterBattleText
-	         $7bd1 = SwimmermTuckerSeenText
-	         $7c04 = SwimmermTuckerBeatenText
-	         $7c12 = SwimmermTuckerAfterBattleText
-	         $7c81 = SwimmerfDawnSeenText
-	         $7cc7 = SwimmerfDawnBeatenText
-	         $7ce6 = SwimmerfDawnAfterBattleText
-	         $7da2 = SwimmermJeromeSeenText
-	         $7e35 = SwimmermJeromeBeatenText
-	         $7e4d = SwimmermJeromeAfterBattleText
-	         $7e7e = Route19SignText
-	         $7ea7 = CarefulSwimmingSignText
-	         $7ef3 = Route19_MapEvents
-	EMPTY: $7f3c-$7fff ($00c4 bytes)
-	TOTAL EMPTY: $00c4 bytes
+	         $7321 = PowerPlantManagerTakeThisTMText
+	         $739a = PowerPlantManagerTM07IsZapCannonText
+	         $744b = PowerPlantManagerMyBelovedGeneratorText
+	         $751d = PowerPlant_MapEvents
+	         $759a = IndigoPlateauPokecenter1F_MapScripts
+	         $75a3 = IndigoPlateauPokecenter1FNoopScene
+	         $75a4 = IndigoPlateauPokecenter1FPrepareElite4Callback
+	         $75ed = PlateauRivalBattle1
+	         $762e = PlateauRivalBattle2
+	         $7668 = PlateauRivalBattleCommon
+	         $768d = PlateauRivalBattleCommon.Totodile
+	         $769d = PlateauRivalBattleCommon.Chikorita
+	         $76ad = PlateauRivalPostBattle
+	         $76c5 = PlateauRivalScriptDone
+	         $76c6 = IndigoPlateauPokecenter1FNurseScript
+	         $76cf = IndigoPlateauPokecenter1FNurseScript.NoCanHeal
+	         $76db = IndigoPlateauPokecenter1FNurseScript.ProceedNormally
+	         $76de = IndigoPlateauPokecenter1FClerkScript
+	         $76e5 = IndigoPlateauPokecenter1FCooltrainerMScript
+	         $76e8 = PlateauRivalMovement1
+	         $76ef = PlateauRivalMovement2
+	         $76f6 = PlateauRivalLeavesMovement
+	         $76fc = IndigoPlateauPokecenter1FCooltrainerMText
+	         $7779 = PlateauRivalWinText
+	         $7788 = IndigoNoNoText
+	         $78d8 = PlateauRivalText2
+	         $7931 = PlateauRivalText1
+	         $79d1 = PlateauRivalLoseText
+	         $7a09 = IndigoPlateauPokecenter1F_MapEvents
+	         $7a67 = Route19_MapScripts
+	         $7a6c = Route19ClearRocksCallback
+	         $7a8a = Route19ClearRocksCallback.Done
+	         $7a8b = TrainerSwimmerfDawn
+	         $7a97 = TrainerSwimmerfDawn.Script
+	         $7a9f = TrainerSwimmermHarold
+	         $7aab = TrainerSwimmermHarold.Script
+	         $7ab3 = TrainerSwimmermJerome
+	         $7abf = TrainerSwimmermJerome.Script
+	         $7ac7 = TrainerSwimmermTucker
+	         $7ad3 = TrainerSwimmermTucker.Script
+	         $7adb = Route19Sign
+	         $7ade = CarefulSwimmingSign
+	         $7ae1 = SwimmermHaroldSeenText
+	         $7b13 = SwimmermHaroldBeatenText
+	         $7b1a = SwimmermHaroldAfterBattleText
+	         $7bd5 = SwimmermTuckerSeenText
+	         $7c08 = SwimmermTuckerBeatenText
+	         $7c16 = SwimmermTuckerAfterBattleText
+	         $7c85 = SwimmerfDawnSeenText
+	         $7ccb = SwimmerfDawnBeatenText
+	         $7cea = SwimmerfDawnAfterBattleText
+	         $7da6 = SwimmermJeromeSeenText
+	         $7e39 = SwimmermJeromeBeatenText
+	         $7e51 = SwimmermJeromeAfterBattleText
+	         $7e82 = Route19SignText
+	         $7eab = CarefulSwimmingSignText
+	         $7ef7 = Route19_MapEvents
+	EMPTY: $7f40-$7fff ($00c0 bytes)
+	TOTAL EMPTY: $00c0 bytes
 
 ROMX bank #18:
 	SECTION: $4000-$6e67 ($2e68 bytes) ["Crystal Features 1"]
@@ -42726,7 +42726,7 @@ ROMX bank #112:
 	TOTAL EMPTY: $1cd2 bytes
 
 ROMX bank #113:
-	SECTION: $4000-$645b ($245c bytes) ["Text 3"]
+	SECTION: $4000-$645a ($245b bytes) ["Text 3"]
 	         $4000 = _OakText6
 	         $4026 = _OakText7
 	         $40b2 = _ClockTimeMayBeWrongText
@@ -42896,78 +42896,78 @@ ROMX bank #113:
 	         $5a7d = _BallAppearedCaughtText
 	         $5a9d = _BallAlmostHadItText
 	         $5ab4 = _BallSoCloseText
-	         $5ad1 = Text_BallCaught
-	         $5aef = _WaitButtonText
-	         $5af2 = _BallSentToPCText
-	         $5b0d = _NewDexDataText
-	         $5b39 = _AskGiveNicknameText
-	         $5b54 = _ItemStatRoseText
-	         $5b66 = _ItemCantUseOnMonText
-	         $5b87 = _RepelUsedEarlierIsStillInEffectText
-	         $5bb3 = _PlayedFluteText
-	         $5be2 = _FluteWakeUpText
-	         $5bfe = Text_PlayedPokeFlute
-	         $5c18 = _BlueCardBalanceText
-	         $5c35 = _CoinCaseCountText
-	         $5c44 = _RaiseThePPOfWhichMoveText
-	         $5c61 = _RestoreThePPOfWhichMoveText
-	         $5c80 = _PPIsMaxedOutText
-	         $5c97 = _PPsIncreasedText
-	         $5cab = _PPRestoredText
-	         $5cbd = _SentTrophyHomeText
-	         $5cf8 = _ItemLooksBitterText
-	         $5d0a = _ItemCantUseOnEggText
-	         $5d28 = _ItemOakWarningText
-	         $5d51 = _ItemBelongsToSomeoneElseText
-	         $5d70 = _ItemWontHaveEffectText
-	         $5d8a = _BallBlockedText
-	         $5da9 = _BallDontBeAThiefText
-	         $5dbb = _NoCyclingText
-	         $5dd7 = _ItemCantGetOnText
-	         $5df4 = _BallBoxFullText
-	         $5e22 = _ItemUsedText
-	         $5e35 = _ItemGotOnText
-	         $5e4a = _ItemGotOffText
-	         $5e62 = _KnowsMoveText
-	         $5e74 = _MoveKnowsOneText
-	         $5ec9 = _AskDeleteMoveText
-	         $5ee4 = _DeleterForgotMoveText
-	         $5f06 = _DeleterEggText
-	         $5f32 = _DeleterNoComeAgainText
-	         $5f51 = _DeleterAskWhichMoveText
-	         $5f75 = _DeleterIntroText
-	         $5fdf = _DeleterAskWhichMonText
-	         $6029 = _DSTIsThatOKText
-	         $603c = _TimeAskOkayText
-	         $604b = _TimesetAskDSTText
-	         $607b = _TimesetDSTText
-	         $60a1 = _TimesetAskNotDSTText
-	         $60c0 = _TimesetNotDSTText
-	         $60e0 = _TimesetAskAdjustDSTText
-	         $611c = _MomLostGearBookletText
-	         $6169 = ShadyShop_IntroText
-	         $61be = ShadyShop_ComeAgainText
-	         $61cc = ShadyShop_HowManyText
-	         $61e0 = ShadyShop_CostsThisMuchText
-	         $61ff = ShadyShop_InsufficientFundsText
-	         $6212 = ShadyShop_BagFullText
-	         $622c = ShadyShop_HereYouGoText
-	         $6238 = BallShop_IntroText
-	         $6285 = BallShop_ComeAgainText
-	         $6294 = BallShop_HowManyText
-	         $62ab = BallShop_CostsThisMuchText
-	         $62c0 = BallShop_InsufficientFundsText
-	         $62df = BallShop_BagFullText
-	         $6309 = BallShop_HereYouGoText
-	         $631b = FoodCourt_IntroText
-	         $6375 = FoodCourt_ComeAgainText
-	         $639d = FoodCourt_HowManyText
-	         $63c3 = FoodCourt_CostsThisMuchText
-	         $63e3 = FoodCourt_InsufficientFundsText
-	         $640d = FoodCourt_BagFullText
-	         $643f = FoodCourt_HereYouGoText
-	EMPTY: $645c-$7fff ($1ba4 bytes)
-	TOTAL EMPTY: $1ba4 bytes
+	         $5ad0 = Text_BallCaught
+	         $5aee = _WaitButtonText
+	         $5af1 = _BallSentToPCText
+	         $5b0c = _NewDexDataText
+	         $5b38 = _AskGiveNicknameText
+	         $5b53 = _ItemStatRoseText
+	         $5b65 = _ItemCantUseOnMonText
+	         $5b86 = _RepelUsedEarlierIsStillInEffectText
+	         $5bb2 = _PlayedFluteText
+	         $5be1 = _FluteWakeUpText
+	         $5bfd = Text_PlayedPokeFlute
+	         $5c17 = _BlueCardBalanceText
+	         $5c34 = _CoinCaseCountText
+	         $5c43 = _RaiseThePPOfWhichMoveText
+	         $5c60 = _RestoreThePPOfWhichMoveText
+	         $5c7f = _PPIsMaxedOutText
+	         $5c96 = _PPsIncreasedText
+	         $5caa = _PPRestoredText
+	         $5cbc = _SentTrophyHomeText
+	         $5cf7 = _ItemLooksBitterText
+	         $5d09 = _ItemCantUseOnEggText
+	         $5d27 = _ItemOakWarningText
+	         $5d50 = _ItemBelongsToSomeoneElseText
+	         $5d6f = _ItemWontHaveEffectText
+	         $5d89 = _BallBlockedText
+	         $5da8 = _BallDontBeAThiefText
+	         $5dba = _NoCyclingText
+	         $5dd6 = _ItemCantGetOnText
+	         $5df3 = _BallBoxFullText
+	         $5e21 = _ItemUsedText
+	         $5e34 = _ItemGotOnText
+	         $5e49 = _ItemGotOffText
+	         $5e61 = _KnowsMoveText
+	         $5e73 = _MoveKnowsOneText
+	         $5ec8 = _AskDeleteMoveText
+	         $5ee3 = _DeleterForgotMoveText
+	         $5f05 = _DeleterEggText
+	         $5f31 = _DeleterNoComeAgainText
+	         $5f50 = _DeleterAskWhichMoveText
+	         $5f74 = _DeleterIntroText
+	         $5fde = _DeleterAskWhichMonText
+	         $6028 = _DSTIsThatOKText
+	         $603b = _TimeAskOkayText
+	         $604a = _TimesetAskDSTText
+	         $607a = _TimesetDSTText
+	         $60a0 = _TimesetAskNotDSTText
+	         $60bf = _TimesetNotDSTText
+	         $60df = _TimesetAskAdjustDSTText
+	         $611b = _MomLostGearBookletText
+	         $6168 = ShadyShop_IntroText
+	         $61bd = ShadyShop_ComeAgainText
+	         $61cb = ShadyShop_HowManyText
+	         $61df = ShadyShop_CostsThisMuchText
+	         $61fe = ShadyShop_InsufficientFundsText
+	         $6211 = ShadyShop_BagFullText
+	         $622b = ShadyShop_HereYouGoText
+	         $6237 = BallShop_IntroText
+	         $6284 = BallShop_ComeAgainText
+	         $6293 = BallShop_HowManyText
+	         $62aa = BallShop_CostsThisMuchText
+	         $62bf = BallShop_InsufficientFundsText
+	         $62de = BallShop_BagFullText
+	         $6308 = BallShop_HereYouGoText
+	         $631a = FoodCourt_IntroText
+	         $6374 = FoodCourt_ComeAgainText
+	         $639c = FoodCourt_HowManyText
+	         $63c2 = FoodCourt_CostsThisMuchText
+	         $63e2 = FoodCourt_InsufficientFundsText
+	         $640c = FoodCourt_BagFullText
+	         $643e = FoodCourt_HereYouGoText
+	EMPTY: $645b-$7fff ($1ba5 bytes)
+	TOTAL EMPTY: $1ba5 bytes
 
 ROMX bank #114:
 	SECTION: $4000-$7129 ($312a bytes) ["Miscellaneous Text"]
@@ -60406,7 +60406,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1782948 bytes used / 297820 free in 127 banks
+	ROMX: 1782951 bytes used / 297817 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks

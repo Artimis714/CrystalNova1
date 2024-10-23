@@ -13,7 +13,7 @@ Route2NuggetHouseFisherScript:
 	iftrue .GotNugget
 	writetext Route2NuggetHouseFisherText
 	promptbutton
-	verbosegiveitem NUGGET, 2
+	verbosegiveitem BIG_NUGGET
 	iffalse .NoRoom
 	setevent EVENT_GOT_NUGGET_FROM_GUY
 .GotNugget:

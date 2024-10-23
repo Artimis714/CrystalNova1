@@ -858,8 +858,8 @@ FlashDescription:
 	line "reduce accuracy.@"
 
 PsywaveDescription:
-	db   "Psionic energy that"
-	line "may confuse.@"
+	db   "Psionic energy"
+	line "that may confuse.@"
 
 SplashDescription:
 	db   "Has no effect"
