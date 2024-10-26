@@ -1,23 +1,24 @@
 	object_const_def
-	const DIGLETTSCAVE_POKEFAN_M
+	const DIGLETTSCAVE_BOULDER
 
 DiglettsCave_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-DiglettsCavePokefanMScript:
-	jumptextfaceplayer DiglettsCavePokefanMText
+DigletcaveBoulderScript:
+	jumptext DiglettsCavePokefanMText
 
 DiglettsCaveHiddenMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_DIGLETTS_CAVE_HIDDEN_MAX_REVIVE
 
 DiglettsCavePokefanMText:
-	text "A bunch of DIGLETT"
-	line "popped out of the"
+	text "This boulder is"
+	line "stuck!"
 
-	para "ground! That was"
-	line "shocking."
+	para "Hopefully some"
+	line "DIGLETT will move"
+	cont "it."
 	done
 
 DiglettsCave_MapEvents:
@@ -37,4 +38,4 @@ DiglettsCave_MapEvents:
 	bg_event  6, 11, BGEVENT_ITEM, DiglettsCaveHiddenMaxRevive
 
 	def_object_events
-	object_event  3, 31, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DiglettsCavePokefanMScript, -1
+	object_event  17, 33, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DigletcaveBoulderScript, EVENT_VERMILION_CITY_SNORLAX

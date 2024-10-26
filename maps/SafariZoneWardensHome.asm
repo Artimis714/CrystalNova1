@@ -64,6 +64,7 @@ WardensGranddaughter:
 	setevent EVENT_BEAT_CITY_POLICE_FUCHSIA
 	setevent EVENT_BEAT_CITY_POLICE_CINNABAR
 	setevent EVENT_BEAT_CITY_POLICE_CERULEAN
+	setevent EVENT_ROUTE_24_ROCKET
 	waitbutton
 	closetext
 	end

@@ -22,6 +22,7 @@ CinnabarIslandBlue:
 	applymovement CINNABARISLAND_BLUE, CinnabarIslandBlueTeleport
 	disappear CINNABARISLAND_BLUE
 	clearevent EVENT_VIRIDIAN_GYM_BLUE
+	setevent EVENT_BLUE_IN_CINNABAR
 	checkitem KANTO_PAPERS
 	iffalse .SetAlert
 	end

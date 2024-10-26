@@ -10,8 +10,6 @@ Route24RocketScript:
 	faceplayer
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	opentext
-	checkevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT
-	iffalse .TalktomySquad
 	writetext Route24RocketSeenText
 	waitbutton
 	closetext
@@ -31,19 +29,15 @@ Route24RocketScript:
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
 	disappear ROUTE24_ROCKET
+	setevent EVENT_ROUTE_24_ROCKET
+	setevent EVENT_PRISON_ROCKETS
 	pause 25
 	special FadeInQuickly
 	playmapmusic
 	end
 
-.TalktomySquad:
-	writetext MaximumSecurityPrisontext
-	setevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT_BUT_BAG_WAS_FULL
-	waitbutton
-	playmapmusic
-	end
 
-MaximumSecurityPrisontext:
+Route24RocketSeenText:
 	text "YOU!!!"
 	line "YOU LITTLE SHIT!"
 
@@ -70,8 +64,8 @@ MaximumSecurityPrisontext:
 	line "CHAMPION?"
 
 	para "So you've got"
-	line "full KANTO CITIZ-"
-	cont "ENSHIP?"
+	line "full KANTO"
+	cont "CITIZENSHIP?"
 
 	para "..."
 	line "..."
@@ -99,9 +93,7 @@ MaximumSecurityPrisontext:
 	para "..."
 	line "..."
 
-
-Route24RocketSeenText:
-	text "Kid, I was gonna"
+	para "Kid, I was gonna"
 	line "kick your ass any-"
 	cont "way, but now..."
 
@@ -135,8 +127,7 @@ Route24RocketAfterBattleText:
 	para "I don't want your"
 	line "sympathy."
 
-	para "You can go ahead"
-	line "and fuck off."
+	para "You can fuck off."
 
 	para "If you're content"
 	line "to play KANTO's"

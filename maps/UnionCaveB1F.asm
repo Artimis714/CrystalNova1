@@ -6,6 +6,7 @@
 	const UNIONCAVEB1F_POKE_BALL1
 	const UNIONCAVEB1F_BOULDER
 	const UNIONCAVEB1F_POKE_BALL2
+	const UNIONCAVEB1F_SHINY_ONIX
 
 UnionCaveB1F_MapScripts:
 	def_scene_scripts
@@ -54,6 +55,20 @@ TrainerHikerLeonard:
 	writetext HikerLeonardAfterBattleText
 	waitbutton
 	closetext
+	end
+
+ShinyOnix:
+	opentext
+	writetext UnionCaveOnixText
+	pause 15
+	cry ONIX
+	closetext
+	setevent EVENT_SHINY_ONIX
+	loadwildmon ONIX, 12
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	disappear UNIONCAVEB1F_SHINY_ONIX
+	reloadmapafterbattle
 	end
 
 UnionCaveB1FTMSwift:
@@ -165,6 +180,10 @@ PokemaniacCalvinAfterBattleText:
 	cont "like PROF. ELM!"
 	done
 
+UnionCaveOnixText:
+	text "RHHHHH!!!"
+	done
+
 UnionCaveB1F_MapEvents:
 	db 0, 0 ; filler
 
@@ -187,3 +206,4 @@ UnionCaveB1F_MapEvents:
 	object_event  2, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_ITEMBALL, 0, UnionCaveB1FTMSwift, EVENT_UNION_CAVE_B1F_TM_SWIFT
 	object_event  7, 10, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, UnionCaveB1FBoulder, -1
 	object_event 17, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UnionCaveB1FXDefend, EVENT_UNION_CAVE_B1F_X_DEFEND
+	object_event  8, 18, SPRITE_ONIX, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_EMOTE, OBJECTTYPE_SCRIPT, 0, ShinyOnix, EVENT_SHINY_ONIX

@@ -208,6 +208,7 @@ CianwoodGroupSprites:
 	db SPRITE_STANDING_YOUNGSTER ; non-walking version of SPRITE_YOUNGSTER
 	db SPRITE_SUICUNE
 	db SPRITE_MILTANK
+	db SPRITE_KRABBY
 	db 0 ; end
 
 MahoganyGroupSprites:

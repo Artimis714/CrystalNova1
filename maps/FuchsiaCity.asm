@@ -6,6 +6,8 @@
 	const FUCHSIACITY_OFFICER1
 	const FUCHSIACITY_OFFICER2
 	const FUCHSIACITY_OFFICER3
+	const FUCHSIACITY_OFFICER4
+	const FUCHSIACITY_OFFICER5
 
 FuchsiaCity_MapScripts:
 	def_scene_scripts
@@ -50,6 +52,39 @@ FuchsiaCityTeacher:
 	farwritetext GetAwayFromMeEhText
 	waitbutton
 	closetext
+	end
+
+FuchsiaTownCityPolice5Script:
+	faceplayer
+	opentext
+	checkitem KANTO_PAPERS
+	iftrue .OurMistake
+	playmusic MUSIC_OFFICER_ENCOUNTER
+	farwritetext KantoOfficerStopRightThere
+	waitbutton
+	showemote EMOTE_SHOCK, PLAYER, 15
+	farwritetext KantoOfficerSpendNextMonth
+	setevent EVENT_FUCHSIA_ALERT
+	clearevent EVENT_BEAT_CITY_POLICE_FUCHSIA
+	waitbutton
+	closetext
+	playsound SFX_WARP_TO
+	special FadeOutPalettes
+	waitsfx
+	warp NEW_BARK_TOWN, 13, 6
+	end
+
+.OurMistake:
+	farwritetext MyMistakeText
+	waitbutton
+	closetext
+	clearevent EVENT_FUCHSIA_ALERT
+	setevent EVENT_BEAT_CITY_POLICE_FUCHSIA
+	playsound SFX_EXIT_BUILDING
+	special FadeOutPalettes
+	disappear FUCHSIACITY_OFFICER5
+	waitsfx
+	reloadmap
 	end
 
 FuchsiaCitySign:
@@ -323,3 +358,4 @@ FuchsiaCity_MapEvents:
 	object_event 35, 22, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, FuchsiaTownCityPolice2Script, EVENT_BEAT_CITY_POLICE_FUCHSIA
 	object_event 10, 33, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, FuchsiaTownCityPolice3Script, EVENT_BEAT_CITY_POLICE_FUCHSIA
 	object_event  7, 21, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, FuchsiaTownCityPolice4Script, EVENT_BEAT_CITY_POLICE_FUCHSIA
+	object_event 27, 28, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, FuchsiaTownCityPolice5Script, EVENT_BLUE_IN_CINNABAR

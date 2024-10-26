@@ -158,7 +158,7 @@ RadioTower1FRadioCardWomanScript:
 	end
 
 .RadioCardText:
-	db "RADIO CARD@"
+	db "RADIO APP@"
 
 .ReceiveItem:
 	jumpstd ReceiveItemScript
@@ -308,9 +308,9 @@ RadioTower1FRadioCardWomanOfferQuizText:
 
 	para "Answer five ques-"
 	line "tions correctly to"
-	cont "win a RADIO CARD."
+	cont "win a RADIO APP."
 
-	para "Slide it into your"
+	para "Download on your"
 	line "#GEAR to play"
 
 	para "the radio anytime,"

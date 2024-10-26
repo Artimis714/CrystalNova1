@@ -144,9 +144,6 @@ PowerPlantManager:
 	waitbutton
 	closetext
 	setevent EVENT_MET_MANAGER_AT_POWER_PLANT
-	clearevent EVENT_CERULEAN_GYM_ROCKET
-	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
-	setmapscene CERULEAN_GYM, SCENE_CERULEANGYM_GRUNT_RUNS_OUT
 	setscene SCENE_POWERPLANT_GUARD_GETS_PHONE_CALL
 	end
 
@@ -268,24 +265,31 @@ PowerPlantOfficer1CeruleanShadyCharacterText:
 	para "..."
 	line "..."
 
-	para "What did they look"
-	line "like? umm...."
-
-	para "All black, a flat"
-	line "cap, and a big red"
-	cont "'R' on their chest!"
+	para "What did they"
+	line "look like?"
 
 	para "..."
 	line "..."
 
-	para "No way that's TEAM"
-	line "ROCKET. Listen kid,"
+	para "All Black, a flat"
+	line "cap, and a big"
+	
+	para "red 'R' on their"
+	line "chest?"
 
-	para "Why don't you leave"
-	line "the investigating"
+	para "..."
+	line "..."
 
-	para "to the real heroes"
-	line "Okay?"
+	para "No way, Kid!"
+	line "the ONLY Rockets"
+
+	para "alive in KANTO are"
+	line "locked up in the"
+	cont "VERMILION PRISON."
+
+	para "Leave the invest-"
+	line "igating to the"
+	cont "real heroes!"
 	done
 
 PowerPlantOfficer1CouldIAskForYourCooperationText:
@@ -294,11 +298,13 @@ PowerPlantOfficer1CouldIAskForYourCooperationText:
 	cont "We'd ask."
 
 	para "Maybe get lost"
-	line "before we start"
+	line "before we throw"
 
-	para "questioning your"
-	line "how you got into"
-	cont "this country."
+	para "you in with"
+	line "your countrymen"
+
+	para "in the VERMILION"
+	line "prison."
 	done
 
 PowerPlantOfficer1HaveToBeefUpSecurityText:

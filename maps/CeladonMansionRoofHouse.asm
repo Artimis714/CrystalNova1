@@ -9,113 +9,106 @@ CeladonMansionRoofHouse_MapScripts:
 CeladonMansionRoofHousePharmacistScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM03_CURSE
-	iftrue .GotCurse
-	writetext CeladonMansionRoofHousePharmacistIntroText
-	promptbutton
-	checktime NITE
-	iftrue .Night
-	writetext CeladonMansionRoofHousePharmacistNotNightText
+	checkflag ENGINE_EXPN_CARD
+	iftrue .GotExpnCard
+	checkevent EVENT_RETURNED_MACHINE_PART
+	iftrue .ReturnedMachinePart
+	writetext CeladonMansionRoofHousePharmacistText
 	waitbutton
 	closetext
 	end
 
-.Night:
-	writetext CeladonMansionRoofHousePharmacistStoryText
+.ReturnedMachinePart:
+	writetext CeladonMansionRoofHousePharmacistText_ReturnedMachinePart
 	promptbutton
-	verbosegiveitem TM_CURSE
-	iffalse .NoRoom
-	setevent EVENT_GOT_TM03_CURSE
-.GotCurse:
-	writetext CeladonMansionRoofHousePharmacistCurseText
+	getstring STRING_BUFFER_4, .expncardname
+	scall .receiveitem
+	setflag ENGINE_EXPN_CARD
+	writetext CeladonMansionRoofHousePharmacistText_nowyouhaveKantoRadio
 	waitbutton
-.NoRoom:
 	closetext
 	end
 
-CeladonMansionRoofHousePharmacistIntroText:
-	text "Let me recount a"
-	line "terrifying tale…"
+.GotExpnCard:
+	writetext CeladonMansionRoofHousePharmacistText_GotExpnCard
+	waitbutton
+	closetext
+	end
+
+.receiveitem:
+	jumpstd ReceiveItemScript
+	end
+
+.expncardname
+	db "EXPN APP@"
+
+CeladonMansionRoofHousePharmacistText:
+	text "Yo Yo Kiddo!"
+	line "You lost?"
+
+	para "..."
+	line "..."
+
+	para "Wicked. You're"
+	line "from JOHTO?"
+
+	para "Sweet #GEAR"
+	line "kid, I'd bet it"
+
+	para "doesn't pick up"
+	line "KANTO stations."
+
+	para "..."
+	line "..."
+
+	para "Yeah, I can help"
+	line "but broadcasts"
+
+	para "are on hold"
+	line "until the POWER"
+	cont "PLANT is fixed."
+
+	para "Come see me if"
+	line "that comes back"
+	cont "online."
 	done
 
-CeladonMansionRoofHousePharmacistNotNightText:
-	text "Then again, it's"
-	line "not as scary while"
+CeladonMansionRoofHousePharmacistText_ReturnedMachinePart:
+	text "Yo Yo Kiddo!"
+	line "I've been jamming"
+	cont "to my radio!"
 
-	para "it's still light"
-	line "outside."
+	para "..."
+	line "..."
 
-	para "Come back after"
-	line "sunset, OK?"
+	para "Bummer Kid."
+	line "let me see the"
+
+	para "settings on your"
+	line "#GEAR."
+
+	para "(muttering)"
 	done
 
-CeladonMansionRoofHousePharmacistStoryText:
-	text "Once upon a time,"
-	line "there was a little"
+CeladonMansionRoofHousePharmacistText_nowyouhaveKantoRadio:
+	text "Right, I've down"
+	line "loaded the EXPN"
+	cont "APP."
 
-	para "boy who was given"
-	line "a new BICYCLE…"
+	para "Students from"
+	line "the SEVII Islands"
 
-	para "He wanted to try"
-	line "it right away…"
+	para "use it to listen"
+	line "to KANTO stations."
 
-	para "He was having so"
-	line "much fun that he"
-
-	para "didn't notice the"
-	line "sun had set…"
-
-	para "While riding home"
-	line "in the pitch-black"
-
-	para "night, the bike"
-	line "suddenly slowed!"
-
-	para "The pedals became"
-	line "heavy!"
-
-	para "When he stopped"
-	line "pedaling, the bike"
-
-	para "began slipping"
-	line "backwards!"
-
-	para "It was as if the"
-	line "bike were cursed"
-
-	para "and trying to drag"
-	line "him into oblivion!"
-
-	para "…"
-
-	para "…"
-
-	para "SHRIEEEEK!"
-
-	para "The boy had been"
-	line "riding uphill on"
-	cont "CYCLING ROAD!"
-
-	para "…"
-	line "Ba-dum ba-dum!"
-
-	para "For listening so"
-	line "patiently, you may"
-	cont "take this--TM03!"
+	para "It should work for"
+	line "you too!"
 	done
 
-CeladonMansionRoofHousePharmacistCurseText:
-	text "TM03 is CURSE."
-
-	para "It's a terrifying"
-	line "move that slowly"
-
-	para "whittles down the"
-	line "victim's HP."
-
-	para "But only if a"
-	line "GHOST Type uses"
-	cont "it."
+CeladonMansionRoofHousePharmacistText_GotExpnCard:
+	text "Gotta love"
+	line "jammin' to songs"
+	cont "on the Radio!"
 	done
 
 CeladonMansionRoofHouse_MapEvents:

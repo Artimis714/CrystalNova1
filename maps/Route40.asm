@@ -11,6 +11,7 @@
 	const ROUTE40_POKEFAN_M
 	const ROUTE40_LASS2
 	const ROUTE40_ROCK4
+	const ROUTE40_SHINY_KRABBY
 
 Route40_MapScripts:
 	def_scene_scripts
@@ -78,6 +79,20 @@ Route40Lass1Script:
 
 Route40PokefanMScript:
 	jumptextfaceplayer Route40PokefanMText
+
+ShinyKrabby:
+	opentext
+	writetext Route40KrabbyText
+	pause 15
+	cry KRABBY
+	closetext
+	setevent EVENT_SHINY_KRABBY
+	loadwildmon KRABBY, 9
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	disappear ROUTE40_SHINY_KRABBY
+	reloadmapafterbattle
+	end
 
 Route40Lass2Script:
 	faceplayer
@@ -396,6 +411,10 @@ Route40SignText:
 	line "OLIVINE CITY"
 	done
 
+Route40KrabbyText:
+	text "Koo-ki Koo-ki?"
+	done
+
 Route40_MapEvents:
 	db 0, 0 ; filler
 
@@ -412,11 +431,12 @@ Route40_MapEvents:
 	object_event 18, 30, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerSwimmermRandall, -1
 	object_event  3, 19, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerSwimmerfElaine, -1
 	object_event 10, 25, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfPaula, -1
-	object_event  7, 11, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
-	object_event  6,  9, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
-	object_event  7,  8, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
+	object_event  6, 10, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
+	object_event  7,  9, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
+	object_event  6,  8, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
 	object_event 11, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Lass1Script, -1
 	object_event  8, 10, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MonicaScript, EVENT_ROUTE_40_MONICA_OF_MONDAY
 	object_event  7,  6, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40PokefanMScript, -1
 	object_event 13,  4, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route40Lass2Script, EVENT_SPOKE_WITH_ARCHAEO_LASS1
 	object_event  9,  6, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40NOtARock, -1
+	object_event  6,  9, SPRITE_KRABBY, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_EMOTE, OBJECTTYPE_SCRIPT, 0, ShinyKrabby, EVENT_SHINY_KRABBY

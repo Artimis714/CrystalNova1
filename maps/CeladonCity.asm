@@ -307,6 +307,12 @@ CeladonCityYoungster1Text:
 	para "CELADON MANSION"
 	line "has a hidden back"
 	cont "door."
+
+	para "I've heard a guy"
+	line "who lives on the"
+
+	para "roof does #-"
+	line "GEAR upgrades."
 	done
 
 CeladonCityYoungster2Text:

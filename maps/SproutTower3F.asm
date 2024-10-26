@@ -6,6 +6,7 @@
 	const SPROUTTOWER3F_POKE_BALL1
 	const SPROUTTOWER3F_POKE_BALL2
 	const SPROUTTOWER3F_RIVAL
+	const SPROUTTOWER3F_VULPIX
 
 SproutTower3F_MapScripts:
 	def_scene_scripts
@@ -79,6 +80,7 @@ SageLiScript:
 	verbosegiveitem HM_FLASH
 	setevent EVENT_GOT_HM05_FLASH
 	setevent EVENT_BEAT_SAGE_LI
+	clearevent EVENT_SHINY_VULPIX
 	writetext SageLiFlashExplanationText
 	waitbutton
 	closetext
@@ -121,6 +123,20 @@ TrainerSageNeal:
 	writetext SageNealAfterBattleText
 	waitbutton
 	closetext
+	end
+
+ShinyVulpix:
+	opentext
+	writetext SpoutVulpixText
+	pause 15
+	cry VULPIX
+	closetext
+	setevent EVENT_SHINY_VULPIX
+	loadwildmon VULPIX, 7
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	disappear SPROUTTOWER3F_VULPIX
+	reloadmapafterbattle
 	end
 
 SproutTower3FPainting:
@@ -356,6 +372,10 @@ SproutTower3FStatueText:
 	line "distinguished."
 	done
 
+SpoutVulpixText:
+	text "Vul?"
+	done
+
 SproutTower3F_MapEvents:
 	db 0, 0 ; filler
 
@@ -381,3 +401,4 @@ SproutTower3F_MapEvents:
 	object_event  6, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SproutTower3FPotion, EVENT_SPROUT_TOWER_3F_POTION
 	object_event 14,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SproutTower3FEscapeRope, EVENT_SPROUT_TOWER_3F_ESCAPE_ROPE
 	object_event 10,  4, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_SPROUT_TOWER
+	object_event 13,  2, SPRITE_VULPIX, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BROWN, OBJECTTYPE_SCRIPT, 0, ShinyVulpix, EVENT_SHINY_VULPIX

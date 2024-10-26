@@ -68,4 +68,7 @@ SpriteMons:
 	db GOLBAT
 	db PONYTA
 	db AMPHAROS
+	db VULPIX
+	db KRABBY
+	db ONIX
 	assert_table_length NUM_POKEMON_SPRITES

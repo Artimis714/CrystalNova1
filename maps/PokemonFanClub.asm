@@ -15,12 +15,15 @@ PokemonFanClubChairmanScript:
 	faceplayer
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	opentext
+	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
+	iffalse .LeaveUsBe
 	checkevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT
 	iftrue .HeardSpeech
-	checkevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT_BUT_BAG_WAS_FULL
-	iffalse .LeaveUsBe
 	writetext BossTryingToRescueUsText
 	setevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT
+	clearevent EVENT_CERULEAN_GYM_ROCKET
+	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
+	setmapscene CERULEAN_GYM, SCENE_CERULEANGYM_GRUNT_RUNS_OUT
 	waitbutton
 	closetext
 	playmapmusic
@@ -179,7 +182,7 @@ PokemonFanClubClefairyDollScript:
 
 PokemonFanClubBayleefScript:
 	opentext
-	checkevent EVENT_RESTORED_POWER_TO_KANTO
+	checkevent EVENT_PRISON_ROCKETS
 	iftrue .Abandoned
 	writetext PokemonFanClubBayleefText
 	cry BAYLEEF
@@ -230,38 +233,30 @@ BossTryingToRescueUsText:
 	para "..."
 	line "..."
 
-	para "Shit! No kidding?"
-	line "You met ROSCO?"
+	para "Shit! Someone's"
+	line "fucked up the"
+	cont "generator!"
 
-	para "He's still out"
-	line "and he's planning"
-	cont "our escape!"
+	para "AHAHAHA!"
+	line "I'd bet my meal"
 
-	para "Fuck yeah!"
-	line "Now that's what"
-	cont "I'm talkin about!"
+	para "voucher that was"
+	line "ROSCO. He's on"
+	cont "the outside."
 
-	para "Okay, we've been"
-	line "training our #MON"
-	
-	para "for a jailbreak!"
-	line "What's the plan?"
-
-	para "..."
-	line "..."
-
-	para "Hmmm... yeah, I"
-	line "get it."
-
-	para "Right, right, then"
-	line "We'll just wait"
-	cont "for ROSCO's signal!"
+	para "I'd bet he's"
+	line "planning some-"
+	cont "thing big!"
 	done
 
 HeardSpeachText:
-	text "Right, right, then"
-	line "We'll just wait"
-	cont "for ROSCO's signal!"
+	text "We're just gonna"
+	line "hang tight and"
+
+	para "wait for ROSCO's"
+	line "signal."
+
+	para "Jailbreak baby!"
 	done
 
 LeaveUsBeText:
@@ -269,8 +264,8 @@ LeaveUsBeText:
 	line "you?"
 	
 	para "From JOHTO?"
-	line "how did you get in"
-	cont "here?"
+	line "how did you get"
+	cont "in here?"
 
 	para "I don't care."
 	line "just leave us."
@@ -520,7 +515,6 @@ PokemonFanClubClefairyGuyProudofDaughterText:
 	cont "thank you!"
 	done
 
-
 PokemonFanClubClefairyGuyPackIsJammedFullText:
 	text "Your PACK is"
 	line "too full. Sorry"
@@ -675,9 +669,9 @@ PokemonFanClub_MapEvents:
 	bg_event  9,  0, BGEVENT_READ, PokemonFanClubBraggingSign
 
 	def_object_events
-	object_event  3,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubChairmanScript, EVENT_RESTORED_POWER_TO_KANTO
-	object_event  4,  1, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubReceptionistScript, EVENT_RESTORED_POWER_TO_KANTO
+	object_event  3,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubChairmanScript, EVENT_PRISON_ROCKETS
+	object_event  4,  1, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubReceptionistScript, EVENT_PRISON_ROCKETS
 	object_event  2,  3, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyGuyScript, -1
-	object_event  7,  2, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubTeacherScript, EVENT_RESTORED_POWER_TO_KANTO
+	object_event  7,  2, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubTeacherScript, EVENT_PRISON_ROCKETS
 	object_event  2,  4, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyDollScript, EVENT_VERMILION_FAN_CLUB_DOLL
 	object_event  7,  3, SPRITE_BAYLEEF, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PokemonFanClubBayleefScript, EVENT_GOT_BAYLEEF

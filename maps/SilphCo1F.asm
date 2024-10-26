@@ -41,7 +41,7 @@ SilphCoReceptionistScript:
 	end
 
 .expncardname
-	db "EXPN CARD@"
+	db "EXPN APP@"
 
 
 SilphCoOfficerScript:
@@ -107,7 +107,7 @@ SilphCoReceptionistText_ReturnedMachinePart:
 
 	para "Yes, you have a"
 	line "SILPH CO #GEAR."
-	cont "with a RADIO CARD."
+	cont "with a RADIO APP."
 
 	para "..."
 	line "..."
@@ -123,7 +123,7 @@ SilphCoReceptionistText_ReturnedMachinePart:
 	line "broadcast!"
 
 	para "You need an EXPN"
-	line "card!"
+	line "APP!"
 	done
 
 SilphCoReceptionistText_nowyouhaveKantoRadio:
