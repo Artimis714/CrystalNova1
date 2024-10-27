@@ -817,11 +817,48 @@ OTString:
 	db "OT/@"
 
 LoadOrangePage:
-	call StatsScreen_placeCaughtLevel
-	call StatsScreen_placeCaughtTime
-	call StatsScreen_placeCaughtLocation
 	call StatsScreen_PrintDVs
 	call StatsScreen_PrintHappiness
+	ld de, HiddenPowerTypeString
+	hlcoord 1, 8
+	call PlaceString
+	
+ld hl, wTempMonDVs
+	; Type:
+
+	; Def & 3
+	ld a, [hl]
+	and %0011
+	ld b, a
+
+	; + (Atk & 3) << 2
+	ld a, [hl]
+	and %0011 << 4
+	swap a
+	add a
+	add a
+	or b
+
+; Skip Normal
+	inc a
+
+; Skip Bird
+	cp BIRD
+	jr c, .done
+	inc a
+
+; Skip unused types
+	cp UNUSED_TYPES
+	jr c, .done
+	add UNUSED_TYPES_END - UNUSED_TYPES
+
+.done
+    ld [wNamedObjectIndex], a
+	farcall GetTypeName
+	ld de, wStringBuffer1
+	hlcoord 2, 9
+	call PlaceString
+	ret
 
 StatsScreen_PrintHappiness:
 	ld de, .PokeJoyString
@@ -965,95 +1002,8 @@ StatsScreen_PrintDVs:
 ; .DVstring3:
 ; 	db "SPC    SPE    HP@"
 
-
-StatsScreen_placeCaughtLocation:
-	ld de, .MetAtMapString
-	hlcoord 1, 9
-	call PlaceString
-	ld a, [wTempMonCaughtLocation]
-	and CAUGHT_LOCATION_MASK
-	jr z, .unknown_location
-	cp LANDMARK_EVENT
-	jr z, .unknown_location
-	cp LANDMARK_GIFT
-	jr z, .unknown_location
-	ld e, a
-	farcall GetLandmarkName
-	ld de, wStringBuffer1
-	hlcoord 2, 10
-	call PlaceString
-	ret	
-.unknown_location:
-	ld de, .MetUnknownMapString
-	hlcoord 2, 10
-	call PlaceString
-	ret
-.MetAtMapString:
-	db "MET: @"
-.MetUnknownMapString:
-	db "UNKNOWN LOCATION@"
-
-StatsScreen_placeCaughtTime:
-	ld a, [wTempMonCaughtTime]
-	and CAUGHT_TIME_MASK
-	jr z, .unknown_time
-	rlca
-	rlca
-	dec a
-	ld hl, .times
-	call GetNthString
-	ld d, h
-	ld e, l
-	call CopyName1
-	ld de, wStringBuffer2
-	hlcoord 6, 9
-	call PlaceString
-	ret
-.unknown_time
-	ld a, 0
-	ld hl, .unknown_time_text
-	call GetNthString
-	ld d, h
-	ld e, l
-	call CopyName1
-	ld de, wStringBuffer2
-	hlcoord 6, 9
-	call PlaceString
-	ret
-.times
-	db "MORN@"
-	db "DAY@"
-	db "NITE@"
-.unknown_time_text
-	db "TRADE@"
-
-StatsScreen_placeCaughtLevel:
-	; caught level
-	ld a, [wTempMonCaughtLevel]
-	and CAUGHT_LEVEL_MASK	
-	and a
-	jr z, .unknown_level
-	cp CAUGHT_EGG_LEVEL ; egg marker value
-	jr nz, .print
-	ld a, EGG_LEVEL ; egg hatch level
-
-.print
-	ld [wTextDecimalByte], a
-	hlcoord 12, 9
-	ld de, wTextDecimalByte
-	lb bc, PRINTNUM_LEFTALIGN | 1, 3
-	call PrintNum
-	hlcoord 11, 9
-	ld [hl], "<LV>"
-	ret
-
-.unknown_level
-	ld de, .MetUnknownLevelString
-	hlcoord 11, 9
-	call PlaceString
-	ret   
-.MetUnknownLevelString:
-	db "@"
+HiddenPowerTypeString:
+	db "HIDDEN POWER:@"
 
 StatsScreen_PlaceFrontpic:
 	ld hl, wTempMonDVs
