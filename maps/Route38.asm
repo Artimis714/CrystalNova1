@@ -442,15 +442,16 @@ SailorHarrySeenText:
 	text "I've been over-"
 	line "seas, so I know"
 
-	para "about all sorts of"
-	line "#MON!"
+	para "about all sorts"
+	line "of #MON!"
 
-	para "In UNOVA, they have"
-	line "a #MON made of"
+	para "In UNOVA, they"
+	line "have a #MON"
 
-	para "vanilla ice cream!"
-	line "how ridiculous is"
-	cont "that!?"
+	para "made of vanilla"
+	line "ice cream!"
+
+	para "Stupid, eh?"
 	done
 
 SailorHarryBeatenText:

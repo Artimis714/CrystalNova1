@@ -96,14 +96,14 @@ SailorTerrellAfterBattleText:
 	para "The GYM LEADER's"
 	line "#MON type has"
 
-	para "changed without me"
-	line "noticing."
+	para "changed without"
+	line "me noticing."
 	done
 
 GentlemanPrestonSeenText:
-	text "I travel the world"
-	line "to train my #-"
-	cont "MON."
+	text "I travel the"
+	line "world to train"
+	cont "my #MON."
 
 	para "HOENN, SINNOH,"
 	line "KANTO of course"
@@ -111,9 +111,9 @@ GentlemanPrestonSeenText:
 	para "and even sunny"
 	line "ALOLA. I've seen"
 
-	para "so many places"
-	line "#MON you couldn't"
-	cont "imagine."
+	para "so many places!"
+	line "#MON you"
+	cont "couldn't imagine."
 
 	para "But JOHTO has a"
 	line "unique spirit"
