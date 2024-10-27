@@ -12409,7 +12409,7 @@ ROMX bank #21:
 	TOTAL EMPTY: $0107 bytes
 
 ROMX bank #22:
-	SECTION: $4000-$7d80 ($3d81 bytes) ["Map Scripts 2"]
+	SECTION: $4000-$7d7f ($3d80 bytes) ["Map Scripts 2"]
 	         $4000 = RuinsOfAlphOutside_MapScripts
 	         $400d = RuinsOfAlphOutsideNoop1Scene
 	         $400e = RuinsOfAlphOutsideNoop2Scene
@@ -12789,23 +12789,23 @@ ROMX bank #22:
 	         $7750 = SailorTerrellBeatenText
 	         $776f = SailorTerrellAfterBattleText
 	         $77df = GentlemanPrestonSeenText
-	         $791d = GentlemanPrestonBeatenText
-	         $793d = GentlemanPrestonAfterBattleText
-	         $79d1 = OlivineLighthouse3F_MapEvents
-	         $7a38 = OlivineLighthouse4F_MapScripts
-	         $7a3a = TrainerLassConnie
-	         $7a46 = TrainerLassConnie.Script
-	         $7a4e = TrainerSailorKent
-	         $7a5a = TrainerSailorKent.Script
-	         $7a62 = SailorKentSeenText
-	         $7b06 = SailorKentBeatenText
-	         $7b25 = SailorKentAfterBattleText
-	         $7b66 = LassConnie1SeenText
-	         $7c28 = LassConnie1BeatenText
-	         $7c39 = LassConnie1AfterBattleText
-	         $7d2f = OlivineLighthouse4F_MapEvents
-	EMPTY: $7d81-$7fff ($027f bytes)
-	TOTAL EMPTY: $027f bytes
+	         $791c = GentlemanPrestonBeatenText
+	         $793c = GentlemanPrestonAfterBattleText
+	         $79d0 = OlivineLighthouse3F_MapEvents
+	         $7a37 = OlivineLighthouse4F_MapScripts
+	         $7a39 = TrainerLassConnie
+	         $7a45 = TrainerLassConnie.Script
+	         $7a4d = TrainerSailorKent
+	         $7a59 = TrainerSailorKent.Script
+	         $7a61 = SailorKentSeenText
+	         $7b05 = SailorKentBeatenText
+	         $7b24 = SailorKentAfterBattleText
+	         $7b65 = LassConnie1SeenText
+	         $7c27 = LassConnie1BeatenText
+	         $7c38 = LassConnie1AfterBattleText
+	         $7d2e = OlivineLighthouse4F_MapEvents
+	EMPTY: $7d80-$7fff ($0280 bytes)
+	TOTAL EMPTY: $0280 bytes
 
 ROMX bank #23:
 	SECTION: $4000-$79b2 ($39b3 bytes) ["Map Scripts 3"]
@@ -40106,7 +40106,7 @@ ROMX bank #103:
 	TOTAL EMPTY: $0578 bytes
 
 ROMX bank #104:
-	SECTION: $4000-$750f ($3510 bytes) ["Map Scripts 21"]
+	SECTION: $4000-$7502 ($3503 bytes) ["Map Scripts 21"]
 	         $4000 = Route27_MapScripts
 	         $4002 = TrainerPsychicGilbert
 	         $400e = TrainerPsychicGilbert.Script
@@ -40352,112 +40352,112 @@ ROMX bank #104:
 	         $5b68 = BeautyValerieBeatenText
 	         $5b89 = BeautyValerieAfterBattleText
 	         $5c63 = SailorHarrySeenText
-	         $5ceb = SailorHarryBeatenText
-	         $5d07 = SailorHarryAfterBattleText
-	         $5da1 = BeautyOliviaSeenText
-	         $5dce = BeautyOliviaBeatenText
-	         $5e13 = BeautyOliviaAfterBattleText
-	         $5f00 = Route38SignText
-	         $5f27 = Route38TrainerTipsText
-	         $5fd5 = Route38_MapEvents
-	         $604a = Route13_MapScripts
-	         $604c = TrainerPokefanmAlex
-	         $6058 = TrainerPokefanmAlex.Script
-	         $6060 = TrainerPokefanmJoshua
-	         $606c = TrainerPokefanmJoshua.Script
-	         $6074 = TrainerBirdKeeperPerry
-	         $6080 = TrainerBirdKeeperPerry.Script
-	         $6088 = TrainerBirdKeeperBret
-	         $6094 = TrainerBirdKeeperBret.Script
-	         $609c = TrainerHikerKenny
-	         $60a8 = TrainerHikerKenny.Script
-	         $60b0 = Route13TrainerTips
-	         $60b3 = Route13Sign
-	         $60b6 = Route13DirectionsSign
-	         $60b9 = Route13HiddenCalcium
-	         $60bc = PokefanmAlexSeenText
-	         $60fd = PokefanmAlexBeatenText
-	         $611e = PokefanmAlexAfterBattleText
-	         $61a6 = PokefanmJoshuaSeenText
-	         $61d9 = PokefanmJoshuaBeatenText
-	         $61e6 = PokefanmJoshuaAfterBattleText
-	         $625d = BirdKeeperPerrySeenText
-	         $6289 = BirdKeeperPerryBeatenText
-	         $62a7 = BirdKeeperPerryAfterBattleText
-	         $631b = BirdKeeperBretSeenText
-	         $6360 = BirdKeeperBretBeatenText
-	         $6379 = BirdKeeperBretAfterBattleText
-	         $639d = HikerKennySeenText
-	         $63fb = HikerKennyBeatenText
-	         $6404 = HikerKennyAfterBattleText
-	         $645e = Route13TrainerTipsText
-	         $649d = Route13SignText
-	         $64bf = Route13DirectionsSignText
-	         $64ec = Route13_MapEvents
-	         $6547 = PewterNidoranSpeechHouse_MapScripts
-	         $6549 = PewterNidoranSpeechHouseSuperNerdScript
-	         $654c = PewterNidoran
-	         $6556 = PewterNidoranSpeechHouseSuperNerdText
-	         $6567 = PewterNidoranText
-	         $657a = PewterNidoranSpeechHouse_MapEvents
-	         $65a4 = PewterGym_MapScripts
-	         $65a6 = PewterGymBrockScript
-	         $65d8 = PewterGymBrockScript.FightDone
-	         $65de = TrainerCamperJerry
-	         $65ea = TrainerCamperJerry.Script
-	         $65f2 = PewterGymGuideScript
-	         $6600 = PewterGymGuideScript.PewterGymGuideWinScript
-	         $6606 = PewterGymStatue
-	         $660f = PewterGymStatue.Beaten
-	         $6616 = BrockIntroText
-	         $6759 = BrockWinLossText
-	         $67db = ReceivedBoulderBadgeText
-	         $67f5 = BrockBoulderBadgeText
-	         $6878 = BrockFightDoneText
-	         $692d = CamperJerrySeenText
-	         $6983 = CamperJerryBeatenText
-	         $699d = CamperJerryAfterBattleText
-	         $6a4e = PewterGymGuideText
-	         $6ae7 = PewterGymGuideWinText
-	         $6b68 = PewterGym_MapEvents
-	         $6ba9 = PewterMart_MapScripts
-	         $6bab = PewterMartClerkScript
-	         $6bb8 = PewterMartClerkScript.NoServiceToday
-	         $6bc4 = PewterMartClerkScript.SorryAboutThat
-	         $6bd4 = PewterMartYoungsterScript
-	         $6bd7 = PewterMartSuperNerdScript
-	         $6bda = PewterMartYoungsterText
-	         $6c3c = PewterMartSuperNerdText
-	         $6cb0 = PewterMart_MapEvents
-	         $6ce7 = PewterPokecenter1F_MapScripts
-	         $6ce9 = PewterPokecenter1FNurseScript
-	         $6cf1 = PewterPokecenter1FNurseScript.YouDontBelong
-	         $6d25 = OfficerPewterPokeScript
-	         $6d38 = OfficerPewterPokeScript.UnderArrest
-	         $6d5d = PewterPokecenter1FTeacherScript
-	         $6d60 = PewterJigglypuff
-	         $6d6a = PewterPokecenter1FBugCatcherScript
-	         $6d6d = Chris
-	         $6d74 = PewterPokecenter1FTeacherText
-	         $6e13 = PewterJigglypuffText
-	         $6e2b = PewterPokecenter1FBugCatcherText
-	         $6f26 = PewterPokeCentreCallAuthoritiestext
-	         $6fb7 = PewterPokecenter1F_MapEvents
-	         $701a = PewterPokecenter2FBeta_MapScripts
-	         $701c = PewterPokecenter2FBeta_MapEvents
-	         $7027 = PewterSnoozeSpeechHouse_MapScripts
-	         $7029 = PewterSnoozeSpeechHouseGrampsScript
-	         $7037 = PewterSnoozeSpeechHouseGrampsScript.YouMetMyGrandSon
-	         $7050 = PewterSnoozeSpeechHouseGrampsScript.MyGrandsonWasGreat
-	         $7056 = PewterSnoozeSpeechHouseGrampsScript.NoRoomForAsh
-	         $705c = PewterSnoozeSpeechHouseBookshelf
-	         $705f = PewterSnoozeSpeechHouseGrampsText
-	         $708a = YouMetFireGrandsonText
-	         $733b = MyGrandsonBurnedBrightText
-	         $74ad = NoRoomForAshText
-	         $74e9 = PewterSnoozeSpeechHouse_MapEvents
-	EMPTY: $7510-$7fff ($0af0 bytes)
-	TOTAL EMPTY: $0af0 bytes
+	         $5cde = SailorHarryBeatenText
+	         $5cfa = SailorHarryAfterBattleText
+	         $5d94 = BeautyOliviaSeenText
+	         $5dc1 = BeautyOliviaBeatenText
+	         $5e06 = BeautyOliviaAfterBattleText
+	         $5ef3 = Route38SignText
+	         $5f1a = Route38TrainerTipsText
+	         $5fc8 = Route38_MapEvents
+	         $603d = Route13_MapScripts
+	         $603f = TrainerPokefanmAlex
+	         $604b = TrainerPokefanmAlex.Script
+	         $6053 = TrainerPokefanmJoshua
+	         $605f = TrainerPokefanmJoshua.Script
+	         $6067 = TrainerBirdKeeperPerry
+	         $6073 = TrainerBirdKeeperPerry.Script
+	         $607b = TrainerBirdKeeperBret
+	         $6087 = TrainerBirdKeeperBret.Script
+	         $608f = TrainerHikerKenny
+	         $609b = TrainerHikerKenny.Script
+	         $60a3 = Route13TrainerTips
+	         $60a6 = Route13Sign
+	         $60a9 = Route13DirectionsSign
+	         $60ac = Route13HiddenCalcium
+	         $60af = PokefanmAlexSeenText
+	         $60f0 = PokefanmAlexBeatenText
+	         $6111 = PokefanmAlexAfterBattleText
+	         $6199 = PokefanmJoshuaSeenText
+	         $61cc = PokefanmJoshuaBeatenText
+	         $61d9 = PokefanmJoshuaAfterBattleText
+	         $6250 = BirdKeeperPerrySeenText
+	         $627c = BirdKeeperPerryBeatenText
+	         $629a = BirdKeeperPerryAfterBattleText
+	         $630e = BirdKeeperBretSeenText
+	         $6353 = BirdKeeperBretBeatenText
+	         $636c = BirdKeeperBretAfterBattleText
+	         $6390 = HikerKennySeenText
+	         $63ee = HikerKennyBeatenText
+	         $63f7 = HikerKennyAfterBattleText
+	         $6451 = Route13TrainerTipsText
+	         $6490 = Route13SignText
+	         $64b2 = Route13DirectionsSignText
+	         $64df = Route13_MapEvents
+	         $653a = PewterNidoranSpeechHouse_MapScripts
+	         $653c = PewterNidoranSpeechHouseSuperNerdScript
+	         $653f = PewterNidoran
+	         $6549 = PewterNidoranSpeechHouseSuperNerdText
+	         $655a = PewterNidoranText
+	         $656d = PewterNidoranSpeechHouse_MapEvents
+	         $6597 = PewterGym_MapScripts
+	         $6599 = PewterGymBrockScript
+	         $65cb = PewterGymBrockScript.FightDone
+	         $65d1 = TrainerCamperJerry
+	         $65dd = TrainerCamperJerry.Script
+	         $65e5 = PewterGymGuideScript
+	         $65f3 = PewterGymGuideScript.PewterGymGuideWinScript
+	         $65f9 = PewterGymStatue
+	         $6602 = PewterGymStatue.Beaten
+	         $6609 = BrockIntroText
+	         $674c = BrockWinLossText
+	         $67ce = ReceivedBoulderBadgeText
+	         $67e8 = BrockBoulderBadgeText
+	         $686b = BrockFightDoneText
+	         $6920 = CamperJerrySeenText
+	         $6976 = CamperJerryBeatenText
+	         $6990 = CamperJerryAfterBattleText
+	         $6a41 = PewterGymGuideText
+	         $6ada = PewterGymGuideWinText
+	         $6b5b = PewterGym_MapEvents
+	         $6b9c = PewterMart_MapScripts
+	         $6b9e = PewterMartClerkScript
+	         $6bab = PewterMartClerkScript.NoServiceToday
+	         $6bb7 = PewterMartClerkScript.SorryAboutThat
+	         $6bc7 = PewterMartYoungsterScript
+	         $6bca = PewterMartSuperNerdScript
+	         $6bcd = PewterMartYoungsterText
+	         $6c2f = PewterMartSuperNerdText
+	         $6ca3 = PewterMart_MapEvents
+	         $6cda = PewterPokecenter1F_MapScripts
+	         $6cdc = PewterPokecenter1FNurseScript
+	         $6ce4 = PewterPokecenter1FNurseScript.YouDontBelong
+	         $6d18 = OfficerPewterPokeScript
+	         $6d2b = OfficerPewterPokeScript.UnderArrest
+	         $6d50 = PewterPokecenter1FTeacherScript
+	         $6d53 = PewterJigglypuff
+	         $6d5d = PewterPokecenter1FBugCatcherScript
+	         $6d60 = Chris
+	         $6d67 = PewterPokecenter1FTeacherText
+	         $6e06 = PewterJigglypuffText
+	         $6e1e = PewterPokecenter1FBugCatcherText
+	         $6f19 = PewterPokeCentreCallAuthoritiestext
+	         $6faa = PewterPokecenter1F_MapEvents
+	         $700d = PewterPokecenter2FBeta_MapScripts
+	         $700f = PewterPokecenter2FBeta_MapEvents
+	         $701a = PewterSnoozeSpeechHouse_MapScripts
+	         $701c = PewterSnoozeSpeechHouseGrampsScript
+	         $702a = PewterSnoozeSpeechHouseGrampsScript.YouMetMyGrandSon
+	         $7043 = PewterSnoozeSpeechHouseGrampsScript.MyGrandsonWasGreat
+	         $7049 = PewterSnoozeSpeechHouseGrampsScript.NoRoomForAsh
+	         $704f = PewterSnoozeSpeechHouseBookshelf
+	         $7052 = PewterSnoozeSpeechHouseGrampsText
+	         $707d = YouMetFireGrandsonText
+	         $732e = MyGrandsonBurnedBrightText
+	         $74a0 = NoRoomForAshText
+	         $74dc = PewterSnoozeSpeechHouse_MapEvents
+	EMPTY: $7503-$7fff ($0afd bytes)
+	TOTAL EMPTY: $0afd bytes
 
 ROMX bank #105:
 	SECTION: $4000-$77b3 ($37b4 bytes) ["Map Scripts 22"]
@@ -60404,7 +60404,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1782743 bytes used / 298025 free in 127 banks
+	ROMX: 1782729 bytes used / 298039 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks
