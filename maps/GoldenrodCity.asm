@@ -13,16 +13,13 @@
 	const GOLDENRODCITY_ROCKET4
 	const GOLDENRODCITY_ROCKET5
 	const GOLDENRODCITY_ROCKET6
-	const GOLDENRODCITY_MOVETUTOR_A
-	const GOLDENRODCITY_MOVETUTOR_B
+	const GOLDENRODCITY_MOVETUTOR
 
 GoldenrodCity_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, GoldenrodCityFlypointAndFloriaCallback
-	callback MAPCALLBACK_OBJECTS, WedSatGoldenrodCityMoveTutorCallback
-	callback MAPCALLBACK_OBJECTS, MonFriGoldenrodCityMoveTutorCallback
 
 GoldenrodCityFlypointAndFloriaCallback:
 	setflag ENGINE_FLYPOINT_GOLDENROD
@@ -33,30 +30,19 @@ GoldenrodCityFlypointAndFloriaCallback:
 .FloriaDone:
 	endcallback
 
-WedSatGoldenrodCityMoveTutorCallback:
-	checkevent EVENT_BEAT_ELITE_FOUR
-	iffalse .AMoveTutorDone
-	checkitem COIN_CASE
-	iffalse .AMoveTutorDisappear
-	readvar VAR_WEEKDAY
-	ifequal WEDNESDAY, .AMoveTutorAppear
-	ifequal SATURDAY, .AMoveTutorAppear
-
-.AMoveTutorDisappear:
-	disappear GOLDENRODCITY_MOVETUTOR_A
-	endcallback
-
-.AMoveTutorAppear:
-	checkflag ENGINE_DAILY_MOVE_TUTOR
-	iftrue .AMoveTutorDone
-	appear GOLDENRODCITY_MOVETUTOR_A
-
-.AMoveTutorDone:
-	endcallback
-
-WedSatMoveTutorScript:
+MoveTutorScript:
 	faceplayer
 	opentext
+	readvar VAR_WEEKDAY
+	ifequal SUNDAY, TutorOne
+	ifequal MONDAY, TutorTwo
+	ifequal TUESDAY, TutorOne
+	ifequal WEDNESDAY, TutorTwo
+	ifequal THURSDAY, TutorOne
+	ifequal FRIDAY, TutorTwo
+	ifequal SATURDAY, TutorOne
+
+TutorOne:
 	writetext GoldenrodCityMoveTutorAskTeachAMoveText
 	yesorno
 	iffalse .ARefused
@@ -64,7 +50,7 @@ WedSatMoveTutorScript:
 	writetext GoldenrodCityMoveTutorAsk4000CoinsOkayText
 	yesorno
 	iffalse .ARefused2
-	checkcoins 9950
+	checkcoins 5500
 	ifequal HAVE_LESS, .ANotEnoughMoney
 	writetext GoldenrodCityMoveTutorWhichMoveShouldITeachText
 	loadmenu .AMoveMenuHeader
@@ -134,7 +120,7 @@ WedSatMoveTutorScript:
 .ATeachMove:
 	writetext GoldenrodCityMoveTutorIfYouUnderstandYouveMadeItText
 	promptbutton
-	takecoins 9950
+	takecoins 5500
 	waitsfx
 	playsound SFX_TRANSACTION
 	special DisplayCoinCaseBalance
@@ -143,15 +129,15 @@ WedSatMoveTutorScript:
 	closetext
 	readvar VAR_FACING
 	ifequal LEFT, .AWalkAroundPlayer
-	applymovement GOLDENRODCITY_MOVETUTOR_A, GoldenrodCityMoveTutorEnterGameCornerMovement
+	applymovement GOLDENRODCITY_MOVETUTOR, GoldenrodCityMoveTutorEnterGameCornerMovement
 	sjump .AGoInside
 
 .AWalkAroundPlayer:
-	applymovement GOLDENRODCITY_MOVETUTOR_A, GoldenrodCityMoveTutorWalkAroundPlayerThenEnterGameCornerMovement
+	applymovement GOLDENRODCITY_MOVETUTOR, GoldenrodCityMoveTutorWalkAroundPlayerThenEnterGameCornerMovement
 
 .AGoInside:
 	playsound SFX_ENTER_DOOR
-	disappear GOLDENRODCITY_MOVETUTOR_A
+	disappear GOLDENRODCITY_MOVETUTOR
 	clearevent EVENT_GOLDENROD_GAME_CORNER_MOVE_TUTOR
 	setflag ENGINE_DAILY_MOVE_TUTOR
 	waitsfx
@@ -169,28 +155,7 @@ WedSatMoveTutorScript:
 	closetext
 	end
 
-MonFriGoldenrodCityMoveTutorCallback:
-	checkevent EVENT_BEAT_ELITE_FOUR
-	iffalse .MoveTutorDone
-	checkitem COIN_CASE
-	iffalse .MoveTutorDisappear
-	readvar VAR_WEEKDAY
-	ifequal MONDAY, .MoveTutorAppear
-	ifequal FRIDAY, .MoveTutorAppear
-
-.MoveTutorDisappear:
-	disappear GOLDENRODCITY_MOVETUTOR_B
-	endcallback
-
-.MoveTutorAppear:
-	checkflag ENGINE_DAILY_MOVE_TUTOR
-	iftrue .MoveTutorDone
-	appear GOLDENRODCITY_MOVETUTOR_B
-
-.MoveTutorDone:
-	endcallback
-
-MonFritMoveTutorScript:
+TutorTwo:
 	faceplayer
 	opentext
 	writetext GoldenrodCityMoveTutorAskTeachAMoveText
@@ -200,7 +165,7 @@ MonFritMoveTutorScript:
 	writetext GoldenrodCityMoveTutorAsk4000CoinsOkayText
 	yesorno
 	iffalse .Refused2
-	checkcoins 9950
+	checkcoins 5500
 	ifequal HAVE_LESS, .NotEnoughMoney
 	writetext GoldenrodCityMoveTutorWhichMoveShouldITeachText
 	loadmenu .MoveMenuHeader
@@ -270,7 +235,7 @@ MonFritMoveTutorScript:
 .TeachMove:
 	writetext GoldenrodCityMoveTutorIfYouUnderstandYouveMadeItText
 	promptbutton
-	takecoins 9950
+	takecoins 5500
 	waitsfx
 	playsound SFX_TRANSACTION
 	special DisplayCoinCaseBalance
@@ -279,15 +244,15 @@ MonFritMoveTutorScript:
 	closetext
 	readvar VAR_FACING
 	ifequal LEFT, .WalkAroundPlayer
-	applymovement GOLDENRODCITY_MOVETUTOR_B, GoldenrodCityMoveTutorEnterGameCornerMovement
+	applymovement GOLDENRODCITY_MOVETUTOR, GoldenrodCityMoveTutorEnterGameCornerMovement
 	sjump .GoInside
 
 .WalkAroundPlayer:
-	applymovement GOLDENRODCITY_MOVETUTOR_B, GoldenrodCityMoveTutorWalkAroundPlayerThenEnterGameCornerMovement
+	applymovement GOLDENRODCITY_MOVETUTOR, GoldenrodCityMoveTutorWalkAroundPlayerThenEnterGameCornerMovement
 
 .GoInside:
 	playsound SFX_ENTER_DOOR
-	disappear GOLDENRODCITY_MOVETUTOR_B
+	disappear GOLDENRODCITY_MOVETUTOR
 	clearevent EVENT_GOLDENROD_GAME_CORNER_MOVE_TUTOR
 	setflag ENGINE_DAILY_MOVE_TUTOR
 	waitsfx
@@ -703,7 +668,7 @@ GoldenrodCityMoveTutorAskTeachAMoveText:
 
 GoldenrodCityMoveTutorAsk4000CoinsOkayText:
 	text "It will cost you"
-	line "9950 coins. Okay?"
+	line "5500 coins. Okay?"
 	done
 
 GoldenrodCityMoveTutorAwwButTheyreAmazingText:
@@ -803,5 +768,4 @@ GoldenrodCity_MapEvents:
 	object_event 29, 20, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityRocket4Script, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 29,  7, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityRocket5Script, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 31, 10, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityRocket6Script, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
-	object_event 12, 22, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, WedSatMoveTutorScript, EVENT_GOLDENROD_CITY_MOVE_TUTOR
-	object_event 12, 22, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MonFritMoveTutorScript, EVENT_GOLDENROD_CITY_MOVE_TUTOR
+	object_event 12, 22, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MoveTutorScript, EVENT_GOLDENROD_CITY_MOVE_TUTOR

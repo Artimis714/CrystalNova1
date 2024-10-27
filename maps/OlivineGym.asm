@@ -45,6 +45,7 @@ OlivineGymJasmineScript:
 	setevent EVENT_BEAT_LASS_AMBER
 	setevent EVENT_BEAT_BEAUTY_ELECTRA
 	setevent EVENT_BEAT_PICNIKER_JADE
+	clearevent EVENT_GOLDENROD_CITY_MOVE_TUTOR
 	writetext Jasmine_IronTailSpeech
 	waitbutton
 	closetext
@@ -76,6 +77,7 @@ OlivineGymJasmineScript:
 	setevent EVENT_BEAT_LASS_AMBER
 	setevent EVENT_BEAT_BEAUTY_ELECTRA
 	setevent EVENT_BEAT_PICNIKER_JADE
+	clearevent EVENT_GOLDENROD_CITY_MOVE_TUTOR
 	writetext Jasmine_IronTailSpeech
 	waitbutton
 	closetext
@@ -153,6 +155,7 @@ OlivineGymGuideScript:
 .OlivineGymGuideWinScript:
 	opentext
 	writetext OlivineGymGuideWinText
+	clearevent EVENT_GOLDENROD_CITY_MOVE_TUTOR 
 	waitbutton
 	closetext
 	end
