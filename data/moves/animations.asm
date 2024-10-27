@@ -3842,14 +3842,34 @@ BattleAnim_GigaDrain:
 	anim_ret
 
 BattleAnim_WilloWisp:
-	anim_1gfx BATTLE_ANIM_GFX_FIRE
-	anim_sound 0, 0, SFX_EMBER
+	anim_1gfx BATTLE_ANIM_GFX_HIT
+	anim_bgp $1b
+	anim_obp1 $1b
+	anim_wait 32
+	anim_call BattleAnim_UserObj_2Row
+	anim_bgeffect BATTLE_BG_EFFECT_NIGHT_SHADE, $0, BG_EFFECT_TARGET, $8
+	anim_sound 0, 1, SFX_EMBER
+	anim_wait 96
+	anim_incbgeffect BATTLE_BG_EFFECT_NIGHT_SHADE
+	anim_call BattleAnim_ShowMon_1
+	anim_2gfx BATTLE_ANIM_GFX_OBJECTS, BATTLE_ANIM_GFX_ANGELS
+	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_obj BATTLE_ANIM_OBJ_LOVELY_KISS, 152, 40, $0
+	anim_wait 32
+	anim_sound 0, 1, SFX_BURN
+	anim_wait 16
+	anim_bgeffect BATTLE_BG_EFFECT_FLASH_INVERTED, $0, $4, $3
+	anim_sound 0, 1, SFX_EMBER
+	anim_obj BATTLE_ANIM_OBJ_FIRE_BLAST, 136, 48, $1
+	anim_obj BATTLE_ANIM_OBJ_FIRE_BLAST, 136, 48, $4
+	anim_obj BATTLE_ANIM_OBJ_FIRE_BLAST, 136, 48, $5
 	anim_wait 8
 	anim_bgeffect BATTLE_BG_EFFECT_SHOW_MON, $0, BG_EFFECT_TARGET, $0
 	anim_wait 4
 	anim_incobj 9
 	anim_wait 8
 	anim_ret
+
 
 BattleAnim_Charm:
 	anim_1gfx BATTLE_ANIM_GFX_OBJECTS

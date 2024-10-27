@@ -12,4 +12,5 @@ CriticalHitMoves:
 	db POISON_FANG
 	db NIGHT_SLASH
 	db HYPER_FANG
+	db WILL_O_WISP
 	db -1

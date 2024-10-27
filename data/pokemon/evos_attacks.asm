@@ -491,10 +491,10 @@ VulpixEvosAttacks:
 
 NinetalesEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, FLAMETHROWER
 	db 1, PERISH_SONG
-	db 1, CONFUSE_RAY
 	db 1, SAFEGUARD
+	db 1, CONFUSE_RAY
+	db 1, WILL_O_WISP
 	db 30, HEX
 	db 35, FLAMETHROWER
 	db 0 ; no more level-up moves
