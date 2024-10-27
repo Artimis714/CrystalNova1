@@ -1427,6 +1427,7 @@ HealBell:
 	checkobedience
 	usedmovetext
 	doturn
+	heal
 	healbell
 	endmove
 
@@ -1559,12 +1560,16 @@ Sandstorm:
 	startsandstorm
 	endmove
 
-Endure:
+DoBurn:
 	checkobedience
 	usedmovetext
 	doturn
-	endure
+	stab
+	checkhit
+	checksafeguard
+	burntarget
 	endmove
+
 
 Rollout:
 	checkcurl
@@ -2203,4 +2208,7 @@ Octazooka:
 	accuracydown2
 	statdownmessage
 	hailfreeze
+	endmove
+
+Endure:
 	endmove

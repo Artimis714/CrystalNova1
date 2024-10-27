@@ -26,7 +26,7 @@ MoveGrammar:
 	db SNORE
 	db PROTECT
 	db SPIKES
-	db ENDURE
+	db WILL_O_WISP
 	db ROLLOUT
 	db SWAGGER
 	db HIDDEN_POWER

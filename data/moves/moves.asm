@@ -216,7 +216,7 @@ Moves:
 	move OUTRAGE,      EFFECT_RAMPAGE,           120, DRAGON,       100, 15,   0
 	move SANDSTORM,    EFFECT_SANDSTORM,           0, GROUND,       100, 10,   0
 	move GIGA_DRAIN,   EFFECT_LEECH_HIT,          95, GRASS,         95, 15,   0
-	move ENDURE,       EFFECT_ENDURE,              0, NORMAL,       100, 10,   0
+	move WILL_O_WISP,  EFFECT_BURN,                0, FIRE,          85, 25,   0
 	move CHARM,        EFFECT_ATTACK_DOWN_2,       0, NORMAL,       100, 20,   0
 	move ROLLOUT,      EFFECT_ROLLOUT,            30, ROCK,          85, 20,   0
 	move FALSE_SWIPE,  EFFECT_FALSE_SWIPE,        55, DARK,         100, 40,   0

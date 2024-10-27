@@ -481,6 +481,7 @@ VulpixEvosAttacks:
 	db 7, QUICK_ATTACK
 	db 13, ROAR
 	db 15, CONFUSE_RAY
+	db 17, WILL_O_WISP
 	db 22, FLAME_WHEEL
 	db 25, SAFEGUARD
 	db 27, NIGHT_SHADE
@@ -491,10 +492,11 @@ VulpixEvosAttacks:
 NinetalesEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, FLAMETHROWER
-	db 1, HEX
+	db 1, PERISH_SONG
 	db 1, CONFUSE_RAY
 	db 1, SAFEGUARD
-	db 43, FIRE_SPIN
+	db 30, HEX
+	db 35, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 JigglypuffEvosAttacks:
@@ -556,7 +558,6 @@ OddishEvosAttacks:
 	db 1, ABSORB
 	db 1, LEER
 	db 11, LEECH_SEED
-	db 14, POISONPOWDER
 	db 15, PURSUIT
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
@@ -571,14 +572,13 @@ GloomEvosAttacks:
 	db EVOLVE_ITEM, SUN_STONE, BELLOSSOM
 	db 0 ; no more evolutions
 	db 1, ABSORB
-	db 1, LEER
 	db 11, LEECH_SEED
-	db 14, POISONPOWDER
 	db 15, PURSUIT
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
 	db 23, MEGA_DRAIN
 	db 28, FAINT_ATTACK
+	db 33, GIGA_DRAIN
 	db 35, MOONLIGHT
 	db 42, PETAL_DANCE
 	db 0 ; no more level-up moves
@@ -589,6 +589,7 @@ VileplumeEvosAttacks:
 	db 1, FAINT_ATTACK
 	db 1, MOONLIGHT
 	db 1, PETAL_DANCE
+	db 2, NIGHT_SLASH
 	db 0 ; no more level-up moves
 
 ParasEvosAttacks:
@@ -1450,7 +1451,6 @@ HitmonleeEvosAttacks:
 	db 26, HI_JUMP_KICK
 	db 31, MIND_READER
 	db 36, FORESIGHT
-	db 41, ENDURE
 	db 46, MEGA_KICK
 	db 51, REVERSAL
 	db 0 ; no more level-up moves
@@ -1588,7 +1588,6 @@ KangaskhanEvosAttacks:
 	db 19, DRAGON_RAGE
 	db 25, BODY_SLAM
 	db 31, DRAGON_CLAW
-	db 37, ENDURE
 	db 43, TAKE_DOWN
 	db 49, OUTRAGE
 	db 64, HYPER_BEAM
@@ -1962,7 +1961,6 @@ KabutoEvosAttacks:
 	db 22, VICEGRIP
 	db 26, ROCK_TOMB
 	db 34, TWINEEDLE
-	db 37, ENDURE
 	db 49, ROCK_SLIDE
 	db 55, ANCIENTPOWER
 	db 0 ; no more level-up moves
@@ -1977,7 +1975,6 @@ KabutopsEvosAttacks:
 	db 22, VICEGRIP
 	db 26, ROCK_TOMB
 	db 34, TWINEEDLE
-	db 37, ENDURE
 	db 40, CUT
 	db 49, ROCK_SLIDE
 	db 51, MEGAHORN
@@ -2060,7 +2057,6 @@ MoltresEvosAttacks:
 	db 13, FIRE_SPIN
 	db 22, DRILL_PECK
 	db 25, AGILITY
-	db 37, ENDURE
 	db 49, FLAMETHROWER
 	db 52, RAZOR_WIND
 	db 61, SAFEGUARD
@@ -2235,6 +2231,7 @@ QuilavaEvosAttacks:
 	db 1, LEER
 	db 6, SPITE
 	db 12, EMBER
+	db 15, WILL_O_WISP
 	db 17, CONFUSE_RAY
 	db 20, SUNNY_DAY
 	db 21, FLAME_WHEEL
@@ -2251,7 +2248,7 @@ TyphlosionEvosAttacks:
 	db 1, DESTINY_BOND
 	db 1, BONE_RUSH
 	db 6, SPITE
-	db 12, EMBER
+	db 12, WILL_O_WISP
 	db 17, CONFUSE_RAY
 	db 20, SUNNY_DAY
 	db 21, FLAME_WHEEL
@@ -3190,11 +3187,9 @@ ShuckleEvosAttacks:
 HeracrossEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, FURY_CUTTER
-	db 1, LEER
 	db 1, ROCK_SMASH
 	db 6, HORN_ATTACK
 	db 9, DETECT
-	db 12, ENDURE
 	db 19, FURY_ATTACK
 	db 22, VICEGRIP
 	db 25, VITAL_THROW
@@ -3297,7 +3292,6 @@ SwinubEvosAttacks:
 	db 1, SAND_ATTACK
 	db 10, MAGNITUDE
 	db 15, HAIL
-	db 19, ENDURE
 	db 21, AURORA_BEAM
 	db 24, DIG
 	db 28, TAKE_DOWN
@@ -3314,7 +3308,6 @@ PiloswineEvosAttacks:
 	db 1, FISSURE
 	db 10, MAGNITUDE
 	db 15, HAIL
-	db 19, ENDURE
 	db 21, AURORA_BEAM
 	db 24, DIG
 	db 28, TAKE_DOWN
@@ -3488,7 +3481,6 @@ PhanpyEvosAttacks:
 	db 25, TAKE_DOWN
 	db 33, ROLLOUT
 	db 37, EARTHQUAKE
-	db 41, ENDURE
 	db 43, DOUBLE_EDGE
 	db 45, THRASH
 	db 0 ; no more level-up moves

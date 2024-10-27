@@ -116,7 +116,7 @@ MoveEffectsPointers:
 	dw Foresight
 	dw PerishSong
 	dw Sandstorm
-	dw Endure
+	dw DoBurn
 	dw Rollout
 	dw Swagger
 	dw FuryCutter
@@ -164,4 +164,5 @@ MoveEffectsPointers:
 	dw WaterTrapTarget
 	dw RockTomb
 	dw BurnHit ; for Fire Blast, purposefully with different EFFECT_* constant
+	dw Endure
 	assert_table_length NUM_MOVE_EFFECTS

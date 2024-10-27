@@ -173,11 +173,17 @@ BargainMerchantScript:
 	iftrue GoldenrodUndergroundScript_ShopClosed
 	readvar VAR_WEEKDAY
 	ifequal MONDAY, .CheckMorn
+	ifequal SATURDAY, .OpenBargin
 	sjump GoldenrodUndergroundScript_ShopClosed
 
 .CheckMorn:
 	checktime MORN
 	iffalse GoldenrodUndergroundScript_ShopClosed
+	pokemart MARTTYPE_BARGAIN, 0
+	closetext
+	end
+
+.OpenBargin:
 	pokemart MARTTYPE_BARGAIN, 0
 	closetext
 	end

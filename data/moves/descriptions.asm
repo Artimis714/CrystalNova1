@@ -203,7 +203,7 @@ MoveDescriptions::
 	dw OutrageDescription
 	dw SandstormDescription
 	dw GigaDrainDescription
-	dw EndureDescription
+	dw WilloWispDescription
 	dw CharmDescription
 	dw RolloutDescription
 	dw FalseSwipeDescription
@@ -307,7 +307,7 @@ ScratchDescription:
 
 VicegripDescription:
 	db   "Pincer grip that"
-	line "may cause flinch."
+	line "can flinch.@"
 
 GuillotineDescription:
 	db   "A one-hit KO,"
@@ -1073,9 +1073,9 @@ GigaDrainDescription:
 	db   "Steals 1/2 of the"
 	line "damage inflicted.@"
 
-EndureDescription:
-	db   "Always leaves at"
-	line "least 1HP.@"
+WilloWispDescription:
+	db   "Haunting flames"
+	line "that burn target.@"
 
 CharmDescription:
 	db   "Sharply lowers the"

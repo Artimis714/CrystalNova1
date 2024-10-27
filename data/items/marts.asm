@@ -64,7 +64,7 @@ MartCherrygroveDex:
 	db -1 ; end
 
 MartViolet:
-	db 13 ; # items
+	db 10 ; # items
 	db POKE_BALL
 	db POTION
 	db ESCAPE_ROPE
@@ -75,9 +75,6 @@ MartViolet:
 	db X_ATTACK
 	db X_SPEED
 	db FLOWER_MAIL
-	db DOME_FOSSIL
-	db HELIX_FOSSIL
-	db BRICK_PIECE
 	db -1 ; end
 
 MartViolet2:
@@ -281,7 +278,7 @@ MartEcruteak:
 	db -1 ; end
 
 MartEcruteak2:
-	db 13 ; # items
+	db 14 ; # items
 	db POKE_BALL
 	db GREAT_BALL
 	db POTION
@@ -294,6 +291,7 @@ MartEcruteak2:
 	db REVIVE
 	db TM_CURSE
 	db TM_NIGHTMARE
+	db TM_WILL_O_WISP
 	db TM_HIDDEN_POWER
 	db -1 ; end
 
@@ -361,7 +359,7 @@ MartViridian2:
 	db -1 ; end
 
 MartPewter:
-	db 9 ; # items
+	db 8 ; # items
 	db GREAT_BALL
 	db SUPER_POTION
 	db SUPER_REPEL
@@ -369,7 +367,6 @@ MartPewter:
 	db PARLYZ_HEAL
 	db AWAKENING
 	db BURN_HEAL
-	db TM_ENDURE
 	db TM_PROTECT
 	db -1 ; end
 
