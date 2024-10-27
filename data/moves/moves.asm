@@ -250,7 +250,7 @@ Moves:
 	move MORNING_SUN,  EFFECT_MORNING_SUN,         0, PSYCHIC_TYPE, 100,  5,   0
 	move SYNTHESIS,    EFFECT_SYNTHESIS,           0, GRASS,        100,  5,   0
 	move MOONLIGHT,    EFFECT_MOONLIGHT,           0, DARK,         100,  5,   0
-	move HIDDEN_POWER, EFFECT_HIDDEN_POWER,        1, NORMAL,       100, 15,   0
+	move HIDDEN_POWER, EFFECT_HIDDEN_POWER,       85, CURSE_TYPE,   100, 15,   0
 	move CROSS_CHOP,   EFFECT_NORMAL_HIT,        120, FIGHTING,      70,  5,   0
 	move TWISTER,      EFFECT_TWISTER,            60, DRAGON,       100, 20,  20
 	move RAIN_DANCE,   EFFECT_RAIN_DANCE,          0, WATER,         90, 10,   0

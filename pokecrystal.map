@@ -30036,7 +30036,7 @@ ROMX bank #61:
 	TOTAL EMPTY: $010d bytes
 
 ROMX bank #62:
-	SECTION: $4000-$7ee8 ($3ee9 bytes) ["bank3E"]
+	SECTION: $4000-$7eb3 ($3eb4 bytes) ["bank3E"]
 	         $4000 = FontExtra
 	         $4200 = Font
 	         $4600 = FontBattleExtra
@@ -30172,39 +30172,39 @@ ROMX bank #62:
 	         $7ce9 = MagikarpHouseSign.KarpGuruRecordText
 	         $7cee = HiddenPowerDamage
 	         $7cf9 = HiddenPowerDamage.got_dvs
-	         $7d42 = HiddenPowerDamage.done
-	         $7d55 = _DisappearUser
-	         $7d62 = _DisappearUser.player
-	         $7d65 = _DisappearUser.okay
-	         $7d6a = _AppearUserRaiseSub
-	         $7d72 = _AppearUserLowerSub
-	         $7d78 = AppearUser
-	         $7d86 = AppearUser.player
-	         $7d8b = AppearUser.okay
-	         $7d92 = FinishAppearDisappearUser
-	         $7d97 = GetEnemyFrontpicCoords
-	         $7d9e = GetPlayerBackpicCoords
-	         $7da5 = DoWeatherModifiers
-	         $7db0 = DoWeatherModifiers.CheckWeatherType
-	         $7dbd = DoWeatherModifiers.NextWeatherType
-	         $7dc1 = DoWeatherModifiers.done_weather_types
-	         $7dca = DoWeatherModifiers.CheckWeatherMove
-	         $7dd7 = DoWeatherModifiers.NextWeatherMove
-	         $7ddb = DoWeatherModifiers.ApplyModifier
-	         $7e0b = DoWeatherModifiers.Update
-	         $7e13 = DoWeatherModifiers.done
-	         $7e14 = WeatherTypeModifiers
-	         $7e63 = WeatherMoveModifiers
-	         $7e7c = DoBadgeTypeBoosts
-	         $7e97 = DoBadgeTypeBoosts.CheckBadge
-	         $7ea8 = DoBadgeTypeBoosts.NextBadge
-	         $7eab = DoBadgeTypeBoosts.ApplyBoost
-	         $7ec7 = DoBadgeTypeBoosts.done_min
-	         $7ecd = DoBadgeTypeBoosts.Update
-	         $7ed5 = DoBadgeTypeBoosts.done
-	         $7ed8 = BadgeTypeBoosts
-	EMPTY: $7ee9-$7fff ($0117 bytes)
-	TOTAL EMPTY: $0117 bytes
+	         $7d11 = HiddenPowerDamage.done
+	         $7d20 = _DisappearUser
+	         $7d2d = _DisappearUser.player
+	         $7d30 = _DisappearUser.okay
+	         $7d35 = _AppearUserRaiseSub
+	         $7d3d = _AppearUserLowerSub
+	         $7d43 = AppearUser
+	         $7d51 = AppearUser.player
+	         $7d56 = AppearUser.okay
+	         $7d5d = FinishAppearDisappearUser
+	         $7d62 = GetEnemyFrontpicCoords
+	         $7d69 = GetPlayerBackpicCoords
+	         $7d70 = DoWeatherModifiers
+	         $7d7b = DoWeatherModifiers.CheckWeatherType
+	         $7d88 = DoWeatherModifiers.NextWeatherType
+	         $7d8c = DoWeatherModifiers.done_weather_types
+	         $7d95 = DoWeatherModifiers.CheckWeatherMove
+	         $7da2 = DoWeatherModifiers.NextWeatherMove
+	         $7da6 = DoWeatherModifiers.ApplyModifier
+	         $7dd6 = DoWeatherModifiers.Update
+	         $7dde = DoWeatherModifiers.done
+	         $7ddf = WeatherTypeModifiers
+	         $7e2e = WeatherMoveModifiers
+	         $7e47 = DoBadgeTypeBoosts
+	         $7e62 = DoBadgeTypeBoosts.CheckBadge
+	         $7e73 = DoBadgeTypeBoosts.NextBadge
+	         $7e76 = DoBadgeTypeBoosts.ApplyBoost
+	         $7e92 = DoBadgeTypeBoosts.done_min
+	         $7e98 = DoBadgeTypeBoosts.Update
+	         $7ea0 = DoBadgeTypeBoosts.done
+	         $7ea3 = BadgeTypeBoosts
+	EMPTY: $7eb4-$7fff ($014c bytes)
+	TOTAL EMPTY: $014c bytes
 
 ROMX bank #63:
 	SECTION: $4000-$51d1 ($11d2 bytes) ["bank3F"]
@@ -60414,7 +60414,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1782930 bytes used / 297838 free in 127 banks
+	ROMX: 1782877 bytes used / 297891 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks
