@@ -1704,13 +1704,34 @@ HandleWeather:
 	ld hl, .WeatherMessages
 	call .PrintWeatherMessage
 
+	; Check for each weather condition and play respective animations
+
 	ld a, [wBattleWeather]
 	cp WEATHER_SANDSTORM
-	jr nz, .check_hail
+	jr z, .handle_sandstorm
+
+	cp WEATHER_HAIL
+	jr z, .handle_hail
+
+	cp WEATHER_SMOG
+	jr z, .handle_smog
+
+	cp WEATHER_SUN
+	jr z, .handle_sun
+
+	cp WEATHER_RAIN
+	jr z, .handle_rain
+
+	; No matching weather condition, return
+	ret
+
+.handle_sandstorm
+	ld de, ANIM_IN_SANDSTORM       ; Always play sandstorm animation
+	call Call_PlayBattleAnim
 
 	ldh a, [hSerialConnectionStatus]
 	cp USING_EXTERNAL_CLOCK
-	jr z, .enemy_first
+	jr z, .enemy_first_sandstorm
 
 ; player first
 	call SetPlayerTurn
@@ -1718,10 +1739,61 @@ HandleWeather:
 	call SetEnemyTurn
 	jr .SandstormDamage
 
-.enemy_first
+.enemy_first_sandstorm
 	call SetEnemyTurn
 	call .SandstormDamage
 	call SetPlayerTurn
+	ret
+
+.handle_hail
+	ld de, ANIM_IN_HAIL            ; Always play hail animation
+	call Call_PlayBattleAnim
+
+	ldh a, [hSerialConnectionStatus]
+	cp USING_EXTERNAL_CLOCK
+	jr z, .enemy_first_hail
+
+; player first
+	call SetPlayerTurn
+	call .HailDamage
+	call SetEnemyTurn
+	jr .HailDamage
+
+.enemy_first_hail
+	call SetEnemyTurn
+	call .HailDamage
+	call SetPlayerTurn
+	ret
+
+.handle_smog
+	ld de, ANIM_IN_SMOG            ; Always play smog animation
+	call Call_PlayBattleAnim
+
+	ldh a, [hSerialConnectionStatus]
+	cp USING_EXTERNAL_CLOCK
+	jr z, .enemy_first_smog
+
+; player first
+	call SetPlayerTurn
+	call .SmogDamage
+	call SetEnemyTurn
+	jp .SmogDamage
+
+.enemy_first_smog
+	call SetEnemyTurn
+	call .SmogDamage
+	call SetPlayerTurn
+	ret
+
+.handle_sun
+	ld de, SUNNY_DAY               ; Play SUNNY_DAY animation for WEATHER_SUN
+	call Call_PlayBattleAnim
+	ret
+
+.handle_rain
+	ld de, RAIN_DANCE              ; Play RAIN_DANCE animation for WEATHER_RAIN
+	call Call_PlayBattleAnim
+	ret
 
 .SandstormDamage:
 	ld a, BATTLE_VARS_SUBSTATUS3
@@ -1758,34 +1830,12 @@ HandleWeather:
 	call SwitchTurnCore
 	xor a
 	ld [wNumHits], a
-	ld de, ANIM_IN_SANDSTORM
-	call Call_PlayBattleAnim
 	call SwitchTurnCore
 	call GetEighthMaxHP
 	call SubtractHPFromUser
 
 	ld hl, SandstormHitsText
 	jp StdBattleTextbox
-
-.check_hail
-	ld a, [wBattleWeather]
-	cp WEATHER_HAIL
-	jr nz, .check_smog
-
-	ldh a, [hSerialConnectionStatus]
-	cp USING_EXTERNAL_CLOCK
-	jr z, .enemy_first_hail
-
-; player first
-	call SetPlayerTurn
-	call .HailDamage
-	call SetEnemyTurn
-	jr .HailDamage
-
-.enemy_first_hail
-	call SetEnemyTurn
-	call .HailDamage
-	call SetPlayerTurn
 
 .HailDamage:
 	ld a, BATTLE_VARS_SUBSTATUS3
@@ -1818,35 +1868,12 @@ HandleWeather:
 	call SwitchTurnCore
 	xor a
 	ld [wNumHits], a
-	ld de, ANIM_IN_HAIL
-	call Call_PlayBattleAnim
 	call SwitchTurnCore
 	call GetEighthMaxHP
 	call SubtractHPFromUser
 
 	ld hl, PeltedByHailText
 	jp StdBattleTextbox
-
-
-.check_smog
-	ld a, [wBattleWeather]
-	cp WEATHER_SMOG
-	ret nz
-
-	ldh a, [hSerialConnectionStatus]
-	cp USING_EXTERNAL_CLOCK
-	jr z, .enemy_first_smog
-
-; player first
-	call SetPlayerTurn
-	call .SmogDamage
-	call SetEnemyTurn
-	jr .SmogDamage
-
-.enemy_first_smog
-	call SetEnemyTurn
-	call .SmogDamage
-	call SetPlayerTurn
 
 .SmogDamage:
 	ld a, BATTLE_VARS_SUBSTATUS3
@@ -1891,8 +1918,6 @@ HandleWeather:
 	call SwitchTurnCore
 	xor a
 	ld [wNumHits], a
-	ld de, ANIM_IN_SMOG
-	call Call_PlayBattleAnim
 	call SwitchTurnCore
 	call GetEighthMaxHP
 	call SubtractHPFromUser
@@ -1927,6 +1952,7 @@ HandleWeather:
 	dw BattleText_TheSandstormSubsided
 	dw BattleText_TheHailStopped
 	dw BattleText_TheSmogCleared
+
 
 SubtractHPFromTarget:
 	call SubtractHP
@@ -6641,16 +6667,6 @@ CheckUnownLetter:
 
 INCLUDE "data/wild/unlocked_unowns.asm"
 
-SwapBattlerLevels: ; unreferenced
-	push bc
-	ld a, [wBattleMonLevel]
-	ld b, a
-	ld a, [wEnemyMonLevel]
-	ld [wBattleMonLevel], a
-	ld a, b
-	ld [wEnemyMonLevel], a
-	pop bc
-	ret
 
 BattleWinSlideInEnemyTrainerFrontpic:
 	xor a
@@ -7930,45 +7946,9 @@ GoodComeBackText:
 	text_far _GoodComeBackText
 	text_end
 
-TextJump_ComeBack: ; unreferenced
-	ld hl, ComeBackText
-	ret
-
 ComeBackText:
 	text_far _ComeBackText
 	text_end
-
-HandleSafariAngerEatingStatus: ; unreferenced
-	ld hl, wSafariMonEating
-	ld a, [hl]
-	and a
-	jr z, .angry
-	dec [hl]
-	ld hl, BattleText_WildMonIsEating
-	jr .finish
-
-.angry
-	dec hl
-	assert wSafariMonEating - 1 == wSafariMonAngerCount
-	ld a, [hl]
-	and a
-	ret z
-	dec [hl]
-	ld hl, BattleText_WildMonIsAngry
-	jr nz, .finish
-	push hl
-	ld a, [wEnemyMonSpecies]
-	ld [wCurSpecies], a
-	call GetBaseData
-	ld a, [wBaseCatchRate]
-	ld [wEnemyMonCatchRate], a
-	pop hl
-
-.finish
-	push hl
-	call SafeLoadTempTilemapToTilemap
-	pop hl
-	jp StdBattleTextbox
 
 FillInExpBar:
 	push hl
@@ -8196,10 +8176,6 @@ StartBattle:
 	scf
 	ret
 
-CallDoBattle: ; unreferenced
-	call DoBattle
-	ret
-
 BattleIntro:
 	farcall StubbedTrainerRankings_Battles ; mobile
 	call LoadTrainerOrWildMonPic
@@ -8367,57 +8343,6 @@ InitEnemyWildmon:
 	hlcoord 12, 0
 	lb bc, 7, 7
 	predef PlaceGraphic
-	ret
-
-FillEnemyMovesFromMoveIndicesBuffer: ; unreferenced
-	ld hl, wEnemyMonMoves
-	ld de, wListMoves_MoveIndicesBuffer
-	ld b, NUM_MOVES
-.loop
-	ld a, [de]
-	inc de
-	ld [hli], a
-	and a
-	jr z, .clearpp
-
-	push bc
-	push hl
-
-	push hl
-	dec a
-	ld hl, Moves + MOVE_PP
-	ld bc, MOVE_LENGTH
-	call AddNTimes
-	ld a, BANK(Moves)
-	call GetFarByte
-	pop hl
-
-	ld bc, wEnemyMonPP - (wEnemyMonMoves + 1)
-	add hl, bc
-	ld [hl], a
-
-	pop hl
-	pop bc
-
-	dec b
-	jr nz, .loop
-	ret
-
-.clear
-	xor a
-	ld [hli], a
-
-.clearpp
-	push bc
-	push hl
-	ld bc, wEnemyMonPP - (wEnemyMonMoves + 1)
-	add hl, bc
-	xor a
-	ld [hl], a
-	pop hl
-	pop bc
-	dec b
-	jr nz, .clear
 	ret
 
 ExitBattle:
