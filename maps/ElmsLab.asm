@@ -1214,7 +1214,7 @@ LabWhereGoingText:
 TakeCyndaquilText:
 	text "ELM: You'll take"
 	line "CYNDAQUIL, the"
-	cont "fire & ghost"
+	cont "fire & electric"
 	cont "#MON?"
 	done
 

@@ -2211,9 +2211,9 @@ CyndaquilEvosAttacks:
 	db EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
 	db 1, SMOKESCREEN
-	db 1, LICK
-	db 1, LEER
-	db 6, SPITE
+	db 1, THUNDER_WAVE
+	db 7, AGILITY
+	db 9, QUICK_ATTACK
 	db 12, EMBER
 	db 15, SUNNY_DAY
 	db 19, QUICK_ATTACK
@@ -2227,36 +2227,29 @@ QuilavaEvosAttacks:
 	db EVOLVE_LEVEL, 36, TYPHLOSION
 	db 0 ; no more evolutions
 	db 1, SMOKESCREEN
-	db 1, LICK
-	db 1, LEER
-	db 6, SPITE
+	db 1, THUNDER_WAVE
 	db 12, EMBER
-	db 15, WILL_O_WISP
-	db 17, CONFUSE_RAY
+	db 14, THUNDERSHOCK
 	db 20, SUNNY_DAY
 	db 21, FLAME_WHEEL
-	db 23, NIGHT_SHADE
-	db 26, MEAN_LOOK
-	db 31, HEX
+	db 23, SPARK
+	db 31, SHOCK_WAVE
 	db 37, FLAMETHROWER
-	db 42, SHADOW_BALL
+	db 42, THUNDERBOLT
 	db 47, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 TyphlosionEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, DESTINY_BOND
-	db 1, BONE_RUSH
-	db 6, SPITE
-	db 12, WILL_O_WISP
-	db 17, CONFUSE_RAY
+	db 1, ZAP_CANNON
+	db 1, FISSURE
+	db 1, SACRED_FIRE
 	db 20, SUNNY_DAY
 	db 21, FLAME_WHEEL
-	db 23, NIGHT_SHADE
-	db 26, MEAN_LOOK
-	db 31, HEX
+	db 23, SPARK
+	db 31, SHOCK_WAVE
 	db 40, FLAMETHROWER
-	db 45, SHADOW_BALL
+	db 45, THUNDERBOLT
 	db 52, FIRE_BLAST
 	db 0 ; no more level-up moves
 

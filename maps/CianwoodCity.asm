@@ -105,6 +105,8 @@ CianwoodCityChucksWife:
 	waitbutton
 	writetext ChucksWifeChubbyText
 	waitbutton
+	writetext YouWouldntStandAChanceText
+	waitbutton
 	closetext
 	end
 	
@@ -267,7 +269,7 @@ BeautyJoleneSeenText:
 
 BeautyJoleneBringItText:
 	text "Alright, <PLAYER>"
-	line "Bring it on!"
+	line "Bring it!"
 	done
 
 BeautyJoleneWinText:
