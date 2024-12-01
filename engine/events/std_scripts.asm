@@ -629,6 +629,7 @@ InitializeEventsScript:
 	setevent EVENT_SPOKE_WITH_ARCHAEO_LASS2
 	setevent EVENT_BEAT_BUGSY
 	setevent EVENT_SHINY_VULPIX
+	setevent EVENT_BEAT_MEDIUM_AGATHA
 	setevent EVENT_INITIALIZED_EVENTS
 	callasm .mystery_gift_flag
 	endcallback

@@ -186,7 +186,6 @@ MomScript:
 	writetext RedWasYourFatherText
 	waitbutton
 	closetext
-	clearevent EVENT_RED_IN_MT_SILVER
 	end
 
 NeighborScript:

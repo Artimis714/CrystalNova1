@@ -193,8 +193,6 @@ DEF KRIS EQU __trainer_class__
 	const MICHELLE
 	const DANA1
 	const ELLEN
-	const CONNIE2 ; unused
-	const CONNIE3 ; unused
 	const DANA2
 	const DANA3
 	const DANA4
@@ -605,9 +603,8 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MEDIUM ; 39
 	const MARTHA
 	const GRACE
-	const BETHANY ; unused
 	const MARGRET ; Ghost
-	const ETHEL ; unused
+	const AGATHA
 	const REBECCA
 	const DORIS
 

@@ -35,9 +35,10 @@ MewTwo:
 	setevent EVENT_FOUGHT_MEWTWO
 	setevent EVENT_BURNEDTOWER_GHOST1
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon MEWTWO, 90
+	loadwildmon MEWTWO, 75
 	startbattle
 	disappear SILVERCAVEITEMROOMS_MEWTWO
+	setevent EVENT_SILVER_CAVE_MEWTWO
 	reloadmapafterbattle
 	end
 

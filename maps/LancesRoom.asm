@@ -182,6 +182,7 @@ LancesRoomLanceScript:
 	closetext
 	setevent EVENT_OPENED_MT_SILVER
 	setevent EVENT_ASK_YOUR_MOM_ABOUT_RED
+	clearevent EVENT_BEAT_MEDIUM_AGATHA
 	applymovement LANCESROOM_MARY, LancesRoomMovementData_MaryInterviewChampion
 	turnobject PLAYER, LEFT
 	opentext
