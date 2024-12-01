@@ -3140,7 +3140,7 @@ SageGroup:
 	db 30, PARAS
 	db 30, CUBONE
 	db 30, DROWZEE
-	db 30, QUILAVA
+	db 30, STANTLER
 	db -1 ; end
 
 	; SAGE (7)

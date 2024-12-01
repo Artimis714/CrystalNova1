@@ -333,8 +333,8 @@ OlivineLighthouseSignText:
 	done
 
 OlivineCityBattleTowerSignText:
-	text "BATTLE TOWER AHEAD"
-	line "Opening Now!"
+	text "This sign is badly"
+	line "damaged."
 	done
 
 OlivineCity_MapEvents:
