@@ -266,19 +266,38 @@ FossilScientistScript:
 	iffalse .No
 	checkflag ENGINE_UNLOCKED_UNOWNS_X_TO_Z
 	iffalse .YoureNotReady
+	writetext NeedCompleteBowlText
+	yesorno
+	iffalse .NotWorthMyWhile
+	checkitem ANCIENTRELIC
+	iffalse .NoAncientBowl
 	getmonname STRING_BUFFER_3, MEW
 	writetext FossilScientistMonText
 	promptbutton
 	setflag ENGINE_REVIVE_FOSSIL
 	setevent EVENT_GAVE_SCIENTIST_AMARANTH_RIB
 	takeitem AMARANTH_RIB
-	takeitem BRICK_PIECE
+	takeitem ANCIENTRELIC
 	writetext FossilScientistGiveText
 	waitbutton
 	sjump .GaveScientistFossil
 
 .No
 	writetext FossilScientistNoText
+	waitbutton
+	closetext
+	end
+
+.NotWorthMyWhile:
+	writetext NotWorthMyWHileText
+	waitbutton
+	closetext
+	end
+
+.NoAncientBowl:
+	writetext youdonthaveonetext
+	waitbutton
+	writetext NotWorthMyWHileText
 	waitbutton
 	closetext
 	end
@@ -389,6 +408,46 @@ FossilScientistScript:
 	db "AMARANTH RIB@"
 	db "CANCEL@"
 
+NeedCompleteBowlText:
+	text "Normally, I'd be"
+	line "happy to trade for"
+
+	para "any sherd of"
+	line "TANOBY WEAR."
+
+	para "But trying to"
+	line "revive this..."
+
+	para "I need some real"
+	line "compensation."
+
+	para "Trade me a comp-"
+	line "lete TANOBY WEAR"
+
+	para "vessel and we've"
+	line "got a deal."
+	done
+
+youdonthaveonetext:
+	text "Looks like all you"
+	line "have are sherds of"
+
+	para "TANOBY WEAR, but"
+	line "nothing complete."
+	done
+
+NotWorthMyWHileText:
+	text "I'm sorry, but"
+	line "resurrecting this"
+
+	para "is too much of a"
+	line "risk."
+
+	para "I won't risk it,"
+	line "unless you make it"
+	cont "worth my while."
+	done
+
 FossilScientistIntroText:
 	text "Hiya! I'm a"
 	line "paleontologist &"
@@ -449,8 +508,8 @@ Sorrybutyoudonttext:
 	done
 
 OkayIllReviveAFossilText:
-	text "<……> <……> <……>"
-	line "<……> <……> <……>"
+	text "..."
+	line "..."
 
 	para "Fantastic, this"
 	line "is a great find!"

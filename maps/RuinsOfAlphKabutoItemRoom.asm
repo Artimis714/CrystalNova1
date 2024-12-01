@@ -13,7 +13,7 @@ RuinsOfAlphKabutoItemRoomBerry:
 	itemball DOME_FOSSIL
 
 RuinsOfAlphKabutoItemRoomPsncureberry:
-	itemball ANCIENTRELIC
+	itemball BRICK_PIECE, 7
 
 RuinsOfAlphKabutoItemRoomHealPowder:
 	itemball HEAL_POWDER, 5
