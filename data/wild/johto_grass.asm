@@ -2045,7 +2045,7 @@ JohtoGrassWildMons:
 	db 10, HYPNO, 	         40,  50
 	db  5, MAROWAK, 	 40,  50
 	db  4, WOBBUFFET, 	 40,  50
-	db  1, TYPHLOSION, 	 40,  50
+	db  1, MISDREAVUS, 	 40,  50
 	end_grass_wildmons
 
 	db -1 ; end

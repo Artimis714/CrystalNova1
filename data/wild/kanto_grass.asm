@@ -1022,7 +1022,7 @@ KantoGrassWildMons:
 	db 10, HYPNO, 	         40,  90
 	db  5, MAROWAK, 	 40,  90
 	db  4, WOBBUFFET, 	 40,  90
-	db  1, TYPHLOSION, 	 40,  99
+	db  1, MISDREAVUS, 	 40,  99
 	end_grass_wildmons
 
 	db -1 ; end

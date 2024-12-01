@@ -8439,7 +8439,7 @@ ROMX bank #13:
 	TOTAL EMPTY: $00ba bytes
 
 ROMX bank #14:
-	SECTION: $4000-$7fea ($3feb bytes) ["Enemy Trainers"]
+	SECTION: $4000-$7fd0 ($3fd1 bytes) ["Enemy Trainers"]
 	         $4000 = AI_SwitchOrTryItem
 	         $4032 = AI_SwitchOrTryItem.ok
 	         $4041 = DontSwitch
@@ -8910,31 +8910,31 @@ ROMX bank #14:
 	         $72b0 = Rival2Group
 	         $73c4 = GuitaristGroup
 	         $73e0 = HikerGroup
-	         $753d = BikerGroup
-	         $7597 = BlaineGroup
-	         $75c4 = BurglarGroup
-	         $75fd = FirebreatherGroup
-	         $764f = JugglerGroup
-	         $769e = BlackbeltGroup
-	         $7739 = ExecutiveMGroup
-	         $77bf = PsychicGroup
-	         $786d = PicnickerGroup
-	         $79e6 = CamperGroup
-	         $7ac6 = ExecutiveFGroup
-	         $7b16 = SageGroup
-	         $7bd1 = MediumGroup
-	         $7c2e = BoarderGroup
-	         $7c58 = PokefanMGroup
-	         $7d20 = KimonoGirlGroup
-	         $7d86 = TwinsGroup
-	         $7e46 = PokefanFGroup
-	         $7e9b = RedGroup
-	         $7ecb = BlueGroup
-	         $7efc = OfficerGroup
-	         $7f84 = GruntFGroup
-	         $7fd0 = MysticalmanGroup
-	EMPTY: $7feb-$7fff ($0015 bytes)
-	TOTAL EMPTY: $0015 bytes
+	         $7535 = BikerGroup
+	         $758f = BlaineGroup
+	         $75bc = BurglarGroup
+	         $75f5 = FirebreatherGroup
+	         $7647 = JugglerGroup
+	         $7696 = BlackbeltGroup
+	         $7731 = ExecutiveMGroup
+	         $77b7 = PsychicGroup
+	         $7851 = PicnickerGroup
+	         $79cc = CamperGroup
+	         $7aac = ExecutiveFGroup
+	         $7afc = SageGroup
+	         $7bb7 = MediumGroup
+	         $7c14 = BoarderGroup
+	         $7c3e = PokefanMGroup
+	         $7d06 = KimonoGirlGroup
+	         $7d6c = TwinsGroup
+	         $7e2c = PokefanFGroup
+	         $7e81 = RedGroup
+	         $7eb1 = BlueGroup
+	         $7ee2 = OfficerGroup
+	         $7f6a = GruntFGroup
+	         $7fb6 = MysticalmanGroup
+	EMPTY: $7fd1-$7fff ($002f bytes)
+	TOTAL EMPTY: $002f bytes
 
 ROMX bank #15:
 	SECTION: $4000-$7f86 ($3f87 bytes) ["Battle Core"]
@@ -60386,7 +60386,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1782481 bytes used / 298287 free in 127 banks
+	ROMX: 1782455 bytes used / 298313 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks
