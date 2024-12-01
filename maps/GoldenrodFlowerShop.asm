@@ -30,12 +30,35 @@ FlowerShopTeacherScript:
 	end
 
 .Lalala:
+	checkitem SQUIRTBOTTLE
+	iftrue .NuggetBaby
 	turnobject GOLDENRODFLOWERSHOP_TEACHER, LEFT
 	opentext
 	writetext GoldenrodFlowerShopTeacherLalalaHavePlentyOfWaterText
 	waitbutton
 	closetext
 	end
+
+.NuggetBaby:
+	faceplayer
+	opentext
+	writetext shipmentsarebetterText
+	waitbutton
+	verbosegiveitem BIG_NUGGET
+	iffalse .NoRoomForNugs
+	waitbutton
+	writetext Iwillbetakingmywater
+	takeitem SQUIRTBOTTLE
+	waitbutton
+	closetext
+	end
+
+.NoRoomForNugs:
+	writetext noroomfornugstext
+	waitbutton
+	closetext
+	end
+	
 
 .GotSquirtbottle:
 	jumptextfaceplayer GoldenrodFlowerShopTeacherDontDoAnythingDangerousText
@@ -167,6 +190,69 @@ GoldenrodFlowerShopFloriaItReallyWasAMonText:
 	para "I know plants but"
 	line "I don't know much"
 	cont "about #MON."
+	done
+
+shipmentsarebetterText:
+	text "Oh, you're back!"
+	line "Well done clearing"
+	cont "that lying tree!"
+
+	para "..."
+	line "..."
+
+	para "I was able to send"
+	line "flowers to a wedd-"
+	cont "ing in OLIVINE."
+
+	para "Couldn't have done"
+	line "that without your"
+	cont "help!"
+
+	para "The happy couple"
+	line "are former rebels."
+
+	para "so they payed me"
+	line "in items."
+
+	para "Here, I'll share"
+	line "some of my profits"
+	cont "with you!"
+	done
+
+Iwillbetakingmywater:
+	text "..."
+	line "..."
+
+	para "Oh, don't worry"
+	line "about it. I've got"
+
+	para "more money than I"
+	line "know what to do"
+	cont "with."
+
+	para "..."
+	line "..."
+
+	para "I sell other herbs"
+	line "too... and let's"
+
+	para "just leave it at"
+	line "that."
+
+	para "I will be taking"
+	line "my water bottle"
+	cont "back though."
+
+	para "Thanks Again kid!"
+	done
+
+noroomfornugstext:
+	text "Doesn't look like"
+	line "you've got room,"
+	cont "for that."
+
+	para "Maybe come back"
+	line "later?"
 	done
 
 GoldenrodFlowerShop_MapEvents:

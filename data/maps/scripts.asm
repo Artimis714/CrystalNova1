@@ -5,7 +5,6 @@ INCLUDE "maps/GoldenrodBikeShop.asm"
 INCLUDE "maps/GoldenrodHappinessRater.asm"
 INCLUDE "maps/BillsFamilysHouse.asm"
 INCLUDE "maps/GoldenrodMagnetTrainStation.asm"
-INCLUDE "maps/GoldenrodFlowerShop.asm"
 INCLUDE "maps/GoldenrodPPSpeechHouse.asm"
 INCLUDE "maps/GoldenrodNameRater.asm"
 INCLUDE "maps/GoldenrodDeptStore1F.asm"
@@ -502,4 +501,5 @@ SECTION "Map Scripts 31", ROMX
 INCLUDE "maps/CianwoodCity.asm"
 INCLUDE "maps/RedsHouse1F.asm"
 INCLUDE "maps/IlexForest.asm"
+INCLUDE "maps/GoldenrodFlowerShop.asm"
 
