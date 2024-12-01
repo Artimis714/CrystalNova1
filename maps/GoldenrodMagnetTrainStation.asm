@@ -188,9 +188,9 @@ GoldenrodMagnetTrainStationOfficerArrivedInGoldenrodText:
 	para "where this service"
 	line "terminates."
 
-	para "please mind the gap"
-	line "when alighting from"
-	cont "this train."
+	para "please mind the"
+	line "gap when alighting"
+	cont "from this train."
 	done
 
 GoldenrodMagnetTrainStationOfficerNoPowerText:
