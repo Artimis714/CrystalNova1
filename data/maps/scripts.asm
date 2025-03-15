@@ -501,4 +501,7 @@ INCLUDE "maps/CianwoodCity.asm"
 INCLUDE "maps/RedsHouse1F.asm"
 INCLUDE "maps/IlexForest.asm"
 INCLUDE "maps/GoldenrodFlowerShop.asm"
+
+
+SECTION "Map Scripts 32", ROMX
 INCLUDE "maps/KurtsHouse.asm"
