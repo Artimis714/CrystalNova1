@@ -8944,7 +8944,7 @@ ROMX bank #14:
 	TOTAL EMPTY: $16af bytes
 
 ROMX bank #15:
-	SECTION: $4000-$7f86 ($3f87 bytes) ["Battle Core"]
+	SECTION: $4000-$7f7b ($3f7c bytes) ["Battle Core"]
 	         $4000 = DoBattle
 	         $4019 = DoBattle.loop
 	         $4021 = DoBattle.alive
@@ -9651,93 +9651,92 @@ ROMX bank #15:
 	         $763d = InitEnemy
 	         $7647 = BackUpBGMap2
 	         $7673 = InitEnemyTrainer
-	         $7697 = InitEnemyTrainer.ok
-	         $76c9 = InitEnemyTrainer.partyloop
-	         $76db = InitEnemyTrainer.skipfaintedmon
-	         $76e5 = InitEnemyTrainer.done
-	         $76e6 = InitEnemyWildmon
-	         $7727 = InitEnemyWildmon.skip_unown
-	         $7741 = ExitBattle
-	         $7748 = ExitBattle.HandleEndOfBattle
-	         $775a = ExitBattle.not_linked
-	         $7773 = CleanUpBattleRAM
-	         $77b8 = CleanUpBattleRAM.loop
-	         $77c0 = CheckPayDay
-	         $77e0 = CheckPayDay.okay
-	         $77fc = ShowLinkBattleParticipantsAfterEnd
-	         $781f = DisplayLinkBattleResult
-	         $783a = DisplayLinkBattleResult.proceed
-	         $7850 = DisplayLinkBattleResult.win
-	         $785b = DisplayLinkBattleResult.lose
-	         $7866 = DisplayLinkBattleResult.store_result
-	         $7891 = DisplayLinkBattleResult.mobile
-	         $789a = DisplayLinkBattleResult.YouWin
-	         $78a2 = DisplayLinkBattleResult.YouLose
-	         $78ab = DisplayLinkBattleResult.Draw
-	         $78b2 = DisplayLinkBattleResult.Mobile_InvalidBattle
-	         $78c4 = DisplayLinkBattleResult.InvalidBattle
-	         $78d3 = IsMobileBattle2
-	         $78d9 = _DisplayLinkRecord
-	         $7902 = ReadAndPrintLinkBattleRecord
-	         $7913 = ReadAndPrintLinkBattleRecord.loop
-	         $796c = ReadAndPrintLinkBattleRecord.PrintFormatString
-	         $7972 = ReadAndPrintLinkBattleRecord.next
-	         $7983 = ReadAndPrintLinkBattleRecord.PrintBattleRecord
-	         $79cd = ReadAndPrintLinkBattleRecord.quit
-	         $79ce = ReadAndPrintLinkBattleRecord.PrintZerosIfNoSaveFileExists
-	         $79db = ReadAndPrintLinkBattleRecord.Scores
-	         $79ea = ReadAndPrintLinkBattleRecord.Format
-	         $7a07 = ReadAndPrintLinkBattleRecord.Record
-	         $7a11 = ReadAndPrintLinkBattleRecord.Result
-	         $7a26 = ReadAndPrintLinkBattleRecord.Total
-	         $7a3b = BattleEnd_HandleRoamMons
-	         $7a52 = BattleEnd_HandleRoamMons.caught_or_defeated_roam_mon
-	         $7a67 = BattleEnd_HandleRoamMons.not_roaming
-	         $7a6d = BattleEnd_HandleRoamMons.update_roam_mons
-	         $7a74 = GetRoamMonMapGroup
-	         $7a8c = GetRoamMonMapNumber
-	         $7aa4 = GetRoamMonHP
-	         $7abc = GetRoamMonDVs
-	         $7ad4 = GetRoamMonSpecies
-	         $7ae5 = AddLastLinkBattleToLinkRecord
-	         $7b05 = AddLastLinkBattleToLinkRecord.loop
-	         $7b28 = AddLastLinkBattleToLinkRecord.copy
-	         $7b36 = AddLastLinkBattleToLinkRecord.loop2
-	         $7b3c = AddLastLinkBattleToLinkRecord.done
-	         $7b43 = AddLastLinkBattleToLinkRecord.StoreResult
-	         $7b57 = AddLastLinkBattleToLinkRecord.okay
-	         $7b61 = AddLastLinkBattleToLinkRecord.CheckOverflow
-	         $7b6b = AddLastLinkBattleToLinkRecord.FindOpponentAndAppendRecord
-	         $7b73 = AddLastLinkBattleToLinkRecord.loop3
-	         $7b90 = AddLastLinkBattleToLinkRecord.loop4
-	         $7bb3 = AddLastLinkBattleToLinkRecord.equal
-	         $7bc2 = AddLastLinkBattleToLinkRecord.done2
-	         $7bf7 = AddLastLinkBattleToLinkRecord.LoadPointer
-	         $7c06 = AddLastLinkBattleToLinkRecord.okay2
-	         $7c0f = InitBattleDisplay
-	         $7c79 = InitBattleDisplay.BlankBGMap
-	         $7c9b = InitBattleDisplay.InitBackPic
-	         $7ca2 = GetTrainerBackpic
-	         $7cc3 = GetTrainerBackpic.Chris
-	         $7cc8 = GetTrainerBackpic.Decompress
-	         $7cd3 = CopyBackpic
-	         $7cfe = CopyBackpic.LoadTrainerBackpicAsOAM
-	         $7d08 = CopyBackpic.outer_loop
-	         $7d0c = CopyBackpic.inner_loop
-	         $7d2e = BattleStartMessage
-	         $7d4d = BattleStartMessage.wild
-	         $7d65 = BattleStartMessage.not_shiny
-	         $7d83 = BattleStartMessage.cry_no_anim
-	         $7d8e = BattleStartMessage.skip_cry
-	         $7da0 = BattleStartMessage.NotFishing
-	         $7db1 = BattleStartMessage.PlaceBattleStartText
-	         $7dc9 = GetWeatherImage
-	         $7dfb = GetWeatherImage.done
-	         $7e0b = GetWeatherImage.loop
-	         $7e19 = GetWeatherImage.WeatherImageOAMData
-	         $7e23 = BattleCommandPointers
-	EMPTY: $7f87-$7fff ($0079 bytes)
-	TOTAL EMPTY: $0079 bytes
+	         $76be = InitEnemyTrainer.partyloop
+	         $76d0 = InitEnemyTrainer.skipfaintedmon
+	         $76da = InitEnemyTrainer.done
+	         $76db = InitEnemyWildmon
+	         $771c = InitEnemyWildmon.skip_unown
+	         $7736 = ExitBattle
+	         $773d = ExitBattle.HandleEndOfBattle
+	         $774f = ExitBattle.not_linked
+	         $7768 = CleanUpBattleRAM
+	         $77ad = CleanUpBattleRAM.loop
+	         $77b5 = CheckPayDay
+	         $77d5 = CheckPayDay.okay
+	         $77f1 = ShowLinkBattleParticipantsAfterEnd
+	         $7814 = DisplayLinkBattleResult
+	         $782f = DisplayLinkBattleResult.proceed
+	         $7845 = DisplayLinkBattleResult.win
+	         $7850 = DisplayLinkBattleResult.lose
+	         $785b = DisplayLinkBattleResult.store_result
+	         $7886 = DisplayLinkBattleResult.mobile
+	         $788f = DisplayLinkBattleResult.YouWin
+	         $7897 = DisplayLinkBattleResult.YouLose
+	         $78a0 = DisplayLinkBattleResult.Draw
+	         $78a7 = DisplayLinkBattleResult.Mobile_InvalidBattle
+	         $78b9 = DisplayLinkBattleResult.InvalidBattle
+	         $78c8 = IsMobileBattle2
+	         $78ce = _DisplayLinkRecord
+	         $78f7 = ReadAndPrintLinkBattleRecord
+	         $7908 = ReadAndPrintLinkBattleRecord.loop
+	         $7961 = ReadAndPrintLinkBattleRecord.PrintFormatString
+	         $7967 = ReadAndPrintLinkBattleRecord.next
+	         $7978 = ReadAndPrintLinkBattleRecord.PrintBattleRecord
+	         $79c2 = ReadAndPrintLinkBattleRecord.quit
+	         $79c3 = ReadAndPrintLinkBattleRecord.PrintZerosIfNoSaveFileExists
+	         $79d0 = ReadAndPrintLinkBattleRecord.Scores
+	         $79df = ReadAndPrintLinkBattleRecord.Format
+	         $79fc = ReadAndPrintLinkBattleRecord.Record
+	         $7a06 = ReadAndPrintLinkBattleRecord.Result
+	         $7a1b = ReadAndPrintLinkBattleRecord.Total
+	         $7a30 = BattleEnd_HandleRoamMons
+	         $7a47 = BattleEnd_HandleRoamMons.caught_or_defeated_roam_mon
+	         $7a5c = BattleEnd_HandleRoamMons.not_roaming
+	         $7a62 = BattleEnd_HandleRoamMons.update_roam_mons
+	         $7a69 = GetRoamMonMapGroup
+	         $7a81 = GetRoamMonMapNumber
+	         $7a99 = GetRoamMonHP
+	         $7ab1 = GetRoamMonDVs
+	         $7ac9 = GetRoamMonSpecies
+	         $7ada = AddLastLinkBattleToLinkRecord
+	         $7afa = AddLastLinkBattleToLinkRecord.loop
+	         $7b1d = AddLastLinkBattleToLinkRecord.copy
+	         $7b2b = AddLastLinkBattleToLinkRecord.loop2
+	         $7b31 = AddLastLinkBattleToLinkRecord.done
+	         $7b38 = AddLastLinkBattleToLinkRecord.StoreResult
+	         $7b4c = AddLastLinkBattleToLinkRecord.okay
+	         $7b56 = AddLastLinkBattleToLinkRecord.CheckOverflow
+	         $7b60 = AddLastLinkBattleToLinkRecord.FindOpponentAndAppendRecord
+	         $7b68 = AddLastLinkBattleToLinkRecord.loop3
+	         $7b85 = AddLastLinkBattleToLinkRecord.loop4
+	         $7ba8 = AddLastLinkBattleToLinkRecord.equal
+	         $7bb7 = AddLastLinkBattleToLinkRecord.done2
+	         $7bec = AddLastLinkBattleToLinkRecord.LoadPointer
+	         $7bfb = AddLastLinkBattleToLinkRecord.okay2
+	         $7c04 = InitBattleDisplay
+	         $7c6e = InitBattleDisplay.BlankBGMap
+	         $7c90 = InitBattleDisplay.InitBackPic
+	         $7c97 = GetTrainerBackpic
+	         $7cb8 = GetTrainerBackpic.Chris
+	         $7cbd = GetTrainerBackpic.Decompress
+	         $7cc8 = CopyBackpic
+	         $7cf3 = CopyBackpic.LoadTrainerBackpicAsOAM
+	         $7cfd = CopyBackpic.outer_loop
+	         $7d01 = CopyBackpic.inner_loop
+	         $7d23 = BattleStartMessage
+	         $7d42 = BattleStartMessage.wild
+	         $7d5a = BattleStartMessage.not_shiny
+	         $7d78 = BattleStartMessage.cry_no_anim
+	         $7d83 = BattleStartMessage.skip_cry
+	         $7d95 = BattleStartMessage.NotFishing
+	         $7da6 = BattleStartMessage.PlaceBattleStartText
+	         $7dbe = GetWeatherImage
+	         $7df0 = GetWeatherImage.done
+	         $7e00 = GetWeatherImage.loop
+	         $7e0e = GetWeatherImage.WeatherImageOAMData
+	         $7e18 = BattleCommandPointers
+	EMPTY: $7f7c-$7fff ($0084 bytes)
+	TOTAL EMPTY: $0084 bytes
 
 ROMX bank #16:
 	SECTION: $4000-$65c7 ($25c8 bytes) ["bank10"]
@@ -60489,7 +60488,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1789467 bytes used / 291301 free in 127 banks
+	ROMX: 1789456 bytes used / 291312 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks
