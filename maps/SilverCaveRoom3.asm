@@ -67,6 +67,10 @@ Agatha:
 
 .RedAppear:
 	setevent EVENT_BEAT_MEDIUM_AGATHA
+	setevent EVENT_LEADERS_IN_SILVER
+	setevent EVENT_VIRIDIAN_GYM_BLUE
+	setevent EVENT_TRAINERS_IN_CERULEAN_GYM
+	setevent EVENT_OLIVINE_GYM_JASMINE
 	clearevent EVENT_RED_IN_MT_SILVER
 	clearevent EVENT_FINAL_GAUNTLET
 	writetext AgathaafterMewTwoBattle
@@ -130,6 +134,10 @@ FinalRivalPostBattle:
 	playsound SFX_EXIT_BUILDING
 	special FadeOutPalettes
 	setevent EVENT_FINAL_GAUNTLET
+	clearevent EVENT_LEADERS_IN_SILVER
+	clearevent EVENT_VIRIDIAN_GYM_BLUE
+	clearevent EVENT_TRAINERS_IN_CERULEAN_GYM
+	clearevent EVENT_OLIVINE_GYM_JASMINE
 	disappear SILVERCAVEROOM3_RIVAL
 	waitsfx
 	reloadmap

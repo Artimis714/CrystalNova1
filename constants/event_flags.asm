@@ -1553,6 +1553,7 @@
 	const EVENT_SHADY_NATIONAL_PARK_SHOP
 	const EVENT_FOUGHT_AGATHA
 	const EVENT_FINAL_GAUNTLET
+	const EVENT_LEADERS_IN_SILVER
 ; Unused: next 48 events
 
 	const_next 2048
