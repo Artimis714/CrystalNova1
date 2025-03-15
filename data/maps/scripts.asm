@@ -288,7 +288,6 @@ INCLUDE "maps/TohjoFalls.asm"
 INCLUDE "maps/AzaleaPokecenter1F.asm"
 INCLUDE "maps/CharcoalKiln.asm"
 INCLUDE "maps/AzaleaMart.asm"
-INCLUDE "maps/KurtsHouse.asm"
 
 
 SECTION "Map Scripts 17", ROMX
@@ -502,4 +501,4 @@ INCLUDE "maps/CianwoodCity.asm"
 INCLUDE "maps/RedsHouse1F.asm"
 INCLUDE "maps/IlexForest.asm"
 INCLUDE "maps/GoldenrodFlowerShop.asm"
-
+INCLUDE "maps/KurtsHouse.asm"
