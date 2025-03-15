@@ -1,6 +1,7 @@
 	object_const_def
 	const SILVERCAVEROOM3_RED
 	const SILVERCAVEROOM3_AGATHA
+	const SILVERCAVEROOM3_RIVAL
 
 SilverCaveRoom3_MapScripts:
 	def_scene_scripts
@@ -67,6 +68,7 @@ Agatha:
 .RedAppear:
 	setevent EVENT_BEAT_MEDIUM_AGATHA
 	clearevent EVENT_RED_IN_MT_SILVER
+	clearevent EVENT_FINAL_GAUNTLET
 	writetext AgathaafterMewTwoBattle
 	waitbutton
 	closetext
@@ -77,7 +79,63 @@ Agatha:
 	pause 15
 	special FadeInQuickly
 	end
-	
+
+Rival:
+	showemote EMOTE_SHOCK, SILVERCAVEROOM3_RIVAL, 15
+	special FadeOutMusic
+	pause 15
+	playmusic MUSIC_RIVAL_ENCOUNTER
+	faceplayer
+	opentext 
+	writetext RivalFinalBattle1
+	waitbutton
+	closetext
+	checkevent EVENT_GOT_TOTODILE_FROM_ELM
+	iftrue .Totodile
+	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
+	iftrue .Chikorita
+	; Cyndaquil
+	winlosstext FinalRivalWinText, FinalRivalLoseText
+	setlasttalked SILVERCAVEROOM3_RIVAL
+	loadtrainer RIVAL2, RIVAL2_3_TOTODILE
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump FinalRivalPostBattle
+
+.Totodile:
+	winlosstext FinalRivalWinText, FinalRivalLoseText
+	setlasttalked SILVERCAVEROOM3_RIVAL
+	loadtrainer RIVAL2, RIVAL2_3_CHIKORITA
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump FinalRivalPostBattle
+
+.Chikorita:
+	winlosstext FinalRivalWinText, FinalRivalLoseText
+	setlasttalked SILVERCAVEROOM3_RIVAL
+	loadtrainer RIVAL2, RIVAL2_3_CYNDAQUIL
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump FinalRivalPostBattle
+
+FinalRivalPostBattle:
+	playmusic MUSIC_RIVAL_AFTER
+	opentext 
+	writetext FinalRivalText2
+	waitbutton
+	closetext
+	playsound SFX_EXIT_BUILDING
+	special FadeOutPalettes
+	setevent EVENT_FINAL_GAUNTLET
+	disappear SILVERCAVEROOM3_RIVAL
+	waitsfx
+	reloadmap
+	playmapmusic
+	end
+
 
 RedSeenText:
 	text "RED: ..."
@@ -209,6 +267,75 @@ AgathaafterMewTwoBattle:
 	line "take my leave."
 	done
 
+RivalFinalBattle1:
+	text "So you've come"
+	line "all this way to"
+
+	para "meet the infamous"
+	line "RED."
+
+	para "..."
+	line "..."
+
+	para "Your father?"
+	line "That explains so"
+	cont "much."
+
+	para "..."
+	line "..."
+
+	para "Maybe you should"
+	line "prove you're on"
+	cont "your dad's level."
+	done
+
+FinalRivalWinText:
+	text "This is getting"
+	line "predictable." 
+	done
+
+FinalRivalLoseText:
+	text "This is getting"
+	line "predictable." 
+	done
+
+FinalRivalText2:
+	text "..."
+	line "..."
+
+	para "I came to make"
+	line "RED pay for his"
+
+	para "crimes during the"
+	line "war."
+
+	para "..."
+	line "..."
+
+	para "Listen, my dad is"
+	line "GIOVANI. I under-"
+	
+	para "stand your daddy"
+	line "issues. Trust me."
+
+	para "..."
+	line "..."
+
+	para "I suppose you're"
+	line "right."
+
+	para "We make the world"
+	line "a better place."
+
+	para "..."
+	line "..."
+
+	para "Give him hell."
+
+	para "I'll see you"
+	line "around, <PLAY_G>"
+	done
+
 SilverCaveRoom3_MapEvents:
 	db 0, 0 ; filler
 
@@ -220,5 +347,6 @@ SilverCaveRoom3_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  9, 10, SPRITE_RED, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Red, EVENT_RED_IN_MT_SILVER
+	object_event 10, 10, SPRITE_RED, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Red, EVENT_RED_IN_MT_SILVER
 	object_event 10, 27, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, Agatha, EVENT_BEAT_MEDIUM_AGATHA
+	object_event  9, 13, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Rival, EVENT_FINAL_GAUNTLET
