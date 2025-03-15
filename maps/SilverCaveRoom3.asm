@@ -48,6 +48,7 @@ Agatha:
 	startbattle
 	reloadmapafterbattle
 	opentext 
+	setevent EVENT_FOUGHT_AGATHA
 	checkevent EVENT_FOUGHT_MEWTWO
 	iftrue .RedAppear
 	writetext AgathaAfterBattleText
@@ -65,6 +66,7 @@ Agatha:
 
 .RedAppear:
 	setevent EVENT_BEAT_MEDIUM_AGATHA
+	clearevent EVENT_RED_IN_MT_SILVER
 	writetext AgathaafterMewTwoBattle
 	waitbutton
 	closetext
@@ -74,7 +76,6 @@ Agatha:
 	appear SILVERCAVEROOM3_RED
 	pause 15
 	special FadeInQuickly
-	clearevent EVENT_RED_IN_MT_SILVER
 	end
 	
 

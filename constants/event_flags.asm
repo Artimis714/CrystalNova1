@@ -1552,6 +1552,7 @@
 	const EVENT_CHARRED_JOURNAL
 	const EVENT_SHADY_NATIONAL_PARK_SHOP
 	const EVENT_FOUGHT_AGATHA
+	const EVENT_FINAL_GAUNTLET
 ; Unused: next 48 events
 
 	const_next 2048
