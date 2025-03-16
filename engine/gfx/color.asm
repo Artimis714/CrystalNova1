@@ -1,8 +1,8 @@
 INCLUDE "engine/gfx/sgb_layouts.asm"
 
 DEF SHINY_ATK_MASK EQU %0010
-DEF SHINY_DEF_DV EQU 11     ; Change Defense DV to 11
-DEF SHINY_SPC_DV EQU 15     ; Keep Special DV at 15
+DEF SHINY_DEF_DV EQU 15
+DEF SHINY_SPC_DV EQU 15
 
 CheckShininess:
 ; Check if a mon is shiny by DVs at bc.
@@ -19,7 +19,7 @@ CheckShininess:
 ; Defense
     ld a, [hli]
     and %1111
-    cp SHINY_DEF_DV           ; Check Defense DV for 11
+    cp SHINY_DEF_DV           ; Check Defense DV for 15
     jr nz, .not_shiny
 
 ; Special
