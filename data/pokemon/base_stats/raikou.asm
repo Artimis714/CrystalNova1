@@ -7,14 +7,14 @@
 	db 3 ; catch rate
 	db 216 ; base exp
 	db BRIGHTPOWDER, MAGNET ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 80 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/raikou/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_SLOW ; growth rate
-	dn EGG_NONE, EGG_NONE ; egg groups
+	dn EGG_MINERAL, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
 	tmhm HEADBUTT, CURSE, ROAR, TOXIC, ZAP_CANNON, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, HYPER_BEAM, PROTECT, RAIN_DANCE, FRUSTRATION, IRON_TAIL, THUNDER, RETURN, DIG, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SANDSTORM, SWIFT, REST, THIEF, SUBSTITUTE, CUT, STRENGTH, FLASH, THUNDERBOLT, CRUNCH
