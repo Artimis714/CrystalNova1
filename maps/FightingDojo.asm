@@ -44,7 +44,128 @@ FightingDojoBlackBelt:
 	end
 
 .GotBlackbelt:
-	writetext YouAreWelcomeAnyTimeText
+	checkflag ENGINE_TIME_CAPSULE
+	iftrue .ComeBackTomorrow
+	readvar VAR_WEEKDAY
+	ifequal MONDAY, .MondayTrade
+	ifequal TUESDAY, .TuesdayTrade
+	ifequal WEDNESDAY, .WednesdayTrade
+	ifequal THURSDAY, .ThursdayTrade
+	ifequal FRIDAY, .FridayTrade
+	writetext ComeBackTomorrowText
+	waitbutton
+	closetext
+	end
+
+.MondayTrade:
+	writetext IntroTradeText
+	waitbutton
+	writetext MondayTradeText
+	waitbutton
+	writetext WillingtoTradeText
+	yesorno
+	iffalse .MaybeSomeOtherTime
+	checkitem SILVER_LEAF
+	iffalse .YouDontHaveWhatIWant
+	takeitem SILVER_LEAF
+	verbosegiveitem MASTER_BALL
+	waitbutton
+	writetext PleasureDoingBusinessText
+	waitbutton
+	closetext
+	setflag ENGINE_TIME_CAPSULE
+	end
+
+.TuesdayTrade:
+	writetext IntroTradeText
+	waitbutton
+	writetext TuesdayTradeText
+	waitbutton
+	writetext WillingtoTradeText
+	yesorno
+	iffalse .MaybeSomeOtherTime
+	checkitem GOLD_LEAF
+	iffalse .YouDontHaveWhatIWant
+	takeitem GOLD_LEAF
+	verbosegiveitem MASTER_BALL
+	waitbutton
+	writetext PleasureDoingBusinessText
+	waitbutton
+	closetext
+	setflag ENGINE_TIME_CAPSULE
+	end
+
+.WednesdayTrade:
+	writetext IntroTradeText
+	waitbutton
+	writetext WednesdayTradeText
+	waitbutton
+	writetext WillingtoTradeText
+	yesorno
+	iffalse .MaybeSomeOtherTime
+	checkitem BIG_MUSHROOM
+	iffalse .YouDontHaveWhatIWant
+	takeitem BIG_MUSHROOM
+	verbosegiveitem MASTER_BALL
+	waitbutton
+	writetext PleasureDoingBusinessText
+	waitbutton
+	closetext
+	setflag ENGINE_TIME_CAPSULE
+	end
+
+.ThursdayTrade:
+	writetext IntroTradeText
+	waitbutton
+	writetext ThursdayTradeText
+	waitbutton
+	writetext WillingtoTradeText
+	yesorno
+	iffalse .MaybeSomeOtherTime
+	checkitem LUCKY_PUNCH
+	iffalse .YouDontHaveWhatIWant
+	takeitem LUCKY_PUNCH
+	verbosegiveitem MASTER_BALL
+	waitbutton
+	writetext PleasureDoingBusinessText
+	waitbutton
+	closetext
+	setflag ENGINE_TIME_CAPSULE
+	end
+
+.FridayTrade:
+	writetext IntroTradeText
+	waitbutton
+	writetext FridayTradeText
+	waitbutton
+	writetext WillingtoTradeText
+	yesorno
+	iffalse .MaybeSomeOtherTime
+	checkitem STICK
+	iffalse .YouDontHaveWhatIWant
+	takeitem STICK
+	verbosegiveitem MASTER_BALL
+	waitbutton
+	writetext PleasureDoingBusinessText
+	waitbutton
+	closetext
+	setflag ENGINE_TIME_CAPSULE
+	end
+
+.MaybeSomeOtherTime:
+	writetext MaybeSomeOtherTimeText
+	waitbutton
+	closetext
+	end
+
+.YouDontHaveWhatIWant:
+	writetext YouDontHaveWhatIWantText
+	waitbutton
+	closetext
+	end
+
+.ComeBackTomorrow:
+	writetext ComeBackTomorrowText
 	waitbutton
 	closetext
 	end
@@ -183,6 +304,92 @@ HistoryoftheDojoText:
 
 	para "in preparation"
 	line "for his return."
+	done
+
+IntroTradeText:
+	text "MASTER <PLAY_G>!"
+	line "It is an honor."
+
+	para "I was hoping you"
+	line "might assist me."
+	cont "I am looking for a"
+	done
+
+MondayTradeText:
+	text "SILVER LEAF."
+	done
+
+TuesdayTradeText:
+	text "GOLD LEAF."
+	done
+
+WednesdayTradeText:
+	text "BIG MUSHROOM."
+	done
+
+ThursdayTradeText:
+	text "LUCKY PUNCH."
+	done
+
+FridayTradeText:
+	text "STICK."
+	done
+
+WillingtoTradeText:
+	text "Would you be will-"
+	line "ing to trade one"
+
+	para "for a MASTER BALL?"
+	done
+
+
+PleasureDoingBusinessText:
+	text "A pleasure doing"
+	line "business with you,"
+	cont "MASTER <PLAY_G>!"
+
+	para "Come back another"
+	line "day. I am always"
+
+	para "looking to make a"
+	line "trade."
+	done
+
+MaybeSomeOtherTimeText:
+	text "Hmm... Maybe some"
+	line "other time then."
+	done
+
+YouDontHaveWhatIWantText:
+	text "I am sorry MASTER"
+	line "<PLAY_G>, but"
+
+	para "you do not have"
+	line "what I am looking"
+	cont "for."
+
+	para "Come back when you"
+	line "do, and I will be"
+
+	para "happy to make a"
+	line "trade."
+	done
+
+ComeBackTomorrowText:
+	text "MASTER <PLAY_G>!"
+	line "It is always good"
+	cont "to see you."
+
+	para "..."
+	line "..."
+
+	para "I have nothing"
+	line "else to trade to-"
+	cont "day."
+
+	para "come back tomorrow"
+	line "and maybe I will"
+	cont "have something."
 	done
 
 FightingDojoSign1Text:

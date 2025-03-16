@@ -477,7 +477,6 @@ INCLUDE "maps/SoulHouse.asm"
 INCLUDE "maps/ViridianPokecenter1F.asm"
 INCLUDE "maps/ViridianPokecenter2FBeta.asm"
 INCLUDE "maps/SeafoamGym.asm"
-INCLUDE "maps/FightingDojo.asm"
 INCLUDE "maps/LavRadioTower1F.asm"
 INCLUDE "maps/Route8SaffronGate.asm"
 INCLUDE "maps/Route12SuperRodHouse.asm"
@@ -505,3 +504,4 @@ INCLUDE "maps/GoldenrodFlowerShop.asm"
 
 SECTION "Map Scripts 32", ROMX
 INCLUDE "maps/KurtsHouse.asm"
+INCLUDE "maps/FightingDojo.asm"
