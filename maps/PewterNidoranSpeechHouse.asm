@@ -14,6 +14,8 @@ PewterNidoran:
 	opentext
 	writetext PewterNidoranText
 	cry NIDORAN_F
+	setval NIDORAN_F
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

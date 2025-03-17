@@ -51,6 +51,8 @@ MoomooScript:
 	writetext MoomooWeakMooText
 	setval MILTANK
 	special PlaySlowCry
+	setval MILTANK
+	special ShowPokedexEntry
 	promptbutton
 	writetext Route39BarnItsCryIsWeakText
 	checkevent EVENT_TALKED_TO_FARMER_ABOUT_MOOMOO
@@ -121,6 +123,8 @@ MoomooScript:
 .HappyCow:
 	writetext MoomooHappyMooText
 	cry MILTANK
+	setval MILTANK
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

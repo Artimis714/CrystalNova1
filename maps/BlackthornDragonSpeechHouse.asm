@@ -14,6 +14,8 @@ BlackthornDragonSpeechHouseDratiniScript:
 	opentext
 	writetext BlackthornDragonSpeechHouseDratiniText
 	cry DRATINI
+	setval DRATINI
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

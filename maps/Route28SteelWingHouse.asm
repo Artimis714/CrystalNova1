@@ -34,6 +34,8 @@ CelebritysFearow:
 	opentext
 	writetext CelebritysFearowText
 	cry FEAROW
+	setval FEAROW
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

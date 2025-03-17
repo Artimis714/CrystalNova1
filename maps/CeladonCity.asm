@@ -30,6 +30,8 @@ CeladonCityPoliwrath:
 	opentext
 	writetext CeladonCityPoliwrathText
 	cry POLIWRATH
+	setval POLIWRATH
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

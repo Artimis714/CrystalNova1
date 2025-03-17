@@ -294,7 +294,7 @@ NationalParkTrainerTipsSign:
 	jumptext NationalParkTrainerTipsText
 
 NationalParkParlyzHeal:
-	itemball LEVEL_BALL, 3
+	itemball LEVEL_BALL, 5
 
 NationalParkTMDig:
 	faceplayer
@@ -326,6 +326,8 @@ NationalParkPersian:
 	opentext
 	writetext NationalParkPersianText
 	cry PERSIAN
+	setval PERSIAN
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

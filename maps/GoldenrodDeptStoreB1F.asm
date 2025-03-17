@@ -57,6 +57,8 @@ GoldenrodDeptStoreB1FMachopScript:
 	opentext
 	writetext GoldenrodDeptStoreB1FMachokeText
 	cry MACHOP
+	setval MACHOP
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

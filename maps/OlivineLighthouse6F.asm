@@ -105,6 +105,8 @@ OlivineLighthouseAmphy:
 	writetext AmphyPalPalooText
 	setval AMPHAROS
 	special PlaySlowCry
+	setval AMPHAROS
+	special ShowPokedexEntry
 	promptbutton
 	writetext AmphyBreathingLaboredText
 	waitbutton
@@ -114,6 +116,8 @@ OlivineLighthouseAmphy:
 .HealthyNow:
 	writetext AmphyPaluPaluluText
 	cry AMPHAROS
+	setval AMPHAROS
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	special FadeOutPalettes

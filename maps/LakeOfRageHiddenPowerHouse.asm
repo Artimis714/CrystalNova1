@@ -195,6 +195,8 @@ LakeofRageShuckle:
 	opentext
 	writetext ShuckleText
 	cry SHUCKLE
+	setval SHUCKLE
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

@@ -186,6 +186,8 @@ PokemonAcademyPikachu:
 	opentext
 	writetext AcademyPikaText
 	cry PIKACHU
+	setval PIKACHU
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

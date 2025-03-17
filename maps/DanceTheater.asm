@@ -212,6 +212,8 @@ DanceTheaterRhydon:
 	opentext
 	writetext RhydonText
 	cry RHYDON
+	setval RHYDON
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
@@ -220,6 +222,8 @@ DanceTheaterEspeon:
 	opentext
 	writetext EspeonText
 	cry ESPEON
+	setval ESPEON
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
@@ -228,6 +232,8 @@ DanceTheaterUmbreon:
 	opentext
 	writetext UmbreonText
 	cry UMBREON
+	setval UMBREON
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
@@ -236,6 +242,8 @@ DanceTheaterVaporeon:
 	opentext
 	writetext VaporeonText
 	cry VAPOREON
+	setval VAPOREON
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
@@ -244,6 +252,8 @@ DanceTheaterJolteon:
 	opentext
 	writetext JolteonText
 	cry JOLTEON
+	setval JOLTEON
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
@@ -252,6 +262,8 @@ DanceTheaterFlareon:
 	opentext
 	writetext FlareonText
 	cry FLAREON
+	setval FLAREON
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

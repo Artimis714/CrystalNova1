@@ -41,6 +41,8 @@ RadioTowerJigglypuff:
 	opentext
 	writetext RadioTowerJigglypuffText
 	cry JIGGLYPUFF
+	setval JIGGLYPUFF
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

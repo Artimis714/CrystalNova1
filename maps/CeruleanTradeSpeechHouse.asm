@@ -48,6 +48,8 @@ CeruleanTradeSpeechHouseRhydonScript:
 	opentext
 	writetext CeruleanTradeSpeechHouseRhydonText
 	cry KANGASKHAN
+	setval KANGASKHAN
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
@@ -56,6 +58,8 @@ CeruleanTradeSpeechHouseZubatScript:
 	opentext
 	writetext CeruleanTradeSpeechHouseZubatText
 	cry ZUBAT
+	setval ZUBAT
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

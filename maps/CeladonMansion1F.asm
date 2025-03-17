@@ -16,6 +16,8 @@ CeladonMansion1FMeowth:
 	opentext
 	writetext CeladonMansion1FMeowthText
 	cry MEOWTH
+	setval MEOWTH
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
@@ -24,6 +26,8 @@ CeladonMansion1FClefairy:
 	opentext
 	writetext CeladonMansion1FClefairyText
 	cry CLEFAIRY
+	setval CLEFAIRY
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

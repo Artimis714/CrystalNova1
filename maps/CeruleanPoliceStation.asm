@@ -18,6 +18,8 @@ CeruleanDiglett:
 	opentext
 	writetext CeruleanDiglettText
 	cry DIGLETT
+	setval DIGLETT
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

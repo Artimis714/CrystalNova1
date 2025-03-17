@@ -119,7 +119,11 @@ RocketBaseBoss:
 
 RocketBaseMurkrow:
 	opentext
+	cry MURKROW
+	setval MURKROW
+	special ShowPokedexEntry
 	writetext RocketBaseMurkrowText
+	cry MURKROW
 	waitbutton
 	closetext
 	setevent EVENT_LEARNED_HAIL_GIOVANNI
@@ -203,7 +207,7 @@ TeamRocketBaseB3FOathScript:
 	jumpstd TeamRocketOathScript
 
 TeamRocketBaseB3FProtein:
-	itemball PP_UP
+	itemball PP_UP, 3
 
 TeamRocketBaseB3FXSpecial:
 	itemball X_EVADE

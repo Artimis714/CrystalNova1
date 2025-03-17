@@ -65,6 +65,8 @@ CharcoalKilnFarfetchd:
 	opentext
 	writetext FarfetchdText
 	cry FARFETCH_D
+	setval FARFETCH_D
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

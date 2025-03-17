@@ -72,6 +72,8 @@ PewterJigglypuff:
 	opentext
 	writetext PewterJigglypuffText
 	cry JIGGLYPUFF
+	setval JIGGLYPUFF
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

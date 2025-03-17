@@ -70,6 +70,8 @@ Route34IlexForestGateButterfreeScript:
 	opentext
 	writetext Route34IlexForestGateButterfreeText
 	cry BUTTERFREE
+	setval BUTTERFREE
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

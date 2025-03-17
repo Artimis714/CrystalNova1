@@ -174,6 +174,8 @@ CopycatsDodrio:
 	opentext
 	writetext CopycatsDodrioText1
 	cry DODRIO
+	setval DODRIO
+	special ShowPokedexEntry
 	promptbutton
 	writetext CopycatsDodrioText2
 	waitbutton

@@ -36,6 +36,8 @@ CopycatsHouse1FBlisseyScript:
 	opentext
 	writetext CopycatsHouse1FBlisseyText
 	cry BLISSEY
+	setval BLISSEY
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end

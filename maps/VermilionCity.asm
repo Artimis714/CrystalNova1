@@ -131,6 +131,8 @@ VermilionMachop:
 	opentext
 	writetext VermilionMachopText1
 	cry MACHOP
+	setval MACHOP
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	earthquake 30
@@ -147,6 +149,8 @@ VermilionSnorlax:
 	opentext
 	special SnorlaxAwake
 	iftrue .Awake
+	setval SNORLAX
+	special ShowPokedexEntry
 	writetext VermilionCitySnorlaxSleepingText
 	waitbutton
 	closetext

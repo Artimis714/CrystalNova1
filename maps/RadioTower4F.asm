@@ -49,6 +49,8 @@ RadioTowerMeowth:
 	opentext
 	writetext RadioTowerMeowthText
 	cry MEOWTH
+	setval MEOWTH
+	special ShowPokedexEntry
 	waitbutton
 	closetext
 	end
