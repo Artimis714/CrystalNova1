@@ -44,6 +44,7 @@ AI_Redundant:
 	dbw EFFECT_SWAGGER,      .Swagger
 	dbw EFFECT_FUTURE_SIGHT, .FutureSight
 	dbw EFFECT_HAIL,         .Hail
+	dbw EFFECT_SMOG,	 .Smog
 	db -1
 
 .LightScreen:
@@ -67,6 +68,9 @@ AI_Redundant:
 	ret nz
 	ld a, [wPlayerScreens]
 	bit SCREENS_SAFEGUARD, a
+	ret nz
+	ld a, [wPlayerSubStatus4]
+	bit SUBSTATUS_SUBSTITUTE, a
 	ret
 
 .Transform:
@@ -87,6 +91,9 @@ AI_Redundant:
 .LeechSeed:
 	ld a, [wPlayerSubStatus4]
 	bit SUBSTATUS_LEECH_SEED, a
+	ret nz
+	ld a, [wPlayerSubStatus4]
+	bit SUBSTATUS_SUBSTITUTE, a
 	ret
 
 .Disable:
@@ -102,8 +109,8 @@ AI_Redundant:
 .Snore:
 	ld a, [wEnemyMonStatus]
 	and SLP_MASK
-	jr z, .Redundant
-	jr .NotRedundant
+	jp z, .Redundant
+	jp .NotRedundant
 
 .MeanLook:
 	ld a, [wEnemySubStatus5]
@@ -182,6 +189,12 @@ AI_Redundant:
 .Hail:
 	ld a, [wBattleWeather]
 	cp WEATHER_HAIL
+	jr z, .Redundant
+	jr .NotRedundant
+
+.Smog:
+	ld a, [wBattleWeather]
+	cp WEATHER_SMOG
 	jr z, .Redundant
 	jr .NotRedundant
 
