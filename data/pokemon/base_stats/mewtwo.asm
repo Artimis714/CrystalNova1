@@ -7,7 +7,7 @@
 	db 3 ; catch rate
 	db 220 ; base exp
 	db FOCUS_BAND, BERSERK_GENE ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 120 ; step cycles to hatch
 	db 5 ; unknown 2

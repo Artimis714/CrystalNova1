@@ -691,8 +691,8 @@ JohtoGrassWildMons:
 	db 20, ODDISH, 	          5,  27
 	db 10, HOOTHOOT, 	  5,  27
 	db  5, NOCTOWL, 	  9,  27
-	db  4, PARAS, 	          5,  27
-	db  1, GLOOM, 	         15,  27
+	db  4, GLOOM, 	         15,  27
+	db  1, VENUSAUR, 	 15,  27
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE

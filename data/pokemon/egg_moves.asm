@@ -192,8 +192,8 @@ AbraEggMoves:
 
 MachopEggMoves:
 	db LIGHT_SCREEN
-	db MEDITATE
-	db ROLLING_KICK
+	db SWORDS_DANCE
+	db TRIPLE_KICK
 	db ENCORE
 	db -1 ; end
 
@@ -224,7 +224,7 @@ PonytaEggMoves:
 	db DOUBLE_KICK
 	db HYPNOSIS
 	db CHARM
-	db QUICK_ATTACK
+	db EXTREMESPEED
 	db -1 ; end
 
 SlowpokeEggMoves:
@@ -407,6 +407,8 @@ LaprasEggMoves:
 EeveeEggMoves:
 	db FLAIL
 	db CHARM
+	db BITE
+	db GROWTH
 	db -1 ; end
 
 OmanyteEggMoves:
@@ -426,7 +428,7 @@ KabutoEggMoves:
 	db -1 ; end
 
 AerodactylEggMoves:
-	db WHIRLWIND
+	db AEROBLAST
 	db PURSUIT
 	db FORESIGHT
 	db FLAMETHROWER
@@ -438,11 +440,40 @@ SnorlaxEggMoves:
 	db LICK
 	db -1 ; end
 
+ArticunoEggMoves:
+	db AEROBLAST
+	db -1 ; end
+
+ZapdosEggMoves:
+	db AEROBLAST
+	db -1 ; end
+
+MoltresEggMoves:
+	db AEROBLAST
+	db SACRED_FIRE
+	db -1 ; end
+
 DratiniEggMoves:
-	db LIGHT_SCREEN
+	db AEROBLAST
 	db MIST
 	db HAZE
 	db SUPERSONIC
+	db -1 ; end
+
+MewTwoEggMoves:
+	db HYPER_BEAM
+	db SHADOW_BALL
+	db CROSS_CHOP
+	db NIGHT_SLASH
+	db -1 ; end
+
+MewEggMoves:
+	db FISSURE
+	db HORN_DRILL
+	db ANCIENTPOWER
+	db PAY_DAY
+	db PSYBEAM
+	db MIRROR_MOVE
 	db -1 ; end
 
 ChikoritaEggMoves:
@@ -804,11 +835,49 @@ MiltankEggMoves:
 	db SEISMIC_TOSS
 	db -1 ; end
 
+RaikouEggMoves:
+	db NIGHT_SLASH
+	db SHOCK_WAVE
+	db GIGA_DRAIN
+	db -1 ; end
+
+EnteiEggMoves:
+	db PSYWAVE
+	db SACRED_FIRE
+	db MEAN_LOOK
+	db -1 ; end
+
+SuicuneEggMoves:
+	db GIGA_DRAIN
+	db THUNDER_WAVE
+	db ROCK_TOMB
+	db -1 ; end
+
 LarvitarEggMoves:
 	db PURSUIT
 	db STOMP
 	db OUTRAGE
 	db FOCUS_ENERGY
+	db ANCIENTPOWER
+	db -1 ; end
+
+LugiaEggMoves:
+	db SKY_ATTACK
+	db PSYCHIC_M
+	db SURF
+	db MIND_READER
+	db -1 ; end
+
+HoOhEggMoves:
+	db SKY_ATTACK
+	db THUNDER
+	db WILL_O_WISP
+	db -1 ; end
+
+CelebiEggMoves:
+	db GIGA_DRAIN
+	db SOLARBEAM
+	db FUTURE_SIGHT
 	db ANCIENTPOWER
 	db -1 ; end
 

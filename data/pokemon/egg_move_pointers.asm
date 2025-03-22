@@ -143,14 +143,14 @@ EggMovePointers::
 	dw NoEggMoves
 	dw AerodactylEggMoves
 	dw SnorlaxEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
+	dw ArticunoEggMoves
+	dw ZapdosEggMoves
+	dw MoltresEggMoves
 	dw DratiniEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
+	dw MewTwoEggMoves
+	dw MewEggMoves
 	dw ChikoritaEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
@@ -242,14 +242,14 @@ EggMovePointers::
 	dw MagbyEggMoves
 	dw MiltankEggMoves
 	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
+	dw RaikouEggMoves
+	dw EnteiEggMoves
+	dw SuicuneEggMoves
 	dw LarvitarEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
+	dw LugiaEggMoves
+	dw HoOhEggMoves
+	dw CelebiEggMoves
 	dw NoEggMoves	
 	assert_table_length NUM_POKEMON
