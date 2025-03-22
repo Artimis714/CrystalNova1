@@ -1554,6 +1554,7 @@
 	const EVENT_FOUGHT_AGATHA
 	const EVENT_FINAL_GAUNTLET
 	const EVENT_LEADERS_IN_SILVER
+	const EVENT_CAUGHT_ALL_UNKNOWN
 ; Unused: next 48 events
 
 	const_next 2048

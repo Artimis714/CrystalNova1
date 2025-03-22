@@ -68,7 +68,18 @@ RuinsOfAlphResearchCenterScientist3Script:
 	end
 
 .PrinterAvailable:
+	checkevent EVENT_CAUGHT_ALL_UNKNOWN
+	iftrue .CaughtemALL
 	writetext RuinsOfAlphResearchCenterScientist3_PrinterAvailable
+	verbosegiveitem MASTER_BALL
+	setevent EVENT_CAUGHT_ALL_UNKNOWN
+	waitbutton
+	writetext CaughtemAllText
+	closetext
+	end
+
+.CaughtemALL:
+	writetext CaughtemAllText
 	waitbutton
 	closetext
 	end
@@ -717,15 +728,21 @@ RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
 	text "You caught all the"
 	line "UNOWN variations?"
 
-	para "That's a great"
-	line "achievement!"
+	para "This will change"
+	line "the face of #-"
+	cont "MON research!"
 
-	para "I've set up the"
-	line "printer here for"
-	cont "handling UNOWN."
+	para "I would like you"
+	line "to have this as"
 
-	para "Feel free to use"
-	line "it anytime."
+	para "a token of my"
+	line "appreciation."
+	done
+
+CaughtemAllText:
+	text "You must be an"
+	line "outstanding"
+	cont "#MON Trainer."
 	done
 
 RuinsOfAlphResearchCenterScientist1Text:
@@ -860,7 +877,7 @@ RuinsOfAlphResearchCenterProfSilktreePhotoText:
 	line "the RESEARCH"
 
 	para "CENTER'S founder,"
-	line "PROF.SILKTREE."
+	line "PROF.MAPLE."
 
 	para "He's standing next"
 	line "to a man named"
