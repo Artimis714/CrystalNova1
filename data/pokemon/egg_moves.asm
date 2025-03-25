@@ -405,10 +405,16 @@ LaprasEggMoves:
 	db -1 ; end
 
 EeveeEggMoves:
-	db FLAIL
-	db CHARM
-	db BITE
-	db GROWTH
+	db SURF
+	db SCALD
+	db THUNDERBOLT
+	db SHOCK_WAVE
+	db FLAMETHROWER
+	db ANCIENTPOWER
+	db PSYCHIC_M
+	db HEX
+	db CRUNCH
+	db FAINT_ATTACK
 	db -1 ; end
 
 OmanyteEggMoves:
@@ -442,10 +448,12 @@ SnorlaxEggMoves:
 
 ArticunoEggMoves:
 	db AEROBLAST
+	db AURORA_BEAM
 	db -1 ; end
 
 ZapdosEggMoves:
 	db AEROBLAST
+	db SHOCK_WAVE
 	db -1 ; end
 
 MoltresEggMoves:

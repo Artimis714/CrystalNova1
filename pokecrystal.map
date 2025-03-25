@@ -5683,7 +5683,7 @@ ROMX bank #8:
 	         $7391 = TilesetTrainStationMeta
 	         $7791 = TilesetTrainStationColl
 	         $7891 = TilesetForestMeta
-	SECTION: $7b11-$7f88 ($0478 bytes) ["Egg Moves"]
+	SECTION: $7b11-$7f90 ($0480 bytes) ["Egg Moves"]
 	         $7b11 = EggMovePointers
 	         $7d09 = BulbasaurEggMoves
 	         $7d0e = CharmanderEggMoves
@@ -5737,73 +5737,73 @@ ROMX bank #8:
 	         $7e25 = PinsirEggMoves
 	         $7e2a = LaprasEggMoves
 	         $7e2d = EeveeEggMoves
-	         $7e32 = OmanyteEggMoves
-	         $7e38 = KabutoEggMoves
-	         $7e3e = AerodactylEggMoves
-	         $7e45 = SnorlaxEggMoves
-	         $7e47 = ArticunoEggMoves
-	         $7e49 = ZapdosEggMoves
-	         $7e4b = MoltresEggMoves
-	         $7e4e = DratiniEggMoves
-	         $7e53 = MewTwoEggMoves
-	         $7e58 = MewEggMoves
-	         $7e5f = ChikoritaEggMoves
-	         $7e66 = CyndaquilEggMoves
-	         $7e6d = TotodileEggMoves
-	         $7e74 = SentretEggMoves
-	         $7e7a = HoothootEggMoves
-	         $7e81 = LedybaEggMoves
-	         $7e85 = SpinarakEggMoves
-	         $7e8b = ChinchouEggMoves
-	         $7e8f = PichuEggMoves
-	         $7e95 = CleffaEggMoves
-	         $7e9c = IgglybuffEggMoves
-	         $7ea0 = TogepiEggMoves
-	         $7ea6 = NatuEggMoves
-	         $7eac = MareepEggMoves
-	         $7eb3 = MarillEggMoves
-	         $7ebc = SudowoodoEggMoves
-	         $7ebe = HoppipEggMoves
-	         $7ec6 = AipomEggMoves
-	         $7ecf = YanmaEggMoves
-	         $7ed3 = WooperEggMoves
-	         $7ed7 = MurkrowEggMoves
-	         $7ede = MisdreavusEggMoves
-	         $7ee1 = GirafarigEggMoves
-	         $7ee7 = PinecoEggMoves
-	         $7eec = DunsparceEggMoves
-	         $7ef2 = GligarEggMoves
-	         $7ef7 = SnubbullEggMoves
-	         $7f00 = QwilfishEggMoves
-	         $7f05 = ShuckleEggMoves
-	         $7f07 = HeracrossEggMoves
-	         $7f0b = SneaselEggMoves
-	         $7f11 = TeddiursaEggMoves
-	         $7f18 = SlugmaEggMoves
-	         $7f1c = SwinubEggMoves
-	         $7f22 = CorsolaEggMoves
-	         $7f28 = RemoraidEggMoves
-	         $7f2e = DelibirdEggMoves
-	         $7f34 = MantineEggMoves
-	         $7f39 = SkarmoryEggMoves
-	         $7f3e = HoundourEggMoves
-	         $7f46 = PhanpyEggMoves
-	         $7f4b = StantlerEggMoves
-	         $7f51 = TyrogueEggMoves
-	         $7f56 = SmoochumEggMoves
-	         $7f58 = ElekidEggMoves
-	         $7f5e = MagbyEggMoves
-	         $7f64 = MiltankEggMoves
-	         $7f68 = RaikouEggMoves
-	         $7f6c = EnteiEggMoves
-	         $7f70 = SuicuneEggMoves
-	         $7f74 = LarvitarEggMoves
-	         $7f7a = LugiaEggMoves
-	         $7f7f = HoOhEggMoves
-	         $7f83 = CelebiEggMoves
-	         $7f88 = NoEggMoves
-	EMPTY: $7f89-$7fff ($0077 bytes)
-	TOTAL EMPTY: $0077 bytes
+	         $7e38 = OmanyteEggMoves
+	         $7e3e = KabutoEggMoves
+	         $7e44 = AerodactylEggMoves
+	         $7e4b = SnorlaxEggMoves
+	         $7e4d = ArticunoEggMoves
+	         $7e50 = ZapdosEggMoves
+	         $7e53 = MoltresEggMoves
+	         $7e56 = DratiniEggMoves
+	         $7e5b = MewTwoEggMoves
+	         $7e60 = MewEggMoves
+	         $7e67 = ChikoritaEggMoves
+	         $7e6e = CyndaquilEggMoves
+	         $7e75 = TotodileEggMoves
+	         $7e7c = SentretEggMoves
+	         $7e82 = HoothootEggMoves
+	         $7e89 = LedybaEggMoves
+	         $7e8d = SpinarakEggMoves
+	         $7e93 = ChinchouEggMoves
+	         $7e97 = PichuEggMoves
+	         $7e9d = CleffaEggMoves
+	         $7ea4 = IgglybuffEggMoves
+	         $7ea8 = TogepiEggMoves
+	         $7eae = NatuEggMoves
+	         $7eb4 = MareepEggMoves
+	         $7ebb = MarillEggMoves
+	         $7ec4 = SudowoodoEggMoves
+	         $7ec6 = HoppipEggMoves
+	         $7ece = AipomEggMoves
+	         $7ed7 = YanmaEggMoves
+	         $7edb = WooperEggMoves
+	         $7edf = MurkrowEggMoves
+	         $7ee6 = MisdreavusEggMoves
+	         $7ee9 = GirafarigEggMoves
+	         $7eef = PinecoEggMoves
+	         $7ef4 = DunsparceEggMoves
+	         $7efa = GligarEggMoves
+	         $7eff = SnubbullEggMoves
+	         $7f08 = QwilfishEggMoves
+	         $7f0d = ShuckleEggMoves
+	         $7f0f = HeracrossEggMoves
+	         $7f13 = SneaselEggMoves
+	         $7f19 = TeddiursaEggMoves
+	         $7f20 = SlugmaEggMoves
+	         $7f24 = SwinubEggMoves
+	         $7f2a = CorsolaEggMoves
+	         $7f30 = RemoraidEggMoves
+	         $7f36 = DelibirdEggMoves
+	         $7f3c = MantineEggMoves
+	         $7f41 = SkarmoryEggMoves
+	         $7f46 = HoundourEggMoves
+	         $7f4e = PhanpyEggMoves
+	         $7f53 = StantlerEggMoves
+	         $7f59 = TyrogueEggMoves
+	         $7f5e = SmoochumEggMoves
+	         $7f60 = ElekidEggMoves
+	         $7f66 = MagbyEggMoves
+	         $7f6c = MiltankEggMoves
+	         $7f70 = RaikouEggMoves
+	         $7f74 = EnteiEggMoves
+	         $7f78 = SuicuneEggMoves
+	         $7f7c = LarvitarEggMoves
+	         $7f82 = LugiaEggMoves
+	         $7f87 = HoOhEggMoves
+	         $7f8b = CelebiEggMoves
+	         $7f90 = NoEggMoves
+	EMPTY: $7f91-$7fff ($006f bytes)
+	TOTAL EMPTY: $006f bytes
 
 ROMX bank #9:
 	SECTION: $4000-$7c5c ($3c5d bytes) ["bank9"]
@@ -60529,7 +60529,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1790804 bytes used / 289964 free in 127 banks
+	ROMX: 1790812 bytes used / 289956 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks
