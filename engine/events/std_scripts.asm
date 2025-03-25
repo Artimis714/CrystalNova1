@@ -145,6 +145,7 @@ PokecenterNurseScript:
 
 	waitbutton
 	closetext
+	turnobject PLAYER, DOWN
 	end
 
 .pokerus
@@ -1852,10 +1853,10 @@ CoinVendor_IntroScript:
 .Buy500:
 	checkcoins MAX_COINS - 500
 	ifequal HAVE_MORE, .CoinCaseFull
-	checkmoney YOUR_MONEY, 10000
+	checkmoney YOUR_MONEY, 9000
 	ifequal HAVE_LESS, .NotEnoughMoney
 	givecoins 500
-	takemoney YOUR_MONEY, 10000
+	takemoney YOUR_MONEY, 9000
 	waitsfx
 	playsound SFX_TRANSACTION
 	farwritetext CoinVendor_Buy500CoinsText
@@ -1890,7 +1891,7 @@ CoinVendor_IntroScript:
 	db STATICMENU_CURSOR ; flags
 	db 3 ; items
 	db " 50 :  ¥1000@"
-	db "500 : ¥10000@"
+	db "500 : ¥9000@"
 	db "CANCEL@"
 
 HappinessCheckScript:
