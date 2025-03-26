@@ -15356,7 +15356,7 @@ ROMX bank #30:
 	TOTAL EMPTY: $11d1 bytes
 
 ROMX bank #31:
-	SECTION: $4000-$7bd9 ($3bda bytes) ["Map Scripts 10"]
+	SECTION: $4000-$7f9e ($3f9f bytes) ["Map Scripts 10"]
 	         $4000 = Route22_MapScripts
 	         $4002 = VictoryRoadEntranceSign
 	         $4005 = VictoryRoadEntranceSignText
@@ -15680,95 +15680,125 @@ ROMX bank #31:
 	         $69fb = IcePath1FHMWaterfall
 	         $69fd = IcePath1FPPUp
 	         $69ff = IcePath1FProtein
-	         $6a01 = IcePath1F_MapEvents
-	         $6a42 = IcePathB1F_MapScripts
-	         $6a47 = IcePathB1FSetUpStoneTableCallback
-	         $6a4b = IcePathB1FSetUpStoneTableCallback.CommandQueue
-	         $6a50 = IcePathB1FSetUpStoneTableCallback.StoneTable
-	         $6a61 = IcePathB1FSetUpStoneTableCallback.Boulder1
-	         $6a69 = IcePathB1FSetUpStoneTableCallback.Boulder2
-	         $6a71 = IcePathB1FSetUpStoneTableCallback.Boulder3
-	         $6a79 = IcePathB1FSetUpStoneTableCallback.Boulder4
-	         $6a81 = IcePathB1FSetUpStoneTableCallback.FinishBoulder
-	         $6a8d = IcePathB1FSetUpStoneTableCallback.BoulderFallsThrough
-	         $6a93 = IcePathB1FBoulder
-	         $6a96 = IcePathB1FIron
-	         $6a98 = IcePathB1FHiddenMaxPotion
-	         $6a9b = IcePathBoulderFellThroughText
-	         $6ab6 = IcePathB1F_MapEvents
-	         $6b2a = IcePathB2FMahoganySide_MapScripts
-	         $6b2c = IcePathB2FMahoganySideBoulder
-	         $6b2f = IcePathB2FMahoganySideFullHeal
-	         $6b31 = IcePathB2FMahoganySideMaxPotion
-	         $6b33 = IcePathB2FMahoganySideHiddenCarbos
-	         $6b36 = IcePathB2FMahoganySideBoulderText
-	         $6b56 = IcePathB2FMahoganySide_MapEvents
-	         $6bcd = IcePathB2FBlackthornSide_MapScripts
-	         $6bcf = IcePathB2FBlackthornSideTMRest
-	         $6bd1 = IcePathB2FBlackthornSideHiddenIceHeal
-	         $6bd4 = IcePathB2FBlackthornSide_MapEvents
-	         $6bf6 = IcePathB3F_MapScripts
-	         $6bf8 = IcePathB3FNevermeltice
-	         $6bfa = IcePathB3FRock
-	         $6bfd = IcePathB3F_MapEvents
-	         $6c27 = LavenderPokecenter1F_MapScripts
-	         $6c29 = LavenderPokecenter1FNurseScript
-	         $6c31 = LavenderPokecenter1FNurseScript.YouDontBelong
-	         $6c65 = OfficerLavenderPokeScript
-	         $6c78 = OfficerLavenderPokeScript.UnderArrest
-	         $6c9d = LavenderPokecenter1FGentlemanScript
-	         $6ca0 = LavenderPokecenter1FTeacherScript
-	         $6ca3 = LavenderPokecenter1FYoungsterScript
-	         $6cb1 = LavenderPokecenter1FYoungsterScript.ReturnedMachinePart
-	         $6cb7 = LavenderPokecenter1FGentlemanText
-	         $6d0a = LavenderPokecenter1FTeacherText
-	         $6d65 = LavenderPokecenter1FYoungsterText
-	         $6dd1 = LavenderPokecenter1FYoungsterText_ReturnedMachinePart
-	         $6e7c = LavenderPokeCentreCallAuthoritiestext
-	         $6f0f = LavenderPokecenter1F_MapEvents
-	         $6f65 = LavenderPokecenter2FBeta_MapScripts
-	         $6f67 = LavenderPokecenter2FBeta_MapEvents
-	         $6f72 = MrFujisHouse_MapScripts
-	         $6f74 = MrFujisHouseSuperNerdScript
-	         $6f85 = MrFujisHouseSuperNerdScript.SecretsofMewTwo
-	         $6f9e = MrFujisHouseSuperNerdScript.SecretsofMewTwo2
-	         $6fa7 = MrFujisHouseSuperNerdScript.ComeBackWhenYouKnow
-	         $6fba = MrFujisHouseSuperNerdScript.ComeBackWhenYouKnow2
-	         $6fc0 = MrFujisHouseLassScript
-	         $6fce = MrFujisHouseLassScript.MrFujiKilled
-	         $6fd4 = MrFujisPsyduck
-	         $6fe3 = MrFujisNidorino
-	         $6ff2 = MrFujisPidgey
-	         $7001 = MrFujisHouseBookshelf
-	         $7004 = SecretsofMewTwoText
-	         $7521 = ComebackwhenyouKnowText
-	         $75fc = MrFujisHouseSuperNerdText
-	         $77e4 = MrFujisHouseLassText
-	         $785a = MrFujiDeadText
-	         $78be = MrFujisPsyduckText
-	         $78d1 = MrFujisNidorinoText
-	         $78e2 = MrFujisPidgeyText
-	         $78f2 = MrFujisHouse_MapEvents
-	         $794d = LavenderSpeechHouse_MapScripts
-	         $794f = LavenderSpeechHousePokefanFScript
-	         $7952 = LavenderSpeechHouseBookshelf
-	         $7955 = LavenderSpeechHousePokefanFText
-	         $7a31 = LavenderSpeechHouse_MapEvents
-	         $7a58 = LavenderNameRater_MapScripts
-	         $7a5e = LavenderNameRaterNoopScene
-	         $7a5f = LavenderNameRater
-	         $7a67 = LavenderNameRater_MapEvents
-	         $7a84 = LavenderMart_MapScripts
-	         $7a86 = LavenderMartClerkScript
-	         $7a93 = LavenderMartClerkScript.NoServiceToday
-	         $7a9f = LavenderMartClerkScript.SorryAboutThat
-	         $7aaf = LavenderMartPokefanMScript
-	         $7ab2 = LavenderMartRockerScript
-	         $7ab5 = LavenderMartPokefanMText
-	         $7b38 = LavenderMartRockerText
-	         $7ba3 = LavenderMart_MapEvents
-	EMPTY: $7bda-$7fff ($0426 bytes)
-	TOTAL EMPTY: $0426 bytes
+	         $6a01 = BoarderAnton
+	         $6a0d = BoarderAnton.Script
+	         $6a15 = SkierVreni
+	         $6a21 = SkierVreni.Script
+	         $6a29 = SkierJanica
+	         $6a35 = SkierJanica.Script
+	         $6a3d = BoarderAntonSeenText
+	         $6a58 = BoarderAntonBeatenText
+	         $6a64 = BoarderAntonAfterBattleText
+	         $6a7d = SkierVreniSeenText
+	         $6aa1 = SkierVreniBeatenText
+	         $6abe = SkierVreniAfterBattleText
+	         $6ae0 = SkierJanicaSeenText
+	         $6b0b = SkierJanicaBeatenText
+	         $6b1f = SkierJanicaAfterBattleText
+	         $6b5d = IcePath1F_MapEvents
+	         $6bc5 = IcePathB1F_MapScripts
+	         $6bca = IcePathB1FSetUpStoneTableCallback
+	         $6bce = IcePathB1FSetUpStoneTableCallback.CommandQueue
+	         $6bd3 = IcePathB1FSetUpStoneTableCallback.StoneTable
+	         $6be4 = IcePathB1FSetUpStoneTableCallback.Boulder1
+	         $6bec = IcePathB1FSetUpStoneTableCallback.Boulder2
+	         $6bf4 = IcePathB1FSetUpStoneTableCallback.Boulder3
+	         $6bfc = IcePathB1FSetUpStoneTableCallback.Boulder4
+	         $6c04 = IcePathB1FSetUpStoneTableCallback.FinishBoulder
+	         $6c10 = IcePathB1FSetUpStoneTableCallback.BoulderFallsThrough
+	         $6c16 = IcePathB1FBoulder
+	         $6c19 = IcePathB1FIron
+	         $6c1b = IcePathB1FHiddenMaxPotion
+	         $6c1e = IcePathBoulderFellThroughText
+	         $6c39 = IcePathB1F_MapEvents
+	         $6cad = IcePathB2FMahoganySide_MapScripts
+	         $6caf = IcePathB2FMahoganySideBoulder
+	         $6cb2 = IcePathB2FMahoganySideFullHeal
+	         $6cb4 = IcePathB2FMahoganySideMaxPotion
+	         $6cb6 = IcePathB2FMahoganySideHiddenCarbos
+	         $6cb9 = SkierHanni
+	         $6cc5 = SkierHanni.Script
+	         $6ccd = SkierHanniSeenText
+	         $6d28 = SkierHanniBeatenText
+	         $6d35 = SkierHanniAfterBattleText
+	         $6da6 = IcePathB2FMahoganySideBoulderText
+	         $6dc6 = IcePathB2FMahoganySide_MapEvents
+	         $6e4a = IcePathB2FBlackthornSide_MapScripts
+	         $6e4c = IcePathB2FBlackthornSideTMRest
+	         $6e4e = IcePathB2FBlackthornSideHiddenIceHeal
+	         $6e51 = BoarderTorstein
+	         $6e5d = BoarderTorstein.Script
+	         $6e65 = BoarderTorsteinSeenText
+	         $6e7c = BoarderTorsteinBeatenText
+	         $6e85 = BoarderTorsteinAfterBattleText
+	         $6ef5 = IcePathB2FBlackthornSide_MapEvents
+	         $6f24 = IcePathB3F_MapScripts
+	         $6f26 = IcePathB3FNevermeltice
+	         $6f28 = IcePathB3FRock
+	         $6f2b = BoarderScotty
+	         $6f37 = BoarderScotty.Script
+	         $6f3f = BoarderScottySeenText
+	         $6f54 = BoarderScottyBeatenText
+	         $6f6e = BoarderScottyAfterBattleText
+	         $6fb5 = IcePathB3F_MapEvents
+	         $6fec = LavenderPokecenter1F_MapScripts
+	         $6fee = LavenderPokecenter1FNurseScript
+	         $6ff6 = LavenderPokecenter1FNurseScript.YouDontBelong
+	         $702a = OfficerLavenderPokeScript
+	         $703d = OfficerLavenderPokeScript.UnderArrest
+	         $7062 = LavenderPokecenter1FGentlemanScript
+	         $7065 = LavenderPokecenter1FTeacherScript
+	         $7068 = LavenderPokecenter1FYoungsterScript
+	         $7076 = LavenderPokecenter1FYoungsterScript.ReturnedMachinePart
+	         $707c = LavenderPokecenter1FGentlemanText
+	         $70cf = LavenderPokecenter1FTeacherText
+	         $712a = LavenderPokecenter1FYoungsterText
+	         $7196 = LavenderPokecenter1FYoungsterText_ReturnedMachinePart
+	         $7241 = LavenderPokeCentreCallAuthoritiestext
+	         $72d4 = LavenderPokecenter1F_MapEvents
+	         $732a = LavenderPokecenter2FBeta_MapScripts
+	         $732c = LavenderPokecenter2FBeta_MapEvents
+	         $7337 = MrFujisHouse_MapScripts
+	         $7339 = MrFujisHouseSuperNerdScript
+	         $734a = MrFujisHouseSuperNerdScript.SecretsofMewTwo
+	         $7363 = MrFujisHouseSuperNerdScript.SecretsofMewTwo2
+	         $736c = MrFujisHouseSuperNerdScript.ComeBackWhenYouKnow
+	         $737f = MrFujisHouseSuperNerdScript.ComeBackWhenYouKnow2
+	         $7385 = MrFujisHouseLassScript
+	         $7393 = MrFujisHouseLassScript.MrFujiKilled
+	         $7399 = MrFujisPsyduck
+	         $73a8 = MrFujisNidorino
+	         $73b7 = MrFujisPidgey
+	         $73c6 = MrFujisHouseBookshelf
+	         $73c9 = SecretsofMewTwoText
+	         $78e6 = ComebackwhenyouKnowText
+	         $79c1 = MrFujisHouseSuperNerdText
+	         $7ba9 = MrFujisHouseLassText
+	         $7c1f = MrFujiDeadText
+	         $7c83 = MrFujisPsyduckText
+	         $7c96 = MrFujisNidorinoText
+	         $7ca7 = MrFujisPidgeyText
+	         $7cb7 = MrFujisHouse_MapEvents
+	         $7d12 = LavenderSpeechHouse_MapScripts
+	         $7d14 = LavenderSpeechHousePokefanFScript
+	         $7d17 = LavenderSpeechHouseBookshelf
+	         $7d1a = LavenderSpeechHousePokefanFText
+	         $7df6 = LavenderSpeechHouse_MapEvents
+	         $7e1d = LavenderNameRater_MapScripts
+	         $7e23 = LavenderNameRaterNoopScene
+	         $7e24 = LavenderNameRater
+	         $7e2c = LavenderNameRater_MapEvents
+	         $7e49 = LavenderMart_MapScripts
+	         $7e4b = LavenderMartClerkScript
+	         $7e58 = LavenderMartClerkScript.NoServiceToday
+	         $7e64 = LavenderMartClerkScript.SorryAboutThat
+	         $7e74 = LavenderMartPokefanMScript
+	         $7e77 = LavenderMartRockerScript
+	         $7e7a = LavenderMartPokefanMText
+	         $7efd = LavenderMartRockerText
+	         $7f68 = LavenderMart_MapEvents
+	EMPTY: $7f9f-$7fff ($0061 bytes)
+	TOTAL EMPTY: $0061 bytes
 
 ROMX bank #32:
 	SECTION: $4000-$64fd ($24fe bytes) ["bank20"]
@@ -60553,7 +60583,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1792158 bytes used / 288610 free in 127 banks
+	ROMX: 1793123 bytes used / 287645 free in 127 banks
 	SRAM: 48200 bytes used / 17336 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22989 bytes used / 5683 free in 7 banks

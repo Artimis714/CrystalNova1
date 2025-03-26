@@ -1732,23 +1732,23 @@ SkierGroup:
 
 	; SKIER (3)
 	db "VRENI@", TRAINERTYPE_NORMAL
-	db 40, DEWGONG
-	db 41, CLOYSTER
-	db 41, SNEASEL
+	db 54, DEWGONG
+	db 53, CLOYSTER
+	db 52, SNEASEL
 	db -1 ; end
 
 	; SKIER (4)
 	db "JANICA@", TRAINERTYPE_NORMAL
-	db 40, DEWGONG
-	db 41, CLOYSTER
-	db 41, SNEASEL
+	db 53, DEWGONG
+	db 54, ARTICUNO
+	db 63, UNOWN
 	db -1 ; end
 
 	; SKIER (5)
 	db "HANNI@", TRAINERTYPE_NORMAL
-	db 40, DEWGONG
-	db 41, CLOYSTER
-	db 41, SNEASEL
+	db 52, PILOSWINE
+	db 53, MAGNETON
+	db 54, STARMIE
 	db -1 ; end
 
 TeacherGroup:
@@ -3479,23 +3479,23 @@ BoarderGroup:
 
 	; BOARDER (4)
 	db "ANTON@", TRAINERTYPE_NORMAL
-	db 45, DELIBIRD
-	db 39, CLOYSTER
-	db 39, BLASTOISE
+	db 52, PILOSWINE
+	db 53, CLOYSTER
+	db 54, LAPRAS
 	db -1 ; end
 
 	; BOARDER (5)
 	db "SCOTTY@", TRAINERTYPE_NORMAL
-	db 45, DELIBIRD
-	db 39, CLOYSTER
-	db 39, BLASTOISE
+	db 54, DELIBIRD
+	db 52, STARMIE
+	db 53, SKARMORY
 	db -1 ; end
 
 	; BOARDER (6)
 	db "TORSTEIN@", TRAINERTYPE_NORMAL
-	db 45, DELIBIRD
-	db 39, CLOYSTER
-	db 39, BLASTOISE
+	db 53, JYNX
+	db 52, FORRETRESS
+	db 54, STEELIX
 	db -1 ; end
 
 PokefanMGroup:
