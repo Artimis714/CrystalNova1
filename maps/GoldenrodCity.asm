@@ -362,7 +362,19 @@ GoldenrodCitySign:
 	jumptext GoldenrodCitySignText
 
 GoldenrodCityBikeShopSign:
-	jumptext GoldenrodCityBikeShopSignText
+	opentext
+	checkevent EVENT_BIKESHOP_CLOSED
+	iftrue .ShopBoardedUp
+	writetext GoldenrodCityBikeShopSignText
+	waitbutton
+	closetext
+	end
+
+.ShopBoardedUp:
+	writetext ShopBoardedUpText
+	waitbutton
+	closetext
+	end
 
 GoldenrodCityGameCornerSign:
 	jumptext GoldenrodCityGameCornerSignText
@@ -578,6 +590,20 @@ GoldenrodCityRocket6Text:
 GoldenrodCityStationSignText:
 	text "GOLDENROD CITY"
 	line "STATION"
+	done
+
+ShopBoardedUpText:
+	text "(Someone has van-"
+	line "dalized this sign)"
+
+	para "It was the old"
+	line "BIKE SHOP, but"
+
+	para "the sign has been"
+	line "spray painted over"
+
+	para "with the words:"
+	line "JOHTO DEFIANT!"
 	done
 
 GoldenrodCityRadioTowerSignText:

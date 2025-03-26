@@ -1567,6 +1567,7 @@
 	const EVENT_LEADERS_IN_SILVER
 	const EVENT_CAUGHT_ALL_UNKNOWN
 	const EVENT_BIKESHOP_CLOSED
+	const EVENT_READY_TO_ROCK
 ; Unused: next 48 events
 
 	const_next 2048
