@@ -98,6 +98,7 @@ GoldenrodUndergroundWarehouseDirectorScript:
 	reloadmappart
 	faceplayer
 	writetext DirectorCardKeyText
+	loadmem wLevelCap, 55
 	waitbutton
 	closetext
 	end
