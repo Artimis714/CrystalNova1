@@ -632,6 +632,7 @@ InitializeEventsScript:
 	setevent EVENT_SHINY_VULPIX
 	setevent EVENT_BEAT_MEDIUM_AGATHA
 	setevent EVENT_FINAL_GAUNTLET
+	setevent EVENT_BATTLED_DITTO
 	setevent EVENT_INITIALIZED_EVENTS
 	callasm .mystery_gift_flag
 	endcallback

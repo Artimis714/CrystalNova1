@@ -1,6 +1,5 @@
 	object_const_def
 	const ECRUTEAKITEMFINDERHOUSE_POKEDEX
-	const ECRUTEAKITEMFINDERHOUSE_SHINYDITTO
 	const ECRUTEAKITEMFINDERHOUSE_GHOST
 
 EcruteakItemfinderHouse_MapScripts:
@@ -74,33 +73,8 @@ KimonoGirlMiraGhost:
 	closetext
 	end
 
-ShinyDitto:
-	opentext
-	writetext EcruteakDittoText
-	pause 15
-	cry DITTO
-	closetext
-	setevent EVENT_BATTLED_DITTO
-	loadwildmon DITTO, 25
-	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
-	startbattle
-	disappear ECRUTEAKITEMFINDERHOUSE_SHINYDITTO
-	reloadmapafterbattle
-	end
-
 ItemFinderHouseRadio:
 	jumptext BrokenRadioText
-
-EcruteakDittoText:
-	text "Huh... an odd"
-	line "Blue DITTO, just"
-
-	para "chillin' in this"
-	line "spooky abandoned"
-	cont "house."
-
-	para "Dii-tto!"
-	done
 
 EcruteakHistoryBookText:
 	text "This house is"
@@ -301,6 +275,5 @@ EcruteakItemfinderHouse_MapEvents:
 
 	def_object_events
 	object_event  3,  3, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakHistoryBook, -1
-	object_event  5,  4, SPRITE_DITTO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShinyDitto, EVENT_BATTLED_DITTO
 	object_event  2,  2, SPRITE_GHOST_FLOATING, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, KimonoGirlMiraGhost, EVENT_BURNEDTOWER_GHOST3
 

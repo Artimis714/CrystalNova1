@@ -1,5 +1,6 @@
 	object_const_def
 	const GOLDENRODBIKESHOP_CLERK
+	const GOLDENRODBIKESHOP_SHINYDITTO
 
 GoldenrodBikeShop_MapScripts:
 	def_scene_scripts
@@ -34,6 +35,21 @@ GoldenrodBikeShopClerkScript:
 	writetext GoldenrodBikeShopClerkRefusedText
 	waitbutton
 	closetext
+	end
+
+
+ShinyDitto:
+	opentext
+	writetext EcruteakDittoText
+	pause 15
+	cry DITTO
+	closetext
+	setevent EVENT_BATTLED_DITTO
+	loadwildmon DITTO, 20
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	disappear GOLDENRODBIKESHOP_SHINYDITTO
+	reloadmapafterbattle
 	end
 
 GoldenrodBikeShopBicycle:
@@ -137,6 +153,17 @@ GoldenrodBikeShopBicycleText:
 	line "eye-watering."
 	done
 
+EcruteakDittoText:
+	text "Huh... an odd"
+	line "Blue DITTO, just"
+
+	para "chillin' in the"
+	line "abandoned BIKE"
+	cont "SHOP."
+
+	para "Dii-tto!"
+	done
+
 GoldenrodBikeShop_MapEvents:
 	db 0, 0 ; filler
 
@@ -158,4 +185,5 @@ GoldenrodBikeShop_MapEvents:
 	bg_event  7,  6, BGEVENT_READ, GoldenrodBikeShopBicycle
 
 	def_object_events
-	object_event  7,  2, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GoldenrodBikeShopClerkScript, EVENT_GOT_BICYCLE
+	object_event  7,  2, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GoldenrodBikeShopClerkScript, EVENT_BIKESHOP_CLOSED
+	object_event  3,  4, SPRITE_DITTO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShinyDitto, EVENT_BATTLED_DITTO

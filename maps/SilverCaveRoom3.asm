@@ -32,6 +32,12 @@ Red:
 	special FadeInQuickly
 	pause 30
 	special HealParty
+	setevent EVENT_FINAL_GAUNTLET
+	clearevent EVENT_BEAT_MEDIUM_AGATHA
+	clearevent EVENT_LEADERS_IN_SILVER
+	clearevent EVENT_VIRIDIAN_GYM_BLUE
+	clearevent EVENT_TRAINERS_IN_CERULEAN_GYM
+	clearevent EVENT_OLIVINE_GYM_JASMINE
 	refreshscreen
 	credits
 	end
@@ -78,10 +84,10 @@ Agatha:
 	closetext
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
-	disappear SILVERCAVEROOM3_AGATHA
-	appear SILVERCAVEROOM3_RED
 	pause 15
 	special FadeInQuickly
+	waitsfx
+	warp SILVER_CAVE_OUTSIDE, 18, 12
 	end
 
 Rival:
@@ -133,11 +139,6 @@ FinalRivalPostBattle:
 	closetext
 	playsound SFX_EXIT_BUILDING
 	special FadeOutPalettes
-	setevent EVENT_FINAL_GAUNTLET
-	clearevent EVENT_LEADERS_IN_SILVER
-	clearevent EVENT_VIRIDIAN_GYM_BLUE
-	clearevent EVENT_TRAINERS_IN_CERULEAN_GYM
-	clearevent EVENT_OLIVINE_GYM_JASMINE
 	disappear SILVERCAVEROOM3_RIVAL
 	waitsfx
 	reloadmap
@@ -227,6 +228,10 @@ AgathaAfterBattleText:
 	line "..."
 
 	para "AGATHA: Good luck."
+	line "let me know if you"
+
+	para "find him or that"
+	line "abomination."
 	done
 
 AgathaafterMewTwoBattle:
@@ -244,7 +249,7 @@ AgathaafterMewTwoBattle:
 	para "..."
 	line "..."
 
-	para "AGATHA: You! You"
+	para "AGATHA: You!? You"
 	line "managed to soothe"
 	cont "that tool of war!"
 
@@ -265,14 +270,16 @@ AgathaafterMewTwoBattle:
 	para "you make your"
 	line "nations proud."
 
-	para "Keep searching,"
-	line "child."
-
 	para "You have a hard-"
 	line "won reunion ahead."
 
-	para "As for me, I will"
-	line "take my leave."
+	para "Though I have one"
+	line "final gauntlet."
+
+	para "for you to over-"
+	line "come."
+
+	para "Ahaha!"
 	done
 
 RivalFinalBattle1:
@@ -285,7 +292,7 @@ RivalFinalBattle1:
 	para "..."
 	line "..."
 
-	para "Your father?"
+	para "Your father!?"
 	line "That explains so"
 	cont "much."
 
@@ -334,6 +341,21 @@ FinalRivalText2:
 
 	para "We make the world"
 	line "a better place."
+
+	para "..."
+	line "..."
+
+	para "You showed me how"
+	line "to be a better"
+
+	para "trainer, and a"
+	line "better person."
+
+	para "Thank you for"
+	line "believing in me"
+
+	para "when no one else"
+	line "did."
 
 	para "..."
 	line "..."

@@ -1,5 +1,7 @@
 BikeShopPhoneCallerScript:
 	farwritetext BikeShopPhoneCallerText
 	clearflag ENGINE_BIKE_SHOP_CALL_ENABLED
+	setevent EVENT_BIKESHOP_CLOSED
+	clearevent EVENT_BATTLED_DITTO
 	specialphonecall SPECIALCALL_NONE
 	end
