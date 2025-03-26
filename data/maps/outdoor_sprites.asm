@@ -261,7 +261,8 @@ BlackthornGroupSprites:
 
 SilverGroupSprites:
 ; Route28, SilverCaveOutside
-	; 0 of max 9 walking sprites
+	db SPRITE_OAK
+	; 1 of max 9 walking sprites
 	db 0 ; end
 
 DungeonsGroupSprites:

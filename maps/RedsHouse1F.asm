@@ -27,6 +27,7 @@ RedsMom:
 	waitbutton
 	closetext
 	setevent EVENT_MET_REDS_MOM
+	clearevent EVENT_OAK_IN_MT_SILVER
 	end
 
 .MetAlreadyAgain:
