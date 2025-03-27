@@ -59,6 +59,8 @@ Agatha:
 	checkevent EVENT_FOUGHT_MEWTWO
 	iftrue .RedAppear
 	writetext AgathaAfterBattleText
+	setevent EVENT_OAK_IN_MT_SILVER
+	clearevent EVENT_OAK_BACK_IN_LAB
 	waitbutton
 	closetext
 	end
@@ -77,8 +79,10 @@ Agatha:
 	setevent EVENT_VIRIDIAN_GYM_BLUE
 	setevent EVENT_TRAINERS_IN_CERULEAN_GYM
 	setevent EVENT_OLIVINE_GYM_JASMINE
+	setevent EVENT_OAK_IN_MT_SILVER
 	clearevent EVENT_RED_IN_MT_SILVER
 	clearevent EVENT_FINAL_GAUNTLET
+	clearevent EVENT_OAK_BACK_IN_LAB
 	writetext AgathaafterMewTwoBattle
 	waitbutton
 	closetext

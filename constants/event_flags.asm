@@ -204,6 +204,7 @@
 	const EVENT_FOREST_IS_RESTLESS
 	const EVENT_ANSWERED_DRAGON_MASTER_QUIZ_WRONG
 	const EVENT_GOT_BAYLEEF
+	const EVENT_OAK_BACK_IN_LAB
 ; Unused: next 5 events
 
 	const_next 200

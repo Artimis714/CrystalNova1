@@ -22,6 +22,8 @@ CharmanderEggMoves:
 	db ANCIENTPOWER
 	db ROCK_SLIDE
 	db BITE
+	db SACRED_FIRE
+	db AEROBLAST
 	db OUTRAGE
 	db NIGHT_SLASH
 	db -1 ; end
@@ -429,7 +431,7 @@ KabutoEggMoves:
 	db BUBBLEBEAM
 	db AURORA_BEAM
 	db RAPID_SPIN
-	db DIG
+	db SPORE
 	db FLAIL
 	db -1 ; end
 

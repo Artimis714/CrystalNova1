@@ -27,6 +27,7 @@ RedsMom:
 	waitbutton
 	closetext
 	setevent EVENT_MET_REDS_MOM
+	setevent EVENT_OAK_BACK_IN_LAB
 	clearevent EVENT_OAK_IN_MT_SILVER
 	end
 
