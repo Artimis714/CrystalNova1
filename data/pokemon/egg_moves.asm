@@ -20,11 +20,9 @@ BulbasaurEggMoves:
 CharmanderEggMoves:
 	db BELLY_DRUM
 	db ANCIENTPOWER
-	db ROCK_SLIDE
 	db BITE
 	db SACRED_FIRE
 	db AEROBLAST
-	db OUTRAGE
 	db NIGHT_SLASH
 	db -1 ; end
 
@@ -65,7 +63,6 @@ EkansEggMoves:
 	db BODY_SLAM
 	db SPITE
 	db NIGHT_SLASH
-	db CRUNCH
 	db -1 ; end
 
 SandshrewEggMoves:
@@ -162,7 +159,6 @@ PsyduckEggMoves:
 	db -1 ; end
 
 MankeyEggMoves:
-	db ROCK_SLIDE
 	db FORESIGHT
 	db MEDITATE
 	db COUNTER
@@ -173,7 +169,6 @@ MankeyEggMoves:
 GrowlitheEggMoves:
 	db BODY_SLAM
 	db SAFEGUARD
-	db CRUNCH
 	db THRASH
 	db FIRE_SPIN
 	db -1 ; end
@@ -216,8 +211,7 @@ TentacoolEggMoves:
 	db -1 ; end
 
 GeodudeEggMoves:
-	db MEGA_PUNCH
-	db ROCK_SLIDE
+	db ROCK_TOMB
 	db -1 ; end
 
 PonytaEggMoves:
@@ -279,10 +273,10 @@ GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
 	db HAZE
+	db BONE_RUSH
 	db -1 ; end
 
 OnixEggMoves:
-	db ROCK_SLIDE
 	db FLAIL
 	db -1 ; end
 
@@ -308,12 +302,10 @@ ExeggcuteEggMoves:
 	db -1 ; end
 
 CuboneEggMoves:
-	db ROCK_SLIDE
 	db ANCIENTPOWER
 	db BELLY_DRUM
 	db SCREECH
 	db PERISH_SONG
-	db SWORDS_DANCE
 	db -1 ; end
 
 LickitungEggMoves:
@@ -331,9 +323,7 @@ KoffingEggMoves:
 	db -1 ; end
 
 RhyhornEggMoves:
-	db CRUNCH
 	db REVERSAL
-	db ROCK_SLIDE
 	db THRASH
 	db PURSUIT
 	db COUNTER
@@ -389,7 +379,6 @@ ScytherEggMoves:
 	db COUNTER
 	db SAFEGUARD
 	db BATON_PASS
-	db RAZOR_WIND
 	db REVERSAL
 	db LIGHT_SCREEN
 	db -1 ; end
@@ -397,7 +386,6 @@ ScytherEggMoves:
 PinsirEggMoves:
 	db FURY_ATTACK
 	db FLAIL
-	db FLAMETHROWER
 	db SCALD
 	db -1 ; end
 
@@ -505,12 +493,10 @@ CyndaquilEggMoves:
 	db -1 ; end
 
 TotodileEggMoves:
-	db CRUNCH
 	db THRASH
 	db HYDRO_PUMP
 	db ANCIENTPOWER
 	db RAZOR_WIND
-	db ROCK_SLIDE
 	db -1 ; end
 
 SentretEggMoves:
@@ -678,7 +664,6 @@ PinecoEggMoves:
 DunsparceEggMoves:
 	db BIDE
 	db ANCIENTPOWER
-	db ROCK_SLIDE
 	db BITE
 	db RAGE
 	db -1 ; end
@@ -686,7 +671,6 @@ DunsparceEggMoves:
 GligarEggMoves:
 	db METAL_CLAW
 	db WING_ATTACK
-	db RAZOR_WIND
 	db COUNTER
 	db -1 ; end
 
@@ -695,7 +679,6 @@ SnubbullEggMoves:
 	db FAINT_ATTACK
 	db REFLECT
 	db PRESENT
-	db CRUNCH
 	db HEAL_BELL
 	db LICK
 	db LEER
@@ -745,12 +728,10 @@ SwinubEggMoves:
 	db TAKE_DOWN
 	db BITE
 	db BODY_SLAM
-	db ROCK_SLIDE
 	db ANCIENTPOWER
 	db -1 ; end
 
 CorsolaEggMoves:
-	db ROCK_SLIDE
 	db SAFEGUARD
 	db SCREECH
 	db MIST

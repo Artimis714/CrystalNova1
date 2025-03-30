@@ -1043,8 +1043,9 @@ RapidashEvosAttacks:
 	db 21, DOUBLE_TEAM
 	db 26, FLAME_WHEEL
 	db 34, TAKE_DOWN
-	db 37, SUNNY_DAY
+	db 37, FLAMETHROWER
 	db 40, FURY_ATTACK
+	db 44, EXTREMESPEED
 	db 47, AGILITY
 	db 61, FIRE_BLAST
 	db 0 ; no more level-up moves
