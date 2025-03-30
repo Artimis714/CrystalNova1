@@ -48,7 +48,7 @@ MahoganyGymPryceScript:
 	setevent EVENT_BEAT_BOARDER_DOUGLAS
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
-	verbosegiveitem TM_ICY_WIND
+	verbosegiveitem TM_FROSTBITE
 	iffalse MahoganyGym_NoRoomForIcyWind
 	setevent EVENT_GOT_TM16_ICY_WIND
 	writetext PryceText_IcyWindSpeech
@@ -80,7 +80,7 @@ MahoganyGymPryceScript:
 	setevent EVENT_BEAT_BOARDER_DOUGLAS
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
-	verbosegiveitem TM_ICY_WIND
+	verbosegiveitem TM_FROSTBITE
 	iffalse MahoganyGym_NoRoomForIcyWind
 	setevent EVENT_GOT_TM16_ICY_WIND
 	writetext PryceText_IcyWindSpeech
@@ -112,7 +112,7 @@ MahoganyGymPryceScript:
 	setevent EVENT_BEAT_BOARDER_DOUGLAS
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
-	verbosegiveitem TM_ICY_WIND
+	verbosegiveitem TM_FROSTBITE
 	iffalse MahoganyGym_NoRoomForIcyWind
 	setevent EVENT_GOT_TM16_ICY_WIND
 	writetext PryceText_IcyWindSpeech
@@ -328,10 +328,13 @@ PryceText_GlacierBadgeSpeech:
 
 PryceText_IcyWindSpeech:
 	text "That TM contains"
-	line "ICY WIND."
+	line "FROSTBITE."
 
-	para "It inflicts damage"
-	line "and lowers speed."
+	para "It inflicts some"
+	line "damage, but it"
+
+	para "always freeze your"
+	line "foe."
 
 	para "It demonstrates"
 	line "the harshness of"
@@ -340,12 +343,11 @@ PryceText_IcyWindSpeech:
 	para "..."
 	line "..."
 
-	para "Yes, just like"
-	line "most water moves"
+	para "Yes, like BLIZZARD"
+	line "it's more likely"
 
-	para "this move can"
-	line "FREEZE when there"
-	cont "is HAIL."
+	para "to hit if there"
+	line "is HAIL."
 	done
 
 PryceText_CherishYourPokemon:

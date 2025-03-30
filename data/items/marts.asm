@@ -326,7 +326,7 @@ MartBlackthorn:
 	db TM_SUBSTITUTE
 	db TM_SWAGGER
 	db TM_THIEF
-	db TM_ICY_WIND
+	db TM_FROSTBITE
 	db -1 ; end
 
 MartViridian:
