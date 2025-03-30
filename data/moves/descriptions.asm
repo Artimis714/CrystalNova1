@@ -160,7 +160,7 @@ MoveDescriptions::
 	dw RockSlideDescription
 	dw HyperFangDescription
 	dw SharpenDescription
-	dw ConversionDescription
+	dw FrostbiteDescription
 	dw TriAttackDescription
 	dw SuperFangDescription
 	dw SlashDescription
@@ -176,7 +176,7 @@ MoveDescriptions::
 	dw SnoreDescription
 	dw CurseDescription
 	dw FlailDescription
-	dw Conversion2Description
+	dw SheerColdDescription
 	dw AeroblastDescription
 	dw CottonSporeDescription
 	dw ReversalDescription
@@ -901,9 +901,9 @@ SharpenDescription:
 	db   "A move that raises"
 	line "the user's ATTACK.@"
 
-ConversionDescription:
-	db   "Change user's type"
-	line "to a move's type.@"
+FrostbiteDescription:
+	db   "Bitter wind that"
+	line "always freezes.@"
 
 TriAttackDescription:
 	db   "Fires three kinds"
@@ -965,9 +965,9 @@ FlailDescription:
 	db   "Stronger if the"
 	line "user's HP is low.@"
 
-Conversion2Description:
-	db   "The user's type is"
-	line "made resistant.@"
+SheerColdDescription:
+	db   "A one-hit KO,"
+	line "frozen blast.@"
 
 AeroblastDescription:
 	db   "Has a high criti-"

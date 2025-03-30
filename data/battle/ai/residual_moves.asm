@@ -9,7 +9,6 @@ ResidualMoves:
 	db BIDE
 	db POISON_GAS
 	db TRANSFORM
-	db CONVERSION
 	db SUBSTITUTE
 	db SPIDER_WEB
 	db BELLY_DRUM

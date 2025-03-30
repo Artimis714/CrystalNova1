@@ -173,7 +173,7 @@ Moves:
 	move ROCK_SLIDE,   EFFECT_FLINCH_HIT,         95, ROCK,          95, 15,  30
 	move HYPER_FANG,   EFFECT_FLINCH_HIT,         80, NORMAL,        90, 15,  10
 	move SHARPEN,      EFFECT_ATTACK_UP,           0, STEEL,        100, 30,   0
-	move CONVERSION,   EFFECT_CONVERSION,          0, NORMAL,       100, 30,   0
+	move FROSTBITE,    EFFECT_BLIZZARD,           10, ICE,       	 85, 15, 100
 	move TRI_ATTACK,   EFFECT_TRI_ATTACK,         80, PSYCHIC_TYPE, 100, 10,  20
 	move SUPER_FANG,   EFFECT_SUPER_FANG,          1, NORMAL,        90, 10,   0
 	move SLASH,        EFFECT_NORMAL_HIT,         70, NORMAL,       100, 20,   0
@@ -189,7 +189,7 @@ Moves:
 	move SNORE,        EFFECT_SNORE,              80, NORMAL,       100, 15,  30
 	move CURSE,        EFFECT_CURSE,               0, CURSE_TYPE,   100, 10,   0
 	move FLAIL,        EFFECT_REVERSAL,            1, NORMAL,       100, 15,   0
-	move CONVERSION2,  EFFECT_CONVERSION2,         0, NORMAL,       100, 30,   0
+	move SHEER_COLD,   EFFECT_OHKO,                0, ICE,           30,  5,   0
 	move AEROBLAST,    EFFECT_ACCURACY_DOWN_HIT, 142, FLYING,       100, 15, 100
 	move COTTON_SPORE, EFFECT_SPEED_DOWN_2,        0, GRASS,         85, 40,   0
 	move REVERSAL,     EFFECT_REVERSAL,            1, FIGHTING,     100, 15,   0

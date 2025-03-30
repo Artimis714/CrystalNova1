@@ -165,7 +165,7 @@
 	const ROCK_SLIDE   ; 9d
 	const HYPER_FANG   ; 9e
 	const SHARPEN      ; 9f
-	const CONVERSION   ; a0
+	const FROSTBITE    ; a0
 	const TRI_ATTACK   ; a1
 	const SUPER_FANG   ; a2
 	const SLASH        ; a3
@@ -181,7 +181,7 @@
 	const SNORE        ; ad
 	const CURSE        ; ae
 	const FLAIL        ; af
-	const CONVERSION2  ; b0
+	const SHEER_COLD   ; b0
 	const AEROBLAST    ; b1
 	const COTTON_SPORE ; b2
 	const REVERSAL     ; b3

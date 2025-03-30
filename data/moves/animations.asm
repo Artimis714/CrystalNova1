@@ -161,7 +161,7 @@ BattleAnimations::
 	dw BattleAnim_RockSlide
 	dw BattleAnim_HyperFang
 	dw BattleAnim_Sharpen
-	dw BattleAnim_Conversion
+	dw BattleAnim_Frostbite
 	dw BattleAnim_TriAttack
 	dw BattleAnim_SuperFang
 	dw BattleAnim_Slash
@@ -177,7 +177,7 @@ BattleAnimations::
 	dw BattleAnim_Snore
 	dw BattleAnim_Curse
 	dw BattleAnim_Flail
-	dw BattleAnim_Conversion2
+	dw BattleAnim_SheerCold
 	dw BattleAnim_Aeroblast
 	dw BattleAnim_CottonSpore
 	dw BattleAnim_Reversal
@@ -1008,6 +1008,28 @@ BattleAnim_Blizzard:
 	anim_obj BATTLE_ANIM_OBJ_BLIZZARD, 64, 96, $63
 	anim_wait 2
 	anim_loop 3, .loop
+	anim_bgeffect BATTLE_BG_EFFECT_WHITE_HUES, $0, $8, $0
+	anim_wait 32
+	anim_obj BATTLE_ANIM_OBJ_ICE_BUILDUP, 136, 74, $10
+	anim_wait 128
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 8
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 24
+	anim_ret
+
+BattleAnim_SheerCold:
+	anim_1gfx BATTLE_ANIM_GFX_HIT
+	anim_bgp $1b
+	anim_obp1 $1b
+	anim_wait 32
+	anim_call BattleAnim_UserObj_2Row
+	anim_bgeffect BATTLE_BG_EFFECT_NIGHT_SHADE, $0, BG_EFFECT_TARGET, $8
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 96
+	anim_incbgeffect BATTLE_BG_EFFECT_NIGHT_SHADE
+	anim_call BattleAnim_ShowMon_1
+	anim_1gfx BATTLE_ANIM_GFX_ICE
 	anim_bgeffect BATTLE_BG_EFFECT_WHITE_HUES, $0, $8, $0
 	anim_wait 32
 	anim_obj BATTLE_ANIM_OBJ_ICE_BUILDUP, 136, 74, $10
@@ -2850,21 +2872,6 @@ BattleAnim_Growth:
 	anim_wait 64
 	anim_ret
 
-BattleAnim_Conversion2:
-	anim_1gfx BATTLE_ANIM_GFX_EXPLOSION
-	anim_sound 63, 3, SFX_SHARPEN
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $0
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $8
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $10
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $18
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $20
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $28
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $30
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION2, 132, 44, $38
-	anim_wait 128
-	anim_wait 48
-	anim_ret
-
 BattleAnim_Smokescreen:
 	anim_3gfx BATTLE_ANIM_GFX_HAZE, BATTLE_ANIM_GFX_EGG, BATTLE_ANIM_GFX_SMOKE
 	anim_sound 6, 2, SFX_THROW_BALL
@@ -3392,21 +3399,6 @@ BattleAnim_Flail:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Conversion:
-	anim_1gfx BATTLE_ANIM_GFX_EXPLOSION
-	anim_bgeffect BATTLE_BG_EFFECT_ALTERNATE_HUES, $0, $2, $0
-	anim_sound 63, 3, SFX_SHARPEN
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $0
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $8
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $10
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $18
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $20
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $28
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $30
-	anim_obj BATTLE_ANIM_OBJ_CONVERSION, 48, 88, $38
-	anim_wait 128
-	anim_ret
-
 BattleAnim_Aeroblast:
 	anim_2gfx BATTLE_ANIM_GFX_BEAM, BATTLE_ANIM_GFX_AEROBLAST
 	anim_bgp $1b
@@ -3731,6 +3723,39 @@ BattleAnim_IcyWind:
 	anim_wait 4
 	anim_incobj 7
 	anim_wait 1
+	anim_ret
+
+BattleAnim_Frostbite:
+	anim_1gfx BATTLE_ANIM_GFX_SPEED
+	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_bgeffect BATTLE_BG_EFFECT_ALTERNATE_HUES, $0, $2, $0
+	anim_battlergfx_1row
+	anim_sound 0, 0, SFX_SHINE
+.loop
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_SHOOTING_SPARKLE, 64, 88, $4
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_SHOOTING_SPARKLE, 64, 80, $4
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_SHOOTING_SPARKLE, 64, 96, $4
+	anim_wait 8
+	anim_loop 2, .loop
+	anim_wait 16
+	anim_bgeffect BATTLE_BG_EFFECT_BATTLEROBJ_2ROW, $0, BG_EFFECT_USER, $0
+	anim_wait 6
+	anim_bgeffect BATTLE_BG_EFFECT_NIGHT_SHADE, $0, BG_EFFECT_TARGET, $8
+	anim_wait 64
+	anim_incbgeffect BATTLE_BG_EFFECT_NIGHT_SHADE
+	anim_bgeffect BATTLE_BG_EFFECT_SHOW_MON, $0, BG_EFFECT_USER, $0
+	anim_wait 4
+	anim_incobj 7
+	anim_wait 1
+	anim_obj BATTLE_ANIM_OBJ_ICE_BUILDUP, 136, 74, $10
+	anim_wait 128
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 8
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 24
 	anim_ret
 
 BattleAnim_Detect:

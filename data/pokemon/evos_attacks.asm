@@ -1902,9 +1902,9 @@ FlareonEvosAttacks:
 PorygonEvosAttacks:
 	db EVOLVE_ITEM, UP_GRADE, PORYGON2
 	db 0 ; no more evolutions
-	db 1, CONVERSION2
+	db 1, SONICBOOM
 	db 1, QUICK_ATTACK
-	db 1, CONVERSION
+	db 1, SHARPEN
 	db 1, SHOCK_WAVE
 	db 9, AGILITY
 	db 12, PSYBEAM
@@ -3500,9 +3500,8 @@ DonphanEvosAttacks:
 
 Porygon2EvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONVERSION2
+	db 1, SHARPEN
 	db 1, QUICK_ATTACK
-	db 1, CONVERSION
 	db 1, SKETCH
 	db 5, SONICBOOM
 	db 9, AGILITY
