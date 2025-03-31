@@ -175,7 +175,7 @@ ItemEffects:
 	dw PokeBallEffect      ; LEVEL_BALL
 	dw PokeBallEffect      ; LURE_BALL
 	dw PokeBallEffect      ; FAST_BALL
-	dw NoEffect            ; ITEM_A2
+	dw PocketPCEffect      ; POCKET_PC
 	dw NoEffect            ; LIGHT_BALL
 	dw PokeBallEffect      ; FRIEND_BALL
 	dw PokeBallEffect      ; MOON_BALL
@@ -2395,6 +2395,10 @@ UseRod:
 
 ItemfinderEffect:
 	farcall ItemFinder
+	ret
+
+PocketPCEffect:
+	farcall PocketPCFunction
 	ret
 
 RestorePPEffect:
