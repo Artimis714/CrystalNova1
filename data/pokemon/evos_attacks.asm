@@ -1156,6 +1156,7 @@ SeelEvosAttacks:
 	db 16, AURORA_BEAM
 	db 21, REST
 	db 22, SNORE
+	db 25, ICY_WIND
 	db 28, WATERFALL
 	db 32, TAKE_DOWN
 	db 37, ICE_BEAM
@@ -1169,11 +1170,13 @@ DewgongEvosAttacks:
 	db 16, AURORA_BEAM
 	db 21, REST
 	db 22, SNORE
+	db 25, ICY_WIND
 	db 28, WATERFALL
 	db 32, TAKE_DOWN
-	db 34, HAIL
+	db 34, FROSTBITE
 	db 43, ICE_BEAM
 	db 60, SAFEGUARD
+	db 70, SHEER_COLD
 	db 0 ; no more level-up moves
 
 GrimerEvosAttacks:
@@ -1228,6 +1231,7 @@ CloysterEvosAttacks:
 	db 33, SPIKES
 	db 39, SHADOW_BALL
 	db 41, HAIL
+	db 57, SHEER_COLD
 	db 0 ; no more level-up moves
 
 GastlyEvosAttacks:
@@ -1826,11 +1830,13 @@ LaprasEvosAttacks:
 	db 15, TWISTER
 	db 19, ICY_WIND
 	db 22, CONFUSE_RAY
+	db 25, FROSTBITE
 	db 29, PERISH_SONG
 	db 36, ICE_BEAM
 	db 40, DRAGONBREATH
 	db 50, SAFEGUARD
 	db 57, BLIZZARD
+	db 66, SHEER_COLD
 	db 0 ; no more level-up moves
 
 DittoEvosAttacks:
@@ -1862,7 +1868,7 @@ VaporeonEvosAttacks:
 	db 16, RAIN_DANCE
 	db 23, BUBBLEBEAM
 	db 30, BITE
-	db 32, AURORA_BEAM
+	db 32, FROSTBITE
 	db 36, SCALD
 	db 42, HAZE
 	db 47, ACID_ARMOR
@@ -2025,13 +2031,13 @@ ArticunoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ICY_WIND
 	db 1, HAIL
-	db 13, MIST
+	db 13, FROSTBITE
 	db 22, DRILL_PECK
 	db 25, AGILITY
 	db 37, MIND_READER
 	db 49, ICE_BEAM
 	db 52, RAZOR_WIND
-	db 61, REFLECT
+	db 61, SHEER_COLD
 	db 73, BLIZZARD
 	db 81, SKY_ATTACK
 	db 0 ; no more level-up moves
@@ -3288,6 +3294,7 @@ SwinubEvosAttacks:
 	db 15, HAIL
 	db 21, AURORA_BEAM
 	db 24, DIG
+	db 25, FROSTBITE
 	db 28, TAKE_DOWN
 	db 31, ICY_WIND
 	db 33, EARTHQUAKE
@@ -3304,6 +3311,7 @@ PiloswineEvosAttacks:
 	db 15, HAIL
 	db 21, AURORA_BEAM
 	db 24, DIG
+	db 25, FROSTBITE
 	db 28, TAKE_DOWN
 	db 31, ICY_WIND
 	db 33, EARTHQUAKE
@@ -3311,6 +3319,7 @@ PiloswineEvosAttacks:
 	db 43, MIST
 	db 49, BLIZZARD
 	db 60, AMNESIA
+	db 74, SHEER_COLD
 	db 0 ; no more level-up moves
 
 CorsolaEvosAttacks:
@@ -3577,6 +3586,7 @@ SmoochumEvosAttacks:
 	db 1, LICK
 	db 9, SWEET_KISS
 	db 13, POWDER_SNOW
+	db 17, FROSTBITE
 	db 21, CONFUSION
 	db 25, SING
 	db 33, MEAN_LOOK
@@ -3685,7 +3695,7 @@ SuicuneEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, AURORA_BEAM
 	db 1, MIST
-	db 1, WATER_GUN
+	db 1, FROSTBITE
 	db 11, HEAL_BELL
 	db 21, HAIL
 	db 31, BUBBLEBEAM
@@ -3694,6 +3704,7 @@ SuicuneEvosAttacks:
 	db 51, SURF
 	db 61, ICE_BEAM
 	db 71, HYDRO_PUMP
+	db 81, SHEER_COLD
 	db 0 ; no more level-up moves
 
 LarvitarEvosAttacks:

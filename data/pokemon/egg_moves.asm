@@ -31,7 +31,7 @@ SquirtleEggMoves:
 	db HAZE
 	db MIST
 	db CONFUSION
-	db FORESIGHT
+	db SHEER_COLD
 	db FLAIL
 	db -1 ; end
 
@@ -175,7 +175,7 @@ GrowlitheEggMoves:
 
 PoliwagEggMoves:
 	db MIST
-	db SPLASH
+	db SHEER_COLD
 	db BUBBLEBEAM
 	db HAZE
 	db MIND_READER
@@ -228,6 +228,7 @@ SlowpokeEggMoves:
 	db BELLY_DRUM
 	db FUTURE_SIGHT
 	db STOMP
+	db SHEER_COLD
 	db -1 ; end
 
 FarfetchDEggMoves:
@@ -247,7 +248,7 @@ DoduoEggMoves:
 	db -1 ; end
 
 SeelEggMoves:
-	db LICK
+	db SHEER_COLD
 	db PERISH_SONG
 	db DISABLE
 	db PECK
@@ -359,7 +360,7 @@ HorseaEggMoves:
 	db AURORA_BEAM
 	db OCTAZOOKA
 	db DISABLE
-	db SPLASH
+	db SHEER_COLD
 	db DRAGON_RAGE
 	db -1 ; end
 
@@ -405,6 +406,7 @@ EeveeEggMoves:
 	db HEX
 	db CRUNCH
 	db FAINT_ATTACK
+	db SHEER_COLD
 	db -1 ; end
 
 OmanyteEggMoves:
@@ -433,12 +435,13 @@ AerodactylEggMoves:
 	db -1 ; end
 
 SnorlaxEggMoves:
+	db DOUBLE_EDGE
 	db LICK
 	db -1 ; end
 
 ArticunoEggMoves:
 	db AEROBLAST
-	db AURORA_BEAM
+	db SHEER_COLD
 	db -1 ; end
 
 ZapdosEggMoves:
@@ -468,6 +471,7 @@ MewTwoEggMoves:
 MewEggMoves:
 	db FISSURE
 	db HORN_DRILL
+	db SHEER_COLD
 	db ANCIENTPOWER
 	db PAY_DAY
 	db PSYBEAM
@@ -497,6 +501,7 @@ TotodileEggMoves:
 	db HYDRO_PUMP
 	db ANCIENTPOWER
 	db RAZOR_WIND
+	db SHEER_COLD
 	db -1 ; end
 
 SentretEggMoves:
@@ -802,6 +807,7 @@ TyrogueEggMoves:
 
 SmoochumEggMoves:
 	db MEDITATE
+	db SHEER_COLD
 	db -1 ; end
 
 ElekidEggMoves:
@@ -840,7 +846,7 @@ EnteiEggMoves:
 
 SuicuneEggMoves:
 	db GIGA_DRAIN
-	db THUNDER_WAVE
+	db SHEER_COLD
 	db ROCK_TOMB
 	db -1 ; end
 
@@ -856,6 +862,7 @@ LugiaEggMoves:
 	db SKY_ATTACK
 	db PSYCHIC_M
 	db SURF
+	db SHEER_COLD
 	db MIND_READER
 	db -1 ; end
 
