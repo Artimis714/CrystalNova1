@@ -2161,7 +2161,11 @@ AI_Smart_Hail:
 
 .GoodHailMoves
 	db BLIZZARD
+	db FROSTBITE
 	db ICY_WIND
+	db POWDER_SNOW
+	db ICE_PUNCH
+	db ICE_BEAM
 	db HYDRO_PUMP
 	db SURF
 	db BUBBLEBEAM
