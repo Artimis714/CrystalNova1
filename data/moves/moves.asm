@@ -173,7 +173,7 @@ Moves:
 	move ROCK_SLIDE,   EFFECT_FLINCH_HIT,         95, ROCK,          95, 15,  30
 	move HYPER_FANG,   EFFECT_FLINCH_HIT,         80, NORMAL,        90, 15,  10
 	move SHARPEN,      EFFECT_ATTACK_UP,           0, STEEL,        100, 30,   0
-	move FROSTBITE,    EFFECT_BLIZZARD,           10, ICE,       	 85, 15, 100
+	move FROSTBITE,    EFFECT_BLIZZARD,           10, ICE,       	 75, 15, 100
 	move TRI_ATTACK,   EFFECT_TRI_ATTACK,         80, PSYCHIC_TYPE, 100, 10,  20
 	move SUPER_FANG,   EFFECT_SUPER_FANG,          1, NORMAL,        90, 10,   0
 	move SLASH,        EFFECT_NORMAL_HIT,         70, NORMAL,       100, 20,   0

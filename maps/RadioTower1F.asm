@@ -377,7 +377,7 @@ RadioTower1FRadioCardWomanYouWinText:
 	line "Congratulations!"
 
 	para "Here's your prize,"
-	line "a RADIO CARD!"
+	line "the RADIO APP!"
 	done
 
 RadioTower1FPokegearIsARadioText:
