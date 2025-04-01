@@ -162,7 +162,7 @@ ItemDescriptions:
 	dw LevelBallDesc
 	dw LureBallDesc
 	dw FastBallDesc
-	dw PocketPCDesc
+	dw TeruSama21Desc
 	dw LightBallDesc
 	dw FriendBallDesc
 	dw MoonBallDesc
@@ -895,9 +895,8 @@ FastBallDesc:
 	db   "A BALL for catch-"
 	next "ing fast #MON.@"
 
-PocketPCDesc:
-	db   "Access the PC"
-	next "right here!@"
+TeruSama21Desc:
+	db   "?@"
 
 LightBallDesc:
 	db   "An odd, electrical"

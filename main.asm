@@ -44,6 +44,7 @@ INCLUDE "engine/pokemon/knows_move.asm"
 
 SECTION "bank4", ROMX
 
+INCLUDE "engine/items/pack.asm"
 INCLUDE "engine/overworld/time.asm"
 INCLUDE "engine/items/tmhm2.asm"
 INCLUDE "engine/menus/naming_screen.asm"
@@ -173,7 +174,7 @@ INCLUDE "data/battle/effect_command_pointers.asm"
 SECTION "Auto Weather", ROMX
 
 INCLUDE "engine/battle/Auto_Weather_TOD.asm"
-INCLUDE "engine/items/pack.asm"
+
 
 SECTION "bank10", ROMX
 

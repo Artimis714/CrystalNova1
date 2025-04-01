@@ -569,7 +569,6 @@
 	const EVENT_SHINY_VULPIX
 	const EVENT_SHINY_KRABBY
 	const EVENT_SHINY_ONIX
-	const EVENT_GOT_POCKET_PC
 ; Unused: next 158 events
 
 	const_next 1000

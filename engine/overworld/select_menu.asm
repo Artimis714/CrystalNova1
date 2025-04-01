@@ -32,7 +32,6 @@ CheckRegisteredItem:
 	dw .CheckBall
 	dw .CheckKeyItem
 	dw .CheckTMHM
-	dw .CheckBerry
 
 .CheckItem:
 	ld hl, wNumItems
@@ -61,7 +60,6 @@ CheckRegisteredItem:
 
 .CheckBall:
 	ld hl, wNumBalls
-.StandardCheck:
 	call .CheckRegisteredNo
 	jr nc, .NoRegisteredItem
 	inc hl
@@ -72,10 +70,6 @@ CheckRegisteredItem:
 	call .IsSameItem
 	jr c, .NoRegisteredItem
 	ret
-
-.CheckBerry:
-	ld hl, wNumBerries
-	jr .StandardCheck
 
 .CheckTMHM:
 	jr .NoRegisteredItem
