@@ -2,7 +2,6 @@ SECTION "Map Scripts 1", ROMX
 
 INCLUDE "maps/GoldenrodGym.asm"
 INCLUDE "maps/GoldenrodBikeShop.asm"
-INCLUDE "maps/GoldenrodHappinessRater.asm"
 INCLUDE "maps/BillsFamilysHouse.asm"
 INCLUDE "maps/GoldenrodMagnetTrainStation.asm"
 INCLUDE "maps/GoldenrodPPSpeechHouse.asm"
@@ -505,3 +504,5 @@ INCLUDE "maps/GoldenrodFlowerShop.asm"
 SECTION "Map Scripts 32", ROMX
 INCLUDE "maps/KurtsHouse.asm"
 INCLUDE "maps/FightingDojo.asm"
+INCLUDE "maps/GoldenrodHappinessRater.asm"
+

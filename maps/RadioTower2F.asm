@@ -76,6 +76,7 @@ TrainerGruntM5:
 	end
 
 TrainerGruntM6:
+	faceplayer
 	opentext
 	checkevent EVENT_BEAT_ROCKET_GRUNTM_6
 	iftrue .Defeated

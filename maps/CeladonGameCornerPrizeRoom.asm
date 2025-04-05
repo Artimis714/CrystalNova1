@@ -27,7 +27,7 @@ CeladonGameCornerPrizeRoomPharmacistScript:
 CeladonGameCornerPrizeRoomTMVendor:
 	faceplayer
 	opentext
-	writetext CeladonPrizeRoom_PrizeVendorIntroText
+	writetext CeladonPrizeRoom_PrizeVendorIntroText2
 	waitbutton
 	checkitem COIN_CASE
 	iffalse CeladonPrizeRoom_NoCoinCase
@@ -168,13 +168,13 @@ CeladonPrizeRoom_TMMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 8 ; items
-	db "TM24    {d:CELADONGAMECORNERPRIZEROOM_TM24_COINS}@"
-	db "TM09    {d:CELADONGAMECORNERPRIZEROOM_TM09_COINS}@"
-	db "TM30    {d:CELADONGAMECORNERPRIZEROOM_TM30_COINS}@"
-	db "TM14    {d:CELADONGAMECORNERPRIZEROOM_TM30_COINS}@"
-	db "TM23    {d:CELADONGAMECORNERPRIZEROOM_TM23_COINS}@"
-	db "TM01    {d:CELADONGAMECORNERPRIZEROOM_TM01_COINS}@"
-	db "TM40    {d:CELADONGAMECORNERPRIZEROOM_TM40_COINS}@"
+	db "DRAGON BREATH@"
+	db "RAZOR WIND@"
+	db "SHADOW BALL@"
+	db "ICE BEAM@"
+	db "FLASH CANNON@"
+	db "DYNAMIC PUNCH@"
+	db "CRUNCH@"
 	db "CANCEL@"
 
 CeladonGameCornerPrizeRoomPokemonVendor:
@@ -292,6 +292,17 @@ CeladonPrizeRoom_PrizeVendorIntroText:
 	para "We exchange your"
 	line "coins for fabulous"
 	cont "prizes!"
+	done
+
+CeladonPrizeRoom_PrizeVendorIntroText2:
+	text "Welcome!"
+
+	para "We exchange your"
+	line "coins for fabulous"
+	cont "prizes!"
+
+	para "All of our TMs"
+	line "cost 4000 Coins."
 	done
 
 CeladonPrizeRoom_AskWhichPrizeText:

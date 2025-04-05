@@ -11,48 +11,66 @@ GoldenrodHappinessRater_MapScripts:
 GoldenrodHappinessRaterTeacherScript:
 	faceplayer
 	opentext
-	special GetFirstPokemonHappiness
-	writetext GoldenrodHappinessRaterTeacherText
-	promptbutton
-	ifgreater 250 - 1, .LovesYouALot
-	ifgreater 200 - 1, .ReallyTrustsYou
-	ifgreater 150 - 1, .SortOfHappy
-	ifgreater 100 - 1, .QuiteCute
-	ifgreater  50 - 1, .NotUsedToYou
-	sjump .LooksMean
-
-.LovesYouALot:
-	writetext GoldenrodHappinessRatingText_LovesYouALot
+	checkitem COIN_CASE
+	iffalse .YouShouldGamble
+	writetext CoinTradeIntroText
+	yesorno
+	iffalse .SilverTrade
+	checkitem GOLD_LEAF
+	iffalse .WhatAboutSilver
+	checkcoins MAX_COINS - 100
+	ifequal HAVE_MORE, .CoinCaseFull
+	writetext TradeGoldLeafText
+	yesorno
+	iffalse .NoDealTrade
+	givecoins 100
+	takeitem GOLD_LEAF
+	writetext ThisisbeautifulText
 	waitbutton
 	closetext
 	end
 
-.ReallyTrustsYou:
-	writetext GoldenrodHappinessRatingText_ReallyTrustsYou
+.WhatAboutSilver:
+	writetext YouDontHaveThatText
+	waitbutton
+.SilverTrade:
+	writetext HowaboutSilver
+	yesorno
+	iffalse .NoLeaf
+	checkitem SILVER_LEAF
+	iffalse .NoLeaf
+	checkcoins MAX_COINS - 50
+	ifequal HAVE_MORE, .CoinCaseFull
+	writetext TradeSilverLeafText
+	yesorno
+	iffalse .NoDealTrade
+	givecoins 50
+	takeitem SILVER_LEAF
+	writetext ThisisbeautifulText
 	waitbutton
 	closetext
 	end
 
-.SortOfHappy:
-	writetext GoldenrodHappinessRatingText_SortOfHappy
+.NoDealTrade:
+	writetext NoDealTradeText
 	waitbutton
 	closetext
 	end
 
-.QuiteCute:
-	writetext GoldenrodHappinessRatingText_QuiteCute
+.NoLeaf:
+	writetext NoLeafText
 	waitbutton
 	closetext
 	end
 
-.NotUsedToYou:
-	writetext GoldenrodHappinessRatingText_NotUsedToYou
+.CoinCaseFull:
+	writetext ABetterGamblerThanMe
 	waitbutton
 	closetext
 	end
 
-.LooksMean:
-	writetext GoldenrodHappinessRatingText_LooksMean
+.YouShouldGamble:
+	writetext YoushouldGambleText
 	waitbutton
 	closetext
 	end
@@ -69,69 +87,130 @@ HappinessRatersHouseBookshelf:
 HappinessRatersHouseRadio:
 	jumpstd Radio2Script
 
-GoldenrodHappinessRaterTeacherText:
-	text "If you treat your"
-	line "#MON nicely,"
+ABetterGamblerThanMe:
+	text "Oh, wow! Looks"
+	line "like you're a"
 
-	para "they will love you"
-	line "in return."
+	para "better gambler"
+	line "than me!"
 
-	para "Oh? Let me see"
-	line "your @"
-	text_ram wStringBuffer3
-	text "…"
+	para "You don't have"
+	line "room in your COIN"
+	cont "CASE for more!"
 	done
 
-GoldenrodHappinessRatingText_LovesYouALot:
-	text "It looks really"
-	line "happy! It must"
-	cont "love you a lot."
+ThisisbeautifulText:
+	text "Oh this is just"
+	line "a beautiful leaf!"
+
+	para "I'm happy to"
+	line "trade more COINS"
+
+	para "if you come across"
+	line "more!"
 	done
 
-GoldenrodHappinessRatingText_ReallyTrustsYou:
-	text "I get the feeling"
-	line "that it really"
-	cont "trusts you."
+NoDealTradeText:
+	text "That's fine if"
+	line "you don't want to"
+
+	para "trade, but I"
+	line "won't negotiate"
+	cont "my price."
 	done
 
-GoldenrodHappinessRatingText_SortOfHappy:
-	text "It's friendly to-"
-	line "ward you. It looks"
-	cont "sort of happy."
+TradeSilverLeafText:
+	text "Ahh a SILVER LEAF"
+	line "those are lovely."
+
+	para "I'd trade you 50"
+	line "COINS for that."
+
+	para "Do we have a deal?"
 	done
 
-GoldenrodHappinessRatingText_QuiteCute:
-	text "It's quite cute."
+TradeGoldLeafText:
+	text "OOH! a GOLD LEAF!"
+	line "those are my"
+	cont "favorite!"
+
+	para "I'd trade you 100"
+	line "COINS for that."
 	done
 
-GoldenrodHappinessRatingText_NotUsedToYou:
-	text "You should treat"
-	line "it better. It's"
-	cont "not used to you."
+NoLeafText:
+	text "I'm not sure you"
+	line "have what I'm"
+	cont "looking for."
 	done
 
-GoldenrodHappinessRatingText_LooksMean:
-	text "It doesn't seem to"
-	line "like you at all."
-	cont "It looks mean."
+YouDontHaveThatText:
+	text "You don't have"
+	line "any GOLD LEAF."
+	done
+
+HowaboutSilver:
+	text "Hmm... How about"
+	line "a SILVER LEAF,"
+
+	para "Would you happen"
+	line "to have any of"
+	cont "those?"
+	done
+
+CoinTradeIntroText:
+	text "People say money"
+	line "doesn't grow on"
+	cont "trees."
+
+	para "Those people have"
+	line "never won big at"
+	cont "the casino."
+
+	para "I'd love to trade"
+	line "some of my COINS"
+
+	para "for a GOLD LEAF"
+	line "if you have any."
+	done
+
+YoushouldGambleText:
+	text "I won big at the"
+	line "SLOTS!"
+	cont "Do you gamble?"
+
+	para "..."
+	line "..."
+
+	para "Well you should!"
+	line "You need to find a"
+	cont "COIN CASE."
 	done
 
 GoldenrodHappinessRaterPokefanMText:
-	text "I keep losing in"
-	line "battles, and my"
+	text "My wife won big"
+	line "at the slots."
 
-	para "#MON end up"
-	line "fainting…"
+	para "I swear that woman"
+	line "has more money"
 
-	para "Maybe that's why"
-	line "my #MON don't"
-	cont "like me much…"
+	para "than sense these"
+	line "days!"
+
+	para "She's trading her"
+	line "winnings for shiny"
+	cont "leaves!"
 	done
 
 GoldenrodHappinessRaterTwinText:
-	text "When I use an item"
-	line "on my #MON, it"
-	cont "acts really glad!"
+	text "Mama loves coll-"
+	line "ecting shiny stuff"
+
+	para "She said she's"
+	line "gonna wall-paper"
+
+	para "my room with gold"
+	line "and silver leaves!"
 	done
 
 GoldenrodHappinessRater_MapEvents:

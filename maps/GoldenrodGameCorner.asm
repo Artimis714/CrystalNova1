@@ -174,19 +174,19 @@ GoldenrodGameCornerTMVendorMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 8 ; items
-	db "TM25    4000@"
-	db "TM19    4000@"
-	db "TM38    4000@"
-	db "TM26    4000@"
-	db "TM36    4000@"
-	db "TM29    4000@"
-	db "TM51    4000@"
+	db "THUNDERBOLT@"
+	db "GIGA DRAIN@"
+	db "FLAMETHROWER@"
+	db "EARTHQUAKE@"
+	db "SLUDGE BOMB@"
+	db "PSYCHIC@"
+	db "ROCK SLIDE@"
 	db "CANCEL@"
 
 GoldenrodGameCornerPrizeMonVendorScript:
 	faceplayer
 	opentext
-	writetext GoldenrodGameCornerPrizeVendorIntroText
+	writetext GoldenrodGameCornerPrizeVendorIntroText2
 	waitbutton
 	checkitem COIN_CASE
 	iffalse GoldenrodGameCornerPrizeVendor_NoCoinCaseScript
@@ -345,12 +345,23 @@ GoldenrodGameCornerCardFlipMachineScript:
 	closetext
 	end
 
+GoldenrodGameCornerPrizeVendorIntroText2:
+	text "Welcome!"
+
+	para "We exchange your"
+	line "game coins for"
+	cont "fabulous prizes!"
+	done
+
 GoldenrodGameCornerPrizeVendorIntroText:
 	text "Welcome!"
 
 	para "We exchange your"
 	line "game coins for"
 	cont "fabulous prizes!"
+
+	para "All of our TMs"
+	line "cost 4000 Coins."
 	done
 
 GoldenrodGameCornerPrizeVendorWhichPrizeText:
@@ -456,10 +467,23 @@ endc
 GoldenrodGameCornerCooltrainerFText:
 	text "I won't quit until"
 	line "I win!"
+
+	para "The other day some"
+	line "mad-woman won big!"
+
+	para "She said she was"
+	line "gonna blow all her"
+
+	para "winnings on fancy"
+	line "LEAVES!"
+
+	para "My time is coming"
+	line "and I'll know how"
+	cont "spend my COINS!"
 	done
 
 GoldenrodGameCornerGentlemanText:
-	text "I taught ICE BEAM"
+	text "I taught PSYCHIC"
 	line "to my #MON."
 
 	para "It was hard to get"
