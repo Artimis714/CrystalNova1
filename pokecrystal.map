@@ -19775,7 +19775,7 @@ ROMX bank #38:
 	TOTAL EMPTY: $0811 bytes
 
 ROMX bank #39:
-	SECTION: $4000-$77f9 ($37fa bytes) ["Map Scripts 12"]
+	SECTION: $4000-$7d20 ($3d21 bytes) ["Map Scripts 12"]
 	         $4000 = OlivineGym_MapScripts
 	         $4002 = OlivineGymJasmineScript
 	         $4016 = OlivineGymJasmineScript.badge_6
@@ -20022,26 +20022,54 @@ ROMX bank #39:
 	         $728d = NoRoomForScopeText
 	         $72e3 = CianwoodLugiaSpeechHouse_MapEvents
 	         $7324 = PokeSeersHouse_MapScripts
-	         $7326 = SeerScript
-	         $732e = PokeSeersHouse_MapEvents
-	         $734b = VictoryRoadGate_MapScripts
-	         $7355 = VictoryRoadGateNoop1Scene
-	         $7356 = VictoryRoadGateNoop2Scene
-	         $7357 = VictoryRoadGateBadgeCheckScript
-	         $735d = VictoryRoadGateOfficerScript
-	         $735e = _VictoryRoadGateBadgeCheckScript
-	         $737b = _VictoryRoadGateBadgeCheckScript.AllEightBadges
-	         $7383 = VictoryRoadGateLeftBlackBeltScript
-	         $7386 = VictoryRoadGateRightBlackBeltScript
-	         $7389 = VictoryRoadGateStepDownMovement
-	         $738b = VictoryRoadGateOfficerText
-	         $73e0 = VictoryRoadGateNotEnoughBadgesText
-	         $74dc = VictoryRoadGateEightBadgesText
-	         $7609 = VictoryRoadGateLeftBlackBeltText
-	         $76ea = VictoryRoadGateRightBlackBeltText
-	         $779d = VictoryRoadGate_MapEvents
-	EMPTY: $77fa-$7fff ($0806 bytes)
-	TOTAL EMPTY: $0806 bytes
+	         $7326 = BerryJuicerScript
+	         $7358 = BerryJuicerScript.BerryJuice
+	         $738d = BerryJuicerScript.SlvrBerryJuice
+	         $73c3 = BerryJuicerScript.GoldBerryJuice
+	         $73f8 = BerryJuicerScript.No
+	         $73fe = BerryJuicerScript.NoSale
+	         $7404 = BerryJuicerScript.GaveJuicerBerry
+	         $740a = BerryJuicerScript.GiveBerryJuice
+	         $7419 = BerryJuicerScript.GiveSlvrBerryJuice
+	         $7428 = BerryJuicerScript.GiveGoldBerryJuice
+	         $7437 = BerryJuicerScript.NoRoom
+	         $743d = BerryJuicerScript.MoveMenuHeader
+	         $7445 = BerryJuicerScript.MenuData
+	         $7469 = LORHPHouseNoMoneyScript
+	         $746f = LakeofRageShuckle
+	         $747e = ShuckleText
+	         $7486 = BerryJuicerIntroText
+	         $74d9 = BerryJuicerNoText
+	         $7501 = BerryJuicerPackisFullText
+	         $753e = BerryJuicerPatienceChildText
+	         $7577 = BerryJuicerBJuiceText
+	         $75d9 = BerryJuicerSJuiceText
+	         $7641 = BerryJuicerGJuiceText
+	         $76d1 = BerryJuicerGiveText
+	         $7709 = JuicerBText
+	         $7747 = JuicerSText
+	         $778a = JuicerGText
+	         $77cc = BerryJuicerQuitWastingtime
+	         $77f6 = NoMoneyChildText
+	         $7848 = PokeSeersHouse_MapEvents
+	         $7872 = VictoryRoadGate_MapScripts
+	         $787c = VictoryRoadGateNoop1Scene
+	         $787d = VictoryRoadGateNoop2Scene
+	         $787e = VictoryRoadGateBadgeCheckScript
+	         $7884 = VictoryRoadGateOfficerScript
+	         $7885 = _VictoryRoadGateBadgeCheckScript
+	         $78a2 = _VictoryRoadGateBadgeCheckScript.AllEightBadges
+	         $78aa = VictoryRoadGateLeftBlackBeltScript
+	         $78ad = VictoryRoadGateRightBlackBeltScript
+	         $78b0 = VictoryRoadGateStepDownMovement
+	         $78b2 = VictoryRoadGateOfficerText
+	         $7907 = VictoryRoadGateNotEnoughBadgesText
+	         $7a03 = VictoryRoadGateEightBadgesText
+	         $7b30 = VictoryRoadGateLeftBlackBeltText
+	         $7c11 = VictoryRoadGateRightBlackBeltText
+	         $7cc4 = VictoryRoadGate_MapEvents
+	EMPTY: $7d21-$7fff ($02df bytes)
+	TOTAL EMPTY: $02df bytes
 
 ROMX bank #40:
 	SECTION: $4000-$5ecf ($1ed0 bytes) ["Phone Scripts 1"]
@@ -39227,7 +39255,7 @@ ROMX bank #101:
 	TOTAL EMPTY: $01cd bytes
 
 ROMX bank #102:
-	SECTION: $4000-$7ec6 ($3ec7 bytes) ["Map Scripts 19"]
+	SECTION: $4000-$7988 ($3989 bytes) ["Map Scripts 19"]
 	         $4000 = AzaleaTown_MapScripts
 	         $4011 = AzaleaTownNoop1Scene
 	         $4012 = AzaleaTownNoop2Scene
@@ -39492,102 +39520,74 @@ ROMX bank #102:
 	         $6fe8 = HiddenPowerGuy.AlreadyGotItem
 	         $6fec = HiddenPowerGuy.Done
 	         $6fee = HiddenPowerHouseBookshelf
-	         $6ff1 = BerryJuicerScript
-	         $7023 = BerryJuicerScript.BerryJuice
-	         $7058 = BerryJuicerScript.SlvrBerryJuice
-	         $708e = BerryJuicerScript.GoldBerryJuice
-	         $70c3 = BerryJuicerScript.No
-	         $70c9 = BerryJuicerScript.NoSale
-	         $70cf = BerryJuicerScript.GaveJuicerBerry
-	         $70d5 = BerryJuicerScript.GiveBerryJuice
-	         $70e4 = BerryJuicerScript.GiveSlvrBerryJuice
-	         $70f3 = BerryJuicerScript.GiveGoldBerryJuice
-	         $7102 = BerryJuicerScript.NoRoom
-	         $7108 = BerryJuicerScript.MoveMenuHeader
-	         $7110 = BerryJuicerScript.MenuData
-	         $7134 = LakeofRageShuckle
-	         $7143 = LORHPHouseNoMoneyScript
-	         $7149 = ShuckleText
-	         $7151 = BerryJuicerIntroText
-	         $71a4 = BerryJuicerNoText
-	         $71cc = BerryJuicerPackisFullText
-	         $7209 = BerryJuicerPatienceChildText
-	         $7242 = BerryJuicerBJuiceText
-	         $72a4 = BerryJuicerSJuiceText
-	         $730c = BerryJuicerGJuiceText
-	         $739c = BerryJuicerGiveText
-	         $73d4 = JuicerBText
-	         $7412 = JuicerSText
-	         $7455 = JuicerGText
-	         $7497 = BerryJuicerQuitWastingtime
-	         $74c1 = HiddenPowerGuyText1
-	         $7554 = HiddenPowerGuyText2
-	         $75e9 = HiddenPowerGuyText3
-	         $7629 = NoMoneyChildText
-	         $767b = LakeOfRageHiddenPowerHouse_MapEvents
-	         $76bc = LakeOfRageMagikarpHouse_MapScripts
-	         $76be = MagikarpLengthRaterScript
-	         $76e1 = MagikarpLengthRaterScript.ExplainedHistory
-	         $76e7 = MagikarpLengthRaterScript.ClearedRocketHideout
-	         $76f0 = MagikarpLengthRaterScript.AskedForMagikarp
-	         $770e = MagikarpLengthRaterScript.GetReward
-	         $7721 = MagikarpLengthRaterScript.NoRoom
-	         $7726 = MagikarpLengthRaterScript.TooShort
-	         $772c = MagikarpLengthRaterScript.NotMagikarp
-	         $7732 = MagikarpLengthRaterScript.Refused
-	         $7738 = MagikarpHouseBookshelf
-	         $773b = MagikarpLengthRaterText_LakeOfRageHistory
-	         $785a = MagikarpLengthRaterText_MenInBlack
-	         $789d = MagikarpLengthRaterText_WorldsLargestMagikarp
-	         $794b = MagikarpLengthRaterText_YouHaveAMagikarp
-	         $7984 = MagikarpLengthRaterText_Memento
-	         $79d0 = MagikarpLengthRaterText_Bonus
-	         $7a0e = MagikarpLengthRaterText_TooShort
-	         $7a69 = MagikarpLengthRaterText_NotMagikarp
-	         $7a86 = MagikarpLengthRaterText_Refused
-	         $7ac9 = LakeOfRageMagikarpHouse_MapEvents
-	         $7af0 = Route43MahoganyGate_MapScripts
-	         $7af2 = Route43MahoganyGateOfficer
-	         $7b00 = Route43MahoganyGateOfficer.RocketsCleared
-	         $7b06 = Route43MahoganyGateOfficerText
-	         $7b6f = Route43MahoganyGateOfficerRocketsClearedText
-	         $7bae = Route43MahoganyGate_MapEvents
-	         $7bd5 = Route43Gate_MapScripts
-	         $7be2 = Route43GateRocketShakedownScene
-	         $7be6 = Route43GateNoopScene
-	         $7be7 = Route43GateCheckIfRocketsCallback
-	         $7bf2 = Route43GateCheckIfRocketsCallback.NoRockets
-	         $7bf7 = Route43GateRocketTakeoverScript
-	         $7c07 = RocketScript_Southbound
-	         $7c2f = RocketScript_TollSouth
-	         $7c3a = RocketScript_YoureBrokeSouth
-	         $7c45 = RocketScript_ShakeDownSouth
-	         $7c55 = RocketScript_Northbound
-	         $7c79 = RocketScript_TollNorth
-	         $7c84 = RocketScript_YoureBrokeNorth
-	         $7c8f = RocketScript_ShakeDownNorth
-	         $7c9f = RocketScript_MakingABundle
-	         $7ca2 = OfficerScript_GuardWithSludgeBomb
-	         $7cb9 = OfficerScript_GuardWithSludgeBomb.GotSludgeBomb
-	         $7cbd = OfficerScript_GuardWithSludgeBomb.NoRoomForSludgeBomb
-	         $7cbf = PlayerStepsIn
-	         $7cc1 = Rocket1Script_BlocksYouSouth
-	         $7cc7 = Rocket1Script_LetsYouPassSouth
-	         $7ccc = Rocket1Script_BlocksYouNorth
-	         $7cd2 = Rocket1Script_LetsYouPassNorth
-	         $7cd8 = Rocket2Script_BlocksYouSouth
-	         $7cde = Rocket2Script_LetsYouPassSouth
-	         $7ce4 = Rocket2Script_BlocksYouNorth
-	         $7cea = Rocket2Script_LetsYouPassNorth
-	         $7cef = RocketText_TollFee
-	         $7d28 = RocketText_ThankYou
-	         $7d39 = RocketText_AllYouGot
-	         $7d7e = RocketText_MakingABundle
-	         $7dd8 = OfficerText_FoundTM
-	         $7e58 = OfficerText_AvoidGrass
-	         $7e86 = Route43Gate_MapEvents
-	EMPTY: $7ec7-$7fff ($0139 bytes)
-	TOTAL EMPTY: $0139 bytes
+	         $6ff1 = HiddenPowerGuyText1
+	         $7084 = HiddenPowerGuyText2
+	         $7119 = HiddenPowerGuyText3
+	         $7142 = SeerScript
+	         $714a = LakeOfRageHiddenPowerHouse_MapEvents
+	         $717e = LakeOfRageMagikarpHouse_MapScripts
+	         $7180 = MagikarpLengthRaterScript
+	         $71a3 = MagikarpLengthRaterScript.ExplainedHistory
+	         $71a9 = MagikarpLengthRaterScript.ClearedRocketHideout
+	         $71b2 = MagikarpLengthRaterScript.AskedForMagikarp
+	         $71d0 = MagikarpLengthRaterScript.GetReward
+	         $71e3 = MagikarpLengthRaterScript.NoRoom
+	         $71e8 = MagikarpLengthRaterScript.TooShort
+	         $71ee = MagikarpLengthRaterScript.NotMagikarp
+	         $71f4 = MagikarpLengthRaterScript.Refused
+	         $71fa = MagikarpHouseBookshelf
+	         $71fd = MagikarpLengthRaterText_LakeOfRageHistory
+	         $731c = MagikarpLengthRaterText_MenInBlack
+	         $735f = MagikarpLengthRaterText_WorldsLargestMagikarp
+	         $740d = MagikarpLengthRaterText_YouHaveAMagikarp
+	         $7446 = MagikarpLengthRaterText_Memento
+	         $7492 = MagikarpLengthRaterText_Bonus
+	         $74d0 = MagikarpLengthRaterText_TooShort
+	         $752b = MagikarpLengthRaterText_NotMagikarp
+	         $7548 = MagikarpLengthRaterText_Refused
+	         $758b = LakeOfRageMagikarpHouse_MapEvents
+	         $75b2 = Route43MahoganyGate_MapScripts
+	         $75b4 = Route43MahoganyGateOfficer
+	         $75c2 = Route43MahoganyGateOfficer.RocketsCleared
+	         $75c8 = Route43MahoganyGateOfficerText
+	         $7631 = Route43MahoganyGateOfficerRocketsClearedText
+	         $7670 = Route43MahoganyGate_MapEvents
+	         $7697 = Route43Gate_MapScripts
+	         $76a4 = Route43GateRocketShakedownScene
+	         $76a8 = Route43GateNoopScene
+	         $76a9 = Route43GateCheckIfRocketsCallback
+	         $76b4 = Route43GateCheckIfRocketsCallback.NoRockets
+	         $76b9 = Route43GateRocketTakeoverScript
+	         $76c9 = RocketScript_Southbound
+	         $76f1 = RocketScript_TollSouth
+	         $76fc = RocketScript_YoureBrokeSouth
+	         $7707 = RocketScript_ShakeDownSouth
+	         $7717 = RocketScript_Northbound
+	         $773b = RocketScript_TollNorth
+	         $7746 = RocketScript_YoureBrokeNorth
+	         $7751 = RocketScript_ShakeDownNorth
+	         $7761 = RocketScript_MakingABundle
+	         $7764 = OfficerScript_GuardWithSludgeBomb
+	         $777b = OfficerScript_GuardWithSludgeBomb.GotSludgeBomb
+	         $777f = OfficerScript_GuardWithSludgeBomb.NoRoomForSludgeBomb
+	         $7781 = PlayerStepsIn
+	         $7783 = Rocket1Script_BlocksYouSouth
+	         $7789 = Rocket1Script_LetsYouPassSouth
+	         $778e = Rocket1Script_BlocksYouNorth
+	         $7794 = Rocket1Script_LetsYouPassNorth
+	         $779a = Rocket2Script_BlocksYouSouth
+	         $77a0 = Rocket2Script_LetsYouPassSouth
+	         $77a6 = Rocket2Script_BlocksYouNorth
+	         $77ac = Rocket2Script_LetsYouPassNorth
+	         $77b1 = RocketText_TollFee
+	         $77ea = RocketText_ThankYou
+	         $77fb = RocketText_AllYouGot
+	         $7840 = RocketText_MakingABundle
+	         $789a = OfficerText_FoundTM
+	         $791a = OfficerText_AvoidGrass
+	         $7948 = Route43Gate_MapEvents
+	EMPTY: $7989-$7fff ($0677 bytes)
+	TOTAL EMPTY: $0677 bytes
 
 ROMX bank #103:
 	SECTION: $4000-$7a87 ($3a88 bytes) ["Map Scripts 20"]
@@ -60615,7 +60615,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1795280 bytes used / 285488 free in 127 banks
+	ROMX: 1795257 bytes used / 285511 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks
