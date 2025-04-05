@@ -10,7 +10,7 @@
 	const ROUTE40_MONICA
 	const ROUTE40_POKEFAN_M
 	const ROUTE40_LASS2
-	const ROUTE40_ROCK4
+	const ROUTE40_OFFICER
 	const ROUTE40_SHINY_KRABBY
 
 Route40_MapScripts:
@@ -147,8 +147,12 @@ Route40Rock:
 	jumpstd SmashRockScript
 
 Route40NOtARock:
+	trainer OFFICER, GERALD, EVENT_BEAT_OFFICER_GERALD, OfficerGeraldSeenText, OfficerGeraldBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
 	opentext
-	writetext NotARockText
+	writetext OfficerGeraldAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -156,6 +160,54 @@ Route40NOtARock:
 Route40HiddenHyperPotion:
 	hiddenitem HYPER_POTION, EVENT_ROUTE_40_HIDDEN_HYPER_POTION
 
+OfficerGeraldSeenText:
+	text "Only authorized"
+	line "individuals are"
+
+	para "allowed beyond"
+	line "this point."
+
+	para "You're under"
+	line "arrest."
+
+	para "..."
+	line "..."
+
+	para "I am authorized to"
+	line "use lethal force."
+
+	para "..."
+	line "..."
+
+	para "The fact you're"
+	line "only a child means"
+	cont "little."
+
+	para "Prepare yourself."
+	done
+
+OfficerGeraldBeatenText:
+	text "I should've been"
+	line "more prepared."
+	done
+
+OfficerGeraldAfterBattleText:
+	text "You're very"
+	line "impressive, but I"
+
+	para "am still not mov-"
+	line "ing from my post."
+
+	para "No one is allowed"
+	line "in the MASS GRAVES"
+
+	para "The KANTO IMPERIAL"
+	line "GOVERNMENT feels"
+
+	para "it would become a"
+	line "meeting ground for"
+	cont "rebels."
+	done
 
 SwimmermSimonSeenText:
 	text "You have to warm"
@@ -291,15 +343,13 @@ Route40PokefanMText:
 	para "BATTLE TOWER used"
 	line "to be."
 
-	para "It makes me sick."
-	line "And now they've"
+	para "The guard they've"
+	line "posted is un-"
+	cont "stopable."
 
-	para "blocked the road"
-	line "with an unsmash-"
-	cont "able rock!"
-
-	para "Bastards. Every"
-	line "last one of them."
+	para "He thrashed my"
+	line "team. I'd steer"
+	cont "clear of him."
 	done
 
 Route40Lass2Text:
@@ -398,12 +448,6 @@ MonicaNotMondayText:
 	cont "Monday. How sad…"
 	done
 
-NotARockText:
-	text "This rock isn't"
-	line "a rock. It can't"
-	cont "be smashed."
-	done
-
 Route40SignText:
 	text "ROUTE 40"
 
@@ -438,5 +482,5 @@ Route40_MapEvents:
 	object_event  8, 10, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MonicaScript, EVENT_ROUTE_40_MONICA_OF_MONDAY
 	object_event  7,  6, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40PokefanMScript, -1
 	object_event 13,  4, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route40Lass2Script, EVENT_SPOKE_WITH_ARCHAEO_LASS1
-	object_event  9,  6, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40NOtARock, -1
+	object_event  9,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, Route40NOtARock, -1
 	object_event  6,  9, SPRITE_KRABBY, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_EMOTE, OBJECTTYPE_SCRIPT, 0, ShinyKrabby, EVENT_SHINY_KRABBY
