@@ -6,7 +6,7 @@
 	db NORMAL, NORMAL ; type
 	db 255 ; catch rate
 	db 57 ; base exp
-	db SLVR_BERRY, GOLD_BERRY ; items
+	db SILVER_LEAF, SLVR_BERRY ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 15 ; step cycles to hatch

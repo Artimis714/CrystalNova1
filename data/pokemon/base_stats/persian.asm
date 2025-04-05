@@ -6,7 +6,7 @@
 	db NORMAL, NORMAL ; type
 	db 90 ; catch rate
 	db 148 ; base exp
-	db AMULET_COIN, AMULET_COIN ; items
+	db GOLD_LEAF, AMULET_COIN ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

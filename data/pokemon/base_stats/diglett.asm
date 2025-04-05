@@ -6,7 +6,7 @@
 	db GROUND, BUG ; type
 	db 255 ; catch rate
 	db 81 ; base exp
-	db NO_ITEM, NUGGET ; items
+	db SILVER_LEAF, NUGGET ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

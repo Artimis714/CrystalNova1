@@ -6,7 +6,7 @@
 	db GROUND, BUG ; type
 	db 50 ; catch rate
 	db 153 ; base exp
-	db NUGGET, BIG_NUGGET ; items
+	db GOLD_LEAF, BIG_NUGGET ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch
