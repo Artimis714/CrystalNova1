@@ -165,4 +165,5 @@ MoveEffectsPointers:
 	dw RockTomb
 	dw BurnHit ; for Fire Blast, purposefully with different EFFECT_* constant
 	dw Endure
+	dw Waterfall
 	assert_table_length NUM_MOVE_EFFECTS

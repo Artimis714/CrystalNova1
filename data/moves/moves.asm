@@ -140,7 +140,7 @@ Moves:
 	move SLUDGE,       EFFECT_POISON_HIT,         55, POISON,       100, 20,  30
 	move BONE_CLUB,    EFFECT_FLINCH_HIT,         70, GROUND,        90, 20,  10
 	move FIRE_BLAST,   EFFECT_FIRE_BLAST,        120, FIRE,          70,  5,  30
-	move WATERFALL,    EFFECT_SPEED_DOWN_HIT,     80, WATER,        100, 15,   0
+	move WATERFALL,    EFFECT_WATERFALL,          75, WATER,         80, 15,  30
 	move CLAMP,        EFFECT_WATER_TRAP_TARGET,  50, WATER,         75, 10,   0
 	move SWIFT,        EFFECT_ALWAYS_HIT,         70, PSYCHIC_TYPE, 100, 20,   0
 	move FLASH_CANNON, EFFECT_ACCURACY_DOWN_HIT,  95, STEEL,         95, 15,  10
@@ -173,7 +173,7 @@ Moves:
 	move ROCK_SLIDE,   EFFECT_FLINCH_HIT,         95, ROCK,          95, 15,  30
 	move HYPER_FANG,   EFFECT_FLINCH_HIT,         80, NORMAL,        90, 15,  10
 	move SHARPEN,      EFFECT_ATTACK_UP,           0, STEEL,        100, 30,   0
-	move FROSTBITE,    EFFECT_BLIZZARD,           10, ICE,       	 75, 15, 100
+	move FROSTBITE,    EFFECT_BLIZZARD,           10, ICE,       	 65, 15, 100
 	move TRI_ATTACK,   EFFECT_TRI_ATTACK,         80, PSYCHIC_TYPE, 100, 10,  20
 	move SUPER_FANG,   EFFECT_SUPER_FANG,          1, NORMAL,        90, 10,   0
 	move SLASH,        EFFECT_NORMAL_HIT,         70, NORMAL,       100, 20,   0

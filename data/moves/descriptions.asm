@@ -770,8 +770,8 @@ FireBlastDescription:
 	line "may cause a burn.@"
 
 WaterfallDescription:
-	db   "An aquatic charge"
-	line "attack.@"
+	db   "A cascade that"
+	line "may flinch foe.@"
 
 ClampDescription:
 	db   "Traps the foe for"
