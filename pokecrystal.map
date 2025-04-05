@@ -43854,7 +43854,7 @@ ROMX bank #120:
 	         $4400 = TilesetKabutoWordRoomMeta
 	         $4800 = TilesetOmanyteWordRoomMeta
 	         $4c00 = TilesetAerodactylWordRoomMeta
-	SECTION: $5000-$7993 ($2994 bytes) ["Enemy Trainer Parties 1"]
+	SECTION: $5000-$7996 ($2997 bytes) ["Enemy Trainer Parties 1"]
 	         $5000 = FalknerGroup
 	         $504c = WhitneyGroup
 	         $50ad = BugsyGroup
@@ -43917,13 +43917,13 @@ ROMX bank #120:
 	         $767d = KimonoGirlGroup
 	         $76e3 = TwinsGroup
 	         $77a3 = PokefanFGroup
-	         $77f8 = RedGroup
-	         $7828 = BlueGroup
-	         $788a = OfficerGroup
-	         $792d = GruntFGroup
-	         $7979 = MysticalmanGroup
-	EMPTY: $7994-$7fff ($066c bytes)
-	TOTAL EMPTY: $066c bytes
+	         $77fb = RedGroup
+	         $782b = BlueGroup
+	         $788d = OfficerGroup
+	         $7930 = GruntFGroup
+	         $797c = MysticalmanGroup
+	EMPTY: $7997-$7fff ($0669 bytes)
+	TOTAL EMPTY: $0669 bytes
 
 ROMX bank #121:
 	SECTION: $4000-$7e7f ($3e80 bytes) ["Mon Icons 2"]
@@ -60624,7 +60624,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16104 bytes used / 280 free
-	ROMX: 1796558 bytes used / 284210 free in 127 banks
+	ROMX: 1796561 bytes used / 284207 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks

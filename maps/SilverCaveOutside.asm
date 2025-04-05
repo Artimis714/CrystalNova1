@@ -132,4 +132,4 @@ SilverCaveOutside_MapEvents:
 	bg_event  9, 25, BGEVENT_ITEM, SilverCaveOutsideHiddenFullRestore
 
 	def_object_events
-	object_event 23, 22, SPRITE_OAK, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_TRAINER, 2, SilverOak, EVENT_OAK_IN_MT_SILVER
+	object_event 23, 22, SPRITE_OAK, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, SilverOak, EVENT_OAK_IN_MT_SILVER

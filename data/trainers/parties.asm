@@ -3716,7 +3716,8 @@ PokefanFGroup:
 
 	; POKEFANF (6)
 	db "JAIME@", TRAINERTYPE_ITEM
-	db 16, MEOWTH,     GOLD_BERRY
+	db 40, MEOWTH,     GOLD_BERRY
+	db 36, PONYTA,     GOLD_BERRY 
 	db -1 ; end
 
 RedGroup:
