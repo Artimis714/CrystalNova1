@@ -78,7 +78,7 @@ Moves:
 	move AURORA_BEAM,  EFFECT_FREEZE_HIT,         65, ICE,          100, 20,  10
 	move HYPER_BEAM,   EFFECT_HYPER_BEAM,        150, DRAGON,        90,  5,   0
 	move PECK,         EFFECT_DEFENSE_DOWN_HIT,   35, FLYING,       100, 35,  10
-	move DRILL_PECK,   EFFECT_DEFENSE_DOWN_HIT,   80, FLYING,       100, 20,   0
+	move DRILL_PECK,   EFFECT_DEFENSE_DOWN_HIT,   80, FLYING,       100, 20,  40
 	move SUBMISSION,   EFFECT_RECOIL_HIT,         80, FIGHTING,      80, 25,   0
 	move LOW_KICK,     EFFECT_FLINCH_HIT,         50, FIGHTING,      90, 20,  30
 	move COUNTER,      EFFECT_COUNTER,             1, FIGHTING,     100, 20,   0

@@ -373,7 +373,14 @@ LookAtElmPokeBallScript:
 ElmsLabHealingMachine:
 	opentext
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .CantHeal
+	checkitem KANTO_PAPERS
 	iftrue .CanHeal
+	checkitem HM_FLY
+	iftrue .CantHeal
+	sjump .CanHeal
+
+.CantHeal:
 	writetext ElmsLabHealingMachineText1
 	waitbutton
 	closetext
@@ -1339,8 +1346,8 @@ ElmPokeBallText:
 	done
 
 ElmsLabHealingMachineText1:
-	text "I wonder what this"
-	line "does?"
+	text "This machine is"
+	line "out of order."
 	done
 
 ElmsLabHealingMachineText2:
