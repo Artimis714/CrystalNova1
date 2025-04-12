@@ -130,9 +130,10 @@ MartGoldenrod2F1:
 	db -1 ; end
 
 MartGoldenrod2F2:
-	db 8 ; # items
+	db 9 ; # items
 	db POKE_BALL
 	db GREAT_BALL
+	db ULTRA_BALL
 	db ESCAPE_ROPE
 	db REPEL
 	db REVIVE
@@ -304,15 +305,16 @@ MartMahogany1:
 	db -1 ; end
 
 MartMahogany2:
-	db 4 ; # items
+	db 5 ; # items
 	db HEAVY_BALL
 	db MOON_BALL
 	db LOVE_BALL
 	db LURE_BALL
+	db ULTRA_BALL
 	db -1 ; end
 
 MartBlackthorn:
-	db 14 ; # items
+	db 13 ; # items
 	db GREAT_BALL
 	db ULTRA_BALL
 	db HYPER_POTION
@@ -326,7 +328,6 @@ MartBlackthorn:
 	db TM_SUBSTITUTE
 	db TM_SWAGGER
 	db TM_THIEF
-	db TM_FROSTBITE
 	db -1 ; end
 
 MartViridian:
@@ -433,7 +434,7 @@ MartCeladon2F2:
 	db -1 ; end
 
 MartCeladon3F:
-	db 11 ; # items
+	db 12 ; # items
 	db TM_HIDDEN_POWER
 	db TM_SUNNY_DAY
 	db TM_HAIL
@@ -445,14 +446,17 @@ MartCeladon3F:
 	db TM_RETURN
 	db TM_SOLARBEAM
 	db TM_HYPER_BEAM
+	db TM_FROSTBITE
 	db -1 ; end
 
 MartCeladon4F:
-	db 4 ; # items
+	db 6 ; # items
 	db FIRE_STONE
 	db THUNDERSTONE
 	db WATER_STONE
 	db LEAF_STONE
+	db MOON_STONE
+	db SUN_STONE
 	db -1 ; end
 
 MartCeladon5F1:
@@ -465,14 +469,16 @@ MartCeladon5F1:
 	db -1 ; end
 
 MartCeladon5F2:
-	db 7 ; # items
-	db X_ACCURACY
-	db GUARD_SPEC
-	db DIRE_HIT
+	db 9 ; # items
 	db X_ATTACK
 	db X_DEFEND
 	db X_SPEED
 	db X_SPECIAL
+	db X_ACCURACY
+	db X_EVADE
+	db X_SP_DEF
+	db GUARD_SPEC
+	db DIRE_HIT
 	db -1 ; end
 
 MartFuchsia:
@@ -563,6 +569,7 @@ MartFuchsiaFood:
 	db MINT_BERRY
 	db MYSTERYBERRY
 	db SLVR_BERRY
+	db -1 ; end
 
 MartOlivineFood:
 	db 10 ; # items
@@ -576,6 +583,7 @@ MartOlivineFood:
 	db BITTER_BERRY
 	db MINT_BERRY
 	db MYSTERYBERRY
+	db -1 ; end
 
 DefaultMart:
 	db 2 ; # items

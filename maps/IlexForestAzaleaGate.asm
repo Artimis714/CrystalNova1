@@ -54,8 +54,8 @@ IMissMyGrandSonText:
 	text "..."
 
 	para "Yes, I used to be"
-	line "married to that old"
-	cont "bastard. Why?"
+	line "married to that"
+	cont "old bastard. Why?"
 
 	para "..."
 	line "..."
@@ -73,15 +73,15 @@ IMissMyGrandSonText:
 	para "..."
 
 	para "Yes, well I'm sure"
-	line "you needed to knock"
+	line "you needed to"
 	
-	para "some sense into"
-	line "that boy."
+	para "knock some sense"
+	line "into that boy."
 
 	para "The damned fool"
 	line "left for battle"
 
-	para "But he didn't bring"
+	para "But he didn't take"
 	line "his boxing gloves!"
 
 	para "I miss TYLER every"
@@ -92,26 +92,28 @@ IMissMyGrandSonText:
 	line "to you, I'll give"
 
 	para "you his old boxing"
-	line "gloves. I can't bare"
+	line "gloves. I can't"
 
-	para "to look at them any"
-	line "more."
+	para "bare to look at"
+	line "them any more."
 	done
 
 IHopeTheyVisitText:
 	text "I haven't seen my"
-	line "grandson since bef-"
-	cont "ore the end of the"
-	cont "war."
+	line "grandson since"
 
-	para "I miss him, and I'm"
-	line "sure he's growing."
+	para "before the end of"
+	line "the war."
 
-	para "Hell I even miss"
+	para "I miss him, and"
+	line "I'm sure he's"
+	cont "growing."
+
+	para "Hell, I even miss"
 	line "that old codger."
 
-	para "Next time you're in"
-	line "ECRUTEAK, please"
+	para "Next time you're"
+	line "in ECRUTEAK please"
 
 	para "tell them I would"
 	line "like to see my"
@@ -120,12 +122,14 @@ IHopeTheyVisitText:
 	line "they should come"
 	cont "down for a visit."
 
-	para "the War is over and"
-	line "we need to honor"
-	cont "the family we have."
+	para "the War is over"
+	line "and we need to"
 
-	para "Thank you again for"
-	line "what you've done."
+	para "honor the family"
+	line "that we have."
+
+	para "Thank you again"
+	line "for your help."
 
 	para "I'm just going to"
 	line "rest here a while"
@@ -142,14 +146,16 @@ IHopeTheyVisitText:
 
 NoRoomForPunchText:
 	text "Well dearie, it"
-	line "looks like your bag"
+	line "looks like your"
 
-	para "is quite heavy."
-	line "Come back if you"
+	para "bag is quite"
+	line "heavy."
 
-	para "decide you want"
-	line "TYLER's lucky"
-	cont "gloves."
+	para "Come back if you"
+	line "decide you want"
+
+	para "TYLER's lucky"
+	line "gloves."
 	done
 
 IlexForestAzaleaGateGrannyText:

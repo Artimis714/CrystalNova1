@@ -88,20 +88,20 @@ CanYouSpeakWithMyExWife:
 	line "you well on your"
 	cont "journey."
 
-	para "If in your travels,"
-	line "you meet my ex wife"
+	para "If in your travels"
+	line "you meet my ex,"
 
 	para "could you please"
 	line "tell her what you"
 
 	para "told me about our"
-	line "son. She would want"
+	line "son. She would"
 	
-	para "to know his shade"
-	line "is at rest."
+	para "want to know his"
+	line "shade is at rest."
 
-	para "She still lives in"
-	line "AZALEA, and she"
+	para "She still lives"
+	line "in AZALEA, and she"
 
 	para "likes to visit the"
 	line "FOREST PROTECTOR's"
@@ -109,8 +109,8 @@ CanYouSpeakWithMyExWife:
 	done
 
 OneoftheseDaysText:
-	text "So you've met my ex"
-	line "wife?"
+	text "So you've met my"
+	line "ex-wife?"
 
 	para "..."
 	line "..."
@@ -121,21 +121,20 @@ OneoftheseDaysText:
 	para "I guess things do"
 	line "change."
 
-	para "Maybe the boy and I"
-	line "will have to take"
+	para "Maybe the boy and"
+	line "I will take a trip"
 
-	para "a trip down to"
-	line "AZALEA one of these"
-	cont "days!"
+	para "down to AZALEA one"
+	line "of these days!"
 	done
 
 NoRoomForLuckText:
-	text "Hmm, you don't have"
-	line "room for luck just"
-	cont "now."
+	text "Hmm, you don't"
+	line "have room for luck"
+	cont "just now."
 
-	para "Come back when you"
-	line "do!"
+	para "Come back when"
+	line "you do!"
 	done
 
 GoingonAnAdventureText:
@@ -144,12 +143,12 @@ GoingonAnAdventureText:
 	cont "ture!"
 
 	para "I haven't seen"
-	line "Granny Ilex since I"
-	cont "was 4!"
+	line "Granny Ilex since"
+	cont "I was 4!"
 
 	para "I'm so excited!"
-	line "I hope we visit her"
-	cont "soon!"
+	line "I hope we visit"
+	cont "her soon!"
 	done
 
 MySonWasAHealertext:
@@ -230,31 +229,35 @@ MySonWasAHealertext:
 
 DaddyLovedMeText:
 	text "You met my daddy!?"
-	line "That's so wonderful!"
+	line "That's wonderful!"
 
 	para "Gramps always said"
-	line "Daddy was a healer,"
+	line "Daddy was a healer"
 	cont "not a fighter."
 
 	para "When I grow up, I"
-	line "want to help people"
-	cont "just like him!"
+	line "want to help"
+	cont "people like him!"
 	done
 
 EcruteakLugiaSpeechHouseGrampsText:
-	text "I wasn't much older"
-	line "than you are now,"
-	cont "when the war began."
+	text "I wasn't much"
+	line "older than you are"
+	
+	para "now, when the war"
+	line "began."
 
 	para "They burned the"
 	line "BRASS TOWER in the"
-	cont "first days of the"
-	cont "war."
+
+	para "first days of the"
+	line "war."
 
 	para "They destroyed our"
 	line "homes. All to get"
-	cont "their hands on a"
-	cont "rare #MON."
+
+	para "their hands on a"
+	line "rare #MON."
 
 	para "But they failed."
 	line "I can remember the"
