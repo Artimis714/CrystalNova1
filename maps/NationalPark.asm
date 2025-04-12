@@ -22,6 +22,56 @@ NationalPark_MapScripts:
 ShadyMartScript:
 	faceplayer
 	opentext
+	checkevent EVENT_GAVE_HOOT_HOOT
+	iftrue .OpenForBusiness
+	checkevent EVENT_GOT_HOOT_HOOT
+	iftrue .TryGiveHootHoot
+	writetext BeatItKidText
+	waitbutton
+	closetext
+	end
+
+.TryGiveHootHoot:
+	writetext YouGotSomethinForMe
+	promptbutton
+	checkpokemail RecdHootHootMailText
+	ifequal POKEMAIL_WRONG_MAIL, .WrongMail
+	ifequal POKEMAIL_REFUSED, .Refused
+	ifequal POKEMAIL_NO_MAIL, .NoMail
+	ifequal POKEMAIL_LAST_MON, .LastMon
+	; POKEMAIL_CORRECT
+	writetext HandOverHootHoot
+	promptbutton
+	writetext ReadingHootHootMail
+	promptbutton
+	setevent EVENT_GAVE_HOOT_HOOT
+	sjump .OpenForBusiness
+
+.WrongMail:
+	writetext NotMyMailText
+	waitbutton
+	closetext
+	end
+
+.Refused:
+	writetext YouStealinFromMeText
+	waitbutton
+	closetext
+	end
+
+.NoMail:
+	writetext WhatKindaMoronDoYa
+	waitbutton
+	closetext
+	end
+
+.LastMon:
+	writetext AllDefenselessLike
+	waitbutton
+	closetext
+	end
+
+.OpenForBusiness:
 	checkevent EVENT_CLEARED_RADIO_TOWER
 	iftrue .Mart2
 	pokemart MARTTYPE_SHADY, MART_SHADY_NATL_PARK
@@ -33,6 +83,9 @@ ShadyMartScript:
 	closetext
 	end
 
+RecdHootHootMailText:
+	db   "PROJECT GENESIS"
+	next "was all SILPH!@"
 
 NationalParkLassScript:
 	jumptextfaceplayer NationalParkLassText
@@ -334,6 +387,94 @@ NationalParkPersian:
 
 NationalParkPersianText:
 	text "PERSIAN: Fufushaa!"
+	done
+
+BeatItKidText:
+	text "I don't trade with"
+	line "brats."
+	cont "Beat it kid."
+	done
+
+YouGotSomethinForMe:
+	text "..."
+	line "..."
+
+	para "You know ROXXY?"
+	line "and she gave you a"
+	cont "#MON."
+
+	para "Okay, then hand it"
+	line "over."
+	done
+
+HandOverHootHoot:
+	text "<PLAYER> handed"
+	line "over the #MON"
+	cont "holding the MAIL."
+	done
+
+ReadingHootHootMail:
+	text "Hmm..."
+
+	para "...PROJECT GENESIS"
+	line "was all SILPH!..."
+
+	para "I fucking knew it."
+	line "those bastards are"
+
+	para "responsible for"
+	line "that... Why am I"
+	cont "telling you this?"
+
+	para "Whatever, you've"
+	line "proven yourself"
+	cont "legit."
+
+	para "I sell some... uh"
+	line "discounted goods."
+
+	para "I'll trade with"
+	line "you."
+	done
+
+NotMyMailText:
+	text "That's not my MAIL"
+	line "Stop wasting my"
+	cont "time."
+	done
+
+YouStealinFromMeText:
+	text "Are you stealing"
+	line "from me?"
+
+	para "No honor among"
+	line "thieves."
+	done
+
+WhatKindaMoronDoYa:
+	text "This #MON"
+	line "doesn't have MAIL."
+
+	para "What kind of moron"
+	line "do ya take me for?"
+	done
+
+AllDefenselessLike:
+	text "That's your last"
+	line "#MON."
+
+	para "I can't take this"
+	line "from you. I'd be"
+
+	para "leaving you all"
+	line "defenseless-like."
+
+	para "..."
+	line "..."
+
+	para "Just because I'm a"
+	line "criminal, I'm not"
+	cont "a monster!"
 	done
 
 NationalParkLassText:

@@ -570,6 +570,8 @@
 	const EVENT_SHINY_KRABBY
 	const EVENT_SHINY_ONIX
 	const EVENT_GOT_POCKET_PC
+	const EVENT_GOT_HOOT_HOOT
+	const EVENT_GAVE_HOOT_HOOT
 ; Unused: next 158 events
 
 	const_next 1000

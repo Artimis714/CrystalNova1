@@ -1531,14 +1531,12 @@ _MomLostGearBookletText::
 
 
 ShadyShop_IntroText::
-	text "Hello, kiddo!"
+	text "I just got a new"
+	line "uh... shipment."
 
-	para "Wanna buy any of"
-	line "my goods?"
-
-	para "They fell off the"
+	para "It fell off the"
 	line "back of a truck!"
-	cont "Hehehe…"
+	cont "Hehehe..."
 	done
 
 ShadyShop_ComeAgainText::

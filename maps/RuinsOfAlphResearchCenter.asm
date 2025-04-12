@@ -2,6 +2,7 @@
 	const RUINSOFALPHRESEARCHCENTER_SCIENTIST1
 	const RUINSOFALPHRESEARCHCENTER_SCIENTIST2
 	const RUINSOFALPHRESEARCHCENTER_SCIENTIST3
+	const RUINSOFALPHRESEARCHCENTER_FOSSIL
 
 RuinsOfAlphResearchCenter_MapScripts:
 	def_scene_scripts
@@ -161,20 +162,8 @@ RuinsOfAlphResearchCenterComputer:
 
 RuinsOfAlphResearchCenterPrinter:
 	opentext
-	checkevent EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
-	iftrue .SkipChecking
-	readvar VAR_UNOWNCOUNT
-	ifequal NUM_UNOWN, .PrinterAvailable
-.SkipChecking:
 	writetext RuinsOfAlphResearchCenterPrinterText_DoesntWork
 	waitbutton
-	closetext
-	end
-
-.PrinterAvailable:
-	writetext RuinsOfAlphResearchCenterUnownPrinterText
-	waitbutton
-	special UnownPrinter
 	closetext
 	end
 
@@ -323,6 +312,7 @@ FossilScientistScript:
 	writetext FossilScientistTimeText
 	waitbutton
 	closetext
+	turnobject RUINSOFALPHRESEARCHCENTER_FOSSIL, RIGHT
 	end 
 
 .GiveAerodactyl:
@@ -390,18 +380,21 @@ FossilScientistScript:
 	writetext FossilScientistPartyFullText
 	waitbutton
 	closetext
+	turnobject RUINSOFALPHRESEARCHCENTER_FOSSIL, RIGHT
 	end
 
 .MaybeAnotherTime:
 	writetext Comebackifyouwanttotradetext
 	waitbutton
 	closetext
+	turnobject RUINSOFALPHRESEARCHCENTER_FOSSIL, RIGHT
 	end
 
 .NoAncientPottery:
 	writetext Sorrybutyoudonttext
 	waitbutton
 	closetext
+	turnobject RUINSOFALPHRESEARCHCENTER_FOSSIL, RIGHT
 	end
 
 .MoveMenuHeader:
@@ -867,11 +860,6 @@ RuinsOfAlphResearchCenterPrinterText_DoesntWork:
 	cont "witchcraft."
 	done
 
-RuinsOfAlphResearchCenterUnownPrinterText:
-	text "UNOWN may be"
-	line "printed out."
-	done
-
 RuinsOfAlphResearchCenterProfSilktreePhotoText:
 	text "It's a photo of"
 	line "the RESEARCH"
@@ -925,4 +913,4 @@ RuinsOfAlphResearchCenter_MapEvents:
 	object_event  4,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist1Script, -1
 	object_event  5,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_WANDER, 2, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist2Script, -1
 	object_event  2,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist3Script, EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
-	object_event  3,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FossilScientistScript, -1
+	object_event  6,  1, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FossilScientistScript, -1

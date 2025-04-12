@@ -12,7 +12,7 @@ Route2GateScientistScript:
 	checkevent EVENT_GOT_POCKET_PC
 	iftrue .ProfOakWillbeHappy
 	readvar VAR_DEXCAUGHT
-	ifgreater 100, .Aide100Caught
+	ifgreater 245, .Aide100Caught
 	writetext GuideIntroText
 	waitbutton
 	writetext YoureAFailuretext
@@ -73,7 +73,7 @@ YoureAFailuretext:
 	line "is a disgrace that"
 
 	para "you haven't caught"
-	line "at least 100 #-"
+	line "at least 245 #-"
 	cont "MON!"
 
 	para "Come back to see"

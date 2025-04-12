@@ -491,10 +491,11 @@ VulpixEvosAttacks:
 
 NinetalesEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, BONE_RUSH
 	db 1, PERISH_SONG
 	db 1, SAFEGUARD
 	db 1, CONFUSE_RAY
-	db 1, WILL_O_WISP
+	db 2, WILL_O_WISP
 	db 30, HEX
 	db 35, FLAMETHROWER
 	db 0 ; no more level-up moves
@@ -3206,6 +3207,7 @@ SneaselEvosAttacks:
 	db 1, PURSUIT
 	db 1, LEER
 	db 1, POWDER_SNOW
+	db 14, FALSE_SWIPE
 	db 17, SCREECH
 	db 20, THIEF
 	db 26, ICY_WIND
