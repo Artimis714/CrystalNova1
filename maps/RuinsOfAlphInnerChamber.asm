@@ -233,8 +233,8 @@ ArchaeoLassText3:
 	line "..."
 
 	para "MEW worship?"
-	line "I thought MEW was"
-	cont "a myth."
+	line "I thought MEW"
+	cont "was a myth."
 
 	para "..."
 	line "..."

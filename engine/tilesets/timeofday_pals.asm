@@ -190,6 +190,8 @@ ReplaceTimeOfDayPals:
 	ld a, [wMapTimeOfDay]
 	cp PALETTE_DARK
 	jr z, .NeedsFlash
+	cp PALETTE_CAVERN
+	jr z, .NeedsFlash
 	maskbits NUM_MAP_PALETTES
 	add l
 	ld l, a
@@ -221,7 +223,7 @@ ReplaceTimeOfDayPals:
 	dc NITE_F,     NITE_F,     NITE_F,     NITE_F     ; PALETTE_NITE
 	dc MORN_F,     MORN_F,     MORN_F,     MORN_F     ; PALETTE_MORN
 	dc DARKNESS_F, DARKNESS_F, DARKNESS_F, DARKNESS_F ; PALETTE_DARK
-	dc DARKNESS_F, NITE_F,     DAY_F,      MORN_F
+	dc DARKNESS_F, DARKNESS_F, NITE_F,     NITE_F     ; PALETTE_CAVERN
 	dc DARKNESS_F, NITE_F,     DAY_F,      MORN_F
 	dc DARKNESS_F, NITE_F,     DAY_F,      MORN_F
 

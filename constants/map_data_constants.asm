@@ -36,6 +36,7 @@ DEF NUM_ENVIRONMENTS EQU const_value - 1
 	const PALETTE_NITE
 	const PALETTE_MORN
 	const PALETTE_DARK
+	const PALETTE_CAVERN
 DEF NUM_MAP_PALETTES EQU const_value
 
 ; FishGroups indexes (see data/wild/fish.asm)
