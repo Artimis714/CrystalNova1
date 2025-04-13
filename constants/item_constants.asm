@@ -238,7 +238,7 @@ DEF TM01 EQU const_value
 	add_tm RAIN_DANCE   ; d1
 	add_tm GIGA_DRAIN   ; d2
 	add_tm WILL_O_WISP  ; d3
-	add_tm FRUSTRATION  ; d4
+	add_tm WEATHER_BALL ; d4
 	add_tm SOLARBEAM    ; d5
 	add_tm FLASH_CANNON ; d6
 	add_tm DRAGONBREATH ; d7

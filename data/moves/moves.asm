@@ -68,9 +68,9 @@ Moves:
 	move EMBER,        EFFECT_BURN_HIT,           40, FIRE,         100, 25,  10
 	move FLAMETHROWER, EFFECT_BURN_HIT,           95, FIRE,          95, 15,  10
 	move MIST,         EFFECT_MIST,                0, ICE,          100, 30,   0
-	move WATER_GUN,    EFFECT_SPEED_DOWN_HIT,     40, WATER,        100, 25,  10
+	move WATER_GUN,    EFFECT_SPEED_DOWN_HIT,     40, WATER,        100, 25,  30
 	move HYDRO_PUMP,   EFFECT_SPEED_DOWN_HIT,    120, WATER,         70,  5, 100
-	move SURF,         EFFECT_SPEED_DOWN_HIT,     95, WATER,         95, 15, 100
+	move SURF,         EFFECT_SPEED_DOWN_HIT,     75, WATER,        100, 15, 100
 	move ICE_BEAM,     EFFECT_FREEZE_HIT,         95, ICE,           95, 15,  10
 	move BLIZZARD,     EFFECT_BLIZZARD,          120, ICE,           70,  5,  30
 	move PSYBEAM,      EFFECT_CONFUSE_HIT,        65, PSYCHIC_TYPE, 100, 20,  10
@@ -140,7 +140,7 @@ Moves:
 	move SLUDGE,       EFFECT_POISON_HIT,         55, POISON,       100, 20,  30
 	move BONE_CLUB,    EFFECT_FLINCH_HIT,         70, GROUND,        90, 20,  10
 	move FIRE_BLAST,   EFFECT_FIRE_BLAST,        120, FIRE,          70,  5,  30
-	move WATERFALL,    EFFECT_WATERFALL,          75, WATER,         80, 15,  30
+	move WATERFALL,    EFFECT_WATERFALL,          95, WATER,         95, 15,  10
 	move CLAMP,        EFFECT_WATER_TRAP_TARGET,  50, WATER,         75, 10,   0
 	move SWIFT,        EFFECT_ALWAYS_HIT,         70, PSYCHIC_TYPE, 100, 20,   0
 	move FLASH_CANNON, EFFECT_ACCURACY_DOWN_HIT,  95, STEEL,         95, 15,  10
@@ -231,7 +231,7 @@ Moves:
 	move HEAL_BELL,    EFFECT_HEAL_BELL,           0, PSYCHIC_TYPE, 100,  5,   0
 	move RETURN,       EFFECT_RETURN,              1, NORMAL,       100, 20,   0
 	move PRESENT,      EFFECT_PRESENT,             1, NORMAL,        90, 15,   0
-	move FRUSTRATION,  EFFECT_FRUSTRATION,         1, DARK,         100, 20,   0
+	move WEATHER_BALL, EFFECT_WEATHER_BALL,       80, NORMAL,       100, 10,  40
 	move SAFEGUARD,    EFFECT_SAFEGUARD,           0, PSYCHIC_TYPE, 100, 25,   0
 	move PAIN_SPLIT,   EFFECT_PAIN_SPLIT,          0, GHOST,        100, 20,   0
 	move SACRED_FIRE,  EFFECT_SACRED_FIRE,       142, FIRE,         100, 15, 100

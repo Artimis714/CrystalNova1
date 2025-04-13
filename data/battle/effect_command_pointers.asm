@@ -102,7 +102,6 @@ BattleCommandPointers:
 	dw BattleCommand_HappinessPower
 	dw BattleCommand_Present
 	dw BattleCommand_DamageCalc
-	dw BattleCommand_FrustrationPower
 	dw BattleCommand_Safeguard
 	dw BattleCommand_CheckSafeguard
 	dw BattleCommand_GetMagnitude
@@ -183,4 +182,6 @@ BattleCommandPointers:
 	dw BattleCommand_StartSmog
 	dw BattleCommand_HailFreeze
 	dw BattleCommand_SmogPoison
+	dw BattleCommand_WeatherBall
+	dw BattleCommand_WeatherBallStatus
 	assert_table_length NUM_EFFECT_COMMANDS

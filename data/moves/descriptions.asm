@@ -218,7 +218,7 @@ MoveDescriptions::
 	dw HealBellDescription
 	dw ReturnDescription
 	dw PresentDescription
-	dw FrustrationDescription
+	dw WeatherBallDescription
 	dw SafeguardDescription
 	dw PainSplitDescription
 	dw SacredFireDescription
@@ -1133,9 +1133,9 @@ PresentDescription:
 	db   "A bomb that may"
 	line "restore HP.@"
 
-FrustrationDescription:
-	db   "An attack based on"
-	line "lack of loyalty.@"
+WeatherBallDescription:
+	db   "Damage type varies"
+	line "by WEATHER.@"
 
 SafeguardDescription:
 	db   "Prevents all"

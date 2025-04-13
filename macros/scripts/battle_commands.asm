@@ -102,7 +102,6 @@ ENDM
 	command happinesspower          ; 60
 	command present                 ; 61
 	command damagecalc              ; 62
-	command frustrationpower        ; 63
 	command safeguard               ; 64
 	command checksafeguard          ; 65
 	command getmagnitude            ; 66
@@ -183,6 +182,8 @@ ENDM
 	command startsmog               ; b2
 	command hailfreeze              ; b3
 	command smogpoison              ; b4
+	command weatherball             ; b5
+	command weatherballstatus	; b6
 DEF NUM_EFFECT_COMMANDS EQU const_value - 1
 
 	const_def -1, -1

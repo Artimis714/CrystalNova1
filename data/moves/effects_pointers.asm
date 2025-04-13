@@ -123,7 +123,7 @@ MoveEffectsPointers:
 	dw Attract
 	dw Return
 	dw Present
-	dw Frustration
+	dw WeatherBall
 	dw Safeguard
 	dw SacredFire
 	dw Magnitude

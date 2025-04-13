@@ -1704,14 +1704,14 @@ Present:
 	kingsrock
 	endmove
 
-Frustration:
+WeatherBall:
 	checkobedience
 	usedmovetext
 	doturn
 	critical
 	damagestats
-	frustrationpower
 	damagecalc
+	weatherball
 	stab
 	damagevariation
 	checkhit
@@ -1723,6 +1723,7 @@ Frustration:
 	checkfaint
 	buildopponentrage
 	kingsrock
+	weatherballstatus
 	endmove
 
 Safeguard:

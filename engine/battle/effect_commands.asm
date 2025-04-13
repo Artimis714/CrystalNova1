@@ -4133,9 +4133,6 @@ BattleCommand_FreezeTarget:
 	ld a, ICE ; Don't freeze an Ice-type
 	call CheckIfTargetIsGivenType
 	ret z
-	ld a, FIRE ; Don't freeze a Fire-type
-	call CheckIfTargetIsGivenType
-	ret z
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_FREEZE
@@ -6415,7 +6412,7 @@ INCLUDE "engine/battle/move_effects/return.asm"
 
 INCLUDE "engine/battle/move_effects/present.asm"
 
-INCLUDE "engine/battle/move_effects/frustration.asm"
+INCLUDE "engine/battle/move_effects/weather_ball.asm"
 
 INCLUDE "engine/battle/move_effects/safeguard.asm"
 
@@ -6939,7 +6936,6 @@ BattleCommand_HailFreeze:
 	call BattleCommand_FreezeTarget
 	jp EndTurn
 
-
 BattleCommand_SmogPoison:
 ; First, check if Smog is active.
 	ld a, [wBattleWeather]
@@ -6952,4 +6948,28 @@ BattleCommand_SmogPoison:
 	ret nc
 
 	call BattleCommand_PoisonTarget
+	jp EndTurn
+
+BattleCommand_WeatherBallStatus:
+	; Roll chance once
+	call BattleRandom
+	cp 40 percent
+	ret nc  ; Exit if it fails
+
+	; Now check weather and apply corresponding effect
+	ld a, [wBattleWeather]
+	cp WEATHER_SUN
+	call z, BattleCommand_BurnTarget
+	cp WEATHER_RAIN
+	call z, BattleCommand_ConfuseTarget
+	cp WEATHER_SANDSTORM
+	call z, BattleCommand_FlinchTarget
+	cp WEATHER_HAIL
+	call z, BattleCommand_FreezeTarget
+	cp WEATHER_SMOG
+	call z, BattleCommand_PoisonTarget
+
+	; End the turn only if a status was applied
+	; (Optional: if your status commands never fail silently,
+	;  then you can just jump here directly.)
 	jp EndTurn

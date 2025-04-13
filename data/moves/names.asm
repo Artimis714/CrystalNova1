@@ -217,7 +217,7 @@ MoveNames::
 	li "HEAL BELL"
 	li "RETURN"
 	li "PRESENT"
-	li "FRUSTRATION"
+	li "WEATHER BALL"
 	li "SAFEGUARD"
 	li "PAIN SPLIT"
 	li "SACRED FIRE"

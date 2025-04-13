@@ -204,7 +204,7 @@ MartGoldenrod5F4:
 	db TM_ATTRACT
 	db TM_BATON_PASS
 	db TM_SWIFT
-	db TM_SCALD
+	db TM_WEATHER_BALL
 	db -1 ; end
 
 MartShadyNationalPark:
@@ -434,7 +434,7 @@ MartCeladon2F2:
 	db -1 ; end
 
 MartCeladon3F:
-	db 12 ; # items
+	db 11 ; # items
 	db TM_HIDDEN_POWER
 	db TM_SUNNY_DAY
 	db TM_HAIL
@@ -442,7 +442,6 @@ MartCeladon3F:
 	db TM_SANDSTORM
 	db TM_SMOG
 	db TM_DOUBLE_TEAM
-	db TM_FRUSTRATION
 	db TM_RETURN
 	db TM_SOLARBEAM
 	db TM_HYPER_BEAM
