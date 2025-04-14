@@ -231,7 +231,7 @@ Moves:
 	move HEAL_BELL,    EFFECT_HEAL_BELL,           0, PSYCHIC_TYPE, 100,  5,   0
 	move RETURN,       EFFECT_RETURN,              1, NORMAL,       100, 20,   0
 	move PRESENT,      EFFECT_PRESENT,             1, NORMAL,        90, 15,   0
-	move WEATHER_BALL, EFFECT_WEATHER_BALL,       80, NORMAL,       100, 10,  40
+	move WEATHER_BALL, EFFECT_WEATHER_BALL,       65, NORMAL,       100, 10,  25
 	move SAFEGUARD,    EFFECT_SAFEGUARD,           0, PSYCHIC_TYPE, 100, 25,   0
 	move PAIN_SPLIT,   EFFECT_PAIN_SPLIT,          0, GHOST,        100, 20,   0
 	move SACRED_FIRE,  EFFECT_SACRED_FIRE,       142, FIRE,         100, 15, 100

@@ -1,6 +1,7 @@
 ; AI_SMART prefers these moves during rain.
 
 RainDanceMoves:
+	db WEATHER_BALL
 	db WATER_GUN
 	db HYDRO_PUMP
 	db SURF

@@ -193,7 +193,7 @@ MartGoldenrod5F3:
 	db -1 ; end
 
 MartGoldenrod5F4:
-	db 11 ; # items
+	db 10 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
@@ -204,7 +204,6 @@ MartGoldenrod5F4:
 	db TM_ATTRACT
 	db TM_BATON_PASS
 	db TM_SWIFT
-	db TM_WEATHER_BALL
 	db -1 ; end
 
 MartShadyNationalPark:
@@ -279,21 +278,17 @@ MartEcruteak:
 	db -1 ; end
 
 MartEcruteak2:
-	db 14 ; # items
+	db 10 ; # items
 	db POKE_BALL
 	db GREAT_BALL
 	db POTION
 	db SUPER_POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ICE_HEAL
 	db REVIVE
 	db TM_CURSE
 	db TM_NIGHTMARE
 	db TM_WILL_O_WISP
 	db TM_HIDDEN_POWER
+	db TM_ROAR
 	db -1 ; end
 
 MartMahogany1:
@@ -324,7 +319,7 @@ MartBlackthorn:
 	db MAX_REPEL
 	db X_DEFEND
 	db X_ATTACK
-	db TM_ROAR
+	db TM_WEATHER_BALL
 	db TM_SUBSTITUTE
 	db TM_SWAGGER
 	db TM_THIEF
@@ -553,20 +548,15 @@ MartUnderground:
 	db -1 ; end
 
 MartFuchsiaFood:
-	db 14 ; # items
+	db 9 ; # items
 	db FRESH_WATER
 	db SODA_POP
 	db LEMONADE
 	db MOOMOO_MILK
 	db RAGECANDYBAR
 	db LAVA_COOKIE
-	db PSNCUREBERRY
-	db PRZCUREBERRY
-	db BURNT_BERRY
-	db ICE_BERRY
-	db BITTER_BERRY
-	db MINT_BERRY
 	db MYSTERYBERRY
+	db MIRACLEBERRY
 	db SLVR_BERRY
 	db -1 ; end
 

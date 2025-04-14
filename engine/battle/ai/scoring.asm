@@ -2092,6 +2092,7 @@ AI_Smart_Sandstorm:
 	ret
 
 .GoodSandstormMoves
+	db WEATHER_BALL
 	db RAZOR_WIND
 	db SONICBOOM
 	db AEROBLAST
@@ -2160,8 +2161,9 @@ AI_Smart_Hail:
 	db -1 ; end
 
 .GoodHailMoves
-	db BLIZZARD
 	db FROSTBITE
+	db WEATHER_BALL
+	db BLIZZARD
 	db ICY_WIND
 	db POWDER_SNOW
 	db ICE_PUNCH
@@ -2227,8 +2229,14 @@ AI_Smart_Smog:
 	db -1 ; end
 
 .GoodSmogMoves
+	db WILL_O_WISP
+	db WEATHER_BALL
+	db FIRE_BLAST
+	db CRUNCH
+	db BITE
+	db HYPER_FANG
+	db POISON_FANG
 	db SLUDGE_BOMB
-	db POISON_GAS
 	db -1 ; end
 
 AI_Smart_Endure:

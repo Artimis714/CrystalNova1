@@ -6953,7 +6953,7 @@ BattleCommand_SmogPoison:
 BattleCommand_WeatherBallStatus:
 	; Roll chance once
 	call BattleRandom
-	cp 40 percent
+	cp 25 percent
 	ret nc  ; Exit if it fails
 
 	; Now check weather and apply corresponding effect

@@ -1,6 +1,7 @@
 ; AI_SMART prefers these moves during harsh sunlight.
 
 SunnyDayMoves:
+	db WEATHER_BALL
 	db SOLARBEAM
 	db FLAME_WHEEL
 	db MOONLIGHT

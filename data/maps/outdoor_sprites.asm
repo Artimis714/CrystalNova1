@@ -137,6 +137,8 @@ CherrygroveGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_ROCK
+	db SPRITE_RATTATA_BACK
+	db SPRITE_RATTATA
 	db 0 ; end
 
 ; Route37 and EcruteakCity are connected
