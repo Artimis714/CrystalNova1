@@ -1134,8 +1134,8 @@ PresentDescription:
 	line "restore HP.@"
 
 WeatherBallDescription:
-	db   "Damage type varies"
-	line "by WEATHER.@"
+	db   "Type Power Status"
+	line "vary by WEATHER@"
 
 SafeguardDescription:
 	db   "Prevents all"

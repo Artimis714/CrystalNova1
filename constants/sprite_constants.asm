@@ -105,6 +105,15 @@
 	const SPRITE_RAIKOU ; 65
 	const SPRITE_STANDING_YOUNGSTER ; 66
 	const SPRITE_GHOST_FLOATING ; 67
+	const SPRITE_JESSIE ; 68
+	const SPRITE_JAMES ; 69
+	const SPRITE_AGATHA ; 6a
+	const SPRITE_LORELEI ;6b
+	const SPRITE_DRAGONITE_MOVE ; 6c
+	const SPRITE_FARFETCH_MOVE ; 6e
+	const SPRITE_WAITRESS ; 6f
+	const SPRITE_GIOVANNI ; 70
+	const SPRITE_RATTATA_BACK ; 71
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

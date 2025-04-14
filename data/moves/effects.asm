@@ -1709,6 +1709,7 @@ WeatherBall:
 	usedmovetext
 	doturn
 	weatherball
+	doubleweatherballdmg
 	critical
 	damagestats
 	damagecalc

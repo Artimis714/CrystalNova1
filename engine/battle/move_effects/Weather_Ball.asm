@@ -27,3 +27,9 @@ BattleCommand_WeatherBall:
     pop af
     ld [hl], a
     jp BattleCommand_DamageStats
+
+BattleCommand_DoubleWeatherBallDamage:
+    ld a, [wBattleWeather]
+    cp WEATHER_NONE
+    ret z
+    jp DoubleDamage

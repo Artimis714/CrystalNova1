@@ -102,6 +102,7 @@ ENDM
 	command happinesspower          ; 60
 	command present                 ; 61
 	command damagecalc              ; 62
+	command doubleweatherballdmg    ; 63
 	command safeguard               ; 64
 	command checksafeguard          ; 65
 	command getmagnitude            ; 66

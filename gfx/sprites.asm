@@ -111,3 +111,12 @@ StandingYoungsterSpriteGFX::   INCBIN "gfx/sprites/standing_youngster.2bpp"
 SECTION "Sprites 3", ROMX
 
 GhostFloatingSpriteGFX::       INCBIN "gfx/icons/ghost.2bpp"
+JessieSpriteGFX::              INCBIN "gfx/sprites/jessie.2bpp"
+JamesSpriteGFX::               INCBIN "gfx/sprites/james.2bpp"
+AgathatSpriteGFX::             INCBIN "gfx/sprites/agatha.2bpp"
+LoreleiSpriteGFX::             INCBIN "gfx/sprites/lorelei.2bpp"
+DragoniteMoveSpriteGFX::       INCBIN "gfx/sprites/dragonite.2bpp"
+FarfetchMoveSpriteGFX::        INCBIN "gfx/sprites/farfetch_d.2bpp"
+WaitressSpriteGFX::            INCBIN "gfx/sprites/waitress.2bpp"
+GiovanniSpriteGFX::            INCBIN "gfx/sprites/giovanni.2bpp"
+RattataBackSpriteGFX::         INCBIN "gfx/sprites/Rattata_Back2.2bpp"
