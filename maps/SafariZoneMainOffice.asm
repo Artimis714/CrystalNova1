@@ -96,4 +96,4 @@ SafariZoneMainOffice_MapEvents:
 	def_object_events
 	object_event  7,  3, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, FushiaFoodCourtScript, -1
 	object_event  3,  4, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FushiaFoodCourtFisher1, -1
-	object_event  4,  3, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, FushiaFoodCourtTeacher, -1
+	object_event  4,  3, SPRITE_WAITRESS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, FushiaFoodCourtTeacher, -1
