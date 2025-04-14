@@ -1708,10 +1708,10 @@ WeatherBall:
 	checkobedience
 	usedmovetext
 	doturn
+	weatherball
 	critical
 	damagestats
 	damagecalc
-	weatherball
 	stab
 	damagevariation
 	checkhit
