@@ -11797,7 +11797,7 @@ ROMX bank #19:
 	TOTAL EMPTY: $0bb5 bytes
 
 ROMX bank #20:
-	SECTION: $4000-$7ec5 ($3ec6 bytes) ["bank14"]
+	SECTION: $4000-$7e92 ($3e93 bytes) ["bank14"]
 	         $4000 = SelectMonFromParty
 	         $401d = SelectTradeOrDayCareMon
 	         $403f = InitPartyMenuLayout
@@ -12081,46 +12081,44 @@ ROMX bank #20:
 	         $50e5 = GetFrontpicPointer
 	         $50f3 = GetFrontpicPointer.unown
 	         $50f8 = GetFrontpicPointer.ok
-	         $5111 = GetAnimatedEnemyFrontpic
-	         $5149 = GetAnimatedEnemyFrontpic.got_dims
-	         $515d = LoadFrontpicTiles
-	         $516f = LoadFrontpicTiles.loop
-	         $517a = GetMonBackpic
-	         $519e = GetMonBackpic.ok
-	         $51d3 = FixPicBank
-	         $51e2 = FixPicBank.PicsBanks
-	         $51fa = GSIntro_GetMonFrontpic
-	         $521b = GetTrainerPic
-	         $526b = DecompressGet2bpp
-	         $528a = FixBackpicAlignment
-	         $52a4 = FixBackpicAlignment.got_dims
-	         $52a9 = FixBackpicAlignment.loop
-	         $52b6 = FixBackpicAlignment.keep_dims
-	         $52b9 = PadFrontpic
-	         $52c2 = PadFrontpic.seven_loop
-	         $52cb = PadFrontpic.six
-	         $52d1 = PadFrontpic.six_loop
-	         $52e0 = PadFrontpic.five
-	         $52e6 = PadFrontpic.five_loop
-	         $52fb = PadFrontpic.Fill
-	         $5300 = LoadOrientedFrontpic
-	         $5306 = LoadOrientedFrontpic.left_loop
-	         $530d = LoadOrientedFrontpic.x_flip
-	         $530e = LoadOrientedFrontpic.right_loop
-	         $5330 = InsertPokemonIntoBox
-	         $5399 = InsertPokemonIntoParty
-	         $53d9 = InsertSpeciesIntoBoxOrParty
-	         $53e6 = InsertSpeciesIntoBoxOrParty.loop
-	         $53ee = InsertDataIntoBoxOrParty
-	         $53fd = InsertDataIntoBoxOrParty.loop
-	         $5423 = InsertDataIntoBoxOrParty.insert
-	         $5432 = BaseData
-	         $74ae = PokemonNames
-	         $7eae = BetaMonPicBanks
-	SECTION: $7ec6-$7f57 ($0092 bytes) ["Unused Egg Pic"]
-	         $7ec6 = UnusedEggPic
-	EMPTY: $7f58-$7fff ($00a8 bytes)
-	TOTAL EMPTY: $00a8 bytes
+	         $510e = GetAnimatedEnemyFrontpic
+	         $5146 = GetAnimatedEnemyFrontpic.got_dims
+	         $515a = LoadFrontpicTiles
+	         $516c = LoadFrontpicTiles.loop
+	         $5177 = GetMonBackpic
+	         $519b = GetMonBackpic.ok
+	         $51cd = GSIntro_GetMonFrontpic
+	         $51eb = GetTrainerPic
+	         $5238 = DecompressGet2bpp
+	         $5257 = FixBackpicAlignment
+	         $5271 = FixBackpicAlignment.got_dims
+	         $5276 = FixBackpicAlignment.loop
+	         $5283 = FixBackpicAlignment.keep_dims
+	         $5286 = PadFrontpic
+	         $528f = PadFrontpic.seven_loop
+	         $5298 = PadFrontpic.six
+	         $529e = PadFrontpic.six_loop
+	         $52ad = PadFrontpic.five
+	         $52b3 = PadFrontpic.five_loop
+	         $52c8 = PadFrontpic.Fill
+	         $52cd = LoadOrientedFrontpic
+	         $52d3 = LoadOrientedFrontpic.left_loop
+	         $52da = LoadOrientedFrontpic.x_flip
+	         $52db = LoadOrientedFrontpic.right_loop
+	         $52fd = InsertPokemonIntoBox
+	         $5366 = InsertPokemonIntoParty
+	         $53a6 = InsertSpeciesIntoBoxOrParty
+	         $53b3 = InsertSpeciesIntoBoxOrParty.loop
+	         $53bb = InsertDataIntoBoxOrParty
+	         $53ca = InsertDataIntoBoxOrParty.loop
+	         $53f0 = InsertDataIntoBoxOrParty.insert
+	         $53ff = BaseData
+	         $747b = PokemonNames
+	         $7e7b = BetaMonPicBanks
+	SECTION: $7e93-$7f24 ($0092 bytes) ["Unused Egg Pic"]
+	         $7e93 = UnusedEggPic
+	EMPTY: $7f25-$7fff ($00db bytes)
+	TOTAL EMPTY: $00db bytes
 
 ROMX bank #21:
 	SECTION: $4000-$7c9f ($3ca0 bytes) ["Map Scripts 1"]
@@ -60647,7 +60645,7 @@ HRAM bank #0:
 
 SUMMARY:
 	ROM0: 16096 bytes used / 288 free
-	ROMX: 1800297 bytes used / 280471 free in 127 banks
+	ROMX: 1800246 bytes used / 280522 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks
