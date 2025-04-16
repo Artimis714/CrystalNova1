@@ -35,6 +35,7 @@ BulbasaurEvosAttacks:
 
 IvysaurEvosAttacks:
 	db EVOLVE_LEVEL, 32, VENUSAUR
+	db EVOLVE_ITEM, LEAF_STONE, VENUSAUR
 	db 0 ; no more evolutions
 	db 1, VINE_WHIP
 	db 1, LEECH_SEED
@@ -52,13 +53,12 @@ IvysaurEvosAttacks:
 VenusaurEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEECH_SEED
-	db 1, VINE_WHIP
+	db 1, GIGA_DRAIN
 	db 15, POISONPOWDER
-	db 15, SLEEP_POWDER
+	db 15, SPORE
 	db 22, RAZOR_LEAF
-	db 24, SLUDGE
+	db 24, ACID
 	db 41, GROWTH
-	db 43, GIGA_DRAIN
 	db 46, SLUDGE_BOMB
 	db 53, SYNTHESIS
 	db 65, SOLARBEAM
@@ -81,8 +81,8 @@ CharmanderEvosAttacks:
 
 CharmeleonEvosAttacks:
 	db EVOLVE_LEVEL, 36, CHARIZARD
+	db EVOLVE_ITEM, FIRE_STONE, CHARIZARD
 	db 0 ; no more evolutions
-	db 1, SMOKESCREEN
 	db 1, EMBER
 	db 14, RAGE
 	db 21, FIRE_SPIN
@@ -96,8 +96,7 @@ CharmeleonEvosAttacks:
 
 CharizardEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SMOKESCREEN
-	db 1, DRAGON_RAGE
+	db 1, CRUNCH
 	db 14, RAGE
 	db 21, FIRE_SPIN
 	db 24, TWISTER
@@ -126,10 +125,9 @@ SquirtleEvosAttacks:
 
 WartortleEvosAttacks:
 	db EVOLVE_LEVEL, 36, BLASTOISE
+	db EVOLVE_ITEM, WATER_STONE, BLASTOISE
 	db 0 ; no more evolutions
-	db 1, BUBBLE
-	db 1, WITHDRAW
-	db 13, WATER_GUN
+	db 1, WATER_GUN
 	db 19, BITE
         db 21, BUBBLEBEAM
 	db 25, RAPID_SPIN
@@ -142,8 +140,7 @@ WartortleEvosAttacks:
 BlastoiseEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, METAL_CLAW
-	db 1, BUBBLE
-	db 13, WATER_GUN
+	db 1, SHARPEN
 	db 19, BITE
         db 21, BUBBLEBEAM
 	db 25, RAPID_SPIN
@@ -227,8 +224,7 @@ PidgeottoEvosAttacks:
 	db EVOLVE_LEVEL, 36, PIDGEOT
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 1, SAND_ATTACK
-	db 15, QUICK_ATTACK
+	db 1, QUICK_ATTACK
 	db 23, WHIRLWIND
 	db 24, WING_ATTACK
 	db 33, AGILITY
@@ -238,9 +234,9 @@ PidgeottoEvosAttacks:
 
 PidgeotEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, PECK
-	db 1, SAND_ATTACK
-	db 1, QUICK_ATTACK
+	db 1, SKY_ATTACK
+	db 1, MUD_SLAP
+	db 1, EXTREMESPEED
 	db 23, WHIRLWIND
 	db 24, WING_ATTACK
 	db 36, AGILITY
@@ -286,8 +282,7 @@ SpearowEvosAttacks:
 
 FearowEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, PECK
-	db 7, LEER
+	db 1, THIEF
 	db 13, FURY_ATTACK
 	db 26, PURSUIT
 	db 32, MIRROR_MOVE
@@ -369,8 +364,7 @@ SandshrewEvosAttacks:
 
 SandslashEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 6, DEFENSE_CURL
+	db 1, FURY_SWIPES
 	db 11, SAND_ATTACK
 	db 15, DIG
 	db 17, POISON_STING
@@ -378,7 +372,6 @@ SandslashEvosAttacks:
 	db 24, SLASH
 	db 33, SWIFT
 	db 35, SWORDS_DANCE
-	db 42, FURY_SWIPES
 	db 52, EARTHQUAKE
 	db 0 ; no more level-up moves
 
@@ -397,20 +390,19 @@ NidoranFEvosAttacks:
 NidorinaEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, NIDOQUEEN
 	db 0 ; no more evolutions
-	db 1, GROWL
-	db 1, SCRATCH
-	db 12, DOUBLE_KICK
-	db 19, POISON_STING
-	db 27, TAIL_WHIP
-	db 36, BITE
-	db 46, FURY_SWIPES
+	db 1, DOUBLE_KICK
+	db 1, MUD_SLAP
+	db 19, ACID
+	db 27, REST
+	db 36, CRUNCH
+	db 46, SNORE
 	db 0 ; no more level-up moves
 
 NidoqueenEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 1, DOUBLE_KICK
-	db 1, TAIL_WHIP
+	db 1, EARTHQUAKE
+	db 1, MEGA_PUNCH
+	db 1, SLUDGE_BOMB
 	db 23, BODY_SLAM
 	db 0 ; no more level-up moves
 
@@ -430,11 +422,9 @@ NidoranMEvosAttacks:
 NidorinoEvosAttacks:
 	db EVOLVE_ITEM, SUN_STONE, NIDOKING
 	db 0 ; no more evolutions
-	db 1, LEER
-	db 1, TACKLE
-	db 8, HORN_ATTACK
+	db 1, HORN_ATTACK
 	db 12, DOUBLE_KICK
-	db 19, POISON_STING
+	db 19, ACID
 	db 27, FOCUS_ENERGY
 	db 36, FURY_ATTACK
 	db 46, HORN_DRILL
@@ -442,9 +432,9 @@ NidorinoEvosAttacks:
 
 NidokingEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, HORN_ATTACK
-	db 1, DOUBLE_KICK
-	db 1, POISON_STING
+	db 1, FISSURE
+	db 1, POISON_FANG
+	db 1, EARTHQUAKE
 	db 23, THRASH
 	db 0 ; no more level-up moves
 
@@ -518,7 +508,7 @@ WigglytuffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SING
 	db 1, DISABLE
-	db 1, DEFENSE_CURL
+	db 1, DREAM_EATER
 	db 1, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -730,7 +720,7 @@ PsyduckEvosAttacks:
 
 GolduckEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, HYPNOSIS
 	db 1, KINESIS
 	db 1, DISABLE
 	db 10, DISABLE
@@ -2172,8 +2162,8 @@ ChikoritaEvosAttacks:
 
 BayleefEvosAttacks:
 	db EVOLVE_LEVEL, 32, MEGANIUM
+	db EVOLVE_ITEM, LEAF_STONE, MEGANIUM
 	db 0 ; no more evolutions
-	db 1, VINE_WHIP
 	db 1, LEECH_SEED
 	db 1, DRAGON_CLAW
 	db 6, GROWTH
@@ -2198,7 +2188,6 @@ MeganiumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEECH_SEED
 	db 1, SPORE
-	db 6, GROWTH
 	db 8, DRAGON_CLAW
 	db 10, MEGA_DRAIN
 	db 12, BARRIER
@@ -2233,8 +2222,8 @@ CyndaquilEvosAttacks:
 
 QuilavaEvosAttacks:
 	db EVOLVE_LEVEL, 36, TYPHLOSION
+	db EVOLVE_ITEM, FIRE_STONE, TYPHLOSION
 	db 0 ; no more evolutions
-	db 1, SMOKESCREEN
 	db 1, THUNDER_WAVE
 	db 12, EMBER
 	db 14, THUNDERSHOCK
@@ -2251,7 +2240,6 @@ TyphlosionEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ZAP_CANNON
 	db 1, FISSURE
-	db 1, SACRED_FIRE
 	db 20, SUNNY_DAY
 	db 21, FLAME_WHEEL
 	db 23, SPARK
@@ -2280,13 +2268,12 @@ TotodileEvosAttacks:
 
 CroconawEvosAttacks:
 	db EVOLVE_LEVEL, 30, FERALIGATR
+	db EVOLVE_ITEM, WATER_STONE, FERALIGATR
 	db 0 ; no more evolutions
-	db 1, BUBBLE
-	db 1, LEER
+	db 1, WATER_GUN
 	db 1, RAGE
 	db 1, BITE
 	db 13, PURSUIT
-	db 15, WATER_GUN
 	db 18, BITE
 	db 20, RAIN_DANCE
 	db 23, BUBBLEBEAM
