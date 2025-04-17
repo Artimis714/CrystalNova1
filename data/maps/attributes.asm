@@ -690,3 +690,5 @@ ENDM
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes GoldenrodArchives, GOLDENROD_ARCHIVES, $00, 0
+	map_attributes GoldenrodArchives1F, GOLDENROD_ARCHIVES1F, $00, 0
+	map_attributes GoldenrodArchivesB1F, GOLDENROD_ARCHIVESB1F, $00, 0
