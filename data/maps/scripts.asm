@@ -506,7 +506,3 @@ INCLUDE "maps/KurtsHouse.asm"
 INCLUDE "maps/FightingDojo.asm"
 INCLUDE "maps/GoldenrodHappinessRater.asm"
 
-
-SECTION "Map Scripts 33", ROMX
-INCLUDE "maps/GoldenrodArchives1F.asm"
-INCLUDE "maps/GoldenrodArchivesB1F.asm"

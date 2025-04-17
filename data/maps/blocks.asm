@@ -781,7 +781,6 @@ SECTION "Map Blocks 3", ROMX
 BetaSlowpokeWell1F_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSlowpokeWell1F.blk"
 
-GoldenrodArchives_Blocks:
 SlowpokeWellB1F_Blocks:
 	INCBIN "maps/SlowpokeWellB1F.blk"
 
@@ -1034,8 +1033,5 @@ GoldenrodDeptStoreRoof_Blocks:
 
 SECTION "Map Blocks 4", ROMX
 
-GoldenrodArchives1F_Blocks:
-	INCBIN "maps/GoldenrodArchives1F.blk"
-
-GoldenrodArchivesB1F_Blocks:
-	INCBIN "maps/GoldenrodArchivesB1F.blk"
+GoldenrodArchives_Blocks:
+	INCBIN "maps/GoldenrodArchives.blk"
