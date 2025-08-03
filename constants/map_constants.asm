@@ -156,8 +156,6 @@ ENDM
 	map_const VICTORY_ROAD,                                10, 36 ; 91
 	map_const GOLDENROD_ARCHIVES,                          10,  9 ; 92
 	map_const SOUL_HOUSE,                                   5,  4 ; 93
-	map_const GOLDENROD_ARCHIVES1F,                        10,  9 ; 94
-	map_const GOLDENROD_ARCHIVESB1F,                       10,  9 ; 95
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
