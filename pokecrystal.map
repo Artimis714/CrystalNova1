@@ -1,3 +1,11 @@
+SUMMARY:
+	ROM0: 16093 bytes used / 291 free
+	ROMX: 1800708 bytes used / 280060 free in 127 banks
+	SRAM: 48192 bytes used / 17344 free in 8 banks
+	WRAM0: 4043 bytes used / 53 free
+	WRAMX: 22987 bytes used / 5685 free in 7 banks
+	HRAM: 127 bytes used / 0 free
+
 ROM0 bank #0:
 	SECTION: $0000 (0 bytes) ["NULL"]
 	         $0000 = NULL
@@ -60660,11 +60668,3 @@ HRAM bank #0:
 	         $ffea = hSystemBooted
 	         $ffeb = hClockResetTrigger
 	TOTAL EMPTY: $0000 bytes
-
-SUMMARY:
-	ROM0: 16093 bytes used / 291 free
-	ROMX: 1800708 bytes used / 280060 free in 127 banks
-	SRAM: 48192 bytes used / 17344 free in 8 banks
-	WRAM0: 4043 bytes used / 53 free
-	WRAMX: 22987 bytes used / 5685 free in 7 banks
-	HRAM: 127 bytes used / 0 free
