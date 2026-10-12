@@ -37,7 +37,7 @@ GoldenrodUndergroundWarehouseResetSwitchesCallback:
 ToArchivesCallback:
 	checkevent EVENT_RECEIVED_CARD_KEY
 	iffalse .HideLadder
-	changeblock 12,  7, $02 ; floor
+	changeblock 12,  7, $03 ; floor
 .HideLadder:
 	endcallback
 
@@ -94,7 +94,7 @@ GoldenrodUndergroundWarehouseDirectorScript:
 	showemote EMOTE_SHOCK, PLAYER, 15
 	playsound SFX_STRENGTH
 	waitsfx
-	changeblock 12,  7, $02 ; floor
+	changeblock 12,  7, $03 ; floor
 	reloadmappart
 	faceplayer
 	writetext DirectorCardKeyText
@@ -302,6 +302,7 @@ GoldenrodUndergroundWarehouse_MapEvents:
 
 	def_warp_events
 	warp_event  2, 12, GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES, 2
+	warp_event  3, 12, GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES, 3
 	warp_event 13,  6, GOLDENROD_ARCHIVES, 1
 	warp_event 17,  2, GOLDENROD_DEPT_STORE_B1F, 1
 
