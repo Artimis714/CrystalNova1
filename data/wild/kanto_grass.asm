@@ -1025,4 +1025,37 @@ KantoGrassWildMons:
 	db  1, MISDREAVUS, 	 40,  99
 	end_grass_wildmons
 
+	def_grass_wildmons LAV_RADIO_TOWER_1F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	;  %, species,		min, max
+	db 30, PARASECT, 	 40,  90
+	db 30, WEEZING, 	 40,  90
+	db 20, HAUNTER, 	 30,  60
+	db 10, HYPNO, 	         40,  90
+	db  5, MAROWAK, 	 40,  90
+	db  4, WOBBUFFET, 	 40,  90
+	db  1, GENGAR, 	         60,  99
+
+	; day
+	;  %, species,		min, max
+	db 30, PARASECT, 	 40,  90
+	db 30, WEEZING, 	 40,  90
+	db 20, NINETALES, 	 40,  90
+	db 10, HYPNO, 	         40,  90
+	db  5, MAROWAK, 	 40,  90
+	db  4, WOBBUFFET, 	 40,  90
+	db  1, MISDREAVUS, 	 40,  99
+
+	; nite
+	;  %, species,		min, max
+	db 30, PARASECT, 	 40,  90
+	db 30, WEEZING, 	 40,  90
+	db 20, STANTLER, 	 40,  90
+	db 10, HYPNO, 	         40,  90
+	db  5, MAROWAK, 	 40,  90
+	db  4, WOBBUFFET, 	 40,  90
+	db  1, MISDREAVUS, 	 40,  99
+	end_grass_wildmons
+
 	db -1 ; end

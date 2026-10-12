@@ -1,5 +1,4 @@
 	object_const_def
-	const LAVRADIOTOWER1F_RECEPTIONIST
 	const LAVRADIOTOWER1F_SUPER_NERD1
 	const LAVRADIOTOWER1F_GENTLEMAN
 	const LAVRADIOTOWER1F_SUPER_NERD2
@@ -8,9 +7,6 @@ LavRadioTower1F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-
-LavRadioTower1FReceptionistScript:
-	jumptextfaceplayer LavRadioTower1FReceptionistText
 
 LavRadioTower1FSuperNerd1Script:
 	trainer BURGLAR, JAX, EVENT_BEAT_BURGLAR_GHOST_JAX, BurglarJaxGhostSeenText, BurglarJaxGhostBeatenText, 0, .Script
@@ -47,12 +43,6 @@ LavRadioTower1FSuperNerd2Script:
 	waitbutton
 	closetext
 	end
-
-LavRadioTower1FDirectory:
-	jumptext LavRadioTower1FDirectoryText
-
-LavRadioTower1FPokeFluteSign:
-	jumptext LavRadioTower1FPokeFluteSignText
 
 BurglarJaxGhostSeenText:
 	text "AIR RAID SIRENS!"
@@ -241,73 +231,19 @@ JugglerAldustGhostAfterBattleText:
 	cont "better life."
 	done
 
-LavRadioTower1FReceptionistText:
-	text "Welcome Child!"
-	line "feel free to pay"
-	cont "your respects."
-
-	para "But be wary child,"
-	line "the shades of good"
-
-	para "KANTO CITIZENS who"
-	line "perished in the"
-	cont "war reside here."
-
-	para "..."
-	line "..."
-
-	para "Yes, it does look"
-	line "like a RADIO TOWER"
-
-	para "That's because it"
-	line "was a RADIO TOWER"
-	cont "long ago."
-	done
-
-LavRadioTower1FDirectoryText:
-	text "It's an old"
-	line "directory for"
-
-	para "this building's"
-	line "former use."
-
-	para "The poster is"
-	line "well over 25 years"
-	cont "old."
-	done
-
-LavRadioTower1FPokeFluteSignText:
-	text "It's a faded war"
-	line "recruitment poster."
-
-	para "SILPH CO Wants"
-	line "YOU!"
-	done
-
-LavRadioTower1FReferenceLibraryText:
-	text "Its a worn set"
-	line "of KANTO funeral"
-	cont "customs."
-
-	para "They all seem in"
-	line "poor taste."
-	done
-
 LavRadioTower1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  15, 0, SOUL_HOUSE, 1
+	warp_event 14,  0, SOUL_HOUSE, 1
+	warp_event  2,  7, LAVENDER_TOWN, 7
 	warp_event  3,  7, LAVENDER_TOWN, 7
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 11,  0, BGEVENT_READ, LavRadioTower1FDirectory
-	bg_event  5,  0, BGEVENT_READ, LavRadioTower1FPokeFluteSign
 
 	def_object_events
-	object_event  6,  6, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LavRadioTower1FReceptionistScript, -1
-	object_event  1,  3, SPRITE_GHOST_FLOATING, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_TRAINER, 4, LavRadioTower1FSuperNerd1Script, EVENT_MRPOKEMON_MASTER_BALL
-	object_event  9,  1, SPRITE_GHOST_FLOATING, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, LavRadioTower1FGentlemanScript, EVENT_GOT_SMERGLE_FROM_DADDY
-	object_event 14,  6, SPRITE_GHOST_FLOATING, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, LavRadioTower1FSuperNerd2Script, EVENT_HORTON_HAPPY_ENDING
+	object_event 17,  3, SPRITE_GHOST_FLOATING, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, 0, OBJECTTYPE_TRAINER, 4, LavRadioTower1FSuperNerd1Script, EVENT_MRPOKEMON_MASTER_BALL
+	object_event  3,  1, SPRITE_GHOST_FLOATING, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, LavRadioTower1FGentlemanScript, EVENT_GOT_SMERGLE_FROM_DADDY
+	object_event  4,  5, SPRITE_GHOST_FLOATING, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, LavRadioTower1FSuperNerd2Script, EVENT_HORTON_HAPPY_ENDING

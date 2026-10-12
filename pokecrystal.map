@@ -1,6 +1,6 @@
 SUMMARY:
 	ROM0: 16093 bytes used / 291 free
-	ROMX: 1800202 bytes used / 280566 free in 127 banks
+	ROMX: 1799822 bytes used / 280946 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks
@@ -18659,21 +18659,21 @@ ROMX bank #37:
 	         $4034 = MapGroup_Olivine
 	         $40b2 = MapGroup_Mahogany
 	         $40f1 = MapGroup_Dungeons
-	         $4436 = MapGroup_Ecruteak
-	         $4487 = MapGroup_Blackthorn
-	         $44e1 = MapGroup_Cinnabar
-	         $4529 = MapGroup_Cerulean
-	         $45c2 = MapGroup_Azalea
-	         $4601 = MapGroup_LakeOfRage
-	         $4637 = MapGroup_Violet
-	         $46d0 = MapGroup_Goldenrod
-	         $47a8 = MapGroup_Vermilion
-	         $481d = MapGroup_Pallet
-	         $4853 = MapGroup_Pewter
-	         $489b = MapGroup_FastShip
-	         $4907 = MapGroup_Indigo
-	         $494f = MapGroup_Fuchsia
-	         $49c4 = MapGroup_Lavender
+	         $443f = MapGroup_Ecruteak
+	         $4490 = MapGroup_Blackthorn
+	         $44ea = MapGroup_Cinnabar
+	         $4532 = MapGroup_Cerulean
+	         $45cb = MapGroup_Azalea
+	         $460a = MapGroup_LakeOfRage
+	         $4640 = MapGroup_Violet
+	         $46d9 = MapGroup_Goldenrod
+	         $47b1 = MapGroup_Vermilion
+	         $4826 = MapGroup_Pallet
+	         $485c = MapGroup_Pewter
+	         $48a4 = MapGroup_FastShip
+	         $4910 = MapGroup_Indigo
+	         $4958 = MapGroup_Fuchsia
+	         $49cd = MapGroup_Lavender
 	         $4a39 = MapGroup_Silver
 	         $4a5d = MapGroup_CableClub
 	         $4a93 = MapGroup_Celadon
@@ -20973,7 +20973,7 @@ ROMX bank #43:
 	TOTAL EMPTY: $00a6 bytes
 
 ROMX bank #44:
-	SECTION: $4000-$5a63 ($1a64 bytes) ["Map Blocks 3"]
+	SECTION: $4000-$5a6d ($1a6e bytes) ["Map Blocks 3"]
 	         $4000 = BetaSlowpokeWell1F_Blocks
 	         $4023 = SlowpokeWellB1F_Blocks
 	         $407d = SlowpokeWellB2F_Blocks
@@ -21018,52 +21018,52 @@ ROMX bank #44:
 	         $4c10 = SilverCaveItemRooms_Blocks
 	         $4c6a = DayCare_Blocks
 	         $4c7e = SoulHouse_Blocks
-	         $4c92 = PewterGym_Blocks
-	         $4cb5 = CeladonGym_Blocks
-	         $4ce2 = BetaCeladonMansion1F_Blocks
-	         $4cf6 = CeladonCafe_Blocks
-	         $4d0e = BetaCeladonMansion2F_Blocks
-	         $4d26 = RockTunnel1F_Blocks
-	         $4e34 = RockTunnelB1F_Blocks
-	         $4f42 = DiglettsCave_Blocks
-	         $4ff6 = MountMoon_Blocks
-	         $507d = SeafoamGym_Blocks
-	         $5091 = MrPokemonsHouse_Blocks
-	         $50a1 = VictoryRoadGate_Blocks
-	         $50fb = OlivinePortPassage_Blocks
-	         $50fb = VermilionPortPassage_Blocks
-	         $5155 = FuchsiaGym_Blocks
-	         $5182 = SafariZoneBeta_Blocks
-	         $5236 = UndergroundPath_Blocks
-	         $5260 = Route39Barn_Blocks
-	         $5270 = VictoryRoad_Blocks
-	         $53d8 = Route23_Blocks
-	         $5432 = LancesRoom_Blocks
-	         $546e = HallOfFame_Blocks
-	         $5491 = CopycatsHouse1F_Blocks
-	         $54a1 = CopycatsHouse2F_Blocks
-	         $54b0 = GoldenrodFlowerShop_Blocks
-	         $54c0 = MountMoonSquare_Blocks
-	         $5547 = WiseTriosRoom_Blocks
-	         $5557 = DragonsDen1F_Blocks
-	         $5584 = DragonsDenB1F_Blocks
-	         $56ec = TohjoFalls_Blocks
-	         $5773 = RuinsOfAlphHoOhItemRoom_Blocks
-	         $5773 = RuinsOfAlphKabutoItemRoom_Blocks
-	         $5773 = RuinsOfAlphOmanyteItemRoom_Blocks
-	         $5773 = RuinsOfAlphAerodactylItemRoom_Blocks
-	         $5787 = RuinsOfAlphHoOhWordRoom_Blocks
-	         $57ff = RuinsOfAlphKabutoWordRoom_Blocks
-	         $5845 = RuinsOfAlphOmanyteWordRoom_Blocks
-	         $5895 = RuinsOfAlphAerodactylWordRoom_Blocks
-	         $58db = DragonShrine_Blocks
-	         $58f4 = PokecomCenterAdminOfficeMobile_Blocks
-	         $59f4 = MobileTradeRoom_Blocks
-	         $5a08 = MobileBattleRoom_Blocks
-	         $5a1c = BetaBlank_Blocks
-	         $5a44 = GoldenrodDeptStoreRoof_Blocks
-	EMPTY: $5a64-$7fff ($259c bytes)
-	TOTAL EMPTY: $259c bytes
+	         $4c9c = PewterGym_Blocks
+	         $4cbf = CeladonGym_Blocks
+	         $4cec = BetaCeladonMansion1F_Blocks
+	         $4d00 = CeladonCafe_Blocks
+	         $4d18 = BetaCeladonMansion2F_Blocks
+	         $4d30 = RockTunnel1F_Blocks
+	         $4e3e = RockTunnelB1F_Blocks
+	         $4f4c = DiglettsCave_Blocks
+	         $5000 = MountMoon_Blocks
+	         $5087 = SeafoamGym_Blocks
+	         $509b = MrPokemonsHouse_Blocks
+	         $50ab = VictoryRoadGate_Blocks
+	         $5105 = OlivinePortPassage_Blocks
+	         $5105 = VermilionPortPassage_Blocks
+	         $515f = FuchsiaGym_Blocks
+	         $518c = SafariZoneBeta_Blocks
+	         $5240 = UndergroundPath_Blocks
+	         $526a = Route39Barn_Blocks
+	         $527a = VictoryRoad_Blocks
+	         $53e2 = Route23_Blocks
+	         $543c = LancesRoom_Blocks
+	         $5478 = HallOfFame_Blocks
+	         $549b = CopycatsHouse1F_Blocks
+	         $54ab = CopycatsHouse2F_Blocks
+	         $54ba = GoldenrodFlowerShop_Blocks
+	         $54ca = MountMoonSquare_Blocks
+	         $5551 = WiseTriosRoom_Blocks
+	         $5561 = DragonsDen1F_Blocks
+	         $558e = DragonsDenB1F_Blocks
+	         $56f6 = TohjoFalls_Blocks
+	         $577d = RuinsOfAlphHoOhItemRoom_Blocks
+	         $577d = RuinsOfAlphKabutoItemRoom_Blocks
+	         $577d = RuinsOfAlphOmanyteItemRoom_Blocks
+	         $577d = RuinsOfAlphAerodactylItemRoom_Blocks
+	         $5791 = RuinsOfAlphHoOhWordRoom_Blocks
+	         $5809 = RuinsOfAlphKabutoWordRoom_Blocks
+	         $584f = RuinsOfAlphOmanyteWordRoom_Blocks
+	         $589f = RuinsOfAlphAerodactylWordRoom_Blocks
+	         $58e5 = DragonShrine_Blocks
+	         $58fe = PokecomCenterAdminOfficeMobile_Blocks
+	         $59fe = MobileTradeRoom_Blocks
+	         $5a12 = MobileBattleRoom_Blocks
+	         $5a26 = BetaBlank_Blocks
+	         $5a4e = GoldenrodDeptStoreRoof_Blocks
+	EMPTY: $5a6e-$7fff ($2592 bytes)
+	TOTAL EMPTY: $2592 bytes
 
 ROMX bank #45:
 	SECTION: $4000-$7ea7 ($3ea8 bytes) ["Tileset Data 5"]
@@ -30402,7 +30402,7 @@ ROMX bank #63:
 	         $51b2 = DummyPredef3A_DummyData
 	         $51b3 = DummyPredef3A
 	         $51b4 = DummyPredef3A_DummyFunction
-	SECTION: $51b5-$7e38 ($2c84 bytes) ["Overworld Wildmon Data"]
+	SECTION: $51b5-$7e91 ($2cdd bytes) ["Overworld Wildmon Data"]
 	         $51b5 = LoadWildMonData
 	         $51c3 = LoadWildMonData.copy
 	         $51ce = LoadWildMonData.done_copy
@@ -30643,35 +30643,36 @@ ROMX bank #63:
 	         $7a50 = KantoGrassWildMons._def_grass_wildmons_ROUTE_27
 	         $7aa9 = KantoGrassWildMons._def_grass_wildmons_ROUTE_28
 	         $7b02 = KantoGrassWildMons._def_grass_wildmons_SOUL_HOUSE
-	         $7b5c = KantoWaterWildMons
-	         $7b5c = KantoWaterWildMons._def_water_wildmons_TOHJO_FALLS
-	         $7b73 = KantoWaterWildMons._def_water_wildmons_VERMILION_PORT
-	         $7b8a = KantoWaterWildMons._def_water_wildmons_ROUTE_4
-	         $7ba1 = KantoWaterWildMons._def_water_wildmons_ROUTE_6
-	         $7bb8 = KantoWaterWildMons._def_water_wildmons_ROUTE_9
-	         $7bcf = KantoWaterWildMons._def_water_wildmons_ROUTE_10_NORTH
-	         $7be6 = KantoWaterWildMons._def_water_wildmons_ROUTE_12
-	         $7bfd = KantoWaterWildMons._def_water_wildmons_ROUTE_13
-	         $7c14 = KantoWaterWildMons._def_water_wildmons_ROUTE_19
-	         $7c2b = KantoWaterWildMons._def_water_wildmons_ROUTE_20
-	         $7c42 = KantoWaterWildMons._def_water_wildmons_ROUTE_21
-	         $7c59 = KantoWaterWildMons._def_water_wildmons_ROUTE_22
-	         $7c70 = KantoWaterWildMons._def_water_wildmons_ROUTE_24
-	         $7c87 = KantoWaterWildMons._def_water_wildmons_ROUTE_25
-	         $7c9e = KantoWaterWildMons._def_water_wildmons_ROUTE_26
-	         $7cb5 = KantoWaterWildMons._def_water_wildmons_ROUTE_27
-	         $7ccc = KantoWaterWildMons._def_water_wildmons_ROUTE_28
-	         $7ce3 = KantoWaterWildMons._def_water_wildmons_PALLET_TOWN
-	         $7cfa = KantoWaterWildMons._def_water_wildmons_VIRIDIAN_CITY
-	         $7d11 = KantoWaterWildMons._def_water_wildmons_CERULEAN_CITY
-	         $7d28 = KantoWaterWildMons._def_water_wildmons_VERMILION_CITY
-	         $7d3f = KantoWaterWildMons._def_water_wildmons_CELADON_CITY
-	         $7d56 = KantoWaterWildMons._def_water_wildmons_FUCHSIA_CITY
-	         $7d6d = KantoWaterWildMons._def_water_wildmons_CINNABAR_ISLAND
-	         $7d85 = SwarmGrassWildMons
-	         $7e38 = SwarmWaterWildMons
-	EMPTY: $7e39-$7fff ($01c7 bytes)
-	TOTAL EMPTY: $01c7 bytes
+	         $7b5b = KantoGrassWildMons._def_grass_wildmons_LAV_RADIO_TOWER_1F
+	         $7bb5 = KantoWaterWildMons
+	         $7bb5 = KantoWaterWildMons._def_water_wildmons_TOHJO_FALLS
+	         $7bcc = KantoWaterWildMons._def_water_wildmons_VERMILION_PORT
+	         $7be3 = KantoWaterWildMons._def_water_wildmons_ROUTE_4
+	         $7bfa = KantoWaterWildMons._def_water_wildmons_ROUTE_6
+	         $7c11 = KantoWaterWildMons._def_water_wildmons_ROUTE_9
+	         $7c28 = KantoWaterWildMons._def_water_wildmons_ROUTE_10_NORTH
+	         $7c3f = KantoWaterWildMons._def_water_wildmons_ROUTE_12
+	         $7c56 = KantoWaterWildMons._def_water_wildmons_ROUTE_13
+	         $7c6d = KantoWaterWildMons._def_water_wildmons_ROUTE_19
+	         $7c84 = KantoWaterWildMons._def_water_wildmons_ROUTE_20
+	         $7c9b = KantoWaterWildMons._def_water_wildmons_ROUTE_21
+	         $7cb2 = KantoWaterWildMons._def_water_wildmons_ROUTE_22
+	         $7cc9 = KantoWaterWildMons._def_water_wildmons_ROUTE_24
+	         $7ce0 = KantoWaterWildMons._def_water_wildmons_ROUTE_25
+	         $7cf7 = KantoWaterWildMons._def_water_wildmons_ROUTE_26
+	         $7d0e = KantoWaterWildMons._def_water_wildmons_ROUTE_27
+	         $7d25 = KantoWaterWildMons._def_water_wildmons_ROUTE_28
+	         $7d3c = KantoWaterWildMons._def_water_wildmons_PALLET_TOWN
+	         $7d53 = KantoWaterWildMons._def_water_wildmons_VIRIDIAN_CITY
+	         $7d6a = KantoWaterWildMons._def_water_wildmons_CERULEAN_CITY
+	         $7d81 = KantoWaterWildMons._def_water_wildmons_VERMILION_CITY
+	         $7d98 = KantoWaterWildMons._def_water_wildmons_CELADON_CITY
+	         $7daf = KantoWaterWildMons._def_water_wildmons_FUCHSIA_CITY
+	         $7dc6 = KantoWaterWildMons._def_water_wildmons_CINNABAR_ISLAND
+	         $7dde = SwarmGrassWildMons
+	         $7e91 = SwarmWaterWildMons
+	EMPTY: $7e92-$7fff ($016e bytes)
+	TOTAL EMPTY: $016e bytes
 
 ROMX bank #64:
 	SECTION: $4000-$789c ($389d bytes) ["mobile40"]
@@ -44092,7 +44093,7 @@ ROMX bank #121:
 	TOTAL EMPTY: $0180 bytes
 
 ROMX bank #122:
-	SECTION: $4000-$7bab ($3bac bytes) ["Map Scripts 29"]
+	SECTION: $4000-$79cc ($39cd bytes) ["Map Scripts 29"]
 	         $4000 = CopycatsHouse1F_MapScripts
 	         $4002 = CopycatsHouse1FPokefanFScript
 	         $4010 = CopycatsHouse1FPokefanFScript.ReturnedMachinePart
@@ -44233,73 +44234,66 @@ ROMX bank #122:
 	         $67ea = FirebreatherAzarGhostBeatenText
 	         $682a = FirebreatherAzarGhostAfterBattleText
 	         $69f7 = SoulHouse_MapEvents
-	         $6a3b = ViridianPokecenter1F_MapScripts
-	         $6a3d = ViridianPokecenter1FNurseScript
-	         $6a45 = ViridianPokecenter1FNurseScript.YouDontBelong
-	         $6a79 = OfficerViridianPokeScript
-	         $6a8c = OfficerViridianPokeScript.UnderArrest
-	         $6ab1 = ViridianPokecenter1FCooltrainerMScript
-	         $6abf = ViridianPokecenter1FCooltrainerMScript.BlueReturned
-	         $6ac5 = ViridianPokecenter1FCooltrainerFScript
-	         $6ac8 = ViridianPokecenter1FBugCatcherScript
-	         $6acb = ViridianPokecenter1FCooltrainerMText
-	         $6b13 = ViridianPokecenter1FCooltrainerMText_BlueReturned
-	         $6b89 = ViridianPokecenter1FCooltrainerFText
-	         $6c78 = ViridianPokecenter1FBugCatcherText
-	         $6c9f = ViridianPokeCentreCallAuthoritiestext
-	         $6d32 = ViridianPokecenter1F_MapEvents
-	         $6d88 = ViridianPokecenter2FBeta_MapScripts
-	         $6d8a = ViridianPokecenter2FBeta_MapEvents
-	         $6d95 = SeafoamGym_MapScripts
-	         $6d9b = SeafoamGymNoopScene
-	         $6d9c = SeafoamGymBlaineScript
-	         $6db7 = SeafoamGymBlaineScript.ReturnAfterBattle
-	         $6dd0 = SeafoamGymBlaineScript.FightDone
-	         $6dd6 = SeafoamGymGuideScript
-	         $6de7 = SeafoamGymGuideScript.TalkedToSeafoamGymGuideScript
-	         $6ded = BlaineIntroText
-	         $6f11 = BlaineWinLossText
-	         $6f4e = ReceivedVolcanoBadgeText
-	         $6f68 = BlaineAfterBattleText
-	         $70f8 = BlaineFightDoneText
-	         $7135 = SeafoamGymGuideWinText
-	         $71e2 = SeafoamGymGuideWinText2
-	         $7241 = SeafoamGym_MapEvents
-	         $7266 = LavRadioTower1F_MapScripts
-	         $7268 = LavRadioTower1FReceptionistScript
-	         $726b = LavRadioTower1FSuperNerd1Script
-	         $7277 = LavRadioTower1FSuperNerd1Script.Script
-	         $7282 = LavRadioTower1FGentlemanScript
-	         $728e = LavRadioTower1FGentlemanScript.Script
-	         $7299 = LavRadioTower1FSuperNerd2Script
-	         $72a5 = LavRadioTower1FSuperNerd2Script.Script
-	         $72b0 = LavRadioTower1FDirectory
-	         $72b3 = LavRadioTower1FPokeFluteSign
-	         $72b6 = BurglarJaxGhostSeenText
-	         $72f9 = BurglarJaxGhostBeatenText
-	         $7328 = BurglarJaxGhostAfterBattleText
-	         $7501 = SwimmerFLollitaGhostSeenText
-	         $7511 = SwimmerFLollitaGhostBeatenText
-	         $7520 = SwimmerFLollitaGhostAfterBattleText
-	         $7682 = JugglerAldustGhostSeenText
-	         $7695 = JugglerAldustGhostBeatenText
-	         $76b7 = JugglerAldustGhostAfterBattleText
-	         $78f5 = LavRadioTower1FReceptionistText
-	         $79d9 = LavRadioTower1FDirectoryText
-	         $7a34 = LavRadioTower1FPokeFluteSignText
-	         $7a6d = LavRadioTower1FReferenceLibraryText
-	         $7ab4 = LavRadioTower1F_MapEvents
-	         $7b02 = Route8SaffronGate_MapScripts
-	         $7b04 = Route8SaffronGateOfficerScript
-	         $7b29 = Route8SaffronGateOfficerScript.AfterScript
-	         $7b30 = Route8SaffronGateOfficerScript.NoFight
-	         $7b37 = OfficerGuard8WinText
-	         $7b5f = Route8SaffronGate_MapEvents
-	         $7b86 = Route12SuperRodHouse_MapScripts
-	         $7b88 = Route12SuperRodHouseFishingGuruScript
-	         $7b8f = Route12SuperRodHouse_MapEvents
-	EMPTY: $7bac-$7fff ($0454 bytes)
-	TOTAL EMPTY: $0454 bytes
+	         $6a36 = ViridianPokecenter1F_MapScripts
+	         $6a38 = ViridianPokecenter1FNurseScript
+	         $6a40 = ViridianPokecenter1FNurseScript.YouDontBelong
+	         $6a74 = OfficerViridianPokeScript
+	         $6a87 = OfficerViridianPokeScript.UnderArrest
+	         $6aac = ViridianPokecenter1FCooltrainerMScript
+	         $6aba = ViridianPokecenter1FCooltrainerMScript.BlueReturned
+	         $6ac0 = ViridianPokecenter1FCooltrainerFScript
+	         $6ac3 = ViridianPokecenter1FBugCatcherScript
+	         $6ac6 = ViridianPokecenter1FCooltrainerMText
+	         $6b0e = ViridianPokecenter1FCooltrainerMText_BlueReturned
+	         $6b84 = ViridianPokecenter1FCooltrainerFText
+	         $6c73 = ViridianPokecenter1FBugCatcherText
+	         $6c9a = ViridianPokeCentreCallAuthoritiestext
+	         $6d2d = ViridianPokecenter1F_MapEvents
+	         $6d83 = ViridianPokecenter2FBeta_MapScripts
+	         $6d85 = ViridianPokecenter2FBeta_MapEvents
+	         $6d90 = SeafoamGym_MapScripts
+	         $6d96 = SeafoamGymNoopScene
+	         $6d97 = SeafoamGymBlaineScript
+	         $6db2 = SeafoamGymBlaineScript.ReturnAfterBattle
+	         $6dcb = SeafoamGymBlaineScript.FightDone
+	         $6dd1 = SeafoamGymGuideScript
+	         $6de2 = SeafoamGymGuideScript.TalkedToSeafoamGymGuideScript
+	         $6de8 = BlaineIntroText
+	         $6f0c = BlaineWinLossText
+	         $6f49 = ReceivedVolcanoBadgeText
+	         $6f63 = BlaineAfterBattleText
+	         $70f3 = BlaineFightDoneText
+	         $7130 = SeafoamGymGuideWinText
+	         $71dd = SeafoamGymGuideWinText2
+	         $723c = SeafoamGym_MapEvents
+	         $7261 = LavRadioTower1F_MapScripts
+	         $7263 = LavRadioTower1FSuperNerd1Script
+	         $726f = LavRadioTower1FSuperNerd1Script.Script
+	         $727a = LavRadioTower1FGentlemanScript
+	         $7286 = LavRadioTower1FGentlemanScript.Script
+	         $7291 = LavRadioTower1FSuperNerd2Script
+	         $729d = LavRadioTower1FSuperNerd2Script.Script
+	         $72a8 = BurglarJaxGhostSeenText
+	         $72eb = BurglarJaxGhostBeatenText
+	         $731a = BurglarJaxGhostAfterBattleText
+	         $74f3 = SwimmerFLollitaGhostSeenText
+	         $7503 = SwimmerFLollitaGhostBeatenText
+	         $7512 = SwimmerFLollitaGhostAfterBattleText
+	         $7674 = JugglerAldustGhostSeenText
+	         $7687 = JugglerAldustGhostBeatenText
+	         $76a9 = JugglerAldustGhostAfterBattleText
+	         $78e7 = LavRadioTower1F_MapEvents
+	         $7923 = Route8SaffronGate_MapScripts
+	         $7925 = Route8SaffronGateOfficerScript
+	         $794a = Route8SaffronGateOfficerScript.AfterScript
+	         $7951 = Route8SaffronGateOfficerScript.NoFight
+	         $7958 = OfficerGuard8WinText
+	         $7980 = Route8SaffronGate_MapEvents
+	         $79a7 = Route12SuperRodHouse_MapScripts
+	         $79a9 = Route12SuperRodHouseFishingGuruScript
+	         $79b0 = Route12SuperRodHouse_MapEvents
+	EMPTY: $79cd-$7fff ($0633 bytes)
+	TOTAL EMPTY: $0633 bytes
 
 ROMX bank #123:
 	SECTION: $4000-$4f01 ($0f02 bytes) ["Battle Tower Text"]

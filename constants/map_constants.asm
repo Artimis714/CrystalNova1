@@ -155,7 +155,8 @@ ENDM
 	map_const SAFARI_ZONE_BETA,                            10, 18 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
 	map_const GOLDENROD_ARCHIVES,                          10,  9 ; 92
-	map_const SOUL_HOUSE,                                   5,  4 ; 93
+	map_const SOUL_HOUSE,                                   6,  5 ; 93
+	map_const LAV_RADIO_TOWER_1F,                          10,  4 ; 94
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
@@ -369,9 +370,8 @@ ENDM
 	map_const LAVENDER_SPEECH_HOUSE,                        4,  4 ;  8
 	map_const LAVENDER_NAME_RATER,                          4,  4 ;  9
 	map_const LAVENDER_MART,                                6,  4 ; 10
-	map_const LAV_RADIO_TOWER_1F,                          10,  4 ; 12
-	map_const ROUTE_8_SAFFRON_GATE,                         5,  4 ; 13
-	map_const ROUTE_12_SUPER_ROD_HOUSE,                     4,  4 ; 14
+	map_const ROUTE_8_SAFFRON_GATE,                         5,  4 ; 12
+	map_const ROUTE_12_SUPER_ROD_HOUSE,                     4,  4 ; 13
 	endgroup
 
 	newgroup SILVER                                               ; 19
