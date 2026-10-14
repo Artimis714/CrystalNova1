@@ -34,7 +34,7 @@ Moves:
 	move WHIRLWIND,    EFFECT_FORCE_SWITCH,        0, FLYING,       100, 20,   0
 	move FLY,          EFFECT_FLY,                85, FLYING,        95, 15,   0
 	move BIND,         EFFECT_TRAP_TARGET,        15, GRASS,         75, 20,   0
-	move SCALD,        EFFECT_BURN_HIT,           80, WATER,         95, 10,  50
+	move SCALD,        EFFECT_BURN_HIT,           85, WATER,         95, 10,  50
 	move VINE_WHIP,    EFFECT_FLINCH_HIT,         20, GRASS,        100, 35,  16
 	move STOMP,        EFFECT_STOMP,              65, NORMAL,       100, 20,  30
 	move DOUBLE_KICK,  EFFECT_DOUBLE_HIT,         30, FIGHTING,     100, 30,   0
@@ -70,7 +70,7 @@ Moves:
 	move MIST,         EFFECT_MIST,                0, ICE,          100, 30,   0
 	move WATER_GUN,    EFFECT_SPEED_DOWN_HIT,     40, WATER,        100, 25,  30
 	move HYDRO_PUMP,   EFFECT_SPEED_DOWN_HIT,    120, WATER,         70,  5, 100
-	move SURF,         EFFECT_SPEED_DOWN_HIT,     75, WATER,        100, 15, 100
+	move SURF,         EFFECT_SPEED_DOWN_HIT,     70, WATER,        100, 15, 100
 	move ICE_BEAM,     EFFECT_FREEZE_HIT,         95, ICE,           95, 15,  10
 	move BLIZZARD,     EFFECT_BLIZZARD,          120, ICE,           70,  5,  30
 	move PSYBEAM,      EFFECT_CONFUSE_HIT,        65, PSYCHIC_TYPE, 100, 20,  10

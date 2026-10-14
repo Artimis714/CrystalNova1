@@ -462,6 +462,8 @@ ElmslabNormalText::
 
 	para "ROCK"
 	line "STEEL"
+	cont "ICE"
+	cont "NORMAL"
 
 	para "They do not effect"
 
@@ -481,8 +483,6 @@ ElmslabFightingText::
 	line "ICE"
 	cont "ROCK"
 	cont "BUG"
-	cont "STEEL"
-	cont "DARK"
 
 	para "They are not very"
 	line "effective against"
@@ -506,9 +506,7 @@ ElmslabFlyingText::
 	line "effective against"
 
 	para "FIGHTING"
-	line "WATER"
-	cont "GRASS"
-	cont "GROUND"
+	line "GRASS"
 	cont "BUG"
 
 	para "They are not very"
@@ -518,7 +516,6 @@ ElmslabFlyingText::
 	line "ICE"
 	cont "ROCK"
 	cont "STEEL"
-	cont "DRAGON"
 	done
 
 ElmslabPoisonText::
@@ -533,7 +530,6 @@ ElmslabPoisonText::
 	para "FLYING"
 	line "WATER"
 	cont "GRASS"
-	cont "BUG"
 
 	para "They are not very"
 	line "effective against"
@@ -560,11 +556,9 @@ ElmslabFireText::
 	para "They are super"
 	line "effective against"
 
-	para "POISON"
-	line "GRASS"
-	cont "ICE"
+	para "GRASS"
+	line "ICE"
 	cont "BUG"
-	cont "STEEL"
 
 	para "They are not very"
 	line "effective against"
@@ -590,8 +584,7 @@ ElmslabWaterText::
 	line "effective against"
 
 	para "FIRE"
-	line "ELECTRIC"
-	cont "ICE"
+	line "ICE"
 	cont "GROUND"
 
 	para "They are not very"
@@ -612,19 +605,15 @@ ElmslabGrassText::
 	line "effective against"
 
 	para "WATER"
-	line "GROUND"
-	cont "ROCK"
+	line "ROCK"
 	cont "GHOST"
-	cont "STEEL"
 
 	para "They are not very"
 	line "effective against"
 
 	para "FIRE"
 	line "GRASS"
-	cont "POISON"
-	cont "FLYING"
-	cont "BUG"
+	cont "FIGHTING"
 	cont "DRAGON"
 
 	para "GRASS Type #-"
@@ -671,20 +660,16 @@ ElmslabPsychicText::
 	line "effective against"
 
 	para "FIGHTING"
-	line "FLYING"
+	line "GHOST"
 	cont "POISON"
-	cont "DRAGON"
 
 	para "They are not very"
 	line "effective against"
 
 	para "ICE"
-	line "GHOST"
+	line "BUG"
+	cont "DARK"
 	cont "PSYCHIC"
-
-	para "They do not effect"
-
-	para "DARK"
 
 	para "PSYCHIC Type #-"
 	line "MON are immune to"
@@ -692,7 +677,7 @@ ElmslabPsychicText::
 	done
 
 ElmslabIceText::
-	text "Ice TYPE"
+	text "ICE TYPE"
 
 	para "Ice type moves"
 	line "are Special."
@@ -730,7 +715,6 @@ ElmslabGroundText::
 	para "FIRE"
 	line "ELECTRIC"
 	cont "POISON"
-	cont "ROCK"
 
 	para "They are not very"
 	line "effective against"
@@ -753,7 +737,7 @@ ElmslabRockText::
 	para "They are super"
 	line "effective against"
 
-	para "FIRE"
+	para "ICE"
 	line "FLYING"
 	cont "BUG"
 
@@ -762,6 +746,7 @@ ElmslabRockText::
 
 	para "GROUND"
 	line "WATER"
+	cont "FIGHTING"
 
 	para "They do not effect"
 
@@ -787,6 +772,7 @@ ElmslabBugText::
 
 	para "FIRE"
 	line "STEEL"
+	cont "ROCK"
 	cont "FLYING"
 	done
 
@@ -799,15 +785,14 @@ ElmslabGhostText::
 	para "They are super"
 	line "effective against"
 
-	para "PSYCHIC"
+	para "DARK"
 	line "STEEL"
-	cont "GHOST"
-	cont "DARK"
 
 	para "They are not very"
 	line "effective against"
 
 	para "BUG"
+	line "PSYCHIC"
 
 	para "They do not effect"
 
@@ -830,13 +815,13 @@ ElmslabSteelText::
 
 	para "ICE"
 	line "ROCK"
+	cont "DRAGON"
 
 	para "They are not very"
 	line "effective against"
 
 	para "FIGHTING"
 	line "FIRE"
-	cont "WATER"
 	cont "ELECTRIC"
 
 	para "STEEL Type #-"
@@ -853,9 +838,10 @@ ElmslabDragonText::
 	para "They are super"
 	line "effective against"
 
-	para "DRAGON"
-	line "GHOST"
-	cont "FLYING"
+	para "FIRE"
+	line "WATER"
+	cont "GRASS"
+	cont "FIGHTING"
 
 	para "They are not very"
 	line "effective against"
@@ -883,6 +869,7 @@ ElmslabDarkText::
 	para "STEEL"
 	line "DARK"
 	cont "GHOST"
+	cont "FIGHTING"
 	done
 
 OhHeyDerKiddoText::
