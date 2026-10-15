@@ -62,3 +62,16 @@
 	tilecoll WALL, WALL, BOOKSHELF, BOOKSHELF ; 3d
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3e
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3f
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 40
+	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 41
+	tilecoll WALL, WALL, FLOOR, WALL ; 42
+	tilecoll WALL, WALL, WALL, WALL ; 43
+	tilecoll WALL, WALL, WALL, WALL ; 44
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 45
+	tilecoll WALL, WALL, WALL, WALL ; 46
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 47
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 48
+	tilecoll FLOOR, WALL, FLOOR, WALL ; 49
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 4a
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 4b
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 4c

@@ -1,6 +1,6 @@
 SUMMARY:
 	ROM0: 16093 bytes used / 291 free
-	ROMX: 1799713 bytes used / 281055 free in 127 banks
+	ROMX: 1800108 bytes used / 280660 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks
@@ -7618,7 +7618,7 @@ ROMX bank #11:
 	TOTAL EMPTY: $0ad7 bytes
 
 ROMX bank #12:
-	SECTION: $4000-$73ef ($33f0 bytes) ["Tileset Data 4"]
+	SECTION: $4000-$74f3 ($34f4 bytes) ["Tileset Data 4"]
 	         $4000 = TilesetEliteFourRoomGFX
 	         $44e0 = TilesetEliteFourRoomMeta
 	         $48e0 = TilesetEliteFourRoomColl
@@ -7630,12 +7630,12 @@ ROMX bank #12:
 	         $5ce0 = TilesetRadioTowerColl
 	         $5de0 = TilesetUndergroundGFX
 	         $61b0 = TilesetUndergroundMeta
-	         $65b0 = TilesetUndergroundColl
-	         $66b0 = TilesetDarkCaveGFX
-	         $69f0 = UnusedTilesetJohtoMeta
-	         $71f0 = UnusedTilesetJohtoColl
-	EMPTY: $73f0-$7fff ($0c10 bytes)
-	TOTAL EMPTY: $0c10 bytes
+	         $6680 = TilesetUndergroundColl
+	         $67b4 = TilesetDarkCaveGFX
+	         $6af4 = UnusedTilesetJohtoMeta
+	         $72f4 = UnusedTilesetJohtoColl
+	EMPTY: $74f4-$7fff ($0b0c bytes)
+	TOTAL EMPTY: $0b0c bytes
 
 ROMX bank #13:
 	SECTION: $4000-$7f50 ($3f51 bytes) ["Effect Commands"]
@@ -20973,7 +20973,7 @@ ROMX bank #43:
 	TOTAL EMPTY: $00a6 bytes
 
 ROMX bank #44:
-	SECTION: $4000-$5a6d ($1a6e bytes) ["Map Blocks 3"]
+	SECTION: $4000-$5a8b ($1a8c bytes) ["Map Blocks 3"]
 	         $4000 = BetaSlowpokeWell1F_Blocks
 	         $4023 = SlowpokeWellB1F_Blocks
 	         $407d = SlowpokeWellB2F_Blocks
@@ -21005,65 +21005,65 @@ ROMX bank #44:
 	         $4a72 = PowerPlant_Blocks
 	         $4acc = PokemonFanClub_Blocks
 	         $4acc = SafariZoneWardensHome_Blocks
-	         $4ae0 = FightingDojo_Blocks
-	         $4afe = SilphCo1F_Blocks
-	         $4b1e = ViridianGym_Blocks
-	         $4b4b = TrainerHouse1F_Blocks
-	         $4b6e = TrainerHouseB1F_Blocks
-	         $4b96 = RedsHouse1F_Blocks
-	         $4ba6 = RedsHouse2F_Blocks
-	         $4bb6 = OaksLab_Blocks
-	         $4bd4 = MrFujisHouse_Blocks
-	         $4be8 = LavRadioTower1F_Blocks
-	         $4c10 = SilverCaveItemRooms_Blocks
-	         $4c6a = DayCare_Blocks
-	         $4c7e = SoulHouse_Blocks
-	         $4c9c = PewterGym_Blocks
-	         $4cbf = CeladonGym_Blocks
-	         $4cec = BetaCeladonMansion1F_Blocks
-	         $4d00 = CeladonCafe_Blocks
-	         $4d18 = BetaCeladonMansion2F_Blocks
-	         $4d30 = RockTunnel1F_Blocks
-	         $4e3e = RockTunnelB1F_Blocks
-	         $4f4c = DiglettsCave_Blocks
-	         $5000 = MountMoon_Blocks
-	         $5087 = SeafoamGym_Blocks
-	         $509b = MrPokemonsHouse_Blocks
-	         $50ab = VictoryRoadGate_Blocks
-	         $5105 = OlivinePortPassage_Blocks
-	         $5105 = VermilionPortPassage_Blocks
-	         $515f = FuchsiaGym_Blocks
-	         $518c = SafariZoneBeta_Blocks
-	         $5240 = UndergroundPath_Blocks
-	         $526a = Route39Barn_Blocks
-	         $527a = VictoryRoad_Blocks
-	         $53e2 = Route23_Blocks
-	         $543c = LancesRoom_Blocks
-	         $5478 = HallOfFame_Blocks
-	         $549b = CopycatsHouse1F_Blocks
-	         $54ab = CopycatsHouse2F_Blocks
-	         $54ba = GoldenrodFlowerShop_Blocks
-	         $54ca = MountMoonSquare_Blocks
-	         $5551 = WiseTriosRoom_Blocks
-	         $5561 = DragonsDen1F_Blocks
-	         $558e = DragonsDenB1F_Blocks
-	         $56f6 = TohjoFalls_Blocks
-	         $577d = RuinsOfAlphHoOhItemRoom_Blocks
-	         $577d = RuinsOfAlphKabutoItemRoom_Blocks
-	         $577d = RuinsOfAlphOmanyteItemRoom_Blocks
-	         $577d = RuinsOfAlphAerodactylItemRoom_Blocks
-	         $5791 = RuinsOfAlphHoOhWordRoom_Blocks
-	         $5809 = RuinsOfAlphKabutoWordRoom_Blocks
-	         $584f = RuinsOfAlphOmanyteWordRoom_Blocks
-	         $589f = RuinsOfAlphAerodactylWordRoom_Blocks
-	         $58e5 = DragonShrine_Blocks
-	         $58fe = PokecomCenterAdminOfficeMobile_Blocks
-	         $59fe = MobileTradeRoom_Blocks
-	         $5a12 = MobileBattleRoom_Blocks
-	         $5a26 = BetaBlank_Blocks
-	         $5a4e = GoldenrodDeptStoreRoof_Blocks
-	EMPTY: $5a6e-$7fff ($2592 bytes)
-	TOTAL EMPTY: $2592 bytes
+	         $4afe = FightingDojo_Blocks
+	         $4b1c = SilphCo1F_Blocks
+	         $4b3c = ViridianGym_Blocks
+	         $4b69 = TrainerHouse1F_Blocks
+	         $4b8c = TrainerHouseB1F_Blocks
+	         $4bb4 = RedsHouse1F_Blocks
+	         $4bc4 = RedsHouse2F_Blocks
+	         $4bd4 = OaksLab_Blocks
+	         $4bf2 = MrFujisHouse_Blocks
+	         $4c06 = LavRadioTower1F_Blocks
+	         $4c2e = SilverCaveItemRooms_Blocks
+	         $4c88 = DayCare_Blocks
+	         $4c9c = SoulHouse_Blocks
+	         $4cba = PewterGym_Blocks
+	         $4cdd = CeladonGym_Blocks
+	         $4d0a = BetaCeladonMansion1F_Blocks
+	         $4d1e = CeladonCafe_Blocks
+	         $4d36 = BetaCeladonMansion2F_Blocks
+	         $4d4e = RockTunnel1F_Blocks
+	         $4e5c = RockTunnelB1F_Blocks
+	         $4f6a = DiglettsCave_Blocks
+	         $501e = MountMoon_Blocks
+	         $50a5 = SeafoamGym_Blocks
+	         $50b9 = MrPokemonsHouse_Blocks
+	         $50c9 = VictoryRoadGate_Blocks
+	         $5123 = OlivinePortPassage_Blocks
+	         $5123 = VermilionPortPassage_Blocks
+	         $517d = FuchsiaGym_Blocks
+	         $51aa = SafariZoneBeta_Blocks
+	         $525e = UndergroundPath_Blocks
+	         $5288 = Route39Barn_Blocks
+	         $5298 = VictoryRoad_Blocks
+	         $5400 = Route23_Blocks
+	         $545a = LancesRoom_Blocks
+	         $5496 = HallOfFame_Blocks
+	         $54b9 = CopycatsHouse1F_Blocks
+	         $54c9 = CopycatsHouse2F_Blocks
+	         $54d8 = GoldenrodFlowerShop_Blocks
+	         $54e8 = MountMoonSquare_Blocks
+	         $556f = WiseTriosRoom_Blocks
+	         $557f = DragonsDen1F_Blocks
+	         $55ac = DragonsDenB1F_Blocks
+	         $5714 = TohjoFalls_Blocks
+	         $579b = RuinsOfAlphHoOhItemRoom_Blocks
+	         $579b = RuinsOfAlphKabutoItemRoom_Blocks
+	         $579b = RuinsOfAlphOmanyteItemRoom_Blocks
+	         $579b = RuinsOfAlphAerodactylItemRoom_Blocks
+	         $57af = RuinsOfAlphHoOhWordRoom_Blocks
+	         $5827 = RuinsOfAlphKabutoWordRoom_Blocks
+	         $586d = RuinsOfAlphOmanyteWordRoom_Blocks
+	         $58bd = RuinsOfAlphAerodactylWordRoom_Blocks
+	         $5903 = DragonShrine_Blocks
+	         $591c = PokecomCenterAdminOfficeMobile_Blocks
+	         $5a1c = MobileTradeRoom_Blocks
+	         $5a30 = MobileBattleRoom_Blocks
+	         $5a44 = BetaBlank_Blocks
+	         $5a6c = GoldenrodDeptStoreRoof_Blocks
+	EMPTY: $5a8c-$7fff ($2574 bytes)
+	TOTAL EMPTY: $2574 bytes
 
 ROMX bank #45:
 	SECTION: $4000-$7ea7 ($3ea8 bytes) ["Tileset Data 5"]
@@ -40783,7 +40783,7 @@ ROMX bank #105:
 	TOTAL EMPTY: $06e8 bytes
 
 ROMX bank #106:
-	SECTION: $4000-$7b72 ($3b73 bytes) ["Map Scripts 23"]
+	SECTION: $4000-$7b77 ($3b78 bytes) ["Map Scripts 23"]
 	         $4000 = NewBarkTown_MapScripts
 	         $400d = NewBarkTownNoop1Scene
 	         $400e = NewBarkTownNoop2Scene
@@ -41165,29 +41165,29 @@ ROMX bank #106:
 	         $753a = OfficerJerichoAfterText
 	         $75aa = OfficerJerichoDaytimeText
 	         $766d = VermilionCity_MapEvents
-	         $7742 = CinnabarPokecenter1F_MapScripts
-	         $7744 = CinnabarPokecenter1FNurseScript
-	         $774c = CinnabarPokecenter1FNurseScript.YouDontBelong
-	         $7780 = OfficerCinnabarPokeScript
-	         $7793 = OfficerCinnabarPokeScript.UnderArrest
-	         $77b8 = CinnabarPokecenter1FCooltrainerFScript
-	         $77bb = CinnabarPokecenter1FFisherScript
-	         $77be = CinnabarPokecenter1FCooltrainerFText
-	         $78be = CinnabarPokecenter1FFisherText
-	         $794e = CinnabarPokeCentreCallAuthoritiestext
-	         $79f7 = CinnabarPokecenter1F_MapEvents
-	         $7a40 = CinnabarPokecenter2FBeta_MapScripts
-	         $7a42 = CinnabarPokecenter2FBeta_MapEvents
-	         $7a4d = Route19FuchsiaGate_MapScripts
-	         $7a4f = Route19FuchsiaGateOfficerScript
-	         $7a74 = Route19FuchsiaGateOfficerScript.AfterScript
-	         $7a7b = Route19FuchsiaGateOfficerScript.NoFight
-	         $7a88 = Route19FuchsiaGateOfficerScript.RocksCleared
-	         $7a8e = OfficerGuard19WinText
-	         $7ab6 = Route19FuchsiaGateOfficerText_RocksCleared
-	         $7b4c = Route19FuchsiaGate_MapEvents
-	EMPTY: $7b73-$7fff ($048d bytes)
-	TOTAL EMPTY: $048d bytes
+	         $7747 = CinnabarPokecenter1F_MapScripts
+	         $7749 = CinnabarPokecenter1FNurseScript
+	         $7751 = CinnabarPokecenter1FNurseScript.YouDontBelong
+	         $7785 = OfficerCinnabarPokeScript
+	         $7798 = OfficerCinnabarPokeScript.UnderArrest
+	         $77bd = CinnabarPokecenter1FCooltrainerFScript
+	         $77c0 = CinnabarPokecenter1FFisherScript
+	         $77c3 = CinnabarPokecenter1FCooltrainerFText
+	         $78c3 = CinnabarPokecenter1FFisherText
+	         $7953 = CinnabarPokeCentreCallAuthoritiestext
+	         $79fc = CinnabarPokecenter1F_MapEvents
+	         $7a45 = CinnabarPokecenter2FBeta_MapScripts
+	         $7a47 = CinnabarPokecenter2FBeta_MapEvents
+	         $7a52 = Route19FuchsiaGate_MapScripts
+	         $7a54 = Route19FuchsiaGateOfficerScript
+	         $7a79 = Route19FuchsiaGateOfficerScript.AfterScript
+	         $7a80 = Route19FuchsiaGateOfficerScript.NoFight
+	         $7a8d = Route19FuchsiaGateOfficerScript.RocksCleared
+	         $7a93 = OfficerGuard19WinText
+	         $7abb = Route19FuchsiaGateOfficerText_RocksCleared
+	         $7b51 = Route19FuchsiaGate_MapEvents
+	EMPTY: $7b78-$7fff ($0488 bytes)
+	TOTAL EMPTY: $0488 bytes
 
 ROMX bank #107:
 	SECTION: $4000-$775c ($375d bytes) ["Map Scripts 24"]
@@ -43891,7 +43891,7 @@ ROMX bank #120:
 	         $4400 = TilesetKabutoWordRoomMeta
 	         $4800 = TilesetOmanyteWordRoomMeta
 	         $4c00 = TilesetAerodactylWordRoomMeta
-	SECTION: $5000-$7996 ($2997 bytes) ["Enemy Trainer Parties 1"]
+	SECTION: $5000-$79b1 ($29b2 bytes) ["Enemy Trainer Parties 1"]
 	         $5000 = FalknerGroup
 	         $504c = WhitneyGroup
 	         $50ad = BugsyGroup
@@ -43957,10 +43957,10 @@ ROMX bank #120:
 	         $77fb = RedGroup
 	         $782b = BlueGroup
 	         $788d = OfficerGroup
-	         $7930 = GruntFGroup
-	         $797c = MysticalmanGroup
-	EMPTY: $7997-$7fff ($0669 bytes)
-	TOTAL EMPTY: $0669 bytes
+	         $794b = GruntFGroup
+	         $7997 = MysticalmanGroup
+	EMPTY: $79b2-$7fff ($064e bytes)
+	TOTAL EMPTY: $064e bytes
 
 ROMX bank #121:
 	SECTION: $4000-$7e7f ($3e80 bytes) ["Mon Icons 2"]
@@ -44666,7 +44666,7 @@ ROMX bank #126:
 	TOTAL EMPTY: $0758 bytes
 
 ROMX bank #127:
-	SECTION: $4000-$7982 ($3983 bytes) ["Map Scripts 30"]
+	SECTION: $4000-$79cb ($39cc bytes) ["Map Scripts 30"]
 	         $4000 = CherrygrovePokecenter1F_MapScripts
 	         $4002 = CherrygrovePokecenter1FNurseScript
 	         $4075 = CherrygrovePokecenter1FNurseScript.FreeHealthCare
@@ -44871,76 +44871,77 @@ ROMX bank #127:
 	         $6316 = PokemonFanClubBayleefScript
 	         $6326 = PokemonFanClubBayleefScript.Abandoned
 	         $634a = PokemonFanClubBayleefScript.NotWorthCatching
-	         $6358 = PokemonFanClubListenSign
-	         $635b = PokemonFanClubBraggingSign
-	         $635e = BossTryingToRescueUsText
-	         $641f = HeardSpeachText
-	         $6467 = LeaveUsBeText
-	         $64d7 = PokemonFanClubReceptionistText
-	         $662d = PokemonFanClubClefairyGuyMakingDoWithADollIFoundText
-	         $66ee = PokemonFanClubClefairyGuyTakeThisDollBackToGirlText
-	         $693b = PokemonFanClubPlayerReceivedDollText
-	         $69cb = PokemonFanClubClefairyGuyIUnderstandText
-	         $6a39 = PokemonFanClubClefairyGuyGoingToGetARealClefairyText
-	         $6af2 = PokemonFanClubClefairyGuyIStayedText
-	         $6bf2 = PokemonFanClubClefairyGuyProudofDaughterText
-	         $6c77 = PokemonFanClubClefairyGuyPackIsJammedFullText
-	         $6ce6 = PokemonFanClubTeacherText
-	         $6db3 = PokemonFanClubTeacherImCountingOnYouText
-	         $6df7 = ReceivedBayleefText
-	         $6e0e = PokemonFanClubTeacherBayleefMayEvolveText
-	         $6e52 = PokemonFanClubTeacherPartyFullText
-	         $6e9f = PokemonFanClubTeacherNoBayleefText
-	         $6f04 = PokemonFanClubClefairyDollText
-	         $6f6c = PokemonFanClubBayleefText
-	         $6f7f = AbandonedBayleefText
-	         $6ffb = NotWorthCatchingText
-	         $7060 = PokemonFanClubListenSignText
-	         $7084 = PokemonFanClubBraggingSignText
-	         $70e3 = PokemonFanClub_MapEvents
-	         $714b = ViridianCity_MapScripts
-	         $7150 = ViridianCityFlypointCallback
-	         $7154 = ViridianCityCoffeeGramps
-	         $716e = ViridianCityCoffeeGramps.no
-	         $7174 = ViridianCityCoffeeGramps.Alert
-	         $718d = ViridianCityCoffeeGramps.GetAwayfromMe
-	         $7194 = ViridianCityGrampsNearGym
-	         $71a2 = ViridianCityGrampsNearGym.BlueReturned
-	         $71a8 = ViridianCityDreamEaterFisher
-	         $71bd = ViridianCityDreamEaterFisher.GotDreamEater
-	         $71c1 = ViridianCityDreamEaterFisher.NoRoomForDreamEater
-	         $71c3 = ViridianCityYoungsterScript
-	         $71c6 = ViridianCitySign
-	         $71c9 = ViridianGymSign
-	         $71cc = ViridianCityWelcomeSign
-	         $71cf = TrainerHouseSign
-	         $71d2 = ViridianCityPokecenterSign
-	         $71d5 = ViridianCityMartSign
-	         $71d8 = ViridianTownCityPolice3Script
-	         $71e4 = ViridianTownCityPolice3Script.Script
-	         $71ec = ViridianTownCityPolice2Script
-	         $71f8 = ViridianTownCityPolice2Script.Script
-	         $7200 = ViridianTownCityPolice1Script
-	         $720c = ViridianTownCityPolice1Script.Script
-	         $7214 = ViridianPoliceSeenText
-	         $727c = ViridianPoliceAfterBattleText
-	         $72f5 = ViridianPoliceWinText
-	         $7329 = ViridianCityCoffeeGrampsQuestionText
-	         $7475 = ViridianCityCoffeeGrampsBelievedText
-	         $7554 = ViridianCityCoffeeGrampsDoubtedText
-	         $75b0 = ViridianCityGrampsNearGymText
-	         $7651 = ViridianCityGrampsNearGymBlueReturnedText
-	         $7697 = ViridianCityDreamEaterFisherText
-	         $7757 = ViridianCityDreamEaterFisherGotDreamEaterText
-	         $777b = ViridianCityYoungsterText
-	         $7811 = ViridianCitySignText
-	         $783d = ViridianGymSignText
-	         $7882 = ViridianCityWelcomeSignText
-	         $78bb = TrainerHouseSignText
-	         $78eb = ViridianCity_MapEvents
-	EMPTY: $7983-$7ddf ($045d bytes)
+	         $6358 = VermilionPrisonWardenScript
+	         $6364 = VermilionPrisonWardenScript.Script
+	         $636c = WardenSeenText
+	         $6396 = WardenWinText
+	         $63b0 = WardenAfterBattleText
+	         $6427 = BossTryingToRescueUsText
+	         $64e8 = HeardSpeachText
+	         $6530 = LeaveUsBeText
+	         $65a0 = PokemonFanClubReceptionistText
+	         $66f6 = PokemonFanClubClefairyGuyMakingDoWithADollIFoundText
+	         $67b7 = PokemonFanClubClefairyGuyTakeThisDollBackToGirlText
+	         $6a04 = PokemonFanClubPlayerReceivedDollText
+	         $6a94 = PokemonFanClubClefairyGuyIUnderstandText
+	         $6b02 = PokemonFanClubClefairyGuyGoingToGetARealClefairyText
+	         $6bbb = PokemonFanClubClefairyGuyIStayedText
+	         $6cbb = PokemonFanClubClefairyGuyProudofDaughterText
+	         $6d40 = PokemonFanClubClefairyGuyPackIsJammedFullText
+	         $6daf = PokemonFanClubTeacherText
+	         $6e7c = PokemonFanClubTeacherImCountingOnYouText
+	         $6ec0 = ReceivedBayleefText
+	         $6ed7 = PokemonFanClubTeacherBayleefMayEvolveText
+	         $6f1b = PokemonFanClubTeacherPartyFullText
+	         $6f68 = PokemonFanClubTeacherNoBayleefText
+	         $6fcd = PokemonFanClubClefairyDollText
+	         $7035 = PokemonFanClubBayleefText
+	         $7048 = AbandonedBayleefText
+	         $70c4 = NotWorthCatchingText
+	         $7129 = PokemonFanClub_MapEvents
+	         $7194 = ViridianCity_MapScripts
+	         $7199 = ViridianCityFlypointCallback
+	         $719d = ViridianCityCoffeeGramps
+	         $71b7 = ViridianCityCoffeeGramps.no
+	         $71bd = ViridianCityCoffeeGramps.Alert
+	         $71d6 = ViridianCityCoffeeGramps.GetAwayfromMe
+	         $71dd = ViridianCityGrampsNearGym
+	         $71eb = ViridianCityGrampsNearGym.BlueReturned
+	         $71f1 = ViridianCityDreamEaterFisher
+	         $7206 = ViridianCityDreamEaterFisher.GotDreamEater
+	         $720a = ViridianCityDreamEaterFisher.NoRoomForDreamEater
+	         $720c = ViridianCityYoungsterScript
+	         $720f = ViridianCitySign
+	         $7212 = ViridianGymSign
+	         $7215 = ViridianCityWelcomeSign
+	         $7218 = TrainerHouseSign
+	         $721b = ViridianCityPokecenterSign
+	         $721e = ViridianCityMartSign
+	         $7221 = ViridianTownCityPolice3Script
+	         $722d = ViridianTownCityPolice3Script.Script
+	         $7235 = ViridianTownCityPolice2Script
+	         $7241 = ViridianTownCityPolice2Script.Script
+	         $7249 = ViridianTownCityPolice1Script
+	         $7255 = ViridianTownCityPolice1Script.Script
+	         $725d = ViridianPoliceSeenText
+	         $72c5 = ViridianPoliceAfterBattleText
+	         $733e = ViridianPoliceWinText
+	         $7372 = ViridianCityCoffeeGrampsQuestionText
+	         $74be = ViridianCityCoffeeGrampsBelievedText
+	         $759d = ViridianCityCoffeeGrampsDoubtedText
+	         $75f9 = ViridianCityGrampsNearGymText
+	         $769a = ViridianCityGrampsNearGymBlueReturnedText
+	         $76e0 = ViridianCityDreamEaterFisherText
+	         $77a0 = ViridianCityDreamEaterFisherGotDreamEaterText
+	         $77c4 = ViridianCityYoungsterText
+	         $785a = ViridianCitySignText
+	         $7886 = ViridianGymSignText
+	         $78cb = ViridianCityWelcomeSignText
+	         $7904 = TrainerHouseSignText
+	         $7934 = ViridianCity_MapEvents
+	EMPTY: $79cc-$7ddf ($0414 bytes)
 	SECTION: $7de0-$7fff ($0220 bytes) ["Stadium 2 Checksums"]
-	TOTAL EMPTY: $045d bytes
+	TOTAL EMPTY: $0414 bytes
 
 VRAM bank #0:
 	SECTION: $8000-$9fff ($2000 bytes) ["VRAM0"]

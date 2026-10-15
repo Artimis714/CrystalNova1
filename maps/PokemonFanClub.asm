@@ -216,11 +216,45 @@ PokemonFanClubBayleefScript:
 	cry BAYLEEF
 	end
 
-PokemonFanClubListenSign:
-	jumptext PokemonFanClubListenSignText
+VermilionPrisonWardenScript:
+	trainer OFFICER, WARDEN, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_6, WardenSeenText, WardenWinText, 0, .Script
 
-PokemonFanClubBraggingSign:
-	jumptext PokemonFanClubBraggingSignText
+.Script:
+	endifjustbattled
+	opentext
+	writetext WardenAfterBattleText
+	waitbutton
+	closetext
+	end
+
+WardenSeenText:
+	text "Visiting hours"
+	line "are finished for"
+	cont "the day!"
+	done
+
+WardenWinText:
+	text "I can make an"
+	line "exception!"
+	done
+
+WardenAfterBattleText:
+	text "Visit this scum"
+	line "if you like. I"
+	cont "won't stop you." 
+
+	para "..."
+	line "..."
+
+	para "I have short term"
+	line "memory loss." 
+
+	para "..."
+	line "..." 
+
+	para "How did you get"
+	line "in here?"
+	done 
 
 BossTryingToRescueUsText:
 	text "..."
@@ -639,39 +673,22 @@ NotWorthCatchingText:
 	line "because it knows."
 	done
 
-PokemonFanClubListenSignText:
-	text "You do the crime!"
-	line "You do the time!"
-	done
-
-PokemonFanClubBraggingSignText:
-	text "Visiting hours:"
-	line "(The page is torn)"
-
-	para "From the look of"
-	line "prisoners, they"
-
-	para "don't get visitors"
-	line "anyway."
-	done
-
 PokemonFanClub_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2,  7, VERMILION_CITY, 3
-	warp_event  3,  7, VERMILION_CITY, 3
+	warp_event  6,  9, VERMILION_CITY, 11
+	warp_event  7,  9, VERMILION_CITY, 11
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  7,  0, BGEVENT_READ, PokemonFanClubListenSign
-	bg_event  9,  0, BGEVENT_READ, PokemonFanClubBraggingSign
 
 	def_object_events
-	object_event  3,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubChairmanScript, EVENT_PRISON_ROCKETS
-	object_event  4,  1, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubReceptionistScript, EVENT_PRISON_ROCKETS
-	object_event  2,  3, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyGuyScript, -1
-	object_event  7,  2, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubTeacherScript, EVENT_PRISON_ROCKETS
-	object_event  2,  4, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyDollScript, EVENT_VERMILION_FAN_CLUB_DOLL
-	object_event  7,  3, SPRITE_BAYLEEF, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PokemonFanClubBayleefScript, EVENT_GOT_BAYLEEF
+	object_event  6,  3, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubChairmanScript, EVENT_PRISON_ROCKETS
+	object_event 10,  3, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubReceptionistScript, EVENT_PRISON_ROCKETS
+	object_event 16,  3, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyGuyScript, -1
+	object_event  0,  3, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubTeacherScript, EVENT_PRISON_ROCKETS
+	object_event 19,  4, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyDollScript, EVENT_VERMILION_FAN_CLUB_DOLL
+	object_event  2,  3, SPRITE_BAYLEEF, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PokemonFanClubBayleefScript, EVENT_GOT_BAYLEEF
+	object_event 11,  8, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, VermilionPrisonWardenScript, -1

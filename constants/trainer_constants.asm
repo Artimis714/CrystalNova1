@@ -703,6 +703,7 @@ DEF KRIS EQU __trainer_class__
 	const CITYPOLICE
 	const RAXIL
 	const GERALD
+	const WARDEN
 
 	trainerclass GRUNTF ; 42
 	const GRUNTF_1

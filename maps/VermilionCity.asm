@@ -572,6 +572,7 @@ VermilionCity_MapEvents:
 	warp_event 19, 31, VERMILION_PORT_PASSAGE, 1
 	warp_event 20, 31, VERMILION_PORT_PASSAGE, 2
 	warp_event 34,  7, DIGLETTS_CAVE, 1
+	warp_event  7, 14, POKEMON_FAN_CLUB, 2
 
 	def_coord_events
 
