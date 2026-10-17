@@ -72,28 +72,23 @@ VermilionCityovementData_OfficertoSide:
 VermilionCityTeacherScript:
 	faceplayer
 	opentext
-	checkitem KANTO_PAPERS
-	iffalse .Alert
-	checkevent EVENT_VERMILION_ALERT
-	iftrue .GetAwayfromMe
+	checkevent EVENT_CANDY_SHOP
+	iffalse .TeacherCandyShopOpen
+	checkevent EVENT_BLUE_IN_CINNABAR
+	iftrue .TeacherCandyShopSoon
 	writetext VermilionCityTeacherText
 	waitbutton
 	closetext
 	end
 
-.Alert:
-	farwritetext OhHeyDerKiddoText
-	showemote EMOTE_SHOCK, VERMILIONCITY_TEACHER, 15
-	farwritetext ImCallingtheCopsDerEh
-	showemote EMOTE_SHOCK, PLAYER, 15
+.TeacherCandyShopOpen:
+	farwritetext VTCandyShopOpenText
 	waitbutton
 	closetext
-	setevent EVENT_VERMILION_ALERT
-	clearevent EVENT_BEAT_CITY_POLICE_VERMILION
 	end
 
-.GetAwayfromMe:
-	farwritetext GetAwayFromMeEhText
+.TeacherCandyShopSoon:
+	farwritetext VTCandyShopSoonText
 	waitbutton
 	closetext
 	end
@@ -101,28 +96,23 @@ VermilionCityTeacherScript:
 VermilionMachopOwner:
 	faceplayer
 	opentext
-	checkitem KANTO_PAPERS
-	iffalse .Alert
-	checkevent EVENT_VERMILION_ALERT
-	iftrue .GetAwayfromMe
+	checkevent EVENT_CANDY_SHOP
+	iffalse .GrumpCandyShopOpen
+	checkevent EVENT_BLUE_IN_CINNABAR
+	iftrue .GrumpCandyShopSoon
 	writetext VermilionMachopOwnerText
 	waitbutton
 	closetext
 	end
 
-.Alert:
-	farwritetext OhHeyDerKiddoText
-	showemote EMOTE_SHOCK, VERMILIONCITY_GRAMPS, 15
-	farwritetext ImCallingtheCopsDerEh
-	showemote EMOTE_SHOCK, PLAYER, 15
+.GrumpCandyShopSoon:
+	farwritetext GrumpCandyShopSoonText
 	waitbutton
 	closetext
-	setevent EVENT_VERMILION_ALERT
-	clearevent EVENT_BEAT_CITY_POLICE_VERMILION
 	end
 
-.GetAwayfromMe:
-	farwritetext GetAwayFromMeEhText
+.GrumpCandyShopOpen:
+	farwritetext GrumpCandyShopOpenText
 	waitbutton
 	closetext
 	end
@@ -198,7 +188,7 @@ VermilionGymBadgeGuy:
 .AllBadges:
 	writetext VermilionCityBadgeGuyAllBadgesText
 	promptbutton
-	verbosegiveitem HP_UP
+	verbosegiveitem PP_UP, 15
 	iffalse .Done
 	setevent EVENT_GOT_HP_UP_FROM_VERMILION_GUY
 .AlreadyGotItem:
@@ -227,7 +217,27 @@ VermilionCityPokecenterSign:
 	jumpstd PokecenterSignScript
 
 VermilionCityMartSign:
-	jumpstd MartSignScript
+	opentext
+	checkevent EVENT_CANDY_SHOP
+	iffalse .CandyShopOpen
+	checkevent EVENT_BLUE_IN_CINNABAR
+	iftrue .CandyShopSoon
+	writetext VMartText
+	waitbutton
+	closetext
+	end
+
+.CandyShopOpen:
+	farwritetext CandyShopOpenSignText
+	waitbutton
+	closetext
+	end
+
+.CandyShopSoon:
+	farwritetext CandyShopOpenSoonSignText
+	waitbutton
+	closetext
+	end
 
 VermilionCityHiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_VERMILION_CITY_HIDDEN_FULL_HEAL

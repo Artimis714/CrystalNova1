@@ -392,3 +392,20 @@ Kurt_GetRidOfItem:
 	ld [wItemQuantityChange], a
 	pop bc
 	ret
+
+SusieQ_CheckLeafQuantity:
+    call Kurt_GetQuantityOfApricorn
+    ld a, [wItemQuantityChange]
+    ld b, a
+    ld a, [wItemQuantity]
+    cp b
+    jr c, .enough
+    jr z, .enough
+    xor a
+    ld [wScriptVar], a
+    ret
+
+.enough
+    ld a, 1
+    ld [wScriptVar], a
+    ret

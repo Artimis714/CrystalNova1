@@ -185,3 +185,4 @@ SpecialsPointers::
 	add_special InitialClearDSTFlag
 	add_special NameShiny
 	add_special MoveRelearner
+	add_special SusieQCheckLeafQuantity

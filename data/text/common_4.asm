@@ -914,3 +914,131 @@ ElmslabTypeMatchupMenuText::
 	line "like to read"
 	cont "about?"
 	done
+
+SusieQIntroText::
+	text "Hey I'm Susie Q!"
+	line "I'm looking for"
+	cont "metallic leaves."
+
+	para "I'll trade ya 3"
+	line "RARE CANDY for"
+	cont "one GOLD LEAF"
+
+	para "or 1 RARE CANDY"
+	line "for a SILVER LEAF."
+
+	para "Wanna trade?"
+	done
+
+SusieQNotEnoughGoldText::
+	text "I want more Gold"
+	line "leaves if you want"
+	cont "that much candy."
+
+	para "Wanna Trade?"
+	done
+
+SusieQNotEnoughSilverText::
+	text "I want more silver"
+	line "leaves if you want"
+	cont "that much candy."
+
+	para "Wanna Trade?"
+	done
+
+SusieQPackFullText::
+	text "Your bag's too"
+	line "full, kid."
+	done 
+
+SusieQExchangeSuccessText::
+	text "Thanks so much!"
+	line "Come back if ya"
+	cont "find more!"
+
+	para "Wanna Trade?"
+	done
+
+NoGoldLeafText::
+	text "Kid, you don't"
+	line "have any Gold"
+	cont "leaves." 
+
+	para "Come back when you"
+	line "find some."
+
+	para "Wanna Trade?"
+	done
+
+NoSilverLeafText::
+	text "Kid, you don't"
+	line "have any Silver"
+	cont "leaves." 
+
+	para "Come back when you"
+	line "find some."
+
+	para "Wanna Trade?"
+	done
+
+CandyShopOpenSignText::
+	text "Susie Q's RARE"
+	line "CANDY SHOP is open"
+	cont "for business." 
+
+	para "Bring in GOLD and"
+	line "SILVER Leaves!"
+	done
+
+CandyShopOpenSoonSignText::
+	text "Susie Q's RARE"
+	line "CANDY SHOP!"
+	cont "Coming Soon!"
+	done
+
+VTCandyShopOpenText::
+	text "It's so nice that"
+	line "a RARE CANDY SHOP"
+	cont "opened in town."
+	done
+
+VTCandyShopSoonText::
+	text "Did you hear? The"
+	line "Mart closed, and"
+
+	para "some woman named"
+	line "Susie Q is opening"
+	cont "a RARE CANDY SHOP!"
+	done
+
+GrumpCandyShopSoonText::
+	text "The damn MART is"
+	line "closed! Some lady"
+
+	para "is replacing it"
+	line "with a RARE CANDY"
+	cont "SHOP."
+
+	para "How am I supposed"
+	line "to build anything"
+
+	para "with the damn MART"
+	line "shut?"
+	done
+
+GrumpCandyShopOpenText::
+	text "I can't believe"
+	line "they opened a" 
+	cont "candy store!"
+
+	para "How am supposed to"
+	line "build anything?"
+	done
+
+VMartText::
+	text "Vermilion City"
+	line "MART."
+
+	para "Going out of"
+	line "Business Soon!"
+	done

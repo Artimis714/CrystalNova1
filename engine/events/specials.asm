@@ -446,3 +446,7 @@ NameShiny:
 
 .DefaultNameshine:
 	db "SHINY@"
+
+SusieQCheckLeafQuantity:
+    farcall SusieQ_CheckLeafQuantity
+    ret

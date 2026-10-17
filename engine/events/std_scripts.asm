@@ -635,6 +635,7 @@ InitializeEventsScript:
 	setevent EVENT_BATTLED_DITTO
 	setevent EVENT_READY_TO_ROCK
 	setevent EVENT_OAK_IN_MT_SILVER
+	setevent EVENT_CANDY_SHOP
 	setevent EVENT_INITIALIZED_EVENTS
 	callasm .mystery_gift_flag
 	endcallback

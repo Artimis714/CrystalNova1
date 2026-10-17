@@ -65,6 +65,7 @@ WardensGranddaughter:
 	setevent EVENT_BEAT_CITY_POLICE_CINNABAR
 	setevent EVENT_BEAT_CITY_POLICE_CERULEAN
 	setevent EVENT_ROUTE_24_ROCKET
+	clearevent EVENT_CANDY_SHOP
 	waitbutton
 	closetext
 	end
