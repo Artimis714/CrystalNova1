@@ -40,10 +40,18 @@ CeladonPrizeRoom_tmcounterloop:
 	ifequal 1, .DragonBreath
 	ifequal 2, .RazorWind
 	ifequal 3, .ShadowBall
-	ifequal 4, .IceBeam
-	ifequal 5, .FlashCannon
-	ifequal 6, .DynamicPunch
-	ifequal 7, .Crunch
+	ifequal 4, .NextPage
+	sjump CeladonPrizeRoom_CancelPurchaseScript
+
+.NextPage:
+	special DisplayCoinCaseBalance
+	loadmenu CeladonPrizeRoom_TMMenuPage2Header
+	verticalmenu
+	closewindow
+	ifequal 1, .IceBeam
+	ifequal 2, .FlashCannon
+	ifequal 3, .DynamicPunch
+	ifequal 4, .Crunch
 	sjump CeladonPrizeRoom_CancelPurchaseScript
 
 .DragonBreath:
@@ -167,15 +175,25 @@ CeladonPrizeRoom_TMMenuHeader:
 
 .MenuData:
 	db STATICMENU_CURSOR ; flags
-	db 8 ; items
+	db 4 ; items
 	db "DRAGON BREATH@"
 	db "RAZOR WIND@"
 	db "SHADOW BALL@"
+	db "NEXT PAGE@"
+
+CeladonPrizeRoom_TMMenuPage2Header:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 2, 15, TEXTBOX_Y - 1
+	dw .MenuData2
+	db 1 ; default option
+
+.MenuData2:
+	db STATICMENU_CURSOR ; flags
+	db 4 ; items
 	db "ICE BEAM@"
 	db "FLASH CANNON@"
 	db "DYNAMIC PUNCH@"
 	db "CRUNCH@"
-	db "CANCEL@"
 
 CeladonGameCornerPrizeRoomPokemonVendor:
 	faceplayer

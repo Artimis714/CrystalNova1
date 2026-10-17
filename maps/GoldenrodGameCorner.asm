@@ -38,6 +38,7 @@ GoldenrodGameCornerTMVendorScript:
 	checkitem COIN_CASE
 	iffalse GoldenrodGameCornerPrizeVendor_NoCoinCaseScript
 	writetext GoldenrodGameCornerPrizeVendorWhichPrizeText
+
 GoldenrodGameCornerTMVendor_LoopScript:
 	special DisplayCoinCaseBalance
 	loadmenu GoldenrodGameCornerTMVendorMenuHeader
@@ -46,10 +47,18 @@ GoldenrodGameCornerTMVendor_LoopScript:
 	ifequal 1, .Thunderbolt
 	ifequal 2, .GigaDrain
 	ifequal 3, .Flamethrower
-	ifequal 4, .Earthquake
-	ifequal 5, .SludgeBomb
-	ifequal 6, .PsychicM
-	ifequal 7, .RockSlide
+	ifequal 4, .NextPage
+	sjump GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
+
+.NextPage:
+	special DisplayCoinCaseBalance
+	loadmenu GoldenrodGameCornerTMVendorPage2MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .Earthquake
+	ifequal 2, .SludgeBomb
+	ifequal 3, .PsychicM
+	ifequal 4, .RockSlide
 	sjump GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 
 .Thunderbolt:
@@ -173,15 +182,25 @@ GoldenrodGameCornerTMVendorMenuHeader:
 
 .MenuData:
 	db STATICMENU_CURSOR ; flags
-	db 8 ; items
+	db 4 ; items
 	db "THUNDERBOLT@"
 	db "GIGA DRAIN@"
 	db "FLAMETHROWER@"
+	db "NEXT PAGE@"
+
+GoldenrodGameCornerTMVendorPage2MenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 2, 15, TEXTBOX_Y - 1
+	dw .MenuData2
+	db 1 ; default option
+
+.MenuData2:
+	db STATICMENU_CURSOR ; flags
+	db 4 ; items
 	db "EARTHQUAKE@"
 	db "SLUDGE BOMB@"
 	db "PSYCHIC@"
 	db "ROCK SLIDE@"
-	db "CANCEL@"
 
 GoldenrodGameCornerPrizeMonVendorScript:
 	faceplayer
