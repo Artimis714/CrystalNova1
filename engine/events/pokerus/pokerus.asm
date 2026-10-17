@@ -122,64 +122,53 @@ GivePokerusAndConvertBerries:
 	ret
 
 ConvertBerriesToBerryJuice:
-    ; If we haven't been to Goldenrod City at least once,
-    ; prevent Shuckle from turning held Berry into Berry Juice.
-    ld hl, wStatusFlags2
-    bit STATUSFLAGS2_REACHED_GOLDENROD_F, [hl]
-    ret z
-    call Random
-    cp 1 out_of 16 ; 6.25% chance
-    ret nc
-    ld hl, wPartyMons
-    ld a, [wPartyCount]
+	ld a, [wPartyCount]
+	and a
+	ret z
+	ld b, a
+	ld hl, wPartyMons
 
 .partyMonLoop
-    push af
-    push hl
-    ld a, [hl]
-    cp SHUCKLE
-    jr nz, .loopMon
-    ld bc, MON_ITEM
-    add hl, bc
-    ld a, [hl]
+	ld a, [hl]
+	cp SHUCKLE
+	jr nz, .nextMon
 
-    ; Check if Shuckle is holding a specific berry
-    cp BERRY
-    jr z, .convertToBerryJuice
-    cp SLVR_BERRY
-    jr z, .convertToSlvrJuice
-    cp GOLD_BERRY
-    jr z, .convertToGoldJuice
+	push hl
+	ld bc, MON_ITEM
+	add hl, bc
+	ld a, [hl]
+	pop hl
 
-.loopMon
-    pop hl
-    ld bc, PARTYMON_STRUCT_LENGTH
-    add hl, bc
-    pop af
-    dec a
-    jr nz, .partyMonLoop
-    ret
+	cp BERRY
+	jr z, .BerryJuice
+	cp SLVR_BERRY
+	jr z, .SilverJuice
+	cp GOLD_BERRY
+	jr z, .GoldJuice
+	jr .nextMon
 
-.convertToBerryJuice
-    ld a, BERRY_JUICE
-    ld [hl], a
-    pop hl
-    pop af
-    ret
+.BerryJuice
+	ld a, BERRY_JUICE
+	jr .SetJuice
 
-.convertToSlvrJuice
-    ld a, SLVR_B_JUICE
-    ld [hl], a
-    pop hl
-    pop af
-    ret
+.SilverJuice
+	ld a, SLVR_B_JUICE
+	jr .SetJuice
 
-.convertToGoldJuice
-    ld a, GOLD_B_JUICE
-    ld [hl], a
-    pop hl
-    pop af
-    ret
+.GoldJuice
+	ld a, GOLD_B_JUICE
 
+.SetJuice
+	push hl
+	ld bc, MON_ITEM
+	add hl, bc
+	ld [hl], a
+	pop hl
+	ret
 
-
+.nextMon
+	ld de, PARTYMON_STRUCT_LENGTH
+	add hl, de
+	dec b
+	jr nz, .partyMonLoop
+	ret
