@@ -16,18 +16,11 @@ GivePokerusAndConvertBerries:
 	dec b
 	jr nz, .loopMons
 
-; If we haven't been to Goldenrod City at least once,
-; prevent the contraction of Pokerus.
-	ld hl, wStatusFlags2
-	bit STATUSFLAGS2_REACHED_GOLDENROD_F, [hl]
-	ret z
+; 1/256 chance of contracting Pokerus naturally.
 	call Random
 	ldh a, [hRandomAdd]
 	and a
 	ret nz
-	ldh a, [hRandomSub]
-	cp 3
-	ret nc ; 3/65536 chance (00 00, 00 01 or 00 02)
 	ld a, [wPartyCount]
 	ld b, a
 .randomMonSelectLoop

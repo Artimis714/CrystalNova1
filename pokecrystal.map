@@ -1,6 +1,6 @@
 SUMMARY:
 	ROM0: 16093 bytes used / 291 free
-	ROMX: 1801780 bytes used / 278988 free in 127 banks
+	ROMX: 1801769 bytes used / 278999 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks
@@ -7131,7 +7131,7 @@ ROMX bank #10:
 	TOTAL EMPTY: $0117 bytes
 
 ROMX bank #11:
-	SECTION: $4000-$751f ($3520 bytes) ["bankB"]
+	SECTION: $4000-$7514 ($3515 bytes) ["bankB"]
 	         $4000 = BattleStart_TrainerHuds
 	         $4012 = EnemySwitch_TrainerHud
 	         $401c = ShowPlayerMonsRemaining
@@ -7585,40 +7585,40 @@ ROMX bank #11:
 	         $7297 = PoisonFangDescription
 	         $72ba = GivePokerusAndConvertBerries
 	         $72c7 = GivePokerusAndConvertBerries.loopMons
-	         $72e6 = GivePokerusAndConvertBerries.randomMonSelectLoop
-	         $72f8 = GivePokerusAndConvertBerries.randomPokerusLoop
-	         $7307 = GivePokerusAndConvertBerries.load_pkrs
-	         $7310 = GivePokerusAndConvertBerries.TrySpreadPokerus
-	         $7329 = GivePokerusAndConvertBerries.checkFollowingMonsLoop
-	         $7339 = GivePokerusAndConvertBerries.checkPreviousMonsLoop
-	         $734f = GivePokerusAndConvertBerries.infectMon
-	         $735c = ConvertBerriesToBerryJuice
-	         $7365 = ConvertBerriesToBerryJuice.partyMonLoop
-	         $737f = ConvertBerriesToBerryJuice.BerryJuice
-	         $7383 = ConvertBerriesToBerryJuice.SilverJuice
-	         $7387 = ConvertBerriesToBerryJuice.GoldJuice
-	         $7389 = ConvertBerriesToBerryJuice.SetJuice
-	         $7391 = ConvertBerriesToBerryJuice.nextMon
-	         $7399 = ShowLinkBattleParticipants
-	         $73b0 = FindFirstAliveMonAndStartBattle
-	         $73be = FindFirstAliveMonAndStartBattle.loop
-	         $73c6 = FindFirstAliveMonAndStartBattle.okay
-	         $73ed = PlayBattleMusic
-	         $742f = PlayBattleMusic.kantowild
-	         $7434 = PlayBattleMusic.trainermusic
-	         $747a = PlayBattleMusic.othertrainer
-	         $748a = PlayBattleMusic.johtotrainer
-	         $748f = PlayBattleMusic.kantotrainer
-	         $7492 = PlayBattleMusic.done
-	         $7499 = ClearBattleRAM
-	         $74ef = PlaceGraphic
-	         $74fa = PlaceGraphic.x1
-	         $74fc = PlaceGraphic.y1
-	         $7509 = PlaceGraphic.right
-	         $7511 = PlaceGraphic.x2
-	         $7513 = PlaceGraphic.y2
-	EMPTY: $7520-$7fff ($0ae0 bytes)
-	TOTAL EMPTY: $0ae0 bytes
+	         $72db = GivePokerusAndConvertBerries.randomMonSelectLoop
+	         $72ed = GivePokerusAndConvertBerries.randomPokerusLoop
+	         $72fc = GivePokerusAndConvertBerries.load_pkrs
+	         $7305 = GivePokerusAndConvertBerries.TrySpreadPokerus
+	         $731e = GivePokerusAndConvertBerries.checkFollowingMonsLoop
+	         $732e = GivePokerusAndConvertBerries.checkPreviousMonsLoop
+	         $7344 = GivePokerusAndConvertBerries.infectMon
+	         $7351 = ConvertBerriesToBerryJuice
+	         $735a = ConvertBerriesToBerryJuice.partyMonLoop
+	         $7374 = ConvertBerriesToBerryJuice.BerryJuice
+	         $7378 = ConvertBerriesToBerryJuice.SilverJuice
+	         $737c = ConvertBerriesToBerryJuice.GoldJuice
+	         $737e = ConvertBerriesToBerryJuice.SetJuice
+	         $7386 = ConvertBerriesToBerryJuice.nextMon
+	         $738e = ShowLinkBattleParticipants
+	         $73a5 = FindFirstAliveMonAndStartBattle
+	         $73b3 = FindFirstAliveMonAndStartBattle.loop
+	         $73bb = FindFirstAliveMonAndStartBattle.okay
+	         $73e2 = PlayBattleMusic
+	         $7424 = PlayBattleMusic.kantowild
+	         $7429 = PlayBattleMusic.trainermusic
+	         $746f = PlayBattleMusic.othertrainer
+	         $747f = PlayBattleMusic.johtotrainer
+	         $7484 = PlayBattleMusic.kantotrainer
+	         $7487 = PlayBattleMusic.done
+	         $748e = ClearBattleRAM
+	         $74e4 = PlaceGraphic
+	         $74ef = PlaceGraphic.x1
+	         $74f1 = PlaceGraphic.y1
+	         $74fe = PlaceGraphic.right
+	         $7506 = PlaceGraphic.x2
+	         $7508 = PlaceGraphic.y2
+	EMPTY: $7515-$7fff ($0aeb bytes)
+	TOTAL EMPTY: $0aeb bytes
 
 ROMX bank #12:
 	SECTION: $4000-$74f3 ($34f4 bytes) ["Tileset Data 4"]
