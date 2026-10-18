@@ -157,6 +157,9 @@ ENDM
 	map_const GOLDENROD_ARCHIVES,                          10,  9 ; 92
 	map_const SOUL_HOUSE,                                   6,  5 ; 93
 	map_const LAV_RADIO_TOWER_1F,                          10,  4 ; 94
+	map_const CERULEAN_CAVE_1F, 20, 15 ; 95
+	map_const CERULEAN_CAVE_2F, 20, 15 ; 96
+	map_const CERULEAN_CAVE_3F, 20, 15 ; 97
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4

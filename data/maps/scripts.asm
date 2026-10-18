@@ -510,3 +510,6 @@ INCLUDE "maps/GoldenrodHappinessRater.asm"
 SECTION "Map Scripts 33", ROMX
 
 INCLUDE "maps/Route9.asm"
+INCLUDE "maps/CeruleanCave1F.asm"
+INCLUDE "maps/CeruleanCave2F.asm"
+INCLUDE "maps/CeruleanCave3F.asm"

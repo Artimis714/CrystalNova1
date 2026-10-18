@@ -1035,3 +1035,12 @@ SECTION "Map Blocks 4", ROMX
 
 GoldenrodArchives_Blocks:
 	INCBIN "maps/GoldenrodArchives.blk"
+
+CeruleanCave1F_Blocks:
+	INCBIN "maps/CeruleanCave1F.blk"
+
+CeruleanCave2F_Blocks:
+	INCBIN "maps/CeruleanCave2F.blk"
+
+CeruleanCave3F_Blocks:
+	INCBIN "maps/CeruleanCave3F.blk"
