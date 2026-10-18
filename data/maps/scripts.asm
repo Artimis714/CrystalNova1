@@ -460,7 +460,6 @@ INCLUDE "maps/EcruteakTinTowerEntrance.asm"
 INCLUDE "maps/RuinsOfAlphResearchCenter.asm"
 INCLUDE "maps/EarlsPokemonAcademy.asm"
 INCLUDE "maps/OlivinePunishmentSpeechHouse.asm"
-INCLUDE "maps/Route9.asm"
 INCLUDE "maps/ViridianGym.asm"
 
 
@@ -502,7 +501,12 @@ INCLUDE "maps/GoldenrodFlowerShop.asm"
 
 
 SECTION "Map Scripts 32", ROMX
+
 INCLUDE "maps/KurtsHouse.asm"
 INCLUDE "maps/FightingDojo.asm"
 INCLUDE "maps/GoldenrodHappinessRater.asm"
 
+
+SECTION "Map Scripts 33", ROMX
+
+INCLUDE "maps/Route9.asm"

@@ -111,7 +111,7 @@ ROMX $23
 ROMX $24
 	"bank24"
 ROMX $25
-	"Maps"
+	"Map Scripts 33"
 	"Events"
 ROMX $26
 	"Map Scripts 11"
@@ -237,6 +237,7 @@ ROMX $5a
 ROMX $5b
 	"bank5B"
 	"Pics 20"
+	"Map Blocks 4"
 ROMX $5c
 	"mobile5C"
 	"Pics 21"
@@ -310,6 +311,7 @@ ROMX $7b
 	"Battle Tower Text"
 ROMX $7c
 	"Battle Tower Trainer Data"
+	"Maps"
 ROMX $7d
 	"Mobile News Data"
 ROMX $7e
