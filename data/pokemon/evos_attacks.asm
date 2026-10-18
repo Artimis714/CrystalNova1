@@ -443,6 +443,7 @@ ClefairyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, DOUBLESLAP
 	db 1, GROWL
+	db 1, METRONOME
 	db 4, ENCORE
 	db 8, SING
 	db 19, MINIMIZE
@@ -456,10 +457,13 @@ ClefairyEvosAttacks:
 
 ClefableEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SING
-	db 1, DOUBLESLAP
-	db 1, METRONOME
-	db 1, MOONLIGHT
+	db 1, PSYWAVE
+	db 1, DREAM_EATER
+	db 1, NIGHTMARE
+	db 5, SING
+	db 5, DOUBLESLAP
+	db 5, METRONOME
+	db 5, MOONLIGHT
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -488,6 +492,7 @@ NinetalesEvosAttacks:
 	db 2, WILL_O_WISP
 	db 30, HEX
 	db 35, FLAMETHROWER
+	db 47, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 JigglypuffEvosAttacks:
@@ -506,10 +511,14 @@ JigglypuffEvosAttacks:
 
 WigglytuffEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SING
-	db 1, DISABLE
-	db 1, DREAM_EATER
-	db 1, DOUBLE_EDGE
+	db 1, SUBSTITUTE
+	db 1, LIGHT_SCREEN
+	db 1, BARRIER
+	db 1, BODY_SLAM
+	db 2, SING
+	db 2, DISABLE
+	db 2, DREAM_EATER
+	db 2, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 ZubatEvosAttacks:
@@ -1139,6 +1148,7 @@ DodrioEvosAttacks:
 
 SeelEvosAttacks:
 	db EVOLVE_LEVEL, 34, DEWGONG
+	db EVOLVE_ITEM, WATER_STONE, DEWGONG
 	db 0 ; no more evolutions
 	db 1, HEADBUTT
 	db 1, POWDER_SNOW
@@ -1344,6 +1354,7 @@ KinglerEvosAttacks:
 
 VoltorbEvosAttacks:
 	db EVOLVE_LEVEL, 30, ELECTRODE
+	db EVOLVE_ITEM, THUNDERSTONE, ELECTRODE
 	db 0 ; no more evolutions
 	db 1, SONICBOOM
 	db 9, SCREECH
@@ -1403,6 +1414,7 @@ ExeggutorEvosAttacks:
 
 CuboneEvosAttacks:
 	db EVOLVE_LEVEL, 28, MAROWAK
+	db EVOLVE_HAPPINESS, TR_NITE, MAROWAK
 	db 0 ; no more evolutions
 	db 1, LICK
 	db 1, SAND_ATTACK
@@ -2080,7 +2092,8 @@ DratiniEvosAttacks:
 	db 0 ; no more level-up moves
 
 DragonairEvosAttacks:
-	db EVOLVE_LEVEL, 45, DRAGONITE
+	db EVOLVE_LEVEL, 55, DRAGONITE
+	db EVOLVE_HAPPINESS, TR_ANYTIME, DRAGONITE
 	db 0 ; no more evolutions
 	db 1, WRAP
 	db 1, LEER
@@ -2128,6 +2141,7 @@ MewtwoEvosAttacks:
 	db 0 ; no more level-up moves
 
 MewEvosAttacks:
+	db EVOLVE_ITEM, UP_GRADE, MEWTWO
 	db 0 ; no more evolutions
 	db 1, HIDDEN_POWER
 	db 1, CONFUSION
@@ -2466,6 +2480,7 @@ CrobatEvosAttacks:
 
 ChinchouEvosAttacks:
 	db EVOLVE_LEVEL, 27, LANTURN
+	db EVOLVE_ITEM, THUNDERSTONE, LANTURN
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 1, THUNDER_WAVE
@@ -2626,6 +2641,8 @@ MareepEvosAttacks:
 
 FlaaffyEvosAttacks:
 	db EVOLVE_LEVEL, 30, AMPHAROS
+	db EVOLVE_ITEM, LEAF_STONE, AMPHAROS
+	db EVOLVE_ITEM, THUNDERSTONE, AMPHAROS
 	db 0 ; no more evolutions
 	db 1, ABSORB
 	db 1, SHOCK_WAVE
@@ -2755,6 +2772,7 @@ HoppipEvosAttacks:
 
 SkiploomEvosAttacks:
 	db EVOLVE_LEVEL, 27, JUMPLUFF
+	db EVOLVE_ITEM, LEAF_STONE, JUMPLUFF
 	db 0 ; no more evolutions
 	db 1, SPLASH
 	db 5, SYNTHESIS
@@ -3373,10 +3391,12 @@ OctilleryEvosAttacks:
 
 DelibirdEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, PRESENT
-	db 1, HAIL
-	db 1, PROTECT
 	db 1, WHIRLWIND
+	db 1, SHEER_COLD
+	db 2, HAIL
+	db 2, PROTECT
+	db 2, SUBSTITUTE
+	db 5, PRESENT
 	db 0 ; no more level-up moves
 
 MantineEvosAttacks:
@@ -3690,7 +3710,7 @@ SuicuneEvosAttacks:
 	db 31, BUBBLEBEAM
 	db 41, ICY_WIND
 	db 46, MIRROR_COAT
-	db 51, SURF
+	db 51, WATERFALL
 	db 61, ICE_BEAM
 	db 71, HYDRO_PUMP
 	db 81, SHEER_COLD
@@ -3713,7 +3733,8 @@ LarvitarEvosAttacks:
 	db 0 ; no more level-up moves
 
 PupitarEvosAttacks:
-	db EVOLVE_LEVEL, 45, TYRANITAR
+	db EVOLVE_LEVEL, 55, TYRANITAR
+	db EVOLVE_HAPPINESS, TR_ANYTIME, TYRANITAR
 	db 0 ; no more evolutions
 	db 1, BITE
 	db 1, GLARE
@@ -3790,5 +3811,6 @@ MissingnoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
 	db 1, SKY_ATTACK
+	db 1, METRONOME
 	db 1, SHOCK_WAVE
 	db 0 ; no more level-up moves
