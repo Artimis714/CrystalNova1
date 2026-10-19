@@ -1,6 +1,6 @@
 SUMMARY:
 	ROM0: 16093 bytes used / 291 free
-	ROMX: 1802717 bytes used / 278051 free in 127 banks
+	ROMX: 1802742 bytes used / 278026 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks
@@ -9854,7 +9854,7 @@ ROMX bank #15:
 	TOTAL EMPTY: $007f bytes
 
 ROMX bank #16:
-	SECTION: $4000-$65e2 ($25e3 bytes) ["bank10"]
+	SECTION: $4000-$65fb ($25fc bytes) ["bank10"]
 	         $4000 = Pokedex
 	         $4029 = Pokedex.main
 	         $403b = Pokedex.exit
@@ -10134,45 +10134,46 @@ ROMX bank #16:
 	         $6494 = StoppedEvolvingText
 	         $6499 = EvolvingText
 	         $649e = LearnLevelMoves
-	         $64b0 = LearnLevelMoves.skip_evos
-	         $64b4 = LearnLevelMoves.find_move
-	         $64d0 = LearnLevelMoves.check_move
-	         $64d9 = LearnLevelMoves.has_move
-	         $64dc = LearnLevelMoves.learn
-	         $64f1 = LearnLevelMoves.done
-	         $64f8 = FillMoves
-	         $650e = FillMoves.GoToAttacks
-	         $6519 = FillMoves.NextMove
-	         $651a = FillMoves.GetMove
-	         $651b = FillMoves.GetLevel
-	         $6539 = FillMoves.CheckMove
-	         $6542 = FillMoves.CheckRepeat
-	         $654e = FillMoves.CheckSlot
-	         $656f = FillMoves.ShiftedMove
-	         $6570 = FillMoves.LearnMove
-	         $659c = FillMoves.done
-	         $65a0 = ShiftMoves
-	         $65a2 = ShiftMoves.loop
-	         $65a9 = EvoFlagAction
-	         $65b3 = GetPreEvolution
-	         $65b5 = GetPreEvolution.loop
-	         $65bf = GetPreEvolution.loop2
-	         $65c8 = GetPreEvolution.not_tyrogue
-	         $65d4 = GetPreEvolution.no_evolve
-	         $65dc = GetPreEvolution.found_preevo
-	SECTION: $65e3-$72e2 ($0d00 bytes) ["Sprites 3"]
-	         $65e3 = GhostFloatingSpriteGFX
-	         $6663 = JessieSpriteGFX
-	         $67e3 = JamesSpriteGFX
-	         $6963 = AgathatSpriteGFX
-	         $6ae3 = LoreleiSpriteGFX
-	         $6c63 = DragoniteMoveSpriteGFX
-	         $6de3 = FarfetchMoveSpriteGFX
-	         $6f63 = WaitressSpriteGFX
-	         $70e3 = GiovanniSpriteGFX
-	         $7263 = RattataBackSpriteGFX
-	EMPTY: $72e3-$7fff ($0d1d bytes)
-	TOTAL EMPTY: $0d1d bytes
+	         $64b2 = LearnLevelMoves.skip_evos
+	         $64bb = LearnLevelMoves.find_move
+	         $64e1 = LearnLevelMoves.check_move
+	         $64ea = LearnLevelMoves.has_move
+	         $64ed = LearnLevelMoves.learn
+	         $6502 = LearnLevelMoves.skip_move
+	         $650a = LearnLevelMoves.done
+	         $6511 = FillMoves
+	         $6527 = FillMoves.GoToAttacks
+	         $6532 = FillMoves.NextMove
+	         $6533 = FillMoves.GetMove
+	         $6534 = FillMoves.GetLevel
+	         $6552 = FillMoves.CheckMove
+	         $655b = FillMoves.CheckRepeat
+	         $6567 = FillMoves.CheckSlot
+	         $6588 = FillMoves.ShiftedMove
+	         $6589 = FillMoves.LearnMove
+	         $65b5 = FillMoves.done
+	         $65b9 = ShiftMoves
+	         $65bb = ShiftMoves.loop
+	         $65c2 = EvoFlagAction
+	         $65cc = GetPreEvolution
+	         $65ce = GetPreEvolution.loop
+	         $65d8 = GetPreEvolution.loop2
+	         $65e1 = GetPreEvolution.not_tyrogue
+	         $65ed = GetPreEvolution.no_evolve
+	         $65f5 = GetPreEvolution.found_preevo
+	SECTION: $65fc-$72fb ($0d00 bytes) ["Sprites 3"]
+	         $65fc = GhostFloatingSpriteGFX
+	         $667c = JessieSpriteGFX
+	         $67fc = JamesSpriteGFX
+	         $697c = AgathatSpriteGFX
+	         $6afc = LoreleiSpriteGFX
+	         $6c7c = DragoniteMoveSpriteGFX
+	         $6dfc = FarfetchMoveSpriteGFX
+	         $6f7c = WaitressSpriteGFX
+	         $70fc = GiovanniSpriteGFX
+	         $727c = RattataBackSpriteGFX
+	EMPTY: $72fc-$7fff ($0d04 bytes)
+	TOTAL EMPTY: $0d04 bytes
 
 ROMX bank #17:
 	SECTION: $4000-$4a0e ($0a0f bytes) ["bank11"]

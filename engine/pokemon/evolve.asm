@@ -419,25 +419,31 @@ LearnLevelMoves:
 	ld hl, EvosAttacksPointers
 	add hl, bc
 	add hl, bc
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
+	ld a, BANK(EvosAttacksPointers)
+	call GetFarWord
 
 .skip_evos
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	and a
 	jr nz, .skip_evos
 
 .find_move
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	and a
 	jr z, .done
 
 	ld b, a
 	ld a, [wCurPartyLevel]
 	cp b
-	ld a, [hli]
-	jr nz, .find_move
+	jr nz, .skip_move
+
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 
 	push hl
 	ld d, a
@@ -454,8 +460,8 @@ LearnLevelMoves:
 	dec b
 	jr nz, .check_move
 	jr .learn
-.has_move
 
+.has_move
 	pop hl
 	jr .find_move
 
@@ -467,6 +473,12 @@ LearnLevelMoves:
 	call CopyName1
 	predef LearnMove
 	pop hl
+	jr .find_move
+
+.skip_move
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	jr .find_move
 
 .done
