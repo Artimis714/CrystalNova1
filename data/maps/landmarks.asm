@@ -59,6 +59,7 @@ Landmarks:
 	landmark  52, 108, PalletTownName
 	landmark  52,  92, Route1Name
 	landmark  52,  76, ViridianCityName
+	landmark  52,  69, ViridianForestName 
 	landmark  52,  64, Route2Name
 	landmark  52,  52, PewterCityName
 	landmark  64,  52, Route3Name
@@ -204,7 +205,7 @@ DarkCaveName:        db "DARK CAVE@"
 IlexForestName:      db "ILEX¯FOREST@"
 BurnedTowerName:     db "BURNED¯TOWER@"
 FastShipName:        db "FAST SHIP@"
-ViridianForestName:  db "VIRIDIAN¯FOREST@" ; unreferenced
+ViridianForestName:  db "VIRIDIAN¯FOREST@"
 DiglettsCaveName:    db "REBEL'S¯PASS@"
 TohjoFallsName:      db "TOHJO FALLS@"
 UndergroundName:     db "UNDERGROUND@"
