@@ -488,11 +488,12 @@ FillMoves:
 	rl b
 	ld c, a
 	add hl, bc
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
+	ld a, BANK(EvosAttacksPointers)
+	call GetFarWord
 .GoToAttacks:
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	and a
 	jr nz, .GoToAttacks
 	jr .GetLevel
@@ -502,7 +503,9 @@ FillMoves:
 .GetMove:
 	inc hl
 .GetLevel:
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	and a
 	jp z, .done
 	ld b, a
@@ -518,11 +521,14 @@ FillMoves:
 
 .CheckMove:
 	push de
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld b, a
 	ld c, NUM_MOVES
 .CheckRepeat:
 	ld a, [de]
 	inc de
-	cp [hl]
+	cp b
 	jr z, .NextMove
 	dec c
 	jr nz, .CheckRepeat
@@ -557,13 +563,15 @@ FillMoves:
 	pop hl
 
 .LearnMove:
-	ld a, [hl]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
 	ld [de], a
 	ld a, [wEvolutionOldSpecies]
 	and a
 	jr z, .NextMove
 	push hl
-	ld a, [hl]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
 	ld hl, MON_PP - MON_MOVES
 	add hl, de
 	push hl
@@ -576,7 +584,7 @@ FillMoves:
 	pop hl
 	ld [hl], a
 	pop hl
-	jr .NextMove
+	jp .NextMove
 
 .done
 	pop bc
