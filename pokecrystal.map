@@ -1,6 +1,6 @@
 SUMMARY:
 	ROM0: 16093 bytes used / 291 free
-	ROMX: 1802742 bytes used / 278026 free in 127 banks
+	ROMX: 1802793 bytes used / 277975 free in 127 banks
 	SRAM: 48192 bytes used / 17344 free in 8 banks
 	WRAM0: 4043 bytes used / 53 free
 	WRAMX: 22987 bytes used / 5685 free in 7 banks
@@ -9854,7 +9854,7 @@ ROMX bank #15:
 	TOTAL EMPTY: $007f bytes
 
 ROMX bank #16:
-	SECTION: $4000-$65fb ($25fc bytes) ["bank10"]
+	SECTION: $4000-$662e ($262f bytes) ["bank10"]
 	         $4000 = Pokedex
 	         $4029 = Pokedex.main
 	         $403b = Pokedex.exit
@@ -10111,69 +10111,69 @@ ROMX bank #16:
 	         $61ef = EvolvePokemon
 	         $61fd = EvolveAfterBattle
 	         $620c = EvolveAfterBattle_MasterLoop
-	         $6247 = EvolveAfterBattle_MasterLoop.loop
-	         $6291 = EvolveAfterBattle_MasterLoop.got_tyrogue_evo
-	         $629a = EvolveAfterBattle_MasterLoop.happiness
-	         $62bb = EvolveAfterBattle_MasterLoop.happiness_daylight
-	         $62c5 = EvolveAfterBattle_MasterLoop.trade
-	         $62ec = EvolveAfterBattle_MasterLoop.item
-	         $6305 = EvolveAfterBattle_MasterLoop.level
-	         $6314 = EvolveAfterBattle_MasterLoop.proceed
-	         $6403 = EvolveAfterBattle_MasterLoop.skip_unown
-	         $640f = EvolveAfterBattle_MasterLoop.dont_evolve_1
-	         $6410 = EvolveAfterBattle_MasterLoop.dont_evolve_2
-	         $6411 = EvolveAfterBattle_MasterLoop.dont_evolve_3
-	         $6415 = EvolveAfterBattle_MasterLoop.UnusedReturnToMap
-	         $6416 = EvolveAfterBattle_MasterLoop.ReturnToMap
-	         $642b = UpdateSpeciesNameIfNotNicknamed
-	         $6442 = UpdateSpeciesNameIfNotNicknamed.loop
-	         $646b = CancelEvolution
-	         $6478 = IsMonHoldingEverstone
-	         $648a = CongratulationsYourPokemonText
-	         $648f = EvolvedIntoText
-	         $6494 = StoppedEvolvingText
-	         $6499 = EvolvingText
-	         $649e = LearnLevelMoves
-	         $64b2 = LearnLevelMoves.skip_evos
-	         $64bb = LearnLevelMoves.find_move
-	         $64e1 = LearnLevelMoves.check_move
-	         $64ea = LearnLevelMoves.has_move
-	         $64ed = LearnLevelMoves.learn
-	         $6502 = LearnLevelMoves.skip_move
-	         $650a = LearnLevelMoves.done
-	         $6511 = FillMoves
-	         $6527 = FillMoves.GoToAttacks
-	         $6532 = FillMoves.NextMove
-	         $6533 = FillMoves.GetMove
-	         $6534 = FillMoves.GetLevel
-	         $6552 = FillMoves.CheckMove
-	         $655b = FillMoves.CheckRepeat
-	         $6567 = FillMoves.CheckSlot
-	         $6588 = FillMoves.ShiftedMove
-	         $6589 = FillMoves.LearnMove
-	         $65b5 = FillMoves.done
-	         $65b9 = ShiftMoves
-	         $65bb = ShiftMoves.loop
-	         $65c2 = EvoFlagAction
-	         $65cc = GetPreEvolution
-	         $65ce = GetPreEvolution.loop
-	         $65d8 = GetPreEvolution.loop2
-	         $65e1 = GetPreEvolution.not_tyrogue
-	         $65ed = GetPreEvolution.no_evolve
-	         $65f5 = GetPreEvolution.found_preevo
-	SECTION: $65fc-$72fb ($0d00 bytes) ["Sprites 3"]
-	         $65fc = GhostFloatingSpriteGFX
-	         $667c = JessieSpriteGFX
-	         $67fc = JamesSpriteGFX
-	         $697c = AgathatSpriteGFX
-	         $6afc = LoreleiSpriteGFX
-	         $6c7c = DragoniteMoveSpriteGFX
-	         $6dfc = FarfetchMoveSpriteGFX
-	         $6f7c = WaitressSpriteGFX
-	         $70fc = GiovanniSpriteGFX
-	         $727c = RattataBackSpriteGFX
-	EMPTY: $72fc-$7fff ($0d04 bytes)
-	TOTAL EMPTY: $0d04 bytes
+	         $6249 = EvolveAfterBattle_MasterLoop.loop
+	         $62a1 = EvolveAfterBattle_MasterLoop.got_tyrogue_evo
+	         $62b1 = EvolveAfterBattle_MasterLoop.happiness
+	         $62d7 = EvolveAfterBattle_MasterLoop.happiness_daylight
+	         $62e1 = EvolveAfterBattle_MasterLoop.trade
+	         $630d = EvolveAfterBattle_MasterLoop.item
+	         $632b = EvolveAfterBattle_MasterLoop.level
+	         $633f = EvolveAfterBattle_MasterLoop.proceed
+	         $6436 = EvolveAfterBattle_MasterLoop.skip_unown
+	         $6442 = EvolveAfterBattle_MasterLoop.dont_evolve_1
+	         $6443 = EvolveAfterBattle_MasterLoop.dont_evolve_2
+	         $6444 = EvolveAfterBattle_MasterLoop.dont_evolve_3
+	         $6448 = EvolveAfterBattle_MasterLoop.UnusedReturnToMap
+	         $6449 = EvolveAfterBattle_MasterLoop.ReturnToMap
+	         $645e = UpdateSpeciesNameIfNotNicknamed
+	         $6475 = UpdateSpeciesNameIfNotNicknamed.loop
+	         $649e = CancelEvolution
+	         $64ab = IsMonHoldingEverstone
+	         $64bd = CongratulationsYourPokemonText
+	         $64c2 = EvolvedIntoText
+	         $64c7 = StoppedEvolvingText
+	         $64cc = EvolvingText
+	         $64d1 = LearnLevelMoves
+	         $64e5 = LearnLevelMoves.skip_evos
+	         $64ee = LearnLevelMoves.find_move
+	         $6514 = LearnLevelMoves.check_move
+	         $651d = LearnLevelMoves.has_move
+	         $6520 = LearnLevelMoves.learn
+	         $6535 = LearnLevelMoves.skip_move
+	         $653d = LearnLevelMoves.done
+	         $6544 = FillMoves
+	         $655a = FillMoves.GoToAttacks
+	         $6565 = FillMoves.NextMove
+	         $6566 = FillMoves.GetMove
+	         $6567 = FillMoves.GetLevel
+	         $6585 = FillMoves.CheckMove
+	         $658e = FillMoves.CheckRepeat
+	         $659a = FillMoves.CheckSlot
+	         $65bb = FillMoves.ShiftedMove
+	         $65bc = FillMoves.LearnMove
+	         $65e8 = FillMoves.done
+	         $65ec = ShiftMoves
+	         $65ee = ShiftMoves.loop
+	         $65f5 = EvoFlagAction
+	         $65ff = GetPreEvolution
+	         $6601 = GetPreEvolution.loop
+	         $660b = GetPreEvolution.loop2
+	         $6614 = GetPreEvolution.not_tyrogue
+	         $6620 = GetPreEvolution.no_evolve
+	         $6628 = GetPreEvolution.found_preevo
+	SECTION: $662f-$732e ($0d00 bytes) ["Sprites 3"]
+	         $662f = GhostFloatingSpriteGFX
+	         $66af = JessieSpriteGFX
+	         $682f = JamesSpriteGFX
+	         $69af = AgathatSpriteGFX
+	         $6b2f = LoreleiSpriteGFX
+	         $6caf = DragoniteMoveSpriteGFX
+	         $6e2f = FarfetchMoveSpriteGFX
+	         $6faf = WaitressSpriteGFX
+	         $712f = GiovanniSpriteGFX
+	         $72af = RattataBackSpriteGFX
+	EMPTY: $732f-$7fff ($0cd1 bytes)
+	TOTAL EMPTY: $0cd1 bytes
 
 ROMX bank #17:
 	SECTION: $4000-$4a0e ($0a0f bytes) ["bank11"]

@@ -48,9 +48,8 @@ EvolveAfterBattle_MasterLoop:
 	ld hl, EvosAttacksPointers
 	add hl, bc
 	add hl, bc
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
+	ld a, BANK(EvosAttacksPointers)
+	call GetFarWord
 
 	push hl
 	xor a
@@ -59,14 +58,15 @@ EvolveAfterBattle_MasterLoop:
 	pop hl
 
 .loop
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	and a
 	jr z, EvolveAfterBattle_MasterLoop
-
 	ld b, a
 
 	cp EVOLVE_TRADE
-	jr z, .trade
+	jp z, .trade
 
 	ld a, [wLinkMode]
 	and a
@@ -89,7 +89,12 @@ EvolveAfterBattle_MasterLoop:
 
 ; EVOLVE_STAT
 	ld a, [wTempMonLevel]
-	cp [hl]
+	ld c, a
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld b, a
+	ld a, c
+	cp b
 	jp c, .dont_evolve_1
 
 	call IsMonHoldingEverstone
@@ -107,13 +112,14 @@ EvolveAfterBattle_MasterLoop:
 	ld a, ATK_GT_DEF
 .got_tyrogue_evo
 	pop hl
-
 	inc hl
-	cp [hl]
+	ld c, a
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	cp c
 	jp nz, .dont_evolve_2
-
 	inc hl
-	jr .proceed
+	jp .proceed
 
 .happiness
 	ld a, [wTempMonHappiness]
@@ -123,7 +129,9 @@ EvolveAfterBattle_MasterLoop:
 	call IsMonHoldingEverstone
 	jp z, .dont_evolve_2
 
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	cp TR_ANYTIME
 	jr z, .proceed
 	cp TR_MORNDAY
@@ -149,7 +157,9 @@ EvolveAfterBattle_MasterLoop:
 	call IsMonHoldingEverstone
 	jp z, .dont_evolve_2
 
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	ld b, a
 	inc a
 	jr z, .proceed
@@ -167,7 +177,9 @@ EvolveAfterBattle_MasterLoop:
 	jr .proceed
 
 .item
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	ld b, a
 	ld a, [wCurItem]
 	cp b
@@ -182,7 +194,9 @@ EvolveAfterBattle_MasterLoop:
 	jr .proceed
 
 .level
-	ld a, [hli]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	ld b, a
 	ld a, [wTempMonLevel]
 	cp b
@@ -198,7 +212,8 @@ EvolveAfterBattle_MasterLoop:
 
 	push hl
 
-	ld a, [hl]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
 	ld [wEvolutionNewSpecies], a
 	ld a, [wCurPartyMon]
 	ld hl, wPartyMonNicknames
@@ -232,7 +247,8 @@ EvolveAfterBattle_MasterLoop:
 
 	pop hl
 
-	ld a, [hl]
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
 	ld [wCurSpecies], a
 	ld [wTempMonSpecies], a
 	ld [wEvolutionNewSpecies], a
