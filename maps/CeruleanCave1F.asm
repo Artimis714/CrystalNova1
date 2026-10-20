@@ -1,3 +1,5 @@
+	object_const_def
+
 CeruleanCave1F_MapScripts:
 	def_scene_scripts
 

@@ -1,3 +1,5 @@
+	object_const_def
+
 SeafoamCaveB1_MapScripts:
 	def_scene_scripts
 

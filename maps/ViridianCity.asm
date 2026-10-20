@@ -91,6 +91,9 @@ ViridianCityDreamEaterFisher:
 ViridianCityYoungsterScript:
 	jumptextfaceplayer ViridianCityYoungsterText
 
+ToViridianForestSign:
+	jumptext ToViridianForestSignText
+
 ViridianCitySign:
 	jumptext ViridianCitySignText
 
@@ -347,6 +350,11 @@ ViridianGymSignText:
 	line "text is illegible…"
 	done
 
+ToViridianForestSignText:
+	text "Route 2  -"
+	line "VIRIDIAN FOREST"
+	done
+
 ViridianCityWelcomeSignText:
 	text "WELCOME TO"
 	line "VIRIDIAN CITY,"
@@ -371,12 +379,11 @@ ViridianCity_MapEvents:
 	warp_event 23, 15, TRAINER_HOUSE_1F, 1
 	warp_event 29, 19, VIRIDIAN_MART, 2
 	warp_event 23, 25, VIRIDIAN_POKECENTER_1F, 1
-	warp_event 16,  4, VIRIDIAN_CITYGATE, 1
-	warp_event 16,  5, VIRIDIAN_CITYGATE, 2
 
 	def_coord_events
 
 	def_bg_events
+	bg_event 19,  1, BGEVENT_READ, ToViridianForestSign
 	bg_event 17, 17, BGEVENT_READ, ViridianCitySign
 	bg_event 27,  7, BGEVENT_READ, ViridianGymSign
 	bg_event 19,  5, BGEVENT_READ, ViridianCityWelcomeSign
