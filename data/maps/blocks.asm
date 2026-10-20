@@ -1048,3 +1048,12 @@ CeruleanCave3F_Blocks:
 
 ViridianForest_Blocks:
 	INCBIN "maps/ViridianForest.blk"
+
+SeafoamCaveB1_Blocks:
+	INCBIN "maps/SeafoamCaveB1.blk"
+
+SeafoamCaveB2_Blocks:
+	INCBIN "maps/SeafoamCaveB2.blk"
+
+SeafoamCaveB3_Blocks:
+	INCBIN "maps/SeafoamCaveB3.blk"

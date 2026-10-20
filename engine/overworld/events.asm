@@ -1103,8 +1103,15 @@ TryTileCollisionEvent::
 .waterfall
 	ld a, [wFacingTileID]
 	call CheckWaterfallTile
-	jr nz, .headbutt
+	jr nz, .current
 	farcall TryWaterfallOW
+	jr .done
+
+.current
+	ld a, [wFacingTileID]
+	call CheckCurrentTile
+	jr nz, .headbutt
+	farcall TryCurrentOW
 	jr .done
 
 .headbutt

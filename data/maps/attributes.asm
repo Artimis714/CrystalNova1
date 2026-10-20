@@ -693,3 +693,6 @@ ENDM
 	map_attributes CeruleanCave3F, CERULEAN_CAVE_3F, $00, 0
 	map_attributes ViridianCityGate, VIRIDIAN_CITYGATE, $00, 0
 	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
+	map_attributes SeafoamCaveB1, SEAFOAM_CAVE_B1, $00, 0
+	map_attributes SeafoamCaveB2, SEAFOAM_CAVE_B2, $00, 0
+	map_attributes SeafoamCaveB3, SEAFOAM_CAVE_B3, $00, 0

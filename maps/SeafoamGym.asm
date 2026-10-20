@@ -196,11 +196,12 @@ SeafoamGym_MapEvents:
 
 	def_warp_events
 	warp_event  5,  5, ROUTE_20, 1
+	warp_event  5,  3, SEAFOAM_CAVE_B1, 11
 
 	def_coord_events
 
 	def_bg_events
 
 	def_object_events
-	object_event  5,  2, SPRITE_BLAINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SeafoamGymBlaineScript, EVENT_LEADERS_IN_SILVER
-	object_event  6,  5, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SeafoamGymGuideScript, EVENT_SEAFOAM_GYM_GYM_GUIDE
+	object_event  2,  4, SPRITE_BLAINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SeafoamGymBlaineScript, EVENT_LEADERS_IN_SILVER
+	object_event  7,  5, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SeafoamGymGuideScript, EVENT_SEAFOAM_GYM_GYM_GUIDE

@@ -358,6 +358,12 @@ _AskWaterfallText::
 	line "WATERFALL?"
 	done
 
+_FastCurrentText::
+	text "The current is"
+	line "moving too fast"
+	cont "to swim!"
+	done
+
 _UseDigText::
 	text_ram wStringBuffer2
 	text " used"

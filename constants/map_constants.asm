@@ -127,7 +127,7 @@ ENDM
 	map_const ICE_PATH_B1F,                                10, 18 ; 62
 	map_const ICE_PATH_B2F_MAHOGANY_SIDE,                  10,  9 ; 63
 	map_const ICE_PATH_B2F_BLACKTHORN_SIDE,                 5,  9 ; 64
-	map_const ICE_PATH_B3F,                                10,  9 ; 65
+	map_const ICE_PATH_B3F,                                10,  6 ; 65
 	map_const WHIRL_ISLAND_NW,                              5,  9 ; 66
 	map_const WHIRL_ISLAND_NE,                             10,  9 ; 67
 	map_const WHIRL_ISLAND_SW,                             10,  9 ; 68
@@ -161,6 +161,9 @@ ENDM
 	map_const CERULEAN_CAVE_2F,                            20, 15 ; 96
 	map_const CERULEAN_CAVE_3F,                            20, 15 ; 97
 	map_const VIRIDIAN_FOREST,                             20, 20 ; 98
+	map_const SEAFOAM_CAVE_B1,                             20, 14 ; 99
+	map_const SEAFOAM_CAVE_B2,                             20, 14 ; 99
+	map_const SEAFOAM_CAVE_B3,                             15, 15 ; 100
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4

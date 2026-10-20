@@ -884,6 +884,20 @@ Script_AskWaterfall:
 	text_far _AskWaterfallText
 	text_end
 
+TryCurrentOW::
+	ld a, BANK(Script_CurrentText)
+	ld hl, Script_CurrentText
+	call CallScript
+	scf
+	ret
+
+Script_CurrentText:
+	jumptext .FastCurrentText
+
+.FastCurrentText:
+	text_far _FastCurrentText
+	text_end
+
 EscapeRopeFunction:
 	call FieldMoveJumptableReset
 	ld a, $1

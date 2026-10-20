@@ -184,6 +184,14 @@ CheckWhirlpoolTile::
 
 CheckWaterfallTile::
 	cp COLL_WATERFALL
+	ret
+
+CheckCurrentTile::
+	cp COLL_CURRENT_RIGHT
+	ret z
+	cp COLL_CURRENT_LEFT
+	ret z
+	cp COLL_CURRENT_UP
 	ret z
 	cp COLL_CURRENT_DOWN
 	ret
