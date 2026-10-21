@@ -53,8 +53,8 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_PALLET_TOWN       ; 2f
 	const LANDMARK_ROUTE_1           ; 30
 	const LANDMARK_VIRIDIAN_CITY     ; 31
-	const LANDMARK_VIRIDIAN_FOREST
 	const LANDMARK_ROUTE_2           ; 32
+	const LANDMARK_VIRIDIAN_FOREST
 	const LANDMARK_PEWTER_CITY       ; 33
 	const LANDMARK_ROUTE_3           ; 34
 	const LANDMARK_MT_MOON           ; 35
@@ -87,11 +87,6 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_ROUTE_17          ; 4f
 	const LANDMARK_ROUTE_18          ; 50
 	const LANDMARK_FUCHSIA_CITY      ; 51
-	const LANDMARK_ROUTE_19          ; 52
-	const LANDMARK_ROUTE_20          ; 53
-	const LANDMARK_SEAFOAM_ISLANDS   ; 54
-	const LANDMARK_CINNABAR_ISLAND   ; 55
-	const LANDMARK_ROUTE_21          ; 56
 	const LANDMARK_ROUTE_22          ; 57
 	const LANDMARK_VICTORY_ROAD      ; 58
 	const LANDMARK_ROUTE_23          ; 59
@@ -100,6 +95,18 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_ROUTE_27          ; 5c
 	const LANDMARK_TOHJO_FALLS       ; 5d
 	const LANDMARK_ROUTE_28          ; 5e
+	const LANDMARK_ROUTE_21          ; 56
+	const LANDMARK_CINNABAR_ISLAND   ; 55
+	const LANDMARK_THUNDER_SEA
+	const LANDMARK_TEMPEST_ISLE
+	const LANDMARK_ROUTE_20          ; 53
+	const LANDMARK_SEAFOAM_ISLANDS   ; 54
+	const LANDMARK_ROUTE_19          ; 52
+	const LANDMARK_CITRINE_CITY
+	const LANDMARK_GREEN_SEA
+	const LANDMARK_MOSS_ISLE
+	const LANDMARK_WHISPER_SEA
+	const LANDMARK_TANOBY_RUINS
 	const LANDMARK_FAST_SHIP         ; 5f
 DEF NUM_LANDMARKS EQU const_value
 
