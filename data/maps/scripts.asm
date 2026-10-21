@@ -90,6 +90,7 @@ INCLUDE "maps/TeamRocketBaseB1F.asm"
 INCLUDE "maps/TeamRocketBaseB2F.asm"
 INCLUDE "maps/TeamRocketBaseB3F.asm"
 INCLUDE "maps/GoldenrodFlowerShop.asm"
+INCLUDE "maps/KarensRoom.asm"
 
 
 SECTION "Map Scripts 7", ROMX
@@ -211,16 +212,15 @@ INCLUDE "maps/CianwoodPhotoStudio.asm"
 INCLUDE "maps/CianwoodLugiaSpeechHouse.asm"
 INCLUDE "maps/PokeSeersHouse.asm"
 INCLUDE "maps/VictoryRoadGate.asm"
+INCLUDE "maps/HallOfFame.asm"
 
 
 SECTION "Map Scripts 13", ROMX
 
-INCLUDE "maps/WillsRoom.asm"
-INCLUDE "maps/KogasRoom.asm"
-INCLUDE "maps/BrunosRoom.asm"
-INCLUDE "maps/KarensRoom.asm"
-INCLUDE "maps/LancesRoom.asm"
-INCLUDE "maps/HallOfFame.asm"
+INCLUDE "maps/RedsHouse2F.asm"
+INCLUDE "maps/OlivinePunishmentSpeechHouse.asm"
+INCLUDE "maps/ViridianGym.asm"
+
 
 
 SECTION "Map Scripts 14", ROMX
@@ -240,6 +240,9 @@ INCLUDE "maps/TinTower8F.asm"
 INCLUDE "maps/TinTower9F.asm"
 INCLUDE "maps/BurnedTower1F.asm"
 INCLUDE "maps/BurnedTowerB1F.asm"
+INCLUDE "maps/WillsRoom.asm"
+INCLUDE "maps/KogasRoom.asm"
+INCLUDE "maps/BrunosRoom.asm"
 
 
 SECTION "Map Scripts 15", ROMX
@@ -433,11 +436,8 @@ INCLUDE "maps/RedsHouse1F.asm"
 
 SECTION "Map Scripts 25", ROMX
 
-INCLUDE "maps/SilverCaveOutside.asm"
-INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/GoldenrodArchives.asm"
-INCLUDE "maps/RedsHouse2F.asm"
-INCLUDE "maps/Route26.asm"
+INCLUDE "maps/LancesRoom.asm"
 
 
 SECTION "Map Scripts 26", ROMX
@@ -448,6 +448,8 @@ INCLUDE "maps/AzaleaGym.asm"
 INCLUDE "maps/PowerPlant.asm"
 INCLUDE "maps/IndigoPlateauPokecenter1F.asm"
 INCLUDE "maps/Route19.asm"
+INCLUDE "maps/Route10North.asm"
+INCLUDE "maps/Route26.asm"
 
 
 SECTION "Map Scripts 27", ROMX
@@ -455,6 +457,7 @@ SECTION "Map Scripts 27", ROMX
 INCLUDE "maps/ElmsLab.asm"
 INCLUDE "maps/MrPokemonsHouse.asm"
 INCLUDE "maps/PewterCity.asm"
+INCLUDE "maps/SilverCaveOutside.asm"
 
 
 SECTION "Map Scripts 28", ROMX
@@ -462,9 +465,6 @@ SECTION "Map Scripts 28", ROMX
 INCLUDE "maps/EcruteakTinTowerEntrance.asm"
 INCLUDE "maps/RuinsOfAlphResearchCenter.asm"
 INCLUDE "maps/EarlsPokemonAcademy.asm"
-INCLUDE "maps/OlivinePunishmentSpeechHouse.asm"
-INCLUDE "maps/ViridianGym.asm"
-
 
 SECTION "Map Scripts 29", ROMX
 
