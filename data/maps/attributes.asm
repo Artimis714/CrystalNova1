@@ -249,12 +249,10 @@ ENDM
 	connection north, ViridianCity, VIRIDIAN_CITY, -10
 	connection south, PalletTown, PALLET_TOWN, 0
 
-	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH | SOUTH
+	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH
 	connection north, Route1, ROUTE_1, 0
-	connection south, Route21, ROUTE_21, 0
 
-	map_attributes Route21, ROUTE_21, $43, NORTH | SOUTH
-	connection north, PalletTown, PALLET_TOWN, 0
+	map_attributes Route21, ROUTE_21, $43, SOUTH
 	connection south, CinnabarIsland, CINNABAR_ISLAND, 0
 
 	map_attributes CinnabarIsland, CINNABAR_ISLAND, $43, NORTH | EAST

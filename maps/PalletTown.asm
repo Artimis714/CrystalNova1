@@ -81,6 +81,8 @@ PalletTown_MapEvents:
 	warp_event  5,  5, REDS_HOUSE_1F, 1
 	warp_event 13,  5, BLUES_HOUSE, 1
 	warp_event 12, 11, OAKS_LAB, 1
+	warp_event  5, 15, ROUTE_21, 1
+	warp_event  6, 15, ROUTE_21, 1
 
 	def_coord_events
 
