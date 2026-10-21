@@ -335,3 +335,12 @@ INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
 
 TilesetAerodactylWordRoomMeta::
 INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
+
+TilesetSeviiGFX::
+INCBIN "gfx/tilesets/Sevii.2bpp.lz"
+
+TilesetSeviiMeta::
+INCBIN "data/tilesets/Sevii_metatiles.bin"
+
+TilesetSeviiColl::
+INCLUDE "data/tilesets/Sevii_collision.asm"

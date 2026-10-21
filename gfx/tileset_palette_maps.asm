@@ -108,7 +108,9 @@ INCLUDE "gfx/tilesets/battle_tower_inside_palette_map.asm"
 TilesetBattleTowerOutsidePalMap:
 INCLUDE "gfx/tilesets/battle_tower_outside_palette_map.asm"
 
-MapGroupPalettes: ; unreferenced
+TilesetSeviiPalMap:
+INCLUDE "gfx/tilesets/sevii_palette_map.asm"
+
 ; entries correspond to MAPGROUP_* constants
 rept NUM_MAP_GROUPS
 	db PAL_BG_ROOF

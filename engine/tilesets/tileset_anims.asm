@@ -144,7 +144,7 @@ TilesetEliteFourRoomAnim:
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 
-UnusedTilesetAnim3: ; unreferenced
+TilesetSeviiAnim: ; unreferenced
 ; Scrolls tile $53 like a waterfall; scrolls tile $03 like cave water.
 	dw vTiles2 tile $53, ReadTileToAnimBuffer
 	dw wTileAnimBuffer, ScrollTileDown

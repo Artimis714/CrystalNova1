@@ -63,6 +63,7 @@ INCLUDE "maps/PokecomCenterAdminOfficeMobile.asm"
 INCLUDE "maps/IlexForestAzaleaGate.asm"
 INCLUDE "maps/Route34IlexForestGate.asm"
 INCLUDE "maps/DayCare.asm"
+INCLUDE "maps/IlexForest.asm"
 
 
 SECTION "Map Scripts 5", ROMX
@@ -88,6 +89,7 @@ INCLUDE "maps/MahoganyMart1F.asm"
 INCLUDE "maps/TeamRocketBaseB1F.asm"
 INCLUDE "maps/TeamRocketBaseB2F.asm"
 INCLUDE "maps/TeamRocketBaseB3F.asm"
+INCLUDE "maps/GoldenrodFlowerShop.asm"
 
 
 SECTION "Map Scripts 7", ROMX
@@ -152,7 +154,7 @@ INCLUDE "maps/Route26HealHouse.asm"
 INCLUDE "maps/DayOfWeekSiblingsHouse.asm"
 INCLUDE "maps/Route27SandstormHouse.asm"
 INCLUDE "maps/Route29Route46Gate.asm"
-
+INCLUDE "maps/CianwoodCity.asm"
 
 SECTION "Map Scripts 10", ROMX
 
@@ -426,6 +428,7 @@ INCLUDE "maps/Route10South.asm"
 INCLUDE "maps/Route23.asm"
 INCLUDE "maps/SilverCavePokecenter1F.asm"
 INCLUDE "maps/Route28SteelWingHouse.asm"
+INCLUDE "maps/RedsHouse1F.asm"
 
 
 SECTION "Map Scripts 25", ROMX
@@ -490,14 +493,6 @@ INCLUDE "maps/BlackthornPokecenter1F.asm"
 INCLUDE "maps/MahoganyPokecenter1F.asm"
 INCLUDE "maps/PokemonFanClub.asm"
 INCLUDE "maps/ViridianCity.asm"
-
-
-SECTION "Map Scripts 31", ROMX
-
-INCLUDE "maps/CianwoodCity.asm"
-INCLUDE "maps/RedsHouse1F.asm"
-INCLUDE "maps/IlexForest.asm"
-INCLUDE "maps/GoldenrodFlowerShop.asm"
 
 
 SECTION "Map Scripts 32", ROMX
