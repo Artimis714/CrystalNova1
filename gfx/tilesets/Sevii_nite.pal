@@ -1,0 +1,48 @@
+
+; Gray — cool moonlit stone
+	RGB 22, 24, 29
+	RGB 15, 17, 23
+	RGB 09, 11, 17
+	RGB 04, 05, 10
+
+; Red — subdued coral
+	RGB 22, 24, 29
+	RGB 25, 14, 19
+	RGB 20, 08, 13
+	RGB 06, 04, 08
+
+; Green — deep tropical foliage
+	RGB 22, 24, 29
+	RGB 13, 20, 12
+	RGB 07, 13, 09
+	RGB 03, 07, 06
+
+; Water — moonlit blue-green
+	RGB 22, 24, 29
+	RGB 12, 19, 26
+	RGB 06, 12, 23
+	RGB 03, 06, 14
+
+; Yellow — very muted, shadowed ochre
+	RGB 22, 24, 29
+	RGB 15, 14, 09
+	RGB 10, 09, 05
+	RGB 05, 05, 03
+
+; Brown — cool shadowed sand and wood
+	RGB 20, 21, 25
+	RGB 17, 15, 12
+	RGB 11, 10, 09
+	RGB 05, 05, 06
+
+; Roof (glass) — dark blue glass
+	RGB 22, 24, 29
+	RGB 14, 19, 27
+	RGB 08, 13, 23
+	RGB 03, 06, 13
+
+; Text — preserve the text palette
+	RGB 31, 31, 16
+	RGB 31, 31, 16
+	RGB 14, 09, 00
+	RGB 00, 00, 00

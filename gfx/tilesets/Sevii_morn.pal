@@ -1,0 +1,48 @@
+
+; Gray — warm early-morning stone
+	RGB 31, 28, 24
+	RGB 25, 21, 19
+	RGB 17, 15, 14
+	RGB 08, 07, 08
+
+; Red — coral and sunrise pink
+	RGB 31, 28, 24
+	RGB 31, 20, 19
+	RGB 29, 11, 10
+	RGB 09, 05, 07
+
+; Green — fresh tropical foliage
+	RGB 31, 28, 24
+	RGB 23, 27, 09
+	RGB 12, 21, 04
+	RGB 05, 11, 03
+
+; Water — sunlit turquoise
+	RGB 31, 28, 24
+	RGB 18, 27, 29
+	RGB 08, 20, 29
+	RGB 04, 10, 22
+
+; Yellow — muted tan and sandy gold
+	RGB 31, 28, 24
+	RGB 27, 23, 14
+	RGB 23, 17, 08
+	RGB 10, 07, 04
+
+; Brown — warm sand and timber
+	RGB 31, 28, 24
+	RGB 27, 22, 14
+	RGB 21, 15, 08
+	RGB 10, 07, 04
+
+; Roof (glass) — pale morning sky
+	RGB 31, 28, 24
+	RGB 23, 27, 30
+	RGB 14, 21, 29
+	RGB 06, 11, 21
+
+; Text — preserve readability
+	RGB 31, 31, 16
+	RGB 31, 31, 16
+	RGB 14, 09, 00
+	RGB 00, 00, 00

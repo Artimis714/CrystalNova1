@@ -143,11 +143,21 @@ MansionPalette2:
 INCLUDE "gfx/tilesets/mansion_2.pal"
 
 LoadSeviiPalette:
+	ld a, [wTimeOfDay]
+	maskbits NUM_DAYTIMES
+	ld bc, 8 palettes
+	ld hl, SeviiPalette
+	call AddNTimes
+
 	ld a, BANK(wBGPals1)
 	ld de, wBGPals1
-	ld hl, SeviiPalette
 	ld bc, 8 palettes
 	jp FarCopyWRAM
 
 SeviiPalette:
-INCLUDE "gfx/tilesets/Sevii.pal"
+; Morning
+INCLUDE "gfx/tilesets/Sevii_morn.pal"
+; Day
+INCLUDE "gfx/tilesets/Sevii_day.pal"
+; Night
+INCLUDE "gfx/tilesets/Sevii_nite.pal"

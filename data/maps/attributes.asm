@@ -252,7 +252,7 @@ ENDM
 	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH
 	connection north, Route1, ROUTE_1, 0
 
-	map_attributes Route21, ROUTE_21, $43, SOUTH
+	map_attributes Route21, ROUTE_21, $02, SOUTH
 	connection south, CinnabarIsland, CINNABAR_ISLAND, 0
 
 	map_attributes CinnabarIsland, CINNABAR_ISLAND, $43, NORTH | EAST

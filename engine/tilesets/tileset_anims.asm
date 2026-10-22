@@ -144,20 +144,28 @@ TilesetEliteFourRoomAnim:
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 
-TilesetSeviiAnim: ; unreferenced
-; Scrolls tile $53 like a waterfall; scrolls tile $03 like cave water.
-	dw vTiles2 tile $53, ReadTileToAnimBuffer
-	dw wTileAnimBuffer, ScrollTileDown
-	dw wTileAnimBuffer, ScrollTileDown
-	dw vTiles2 tile $53, WriteTileFromAnimBuffer
+TilesetSeviiAnim:
+; Animate the custom Sevii waterfall, flowers, and water.
+; Waterfall tile $53 scrolls vertically.
+; Flower tile $03 and water tile $14 scroll horizontally.
+
+	; Water tile $14
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
+
+	; Flower tile $03 (existing behavior)
 	dw vTiles2 tile $03, ReadTileToAnimBuffer
 	dw wTileAnimBuffer, ScrollTileRightLeft
 	dw vTiles2 tile $03, WriteTileFromAnimBuffer
+
+	; Waterfall tile $53
 	dw vTiles2 tile $53, ReadTileToAnimBuffer
 	dw wTileAnimBuffer, ScrollTileDown
 	dw wTileAnimBuffer, ScrollTileDown
 	dw vTiles2 tile $53, WriteTileFromAnimBuffer
-	dw NULL,  DoneTileAnimation
+
+	dw NULL, DoneTileAnimation
 
 UnusedTilesetAnim4: ; unreferenced
 ; Scrolls tile $54 like a waterfall; scrolls tile $03 like cave water.

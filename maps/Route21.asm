@@ -101,7 +101,7 @@ Route21_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  4, PALLET_TOWN, 4
+	warp_event  7,  3, PALLET_TOWN, 4
 
 	def_coord_events
 
