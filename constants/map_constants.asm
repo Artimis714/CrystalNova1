@@ -200,6 +200,7 @@ ENDM
 	map_const ROUTE_20,                                    30,  9 ;  6
 	map_const ROUTE_21,                                    10, 18 ;  7
 	map_const CINNABAR_ISLAND,                             10,  9 ;  8
+	map_const THUNDER_SEA,                                 10, 26 ;  9
 	endgroup
 
 	newgroup CERULEAN                                             ;  7
@@ -504,4 +505,8 @@ ENDM
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 	endgroup
 
-DEF NUM_MAP_GROUPS EQU const_value ; 26
+	newgroup CITRINECITYGROUP                                     ; 27
+	map_const CORAL_SEA,				       10, 25 ;  1
+	endgroup
+
+DEF NUM_MAP_GROUPS EQU const_value ; 27

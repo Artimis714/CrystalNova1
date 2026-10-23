@@ -255,22 +255,28 @@ ENDM
 	map_attributes Route21, ROUTE_21, $02, SOUTH
 	connection south, CinnabarIsland, CINNABAR_ISLAND, 0
 
-	map_attributes CinnabarIsland, CINNABAR_ISLAND, $43, NORTH | EAST
+	map_attributes CinnabarIsland, CINNABAR_ISLAND, $02, NORTH | SOUTH| EAST
 	connection north, Route21, ROUTE_21, 0
+	connection south, ThunderSea, THUNDER_SEA, 0
 	connection east, Route20, ROUTE_20, 0
 
-	map_attributes Route20, ROUTE_20, $43, WEST | EAST
+	map_attributes ThunderSea, THUNDER_SEA, $02, NORTH
+	connection north, CinnabarIsland, CINNABAR_ISLAND, 0
+
+	map_attributes Route20, ROUTE_20, $02, WEST | EAST
 	connection west, CinnabarIsland, CINNABAR_ISLAND, 0
 	connection east, Route19, ROUTE_19, -9
 
-	map_attributes Route19, ROUTE_19, $43, NORTH | WEST
-	connection north, FuchsiaCity, FUCHSIA_CITY, 0
+	map_attributes Route19, ROUTE_19, $02, SOUTH | WEST
+	connection south, CoralSea, CORAL_SEA, 0
 	connection west, Route20, ROUTE_20, 9
 
-	map_attributes FuchsiaCity, FUCHSIA_CITY, $0f, SOUTH | WEST | EAST
-	connection south, Route19, ROUTE_19, 0
+	map_attributes FuchsiaCity, FUCHSIA_CITY, $0f, WEST | EAST
 	connection west, Route18, ROUTE_18, 7
 	connection east, Route15, ROUTE_15, 9
+
+	map_attributes CoralSea, CORAL_SEA, $02, NORTH
+	connection north, Route19, ROUTE_19, 0
 
 	map_attributes Route18, ROUTE_18, $43, WEST | EAST
 	connection west, Route17, ROUTE_17, -38

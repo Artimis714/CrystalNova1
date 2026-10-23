@@ -30,6 +30,7 @@ OutdoorSprites:
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
+	dw CitrineCityGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
 ; Route1 and ViridianCity are connected
@@ -262,6 +263,7 @@ BlackthornGroupSprites:
 	db SPRITE_POKE_BALL
 	db 0 ; end
 
+CitrineCityGroupSprites:
 SilverGroupSprites:
 ; Route28, SilverCaveOutside
 	db SPRITE_OAK

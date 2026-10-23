@@ -1057,3 +1057,9 @@ SeafoamCaveB2_Blocks:
 
 SeafoamCaveB3_Blocks:
 	INCBIN "maps/SeafoamCaveB3.blk"
+
+CoralSea_Blocks:
+	INCBIN "maps/CoralSea.blk"
+
+ThunderSea_Blocks:
+	INCBIN "maps/ThunderSea.blk"
