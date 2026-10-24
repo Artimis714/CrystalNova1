@@ -191,7 +191,7 @@ ROMX $45
 ROMX $46
 	"mobile46"
 ROMX $47
-	"Battle Tower"
+
 ROMX $48
 	org $4000
 	"Pic Pointers"
@@ -309,15 +309,14 @@ ROMX $78
 	"Debug Room"
 	"Tileset Data 8"
 ROMX $7b
-	"Battle Tower Text"
 	"Map Scripts 28"
 ROMX $7c
-	"Battle Tower Trainer Data"
 	"Maps"
 ROMX $7d
 	"Mobile News Data"
 ROMX $7e
 	"Crystal Events"
+	"Mobile Fixed Words"
 ROMX $7f
 	org $7de0
 	"Stadium 2 Checksums"

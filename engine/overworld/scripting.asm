@@ -445,10 +445,6 @@ Script__2dmenu:
 	ret
 
 Script_battletowertext:
-	call SetUpTextbox
-	call GetScriptByte
-	ld c, a
-	farcall BattleTowerText
 	ret
 
 Script_verbosegiveitem:

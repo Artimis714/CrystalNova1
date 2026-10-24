@@ -1530,22 +1530,7 @@ BattleTowerAction_UbersCheck:
 	ret
 
 LoadOpponentTrainerAndPokemonWithOTSprite:
-	farcall LoadOpponentTrainerAndPokemon
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wBT_OTTrainerClass)
-	ldh [rSVBK], a
-	ld hl, wBT_OTTrainerClass
-	ld a, [hl]
-	dec a
-	ld c, a
-	ld b, 0
-	pop af
-	ldh [rSVBK], a
-	ld hl, BTTrainerClassSprites
-	add hl, bc
-	ld a, [hl]
-	ld [wBTTempOTSprite], a
+	ret
 
 ; Load sprite of the opponent trainer
 ; because s/he is chosen randomly and appears out of nowhere
