@@ -702,3 +702,9 @@ ENDM
 	map_attributes SeafoamCaveB1, SEAFOAM_CAVE_B1, $00, 0
 	map_attributes SeafoamCaveB2, SEAFOAM_CAVE_B2, $00, 0
 	map_attributes SeafoamCaveB3, SEAFOAM_CAVE_B3, $00, 0
+	map_attributes CitrineCity, CITRINE_CITY, $03, 0
+	map_attributes CitrinePokecenter, CITRINE_POKECENTER, $00, 0
+	map_attributes CitrineMart, CITRINE_MART, $00, 0
+	map_attributes CitrineCoralGate, CORAL_CITRINE_GATE, $00, 0
+	map_attributes CitrineGreenGate, CITRINE_GREEN_GATE, $00, 0
+	map_attributes CitrineFlorist, CITRINE_FLORIST, $00, 0

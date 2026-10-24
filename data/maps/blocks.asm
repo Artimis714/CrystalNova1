@@ -278,6 +278,8 @@ Route7SaffronGate_Blocks:
 Route17Route18Gate_Blocks:
 Route31VioletGate_Blocks:
 ViridianCityGate_Blocks:
+CitrineCoralGate_Blocks:
+CitrineGreenGate_Blocks:
 	INCBIN "maps/EastWestGate.blk"
 
 BetaAzaleaTown_Blocks: ; unreferenced
@@ -332,6 +334,7 @@ LavenderMart_Blocks:
 ViridianMart_Blocks:
 SaffronMart_Blocks:
 CherrygroveMart_Blocks:
+CitrineMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
 Route10North_Blocks:
@@ -361,6 +364,7 @@ CianwoodPokecenter1F_Blocks:
 ViridianPokecenter1F_Blocks:
 SaffronPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
+CitrinePokecenter_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 BetaPewterMuseumOfScience1F_Blocks: ; unreferenced
@@ -978,6 +982,7 @@ CopycatsHouse2F_Blocks:
 	INCBIN "maps/CopycatsHouse2F.blk"
 
 GoldenrodFlowerShop_Blocks:
+CitrineFlorist_Blocks:
 	INCBIN "maps/GoldenrodFlowerShop.blk"
 
 MountMoonSquare_Blocks:
@@ -1063,3 +1068,6 @@ CoralSea_Blocks:
 
 ThunderSea_Blocks:
 	INCBIN "maps/ThunderSea.blk"
+
+CitrineCity_Blocks:
+	INCBIN "maps/CitrineCity.blk"

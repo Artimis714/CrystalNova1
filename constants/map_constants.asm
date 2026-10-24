@@ -507,6 +507,12 @@ ENDM
 
 	newgroup CITRINECITYGROUP                                     ; 27
 	map_const CORAL_SEA,				       10, 25 ;  1
+	map_const CITRINE_CITY,                                20, 22 ;  2
+	map_const CITRINE_POKECENTER,                           5,  4 ;  3
+	map_const CITRINE_MART,  				6,  4 ;  4
+	map_const CORAL_CITRINE_GATE,  				5,  4 ;  5
+	map_const CITRINE_GREEN_GATE,                           5,  4 ;  6
+	map_const CITRINE_FLORIST,                              4,  4 ;  7
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 27
