@@ -114,6 +114,7 @@ Landmarks:
 	landmark 124, 124, WhisperSeaName
 	landmark 132, 124, TanobyRuinsName
 	landmark  20, 108, FastShipName
+	landmark  52, 116, CinnibarVolcanoName
 	assert_table_length NUM_LANDMARKS
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
@@ -160,7 +161,7 @@ LavRadioTowerName:   db "DEATH TOWER@"
 SilphCoName:         db "SILPH CO.@" ; unreferenced
 SafariZoneName:      db "SAFARI ZONE@" ; unreferenced
 SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
-PokemonMansionName:  db "#MON¯MANSION@" ; unreferenced
+CinnibarVolcanoName: db "CINNABAR¯VOLCANO@"
 CeruleanCaveName:    db "CERULEAN¯CAVE@"
 Route1Name:          db "ROUTE 1@"
 Route2Name:          db "ROUTE 2@"

@@ -2080,3 +2080,14 @@ CantCutScript:
 CanCutText:
 	text_far _CanCutText
 	text_end
+
+SayHotLava::
+	opentext
+	writetext SayHotLavaText
+	waitbutton
+	closetext
+	end
+
+SayHotLavaText:
+	text_far _HotLavaText
+	text_end

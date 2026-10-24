@@ -62,3 +62,16 @@
 	tilecoll WATER, WATER, WATER, WATER ; 3d
 	tilecoll WATER, WATER, WATER, WATER ; 3e
 	tilecoll FLOOR, FLOOR, PIT, FLOOR ; 3f
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 40
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 41
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 42
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 43
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 44
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 45
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 46
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 47
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 48
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 49
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 4a
+	tilecoll LAVA, LAVA, LAVA, LAVA ; 4b
+	tilecoll WALL, WALL, WALL, WALL ; 4c

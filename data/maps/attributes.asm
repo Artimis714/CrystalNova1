@@ -708,3 +708,4 @@ ENDM
 	map_attributes CitrineCoralGate, CORAL_CITRINE_GATE, $00, 0
 	map_attributes CitrineGreenGate, CITRINE_GREEN_GATE, $00, 0
 	map_attributes CitrineFlorist, CITRINE_FLORIST, $00, 0
+	map_attributes CinnabarVolcano1F, CINNABAR_VOLCANO_1F, $09, 0

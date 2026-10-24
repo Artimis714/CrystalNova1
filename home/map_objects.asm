@@ -196,6 +196,10 @@ CheckCurrentTile::
 	cp COLL_CURRENT_DOWN
 	ret
 
+CheckLavaTile::
+	cp COLL_LAVA
+	ret
+
 CheckStandingOnEntrance::
 	ld a, [wPlayerTile]
 	cp COLL_DOOR

@@ -1117,10 +1117,19 @@ TryTileCollisionEvent::
 .headbutt
 	ld a, [wFacingTileID]
 	call CheckHeadbuttTreeTile
-	jr nz, .surf
+	jr nz, .lava
 	farcall TryHeadbuttOW
 	jr c, .done
 	jr .noevent
+
+.lava
+	ld a, [wFacingTileID]
+	call CheckLavaTile
+	jr nz, .surf
+	ld a, BANK(SayHotLava)
+	ld hl, SayHotLava
+	call CallScript
+	jr .done
 
 .surf
 	farcall TrySurfOW

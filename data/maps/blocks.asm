@@ -1071,3 +1071,6 @@ ThunderSea_Blocks:
 
 CitrineCity_Blocks:
 	INCBIN "maps/CitrineCity.blk"
+
+CinnabarVolcano1F_Blocks:
+	INCBIN "maps/CinnabarVolcano1F.blk"

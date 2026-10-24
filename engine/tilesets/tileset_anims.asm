@@ -167,24 +167,28 @@ TilesetSeviiAnim:
 
 	dw NULL, DoneTileAnimation
 
-UnusedTilesetAnim4: ; unreferenced
-; Scrolls tile $54 like a waterfall; scrolls tile $03 like cave water.
-	dw vTiles2 tile $54, ReadTileToAnimBuffer
-	dw wTileAnimBuffer, ScrollTileDown
-	dw wTileAnimBuffer, ScrollTileDown
-	dw vTiles2 tile $54, WriteTileFromAnimBuffer
-	dw NULL,  WaitTileAnimation
-	dw vTiles2 tile $03, ReadTileToAnimBuffer
+TilesetCaveAnim:
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw NULL,  FlickeringCaveEntrancePalette
 	dw wTileAnimBuffer, ScrollTileRightLeft
-	dw vTiles2 tile $03, WriteTileFromAnimBuffer
-	dw NULL,  WaitTileAnimation
-	dw vTiles2 tile $54, ReadTileToAnimBuffer
+	dw NULL,  FlickeringCaveEntrancePalette
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
+	dw NULL,  FlickeringCaveEntrancePalette
+	dw NULL,  AnimateWaterPalette
+	dw NULL,  FlickeringCaveEntrancePalette
+	dw vTiles2 tile $40, ReadTileToAnimBuffer
+	dw NULL,  FlickeringCaveEntrancePalette
 	dw wTileAnimBuffer, ScrollTileDown
+	dw NULL,  FlickeringCaveEntrancePalette
 	dw wTileAnimBuffer, ScrollTileDown
-	dw vTiles2 tile $54, WriteTileFromAnimBuffer
+	dw NULL,  FlickeringCaveEntrancePalette
+	dw wTileAnimBuffer, ScrollTileDown
+	dw NULL,  FlickeringCaveEntrancePalette
+	dw vTiles2 tile $40, WriteTileFromAnimBuffer
+	dw NULL,  FlickeringCaveEntrancePalette
 	dw NULL,  DoneTileAnimation
 
-TilesetCaveAnim:
+
 TilesetDarkCaveAnim:
 	dw vTiles2 tile $14, ReadTileToAnimBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
@@ -204,6 +208,17 @@ TilesetDarkCaveAnim:
 	dw NULL,  FlickeringCaveEntrancePalette
 	dw vTiles2 tile $40, WriteTileFromAnimBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
+
+	; Dark Cave lava bubble animation
+	dw NULL, AnimateDarkCaveLavaBubbleTile2
+	dw NULL, WaitTileAnimation
+	dw NULL, WaitTileAnimation
+	dw NULL, WaitTileAnimation
+	dw NULL, AnimateDarkCaveLavaBubbleTile1
+	dw NULL, WaitTileAnimation
+	dw NULL, StandingTileFrame8
+	dw NULL, DoneTileAnimation
+
 	dw NULL,  DoneTileAnimation
 
 TilesetIcePathAnim:
@@ -736,6 +751,52 @@ AnimateLavaBubbleTile2:
 ; Write the tile graphic from hl (now sp) to tile $38 (now hl)
 	ld sp, hl
 	ld hl, vTiles2 tile $38
+	jp WriteTile
+
+AnimateDarkCaveLavaBubbleTile1:
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+	; Preserve the offset used by AnimateLavaBubbleTile1
+	ld a, [wTileAnimationTimer]
+	and %110
+	srl a
+	inc a
+	inc a
+	and %011
+
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, LavaBubbleTileFrames
+	add hl, de
+
+	; Dark Cave tile $41 (Elite Four tile $5B)
+	ld sp, hl
+	ld hl, vTiles2 tile $41
+	jp WriteTile
+
+
+AnimateDarkCaveLavaBubbleTile2:
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+	; Same frame timing as AnimateLavaBubbleTile2
+	ld a, [wTileAnimationTimer]
+	and %110
+	add a
+	add a
+	add a
+	ld e, a
+	ld d, 0
+	ld hl, LavaBubbleTileFrames
+	add hl, de
+
+	; Dark Cave tile $42 (Elite Four tile $38)
+	ld sp, hl
+	ld hl, vTiles2 tile $42
 	jp WriteTile
 
 LavaBubbleTileFrames:

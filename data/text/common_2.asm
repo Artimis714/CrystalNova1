@@ -1714,3 +1714,8 @@ Text_PasswordOption::
 	para "For alternate"
 	line "starter options."
 	prompt
+
+_HotLavaText::
+	text "That's searing"
+	line "hot lava!"
+	prompt
