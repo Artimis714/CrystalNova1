@@ -165,6 +165,9 @@ ENDM
 	map_const SEAFOAM_CAVE_B2,                             20, 14 ; 99
 	map_const SEAFOAM_CAVE_B3,                             15, 15 ; 100
 	map_const CINNABAR_VOLCANO_1F,                         20, 20 ; 101
+	map_const CINNABAR_VOLCANO_2F,                         20, 20 ; 102
+	map_const CINNABAR_VOLCANO_3F,                         20, 20 ; 103
+	map_const CINNABAR_VOLCANO_SUMMIT,                     20, 20 ; 104
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4

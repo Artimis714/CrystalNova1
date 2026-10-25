@@ -1042,3 +1042,12 @@ CitrineCity_Blocks:
 
 CinnabarVolcano1F_Blocks:
 	INCBIN "maps/CinnabarVolcano1F.blk"
+
+CinnabarVolcano2F_Blocks:
+	INCBIN "maps/CinnabarVolcano2F.blk"
+
+CinnabarVolcano3F_Blocks:
+	INCBIN "maps/CinnabarVolcano3F.blk"
+
+CinnabarVolcanoSummit_Blocks:
+	INCBIN "maps/CinnabarVolcanoSummit.blk"

@@ -500,6 +500,9 @@ INCLUDE "maps/CitrineMart.asm"
 SECTION "Map Scripts 34", ROMX
 
 INCLUDE "maps/CinnabarVolcano1F.asm"
+INCLUDE "maps/CinnabarVolcano2F.asm"
+INCLUDE "maps/CinnabarVolcano3F.asm"
+INCLUDE "maps/CinnabarVolcanoSummit.asm"
 INCLUDE "maps/Route9.asm"
 
 

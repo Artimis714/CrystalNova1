@@ -692,3 +692,6 @@ ENDM
 	map_attributes CitrineGreenGate, CITRINE_GREEN_GATE, $00, 0
 	map_attributes CitrineFlorist, CITRINE_FLORIST, $00, 0
 	map_attributes CinnabarVolcano1F, CINNABAR_VOLCANO_1F, $09, 0
+	map_attributes CinnabarVolcano2F, CINNABAR_VOLCANO_2F, $09, 0
+	map_attributes CinnabarVolcano3F, CINNABAR_VOLCANO_3F, $09, 0
+	map_attributes CinnabarVolcanoSummit, CINNABAR_VOLCANO_SUMMIT, $0F, 0
