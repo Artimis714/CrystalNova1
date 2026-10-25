@@ -294,7 +294,6 @@ INCLUDE "engine/debug/color_picker.asm"
 
 SECTION "bank21", ROMX
 
-INCLUDE "engine/printer/printer_serial.asm"
 INCLUDE "engine/printer/printer.asm"
 INCLUDE "gfx/battle_anims.asm"
 INCLUDE "engine/events/halloffame.asm"
@@ -651,11 +650,6 @@ INCLUDE "data/moves/names.asm"
 INCLUDE "engine/overworld/landmarks.asm"
 
 
-SECTION "Print Party", ROMX
-
-INCLUDE "engine/printer/print_party.asm"
-
-
 SECTION "bank77", ROMX
 
 INCLUDE "engine/rtc/print_hours_mins.asm"
@@ -696,12 +690,3 @@ SECTION "Battle Weather Images", ROMX
 
 INCLUDE "gfx/weather_images.asm"
 
-SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
-
-; The end of the ROM is taken up by checksums of the content, apparently used
-; by Pokémon Stadium 2 due to the checksums' "N64PS3" header. (In Japan,
-; Pokémon Stadium Gold and Silver was the third Stadium release for N64.)
-; This SECTION reserves space for those checksums.
-; If it is removed, also remove the "tools/stadium" command in the Makefile.
-
-	ds $220

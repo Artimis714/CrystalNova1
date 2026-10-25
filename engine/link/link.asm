@@ -406,34 +406,6 @@ endc
 	pop bc
 	dec b
 	jr nz, .copy_author_loop
-	ld b, PARTY_LENGTH
-	ld de, wLinkReceivedMail
-.fix_mail_loop
-	push bc
-	push de
-	farcall ParseMailLanguage
-	ld a, c
-	or a
-	jr z, .next
-	sub $3
-	jr nc, .skip
-	farcall ConvertEnglishMailToFrenchGerman
-	jr .next
-
-.skip
-	cp $2
-	jr nc, .next
-	farcall ConvertEnglishMailToSpanishItalian
-
-.next
-	pop de
-	ld hl, MAIL_STRUCT_LENGTH
-	add hl, de
-	ld d, h
-	ld e, l
-	pop bc
-	dec b
-	jr nz, .fix_mail_loop
 	ld de, wLinkReceivedMailEnd
 	xor a
 	ld [de], a
@@ -937,40 +909,6 @@ Link_PrepPartyData_Gen2:
 	dec b
 	jr nz, .metadata_loop
 
-; Translate the messages if necessary
-	ld b, PARTY_LENGTH
-	ld de, sPartyMail
-	ld hl, wLinkPlayerMailMessages
-.translate_loop
-	push bc
-	push hl
-	push de
-	push hl
-	farcall ParseMailLanguage
-	pop de
-	ld a, c
-	or a ; MAIL_LANG_ENGLISH
-	jr z, .translate_next
-	sub MAIL_LANG_ITALIAN
-	jr nc, .italian_spanish
-	farcall ConvertFrenchGermanMailToEnglish
-	jr .translate_next
-.italian_spanish
-	cp (MAIL_LANG_SPANISH + 1) - MAIL_LANG_ITALIAN
-	jr nc, .translate_next
-	farcall ConvertSpanishItalianMailToEnglish
-.translate_next
-	pop de
-	ld hl, MAIL_STRUCT_LENGTH
-	add hl, de
-	ld d, h
-	ld e, l
-	pop hl
-	ld bc, MAIL_MSG_LENGTH + 1
-	add hl, bc
-	pop bc
-	dec b
-	jr nz, .translate_loop
 	call CloseSRAM
 
 ; The SERIAL_NO_DATA_BYTE value isn't allowed anywhere in message text

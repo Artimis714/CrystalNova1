@@ -504,15 +504,6 @@ INCLUDE "maps/GoldenrodHappinessRater.asm"
 
 SECTION "Map Scripts 33", ROMX
 
-INCLUDE "maps/Route9.asm"
-INCLUDE "maps/CeruleanCave1F.asm"
-INCLUDE "maps/CeruleanCave2F.asm"
-INCLUDE "maps/CeruleanCave3F.asm"
-INCLUDE "maps/ViridianForest.asm"
-INCLUDE "maps/ViridianCityGate.asm"
-INCLUDE "maps/SeafoamCaveB1.asm"
-INCLUDE "maps/SeafoamCaveB2.asm"
-INCLUDE "maps/SeafoamCaveB3.asm"
 INCLUDE "maps/CoralSea.asm"
 INCLUDE "maps/ThunderSea.asm"
 INCLUDE "maps/CitrineCity.asm"
@@ -521,4 +512,25 @@ INCLUDE "maps/CitrineCoralGate.asm"
 INCLUDE "maps/CitrineGreenGate.asm"
 INCLUDE "maps/CitrineFlorist.asm"
 INCLUDE "maps/CitrineMart.asm"
+
+
+SECTION "Map Scripts 34", ROMX
+
 INCLUDE "maps/CinnabarVolcano1F.asm"
+INCLUDE "maps/Route9.asm"
+
+
+SECTION "Map Scripts 35", ROMX
+INCLUDE "maps/ViridianCityGate.asm"
+
+
+
+SECTION "Map Scripts 36", ROMX
+
+INCLUDE "maps/CeruleanCave1F.asm"
+INCLUDE "maps/CeruleanCave2F.asm"
+INCLUDE "maps/CeruleanCave3F.asm"
+INCLUDE "maps/ViridianForest.asm"
+INCLUDE "maps/SeafoamCaveB1.asm"
+INCLUDE "maps/SeafoamCaveB2.asm"
+INCLUDE "maps/SeafoamCaveB3.asm"

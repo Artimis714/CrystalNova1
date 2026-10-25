@@ -191,7 +191,7 @@ ROMX $45
 ROMX $46
 	"mobile46"
 ROMX $47
-
+	"Map Scripts 36"
 ROMX $48
 	org $4000
 	"Pic Pointers"
@@ -285,7 +285,7 @@ ROMX $6c
 ROMX $6d
 	"Special Phone Text"
 ROMX $6e
-	"Pokedex Entries 065-128"
+	 "Map Scripts 34"
 ROMX $6f
 	"Text 1"
 ROMX $70
@@ -295,12 +295,12 @@ ROMX $71
 ROMX $72
 	"Miscellaneous Text"
 ROMX $73
+	"Pokedex Entries 065-128"
 	"Pokedex Entries 129-192"
 ROMX $74
 	"Pokedex Entries 193-251"
 ROMX $77
 	"Unown Font"
-	"Print Party"
 	"Tileset Data 7"
 	"bank77"
 	"Pokégear GFX"
@@ -319,7 +319,7 @@ ROMX $7e
 	"Mobile Fixed Words"
 ROMX $7f
 	org $7de0
-	"Stadium 2 Checksums"
+	"Map Scripts 35"
 WRAM0
 	"Stack"
 	"Audio RAM"
