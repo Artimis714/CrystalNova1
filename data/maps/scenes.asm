@@ -5,10 +5,6 @@ MACRO scene_var
 ENDM
 
 MapScenes::
-	scene_var POKECENTER_2F,                               wPokecenter2FSceneID
-	scene_var TRADE_CENTER,                                wTradeCenterSceneID
-	scene_var COLOSSEUM,                                   wColosseumSceneID
-	scene_var TIME_CAPSULE,                                wTimeCapsuleSceneID
 	scene_var POWER_PLANT,                                 wPowerPlantSceneID
 	scene_var CERULEAN_GYM,                                wCeruleanGymSceneID
 	scene_var ROUTE_25,                                    wRoute25SceneID
@@ -77,6 +73,4 @@ MapScenes::
 	scene_var FAST_SHIP_1F,                                wFastShip1FSceneID
 	scene_var FAST_SHIP_B1F,                               wFastShipB1FSceneID
 	scene_var MOUNT_MOON_SQUARE,                           wMountMoonSquareSceneID
-	scene_var MOBILE_TRADE_ROOM,                           wMobileTradeRoomSceneID
-	scene_var MOBILE_BATTLE_ROOM,                          wMobileBattleRoomSceneID
 	db -1 ; end

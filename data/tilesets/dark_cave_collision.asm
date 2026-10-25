@@ -75,3 +75,7 @@
 	tilecoll LAVA, LAVA, LAVA, LAVA ; 4a
 	tilecoll LAVA, LAVA, LAVA, LAVA ; 4b
 	tilecoll WALL, WALL, WALL, WALL ; 4c
+	tilecoll FLOOR, FLOOR, FLOOR, LAVA ; 4d
+	tilecoll FLOOR, FLOOR, LAVA, FLOOR ; 4e
+	tilecoll FLOOR, LAVA, FLOOR, FLOOR ; 4f
+	tilecoll LAVA, FLOOR, FLOOR, FLOOR ; 50

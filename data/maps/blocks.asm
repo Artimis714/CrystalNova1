@@ -54,19 +54,6 @@ BetaBlackthornCity_Blocks: ; unreferenced
 Route10South_Blocks:
 	INCBIN "maps/Route10South.blk"
 
-Pokecenter2F_Blocks:
-CinnabarPokecenter2FBeta_Blocks:
-CeruleanPokecenter2FBeta_Blocks:
-Route10Pokecenter2FBeta_Blocks:
-VermilionPokecenter2FBeta_Blocks:
-PewterPokecenter2FBeta_Blocks:
-FuchsiaPokecenter2FBeta_Blocks:
-LavenderPokecenter2FBeta_Blocks:
-CeladonPokecenter2FBeta_Blocks:
-ViridianPokecenter2FBeta_Blocks:
-SaffronPokecenter2FBeta_Blocks:
-	INCBIN "maps/Pokecenter2F.blk"
-
 Route41_Blocks:
 	INCBIN "maps/Route41.blk"
 
@@ -120,9 +107,6 @@ Route20_Blocks:
 
 BetaSproutTower6_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower6.blk"
-
-BetaPokecenter_Blocks: ; unreferenced
-	INCBIN "maps/unused/BetaPokecenter.blk"
 
 Route30_Blocks:
 	INCBIN "maps/Route30.blk"
@@ -436,13 +420,6 @@ CeladonGameCorner_Blocks:
 
 CeladonGameCornerPrizeRoom_Blocks:
 	INCBIN "maps/CeladonGameCornerPrizeRoom.blk"
-
-Colosseum_Blocks:
-	INCBIN "maps/Colosseum.blk"
-
-TradeCenter_Blocks:
-TimeCapsule_Blocks:
-	INCBIN "maps/TradeCenter.blk"
 
 EcruteakLugiaSpeechHouse_Blocks:
 EcruteakItemfinderHouse_Blocks:
@@ -1020,15 +997,6 @@ RuinsOfAlphAerodactylWordRoom_Blocks:
 
 DragonShrine_Blocks:
 	INCBIN "maps/DragonShrine.blk"
-
-PokecomCenterAdminOfficeMobile_Blocks:
-	INCBIN "maps/PokecomCenterAdminOfficeMobile.blk"
-
-MobileTradeRoom_Blocks:
-	INCBIN "maps/MobileTradeRoom.blk"
-
-MobileBattleRoom_Blocks:
-	INCBIN "maps/MobileBattleRoom.blk"
 
 BetaBlank_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaBlank.blk"

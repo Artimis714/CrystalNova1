@@ -165,6 +165,7 @@ SetCaughtData:
 	dec a
 	ld hl, wPartyMon1CaughtLevel
 	call GetPartyLocation
+
 SetBoxmonOrEggmonCaughtData:
 	ld a, [wTimeOfDay]
 	inc a
@@ -174,22 +175,6 @@ SetBoxmonOrEggmonCaughtData:
 	ld a, [wCurPartyLevel]
 	or b
 	ld [hli], a
-	ld a, [wMapGroup]
-	ld b, a
-	ld a, [wMapNumber]
-	ld c, a
-	cp MAP_POKECENTER_2F
-	jr nz, .NotPokecenter2F
-	ld a, b
-	cp GROUP_POKECENTER_2F
-	jr nz, .NotPokecenter2F
-
-	ld a, [wBackupMapGroup]
-	ld b, a
-	ld a, [wBackupMapNumber]
-	ld c, a
-
-.NotPokecenter2F:
 	call GetWorldMapLocation
 	ld b, a
 	ld a, [wPlayerGender]

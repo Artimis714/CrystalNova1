@@ -23,7 +23,6 @@ OutdoorSprites:
 	dw FuchsiaGroupSprites
 	dw LavenderGroupSprites
 	dw SilverGroupSprites
-	dw CableClubGroupSprites
 	dw CeladonGroupSprites
 	dw CianwoodGroupSprites
 	dw ViridianGroupSprites
@@ -300,9 +299,4 @@ FastShipGroupSprites:
 	; 6 of max 9 walking sprites
 	db SPRITE_HO_OH
 	db SPRITE_ROCK
-	db 0 ; end
-
-CableClubGroupSprites:
-; (no outdoor maps)
-	; 0 of max 9 walking sprites
 	db 0 ; end
