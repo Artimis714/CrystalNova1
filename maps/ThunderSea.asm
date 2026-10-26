@@ -17,6 +17,7 @@ ThunderSea_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event 12, 45, TEMPEST_ISLE_CAVE1, 1
 
 	def_coord_events
 

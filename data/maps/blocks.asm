@@ -1051,3 +1051,20 @@ CinnabarVolcano3F_Blocks:
 
 CinnabarVolcanoSummit_Blocks:
 	INCBIN "maps/CinnabarVolcanoSummit.blk"
+
+SECTION "Map Blocks 5", ROMX
+
+TempestIsle_Blocks:
+	INCBIN "maps/TempestIsle.blk"
+
+TempestIsleCave1_Blocks:
+	INCBIN "maps/TempestIsleCave1.blk"
+
+TempestIsleCave2_Blocks:
+	INCBIN "maps/TempestIsleCave2.blk"
+
+TempestIsleCave3_Blocks:
+	INCBIN "maps/TempestIsleCave3.blk"
+
+TempestIsleCave4_Blocks:
+	INCBIN "maps/TempestIsleCave4.blk"

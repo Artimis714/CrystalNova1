@@ -1,9 +1,5 @@
 LoadSpecialMapPalette:
 	ld a, [wMapTileset]
-	cp TILESET_POKECOM_CENTER
-	jr z, .pokecom_2f
-	cp TILESET_BATTLE_TOWER_INSIDE
-	jr z, .battle_tower_inside
 	cp TILESET_ICE_PATH
 	jr z, .ice_path
 	cp TILESET_HOUSE
@@ -15,16 +11,6 @@ LoadSpecialMapPalette:
 	cp TILESET_SEVII
 	jr z, .sevii
 	jr .do_nothing
-
-.pokecom_2f
-	call LoadPokeComPalette
-	scf
-	ret
-
-.battle_tower_inside
-	call LoadBattleTowerInsidePalette
-	scf
-	ret
 
 .ice_path
 	ld a, [wEnvironment]

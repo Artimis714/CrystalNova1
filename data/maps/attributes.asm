@@ -677,9 +677,9 @@ ENDM
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes GoldenrodArchives, GOLDENROD_ARCHIVES, $00, 0
-	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $00, 0
-	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $00, 0
-	map_attributes CeruleanCave3F, CERULEAN_CAVE_3F, $00, 0
+	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $09, 0
+	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $09, 0
+	map_attributes CeruleanCave3F, CERULEAN_CAVE_3F, $09, 0
 	map_attributes ViridianCityGate, VIRIDIAN_CITYGATE, $00, 0
 	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
 	map_attributes SeafoamCaveB1, SEAFOAM_CAVE_B1, $00, 0
@@ -695,3 +695,8 @@ ENDM
 	map_attributes CinnabarVolcano2F, CINNABAR_VOLCANO_2F, $09, 0
 	map_attributes CinnabarVolcano3F, CINNABAR_VOLCANO_3F, $09, 0
 	map_attributes CinnabarVolcanoSummit, CINNABAR_VOLCANO_SUMMIT, $0F, 0
+	map_attributes TempestIsle, TEMPEST_ISLE, $02, 0
+	map_attributes TempestIsleCave1, TEMPEST_ISLE_CAVE1, $09, 0
+	map_attributes TempestIsleCave2, TEMPEST_ISLE_CAVE2, $09, 0
+	map_attributes TempestIsleCave3, TEMPEST_ISLE_CAVE3, $09, 0
+	map_attributes TempestIsleCave4, TEMPEST_ISLE_CAVE4, $09, 0

@@ -204,6 +204,11 @@ ENDM
 	map_const ROUTE_21,                                    10, 18 ;  7
 	map_const CINNABAR_ISLAND,                             10,  9 ;  8
 	map_const THUNDER_SEA,                                 10, 26 ;  9
+	map_const TEMPEST_ISLE,                                30, 27 ; 10
+	map_const TEMPEST_ISLE_CAVE1,                          10, 16 ; 11
+	map_const TEMPEST_ISLE_CAVE2,                          15, 25 ; 12
+	map_const TEMPEST_ISLE_CAVE3,                          22, 22 ; 13
+	map_const TEMPEST_ISLE_CAVE4,                          15, 15 ; 14
 	endgroup
 
 	newgroup CERULEAN                                             ;  7

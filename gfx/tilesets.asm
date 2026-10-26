@@ -87,10 +87,6 @@ INCLUDE "data/tilesets/mansion_collision.asm"
 TilesetCaveGFX::
 INCBIN "gfx/tilesets/cave.2bpp.lz"
 
-TilesetCaveMeta::
-TilesetDarkCaveMeta::
-INCBIN "data/tilesets/dark_cave_metatiles.bin"
-
 
 SECTION "Tileset Data 3", ROMX
 
@@ -191,25 +187,12 @@ UnusedTilesetJohtoColl:: ; unreferenced
 INCLUDE "data/tilesets/unused_johto_collision.asm"
 
 
+
 SECTION "Tileset Data 5", ROMX
 
-TilesetPokeComCenterGFX::
-INCBIN "gfx/tilesets/pokecom_center.2bpp.lz"
-
-TilesetPokeComCenterMeta::
-INCBIN "data/tilesets/pokecom_center_metatiles.bin"
-
-TilesetPokeComCenterColl::
-INCLUDE "data/tilesets/pokecom_center_collision.asm"
-
-TilesetBattleTowerInsideGFX::
-INCBIN "gfx/tilesets/battle_tower_inside.2bpp.lz"
-
-TilesetBattleTowerInsideMeta::
-INCBIN "data/tilesets/battle_tower_inside_metatiles.bin"
-
-TilesetBattleTowerInsideColl::
-INCLUDE "data/tilesets/battle_tower_inside_collision.asm"
+TilesetCaveMeta::
+TilesetDarkCaveMeta::
+INCBIN "data/tilesets/dark_cave_metatiles.bin"
 
 TilesetGateGFX::
 INCBIN "gfx/tilesets/gate.2bpp.lz"

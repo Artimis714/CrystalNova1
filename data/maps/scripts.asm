@@ -504,6 +504,11 @@ INCLUDE "maps/CinnabarVolcano2F.asm"
 INCLUDE "maps/CinnabarVolcano3F.asm"
 INCLUDE "maps/CinnabarVolcanoSummit.asm"
 INCLUDE "maps/Route9.asm"
+INCLUDE "maps/TempestIsle.asm"
+INCLUDE "maps/TempestIsleCave1.asm"
+INCLUDE "maps/TempestIsleCave2.asm"
+INCLUDE "maps/TempestIsleCave3.asm"
+INCLUDE "maps/TempestIsleCave4.asm"
 
 
 SECTION "Map Scripts 35", ROMX
