@@ -2267,6 +2267,7 @@ wStringBuffer5:: ds STRING_BUFFER_LENGTH
 wBattleMenuCursorPosition:: db
 
 wBuffer1:: db
+wPokedexInfoMoveCount:: db
 
 wCurBattleMon::
 ; index of the player's mon currently in battle (0-5)

@@ -425,13 +425,13 @@ DexEntryScreen_ArrowCursorData:
 	dwcoord 1, 17  ; PAGE
 	dwcoord 6, 17  ; AREA
 	dwcoord 11, 17 ; CRY
-	dwcoord 15, 17 ; PRNT
+	dwcoord 15, 17 ; INFO
 
 DexEntryScreen_MenuActionJumptable:
 	dw Pokedex_Page
 	dw .Area
 	dw .Cry
-	dw .Print
+	dw .Info
 
 .Area:
 	call Pokedex_BlackOutBG
@@ -474,33 +474,167 @@ DexEntryScreen_MenuActionJumptable:
 	call PlayCry
 	ret
 
-.Print:
-	call Pokedex_ApplyPrintPals
+
+
+
+.Info:
 	xor a
 	ldh [hSCX], a
-	ld a, [wPrevDexEntryBackup]
-	push af
-	ld a, [wPrevDexEntryJumptableIndex]
-	push af
-	ld a, [wJumptableIndex]
-	push af
-	farcall PrintDexEntry
-	pop af
-	ld [wJumptableIndex], a
-	pop af
-	ld [wPrevDexEntryJumptableIndex], a
-	pop af
-	ld [wPrevDexEntryBackup], a
-	call ClearBGPalettes
-	call DisableLCD
-	call Pokedex_LoadInvertedFont
-	call Pokedex_RedisplayDexEntry
-	call EnableLCD
+	farcall BlankScreen
+
+	call Pokedex_DrawInfoFirstMove
 	call WaitBGMap
+
+	call JoyWaitAorB
+
+	call Pokedex_BlackOutBG
+	call Pokedex_RedisplayDexEntry
+	call Pokedex_LoadSelectedMonTiles
+	call WaitBGMap
+
+	call Pokedex_GetSelectedMon
+	ld [wCurPartySpecies], a
+	ld a, SCGB_POKEDEX
+	call Pokedex_GetSGBLayout
 	ld a, POKEDEX_SCX
 	ldh [hSCX], a
-	call Pokedex_ApplyUsualPals
 	ret
+
+.TestText:
+	db "INFO SCREEN TEST@"
+
+
+Pokedex_DrawInfoFirstMove:
+	; Preserve the current species and object-name type.
+	ld a, [wCurSpecies]
+	push af
+	ld a, [wNamedObjectType]
+	push af
+
+	; Draw the heading.
+	hlcoord 2, 2
+	ld de, .Title
+	call PlaceString
+
+	; Draw column labels.
+	hlcoord 2, 3
+	ld de, .LevelHeader
+	call PlaceString
+
+	hlcoord 6, 3
+	ld de, .MoveHeader
+	call PlaceString
+
+	; Get the species selected in the Pokédex.
+	call Pokedex_GetSelectedMon
+	ld a, [wTempSpecies]
+
+	; Find this species' evolution and learnset data.
+	dec a
+	ld c, a
+	ld b, 0
+	ld hl, EvosAttacksPointers
+	add hl, bc
+	add hl, bc
+	ld a, BANK(EvosAttacksPointers)
+	call GetFarWord
+
+	; Skip evolution records to the first level-up move.
+.skip_evos
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
+	and a
+	jr nz, .skip_evos
+
+	; Read and save the first move's level.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jr z, .done
+	ld [wBuffer1], a
+
+	; Advance to the first move ID.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+
+	; Resolve the first move name.
+	call GetMoveName
+
+	; Print the level.
+	push hl
+	hlcoord 2, 4
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+
+	; Print the move name.
+	hlcoord 6, 4
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+
+	; Advance past the first move ID to the second level.
+	inc hl
+
+	; Read and save the second move's level.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jr z, .no_more_moves
+	ld [wBuffer1], a
+
+	; Advance to the second move ID.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+
+	; Resolve the second move name.
+	call GetMoveName
+
+	; Print the second move's level.
+	push hl
+	hlcoord 2, 5
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+
+	; Print the second move name.
+	hlcoord 6, 5
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	jr .done
+
+.no_more_moves
+	hlcoord 1, 5
+	ld de, .NoMoreMoves
+	call PlaceString
+
+.done
+	; Restore the original state.
+	pop af
+	ld [wNamedObjectType], a
+	pop af
+	ld [wCurSpecies], a
+	ret
+
+.Title:
+	db "LEVEL-UP MOVES@"
+
+.LevelHeader:
+	db "LV@"
+
+.MoveHeader:
+	db "MOVE@"
+
+.NoMoreMoves:
+	db "END LEVEL-UP MOVES@"
+
+
 
 Pokedex_RedisplayDexEntry:
 	call Pokedex_DrawDexEntryScreenBG
@@ -1176,7 +1310,7 @@ Pokedex_DrawDexEntryScreenBG:
 .Weight:
 	db "WT   ???lb", -1
 .MenuItems:
-	db $3b, " PAGE AREA CRY PRNT", -1
+	db $3b, " PAGE AREA CRY INFO", -1
 
 Pokedex_DrawOptionScreenBG:
 	call Pokedex_FillBackgroundColor2
