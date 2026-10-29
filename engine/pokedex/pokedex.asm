@@ -475,18 +475,75 @@ DexEntryScreen_MenuActionJumptable:
 	ret
 
 
-
-
 .Info:
 	xor a
 	ldh [hSCX], a
 	farcall BlankScreen
 
-	call Pokedex_DrawInfoFirstMove
-	call WaitBGMap
+	; Start on Page 1.
+	xor a
+	ld [wPokedexInfoMoveCount], a
 
+.info_page_loop
+	ld a, [wPokedexInfoMoveCount]
+	and a
+	jr z, .draw_details_page
+
+	cp 1
+	jr z, .draw_moves_page
+
+	; Page 3: placeholder for continued level-up moves.
+	call Pokedex_DrawInfoMovesContinued
+	jr .wait_for_info_input
+
+.draw_details_page
+	; Page 1: Pokémon details placeholder.
+	call Pokedex_DrawInfoPlaceholder
+	jr .wait_for_info_input
+
+.draw_moves_page
+	; Page 2: existing level-up moves.
+	call Pokedex_DrawInfoFirstMove
+
+.wait_for_info_input
+	call WaitBGMap
 	call JoyWaitAorB
 
+	ldh a, [hJoyPressed]
+	and B_BUTTON
+	jr nz, .info_b_button
+
+	ldh a, [hJoyPressed]
+	and A_BUTTON
+	jr nz, .info_a_button
+
+	jr .info_page_loop
+
+.info_a_button
+	; Advance Page 1 -> Page 2 -> Page 3 -> Page 1.
+	ld a, [wPokedexInfoMoveCount]
+	inc a
+	cp 3
+	jr c, .store_info_page
+	xor a
+
+.store_info_page
+	ld [wPokedexInfoMoveCount], a
+	jr .info_redraw
+
+.info_b_button
+	; Go back one page; B on Page 1 exits INFO.
+	ld a, [wPokedexInfoMoveCount]
+	and a
+	jr z, .info_exit
+
+	dec a
+	ld [wPokedexInfoMoveCount], a
+
+.info_redraw
+	jr .info_page_loop
+
+.info_exit
 	call Pokedex_BlackOutBG
 	call Pokedex_RedisplayDexEntry
 	call Pokedex_LoadSelectedMonTiles
@@ -500,8 +557,107 @@ DexEntryScreen_MenuActionJumptable:
 	ldh [hSCX], a
 	ret
 
-.TestText:
-	db "INFO SCREEN TEST@"
+Pokedex_DrawInfoPlaceholder:
+	; Preserve the current species and object-name type.
+	ld a, [wCurSpecies]
+	push af
+	ld a, [wNamedObjectType]
+	push af
+
+	; Draw the INFO panel border.
+	hlcoord 0, 0
+	lb bc, 16, 18
+	call Pokedex_PlaceBorder
+
+	; Page title.
+	hlcoord 2, 2
+	ld de, .Title
+	call PlaceString
+
+	; Evolution section.
+	hlcoord 2, 4
+	ld de, .EvolutionLabel
+	call PlaceString
+
+	; Reserve rows 5-9 for up to five evolution entries.
+	; These are placeholders until real evolution data is added.
+	hlcoord 2, 5
+	ld de, .Evolution1
+	call PlaceString
+
+	hlcoord 2, 6
+	ld de, .Evolution2
+	call PlaceString
+
+	hlcoord 2, 7
+	ld de, .Evolution3
+	call PlaceString
+
+	hlcoord 2, 8
+	ld de, .Evolution4
+	call PlaceString
+
+	hlcoord 2, 9
+	ld de, .Evolution5
+	call PlaceString
+
+	; Type section.
+	hlcoord 2, 11
+	ld de, .TypeLabel
+	call PlaceString
+
+	hlcoord 2, 12
+	ld de, .TypePlaceholder
+	call PlaceString
+
+	; Egg Group section.
+	hlcoord 2, 14
+	ld de, .EggGroupLabel
+	call PlaceString
+
+	hlcoord 2, 15
+	ld de, .EggGroupPlaceholder
+	call PlaceString
+
+	; Restore the original state.
+	pop af
+	ld [wNamedObjectType], a
+	pop af
+	ld [wCurSpecies], a
+	ret
+
+.Title:
+	db "POKEMON DETAILS@"
+
+.EvolutionLabel:
+	db "EVOLUTIONS@"
+
+.Evolution1:
+	db "- ???@"
+
+.Evolution2:
+	db "- ???@"
+
+.Evolution3:
+	db "- ???@"
+
+.Evolution4:
+	db "- ???@"
+
+.Evolution5:
+	db "- ???@"
+
+.TypeLabel:
+	db "TYPE@"
+
+.TypePlaceholder:
+	db "??? / ???@"
+
+.EggGroupLabel:
+	db "EGG GROUP@"
+
+.EggGroupPlaceholder:
+	db "??? / ???@"
 
 
 Pokedex_DrawInfoFirstMove:
@@ -511,17 +667,28 @@ Pokedex_DrawInfoFirstMove:
 	ld a, [wNamedObjectType]
 	push af
 
+	; Draw the INFO panel border.
+	hlcoord 0, 0
+	lb bc, 16, 18
+	call Pokedex_PlaceBorder
+
 	; Draw the heading.
 	hlcoord 2, 2
 	ld de, .Title
 	call PlaceString
 
-	; Draw column labels.
-	hlcoord 2, 3
+	; Separator beneath the title
+	hlcoord 1, 3
+	ld a, $61
+	ld bc, 18
+	call ByteFill
+
+	; Draw column labels
+	hlcoord 2, 4
 	ld de, .LevelHeader
 	call PlaceString
 
-	hlcoord 6, 3
+	hlcoord 6, 4
 	ld de, .MoveHeader
 	call PlaceString
 
@@ -547,71 +714,417 @@ Pokedex_DrawInfoFirstMove:
 	and a
 	jr nz, .skip_evos
 
-	; Read and save the first move's level.
+	; Move 1 - row 5.
 	ld a, BANK("Evolutions and Attacks")
 	call GetFarByte
 	and a
-	jr z, .done
+	jp z, .done
 	ld [wBuffer1], a
-
-	; Advance to the first move ID.
 	inc hl
 	ld a, BANK("Evolutions and Attacks")
 	call GetFarByte
 	ld [wNamedObjectIndex], a
-
-	; Resolve the first move name.
 	call GetMoveName
-
-	; Print the level.
-	push hl
-	hlcoord 2, 4
-	ld a, [wBuffer1]
-	ld c, 3
-	call Print8BitNumLeftAlign
-
-	; Print the move name.
-	hlcoord 6, 4
-	ld de, wStringBuffer1
-	call PlaceString
-	pop hl
-
-	; Advance past the first move ID to the second level.
-	inc hl
-
-	; Read and save the second move's level.
-	ld a, BANK("Evolutions and Attacks")
-	call GetFarByte
-	and a
-	jr z, .no_more_moves
-	ld [wBuffer1], a
-
-	; Advance to the second move ID.
-	inc hl
-	ld a, BANK("Evolutions and Attacks")
-	call GetFarByte
-	ld [wNamedObjectIndex], a
-
-	; Resolve the second move name.
-	call GetMoveName
-
-	; Print the second move's level.
 	push hl
 	hlcoord 2, 5
 	ld a, [wBuffer1]
 	ld c, 3
 	call Print8BitNumLeftAlign
-
-	; Print the second move name.
 	hlcoord 6, 5
 	ld de, wStringBuffer1
 	call PlaceString
 	pop hl
-	jr .done
+	inc hl
 
-.no_more_moves
-	hlcoord 1, 5
-	ld de, .NoMoreMoves
+	; Move 2 - row 6.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 6
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 6
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 3 - row 7.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 7
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 7
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 4 - row 8.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 8
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 8
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 5 - row 9.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 9
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 9
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 6 - row 10.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 10
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 10
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 7 - row 11.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 11
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 11
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 8 - row 12.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 12
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 12
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 9 - row 13.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 13
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 13
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 10 - row 14.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .done
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 14
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 14
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+
+.done
+	; Restore the original state.
+	pop af
+	ld [wNamedObjectType], a
+	pop af
+	ld [wCurSpecies], a
+	ret
+
+.Title:
+	db "LEVEL-UP MOVES@"
+
+.LevelHeader:
+	db "Lv@"
+
+.MoveHeader:
+	db "MOVE@"
+
+
+
+Pokedex_DrawInfoMovesContinued:
+	; Preserve the current species and object-name type.
+	ld a, [wCurSpecies]
+	push af
+	ld a, [wNamedObjectType]
+	push af
+
+	; Draw the INFO panel border.
+	hlcoord 0, 0
+	lb bc, 16, 18
+	call Pokedex_PlaceBorder
+
+	; Draw the heading.
+	hlcoord 2, 2
+	ld de, .Title
+	call PlaceString
+
+	; Draw column labels.
+	hlcoord 2, 4
+	ld de, .LevelHeader
+	call PlaceString
+
+	hlcoord 6, 4
+	ld de, .MoveHeader
+	call PlaceString
+
+	; Get the selected species' learnset pointer.
+	call Pokedex_GetSelectedMon
+	ld a, [wTempSpecies]
+	dec a
+	ld c, a
+	ld b, 0
+	ld hl, EvosAttacksPointers
+	add hl, bc
+	add hl, bc
+	ld a, BANK(EvosAttacksPointers)
+	call GetFarWord
+
+	; Skip evolution records.
+.skip_evos
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
+	and a
+	jr nz, .skip_evos
+
+	; Skip moves 1-10.
+	; Each move consists of a level byte and move ID byte.
+	ld b, 10
+
+.skip_first_ten
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .print_end_message
+	inc hl
+	inc hl
+	dec b
+	jr nz, .skip_first_ten
+
+	; Move 11 - row 5.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .print_end_message
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 5
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 5
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 12 - row 6.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .print_end_message
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 6
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 6
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 13 - row 7.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .print_end_message
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 7
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 7
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 14 - row 8.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jr z, .print_end_message
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 8
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 8
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+	inc hl
+
+	; Move 15 - row 9.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jr z, .print_end_message
+	ld [wBuffer1], a
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	push hl
+	hlcoord 2, 9
+	ld a, [wBuffer1]
+	ld c, 3
+	call Print8BitNumLeftAlign
+	hlcoord 6, 9
+	ld de, wStringBuffer1
+	call PlaceString
+	pop hl
+
+.print_end_message
+	; Display the end-of-learnset message below the last move.
+	hlcoord 1, 10
+	ld de, .EndMovesText
 	call PlaceString
 
 .done
@@ -626,12 +1139,12 @@ Pokedex_DrawInfoFirstMove:
 	db "LEVEL-UP MOVES@"
 
 .LevelHeader:
-	db "LV@"
+	db "Lv@"
 
 .MoveHeader:
 	db "MOVE@"
 
-.NoMoreMoves:
+.EndMovesText:
 	db "END LEVEL-UP MOVES@"
 
 

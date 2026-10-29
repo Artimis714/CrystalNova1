@@ -2005,8 +2005,6 @@ AerodactylEvosAttacks:
 	db 22, SUPERSONIC
 	db 29, DRAGON_CLAW
 	db 36, SCARY_FACE
-	db 39, RAZOR_WIND
-	db 41, CRUNCH
 	db 43, TAKE_DOWN
 	db 45, ROCK_SLIDE
 	db 50, HYPER_BEAM
@@ -2179,9 +2177,7 @@ BayleefEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, MEGANIUM
 	db 0 ; no more evolutions
 	db 1, LEECH_SEED
-	db 1, DRAGON_CLAW
 	db 6, GROWTH
-	db 8, QUICK_ATTACK
 	db 10, MEGA_DRAIN
 	db 12, BARRIER
 	db 15, SLEEP_POWDER
@@ -2193,7 +2189,6 @@ BayleefEvosAttacks:
 	db 36, GIGA_DRAIN
 	db 38, DRAGONBREATH
 	db 44, SAFEGUARD
-	db 47, OUTRAGE
 	db 50, SOLARBEAM
 	db 60, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -2208,7 +2203,6 @@ MeganiumEvosAttacks:
 	db 15, SLEEP_POWDER
 	db 18, SYNTHESIS
 	db 20, TWISTER
-	db 21, SUNNY_DAY
 	db 23, RAZOR_LEAF
 	db 30, BODY_SLAM
 	db 37, DRAGONBREATH
@@ -2455,7 +2449,6 @@ AriadosEvosAttacks:
 	db 31, POISON_FANG
 	db 35, FOCUS_ENERGY
 	db 38, TWINEEDLE
-	db 41, BATON_PASS
 	db 46, AGILITY
 	db 52, PSYCHIC_M
 	db 0 ; no more level-up moves
@@ -2577,7 +2570,6 @@ TogeticEvosAttacks:
 	db 25, ENCORE
 	db 26, WHIRLWIND
 	db 27, AGILITY
-	db 29, BATON_PASS
 	db 31, SAFEGUARD
 	db 34, RAZOR_WIND
 	db 38, DOUBLE_EDGE
@@ -2672,7 +2664,6 @@ AmpharosEvosAttacks:
 	db 16, SYNTHESIS
 	db 22, MEGA_DRAIN
 	db 24, SPARK
-	db 27, RAIN_DANCE
 	db 28, LIGHT_SCREEN
 	db 33, THUNDERPUNCH
 	db 37, GIGA_DRAIN
@@ -3049,16 +3040,13 @@ ForretressEvosAttacks:
 
 DunsparceEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, RAGE
 	db 1, FLAIL
 	db 1, SAND_ATTACK
 	db 1, TAIL_WHIP
-	db 5, DEFENSE_CURL
 	db 10, SANDSTORM
 	db 13, GLARE
 	db 18, SPITE
 	db 20, DIG
-	db 24, THIEF
 	db 26, BODY_SLAM
 	db 28, MAGNITUDE
 	db 30, SCREECH
@@ -3335,7 +3323,6 @@ CorsolaEvosAttacks:
 	db 1, ROCK_THROW
 	db 7, HARDEN
 	db 13, WATER_GUN
-	db 16, RAIN_DANCE
 	db 19, RECOVER
 	db 20, ROCK_TOMB
 	db 22, BUBBLEBEAM
@@ -3375,7 +3362,6 @@ OctilleryEvosAttacks:
 	db 11, LOCK_ON
 	db 17, BITE
 	db 22, PSYBEAM
-	db 22, AURORA_BEAM
 	db 22, BUBBLEBEAM
 	db 25, OCTAZOOKA
 	db 25, CLAMP
@@ -3384,7 +3370,6 @@ OctilleryEvosAttacks:
 	db 35, FOCUS_ENERGY
 	db 38, SCALD
 	db 41, CRUNCH
-	db 46, ICE_BEAM
 	db 51, HYDRO_PUMP
 	db 57, HYPER_BEAM
 	db 0 ; no more level-up moves
