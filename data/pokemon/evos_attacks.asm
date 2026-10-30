@@ -2632,7 +2632,6 @@ MareepEvosAttacks:
 	db 0 ; no more level-up moves
 
 FlaaffyEvosAttacks:
-	db EVOLVE_LEVEL, 30, AMPHAROS
 	db EVOLVE_ITEM, LEAF_STONE, AMPHAROS
 	db EVOLVE_ITEM, THUNDERSTONE, AMPHAROS
 	db 0 ; no more evolutions

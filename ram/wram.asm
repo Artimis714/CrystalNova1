@@ -2422,7 +2422,8 @@ wUsedSprites:: ds SPRITE_GFX_LIST_CAPACITY * 2
 wUsedSpritesEnd::
 
 NEXTU
-	ds 31
+wPokedexInfoEvolutionCount:: db
+	ds 30
 wd173:: db ; related to command queue type 3
 ENDU
 

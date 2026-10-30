@@ -558,49 +558,505 @@ DexEntryScreen_MenuActionJumptable:
 	ret
 
 Pokedex_DrawInfoPlaceholder:
-	; Preserve the current species and object-name type.
+	; Preserve current species and object-name type.
 	ld a, [wCurSpecies]
 	push af
 	ld a, [wNamedObjectType]
 	push af
 
-	; Draw the INFO panel border.
+	; Draw the panel and title.
 	hlcoord 0, 0
 	lb bc, 16, 18
 	call Pokedex_PlaceBorder
 
-	; Page title.
 	hlcoord 2, 2
 	ld de, .Title
 	call PlaceString
 
-	; Evolution section.
 	hlcoord 2, 4
 	ld de, .EvolutionLabel
 	call PlaceString
 
-	; Reserve rows 5-9 for up to five evolution entries.
-	; These are placeholders until real evolution data is added.
+	; Check for Eevee.
+	ld a, [wCurSpecies]
+	cp EEVEE
+	jp z, .EeveeEvolutions
+
+	; Check for Tyrogue.
+	cp TYROGUE
+	jp z, .TyrogueEvolutions
+
+	; Clear six evolution rows.
 	hlcoord 2, 5
-	ld de, .Evolution1
+	ld de, .BlankRow
 	call PlaceString
 
 	hlcoord 2, 6
-	ld de, .Evolution2
+	ld de, .BlankRow
 	call PlaceString
 
 	hlcoord 2, 7
-	ld de, .Evolution3
+	ld de, .BlankRow
 	call PlaceString
 
 	hlcoord 2, 8
-	ld de, .Evolution4
+	ld de, .BlankRow
 	call PlaceString
 
 	hlcoord 2, 9
-	ld de, .Evolution5
+	ld de, .BlankRow
 	call PlaceString
 
+	hlcoord 2, 10
+	ld de, .BlankRow
+	call PlaceString
+
+	; Get the selected Pokémon's evolution data pointer.
+	call Pokedex_GetSelectedMon
+	ld a, [wTempSpecies]
+	dec a
+	ld c, a
+	ld b, 0
+	ld hl, EvosAttacksPointers
+	add hl, bc
+	add hl, bc
+	ld a, BANK(EvosAttacksPointers)
+	call GetFarWord
+
+	; Read the first evolution method.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	and a
+	jp z, .NoEvolution
+
+	; Check for level evolution.
+	cp EVOLVE_LEVEL
+	jr z, .LevelEvolution
+
+	; Check for item evolution.
+	cp EVOLVE_ITEM
+	jr z, .ItemEvolution
+
+	; Check for friendship evolution.
+	cp EVOLVE_HAPPINESS
+	jp z, .HappinessEvolution
+
+	; All other evolution methods.
+	jp .OtherEvolution
+
+
+.LevelEvolution:
+	; Read evolution level.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wCurItem], a
+	inc hl
+
+	; Read target species.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+
+	; Read the second evolution method.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wBuffer1], a
+
+	; Preserve the second evolution data pointer.
+	push hl
+
+	; Print target Pokémon name.
+	hlcoord 2, 6
+	call GetPokemonName
+	ld de, wStringBuffer1
+	call PlaceString
+
+	; Continue after Pokémon name.
+	ld h, b
+	ld l, c
+	ld de, .AtLevelText
+	call PlaceString
+
+	; Print the original evolution level.
+	ld h, b
+	ld l, c
+	ld a, [wCurItem]
+	ld c, 2
+	call Print8BitNumLeftAlign
+
+	jp .CheckSecondEvolution
+
+
+.ItemEvolution:
+	; Read required item ID.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wCurItem], a
+	inc hl
+
+	; Read target species.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+
+	; Read the second evolution method.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wBuffer1], a
+
+	; Preserve the second evolution data pointer.
+	push hl
+
+	; Get target Pokémon name.
+	hlcoord 2, 6
+	call GetPokemonName
+	ld de, wStringBuffer1
+	call PlaceString
+
+	; Continue after Pokémon name.
+	ld h, b
+	ld l, c
+
+	; Print an explicit space.
+	ld de, .SpaceText
+	call PlaceString
+
+	; Get and print evolution item name.
+	ld h, b
+	ld l, c
+	ld a, [wCurItem]
+	ld [wNamedObjectIndex], a
+	call GetItemName
+	ld de, wStringBuffer1
+	call PlaceString
+
+	jp .CheckSecondEvolution
+
+
+.HappinessEvolution:
+	; Read friendship condition.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wBuffer1], a
+
+	; Read target species.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	push af
+
+	; Read the second evolution method.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wStringBuffer2], a
+
+	; Restore target species ID.
+	pop af
+	ld [wNamedObjectIndex], a
+
+	; Select the appropriate display label.
+	ld a, [wBuffer1]
+	cp TR_ANYTIME
+	jr z, .FriendshipAny
+
+	cp TR_MORNDAY
+	jr z, .FriendshipDay
+
+	cp TR_NITE
+	jr z, .FriendshipNight
+
+	; Unknown condition.
+	jr .OtherEvolution
+
+
+.FriendshipAny:
+	ld de, .FriendshipAnyText
+	jr .PrintFriendshipEvolution
+
+.FriendshipDay:
+	ld de, .FriendshipDayText
+	jr .PrintFriendshipEvolution
+
+.FriendshipNight:
+	ld de, .FriendshipNightText
+
+
+.PrintFriendshipEvolution:
+	; Preserve the second evolution data pointer.
+	push hl
+
+	; Print friendship label.
+	hlcoord 2, 6
+	call PlaceString
+
+	; Continue after label.
+	ld h, b
+	ld l, c
+
+	; Print a space.
+	ld de, .SpaceText
+	call PlaceString
+
+	; Continue after space.
+	ld h, b
+	ld l, c
+
+	; Restore second evolution method.
+	ld a, [wStringBuffer2]
+	ld [wBuffer1], a
+
+	; Print target Pokémon name.
+	ld a, [wNamedObjectIndex]
+	call GetPokemonName
+	ld de, wStringBuffer1
+	call PlaceString
+
+	jp .CheckSecondEvolution
+
+
+.OtherEvolution:
+	hlcoord 2, 6
+	ld de, .OtherEvolutionText
+	call PlaceString
+	jp .EvolutionTextDone
+
+
+.NoEvolution:
+	hlcoord 2, 6
+	ld de, .NoEvolutionText
+	call PlaceString
+	jp .EvolutionTextDone
+
+
+.CheckSecondEvolution:
+	; Restore the second evolution data pointer.
+	pop hl
+
+	; Check whether a second evolution exists.
+	ld a, [wBuffer1]
+	and a
+	jp z, .EvolutionTextDone
+
+	; Check for a second item evolution.
+	cp EVOLVE_ITEM
+	jr z, .SecondItemEvolution
+
+	; Check for a second friendship evolution.
+	cp EVOLVE_HAPPINESS
+	jr z, .SecondHappinessEvolution
+
+	; Other second evolution methods are not displayed.
+	jp .EvolutionTextDone
+
+
+.SecondItemEvolution:
+	; Read required item ID.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wCurItem], a
+	inc hl
+
+	; Read target species.
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+
+	; Print target Pokémon name.
+	hlcoord 2, 7
+	call GetPokemonName
+	ld de, wStringBuffer1
+	call PlaceString
+
+	; Continue after Pokémon name.
+	ld h, b
+	ld l, c
+
+	; Print an explicit space.
+	ld de, .SpaceText
+	call PlaceString
+
+	; Get and print evolution item name.
+	ld h, b
+	ld l, c
+	ld a, [wCurItem]
+	ld [wNamedObjectIndex], a
+	call GetItemName
+	ld de, wStringBuffer1
+	call PlaceString
+
+	jp .EvolutionTextDone
+
+
+.SecondHappinessEvolution:
+	; Read friendship condition.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wBuffer1], a
+
+	; Read target species.
+	inc hl
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	ld [wNamedObjectIndex], a
+
+	; Select the appropriate friendship label.
+	ld a, [wBuffer1]
+	cp TR_ANYTIME
+	jr z, .SecondFriendshipAny
+
+	cp TR_MORNDAY
+	jr z, .SecondFriendshipDay
+
+	cp TR_NITE
+	jr z, .SecondFriendshipNight
+
+	; Unknown condition.
+	jp .EvolutionTextDone
+
+
+.SecondFriendshipAny:
+	ld de, .FriendshipAnyText
+	jr .PrintSecondFriendship
+
+.SecondFriendshipDay:
+	ld de, .FriendshipDayText
+	jr .PrintSecondFriendship
+
+.SecondFriendshipNight:
+	ld de, .FriendshipNightText
+
+
+.PrintSecondFriendship:
+	; Print friendship label.
+	hlcoord 2, 7
+	call PlaceString
+
+	; Continue after label.
+	ld h, b
+	ld l, c
+
+	; Print a space.
+	ld de, .SpaceText
+	call PlaceString
+
+	; Continue after space.
+	ld h, b
+	ld l, c
+
+	; Print target Pokémon name.
+	ld a, [wNamedObjectIndex]
+	call GetPokemonName
+	ld de, wStringBuffer1
+	call PlaceString
+
+	jp .EvolutionTextDone
+
+
+.EeveeEvolutions:
+	; Clear the evolution display area.
+	hlcoord 2, 5
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 6
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 7
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 8
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 9
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 10
+	ld de, .BlankRow
+	call PlaceString
+
+	; Eevee's five evolutions.
+	hlcoord 2, 6
+	ld de, .EeveeJolteonText
+	call PlaceString
+
+	hlcoord 2, 7
+	ld de, .EeveeVaporeonText
+	call PlaceString
+
+	hlcoord 2, 8
+	ld de, .EeveeFlareonText
+	call PlaceString
+
+	hlcoord 2, 9
+	ld de, .EeveeEspeonText
+	call PlaceString
+
+	hlcoord 2, 10
+	ld de, .EeveeUmbreonText
+	call PlaceString
+
+	jp .EvolutionTextDone
+
+
+.TyrogueEvolutions:
+	; Clear the evolution display area.
+	hlcoord 2, 5
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 6
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 7
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 8
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 9
+	ld de, .BlankRow
+	call PlaceString
+
+	hlcoord 2, 10
+	ld de, .BlankRow
+	call PlaceString
+
+	; Tyrogue's evolution requirements.
+	hlcoord 2, 6
+	ld de, .TyrogueLevelText
+	call PlaceString
+
+	hlcoord 2, 7
+	ld de, .TyrogueHitmonchanText
+	call PlaceString
+
+	hlcoord 2, 8
+	ld de, .TyrogueHitmonleeText
+	call PlaceString
+
+	hlcoord 2, 9
+	ld de, .TyrogueHitmontopText
+	call PlaceString
+
+	jp .EvolutionTextDone
+
+
+.EvolutionTextDone:
 	; Type section.
 	hlcoord 2, 11
 	ld de, .TypeLabel
@@ -619,12 +1075,13 @@ Pokedex_DrawInfoPlaceholder:
 	ld de, .EggGroupPlaceholder
 	call PlaceString
 
-	; Restore the original state.
+	; Restore state.
 	pop af
 	ld [wNamedObjectType], a
 	pop af
 	ld [wCurSpecies], a
 	ret
+
 
 .Title:
 	db "POKEMON DETAILS@"
@@ -632,20 +1089,56 @@ Pokedex_DrawInfoPlaceholder:
 .EvolutionLabel:
 	db "EVOLUTIONS@"
 
-.Evolution1:
-	db "- ???@"
+.SpaceText:
+	db " @"
 
-.Evolution2:
-	db "- ???@"
+.BlankRow:
+	db "                @"
 
-.Evolution3:
-	db "- ???@"
+.AtLevelText:
+	db " Lv @"
 
-.Evolution4:
-	db "- ???@"
+.FriendshipAnyText:
+	db "Bond@"
 
-.Evolution5:
-	db "- ???@"
+.FriendshipDayText:
+	db "D-Bond@"
+
+.FriendshipNightText:
+	db "N-Bond@"
+
+.OtherEvolutionText:
+	db "OTHER EVOLUTION@"
+
+.NoEvolutionText:
+	db "NO EVOLUTION@"
+
+.EeveeJolteonText:
+	db "JOLTEON VOLT@"
+
+.EeveeVaporeonText:
+	db "VAPOREON AQUA@"
+
+.EeveeFlareonText:
+	db "FLAREON PYRO@"
+
+.EeveeEspeonText:
+	db "D-Bond ESPEON@"
+
+.EeveeUmbreonText:
+	db "N-Bond UMBREON@"
+
+.TyrogueLevelText:
+	db "Evolves at Lv 20@"
+
+.TyrogueHitmonchanText:
+	db "Low ATK HITMONCHAN@"
+
+.TyrogueHitmonleeText:
+	db "High ATK HITMONLEE@"
+
+.TyrogueHitmontopText:
+	db "Equ ATK HITMONTOP@"
 
 .TypeLabel:
 	db "TYPE@"
@@ -658,7 +1151,6 @@ Pokedex_DrawInfoPlaceholder:
 
 .EggGroupPlaceholder:
 	db "??? / ???@"
-
 
 Pokedex_DrawInfoFirstMove:
 	; Preserve the current species and object-name type.
@@ -3223,4 +3715,10 @@ Pokedex_SetBGMapMode_3ifDMG_4ifCGB:
 Pokedex_ResetBGMapMode:
 	xor a
 	ldh [hBGMapMode], a
+	ret
+
+Pokedex_ReadEvolutionByte:
+	ld a, BANK("Evolutions and Attacks")
+	call GetFarByte
+	inc hl
 	ret
