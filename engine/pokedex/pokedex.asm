@@ -618,7 +618,14 @@ Pokedex_DrawInfoPlaceholder:
 	call PlaceString
 
 .TypesDone
+	; Check whether this Pokémon has been caught.
+	call Pokedex_GetSelectedMon
+	ld a, [wTempSpecies]
+	call Pokedex_CheckCaught
+	jp z, .Uncaught
+
 	; Egg Group section.
+
 	hlcoord 2, 7
 	ld de, .EggGroupLabel
 	call PlaceString
@@ -1149,6 +1156,26 @@ Pokedex_DrawInfoPlaceholder:
 
 	jp .EvolutionTextDone
 
+.Uncaught:
+	; Show unknown Egg Groups.
+	hlcoord 2, 7
+	ld de, .EggGroupLabel
+	call PlaceString
+
+	hlcoord 2, 8
+	ld de, .EggGroupPlaceholder
+	call PlaceString
+
+	; Show unknown Evolutions.
+	hlcoord 2, 10
+	ld de, .EvolutionLabel
+	call PlaceString
+
+	hlcoord 2, 11
+	ld de, .EvolutionPlaceholder
+	call PlaceString
+
+	jp .EvolutionTextDone
 
 .EvolutionTextDone:
 	; Restore state.
@@ -1190,13 +1217,13 @@ Pokedex_DrawInfoPlaceholder:
 	db "NO EVOLUTION@"
 
 .EeveeJolteonText:
-	db "JOLTEON VOLT@"
+	db "JOLTEON TOPAZ@"
 
 .EeveeVaporeonText:
-	db "VAPOREON AQUA@"
+	db "VAPOREON LAPIS@"
 
 .EeveeFlareonText:
-	db "FLAREON PYRO@"
+	db "FLAREON RUBY@"
 
 .EeveeEspeonText:
 	db "D-Bond ESPEON@"
@@ -1222,14 +1249,14 @@ Pokedex_DrawInfoPlaceholder:
 .TypeSpacer:
 	db "/@"
 
-.TypePlaceholder:
-	db "??? / ???@"
-
 .EggGroupLabel:
 	db "EGG GROUP@"
 
 .EggGroupPlaceholder:
 	db "??? / ???@"
+
+.EvolutionPlaceholder: 
+	db "???@"
 
 Pokedex_DrawInfoFirstMove:
 	; Preserve the current species and object-name type.
@@ -1265,6 +1292,12 @@ Pokedex_DrawInfoFirstMove:
 
 	; Get the species selected in the Pokédex.
 	call Pokedex_GetSelectedMon
+
+	; Check whether this Pokémon has been caught.
+	ld a, [wTempSpecies]
+	call Pokedex_CheckCaught
+	jp z, .Uncaught
+
 	ld a, [wTempSpecies]
 
 	; Find this species' evolution and learnset data.
@@ -1504,6 +1537,16 @@ Pokedex_DrawInfoFirstMove:
 	call PlaceString
 	pop hl
 
+	jp .done
+
+
+.Uncaught:
+
+	; Show unknown level-up moves.
+	hlcoord 6, 5
+	ld de, .UnknownMovesText
+	call PlaceString
+
 .done
 	; Restore the original state.
 	pop af
@@ -1520,6 +1563,9 @@ Pokedex_DrawInfoFirstMove:
 
 .MoveHeader:
 	db "MOVE@"
+
+.UnknownMovesText:
+	db "???@"
 
 
 
@@ -1549,8 +1595,14 @@ Pokedex_DrawInfoMovesContinued:
 	ld de, .MoveHeader
 	call PlaceString
 
-	; Get the selected species' learnset pointer.
+	; Get the selected species.
 	call Pokedex_GetSelectedMon
+
+	; Check whether this Pokémon has been caught.
+	ld a, [wTempSpecies]
+	call Pokedex_CheckCaught
+	jp z, .Uncaught
+
 	ld a, [wTempSpecies]
 	dec a
 	ld c, a
@@ -1693,10 +1745,19 @@ Pokedex_DrawInfoMovesContinued:
 	pop hl
 
 .print_end_message
+
 	; Display the end-of-learnset message below the last move.
 	hlcoord 1, 10
 	ld de, .EndMovesText
 	call PlaceString
+	jr .done
+
+.Uncaught
+	; Show unknown level-up moves.
+	hlcoord 6, 5
+	ld de, .UnknownMovesText
+	call PlaceString
+	jr .done
 
 .done
 	; Restore the original state.
@@ -1707,7 +1768,7 @@ Pokedex_DrawInfoMovesContinued:
 	ret
 
 .Title:
-	db "LEVEL-UP MOVES@"
+	db "MOVES CONTINUED@"
 
 .LevelHeader:
 	db "Lv@"
@@ -1718,6 +1779,8 @@ Pokedex_DrawInfoMovesContinued:
 .EndMovesText:
 	db "END LEVEL-UP MOVES@"
 
+.UnknownMovesText:
+	db "???@"
 
 
 Pokedex_RedisplayDexEntry:
