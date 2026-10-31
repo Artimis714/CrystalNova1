@@ -865,12 +865,12 @@ StatsScreen_PrintHappiness:
 	hlcoord 1, 15
 	call PlaceString
 
-	hlcoord 5, 15
+	hlcoord 6, 15
 	lb bc, 1, 3
 	ld de, wTempMonHappiness
 	call PrintNum
 	ld de, .outofMaxLoveString
-	hlcoord 6, 16
+	hlcoord 7, 16
 	call PlaceString
 	ret
 .PokeJoyString:

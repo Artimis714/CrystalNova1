@@ -214,21 +214,6 @@ DisplayDexEntry:
 	call PlaceFarString
 	ret
 
-Pokedex_DrawInfoMoves:
-	; Clear the lower Pokédex description area.
-	lb bc, 5, SCREEN_WIDTH - 2
-	hlcoord 2, 11
-	call ClearBox
-
-	; Draw a temporary heading while we build the move list.
-	hlcoord 2, 11
-	ld de, .InfoTitle
-	call PlaceString
-	ret
-
-.InfoTitle:
-	db "LEVEL-UP MOVES@"
-
 POKeString: ; unreferenced
 	db "#@"
 
