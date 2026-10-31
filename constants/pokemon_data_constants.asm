@@ -68,6 +68,7 @@ DEF NUM_GROWTH_RATES EQU const_value
 	const EGG_DITTO         ; d
 	const EGG_DRAGON        ; e
 	const EGG_NONE          ; f (Undiscovered)
+DEF NUM_EGG_GROUPS EQU const_value - 1
 
 ; pokedex entries (see data/pokemon/dex_entries.asm)
 DEF NUM_DEX_ENTRY_BANKS EQU 4

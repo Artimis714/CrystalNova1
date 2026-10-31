@@ -90,3 +90,22 @@ GetTypeName:
 	jp CopyBytes
 
 INCLUDE "data/types/names.asm"
+
+GetEggGroupName:
+; Copy the name of egg group [wNamedObjectIndex] to wStringBuffer1.
+
+	ld a, [wNamedObjectIndex]
+	dec a
+	ld hl, EggGroupNames
+	ld e, a
+	ld d, 0
+	add hl, de
+	add hl, de
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	ld de, wStringBuffer1
+	ld bc, MOVE_NAME_LENGTH
+	jp CopyBytes
+
+INCLUDE "data/pokemon/egg_group_names.asm"

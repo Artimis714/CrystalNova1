@@ -623,10 +623,49 @@ Pokedex_DrawInfoPlaceholder:
 	ld de, .EggGroupLabel
 	call PlaceString
 
+	; Get the first Egg Group (lower four bits).
+	ld a, [wBaseEggGroups]
+	and $f
+	ld [wNamedObjectIndex], a
+	farcall GetEggGroupName
+
+	; Print the first Egg Group.
+	ld de, wStringBuffer1
 	hlcoord 2, 8
-	ld de, .EggGroupPlaceholder
 	call PlaceString
 
+	; Check whether the second Egg Group is different.
+	ld a, [wBaseEggGroups]
+	swap a
+	and $f
+	ld d, a
+	ld a, [wBaseEggGroups]
+	and $f
+	cp d
+	jr z, .EggGroupsDone
+
+	; Print the separator after the first Egg Group.
+	ld h, b
+	ld l, c
+	ld de, .TypeSpacer
+	call PlaceString
+
+	; Preserve the position after the separator.
+	push bc
+
+	; Get the second Egg Group (upper four bits).
+	ld a, [wBaseEggGroups]
+	swap a
+	and $f
+	ld [wNamedObjectIndex], a
+	farcall GetEggGroupName
+
+	; Restore the position and print the second Egg Group.
+	pop hl
+	ld de, wStringBuffer1
+	call PlaceString
+
+.EggGroupsDone
 	; Evolution section.
 	hlcoord 2, 10
 	ld de, .EvolutionLabel
