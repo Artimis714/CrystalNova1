@@ -573,7 +573,62 @@ Pokedex_DrawInfoPlaceholder:
 	ld de, .Title
 	call PlaceString
 
+	; Type section.
 	hlcoord 2, 4
+	ld de, .TypeLabel
+	call PlaceString
+
+	; Load base data.
+	call GetBaseData
+
+	; Get the first type's name.
+	ld a, [wBaseType1]
+	ld [wNamedObjectIndex], a
+	farcall GetTypeName
+
+	; Print the first type.
+	ld de, wStringBuffer1
+	hlcoord 2, 5
+	call PlaceString
+
+	; Check whether the second type is different.
+	ld a, [wBaseType1]
+	ld d, a
+	ld a, [wBaseType2]
+	cp d
+	jr z, .TypesDone
+
+	; Print the separator immediately after Type 1.
+	ld h, b
+	ld l, c
+	ld de, .TypeSpacer
+	call PlaceString
+
+	; Preserve the position after the separator.
+	push bc
+
+	; Get the second type's name.
+	ld a, [wBaseType2]
+	ld [wNamedObjectIndex], a
+	farcall GetTypeName
+
+	; Restore the position and print the second type.
+	pop hl
+	ld de, wStringBuffer1
+	call PlaceString
+
+.TypesDone
+	; Egg Group section.
+	hlcoord 2, 7
+	ld de, .EggGroupLabel
+	call PlaceString
+
+	hlcoord 2, 8
+	ld de, .EggGroupPlaceholder
+	call PlaceString
+
+	; Evolution section.
+	hlcoord 2, 10
 	ld de, .EvolutionLabel
 	call PlaceString
 
@@ -587,27 +642,27 @@ Pokedex_DrawInfoPlaceholder:
 	jp z, .TyrogueEvolutions
 
 	; Clear six evolution rows.
-	hlcoord 2, 5
+	hlcoord 2, 11
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 6
+	hlcoord 2, 12
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 7
+	hlcoord 2, 13
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 8
+	hlcoord 2, 14
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 9
+	hlcoord 2, 15
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 10
+	hlcoord 2, 16
 	ld de, .BlankRow
 	call PlaceString
 
@@ -668,7 +723,7 @@ Pokedex_DrawInfoPlaceholder:
 	push hl
 
 	; Print target Pokémon name.
-	hlcoord 2, 6
+	hlcoord 2, 12
 	call GetPokemonName
 	ld de, wStringBuffer1
 	call PlaceString
@@ -712,7 +767,7 @@ Pokedex_DrawInfoPlaceholder:
 	push hl
 
 	; Get target Pokémon name.
-	hlcoord 2, 6
+	hlcoord 2, 12
 	call GetPokemonName
 	ld de, wStringBuffer1
 	call PlaceString
@@ -792,7 +847,7 @@ Pokedex_DrawInfoPlaceholder:
 	push hl
 
 	; Print friendship label.
-	hlcoord 2, 6
+	hlcoord 2, 12
 	call PlaceString
 
 	; Continue after label.
@@ -821,14 +876,14 @@ Pokedex_DrawInfoPlaceholder:
 
 
 .OtherEvolution:
-	hlcoord 2, 6
+	hlcoord 2, 12
 	ld de, .OtherEvolutionText
 	call PlaceString
 	jp .EvolutionTextDone
 
 
 .NoEvolution:
-	hlcoord 2, 6
+	hlcoord 2, 12
 	ld de, .NoEvolutionText
 	call PlaceString
 	jp .EvolutionTextDone
@@ -869,7 +924,7 @@ Pokedex_DrawInfoPlaceholder:
 	ld [wNamedObjectIndex], a
 
 	; Print target Pokémon name.
-	hlcoord 2, 7
+	hlcoord 2, 13
 	call GetPokemonName
 	ld de, wStringBuffer1
 	call PlaceString
@@ -936,7 +991,7 @@ Pokedex_DrawInfoPlaceholder:
 
 .PrintSecondFriendship:
 	; Print friendship label.
-	hlcoord 2, 7
+	hlcoord 2, 13
 	call PlaceString
 
 	; Continue after label.
@@ -962,48 +1017,48 @@ Pokedex_DrawInfoPlaceholder:
 
 .EeveeEvolutions:
 	; Clear the evolution display area.
-	hlcoord 2, 5
+	hlcoord 2, 11
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 6
+	hlcoord 2, 12
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 7
+	hlcoord 2, 13
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 8
+	hlcoord 2, 14
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 9
+	hlcoord 2, 15
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 10
+	hlcoord 2, 16
 	ld de, .BlankRow
 	call PlaceString
 
 	; Eevee's five evolutions.
-	hlcoord 2, 6
+	hlcoord 2, 12
 	ld de, .EeveeJolteonText
 	call PlaceString
 
-	hlcoord 2, 7
+	hlcoord 2, 13
 	ld de, .EeveeVaporeonText
 	call PlaceString
 
-	hlcoord 2, 8
+	hlcoord 2, 14
 	ld de, .EeveeFlareonText
 	call PlaceString
 
-	hlcoord 2, 9
+	hlcoord 2, 15
 	ld de, .EeveeEspeonText
 	call PlaceString
 
-	hlcoord 2, 10
+	hlcoord 2, 16
 	ld de, .EeveeUmbreonText
 	call PlaceString
 
@@ -1012,44 +1067,44 @@ Pokedex_DrawInfoPlaceholder:
 
 .TyrogueEvolutions:
 	; Clear the evolution display area.
-	hlcoord 2, 5
+	hlcoord 2, 11
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 6
+	hlcoord 2, 12
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 7
+	hlcoord 2, 13
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 8
+	hlcoord 2, 14
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 9
+	hlcoord 2, 15
 	ld de, .BlankRow
 	call PlaceString
 
-	hlcoord 2, 10
+	hlcoord 2, 16
 	ld de, .BlankRow
 	call PlaceString
 
 	; Tyrogue's evolution requirements.
-	hlcoord 2, 6
+	hlcoord 2, 12
 	ld de, .TyrogueLevelText
 	call PlaceString
 
-	hlcoord 2, 7
+	hlcoord 2, 13
 	ld de, .TyrogueHitmonchanText
 	call PlaceString
 
-	hlcoord 2, 8
+	hlcoord 2, 14
 	ld de, .TyrogueHitmonleeText
 	call PlaceString
 
-	hlcoord 2, 9
+	hlcoord 2, 15
 	ld de, .TyrogueHitmontopText
 	call PlaceString
 
@@ -1057,24 +1112,6 @@ Pokedex_DrawInfoPlaceholder:
 
 
 .EvolutionTextDone:
-	; Type section.
-	hlcoord 2, 11
-	ld de, .TypeLabel
-	call PlaceString
-
-	hlcoord 2, 12
-	ld de, .TypePlaceholder
-	call PlaceString
-
-	; Egg Group section.
-	hlcoord 2, 14
-	ld de, .EggGroupLabel
-	call PlaceString
-
-	hlcoord 2, 15
-	ld de, .EggGroupPlaceholder
-	call PlaceString
-
 	; Restore state.
 	pop af
 	ld [wNamedObjectType], a
@@ -1142,6 +1179,9 @@ Pokedex_DrawInfoPlaceholder:
 
 .TypeLabel:
 	db "TYPE@"
+
+.TypeSpacer:
+	db "/@"
 
 .TypePlaceholder:
 	db "??? / ???@"

@@ -874,7 +874,7 @@ StatsScreen_PrintHappiness:
 	call PlaceString
 	ret
 .PokeJoyString:
-	db "JOY@"
+	db "Bond@"
 .outofMaxLoveString:
 	db "/255@"
 
