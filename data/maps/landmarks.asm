@@ -115,6 +115,8 @@ Landmarks:
 	landmark 132, 124, TanobyRuinsName
 	landmark  20, 108, FastShipName
 	landmark  52, 116, CinnibarVolcanoName
+	landmark 116, 124, MossForestName
+	landmark 116, 124, MossCaveName
 	assert_table_length NUM_LANDMARKS
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
@@ -227,3 +229,5 @@ GreenSeaName:        db "GREEN¯SEA@"
 MossIsleName:        db "MOSS¯ISLE@"
 WhisperSeaName:      db "WHISPER¯SEA@"
 TanobyRuinsName:     db "TANOBY¯RUINS@"
+MossForestName:      db "MOSS¯FOREST@"
+MossCaveName:        db "MOSS¯CAVE@"

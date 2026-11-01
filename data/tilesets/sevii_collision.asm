@@ -26,7 +26,7 @@
 	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 19
 	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 1a
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 1b
-	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 1c
+	tilecoll CURRENT_RIGHT, CURRENT_DOWN, PIT, CURRENT_LEFT ; 1c
 	tilecoll WALL, DOOR, FLOOR, FLOOR ; 1d
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 1e
 	tilecoll WALL, WALL, WALL, WALL ; 1f
@@ -44,7 +44,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 2b
 	tilecoll WATER, WATER, WATER, WATER ; 2c
 	tilecoll WATER, WATER, WATER, WATER ; 2d
-	tilecoll TALL_GRASS, TALL_GRASS, FLOOR, FLOOR ; 2e
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 2e
 	tilecoll WALL, WALL, WALL, WALL ; 2f
 	tilecoll WATER, WATER, WATER, WATER ; 30
 	tilecoll HEADBUTT_TREE, HEADBUTT_TREE, FLOOR, FLOOR ; 31

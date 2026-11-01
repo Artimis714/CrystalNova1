@@ -495,6 +495,15 @@ INCLUDE "maps/CitrineCoralGate.asm"
 INCLUDE "maps/CitrineGreenGate.asm"
 INCLUDE "maps/CitrineFlorist.asm"
 INCLUDE "maps/CitrineMart.asm"
+INCLUDE "maps/MossIsle.asm"
+INCLUDE "maps/MossForest.asm"
+INCLUDE "maps/MossCave.asm"
+INCLUDE "maps/AgathasHouse.asm"
+INCLUDE "maps/GreenSea.asm"
+INCLUDE "maps/MossPokecenter.asm"
+INCLUDE "maps/WhisperSea.asm"
+INCLUDE "maps/MossGreenGate.asm"
+INCLUDE "maps/MossWhisperGate.asm"
 
 
 SECTION "Map Scripts 34", ROMX

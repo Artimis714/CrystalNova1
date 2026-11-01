@@ -135,9 +135,6 @@ INCBIN "data/tilesets/train_station_metatiles.bin"
 TilesetTrainStationColl::
 INCLUDE "data/tilesets/train_station_collision.asm"
 
-TilesetForestMeta::
-INCBIN "data/tilesets/forest_metatiles.bin"
-
 
 SECTION "Tileset Data 4", ROMX
 
@@ -189,6 +186,9 @@ INCLUDE "data/tilesets/unused_johto_collision.asm"
 
 
 SECTION "Tileset Data 5", ROMX
+
+TilesetForestMeta::
+INCBIN "data/tilesets/forest_metatiles.bin"
 
 TilesetCaveMeta::
 TilesetDarkCaveMeta::

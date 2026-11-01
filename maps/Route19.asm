@@ -66,9 +66,6 @@ TrainerSwimmermTucker:
 	closetext
 	end
 
-Route19Sign:
-	jumptext Route19SignText
-
 CarefulSwimmingSign:
 	jumptext CarefulSwimmingSignText
 
@@ -189,33 +186,23 @@ SwimmermJeromeAfterBattleText:
 	cont "love the sea."
 	done
 
-Route19SignText:
-	text "ROUTE 19"
-
-	para "FUCHSIA CITY -"
-	line "SEAFOAM ISLANDS"
-	done
-
 CarefulSwimmingSignText:
 	text "Please be careful"
 	line "if you are swim-"
 	cont "ming to SEAFOAM"
 	cont "ISLANDS."
-
-	para "FUCHSIA POLICE"
 	done
 
 Route19_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  9,  3, ROUTE_19_FUCHSIA_GATE, 3
+
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 10,  4, BGEVENT_READ, Route19Sign
-	bg_event 12,  9, BGEVENT_READ, CarefulSwimmingSign
+	bg_event 10,  4, BGEVENT_READ, CarefulSwimmingSign
 
 	def_object_events
 	object_event  9, 23, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerSwimmerfDawn, -1

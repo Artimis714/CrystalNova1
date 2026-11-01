@@ -195,6 +195,7 @@ Route6SaffronGate_Blocks:
 Route2Gate_Blocks:
 Route29Route46Gate_Blocks:
 Route5SaffronGate_Blocks:
+MossGreenGate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
 
 BetaEcruteakCity_Blocks: ; unreferenced
@@ -264,6 +265,7 @@ Route31VioletGate_Blocks:
 ViridianCityGate_Blocks:
 CitrineCoralGate_Blocks:
 CitrineGreenGate_Blocks:
+MossWhisperGate_Blocks:
 	INCBIN "maps/EastWestGate.blk"
 
 BetaAzaleaTown_Blocks: ; unreferenced
@@ -349,6 +351,7 @@ ViridianPokecenter1F_Blocks:
 SaffronPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
 CitrinePokecenter_Blocks:
+MossPokecenter_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 BetaPewterMuseumOfScience1F_Blocks: ; unreferenced
@@ -1068,3 +1071,22 @@ TempestIsleCave3_Blocks:
 
 TempestIsleCave4_Blocks:
 	INCBIN "maps/TempestIsleCave4.blk"
+
+AgathasHouse_Blocks:
+	INCBIN "maps/Agathashouse.blk"
+
+GreenSea_Blocks:
+	INCBIN "maps/GreenSea.blk"
+
+MossIsle_Blocks:
+	INCBIN "maps/MossIsle.blk"
+
+MossForest_Blocks:
+	INCBIN "maps/MossForest.blk"
+
+MossCave_Blocks:
+	INCBIN "maps/MossCave.blk"
+
+WhisperSea_Blocks:
+	INCBIN "maps/WhisperSea.blk"
+

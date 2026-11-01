@@ -379,6 +379,7 @@ ENDM
 	connection north, Route10North, ROUTE_10_NORTH, 0
 	connection south, LavenderTown, LAVENDER_TOWN, 0
 
+
 	map_attributes Route23, ROUTE_23, $0f, 0
 	map_attributes SproutTower1F, SPROUT_TOWER_1F, $00, 0
 	map_attributes SproutTower2F, SPROUT_TOWER_2F, $00, 0
@@ -700,3 +701,13 @@ ENDM
 	map_attributes TempestIsleCave2, TEMPEST_ISLE_CAVE2, $09, 0
 	map_attributes TempestIsleCave3, TEMPEST_ISLE_CAVE3, $09, 0
 	map_attributes TempestIsleCave4, TEMPEST_ISLE_CAVE4, $09, 0
+	map_attributes AgathasHouse, AGATHA_HOUSE, $00, 0
+	map_attributes MossForest, MOSS_FOREST, $33, 0
+	map_attributes MossCave, MOSS_CAVE, $09, 0
+	map_attributes MossPokecenter, MOSS_POKECENTER, $00, 0
+	map_attributes GreenSea, GREEN_SEA, $02, 0
+	map_attributes MossIsle, MOSS_ISLE, $02, 0
+	map_attributes MossGreenGate, MOSS_GREEN_GATE, $00, 0
+	map_attributes MossWhisperGate, MOSS_WHISPER_GATE, $00, 0
+	map_attributes WhisperSea, WHISPER_SEA, $02, 0
+

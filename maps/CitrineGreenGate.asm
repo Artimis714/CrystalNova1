@@ -13,6 +13,8 @@ CitrineGreenGate_MapEvents:
 	def_warp_events
 	warp_event  0,  4, CITRINE_CITY, 4
 	warp_event  0,  5, CITRINE_CITY, 5
+	warp_event  9,  4, GREEN_SEA, 1
+	warp_event  9,  5, GREEN_SEA, 2
 
 	def_coord_events
 

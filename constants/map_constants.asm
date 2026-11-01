@@ -502,6 +502,15 @@ ENDM
 	map_const CORAL_CITRINE_GATE,  				5,  4 ;  5
 	map_const CITRINE_GREEN_GATE,                           5,  4 ;  6
 	map_const CITRINE_FLORIST,                              4,  4 ;  7
+	map_const GREEN_SEA,                                   27, 11 ;  8
+	map_const MOSS_ISLE,                                   16, 15 ;  9
+	map_const MOSS_FOREST,                                 20, 20 ; 10
+	map_const MOSS_CAVE,                                   15, 15 ; 11
+	map_const MOSS_POKECENTER,                              5,  4 ; 12
+	map_const AGATHA_HOUSE,                                 5,  4 ; 13
+	map_const MOSS_GREEN_GATE,                              5,  4 ; 14
+	map_const MOSS_WHISPER_GATE,                            5,  4 ; 15
+	map_const WHISPER_SEA,                                 30, 18 ; 15
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

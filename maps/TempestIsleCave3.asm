@@ -23,6 +23,7 @@ TempestIsleCave3_MapEvents:
 	warp_event 26,  5, TEMPEST_ISLE_CAVE2, 4
 	warp_event 28,  3, TEMPEST_ISLE_CAVE2, 4
 	warp_event 40,  9, TEMPEST_ISLE_CAVE2, 4
+	warp_event  2, 37, TEMPEST_ISLE_CAVE2, 4
 
 	def_coord_events
 
