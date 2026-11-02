@@ -710,4 +710,7 @@ ENDM
 	map_attributes MossGreenGate, MOSS_GREEN_GATE, $00, 0
 	map_attributes MossWhisperGate, MOSS_WHISPER_GATE, $00, 0
 	map_attributes WhisperSea, WHISPER_SEA, $02, 0
+	map_attributes TanobyRuinsF1, TANOBY_RUINS_1F, $00, 0
+	map_attributes TanobyRuinsF2, TANOBY_RUINS_2F, $00, 0
+	map_attributes TanobyRuinsItemRoom, TANOBY_RUINS_ITEM_ROOM, $00, 0
 

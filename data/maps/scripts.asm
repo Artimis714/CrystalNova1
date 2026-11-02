@@ -504,6 +504,9 @@ INCLUDE "maps/MossPokecenter.asm"
 INCLUDE "maps/WhisperSea.asm"
 INCLUDE "maps/MossGreenGate.asm"
 INCLUDE "maps/MossWhisperGate.asm"
+INCLUDE "maps/TanobyRuinsF1.asm"
+INCLUDE "maps/TanobyRuinsF2.asm"
+INCLUDE "maps/TanobyRuinsItemRoom.asm"
 
 
 SECTION "Map Scripts 34", ROMX

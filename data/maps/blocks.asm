@@ -1090,3 +1090,11 @@ MossCave_Blocks:
 WhisperSea_Blocks:
 	INCBIN "maps/WhisperSea.blk"
 
+TanobyRuinsF1_Blocks:
+	INCBIN "maps/TanobyRuinsF1.blk"
+
+TanobyRuinsF2_Blocks:
+	INCBIN "maps/TanobyRuinsF2.blk"
+
+TanobyRuinsItemRoom_Blocks:
+	INCBIN "maps/TanobyRuinsItemRoom.blk"

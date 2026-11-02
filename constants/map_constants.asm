@@ -168,6 +168,9 @@ ENDM
 	map_const CINNABAR_VOLCANO_2F,                         20, 20 ; 102
 	map_const CINNABAR_VOLCANO_3F,                         20, 20 ; 103
 	map_const CINNABAR_VOLCANO_SUMMIT,                     20, 20 ; 104
+	map_const TANOBY_RUINS_1F,                              2, 20 ; 105
+	map_const TANOBY_RUINS_2F,                              7,  6 ; 106
+	map_const TANOBY_RUINS_ITEM_ROOM,                       4,  4 ; 107
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
