@@ -322,6 +322,10 @@ DEF NUM_UNOWN_PUZZLES EQU const_value
 	const UNOWNWORDS_LIGHT  ; 1
 	const UNOWNWORDS_WATER  ; 2
 	const UNOWNWORDS_TIME   ; 3
+	const UNOWNWORDS_THREE  ; 4
+	const UNOWNWORDS_ISLES  ; 5
+	const UNOWNWORDS_ILEX   ; 6
+	const UNOWNWORDS_WHIRL  ; 7
 
 ; MoveTutor setval arguments
 	const_def 1

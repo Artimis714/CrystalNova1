@@ -89,6 +89,99 @@ _UnownPuzzle:
 	ldh [rLCDC], a
 	ret
 
+_DisplayMewPuzzleImage:
+	ldh a, [hInMenu]
+	push af
+	ld a, $1
+	ldh [hInMenu], a
+
+	call ClearBGPalettes
+	call ClearTilemap
+	call ClearSprites
+
+	xor a
+	ldh [hBGMapMode], a
+	call DisableLCD
+
+	; Clear puzzle workspace
+	ld hl, STARTOF("Miscellaneous")
+	ld bc, SIZEOF("Miscellaneous")
+	xor a
+	call ByteFill
+
+	; Load Mew graphics (puzzle slot 3)
+	ld a, [wScriptVar]
+	push af
+	ld a, UNOWNPUZZLE_HO_OH
+	ld [wScriptVar], a
+	call LoadUnownPuzzlePiecesGFX
+	pop af
+	ld [wScriptVar], a
+
+	; Draw the puzzle background
+	hlcoord 0, 0
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	ld a, PUZZLE_BORDER
+	call ByteFill
+
+	hlcoord 4, 3
+	lb bc, 12, 12
+	ld a, PUZZLE_VOID
+	call UnownPuzzle_FillBox
+
+	; Copy the completed puzzle arrangement
+	ld hl, .SolvedPuzzleConfiguration
+	ld de, wPuzzlePieces
+	ld bc, 6 * 6
+	call CopyBytes
+
+	; Draw all 16 pieces in their solved positions
+	xor a
+	ld [wUnownPuzzleCursorPosition], a
+	call UnownPuzzle_UpdateTilemap
+
+	; Display the image
+	xor a
+	ldh [hSCY], a
+	ldh [hSCX], a
+	ldh [rWY], a
+
+	ld a, %10010011
+	ldh [rLCDC], a
+
+	call WaitBGMap
+
+	ld b, SCGB_UNOWN_PUZZLE
+	call GetSGBLayout
+
+	ld a, $e4
+	call DmgToCgbBGPals
+	ld a, $24
+	call DmgToCgbObjPal0
+
+	call DelayFrame
+	call SimpleWaitPressAorB
+
+	; Restore the map display
+	pop af
+	ldh [hInMenu], a
+
+	call ClearBGPalettes
+	call ClearTilemap
+	call ClearSprites
+
+	ld a, LCDC_DEFAULT
+	ldh [rLCDC], a
+	ret
+
+.SolvedPuzzleConfiguration:
+	db $00, $00, $00, $00, $00, $00
+	db $00, $01, $02, $03, $04, $00
+	db $00, $05, $06, $07, $08, $00
+	db $00, $09, $0a, $0b, $0c, $00
+	db $00, $0d, $0e, $0f, $10, $00
+	db $00, $00, $00, $00, $00, $00
+
 InitUnownPuzzlePiecePositions:
 	ld c, 1
 	ld b, 16

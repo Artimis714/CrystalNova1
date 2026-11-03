@@ -171,15 +171,15 @@ ItemDescriptions:
 	dw GorgeousBoxDesc
 	dw SunStoneDesc
 	dw PolkadotBowDesc
-	dw TeruSama22Desc
+	dw ElectricOrbDesc
 	dw UpGradeDesc
 	dw BerryDesc
 	dw GoldBerryDesc
 	dw SquirtBottleDesc
-	dw TeruSama23Desc
+	dw FlameOrbDesc
 	dw ParkBallDesc
 	dw RainbowWingDesc
-	dw TeruSama24Desc
+	dw FrostOrbDesc
 	dw BrickPieceDesc
 	dw SurfMailDesc
 	dw LiteBlueMailDesc
@@ -931,8 +931,9 @@ PolkadotBowDesc:
 	db   "POWERS UP NORMAL-"
 	next "TYPE MOVES!! (HOLD)@"
 
-TeruSama22Desc:
-	db   "?@"
+ElectricOrbDesc:
+	db   "An impossible orb"
+	next "of voltic power.@"
 
 UpGradeDesc:
 	db   "A prototype soft-"
@@ -950,8 +951,9 @@ SquirtBottleDesc:
 	db   "A bottle used for"
 	next "watering plants.@"
 
-TeruSama23Desc:
-	db   "?@"
+FlameOrbDesc:
+	db   "An impossible orb"
+	next "of burning power.@"
 
 ParkBallDesc:
 	db   "The Bug-Catching"
@@ -961,8 +963,9 @@ RainbowWingDesc:
 	db   "A mystical feather"
 	next "of rainbow colors.@"
 
-TeruSama24Desc:
-	db   "?@"
+FrostOrbDesc:
+	db   "An impossible orb"
+	next "of frozen power.@"
 
 BrickPieceDesc:
 	db   "An ancient pottery"

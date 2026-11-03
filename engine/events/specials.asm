@@ -201,6 +201,12 @@ UnownPuzzle:
 	call ExitAllMenus
 	ret
 
+DisplayMewPuzzleImage:
+	call FadeToMenu
+	farcall _DisplayMewPuzzleImage
+	call ExitAllMenus
+	ret
+
 SlotMachine:
 	call CheckCoinsAndCoinCase
 	ret c

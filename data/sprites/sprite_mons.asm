@@ -71,4 +71,6 @@ SpriteMons:
 	db VULPIX
 	db KRABBY
 	db ONIX
+	db ARTICUNO
+	db ZAPDOS
 	assert_table_length NUM_POKEMON_SPRITES

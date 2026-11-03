@@ -114,6 +114,8 @@
 	const SPRITE_WAITRESS ; 6f
 	const SPRITE_GIOVANNI ; 70
 	const SPRITE_RATTATA_BACK ; 71
+	const SPRITE_ORB ; 72
+	const SPRITE_FEATHER ; 73
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
@@ -189,6 +191,8 @@ DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_VULPIX ; c3
 	const SPRITE_KRABBY ; c4
 	const SPRITE_ONIX ; c5
+	const SPRITE_ARTICUNO ; c6
+	const SPRITE_ZAPDOS ; c7
 DEF NUM_POKEMON_SPRITES EQU const_value - SPRITE_POKEMON
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)

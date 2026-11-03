@@ -100,7 +100,7 @@ OverworldSprites:
 	overworld_sprite SnesSpriteGFX, 4, STILL_SPRITE, PAL_OW_BLUE
 	overworld_sprite FamicomSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
 	overworld_sprite FruitTreeSpriteGFX, 4, STILL_SPRITE, PAL_OW_TREE
-	overworld_sprite GoldTrophySpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
+	overworld_sprite GoldTrophySpriteGFX, 4, STILL_SPRITE, PAL_OW_YELLOW
 	overworld_sprite SilverTrophySpriteGFX, 4, STILL_SPRITE, PAL_OW_EMOTE
 	overworld_sprite KrisSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite KrisBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
@@ -113,10 +113,12 @@ OverworldSprites:
 	overworld_sprite JessieSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite JamesSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite AgathatSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
-	overworld_sprite LoreleiSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PINK
+	overworld_sprite LoreleiSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite DragoniteMoveSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite FarfetchMoveSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite WaitressSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite GiovanniSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
-	overworld_sprite RattataBackSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite RattataBackSpriteGFX, 8, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite OrbSpriteGFX, 8, STANDING_SPRITE, PAL_OW_GREEN
+	overworld_sprite FeatherSpriteGFX, 4, STILL_SPRITE, PAL_OW_YELLOW
 	assert_table_length NUM_OVERWORLD_SPRITES

@@ -635,7 +635,12 @@ InitializeEventsScript:
 	setevent EVENT_BATTLED_DITTO
 	setevent EVENT_READY_TO_ROCK
 	setevent EVENT_OAK_IN_MT_SILVER
-	setevent EVENT_CANDY_SHOP
+	setevent EVENT_CINNABAR_RED_ORB
+	setevent EVENT_SEAFOAM_BLUE_ORB
+	setevent EVENT_TEMPEST_YELLOW_ORB
+	setevent EVENT_TANOBY_RED_ORB
+	setevent EVENT_TANOBY_BLUE_ORB
+	setevent EVENT_TANOBY_YELLOW_ORB
 	setevent EVENT_INITIALIZED_EVENTS
 	callasm .mystery_gift_flag
 	endcallback

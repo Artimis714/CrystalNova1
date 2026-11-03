@@ -186,3 +186,4 @@ SpecialsPointers::
 	add_special NameShiny
 	add_special MoveRelearner
 	add_special SusieQCheckLeafQuantity
+	add_special DisplayMewPuzzleImage

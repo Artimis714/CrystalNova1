@@ -28,17 +28,37 @@ UnownWalls:
 	unownwall "WATER"
 ; UNOWNWORDS_TIME
 	unownwall "TIME"
+; UNOWNWORDS_THREE
+	unownwall "THREE"
+; UNOWNWORDS_ISLES
+	unownwall "ISLES"
+; UNOWNWORDS_ILEX
+	unownwall "ILEX"
+; UNOWNWORDS_WHIRL
+	unownwall "WHIRL"
 
 MenuHeaders_UnownWalls:
 ; UNOWNWORDS_ESCAPE
-	db MENU_BACKUP_TILES ; flags
+	db MENU_BACKUP_TILES
 	menu_coords 3, 4, 16, 9
 ; UNOWNWORDS_LIGHT
-	db MENU_BACKUP_TILES ; flags
+	db MENU_BACKUP_TILES
 	menu_coords 4, 4, 15, 9
 ; UNOWNWORDS_WATER
-	db MENU_BACKUP_TILES ; flags
+	db MENU_BACKUP_TILES
 	menu_coords 4, 4, 15, 9
 ; UNOWNWORDS_TIME
-	db MENU_BACKUP_TILES ; flags
+	db MENU_BACKUP_TILES
 	menu_coords 5, 4, 15, 9
+; UNOWNWORDS_THREE
+	db MENU_BACKUP_TILES
+	menu_coords 4, 4, 15, 9
+; UNOWNWORDS_ISLES
+	db MENU_BACKUP_TILES
+	menu_coords 4, 4, 15, 9
+; UNOWNWORDS_ILEX
+	db MENU_BACKUP_TILES
+	menu_coords 5, 4, 15, 9
+; UNOWNWORDS_WHIRL
+	db MENU_BACKUP_TILES
+	menu_coords 4, 4, 15, 9

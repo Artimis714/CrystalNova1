@@ -184,16 +184,16 @@ ItemEffects:
 	dw GorgeousBoxEffect   ; GORGEOUS_BOX
 	dw EvoStoneEffect      ; SUN_STONE
 	dw NoEffect            ; POLKADOT_BOW
-	dw NoEffect            ; ITEM_AB
+	dw NoEffect            ; ELECTRIC_ORB
 	dw EvoStoneEffect      ; UP_GRADE
 	dw RestoreHPEffect     ; BERRY
 	dw RestoreHPEffect     ; GOLD_BERRY
 	dw SquirtbottleEffect  ; SQUIRTBOTTLE
-	dw NoEffect            ; ITEM_B0
+	dw NoEffect            ; FIRE_ORB
 	dw PokeBallEffect      ; PARK_BALL
 	dw NoEffect            ; RAINBOW_WING
-	dw NoEffect            ; ITEM_B3
-	assert_table_length ITEM_B3
+	dw NoEffect            ; ICE_ORB
+	assert_table_length ICE_ORB
 ; The items past ITEM_B3 do not have effect entries:
 ;	BRICK_PIECE
 ;	SURF_MAIL
