@@ -816,194 +816,231 @@ IDNoString:
 OTString:
 	db "OT/@"
 
+
 LoadOrangePage:
-	call StatsScreen_PrintDVs
-	call StatsScreen_PrintHappiness
-	ld de, HiddenPowerTypeString
-	hlcoord 1, 8
-	call PlaceString
-	
-ld hl, wTempMonDVs
-	; Type:
+    call StatsScreen_PrintCaughtLocation
 
-	; Def & 3
-	ld a, [hl]
-	and %0011
-	ld b, a
+    ; Hidden Power
+    ld de, HiddenPowerTypeString
+    hlcoord 1, 10
+    call PlaceString
 
-	; + (Atk & 3) << 2
-	ld a, [hl]
-	and %0011 << 4
-	swap a
-	add a
-	add a
-	or b
+    ld hl, wTempMonDVs
 
-; Skip Normal
-	inc a
+    ; Type:
+    ; Def & 3
+    ld a, [hl]
+    and %0011
+    ld b, a
 
-; Skip Bird
-	cp BIRD
-	jr c, .done
-	inc a
+    ; + (Atk & 3) << 2
+    ld a, [hl]
+    and %0011 << 4
+    swap a
+    add a
+    add a
+    or b
 
-; Skip unused types
-	cp UNUSED_TYPES
-	jr c, .done
-	add UNUSED_TYPES_END - UNUSED_TYPES
+    ; Skip Normal
+    inc a
+
+    ; Skip Bird
+    cp BIRD
+    jr c, .done
+    inc a
+
+    ; Skip unused types
+    cp UNUSED_TYPES
+    jr c, .done
+    add UNUSED_TYPES_END - UNUSED_TYPES
 
 .done
     ld [wNamedObjectIndex], a
-	farcall GetTypeName
-	ld de, wStringBuffer1
-	hlcoord 2, 9
-	call PlaceString
-	ret
+    farcall GetTypeName
+    ld de, wStringBuffer1
+    hlcoord 2, 11
+    call PlaceString
+
+    call StatsScreen_PrintDVs
+    call StatsScreen_PrintHappiness
+    ret
+
+
+StatsScreen_PrintCaughtLocation:
+    ld de, .CaughtAtString
+    hlcoord 1, 8
+    call PlaceString
+
+    ld a, [wTempMonCaughtLocation]
+    and CAUGHT_LOCATION_MASK
+
+    ; Unknown location
+    jr z, .unknown_location
+
+    ; Event Pokémon
+    cp LANDMARK_EVENT
+    jr z, .unknown_location
+
+    ; Gift Pokémon
+    cp LANDMARK_GIFT
+    jr z, .unknown_location
+
+    ; Convert landmark ID into its name
+    ld e, a
+    farcall GetLandmarkName
+
+    ld de, wStringBuffer1
+    hlcoord 2, 9
+    call PlaceString
+    ret
+
+.unknown_location
+    ld de, .UnknownLocationString
+    hlcoord 2, 9
+    call PlaceString
+    ret
+
+.CaughtAtString:
+    db "CAUGHT AT:@"
+
+.UnknownLocationString:
+    db "UNKNOWN@"
+
 
 StatsScreen_PrintHappiness:
-	ld de, .PokeJoyString
-	hlcoord 1, 15
-	call PlaceString
+    ld de, .PokeJoyString
+    hlcoord 1, 16
+    call PlaceString
 
-	hlcoord 6, 15
-	lb bc, 1, 3
-	ld de, wTempMonHappiness
-	call PrintNum
-	ld de, .outofMaxLoveString
-	hlcoord 7, 16
-	call PlaceString
-	ret
+    hlcoord 6, 16
+    lb bc, 1, 3
+    ld de, wTempMonHappiness
+    call PrintNum
+
+    ld de, .outofMaxLoveString
+    hlcoord 7, 17
+    call PlaceString
+    ret
+
 .PokeJoyString:
-	db "Bond@"
+    db "Bond@"
+
 .outofMaxLoveString:
-	db "/255@"
+    db "/255@"
+
 
 StatsScreen_PrintDVs:
-	hlcoord 1, 12
-	ld de, .DVstring1
-	call PlaceString
-	hlcoord 1, 13
-	ld de, .DVstring2
-	call PlaceString
-	; hlcoord 1, 14
-	; ld de, .DVstring3
-	; call PlaceString
+    hlcoord 1, 13
+    ld de, .DVstring1
+    call PlaceString
 
-	; we're using wPokedexStatus because why not, nobody using it atm lol
-	; ATK DV
-	ld a, [wTempMonDVs] ; only get the first byte of the word
-	and %11110000 ; most significant nybble of first byte in word-sized wTempMonDVs
-	swap a ; so we can print it properly
-	ld [wPokedexStatus], a
-	ld c, 0
-	; calc HP stat contribution
-	and 1 ; a still has the ATK DV
-	jr z, .atk_not_odd
-	ld a, 0
-	add 8
-	ld b, 0
-	ld c, a
-	;
+    hlcoord 1, 14
+    ld de, .DVstring2
+    call PlaceString
+
+    ; ATK DV
+    ld a, [wTempMonDVs]
+    and %11110000
+    swap a
+    ld [wPokedexStatus], a
+
+    ; Calculate HP stat contribution
+    and 1
+    ld c, 0
+    jr z, .atk_not_odd
+    ld a, 0
+    add 8
+    ld b, 0
+    ld c, a
+
 .atk_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 10, 12
-	call PrintNum
+    push bc
+    ld de, wPokedexStatus
+    lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+    hlcoord 10, 13
+    call PrintNum
 
-	; DEF DV
-	ld a, [wTempMonDVs] ; only get the first byte of the word
-	and %00001111 ; least significant nybble, don't need to swap the bits of the byte
-	ld [wPokedexStatus], a ;DEF
-	; calc HP stat contribution
-	pop bc
-	and 1 ; a still has the DEF DV
-	jr z, .def_not_odd
-	ld a, c
-	add 4
-	ld b, 0
-	ld c, a
-	;
+    ; DEF DV
+    ld a, [wTempMonDVs]
+    and %00001111
+    ld [wPokedexStatus], a
+
+    pop bc
+    and 1
+    jr z, .def_not_odd
+    ld a, c
+    add 4
+    ld b, 0
+    ld c, a
+
 .def_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 17, 12
-	call PrintNum
+    push bc
+    ld de, wPokedexStatus
+    lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+    hlcoord 17, 13
+    call PrintNum
 
-	; SPE DV
-	ld a, [wTempMonDVs + 1] ; second byte of word
-	and %11110000 ; most significant nybble of 2nd byte in word-sized wTempMonDVs
-	swap a ; so we can print it properly
-	ld [wPokedexStatus], a ;SPEED
-	; calc HP stat contribution
-	pop bc
-	and 1 ; a still has the SPEED DV
-	jr z, .speed_not_odd
-	ld a, c
-	add 2
-	ld b, 0
-	ld c, a
-	;
+    ; SPE DV
+    ld a, [wTempMonDVs + 1]
+    and %11110000
+    swap a
+    ld [wPokedexStatus], a
+
+    pop bc
+    and 1
+    jr z, .speed_not_odd
+    ld a, c
+    add 2
+    ld b, 0
+    ld c, a
+
 .speed_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 17, 13 ; 1, 5, 9, 13
-	call PrintNum
+    push bc
+    ld de, wPokedexStatus
+    lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+    hlcoord 17, 14
+    call PrintNum
 
-	; SPC DV
-	ld a, [wTempMonDVs + 1] ; second byte of word
-	and %00001111 ; least significant nybble, don't need to swap the bits of the byte
-	ld [wPokedexStatus], a ;SPC
-	; calc HP stat contribution
-	pop bc
-	and 1 ; a still has the DEF DV
-	jr z, .spc_not_odd
-	ld a, c
-	add 1
-	ld b, 0
-	ld c, a
-	;
+    ; SPC DV
+    ld a, [wTempMonDVs + 1]
+    and %00001111
+    ld [wPokedexStatus], a
+
+    pop bc
+    and 1
+    jr z, .spc_not_odd
+    ld a, c
+    add 1
+    ld b, 0
+    ld c, a
+
 .spc_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 10, 13
-	call PrintNum
-	; hlcoord 18, 15 ; 1, 4, 7, 10, 13 
-	; call PrintNum
+    push bc
+    ld de, wPokedexStatus
+    lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+    hlcoord 10, 14
+    call PrintNum
 
-	; HP
-	; HP DV is determined by the last bit of each of these four DVs
-	; odd Attack DV adds 8, Defense adds 4, Speed adds 2, and Special adds 1
-	;For example, a Lugia with the DVs 5 Atk, 15 Def, 13 Spe, and 13 Spc will have:
-	; 5 Attack = Odd, HP += 8
-	; 15 Defense = Odd, HP += 4
-	; 13 Speed = Odd, HP += 2
-	; 13 Special = Odd, HP += 1
-	;resulting in an HP stat of 15
-	; THANKS SMOGON
-	; going to "and 1" each final value and push a counter to stack to preserve it
-	pop bc
-	ld a, c
-	ld [wPokedexStatus], a
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 3, 13 ; 1, 4, 7, 10, 13 
-	call PrintNum
-	ret
+    ; HP DV
+    pop bc
+    ld a, c
+    ld [wPokedexStatus], a
+
+    ld de, wPokedexStatus
+    lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+    hlcoord 3, 14
+    call PrintNum
+    ret
 
 .DVstring1:
-	db "DVS: ATK    DEF   @"
-.DVstring2:	
-	; db "ATK    DEF@"
-	db "HP   SPC    SPE   @"
-; .DVstring3:
-; 	db "SPC    SPE    HP@"
+    db "DVS: ATK    DEF   @"
+
+.DVstring2:
+    db "HP   SPC    SPE   @"
+
 
 HiddenPowerTypeString:
-	db "HIDDEN POWER:@"
+    db "HIDDEN POWER:@"
 
 StatsScreen_PlaceFrontpic:
 	ld hl, wTempMonDVs
