@@ -261,16 +261,28 @@ FossilScientistScript:
 	waitbutton
 	sjump .GaveScientistFossil
 
-.AmaranthRib:
+
+.AmaranthRib
 	checkitem AMARANTH_RIB
 	iffalse .No
+
+	checkitem ANCIENTRELIC
+	iffalse .NoAncientBowl
+
 	checkflag ENGINE_UNLOCKED_UNOWNS_X_TO_Z
 	iffalse .YoureNotReady
+
+	checkevent EVENT_DATA_FROM_CINNABAR_MANSION
+	iffalse .CheckRuinedLab
+
+	setval PORYGON2
+	special FindPartyMonThatSpecies
+	iffalse .NeedPorygon2
+
 	writetext NeedCompleteBowlText
 	yesorno
 	iffalse .NotWorthMyWhile
-	checkitem ANCIENTRELIC
-	iffalse .NoAncientBowl
+
 	getmonname STRING_BUFFER_3, MEW
 	writetext FossilScientistMonText
 	promptbutton
@@ -281,6 +293,26 @@ FossilScientistScript:
 	writetext FossilScientistGiveText
 	waitbutton
 	sjump .GaveScientistFossil
+
+.CheckRuinedLab
+	checkevent EVENT_VISITED_RUINED_LAB
+	iffalse .NeverVisitedLab
+	writetext FossilScientistNeedDataVisitedText
+	waitbutton
+	closetext
+	end
+
+.NeverVisitedLab
+	writetext FossilScientistNeedDataNoLabText
+	waitbutton
+	closetext
+	end
+
+.NeedPorygon2
+	writetext FossilScientistNeedPorygon2Text
+	waitbutton
+	closetext
+	end
 
 .No
 	writetext FossilScientistNoText
@@ -430,6 +462,81 @@ NeedCompleteBowlText:
 
 	para "vessel and we've"
 	line "got a deal."
+	done
+
+
+FossilScientistNeedDataNoLabText:
+	text "An AMARANTH RIB?"
+
+	para "Fascinating..."
+
+	para "I worked at the"
+	line "research lab on"
+	cont "CINNABAR ISLAND."
+
+	para "They had the"
+	line "equipment needed"
+	cont "to study something"
+	cont "like this."
+
+	para "If only I had"
+	line "access to those"
+	cont "old research"
+	cont "files."
+
+	para "I would love to"
+	line "revive this."
+
+	para "Too bad that lab"
+	line "was lost when the"
+	cont "volcano erupted."
+	done
+
+FossilScientistNeedDataVisitedText:
+	text "You found the old"
+	line "lab on CINNABAR?"
+
+	para "I can't believe"
+	line "the computer is"
+	cont "still there."
+
+	para "Did you extract"
+	line "any data?"
+
+	para "..."
+	line "..."
+
+	para "Hmm..."
+
+	para "I used to work"
+	line "with a PORYGON"
+	cont "there."
+
+	para "It was invaluable"
+	line "for processing"
+	cont "complex research"
+	cont "data."
+
+	para "Perhaps a"
+	line "PORYGON could"
+	cont "get that old"
+	cont "computer working."
+	done
+
+FossilScientistNeedPorygon2Text:
+	text "You recovered the"
+	line "old research data?"
+
+	para "Excellent!"
+
+	para "But I'll need"
+	line "your PORYGON2"
+
+	para "to retrieve the"
+	line "data."
+
+	para "Bring it here,"
+	line "and we can begin."
 	done
 
 youdonthaveonetext:
@@ -842,8 +949,7 @@ RuinsOfAlphResearchCenterComputerText:
 	line "a similar find"
 
 	para "to those at the"
-	line "TANOBY RUINS on"
-	cont "VII Island."
+	line "TANOBY RUINS."
 	done
 
 RuinsOfAlphResearchCenterComputerText_GotAllUnown:

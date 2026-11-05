@@ -73,4 +73,8 @@ SpriteMons:
 	db ONIX
 	db ARTICUNO
 	db ZAPDOS
+	db PORYGON
+	db PORYGON2
+	db MEW
+	db ARBOK
 	assert_table_length NUM_POKEMON_SPRITES

@@ -507,6 +507,8 @@ INCLUDE "maps/MossWhisperGate.asm"
 INCLUDE "maps/TanobyRuinsF1.asm"
 INCLUDE "maps/TanobyRuinsF2.asm"
 INCLUDE "maps/TanobyRuinsItemRoom.asm"
+INCLUDE "maps/MansionRuins1.asm"
+INCLUDE "maps/MansionRuins2.asm"
 
 
 SECTION "Map Scripts 34", ROMX

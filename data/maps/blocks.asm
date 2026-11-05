@@ -1098,3 +1098,9 @@ TanobyRuinsF2_Blocks:
 
 TanobyRuinsItemRoom_Blocks:
 	INCBIN "maps/TanobyRuinsItemRoom.blk"
+
+MansionRuins1_Blocks:
+	INCBIN "maps/MansionRuins1.blk"
+
+MansionRuins2_Blocks:
+	INCBIN "maps/MansionRuins2.blk"

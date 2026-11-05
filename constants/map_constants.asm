@@ -171,6 +171,8 @@ ENDM
 	map_const TANOBY_RUINS_1F,                              2, 20 ; 105
 	map_const TANOBY_RUINS_2F,                              7,  6 ; 106
 	map_const TANOBY_RUINS_ITEM_ROOM,                       4,  4 ; 107
+	map_const MANSION_RUINS_1,                             15, 15 ; 108
+	map_const MANSION_RUINS_2,                              7,  5 ; 109
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4

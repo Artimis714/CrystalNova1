@@ -713,4 +713,6 @@ ENDM
 	map_attributes TanobyRuinsF1, TANOBY_RUINS_1F, $00, 0
 	map_attributes TanobyRuinsF2, TANOBY_RUINS_2F, $00, 0
 	map_attributes TanobyRuinsItemRoom, TANOBY_RUINS_ITEM_ROOM, $00, 0
+	map_attributes MansionRuins1, MANSION_RUINS_1, $00, 0
+	map_attributes MansionRuins2, MANSION_RUINS_2, $00, 0
 
