@@ -683,9 +683,9 @@ ENDM
 	map_attributes CeruleanCave3F, CERULEAN_CAVE_3F, $09, 0
 	map_attributes ViridianCityGate, VIRIDIAN_CITYGATE, $00, 0
 	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
-	map_attributes SeafoamCaveB1, SEAFOAM_CAVE_B1, $00, 0
-	map_attributes SeafoamCaveB2, SEAFOAM_CAVE_B2, $00, 0
-	map_attributes SeafoamCaveB3, SEAFOAM_CAVE_B3, $00, 0
+	map_attributes SeafoamCaveB1, SEAFOAM_CAVE_B1, $09, 0
+	map_attributes SeafoamCaveB2, SEAFOAM_CAVE_B2, $09, 0
+	map_attributes SeafoamCaveB3, SEAFOAM_CAVE_B3, $09, 0
 	map_attributes CitrineCity, CITRINE_CITY, $03, 0
 	map_attributes CitrinePokecenter, CITRINE_POKECENTER, $00, 0
 	map_attributes CitrineMart, CITRINE_MART, $00, 0

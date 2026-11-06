@@ -641,6 +641,11 @@ InitializeEventsScript:
 	setevent EVENT_TANOBY_RED_ORB
 	setevent EVENT_TANOBY_BLUE_ORB
 	setevent EVENT_TANOBY_YELLOW_ORB
+	setevent EVENT_SEAFOAM2_BOULDER1
+	setevent EVENT_SEAFOAM2_BOULDER2
+	setevent EVENT_SEAFOAM_BLUE_ORB
+	setevent EVENT_TEMPEST_YELLOW_ORB
+	setevent EVENT_CINNABAR_RED_ORB
 	setevent EVENT_INITIALIZED_EVENTS
 	callasm .mystery_gift_flag
 	endcallback
