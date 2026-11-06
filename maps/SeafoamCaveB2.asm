@@ -89,7 +89,7 @@ SeafoamBlueOrbScript:
 	itemball ICE_ORB
 
 SeafoamArticunoText:
-	text "Ahh—ho!"
+	text "Ahh ho!"
 	done
 
 BouderWedgedText:

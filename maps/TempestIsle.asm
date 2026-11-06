@@ -1,9 +1,35 @@
 	object_const_def
+	const TEMPESTISLE_ZAPDOS
+	const TEMPESTISLE_YELLOW_ORB
 
 TempestIsle_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+
+TempestZapdosScript:
+	opentext
+	writetext TempestZapdosText
+	cry ZAPDOS
+	pause 15
+	closetext
+	setevent EVENT_TEMPEST_ZAPDOS
+	loadwildmon ZAPDOS, 40
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	clearevent EVENT_TEMPEST_YELLOW_ORB
+	disappear TEMPESTISLE_ZAPDOS
+	appear TEMPESTISLE_YELLOW_ORB
+	reloadmapafterbattle
+	end
+
+TempestYellowOrbScript:
+	itemball ELECTRIC_ORB
+
+TempestZapdosText:
+	text "Ka  riii!"
+	done
+
 
 TempestIsle_MapEvents:
 	db 0, 0 ; filler
@@ -24,3 +50,5 @@ TempestIsle_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 29,  6, SPRITE_ZAPDOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, TempestZapdosScript, EVENT_TEMPEST_ZAPDOS
+	object_event 29,  6, SPRITE_ORB, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_ITEMBALL, 0, TempestYellowOrbScript, EVENT_TEMPEST_YELLOW_ORB
