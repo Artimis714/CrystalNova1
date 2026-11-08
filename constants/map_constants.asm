@@ -167,12 +167,12 @@ ENDM
 	map_const CINNABAR_VOLCANO_1F,                         20, 20 ; 101
 	map_const CINNABAR_VOLCANO_2F,                         20, 20 ; 102
 	map_const CINNABAR_VOLCANO_3F,                         20, 20 ; 103
-	map_const CINNABAR_VOLCANO_SUMMIT,                     20, 20 ; 104
-	map_const TANOBY_RUINS_1F,                              2, 20 ; 105
-	map_const TANOBY_RUINS_2F,                              7,  6 ; 106
-	map_const TANOBY_RUINS_ITEM_ROOM,                       4,  4 ; 107
-	map_const MANSION_RUINS_1,                             15, 15 ; 108
-	map_const MANSION_RUINS_2,                              7,  5 ; 109
+	map_const TANOBY_RUINS_1F,                              2, 20 ; 104
+	map_const TANOBY_RUINS_2F,                              7,  6 ; 105
+	map_const TANOBY_RUINS_ITEM_ROOM,                       4,  4 ; 106
+	map_const MANSION_RUINS_1,                             15, 15 ; 107
+	map_const MANSION_RUINS_2,                              7,  5 ; 108
+	map_const BREAKWATER_CAVE_1,                           14, 14 ; 109
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
@@ -214,6 +214,13 @@ ENDM
 	map_const TEMPEST_ISLE_CAVE2,                          15, 25 ; 12
 	map_const TEMPEST_ISLE_CAVE3,                          22, 22 ; 13
 	map_const TEMPEST_ISLE_CAVE4,                          15, 15 ; 14
+	map_const SOUTHERN_SEA,                                25,  9 ; 15
+	map_const CINNABAR_VOLCANO_SUMMIT,                     20, 20 ; 16
+	map_const BREAKWATER_ISLE,                             19, 15 ; 17
+	map_const BREAKWATER_POKECENTER,                        5,  4 ; 18
+	map_const BREAKWATER_MART,                              6,  4 ; 19
+	map_const BREAKWATER_HOUSE1,                            4,  4 ; 20
+	map_const BREAKWATER_HOUSE2,                            4,  4 ; 21
 	endgroup
 
 	newgroup CERULEAN                                             ;  7

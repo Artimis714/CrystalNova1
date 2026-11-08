@@ -55,6 +55,9 @@ CinnabarGroupSprites:
 	; max 9 of 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_MOLTRES
+	db SPRITE_ZAPDOS
+	db SPRITE_ORB
 	db 0 ; end
 
 ; CeruleanCity and Route5 are connected
@@ -114,9 +117,15 @@ FuchsiaGroupSprites:
 	db SPRITE_FRUIT_TREE
 	db 0 ; end
 
+CitrineCityGroupSprites:
 IndigoGroupSprites:
 ; Route23
-	; 0 of max 9 walking sprites
+	db SPRITE_SWIMMER_GIRL
+	db SPRITE_SWIMMER_GUY
+	db SPRITE_OFFICER
+	; 3 of max 9 walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
 	db 0 ; end
 
 ; Route29 and CherrygroveCity are connected
@@ -262,7 +271,6 @@ BlackthornGroupSprites:
 	db SPRITE_POKE_BALL
 	db 0 ; end
 
-CitrineCityGroupSprites:
 SilverGroupSprites:
 ; Route28, SilverCaveOutside
 	db SPRITE_OAK

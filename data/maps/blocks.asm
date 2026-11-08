@@ -182,6 +182,8 @@ CherrygroveGymSpeechHouse_Blocks:
 GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
+BreakwaterHouse1_Blocks:
+BreakwaterHouse2_Blocks:
 	INCBIN "maps/House1.blk"
 
 SafariZoneFuchsiaGateBeta_Blocks:
@@ -321,6 +323,7 @@ ViridianMart_Blocks:
 SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 CitrineMart_Blocks:
+BreakwaterMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
 Route10North_Blocks:
@@ -352,6 +355,7 @@ SaffronPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
 CitrinePokecenter_Blocks:
 MossPokecenter_Blocks:
+BreakwaterPokecenter_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 BetaPewterMuseumOfScience1F_Blocks: ; unreferenced
@@ -1104,3 +1108,12 @@ MansionRuins1_Blocks:
 
 MansionRuins2_Blocks:
 	INCBIN "maps/MansionRuins2.blk"
+
+SouthernSea_Blocks:
+	INCBIN "maps/SouthernSea.blk"
+
+BreakwaterCave1_Blocks:
+	INCBIN "maps/BreakwaterCave1.blk"
+
+BreakwaterIsle_Blocks:
+	INCBIN "maps/BreakwaterIsle.blk"

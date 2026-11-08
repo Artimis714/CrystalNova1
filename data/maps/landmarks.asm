@@ -93,15 +93,18 @@ Landmarks:
 	landmark  68,  76, Route17Name
 	landmark  76, 100, Route18Name
 	landmark  92, 100, FuchsiaCityName
+	landmark  92,  92, SafariZoneName
 	landmark  36,  52, Route22Name
-	landmark  28,  36, VictoryRoadName
-	landmark  28,  28, Route23Name
-	landmark  28,  20, IndigoPlateauName
+	landmark  28,  44, VictoryRoadName
+	landmark  28,  36, Route23Name
+	landmark  28,  28, IndigoPlateauName
 	landmark  28,  68, Route26Name
 	landmark  20,  84, Route27Name
 	landmark  12,  84, TohjoFallsName
 	landmark  12,  52, Route28Name
-	landmark  52, 100, Route21Name
+	landmark  52, 104, Route21Name
+	landmark  28, 116, BreakwaterIsleName
+	landmark  40, 116, Route21Name
 	landmark  52, 116, CinnabarIslandName
 	landmark  52, 124, ThunderSeaName
 	landmark  60, 132, TempestIsleName
@@ -117,6 +120,8 @@ Landmarks:
 	landmark  52, 116, CinnibarVolcanoName
 	landmark 116, 124, MossForestName
 	landmark 116, 124, MossCaveName
+	landmark 100,  52, SilphCoName
+	landmark  28, 116, BreakwaterCaveName
 	assert_table_length NUM_LANDMARKS
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
@@ -144,7 +149,6 @@ WhirlIslandsName:    db "WHIRL¯ISLANDS@"
 MtMortarName:        db "MT.MORTAR@"
 DragonsDenName:      db "DRAGON'S¯DEN@"
 IcePathName:         db "ICE PATH@"
-NotApplicableName:   db "N/A@" ; unreferenced ; "オバケやしき" ("HAUNTED HOUSE") in Japanese
 PalletTownName:      db "PALLET TOWN@"
 ViridianCityName:    db "VIRIDIAN¯CITY@"
 PewterCityName:      db "PEWTER CITY@"
@@ -158,10 +162,10 @@ CinnabarIslandName:  db "CINNABAR¯ISLAND@"
 IndigoPlateauName:   db "INDIGO¯PLATEAU@"
 VictoryRoadName:     db "VICTORY¯ROAD@"
 MtMoonName:          db "MT.MOON@"
-RockTunnelName:      db "ROCK TUNNEL@"
-LavRadioTowerName:   db "DEATH TOWER@"
-SilphCoName:         db "SILPH CO.@" ; unreferenced
-SafariZoneName:      db "SAFARI ZONE@" ; unreferenced
+RockTunnelName:      db "ROCK¯TUNNEL@"
+LavRadioTowerName:   db "LAVENDER¯TOWER@"
+SilphCoName:         db "SILPH CO.@"
+SafariZoneName:      db "SAFARI ZONE@"
 SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
 CinnibarVolcanoName: db "CINNABAR¯VOLCANO@"
 CeruleanCaveName:    db "CERULEAN¯CAVE@"
@@ -231,3 +235,5 @@ WhisperSeaName:      db "WHISPER¯SEA@"
 TanobyRuinsName:     db "TANOBY¯RUINS@"
 MossForestName:      db "MOSS¯FOREST@"
 MossCaveName:        db "MOSS¯CAVE@"
+BreakwaterIsleName:  db "BREAKWATER¯ISLE@"
+BreakwaterCaveName:  db "BREAKWATER¯CAVE@"

@@ -523,6 +523,13 @@ INCLUDE "maps/TempestIsleCave1.asm"
 INCLUDE "maps/TempestIsleCave2.asm"
 INCLUDE "maps/TempestIsleCave3.asm"
 INCLUDE "maps/TempestIsleCave4.asm"
+INCLUDE "maps/SouthernSea.asm"
+INCLUDE "maps/BreakwaterCave1.asm"
+INCLUDE "maps/BreakwaterIsle.asm"
+INCLUDE "maps/BreakwaterHouse1.asm"
+INCLUDE "maps/BreakwaterHouse2.asm"
+INCLUDE "maps/BreakwaterPokecenter.asm"
+INCLUDE "maps/BreakwaterMart.asm"
 
 
 SECTION "Map Scripts 35", ROMX

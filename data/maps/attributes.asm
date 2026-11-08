@@ -252,13 +252,17 @@ ENDM
 	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH
 	connection north, Route1, ROUTE_1, 0
 
-	map_attributes Route21, ROUTE_21, $02, SOUTH
+	map_attributes Route21, ROUTE_21, $02, SOUTH | WEST
 	connection south, CinnabarIsland, CINNABAR_ISLAND, 0
 
-	map_attributes CinnabarIsland, CINNABAR_ISLAND, $02, NORTH | SOUTH| EAST
+	map_attributes CinnabarIsland, CINNABAR_ISLAND, $02, NORTH | SOUTH | WEST | EAST
 	connection north, Route21, ROUTE_21, 0
 	connection south, ThunderSea, THUNDER_SEA, 0
+	connection west, SouthernSea, SOUTHERN_SEA, 0
 	connection east, Route20, ROUTE_20, 0
+
+	map_attributes SouthernSea, SOUTHERN_SEA, $02, EAST
+	connection east, CinnabarIsland, CINNABAR_ISLAND, 0
 
 	map_attributes ThunderSea, THUNDER_SEA, $02, NORTH
 	connection north, CinnabarIsland, CINNABAR_ISLAND, 0
@@ -715,4 +719,10 @@ ENDM
 	map_attributes TanobyRuinsItemRoom, TANOBY_RUINS_ITEM_ROOM, $00, 0
 	map_attributes MansionRuins1, MANSION_RUINS_1, $00, 0
 	map_attributes MansionRuins2, MANSION_RUINS_2, $00, 0
+	map_attributes BreakwaterCave1, BREAKWATER_CAVE_1, $09, 0
+	map_attributes BreakwaterIsle, BREAKWATER_ISLE, $35, 0
+	map_attributes BreakwaterPokecenter, BREAKWATER_POKECENTER, $00, 0
+	map_attributes BreakwaterMart, BREAKWATER_MART, $00, 0
+	map_attributes BreakwaterHouse1, BREAKWATER_HOUSE1, $00, 0
+	map_attributes BreakwaterHouse2, BREAKWATER_HOUSE2, $00, 0
 
