@@ -523,6 +523,14 @@ ENDM
 	map_const MOSS_GREEN_GATE,                              5,  4 ; 14
 	map_const MOSS_WHISPER_GATE,                            5,  4 ; 15
 	map_const WHISPER_SEA,                                 30, 18 ; 15
+	map_const MOSS_HOUSE_1,                                 4,  4 ; 16
+	map_const MOSS_HOUSE_2,                                 4,  4 ; 17
+	map_const CITRINE_HOUSE_1,                              4,  4 ; 18
+	map_const CITRINE_HOUSE_2,                              4,  4 ; 18
+	map_const CITRINE_HOUSE_3,                              4,  4 ; 18
+	map_const CITRINE_HOUSE_4,                              4,  4 ; 18
+	map_const CITRINE_HOUSE_5,                              4,  4 ; 18
+	map_const CITRINE_HOUSE_6,                              4,  4 ; 18
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

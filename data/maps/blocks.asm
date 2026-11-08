@@ -184,6 +184,14 @@ CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
 BreakwaterHouse1_Blocks:
 BreakwaterHouse2_Blocks:
+MossIsleHouse1_Blocks:
+MossIsleHouse2_Blocks:
+CitrineHouse1_Blocks:
+CitrineHouse2_Blocks:
+CitrineHouse3_Blocks:
+CitrineHouse4_Blocks:
+CitrineHouse5_Blocks:
+CitrineHouse6_Blocks:
 	INCBIN "maps/House1.blk"
 
 SafariZoneFuchsiaGateBeta_Blocks:

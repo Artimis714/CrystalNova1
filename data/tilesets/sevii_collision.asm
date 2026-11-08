@@ -27,8 +27,8 @@
 	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 1a
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 1b
 	tilecoll CURRENT_RIGHT, CURRENT_DOWN, PIT, CURRENT_LEFT ; 1c
-	tilecoll WALL, DOOR, FLOOR, FLOOR ; 1d
-	tilecoll WALL, WALL, FLOOR, FLOOR ; 1e
+	tilecoll WALL, WALL, WALL, WALL ; 1d
+	tilecoll WALL, WALL, WALL, WALL ; 1e
 	tilecoll WALL, WALL, WALL, WALL ; 1f
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 20
 	tilecoll WALL, WATER, WALL, WALL ; 21

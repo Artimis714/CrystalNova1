@@ -509,6 +509,8 @@ INCLUDE "maps/TanobyRuinsF2.asm"
 INCLUDE "maps/TanobyRuinsItemRoom.asm"
 INCLUDE "maps/MansionRuins1.asm"
 INCLUDE "maps/MansionRuins2.asm"
+INCLUDE "maps/MossIsleHouse1.asm"
+INCLUDE "maps/MossIsleHouse2.asm"
 
 
 SECTION "Map Scripts 34", ROMX
@@ -546,3 +548,9 @@ INCLUDE "maps/ViridianForest.asm"
 INCLUDE "maps/SeafoamCaveB1.asm"
 INCLUDE "maps/SeafoamCaveB2.asm"
 INCLUDE "maps/SeafoamCaveB3.asm"
+INCLUDE "maps/CitrineHouse1.asm"
+INCLUDE "maps/CitrineHouse2.asm"
+INCLUDE "maps/CitrineHouse3.asm"
+INCLUDE "maps/CitrineHouse4.asm"
+INCLUDE "maps/CitrineHouse5.asm"
+INCLUDE "maps/CitrineHouse6.asm"

@@ -725,4 +725,11 @@ ENDM
 	map_attributes BreakwaterMart, BREAKWATER_MART, $00, 0
 	map_attributes BreakwaterHouse1, BREAKWATER_HOUSE1, $00, 0
 	map_attributes BreakwaterHouse2, BREAKWATER_HOUSE2, $00, 0
-
+	map_attributes MossIsleHouse1, MOSS_HOUSE_1, $00, 0
+	map_attributes MossIsleHouse2, MOSS_HOUSE_2, $00, 0
+	map_attributes CitrineHouse1, CITRINE_HOUSE_1, $00, 0
+	map_attributes CitrineHouse2, CITRINE_HOUSE_2, $00, 0
+	map_attributes CitrineHouse3, CITRINE_HOUSE_3, $00, 0
+	map_attributes CitrineHouse4, CITRINE_HOUSE_4, $00, 0
+	map_attributes CitrineHouse5, CITRINE_HOUSE_5, $00, 0
+	map_attributes CitrineHouse6, CITRINE_HOUSE_6, $00, 0

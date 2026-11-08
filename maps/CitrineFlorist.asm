@@ -1,5 +1,6 @@
 	object_const_def
 	const VERMILIONMART_CANDYSHOP
+	const CITRINEFLORIST_BEAUTY
 
 CitrineFlorist_MapScripts:
 	def_scene_scripts
@@ -169,6 +170,24 @@ SusieQScript:
 	db "3 Slvr: 3 Candy@"
 	db "Cancel@"
 
+CitrineFloristNPC:
+	jumptextfaceplayer CitrineFloristNPCText
+
+CitrineFloristNPCText:
+	text "The flowers here"
+	line "are wonderful!"
+
+	para "I especially like"
+	line "the arrangements"
+	cont "that mix familiar"
+	cont "flowers with"
+	cont "unusual leaves."
+
+	para "They make lovely"
+	line "gifts, don't you"
+	cont "think?"
+	done
+
 CitrineFlorist_MapEvents:
 	db 0, 0 ; filler
 
@@ -182,3 +201,4 @@ CitrineFlorist_MapEvents:
 
 	def_object_events
 	object_event  2,  4, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SusieQScript, -1
+	object_event  4,  6, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CitrineFloristNPC, -1
