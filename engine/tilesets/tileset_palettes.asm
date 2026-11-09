@@ -8,8 +8,6 @@ LoadSpecialMapPalette:
 	jr z, .radio_tower
 	cp TILESET_MANSION
 	jr z, .mansion_mobile
-	cp TILESET_SEVII
-	jr z, .sevii
 	jr .do_nothing
 
 .ice_path
@@ -33,10 +31,6 @@ LoadSpecialMapPalette:
 
 .mansion_mobile
 	call LoadMansionPalette
-	scf
-	ret
-.sevii
-	call LoadSeviiPalette
 	scf
 	ret
 
@@ -127,23 +121,3 @@ LoadMansionPalette:
 
 MansionPalette2:
 INCLUDE "gfx/tilesets/mansion_2.pal"
-
-LoadSeviiPalette:
-	ld a, [wTimeOfDay]
-	maskbits NUM_DAYTIMES
-	ld bc, 8 palettes
-	ld hl, SeviiPalette
-	call AddNTimes
-
-	ld a, BANK(wBGPals1)
-	ld de, wBGPals1
-	ld bc, 8 palettes
-	jp FarCopyWRAM
-
-SeviiPalette:
-; Morning
-INCLUDE "gfx/tilesets/Sevii_morn.pal"
-; Day
-INCLUDE "gfx/tilesets/Sevii_day.pal"
-; Night
-INCLUDE "gfx/tilesets/Sevii_nite.pal"

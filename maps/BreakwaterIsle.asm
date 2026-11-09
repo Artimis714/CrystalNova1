@@ -4,6 +4,11 @@ BreakwaterIsle_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, BreakwaterIsleFlypointCallback
+
+BreakwaterIsleFlypointCallback:
+	setflag ENGINE_FLYPOINT_BREAKWATER
+	endcallback
 
 BreakwaterPokeSign:
 	jumpstd PokecenterSignScript
@@ -46,7 +51,7 @@ BreakwaterIsle_MapEvents:
 	warp_event 23,  7, BREAKWATER_POKECENTER, 1
 	warp_event 27, 17, BREAKWATER_MART, 1
 	warp_event 15,  7, BREAKWATER_HOUSE1, 1
-	warp_event 21, 17, BREAKWATER_HOUSE2, 1
+	warp_event 21, 19, BREAKWATER_HOUSE2, 1
 
 	def_coord_events
 

@@ -85,7 +85,10 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_SAFFRON
 	engine_flag wVisitedSpawns, SPAWN_CELADON
 	engine_flag wVisitedSpawns, SPAWN_FUCHSIA
+	engine_flag wVisitedSpawns, SPAWN_BREAKWATER
 	engine_flag wVisitedSpawns, SPAWN_CINNABAR
+	engine_flag wVisitedSpawns, SPAWN_CITRINE
+	engine_flag wVisitedSpawns, SPAWN_MOSS
 	engine_flag wVisitedSpawns, SPAWN_INDIGO
 	engine_flag wVisitedSpawns, SPAWN_NEW_BARK
 	engine_flag wVisitedSpawns, SPAWN_CHERRYGROVE

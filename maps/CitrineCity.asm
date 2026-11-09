@@ -11,6 +11,11 @@ CitrineCity_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, CitrineCityFlypointCallback
+
+CitrineCityFlypointCallback:
+	setflag ENGINE_FLYPOINT_CITRINE
+	endcallback
 
 CitrineDoorBiomedicalScript:
 	jumptext CitrineDoorLockedText

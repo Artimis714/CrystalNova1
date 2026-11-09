@@ -21,7 +21,10 @@ SpawnPoints:
 	spawn SAFFRON_CITY,                9, 30
 	spawn CELADON_CITY,               29, 10
 	spawn FUCHSIA_CITY,               19, 28
+	spawn BREAKWATER_ISLE,            23,  8
 	spawn CINNABAR_ISLAND,            11, 12
+	spawn CITRINE_CITY,               25, 30
+	spawn MOSS_ISLE,                   7, 18
 	spawn ROUTE_23,                    9,  6
 
 	spawn NEW_BARK_TOWN,              13,  6

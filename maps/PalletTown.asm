@@ -81,8 +81,8 @@ PalletTown_MapEvents:
 	warp_event  5,  5, REDS_HOUSE_1F, 1
 	warp_event 13,  5, BLUES_HOUSE, 1
 	warp_event 12, 11, OAKS_LAB, 1
-	warp_event  5, 15, ROUTE_21, 1
-	warp_event  6, 15, ROUTE_21, 1
+	warp_event  5, 13, ROUTE_21, 1
+	warp_event  6, 13, ROUTE_21, 1
 
 	def_coord_events
 
@@ -94,4 +94,4 @@ PalletTown_MapEvents:
 
 	def_object_events
 	object_event  3,  8, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PalletTownTeacherScript, -1
-	object_event 12, 14, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PalletTownFisherScript, -1
+	object_event  9,  5, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PalletTownFisherScript, -1
