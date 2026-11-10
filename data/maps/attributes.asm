@@ -733,3 +733,5 @@ ENDM
 	map_attributes CitrineHouse4, CITRINE_HOUSE_4, $00, 0
 	map_attributes CitrineHouse5, CITRINE_HOUSE_5, $00, 0
 	map_attributes CitrineHouse6, CITRINE_HOUSE_6, $00, 0
+	map_attributes MossCaveRuins, MOSS_CAVE_RUINS, $00, 0
+	map_attributes CitrineGameCorner, CITRINE_GAMECORNER, $00, 0

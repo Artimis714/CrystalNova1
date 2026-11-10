@@ -805,6 +805,7 @@ DanceTheater_Blocks:
 EcruteakTinTowerEntrance_Blocks:
 	INCBIN "maps/EcruteakTinTowerEntrance.blk"
 
+CitrineGameCorner_Blocks:
 GoldenrodGameCorner_Blocks:
 	INCBIN "maps/GoldenrodGameCorner.blk"
 
@@ -1125,3 +1126,6 @@ BreakwaterCave1_Blocks:
 
 BreakwaterIsle_Blocks:
 	INCBIN "maps/BreakwaterIsle.blk"
+
+MossCaveRuins_Blocks:
+	INCBIN "maps/MossCaveRuins.blk"

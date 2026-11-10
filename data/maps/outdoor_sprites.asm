@@ -30,6 +30,7 @@ OutdoorSprites:
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
 	dw CitrineCityGroupSprites
+	dw MossIsleGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
 ; Route1 and ViridianCity are connected
@@ -41,8 +42,6 @@ ViridianGroupSprites:
 ; Route2, Route22, ViridianCity
 PewterGroupSprites:
 ; Route3, PewterCity
-CinnabarGroupSprites:
-; Route19, Route20, Route21, CinnabarIsland
 	db SPRITE_TEACHER
 	db SPRITE_FISHER
 	db SPRITE_YOUNGSTER
@@ -55,10 +54,22 @@ CinnabarGroupSprites:
 	; max 9 of 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db 0 ; end
+
+CinnabarGroupSprites:
+; Route19, Route20, Route21, CinnabarIsland
+	db SPRITE_BLUE
+	db SPRITE_OFFICER
+	db SPRITE_SWIMMER_GIRL
+	db SPRITE_SWIMMER_GUY
+	; max 4 of 9 walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
 	db SPRITE_MOLTRES
 	db SPRITE_ZAPDOS
 	db SPRITE_ORB
 	db 0 ; end
+
 
 ; CeruleanCity and Route5 are connected
 CeruleanGroupSprites:
@@ -124,16 +135,29 @@ IndigoGroupSprites:
 	db SPRITE_SWIMMER_GUY
 	db SPRITE_OFFICER
 	db SPRITE_FISHER
+	db SPRITE_SCIENTIST
 	db SPRITE_LASS
-	; 5 of max 9 walking sprites
+	db SPRITE_POKEFAN_F
+	; 7 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_YOUNGSTER
 	db SPRITE_GENTLEMAN
 	db SPRITE_BEAUTY
 	db SPRITE_CLERK
-	db SPRITE_SCIENTIST
-	db SPRITE_POKEFAN_F
+
+	db SPRITE_SAGE
+	db 0 ; end
+
+MossIsleGroupSprites:
+	db SPRITE_SWIMMER_GIRL
+	db SPRITE_SWIMMER_GUY
+	db SPRITE_OFFICER
+	db SPRITE_FISHER
+	db SPRITE_LASS
+	; 5 of max 9 walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
 	db SPRITE_SAGE
 	db 0 ; end
 

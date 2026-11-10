@@ -554,3 +554,6 @@ INCLUDE "maps/CitrineHouse3.asm"
 INCLUDE "maps/CitrineHouse4.asm"
 INCLUDE "maps/CitrineHouse5.asm"
 INCLUDE "maps/CitrineHouse6.asm"
+INCLUDE "maps/MossCaveRuins.asm"
+INCLUDE "maps/CitrineGameCorner.asm"
+

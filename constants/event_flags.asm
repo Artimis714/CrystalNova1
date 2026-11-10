@@ -579,6 +579,7 @@
 	const EVENT_SEAFOAM1_BOULDER2
 	const EVENT_SEAFOAM2_BOULDER1
 	const EVENT_SEAFOAM2_BOULDER2
+	const EVENT_MOSS_CAVE_PIT
 ; Unused: next 158 events
 
 	const_next 1000

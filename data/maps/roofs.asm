@@ -38,6 +38,7 @@ MapGroupRoofs:
 	db -1             ; 24
 	db ROOF_NEW_BARK  ; 25 (Cherrygrove)
 	db ROOF_GOLDENROD ; 26 (Citrine City)
+	db ROOF_OLIVINE   ; 27 (Moss Isle)
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

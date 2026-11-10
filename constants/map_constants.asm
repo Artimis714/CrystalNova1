@@ -173,6 +173,7 @@ ENDM
 	map_const MANSION_RUINS_1,                             15, 15 ; 107
 	map_const MANSION_RUINS_2,                              7,  5 ; 108
 	map_const BREAKWATER_CAVE_1,                           14, 14 ; 109
+	map_const MOSS_CAVE_RUINS,                              5,  4 ; 110
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
@@ -514,23 +515,27 @@ ENDM
 	map_const CORAL_CITRINE_GATE,  				5,  4 ;  5
 	map_const CITRINE_GREEN_GATE,                           5,  4 ;  6
 	map_const CITRINE_FLORIST,                              4,  4 ;  7
-	map_const GREEN_SEA,                                   27, 11 ;  8
-	map_const MOSS_ISLE,                                   16, 15 ;  9
-	map_const MOSS_FOREST,                                 20, 20 ; 10
-	map_const MOSS_CAVE,                                   15, 15 ; 11
-	map_const MOSS_POKECENTER,                              5,  4 ; 12
-	map_const AGATHA_HOUSE,                                 5,  4 ; 13
-	map_const MOSS_GREEN_GATE,                              5,  4 ; 14
-	map_const MOSS_WHISPER_GATE,                            5,  4 ; 15
-	map_const WHISPER_SEA,                                 30, 18 ; 15
-	map_const MOSS_HOUSE_1,                                 4,  4 ; 16
-	map_const MOSS_HOUSE_2,                                 4,  4 ; 17
-	map_const CITRINE_HOUSE_1,                              4,  4 ; 18
-	map_const CITRINE_HOUSE_2,                              4,  4 ; 18
-	map_const CITRINE_HOUSE_3,                              4,  4 ; 18
-	map_const CITRINE_HOUSE_4,                              4,  4 ; 18
-	map_const CITRINE_HOUSE_5,                              4,  4 ; 18
-	map_const CITRINE_HOUSE_6,                              4,  4 ; 18
+	map_const CITRINE_HOUSE_1,                              4,  4 ;  8
+	map_const CITRINE_HOUSE_2,                              4,  4 ;  9
+	map_const CITRINE_HOUSE_3,                              4,  4 ; 10
+	map_const CITRINE_HOUSE_4,                              4,  4 ; 11
+	map_const CITRINE_HOUSE_5,                              4,  4 ; 12
+	map_const CITRINE_HOUSE_6,                              4,  4 ; 13
+	map_const CITRINE_GAMECORNER,                          10,  7 ; 14
 	endgroup
 
-DEF NUM_MAP_GROUPS EQU const_value ; 26
+	newgroup MOSSISLEGROUP                                        ; 27
+	map_const GREEN_SEA,                                   27, 11 ;  1
+	map_const MOSS_ISLE,                                   16, 15 ;  2
+	map_const MOSS_FOREST,                                 20, 20 ;  3
+	map_const MOSS_CAVE,                                   15, 15 ;  4
+	map_const MOSS_POKECENTER,                              5,  4 ;  5
+	map_const AGATHA_HOUSE,                                 5,  4 ;  6
+	map_const MOSS_GREEN_GATE,                              5,  4 ;  7
+	map_const MOSS_WHISPER_GATE,                            5,  4 ;  8
+	map_const WHISPER_SEA,                                 30, 18 ;  9
+	map_const MOSS_HOUSE_1,                                 4,  4 ; 10
+	map_const MOSS_HOUSE_2,                                 4,  4 ; 11
+	endgroup
+
+DEF NUM_MAP_GROUPS EQU const_value ; 27
