@@ -87,7 +87,7 @@ TrainerHouse1FReceptionistText:
 	line "HOUSE, the newest"
 
 	para "and most happening"
-	line "place in VIRIDIAN."
+	line "place in CITRINE."
 
 	para "We're open to"
 	line "all trainers!"
@@ -106,24 +106,23 @@ TrainerHouse1FReceptionistText:
 	done
 
 TrainerHouse1FCooltrainerMText:
-	text "VIRIDIAN is the"
-	line "town closest to"
-	cont "INDIGO PLATEAU."
+	text "CITRINE is the"
+	line "capital of the"
+	cont "SEVII REGION."
 
-	para "They built this"
-	line "place because so"
+	para "Trainers from all"
+	line "over the region"
+	cont "pass through here."
 
-	para "many trainers pass"
-	line "through on their"
-
-	para "way up to INDIGO"
-	line "PLATEAU."
+	para "Some are on their"
+	line "way to challenge"
+	cont "the LEAGUE."
 
 	para "..."
 	line "..."
 
-	para "WOAH You've beat"
-	line "LEAGUE?"
+	para "WOAH! You've beaten"
+	line "the LEAGUE?"
 
 	para "So cool!"
 	done
@@ -172,8 +171,8 @@ TrainerHouse1FYoungsterText:
 	para "..."
 	line "..."
 
-	para "Yeah, that's RED."
-	line "He's a local hero!"
+	para "Yeah, that's RED!"
+	line "He's a legend!"
 	done
 
 TrainerHouse1FGentlemanText:
@@ -377,8 +376,8 @@ TrainerHouse1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2, 13, VIRIDIAN_CITY, 3
-	warp_event  3, 13, VIRIDIAN_CITY, 3
+	warp_event  2, 13, CITRINE_CITY, 16
+	warp_event  3, 13, CITRINE_CITY, 16
 	warp_event  8,  2, TRAINER_HOUSE_B1F, 1
 
 	def_coord_events

@@ -195,10 +195,9 @@ ENDM
 	map_const BLACKTHORN_EMYS_HOUSE,                        4,  4 ;  4
 	map_const BLACKTHORN_MART,                              6,  4 ;  5
 	map_const BLACKTHORN_POKECENTER_1F,                     5,  4 ;  6
-	map_const MOVE_DELETERS_HOUSE,                          4,  4 ;  7
-	map_const ROUTE_45,                                    10, 45 ;  8
-	map_const ROUTE_46,                                    10, 18 ;  9
-	map_const BLACKTHORN_CITY,                             20, 18 ; 10
+	map_const ROUTE_45,                                    10, 45 ;  7
+	map_const ROUTE_46,                                    10, 18 ;  8
+	map_const BLACKTHORN_CITY,                             20, 18 ;  9
 	endgroup
 
 	newgroup CINNABAR                                             ;  6
@@ -222,6 +221,7 @@ ENDM
 	map_const BREAKWATER_MART,                              6,  4 ; 19
 	map_const BREAKWATER_HOUSE1,                            4,  4 ; 20
 	map_const BREAKWATER_HOUSE2,                            4,  4 ; 21
+	map_const CORAL_SEA,				       10, 25 ; 22
 	endgroup
 
 	newgroup CERULEAN                                             ;  7
@@ -450,14 +450,12 @@ ENDM
 	map_const VIRIDIAN_CITY,                               20, 18 ;  3
 	map_const VIRIDIAN_GYM,                                 5,  9 ;  4
 	map_const VIRIDIAN_NICKNAME_SPEECH_HOUSE,               4,  4 ;  5
-	map_const TRAINER_HOUSE_1F,                             5,  7 ;  6
-	map_const TRAINER_HOUSE_B1F,                            5,  8 ;  7
-	map_const VIRIDIAN_MART,                                6,  4 ;  8
-	map_const VIRIDIAN_POKECENTER_1F,                       5,  4 ;  9
-	map_const ROUTE_2_NUGGET_HOUSE,                         4,  4 ; 11
-	map_const ROUTE_2_GATE,                                 5,  4 ; 12
-	map_const VICTORY_ROAD_GATE,                           10,  9 ; 13
-	map_const VIRIDIAN_CITYGATE,                            5,  4 ; 14 
+	map_const VIRIDIAN_MART,                                6,  4 ;  6
+	map_const VIRIDIAN_POKECENTER_1F,                       5,  4 ;  7
+	map_const ROUTE_2_NUGGET_HOUSE,                         4,  4 ;  8
+	map_const ROUTE_2_GATE,                                 5,  4 ;  9
+	map_const VICTORY_ROAD_GATE,                           10,  9 ; 10
+	map_const VIRIDIAN_CITYGATE,                            5,  4 ; 11 
 	endgroup
 
 	newgroup NEW_BARK                                             ; 23
@@ -508,20 +506,22 @@ ENDM
 	endgroup
 
 	newgroup CITRINECITYGROUP                                     ; 26
-	map_const CORAL_SEA,				       10, 25 ;  1
-	map_const CITRINE_CITY,                                20, 22 ;  2
-	map_const CITRINE_POKECENTER,                           5,  4 ;  3
-	map_const CITRINE_MART,  				6,  4 ;  4
-	map_const CORAL_CITRINE_GATE,  				5,  4 ;  5
-	map_const CITRINE_GREEN_GATE,                           5,  4 ;  6
-	map_const CITRINE_FLORIST,                              4,  4 ;  7
-	map_const CITRINE_HOUSE_1,                              4,  4 ;  8
-	map_const CITRINE_HOUSE_2,                              4,  4 ;  9
-	map_const CITRINE_HOUSE_3,                              4,  4 ; 10
-	map_const CITRINE_HOUSE_4,                              4,  4 ; 11
-	map_const CITRINE_HOUSE_5,                              4,  4 ; 12
-	map_const CITRINE_HOUSE_6,                              4,  4 ; 13
-	map_const CITRINE_GAMECORNER,                          10,  7 ; 14
+	map_const CITRINE_CITY,                                20, 22 ;  1
+	map_const CITRINE_POKECENTER,                           5,  4 ;  2
+	map_const CITRINE_MART,  				6,  4 ;  3
+	map_const CORAL_CITRINE_GATE,  				5,  4 ;  4
+	map_const CITRINE_GREEN_GATE,                           5,  4 ;  5
+	map_const CITRINE_FLORIST,                              4,  4 ;  6
+	map_const CITRINE_HOUSE_1,                              4,  4 ;  7
+	map_const CITRINE_HOUSE_2,                              4,  4 ;  8
+	map_const CITRINE_HOUSE_3,                              4,  4 ;  9
+	map_const CITRINE_HOUSE_4,                              4,  4 ; 10
+	map_const CITRINE_HOUSE_5,                              4,  4 ; 11
+	map_const CITRINE_HOUSE_6,                              4,  4 ; 12
+	map_const CITRINE_GAMECORNER,                          10,  7 ; 13
+	map_const MOVE_DELETERS_HOUSE,                          4,  4 ; 14
+	map_const TRAINER_HOUSE_1F,                             5,  7 ; 15
+	map_const TRAINER_HOUSE_B1F,                            5,  8 ; 16
 	endgroup
 
 	newgroup MOSSISLEGROUP                                        ; 27

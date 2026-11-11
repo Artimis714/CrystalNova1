@@ -3237,8 +3237,6 @@ wTimerEventStartDay:: db
 
 wFruitTreeFlags:: flag_array NUM_FRUIT_TREES
 
-	ds 2
-
 wLuckyNumberDayTimer:: dw
 	ds 2
 wSpecialPhoneCallID:: db

@@ -1,6 +1,8 @@
 	object_const_def
 	const TEMPESTISLE_ZAPDOS
 	const TEMPESTISLE_YELLOW_ORB
+	const TEMPESTISLE_FRUITTREE2
+	const TEMPESTISLE_FRUITTREE1
 
 TempestIsle_MapScripts:
 	def_scene_scripts
@@ -25,6 +27,12 @@ TempestZapdosScript:
 
 TempestYellowOrbScript:
 	itemball ELECTRIC_ORB
+
+TempestIsleTree1:
+	fruittree FRUITTREE_TEMPEST_ISLE1
+
+TempestIsleTree2:
+	fruittree FRUITTREE_TEMPEST_ISLE2
 
 TempestZapdosText:
 	text "Ka  riii!"
@@ -52,3 +60,5 @@ TempestIsle_MapEvents:
 	def_object_events
 	object_event 29,  6, SPRITE_ZAPDOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, TempestZapdosScript, EVENT_TEMPEST_ZAPDOS
 	object_event 29,  6, SPRITE_ORB, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_ITEMBALL, 0, TempestYellowOrbScript, EVENT_TEMPEST_YELLOW_ORB
+	object_event 13, 25, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, PAL_NPC_YELLOW, TempestIsleTree2, -1
+	object_event 40, 24, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, PAL_NPC_EMOTE, TempestIsleTree1, -1

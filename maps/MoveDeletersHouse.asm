@@ -22,8 +22,8 @@ MoveDeletersHouse_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2,  7, BLACKTHORN_CITY, 6
-	warp_event  3,  7, BLACKTHORN_CITY, 6
+	warp_event  2,  7, CITRINE_CITY, 15
+	warp_event  3,  7, CITRINE_CITY, 15
 
 	def_coord_events
 
@@ -32,4 +32,4 @@ MoveDeletersHouse_MapEvents:
 	bg_event  1,  1, BGEVENT_READ, MoveDeletersHouseBookshelf
 
 	def_object_events
-	object_event  5,  4, SPRITE_SUPER_NERD, 	SPRITEMOVEDATA_STANDING_DOWN, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MoveRelearnerScript, -1
+	object_event  5,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MoveRelearnerScript, -1

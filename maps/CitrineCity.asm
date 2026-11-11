@@ -6,6 +6,8 @@
 	const CITRINECITY_CLERK
 	const CITRINECITY_SCIENTIST
 	const CITRINECITY_POKEFAN_F
+	const CITRINECITY_BEAUTY2
+	const CITRINECITY_COOLTRAINERM
 
 CitrineCity_MapScripts:
 	def_scene_scripts
@@ -32,6 +34,9 @@ CitrinePokeCenterSign:
 CitrineGameCornerSign: 
 	jumptext CitrineGameCornerSignText
 
+CitrineTrainerHouseScript:
+	jumptext CitrineTrainerHouseText
+
 CitrineLabsSign: 
 	jumptext CitrineLabsSignText
 
@@ -40,6 +45,9 @@ CitrineMayorSign:
 
 CitrineDoorLockedScript:
 	jumptext CitrineDoorLockedText
+
+CitrineMoveTutorScript:
+	jumptext CitrineMoveTutorText
 
 CitrineCityNPC1:
 	jumptextfaceplayer CitrineCityNPC1Text
@@ -63,6 +71,49 @@ CitrineCityNPC6:
 CitrineCityNPC7:
 	jumptextfaceplayer CitrineCityNPC7Text
 
+CitrineCityMoveTutorNPC:
+	jumptextfaceplayer CitrineCityMoveTutorNPCText
+
+CitrineCityTrainerHouseNPC:
+	jumptextfaceplayer CitrineCityTrainerHouseNPCText
+
+CitrineCityTrainerHouseNPCText:
+	text "I've come all the"
+	line "way from KANTO to"
+	cont "try the TRAINER"
+	cont "HOUSE."
+
+	para "They say its"
+	line "virtual battle"
+	cont "assistant, CAL,"
+	cont "can recreate your"
+	cont "very own team!"
+
+	para "I want to see how"
+	line "my team measures"
+	cont "up against itself!"
+	done
+
+CitrineCityMoveTutorNPCText:
+	text "My #DEX says"
+	line "some fully evolved"
+	cont "POKéMON can learn"
+	cont "powerful moves at"
+	cont "surprisingly low"
+	cont "levels."
+
+	para "I came all the way"
+	line "from KANTO to find"
+	cont "the MOVE TUTOR."
+
+	para "I can't wait to"
+	line "see what my"
+	cont "POKéMON can learn!"
+	done
+
+CitrineTrainerHouseText:
+	text "TRAINER HOUSE"
+	done
 
 CitrineCityNPC1Text:
 	text "This city never"
@@ -183,7 +234,8 @@ CitrineGameCornerSignText:
 CitrineLabsSignText: 
 	text "KANTO BIOMEDICAL"
 	line "RESEARCH FACILITY"
-	cont "KEEP OUT"
+
+	para "ACCESS RESTRICTED"
 	done
 
 CitrineMayorSignText:
@@ -194,6 +246,14 @@ CitrineMayorSignText:
 
 CitrineDoorLockedText:
 	text "It's locked."
+	done
+
+CitrineMoveTutorText:
+	text "MOVE TUTOR"
+
+	para "Unlock your #-"
+	line "MON's Hidden"
+	cont "potential!"
 	done
 
 CitrineCity_MapEvents:
@@ -210,10 +270,12 @@ CitrineCity_MapEvents:
 	warp_event  7, 31, CITRINE_HOUSE_1, 1
 	warp_event  7, 23, CITRINE_HOUSE_2, 1
 	warp_event 25, 11, CITRINE_HOUSE_3, 1
-	warp_event 19, 31, CITRINE_HOUSE_4, 1
+	warp_event  7, 11, CITRINE_HOUSE_4, 1
 	warp_event 33, 27, CITRINE_HOUSE_5, 1
 	warp_event 29, 39, CITRINE_HOUSE_6, 1
 	warp_event 13, 21, CITRINE_GAMECORNER, 1
+	warp_event 13, 11, MOVE_DELETERS_HOUSE, 1
+	warp_event 19, 29, TRAINER_HOUSE_1F, 1
 
 	def_coord_events
 
@@ -224,8 +286,8 @@ CitrineCity_MapEvents:
 	bg_event 14, 22, BGEVENT_READ, CitrineGameCornerSign
 	bg_event 24, 22, BGEVENT_READ, CitrineLabsSign
 	bg_event 20, 12, BGEVENT_READ, CitrineMayorSign
-	bg_event 13, 11, BGEVENT_READ, CitrineDoorLockedScript
-	bg_event  7, 11, BGEVENT_READ, CitrineDoorLockedScript
+	bg_event 14, 12, BGEVENT_READ, CitrineMoveTutorScript
+	bg_event 20, 30, BGEVENT_READ, CitrineTrainerHouseScript
 	bg_event  5, 15, BGEVENT_READ, CitrineDoorLockedScript
 	bg_event  7, 19, BGEVENT_READ, CitrineDoorLockedScript
 	bg_event  5, 27, BGEVENT_READ, CitrineDoorLockedScript
@@ -235,6 +297,7 @@ CitrineCity_MapEvents:
 	bg_event 31, 23, BGEVENT_READ, CitrineDoorLockedScript
 	bg_event 33, 19, BGEVENT_READ, CitrineDoorLockedScript
 	bg_event 23, 21, BGEVENT_READ, CitrineDoorBiomedicalScript
+	bg_event 19, 11, BGEVENT_READ, CitrineDoorLockedScript
 
 
 	def_object_events
@@ -245,3 +308,5 @@ CitrineCity_MapEvents:
 	object_event 21, 13, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC5, -1
 	object_event 22, 24, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC6, -1
 	object_event 26, 32, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC7, -1
+	object_event 19, 16, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 2, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, CitrineCityMoveTutorNPC, -1
+	object_event 15, 31, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CitrineCityTrainerHouseNPC, -1

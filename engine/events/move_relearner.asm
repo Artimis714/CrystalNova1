@@ -93,7 +93,7 @@ MoveRelearner:
 	ret
 
 .cost_to_relearn
-	dt 1000
+	dt 50000
 
 GetRelearnableMoves:
 	; Get moves relearnable by CurPartyMon
@@ -398,7 +398,7 @@ PrintMoveRelearnerText:
 
 .Intro
 	text "Hello! I am the"
-	line "MOVE RELEARNER."
+	line "MOVE TUTOR."
 
 	para "I know all the"
 	line "moves that can be"
@@ -406,8 +406,8 @@ PrintMoveRelearnerText:
 	para "learned for each"
 	line "#MON."
 
-	para "For just ¥1000, I"
-	line "can share that"
+	para "For just ¥50,000,"
+	line "I can share that"
 
 	para "knowledge with"
 	line "you. How about it?"
