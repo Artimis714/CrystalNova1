@@ -248,7 +248,12 @@ StartGameCornerGame:
 CheckCoinsAndCoinCase:
 	ld hl, wCoins
 	ld a, [hli]
-	or [hl]
+	ld b, a
+	ld a, [hli]
+	or b
+	ld b, a
+	ld a, [hl]
+	or b
 	jr z, .no_coins
 	ld a, COIN_CASE
 	ld [wCurItem], a

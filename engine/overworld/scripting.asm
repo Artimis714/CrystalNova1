@@ -1658,7 +1658,7 @@ Script_getcoins:
 	call ResetStringBuffer1
 	ld hl, wStringBuffer1
 	ld de, wCoins
-	lb bc, PRINTNUM_LEFTALIGN | 2, 6
+	lb bc, PRINTNUM_LEFTALIGN | 3, 6
 	call PrintNum
 	ld de, wStringBuffer1
 	jp GetStringBuffer
@@ -1835,10 +1835,12 @@ Script_checkcoins:
 	jr CompareMoneyAction
 
 LoadCoinAmountToMem:
+	xor a
+	ldh [hMoneyTemp], a
+	call GetScriptByte
+	ldh [hMoneyTemp + 2], a
 	call GetScriptByte
 	ldh [hMoneyTemp + 1], a
-	call GetScriptByte
-	ldh [hMoneyTemp], a
 	ld bc, hMoneyTemp
 	ret
 

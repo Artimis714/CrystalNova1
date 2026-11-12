@@ -163,10 +163,10 @@ AddFunds:
 	ret
 
 GiveCoins::
-	ld a, 2
+	ld a, 3
 	ld de, wCoins
 	call AddFunds
-	ld a, 2
+	ld a, 3
 	ld bc, .maxcoins
 	call CompareFunds
 	jr c, .not_maxed
@@ -176,6 +176,9 @@ GiveCoins::
 	inc de
 	ld a, [hli]
 	ld [de], a
+	inc de
+	ld a, [hl]
+	ld [de], a
 	scf
 	ret
 
@@ -184,15 +187,18 @@ GiveCoins::
 	ret
 
 .maxcoins
+	db 0
 	bigdw MAX_COINS
 
 TakeCoins::
-	ld a, 2
+	ld a, 3
 	ld de, wCoins
 	call SubtractFunds
 	jr nc, .okay
 	; leave with 0 coins
 	xor a
+	ld [de], a
+	inc de
 	ld [de], a
 	inc de
 	ld [de], a
@@ -204,6 +210,6 @@ TakeCoins::
 	ret
 
 CheckCoins::
-	ld a, 2
+	ld a, 3
 	ld de, wCoins
 	jp CompareFunds

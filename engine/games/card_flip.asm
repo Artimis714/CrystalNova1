@@ -113,36 +113,51 @@ _CardFlip:
 
 .DeductCoins:
 	ld a, [wCoins]
-	ld h, a
-	ld a, [wCoins + 1]
-	ld l, a
-	ld a, h
 	and a
 	jr nz, .deduct ; You have at least 256 coins.
-	ld a, l
+
+	ld a, [wCoins + 1]
+	and a
+	jr nz, .deduct ; You have at least 256 coins.
+
+	ld a, [wCoins + 2]
 	cp 3
 	jr nc, .deduct ; You have at least 3 coins.
+
 	ld hl, .CardFlipNotEnoughCoinsText
 	call CardFlip_UpdateCoinBalanceDisplay
+
 	ld a, 7
 	ld [wJumptableIndex], a
 	ret
 
 .deduct
-	ld de, -3
-	add hl, de
-	ld a, h
-	ld [wCoins], a
-	ld a, l
-	ld [wCoins + 1], a
+	ld hl, wCoins + 2
+	ld a, [hl]
+	sub 3
+	ld [hld], a
+	jr nc, .deduct_done
+
+	ld a, [hl]
+	sub 1
+	ld [hld], a
+	jr nc, .deduct_done
+
+	dec [hl]
+
+.deduct_done
 	ld de, SFX_TRANSACTION
 	call PlaySFX
+
 	xor a
 	ldh [hBGMapMode], a
 	call CardFlip_PrintCoinBalance
 	ld a, $1
 	ldh [hBGMapMode], a
+
 	call WaitSFX
+	call PrintTextboxText
+	call CardFlip_PrintCoinBalance
 	call .Increment
 	ret
 
@@ -496,7 +511,7 @@ CardFlip_PrintCoinBalance:
 	call PlaceString
 	hlcoord 15, 16
 	ld de, wCoins
-	lb bc, PRINTNUM_LEADINGZEROS | 2, 4
+	lb bc, PRINTNUM_LEADINGZEROS | 3, 4
 	call PrintNum
 	ret
 
@@ -1109,28 +1124,35 @@ CardFlip_CheckWinCondition:
 	text_end
 
 .AddCoinPlaySFX:
-	ld a, [wCoins]
-	ld h, a
-	ld a, [wCoins + 1]
-	ld l, a
-	inc hl
-	ld a, h
-	ld [wCoins], a
-	ld a, l
-	ld [wCoins + 1], a
+	ld hl, wCoins + 2
+	inc [hl]
+	jr nz, .play_sfx
+
+	dec hl
+	inc [hl]
+	jr nz, .play_sfx
+
+	dec hl
+	inc [hl]
+
+.play_sfx
 	ld de, SFX_PAY_DAY
 	call PlaySFX
 	ret
 
 .IsCoinCaseFull:
-	ld a, [wCoins]
+	ld hl, wCoins
+
+	ld a, [hli]
+	and a
+	jr nz, .more
+
+	ld a, [hli]
 	cp HIGH(MAX_COINS)
 	jr c, .less
-	jr z, .check_low
-	jr .more
+	jr nz, .more
 
-.check_low
-	ld a, [wCoins + 1]
+	ld a, [hl]
 	cp LOW(MAX_COINS)
 	jr c, .less
 

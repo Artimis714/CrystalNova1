@@ -1295,7 +1295,7 @@ _BlueCardBalanceText::
 _CoinCaseCountText::
 	text "Coins:"
 	line "@"
-	text_decimal wCoins, 2, 4
+	text_decimal wCoins, 3, 4
 	text_end
 
 	text_end ; unreferenced

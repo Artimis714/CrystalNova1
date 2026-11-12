@@ -10,7 +10,6 @@ BattleCommand_PayDay:
 	ld a, [wEnemyMonLevel]
 .ok
 
-	add a
 	ld hl, wPayDayMoney + 2
 	add [hl]
 	ld [hld], a

@@ -8414,10 +8414,9 @@ CheckPayDay:
 	ld [hl], a
 
 .okay
-	ld hl, wPayDayMoney + 2
-	ld de, wMoney + 2
-	call AddBattleMoneyToAccount
-	ld hl, BattleText_PlayerPickedUpPayDayMoney
+	ld bc, wPayDayMoney
+	farcall GiveCoins
+	ld hl, BattleText_PlayerPickedUpPayDayCoins
 	call StdBattleTextbox
 	ld a, [wInBattleTowerBattle]
 	bit 0, a

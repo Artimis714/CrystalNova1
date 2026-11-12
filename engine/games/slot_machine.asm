@@ -228,7 +228,7 @@ SlotsLoop:
 .PrintCoinsAndPayout:
 	hlcoord 5, 1
 	ld de, wCoins
-	lb bc, PRINTNUM_LEADINGZEROS | 2, 4
+	lb bc, PRINTNUM_LEADINGZEROS | 3, 4
 	call PrintNum
 	hlcoord 11, 1
 	ld de, wPayout
@@ -478,17 +478,19 @@ SlotsAction_PayoutAnim:
 	dec hl
 	ld [hl], d
 	ld hl, wCoins
-	ld d, [hl]
-	inc hl
-	ld e, [hl]
 	call Slots_CheckCoinCaseFull
 	jr c, .okay
-	inc de
-.okay
-; BUG: Slot machine payout sound effects cut each other off (see docs/bugs_and_glitches.md)
-	ld [hl], e
+
+	ld hl, wCoins + 2
+	inc [hl]
+	jr nz, .okay
 	dec hl
-	ld [hl], d
+	inc [hl]
+	jr nz, .okay
+	dec hl
+	inc [hl]
+
+.okay
 	ld a, [wSlotsDelay]
 	and $7
 	ret z
@@ -534,17 +536,27 @@ Slots_LoadReelState:
 	ret
 
 Slots_CheckCoinCaseFull:
-	ld a, d
+	ld hl, wCoins
+
+	ld a, [hli]
+	and a
+	jr nz, .full
+
+	ld a, [hli]
 	cp HIGH(MAX_COINS)
 	jr c, .not_full
-	ld a, e
+	jr nz, .full
+
+	ld a, [hl]
 	cp LOW(MAX_COINS)
-	jr c, .not_full
-	scf
-	ret
+	jr nc, .full
 
 .not_full
 	and a
+	ret
+
+.full
+	scf
 	ret
 
 Slots_GetCurrentReelState:
@@ -1734,8 +1746,11 @@ Slots_AskBet:
 	ld a, 4
 	sub b
 	ld [wSlotBet], a
-	ld hl, wCoins
 	ld c, a
+	ld hl, wCoins
+	ld a, [hli]
+	and a
+	jr nz, .Start
 	ld a, [hli]
 	and a
 	jr nz, .Start
@@ -1747,11 +1762,16 @@ Slots_AskBet:
 	jr .loop
 
 .Start:
-	ld hl, wCoins + 1
+	ld hl, wCoins + 2
 	ld a, [hl]
 	sub c
 	ld [hld], a
 	jr nc, .ok
+	ld a, [hl]
+	sub 1
+	ld [hl], a
+	jr nc, .ok
+	dec hl
 	dec [hl]
 .ok
 	call WaitSFX
@@ -1790,7 +1810,12 @@ Slots_AskBet:
 Slots_AskPlayAgain:
 	ld hl, wCoins
 	ld a, [hli]
-	or [hl]
+	ld b, a
+	ld a, [hli]
+	or b
+	ld b, a
+	ld a, [hl]
+	or b
 	jr nz, .you_have_coins
 	ld hl, .SlotsRanOutOfCoinsText
 	call PrintText

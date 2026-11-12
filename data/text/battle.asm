@@ -1,10 +1,10 @@
 BattleText:: ; used only for BANK(BattleText)
 
-BattleText_PlayerPickedUpPayDayMoney:
+BattleText_PlayerPickedUpPayDayCoins:
 	text "<PLAYER> picked up"
-	line "¥@"
+	line "@"
 	text_decimal wPayDayMoney, 3, 6
-	text "!"
+	text " coins!"
 	prompt
 
 WildPokemonAppearedText:

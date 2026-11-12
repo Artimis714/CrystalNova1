@@ -84,20 +84,20 @@ MoneyBottomLeftMenuHeader:
 	db 1 ; default option
 
 DisplayCoinCaseBalance:
-	; Place a text box of size 1x7 at 11, 0.
-	hlcoord 11, 0
+	; Place a text box of size 1x8 at 10, 0.
+	hlcoord 10, 0
 	ld b, 1
-	ld c, 7
+	ld c, 8
 	call Textbox
-	hlcoord 12, 0
+	hlcoord 11, 0
 	ld de, CoinString
 	call PlaceString
-	hlcoord 17, 1
+	hlcoord 18, 1
 	ld de, ShowMoney_TerminatorString
 	call PlaceString
-	ld de, wCoins
-	lb bc, 2, 4
 	hlcoord 13, 1
+	ld de, wCoins
+	lb bc, 3, 4
 	call PrintNum
 	ret
 
@@ -118,7 +118,7 @@ DisplayMoneyAndCoinBalance:
 	call PlaceString
 	hlcoord 15, 3
 	ld de, wCoins
-	lb bc, 2, 4
+	lb bc, 3, 4
 	call PrintNum
 	ret
 

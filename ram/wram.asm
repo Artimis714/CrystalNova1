@@ -3008,7 +3008,7 @@ wMomSavingMoney::
 ; bit 7: active
 	db
 
-wCoins:: dw
+ds 2 ; former wCoins Location
 
 wBadges::
 wJohtoBadges:: flag_array NUM_JOHTO_BADGES
@@ -3170,7 +3170,9 @@ wKenjiFightCount::   db ; unreferenced
 wParryFightCount::   db
 wErinFightCount::    db
 
-	ds 100
+wCoins:: ds 3
+
+	ds 97
 
 wEventFlags:: flag_array NUM_EVENTS
 
