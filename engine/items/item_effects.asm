@@ -146,7 +146,7 @@ ItemEffects:
 	dw NoEffect            ; LOST_ITEM
 	dw NoEffect            ; STARDUST
 	dw NoEffect            ; STAR_PIECE
-	dw BasementKeyEffect   ; BASEMENT_KEY
+	dw KeyChainEffect      ; KEY_CHAIN
 	dw NoEffect            ; PASS
 	dw RestoreHPEffect     ; SLVR_BERRY
 	dw RestoreHPEffect     ; SLVR_B_JUICE
@@ -1167,16 +1167,6 @@ SandBallMultiplier:
 .max
 	ld b, $ff
 	ret
-
-; BallDodgedText and BallMissedText were used in Gen 1.
-
-BallDodgedText: ; unreferenced
-	text_far _BallDodgedText
-	text_end
-
-BallMissedText: ; unreferenced
-	text_far _BallMissedText
-	text_end
 
 BallBrokeFreeText:
 	text_far _BallBrokeFreeText
@@ -2658,9 +2648,79 @@ CardKeyEffect:
 	farcall _CardKey
 	ret
 
-BasementKeyEffect:
-	farcall _BasementKey
-	ret
+
+KeyChainEffect:
+; Check Basement Key
+	ld de, EVENT_GOT_BASEMENT_KEY
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .Empty
+
+; Check Prison Key
+	ld de, EVENT_GOT_PRISON_KEY
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr nz, .HasPrison
+
+; No Prison Key - check Lab Key
+	ld de, EVENT_GOT_LAB_KEY
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr nz, .BasementLab
+
+	ld hl, .BasementOnlyText
+	jr .Display
+
+.HasPrison
+	ld de, EVENT_GOT_LAB_KEY
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr nz, .AllKeys
+
+	ld hl, .BasementPrisonText
+	jr .Display
+
+.BasementLab
+	ld hl, .BasementLabText
+	jr .Display
+
+.AllKeys
+	ld hl, .AllKeysText
+	jr .Display
+
+.Empty
+	ld hl, .EmptyText
+
+.Display
+	jp MenuTextboxWaitButton
+
+.EmptyText:
+	text_far _KeyChainEmptyText
+	text_end
+
+.BasementOnlyText:
+	text_far _KeyChainBasementText
+	text_end
+
+.BasementPrisonText:
+	text_far _KeyChainPrisonText
+	text_end
+
+.BasementLabText:
+	text_far _KeyChainLabText
+	text_end
+
+.AllKeysText:
+	text_far _KeyChainAllText
+	text_end
 
 SacredAshEffect:
 	farcall _SacredAsh
@@ -2761,18 +2821,6 @@ WontHaveAnyEffectMessage:
 	ld hl, ItemWontHaveEffectText
 	jr CantUseItemMessage
 
-BelongsToSomeoneElseMessage: ; unreferenced
-	ld hl, ItemBelongsToSomeoneElseText
-	jr CantUseItemMessage
-
-CyclingIsntAllowedMessage: ; unreferenced
-	ld hl, NoCyclingText
-	jr CantUseItemMessage
-
-CantGetOnYourBikeMessage: ; unreferenced
-	ld hl, ItemCantGetOnText
-	; fallthrough
-
 CantUseItemMessage:
 ; Item couldn't be used.
 	xor a
@@ -2821,14 +2869,6 @@ BallBoxFullText:
 
 ItemUsedText:
 	text_far _ItemUsedText
-	text_end
-
-ItemGotOnText: ; unreferenced
-	text_far _ItemGotOnText
-	text_end
-
-ItemGotOffText: ; unreferenced
-	text_far _ItemGotOffText
 	text_end
 
 ApplyPPUp:

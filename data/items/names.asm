@@ -132,7 +132,7 @@ ItemNames::
 	li "LOST DOLL"
 	li "STARDUST"
 	li "STAR PIECE"
-	li "BASEMENT KEY"
+	li "KEY CHAIN"
 	li "PASS"
 	li "MOON BERRY"
 	li "MOON B JUICE"

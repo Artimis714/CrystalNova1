@@ -138,7 +138,7 @@
 	const LOST_ITEM    ; 82
 	const STARDUST     ; 83
 	const STAR_PIECE   ; 84
-	const BASEMENT_KEY ; 85
+	const KEY_CHAIN    ; 85
 	const PASS         ; 86
 	const SLVR_BERRY   ; 87
 	const SLVR_B_JUICE ; 88

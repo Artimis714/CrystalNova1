@@ -1042,3 +1042,32 @@ VMartText::
 	para "Going out of"
 	line "Business Soon!"
 	done
+
+_KeyChainEmptyText::
+	text "Your Key Chain"
+	line "is empty."
+	done
+
+_KeyChainBasementText::
+	text "Key Chain holds:"
+	line "Basement Key"
+	done
+
+_KeyChainPrisonText::
+	text "Key Chain holds:"
+	line "Basement Key"
+	cont "Prison Key"
+	done
+
+_KeyChainLabText::
+	text "Key Chain holds:"
+	line "Basement Key"
+	cont "Laboratory Key"
+	done
+
+_KeyChainAllText::
+	text "Key Chain holds:"
+	line "Basement Key"
+	cont "Prison Key"
+	cont "Laboratory Key"
+	done

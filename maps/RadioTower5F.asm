@@ -43,7 +43,11 @@ FakeDirectorScript:
 	opentext
 	writetext FakeDirectorTextAfter
 	promptbutton
-	verbosegiveitem BASEMENT_KEY
+	setevent EVENT_GOT_BASEMENT_KEY
+	writetext BasementKeyReceivedText
+	playsound SFX_ITEM
+	pause 15
+	writetext BasementKeyAttachedText
 	closetext
 	setscene SCENE_RADIOTOWER5F_ROCKET_BOSS
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
@@ -519,6 +523,16 @@ BenText:
 	line "..."
 
 	para "Well, you should."
+	done
+
+BasementKeyReceivedText:
+	text "<PLAYER> received"
+	line "the BASEMENT KEY!"
+	done
+
+BasementKeyAttachedText:
+	text "Attached the BASEMENT"
+	line "KEY to the KEY CHAIN."
 	done
 
 RadioTower5FDirectorsOfficeSignText:

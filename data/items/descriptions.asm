@@ -133,7 +133,7 @@ ItemDescriptions:
 	dw LostItemDesc
 	dw StardustDesc
 	dw StarPieceDesc
-	dw BasementKeyDesc
+	dw KeyChainDesc
 	dw PassDesc
 	dw SilverBerryDesc
 	dw SlvrBJuiceDesc
@@ -780,12 +780,13 @@ StarPieceDesc:
 	db   "A hunk of red gem."
 	next "Sell very high.@"
 
-BasementKeyDesc:
-	db   "Opens doors.@"
+KeyChainDesc:
+	db   "A ring to hold"
+	next "keys.@"
 
 PassDesc:
-	db   "A ticket for the"
-	next "MAGNET TRAIN.@"
+	db   "A rail pass for"
+	next "the MAGNET TRAIN.@"
 
 SilverBerryDesc:
 	db   "A self-restore"

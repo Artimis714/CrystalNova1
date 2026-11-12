@@ -379,12 +379,10 @@ BasementDoorScript::
 	opentext
 	checkevent EVENT_USED_BASEMENT_KEY
 	iftrue .Open
-	checkitem BASEMENT_KEY
-	iftrue .Unlock
-	writetext GoldenrodUndergroundTheDoorsLockedText
-	waitbutton
-	closetext
-	end
+	checkitem KEY_CHAIN
+	iffalse .Locked
+	checkevent EVENT_GOT_BASEMENT_KEY
+	iffalse .Locked
 
 .Unlock:
 	playsound SFX_TRANSACTION
@@ -395,6 +393,12 @@ BasementDoorScript::
 	reloadmappart
 	closetext
 	setevent EVENT_USED_BASEMENT_KEY
+	end
+
+.Locked:
+	writetext GoldenrodUndergroundTheDoorsLockedText
+	waitbutton
+	closetext
 	end
 
 .Open:
