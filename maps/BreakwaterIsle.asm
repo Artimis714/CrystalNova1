@@ -52,6 +52,8 @@ BreakwaterIsle_MapEvents:
 	warp_event 27, 17, BREAKWATER_MART, 1
 	warp_event 15,  7, BREAKWATER_HOUSE1, 1
 	warp_event 21, 17, BREAKWATER_HOUSE2, 1
+	warp_event  5, 23, BREAKWATER_LIGHTHOUSEF1, 1
+	warp_event 18, 13, BREAKWATER_GYM, 1
 
 	def_coord_events
 

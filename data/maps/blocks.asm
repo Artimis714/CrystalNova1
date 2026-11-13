@@ -1129,3 +1129,24 @@ BreakwaterIsle_Blocks:
 
 MossCaveRuins_Blocks:
 	INCBIN "maps/MossCaveRuins.blk"
+
+BreakwaterLighthouseB1_Blocks:
+	INCBIN "maps/BreakwaterLighthouseB1.blk"
+
+BreakwaterLighthouseF1_Blocks:
+	INCBIN "maps/BreakwaterLighthouseF1.blk"
+
+BreakwaterLighthouseF2_Blocks:
+	INCBIN "maps/BreakwaterLighthouseF2.blk"
+
+BreakwaterLighthouseF3_Blocks:
+	INCBIN "maps/BreakwaterLighthouseF3.blk"
+
+BreakwaterLighthouseF4_Blocks:
+	INCBIN "maps/BreakwaterLighthouseF4.blk"
+
+BreakwaterLighthouseObservationDeck_Blocks:
+	INCBIN "maps/BreakwaterLighthouseObservationDeck.blk"
+
+BreakwaterGym_Blocks:
+	INCBIN "maps/BreakwaterGym.blk"

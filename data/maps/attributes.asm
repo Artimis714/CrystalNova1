@@ -735,3 +735,10 @@ ENDM
 	map_attributes CitrineHouse6, CITRINE_HOUSE_6, $00, 0
 	map_attributes MossCaveRuins, MOSS_CAVE_RUINS, $00, 0
 	map_attributes CitrineGameCorner, CITRINE_GAMECORNER, $00, 0
+	map_attributes BreakwaterLighthouseB1, BREAKWATER_LIGHTHOUSEB1, $09, 0
+	map_attributes BreakwaterLighthouseF1, BREAKWATER_LIGHTHOUSEF1, $00, 0
+	map_attributes BreakwaterLighthouseF2, BREAKWATER_LIGHTHOUSEF2, $00, 0
+	map_attributes BreakwaterLighthouseF3, BREAKWATER_LIGHTHOUSEF3, $00, 0
+	map_attributes BreakwaterLighthouseF4, BREAKWATER_LIGHTHOUSEF4, $00, 0
+	map_attributes BreakwaterLighthouseObservationDeck, BREAKWATER_LIGHTHOUSE_OBV, $24, 0
+	map_attributes BreakwaterGym, BREAKWATER_GYM, $00, 0

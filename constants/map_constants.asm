@@ -222,6 +222,13 @@ ENDM
 	map_const BREAKWATER_HOUSE1,                            4,  4 ; 20
 	map_const BREAKWATER_HOUSE2,                            4,  4 ; 21
 	map_const CORAL_SEA,				       10, 25 ; 22
+	map_const BREAKWATER_LIGHTHOUSEB1,                     11, 11 ; 23
+	map_const BREAKWATER_LIGHTHOUSEF1,                     10, 10 ; 24
+	map_const BREAKWATER_LIGHTHOUSEF2,                     10, 10 ; 25
+	map_const BREAKWATER_LIGHTHOUSEF3,                     10, 10 ; 26
+	map_const BREAKWATER_LIGHTHOUSEF4,                     10, 10 ; 27
+	map_const BREAKWATER_LIGHTHOUSE_OBV,                   10,  8 ; 28
+	map_const BREAKWATER_GYM,                               7,  8 ; 29
 	endgroup
 
 	newgroup CERULEAN                                             ;  7
