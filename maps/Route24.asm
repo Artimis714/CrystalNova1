@@ -17,56 +17,36 @@ Route25Noop2Scene:
 	end
 
 Route25MistyDate1Script:
-	showemote EMOTE_HEART, ROUTE25_MISTY, 15
-	pause 30
-	showemote EMOTE_SHOCK, ROUTE25_COOLTRAINER_M1, 10
-	turnobject ROUTE25_MISTY, DOWN
-	applymovement ROUTE25_COOLTRAINER_M1, Route25MistysDateLeavesMovement1
-	disappear ROUTE25_COOLTRAINER_M1
-	pause 15
-	playmusic MUSIC_BEAUTY_ENCOUNTER
-	turnobject ROUTE25_MISTY, UP
-	pause 10
-	applymovement ROUTE25_MISTY, Route25MistyApproachesPlayerMovement1
-	opentext
-	writetext Route25MistyDateText
-	waitbutton
-	closetext
-	turnobject PLAYER, DOWN
-	applymovement ROUTE25_MISTY, Route25MistyLeavesPlayerMovement1
-	turnobject PLAYER, LEFT
-	applymovement ROUTE25_MISTY, Route25MistyLeavesMovement
-	disappear ROUTE25_MISTY
-	clearevent EVENT_TRAINERS_IN_CERULEAN_GYM
-	clearevent EVENT_NUGGET_BRIDGE_AWAY
 	setscene SCENE_ROUTE25_NOOP
-	special RestartMapMusic
-	end
+	showemote EMOTE_SHOCK, PLAYER, 15
+	applymovement PLAYER, Route24DatePlayerMovesRight
+	sjump Route24MistyDateCommonScript
 
 Route25MistyDate2Script:
+	setscene SCENE_ROUTE25_NOOP
+	showemote EMOTE_SHOCK, PLAYER, 15
+	turnobject PLAYER, RIGHT
+	sjump Route24MistyDateCommonScript
+
+Route24MistyDateCommonScript:
 	showemote EMOTE_HEART, ROUTE25_MISTY, 15
 	pause 30
 	showemote EMOTE_SHOCK, ROUTE25_COOLTRAINER_M1, 10
 	turnobject ROUTE25_MISTY, DOWN
-	applymovement ROUTE25_COOLTRAINER_M1, Route25MistysDateLeavesMovement2
+	applymovement ROUTE25_COOLTRAINER_M1, Route24DateBoyfriendLeaves
 	disappear ROUTE25_COOLTRAINER_M1
 	pause 15
 	playmusic MUSIC_BEAUTY_ENCOUNTER
 	turnobject ROUTE25_MISTY, UP
 	pause 10
-	applymovement ROUTE25_MISTY, Route25MistyApproachesPlayerMovement2
+	applymovement ROUTE25_MISTY, Route24DateMistyConfrontsPlayer
 	opentext
 	writetext Route25MistyDateText
 	waitbutton
 	closetext
-	turnobject PLAYER, UP
-	applymovement ROUTE25_MISTY, Route25MistyLeavesPlayerMovement2
-	turnobject PLAYER, LEFT
-	applymovement ROUTE25_MISTY, Route25MistyLeavesMovement
+	applymovement ROUTE25_MISTY, Route24DateBoyfriendLeaves
 	disappear ROUTE25_MISTY
 	clearevent EVENT_TRAINERS_IN_CERULEAN_GYM
-	clearevent EVENT_NUGGET_BRIDGE_AWAY
-	setscene SCENE_ROUTE25_NOOP
 	special RestartMapMusic
 	end
 
@@ -100,46 +80,22 @@ Route24RocketScript:
 	playmapmusic
 	end
 
-Route25MistysDateLeavesMovement1:
-	big_step DOWN
+Route24DatePlayerMovesRight:
+	step RIGHT
 	step_end
 
-Route25MistysDateLeavesMovement2:
-	big_step DOWN
-	big_step DOWN
-	step_end
-
-Route25MistyApproachesPlayerMovement1:
-	step UP
-	step UP
-	step UP
-	step LEFT
-	step LEFT
-	step LEFT
-	step_end
-
-Route25MistyApproachesPlayerMovement2:
-	step UP
-	step UP
-	step LEFT
-	step LEFT
-	step LEFT
-	step_end
-
-Route25MistyLeavesPlayerMovement1:
+Route24DateBoyfriendLeaves:
 	step DOWN
-	step LEFT
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
 	step_end
 
-Route25MistyLeavesPlayerMovement2:
-	step UP
-	step LEFT
-	step_end
-
-Route25MistyLeavesMovement:
-	step LEFT
-	step LEFT
-	step LEFT
+Route24DateMistyConfrontsPlayer:
 	step LEFT
 	step LEFT
 	step_end

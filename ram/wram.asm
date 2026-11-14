@@ -3139,7 +3139,7 @@ wMobileBattleRoomSceneID::                        db
 wMossCaveSceneID::                                db
 wVermilionCitySceneID::                           db
 
-	ds 48
+	ds 47
 
 ; fight counts
 wJackFightCount::    db
