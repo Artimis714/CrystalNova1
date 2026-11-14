@@ -116,6 +116,8 @@
 	const SPRITE_RATTATA_BACK ; 71
 	const SPRITE_ORB ; 72
 	const SPRITE_FEATHER ; 73
+	const SPRITE_OFFICER_JENNY ; 74
+	const SPRITE_GREEN_T ; 75
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

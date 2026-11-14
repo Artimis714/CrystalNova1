@@ -121,4 +121,6 @@ OverworldSprites:
 	overworld_sprite RattataBackSpriteGFX, 8, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite OrbSpriteGFX, 8, STANDING_SPRITE, PAL_OW_GREEN
 	overworld_sprite FeatherSpriteGFX, 4, STILL_SPRITE, PAL_OW_YELLOW
+	overworld_sprite GreenSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite OfficerJennySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	assert_table_length NUM_OVERWORLD_SPRITES
