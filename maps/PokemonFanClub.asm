@@ -10,6 +10,188 @@ PokemonFanClub_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, PokemonFanClubSetVermilionPrisonGuardSceneCallback
+	callback MAPCALLBACK_TILES, PokemonFanClubCheckPrisonDoorsCallback
+
+PokemonFanClubSetVermilionPrisonGuardSceneCallback:
+	setmapscene VERMILION_CITY, SCENE_VERMILIONCITY_PRISON_GUARD
+	setevent EVENT_PRISON_GUARD_MOVED
+	clearevent EVENT_PRISON_GUARD_MOVED2
+	endcallback
+
+PokemonFanClubCheckPrisonDoorsCallback:
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse .Door1Locked
+	changeblock 1, 6, $4F
+	changeblock 1, 5, $4A
+	sjump .Door2
+
+.Door1Locked:
+	changeblock 1, 6, $4E
+	changeblock 1, 5, $05
+
+.Door2:
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
+	iffalse .Door2Locked
+	changeblock 7, 6, $4D
+	changeblock 7, 5, $4A
+	sjump .Door3
+
+.Door2Locked:
+	changeblock 7, 6, $45
+	changeblock 7, 5, $05
+
+.Door3:
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_3
+	iffalse .Door3Locked
+	changeblock 11, 6, $4F
+	changeblock 11, 5, $4A
+	sjump .Door4
+
+.Door3Locked:
+	changeblock 11, 6, $4E
+	changeblock 11, 5, $05
+
+.Door4:
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_4
+	iffalse .Door4Locked
+	changeblock 17, 6, $4D
+	changeblock 17, 5, $4A
+	endcallback
+
+.Door4Locked:
+	changeblock 17, 6, $45
+	changeblock 17, 5, $05
+	endcallback
+
+
+PrisonDoor1Script:
+	opentext
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iftrue .Open
+	checkitem KEY_CHAIN
+	iffalse .Locked
+	checkevent EVENT_GOT_PRISON_KEY
+	iffalse .Locked
+
+	playsound SFX_TRANSACTION
+	writetext PokemonFanClubPrisonDoorUnlockedText
+	waitbutton
+	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	changeblock 1, 6, $4F
+	changeblock 1, 5, $4A
+	reloadmappart
+	end
+
+.Locked:
+	writetext PokemonFanClubPrisonDoorLockedText
+	waitbutton
+	closetext
+	end
+
+.Open:
+	writetext PokemonFanClubPrisonDoorOpenText
+	waitbutton
+	closetext
+	end
+
+
+PrisonDoor2Script:
+	opentext
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
+	iftrue .Open
+	checkitem KEY_CHAIN
+	iffalse .Locked
+	checkevent EVENT_GOT_PRISON_KEY
+	iffalse .Locked
+
+	playsound SFX_TRANSACTION
+	writetext PokemonFanClubPrisonDoorUnlockedText
+	waitbutton
+	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
+	changeblock 7, 6, $4D
+	changeblock 7, 5, $4A
+	reloadmappart
+	end
+
+.Locked:
+	writetext PokemonFanClubPrisonDoorLockedText
+	waitbutton
+	closetext
+	end
+
+.Open:
+	writetext PokemonFanClubPrisonDoorOpenText
+	waitbutton
+	closetext
+	end
+
+
+PrisonDoor3Script:
+	opentext
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_3
+	iftrue .Open
+	checkitem KEY_CHAIN
+	iffalse .Locked
+	checkevent EVENT_GOT_PRISON_KEY
+	iffalse .Locked
+
+	playsound SFX_TRANSACTION
+	writetext PokemonFanClubPrisonDoorUnlockedText
+	waitbutton
+	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_3
+	changeblock 11, 6, $4F
+	changeblock 11, 5, $4A
+	reloadmappart
+	end
+
+.Locked:
+	writetext PokemonFanClubPrisonDoorLockedText
+	waitbutton
+	closetext
+	end
+
+.Open:
+	writetext PokemonFanClubPrisonDoorOpenText
+	waitbutton
+	closetext
+	end
+
+
+PrisonDoor4Script:
+	opentext
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_4
+	iftrue .Open
+	checkitem KEY_CHAIN
+	iffalse .Locked
+	checkevent EVENT_GOT_PRISON_KEY
+	iffalse .Locked
+
+	playsound SFX_TRANSACTION
+	writetext PokemonFanClubPrisonDoorUnlockedText
+	waitbutton
+	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_4
+	changeblock 17, 6, $4D
+	changeblock 17, 5, $4A
+	reloadmappart
+	end
+
+.Locked:
+	writetext PokemonFanClubPrisonDoorLockedText
+	waitbutton
+	closetext
+	end
+
+.Open:
+	writetext PokemonFanClubPrisonDoorOpenText
+	waitbutton
+	closetext
+	end
+
 
 PokemonFanClubChairmanScript:
 	faceplayer
@@ -226,6 +408,22 @@ VermilionPrisonWardenScript:
 	waitbutton
 	closetext
 	end
+
+PokemonFanClubPrisonDoorLockedText:
+	text "The cell door is"
+	line "locked."
+	done
+
+PokemonFanClubPrisonDoorOpenText:
+	text "The cell door is"
+	line "already open."
+	done
+
+PokemonFanClubPrisonDoorUnlockedText:
+	text "The key turns."
+	line "The cell door"
+	cont "slides open."
+	done
 
 WardenSeenText:
 	text "Visiting hours"
@@ -677,12 +875,18 @@ PokemonFanClub_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  6,  9, VERMILION_CITY, 11
-	warp_event  7,  9, VERMILION_CITY, 11
+	warp_event  6,  9, VERMILION_CITY, 3
+	warp_event  7,  9, VERMILION_CITY, 3
 
 	def_coord_events
 
 	def_bg_events
+	bg_event  1,  6, BGEVENT_READ, PrisonDoor1Script
+	bg_event  7,  6, BGEVENT_READ, PrisonDoor2Script
+	bg_event 11,  6, BGEVENT_READ, PrisonDoor3Script
+	bg_event 17,  6, BGEVENT_READ, PrisonDoor4Script
+
+	def_object_events
 
 	def_object_events
 	object_event  6,  3, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubChairmanScript, EVENT_PRISON_ROCKETS

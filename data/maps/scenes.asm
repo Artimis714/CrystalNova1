@@ -7,7 +7,7 @@ ENDM
 MapScenes::
 	scene_var POWER_PLANT,                                 wPowerPlantSceneID
 	scene_var CERULEAN_GYM,                                wCeruleanGymSceneID
-	scene_var ROUTE_25,                                    wRoute25SceneID
+	scene_var ROUTE_24,                                    wRoute24SceneID
 	scene_var TRAINER_HOUSE_B1F,                           wTrainerHouseB1FSceneID
 	scene_var VICTORY_ROAD_GATE,                           wVictoryRoadGateSceneID
 	scene_var SAFFRON_MAGNET_TRAIN_STATION,                wSaffronMagnetTrainStationSceneID
@@ -74,4 +74,5 @@ MapScenes::
 	scene_var FAST_SHIP_B1F,                               wFastShipB1FSceneID
 	scene_var MOUNT_MOON_SQUARE,                           wMountMoonSquareSceneID
 	scene_var MOSS_CAVE,                                   wMossCaveSceneID
+	scene_var VERMILION_CITY,                              wVermilionCitySceneID
 	db -1 ; end

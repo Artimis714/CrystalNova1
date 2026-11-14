@@ -6,11 +6,14 @@
 	const VERMILIONCITY_BIG_SNORLAX
 	const VERMILIONCITY_POKEFAN_M
 	const VERMILIONCITY_OFFICER
+	const VERMILIONCITY_PRISON_GUARD2
 	const VERMILIONCITY_OFFICER2
 	const VERMILIONCITY_OFFICER3
 
 VermilionCity_MapScripts:
 	def_scene_scripts
+	scene_script VermilionCityPrisonGuardScene, SCENE_VERMILIONCITY_PRISON_GUARD
+	scene_script VermilionCityNoopScene, SCENE_VERMILIONCITY_NOOP
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, VermilionCityFlypointCallback
@@ -18,6 +21,36 @@ VermilionCity_MapScripts:
 VermilionCityFlypointCallback:
 	setflag ENGINE_FLYPOINT_VERMILION
 	endcallback
+
+VermilionCityPrisonGuardScene:
+	end
+
+VermilionCityNoopScene:
+	end
+
+VermilionCityPrisonGuardArrivalScript:
+	checkevent EVENT_PRISON_GUARD_MOVED
+	iffalse .NoArrival
+
+	applymovement PLAYER, VermilionCityPrisonGuardPlayerMovement
+	applymovement VERMILIONCITY_PRISON_GUARD2, VermilionCityPrisonGuard2Movement
+	disappear VERMILIONCITY_PRISON_GUARD2
+	setevent EVENT_PRISON_GUARD_MOVED2
+	clearevent EVENT_PRISON_GUARD_MOVED
+	appear VERMILIONCITY_OFFICER
+	setscene SCENE_VERMILIONCITY_NOOP
+	end
+
+.NoArrival:
+	end
+
+VermilionCityPrisonGuardPlayerMovement:
+	step DOWN
+	step_end
+
+VermilionCityPrisonGuard2Movement:
+	step RIGHT
+	step_end
 
 VermilionPrisonGuard:
 	faceplayer
@@ -64,58 +97,19 @@ VermilionPrisonGuard:
 	applymovement VERMILIONCITY_OFFICER, VermilionCityovementData_OfficertoSide
 	end
 
+VermilionCityMartSign: 
+	jumpstd MartSignScript
+
 VermilionCityovementData_OfficertoSide:
 	step LEFT
 	turn_head RIGHT
 	step_end
 
 VermilionCityTeacherScript:
-	faceplayer
-	opentext
-	checkevent EVENT_CANDY_SHOP
-	iffalse .TeacherCandyShopOpen
-	checkevent EVENT_BLUE_IN_CINNABAR
-	iftrue .TeacherCandyShopSoon
-	writetext VermilionCityTeacherText
-	waitbutton
-	closetext
-	end
-
-.TeacherCandyShopOpen:
-	farwritetext VTCandyShopOpenText
-	waitbutton
-	closetext
-	end
-
-.TeacherCandyShopSoon:
-	farwritetext VTCandyShopSoonText
-	waitbutton
-	closetext
-	end
+	jumptextfaceplayer VermilionCityTeacherText
 
 VermilionMachopOwner:
-	faceplayer
-	opentext
-	checkevent EVENT_CANDY_SHOP
-	iffalse .GrumpCandyShopOpen
-	checkevent EVENT_BLUE_IN_CINNABAR
-	iftrue .GrumpCandyShopSoon
-	writetext VermilionMachopOwnerText
-	waitbutton
-	closetext
-	end
-
-.GrumpCandyShopSoon:
-	farwritetext GrumpCandyShopSoonText
-	waitbutton
-	closetext
-	end
-
-.GrumpCandyShopOpen:
-	farwritetext GrumpCandyShopOpenText
-	waitbutton
-	closetext
-	end
+	jumptextfaceplayer VermilionMachopOwnerText
 
 VermilionMachop:
 	opentext
@@ -134,6 +128,9 @@ VermilionMachop:
 
 VermilionCitySuperNerdScript:
 	jumptextfaceplayer VermilionCitySuperNerdText
+
+VermilionPrisonGuard2Script:
+	end
 
 VermilionSnorlax:
 	opentext
@@ -215,29 +212,6 @@ VermilionCityPortSign:
 
 VermilionCityPokecenterSign:
 	jumpstd PokecenterSignScript
-
-VermilionCityMartSign:
-	opentext
-	checkevent EVENT_CANDY_SHOP
-	iffalse .CandyShopOpen
-	checkevent EVENT_BLUE_IN_CINNABAR
-	iftrue .CandyShopSoon
-	writetext VMartText
-	waitbutton
-	closetext
-	end
-
-.CandyShopOpen:
-	farwritetext CandyShopOpenSignText
-	waitbutton
-	closetext
-	end
-
-.CandyShopSoon:
-	farwritetext CandyShopOpenSoonSignText
-	waitbutton
-	closetext
-	end
 
 VermilionCityHiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_VERMILION_CITY_HIDDEN_FULL_HEAL
@@ -574,35 +548,36 @@ VermilionCity_MapEvents:
 	def_warp_events
 	warp_event  5,  5, VERMILION_FISHING_SPEECH_HOUSE, 1
 	warp_event  9,  5, VERMILION_POKECENTER_1F, 1
-	warp_event  7, 13, POKEMON_FAN_CLUB, 1
-	warp_event 13, 13, VERMILION_MAGNET_TRAIN_SPEECH_HOUSE, 1
+	warp_event  8, 13, POKEMON_FAN_CLUB, 1
+	warp_event 15, 13, VERMILION_MAGNET_TRAIN_SPEECH_HOUSE, 1
 	warp_event 21, 13, VERMILION_MART, 2
 	warp_event 21, 17, VERMILION_DIGLETTS_CAVE_SPEECH_HOUSE, 1
-	warp_event 10, 19, VERMILION_GYM, 1
+	warp_event 10, 21, VERMILION_GYM, 1
 	warp_event 19, 31, VERMILION_PORT_PASSAGE, 1
 	warp_event 20, 31, VERMILION_PORT_PASSAGE, 2
 	warp_event 34,  7, DIGLETTS_CAVE, 1
-	warp_event  7, 14, POKEMON_FAN_CLUB, 2
 
 	def_coord_events
+	coord_event  8, 14, SCENE_VERMILIONCITY_PRISON_GUARD, VermilionCityPrisonGuardArrivalScript
 
 	def_bg_events
 	bg_event 25,  3, BGEVENT_READ, VermilionCitySign
-	bg_event  5, 19, BGEVENT_READ, VermilionGymSign
-	bg_event  5, 13, BGEVENT_READ, PokemonFanClubSign
+	bg_event  5, 21, BGEVENT_READ, VermilionGymSign
+	bg_event  9, 15, BGEVENT_READ, PokemonFanClubSign
 	bg_event 33,  9, BGEVENT_READ, VermilionCityDiglettsCaveSign
 	bg_event 27, 15, BGEVENT_READ, VermilionCityPortSign
 	bg_event 10,  5, BGEVENT_READ, VermilionCityPokecenterSign
 	bg_event 22, 13, BGEVENT_READ, VermilionCityMartSign
-	bg_event 12, 19, BGEVENT_ITEM, VermilionCityHiddenFullHeal
+	bg_event 12, 21, BGEVENT_ITEM, VermilionCityHiddenFullHeal
 
 	def_object_events
 	object_event 18,  9, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionCityTeacherScript, -1
 	object_event 23,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionMachopOwner, -1
 	object_event 26,  7, SPRITE_MACHOP, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_SCRIPT, 0, VermilionMachop, EVENT_VERMILION_ALERT
-	object_event 14, 16, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VermilionCitySuperNerdScript, -1
+	object_event 28, 13, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VermilionCitySuperNerdScript, -1
 	object_event 34,  8, SPRITE_BIG_SNORLAX, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionSnorlax, EVENT_VERMILION_CITY_SNORLAX
-	object_event 31, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VermilionGymBadgeGuy, -1
-	object_event  7, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VermilionPrisonGuard, -1
+	object_event 18, 19, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VermilionGymBadgeGuy, -1
+	object_event  8, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VermilionPrisonGuard, EVENT_PRISON_GUARD_MOVED
+	object_event  7, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VermilionPrisonGuard2Script, EVENT_PRISON_GUARD_MOVED2
 	object_event 19, 27, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, VermilionTownCityPolice2Script, EVENT_BEAT_CITY_POLICE_VERMILION
 	object_event 17,  6, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, VermilionTownCityPolice1Script, EVENT_BEAT_CITY_POLICE_VERMILION

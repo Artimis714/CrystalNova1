@@ -68,7 +68,6 @@ Landmarks:
 	landmark 100,  36, CeruleanCityName
 	landmark  92,  28, CeruleanCaveName
 	landmark 100,  28, Route24Name
-	landmark 116,  20, Route25Name
 	landmark 100,  44, Route5Name
 	landmark 108,  60, UndergroundName
 	landmark 100,  60, Route6Name

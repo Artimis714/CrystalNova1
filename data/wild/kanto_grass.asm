@@ -860,39 +860,6 @@ KantoGrassWildMons:
 	db  1, VENOMOTH, 	  1,  20
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_25
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	;  %, species,		min, max
-	db 30, RATTATA, 	  1,  20
-	db 30, DODUO, 	          1,  20
-	db 20, POLIWAG, 	  1,  20
-	db 10, PONYTA, 	          1,  20
-	db  5, MANKEY, 	          1,  20
-	db  4, FARFETCH_D, 	  1,  20
-	db  1, SNORLAX, 	  1,  20
-
-	; day
-	;  %, species,		min, max
-	db 30, PIDGEY, 	          1,  20
-	db 30, RATTATA, 	  1,  20
-	db 20, DODUO, 	          1,  20
-	db 10, POLIWAG, 	  1,  20
-	db  5, PIDGEOTTO, 	  9,  20
-	db  4, PIKACHU, 	 10,  20
-	db  1, EEVEE, 	          1,  20
-
-	; nite
-	;  %, species,		min, max
-	db 30, RATTATA, 	  1,  20
-	db 30, POLIWAG, 	  1,  20
-	db 20, DODUO, 	          1,  20
-	db 10, VENONAT, 	  1,  20
-	db  5, PARAS, 	          1,  20
-	db  4, CLEFAIRY, 	  1,  20
-	db  1, VENOMOTH, 	  1,  20
-	end_grass_wildmons
-
 	def_grass_wildmons ROUTE_26
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn

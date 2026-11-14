@@ -75,9 +75,6 @@ LavenderTown_Blocks:
 PalletTown_Blocks:
 	INCBIN "maps/PalletTown.blk"
 
-Route25_Blocks:
-	INCBIN "maps/Route25.blk"
-
 Route24_Blocks:
 	INCBIN "maps/Route24.blk"
 
@@ -1150,3 +1147,6 @@ BreakwaterLighthouseObservationDeck_Blocks:
 
 BreakwaterGym_Blocks:
 	INCBIN "maps/BreakwaterGym.blk"
+
+CitrineLab_Blocks:
+	INCBIN "maps/CitrineLab.blk"

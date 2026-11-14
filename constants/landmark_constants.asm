@@ -62,7 +62,6 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_CERULEAN_CITY     ; 37
 	const LANDMARK_CERULEAN_CAVE
 	const LANDMARK_ROUTE_24          ; 38
-	const LANDMARK_ROUTE_25          ; 39
 	const LANDMARK_ROUTE_5           ; 3a
 	const LANDMARK_UNDERGROUND_PATH  ; 3b
 	const LANDMARK_ROUTE_6           ; 3c

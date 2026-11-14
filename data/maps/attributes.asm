@@ -356,12 +356,8 @@ ENDM
 	connection south, Route10North, ROUTE_10_NORTH, 20
 	connection west, CeruleanCity, CERULEAN_CITY, -9
 
-	map_attributes Route24, ROUTE_24, $2c, NORTH | SOUTH
-	connection north, Route25, ROUTE_25, 0
+	map_attributes Route24, ROUTE_24, $2c, SOUTH
 	connection south, CeruleanCity, CERULEAN_CITY, -6
-
-	map_attributes Route25, ROUTE_25, $2c, SOUTH
-	connection south, Route24, ROUTE_24, 0
 
 	map_attributes Route3, ROUTE_3, $2c, WEST | EAST
 	connection west, PewterCity, PEWTER_CITY, -5
@@ -742,3 +738,4 @@ ENDM
 	map_attributes BreakwaterLighthouseF4, BREAKWATER_LIGHTHOUSEF4, $00, 0
 	map_attributes BreakwaterLighthouseObservationDeck, BREAKWATER_LIGHTHOUSE_OBV, $24, 0
 	map_attributes BreakwaterGym, BREAKWATER_GYM, $00, 0
+	map_attributes CitrineLab, CITRINE_LAB, $00, 0

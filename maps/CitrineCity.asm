@@ -276,6 +276,7 @@ CitrineCity_MapEvents:
 	warp_event 13, 21, CITRINE_GAMECORNER, 1
 	warp_event 13, 11, MOVE_DELETERS_HOUSE, 1
 	warp_event 19, 29, TRAINER_HOUSE_1F, 1
+	warp_event 23, 21, CITRINE_LAB, 2
 
 	def_coord_events
 

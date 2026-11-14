@@ -132,16 +132,6 @@ KantoWaterWildMons:
 	db  1, POLIWRATH, 	 50,  99
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_25
-	db 4 percent ; encounter rate
-	;  %, species,		min, max
-	db 35, KRABBY, 	          1,  30
-	db 25, TENTACOOL, 	  1,  30
-	db 25, STARYU, 	          1,  45
-	db 14, KINGLER, 	 25,  45
-	db  1, STARMIE, 	 30,  45
-	end_water_wildmons
-
 	def_water_wildmons ROUTE_26
 	db 6 percent ; encounter rate
 	;  %, species,		min, max

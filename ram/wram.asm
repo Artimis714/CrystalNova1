@@ -3063,7 +3063,7 @@ wColosseumSceneID::                               db
 wTimeCapsuleSceneID::                             db
 wPowerPlantSceneID::                              db
 wCeruleanGymSceneID::                             db
-wRoute25SceneID::                                 db
+wRoute24SceneID::                                 db
 wTrainerHouseB1FSceneID::                         db
 wVictoryRoadGateSceneID::                         db
 wSaffronMagnetTrainStationSceneID::               db
@@ -3137,6 +3137,7 @@ wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wMossCaveSceneID::                                db
+wVermilionCitySceneID::                           db
 
 	ds 48
 

@@ -70,7 +70,6 @@ ENDM
 	morn_auto_weather_map ROUTE_9, AUTOMATIC_SUN
 	morn_auto_weather_map ROUTE_10_NORTH, AUTOMATIC_SUN
 	morn_auto_weather_map ROUTE_24, AUTOMATIC_SUN
-	morn_auto_weather_map ROUTE_25, AUTOMATIC_SUN
 	morn_auto_weather_map ROUTE_5, AUTOMATIC_SMOG
 	morn_auto_weather_map ROUTE_6, AUTOMATIC_SMOG
 	morn_auto_weather_map ROUTE_7, AUTOMATIC_SMOG
@@ -137,7 +136,6 @@ ENDM
 	day_auto_weather_map ROUTE_9, AUTOMATIC_RAIN
 	day_auto_weather_map ROUTE_10_NORTH, AUTOMATIC_RAIN
 	day_auto_weather_map ROUTE_24, AUTOMATIC_RAIN
-	day_auto_weather_map ROUTE_25, AUTOMATIC_RAIN
 	day_auto_weather_map ROUTE_5, AUTOMATIC_SUN
 	day_auto_weather_map ROUTE_6, AUTOMATIC_SUN
 	day_auto_weather_map ROUTE_7, AUTOMATIC_SUN

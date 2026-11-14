@@ -646,6 +646,7 @@ InitializeEventsScript:
 	setevent EVENT_SEAFOAM_BLUE_ORB
 	setevent EVENT_TEMPEST_YELLOW_ORB
 	setevent EVENT_CINNABAR_RED_ORB
+	setevent EVENT_PRISON_GUARD_MOVED2
 	setevent EVENT_INITIALIZED_EVENTS
 	callasm .mystery_gift_flag
 	endcallback

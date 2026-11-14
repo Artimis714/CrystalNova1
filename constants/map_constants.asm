@@ -229,6 +229,7 @@ ENDM
 	map_const BREAKWATER_LIGHTHOUSEF4,                     10, 10 ; 27
 	map_const BREAKWATER_LIGHTHOUSE_OBV,                   10,  8 ; 28
 	map_const BREAKWATER_GYM,                               7,  8 ; 29
+	map_const BILLS_HOUSE,                                  4,  4 ; 30
 	endgroup
 
 	newgroup CERULEAN                                             ;  7
@@ -239,14 +240,12 @@ ENDM
 	map_const CERULEAN_GYM,                                 5,  8 ;  6
 	map_const CERULEAN_MART,                                6,  4 ;  7
 	map_const ROUTE_10_POKECENTER_1F,                       5,  4 ;  8
-	map_const POWER_PLANT,                                 10,  9 ; 10
-	map_const BILLS_HOUSE,                                  4,  4 ; 11
-	map_const ROUTE_4,                                     20,  9 ; 12
-	map_const ROUTE_9,                                     30,  9 ; 13
-	map_const ROUTE_10_NORTH,                              10,  9 ; 14
-	map_const ROUTE_24,                                    10,  9 ; 15
-	map_const ROUTE_25,                                    30,  9 ; 16
-	map_const CERULEAN_CITY,                               20, 18 ; 17
+	map_const POWER_PLANT,                                 10,  9 ;  9
+	map_const ROUTE_4,                                     20,  9 ; 10
+	map_const ROUTE_9,                                     30,  9 ; 11
+	map_const ROUTE_10_NORTH,                              10,  9 ; 12
+	map_const ROUTE_24,                                    10, 18 ; 13
+	map_const CERULEAN_CITY,                               20, 18 ; 14
 	endgroup
 
 	newgroup AZALEA                                               ;  8
@@ -529,6 +528,7 @@ ENDM
 	map_const MOVE_DELETERS_HOUSE,                          4,  4 ; 14
 	map_const TRAINER_HOUSE_1F,                             5,  7 ; 15
 	map_const TRAINER_HOUSE_B1F,                            5,  8 ; 16
+	map_const CITRINE_LAB,                                  7,  6 ; 17
 	endgroup
 
 	newgroup MOSSISLEGROUP                                        ; 27

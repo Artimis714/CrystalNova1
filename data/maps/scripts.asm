@@ -347,7 +347,6 @@ INCLUDE "maps/Route35.asm"
 INCLUDE "maps/Route43.asm"
 INCLUDE "maps/Route44.asm"
 INCLUDE "maps/Route45.asm"
-INCLUDE "maps/Route25.asm"
 
 
 SECTION "Map Scripts 21", ROMX
@@ -563,3 +562,4 @@ INCLUDE "maps/BreakwaterLighthouseF3.asm"
 INCLUDE "maps/BreakwaterLighthouseF4.asm"
 INCLUDE "maps/BreakwaterLighthouseObservationDeck.asm"
 INCLUDE "maps/BreakwaterGym.asm"
+INCLUDE "maps/CitrineLab.asm"

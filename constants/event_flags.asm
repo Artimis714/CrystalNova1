@@ -1157,6 +1157,8 @@
 	const EVENT_GOT_BASEMENT_KEY
 	const EVENT_GOT_PRISON_KEY
 	const EVENT_GOT_LAB_KEY
+	const EVENT_PRISON_GUARD_MOVED
+	const EVENT_PRISON_GUARD_MOVED2
 ; Unused: next 115 events
 
 	const_next 1600
