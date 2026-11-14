@@ -715,4 +715,16 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
 
+	trainerclass E4AGATHA ; 44
+	const AGATHA1
+
+	trainerclass GIOVANNI ; 45
+	const GIOVANNI1
+
+	trainerclass JESSIEJAMES ; 46
+	const JESSIEJAMES1
+
+	trainerclass LORELEI ; 47
+	const LORELEI1
+
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

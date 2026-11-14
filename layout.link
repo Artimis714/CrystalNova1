@@ -173,6 +173,7 @@ ROMX $3e
 	"bank3E"
 ROMX $3f
 	"bank3F"
+	"Enemy Trainer Parties 1"
 ROMX $40
 	"mobile40"
 ROMX $41
@@ -235,6 +236,7 @@ ROMX $59
 	"Pics 18"
 ROMX $5a
 	"Pics 19"
+	"Map Scripts 29"
 ROMX $5b
 	"bank5B"
 	"Pics 20"
@@ -299,6 +301,7 @@ ROMX $73
 	"Pokedex Entries 129-192"
 ROMX $74
 	"Pokedex Entries 193-251"
+	"Enemy Trainer Parties 2"
 ROMX $77
 	"Unown Font"
 	"Tileset Data 7"

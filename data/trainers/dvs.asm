@@ -69,4 +69,8 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; OFFICER
 	dn 15, 15, 15, 15 ; GRUNTF
 	dn  9,  8,  8,  8 ; MYSTICALMAN
+	dn 15, 14, 15, 14 ; AGATHA
+	dn 15, 15, 15, 15 ; GIOVANNI
+	dn 12, 12, 12, 12 ; JESSIEJAMES
+	dn 14, 15, 14, 15 ; LORELEI
 	assert_table_length NUM_TRAINER_CLASSES

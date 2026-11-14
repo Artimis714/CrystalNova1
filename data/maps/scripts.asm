@@ -217,6 +217,7 @@ SECTION "Map Scripts 13", ROMX
 INCLUDE "maps/RedsHouse2F.asm"
 INCLUDE "maps/OlivinePunishmentSpeechHouse.asm"
 INCLUDE "maps/ViridianGym.asm"
+INCLUDE "maps/SoulHouse.asm"
 
 
 
@@ -457,7 +458,6 @@ INCLUDE "maps/BluesHouse.asm"
 INCLUDE "maps/Route2NuggetHouse.asm"
 INCLUDE "maps/Route2Gate.asm"
 INCLUDE "maps/SafariZoneWardensHome.asm"
-INCLUDE "maps/SoulHouse.asm"
 INCLUDE "maps/ViridianPokecenter1F.asm"
 INCLUDE "maps/SeafoamGym.asm"
 INCLUDE "maps/LavRadioTower1F.asm"
