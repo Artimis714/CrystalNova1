@@ -350,9 +350,8 @@ RaichuEvosAttacks:
 	db 1, QUICK_ATTACK
 	db 5, THUNDER_WAVE
 	db 20, RAIN_DANCE
-	db 22, SLAM
+	db 22, BODY_SLAM
 	db 27, SHOCK_WAVE
-	db 32, BODY_SLAM
 	db 44, MEGA_PUNCH
 	db 65, THUNDERBOLT
 	db 85, THUNDER
@@ -454,7 +453,7 @@ NidokingEvosAttacks:
 	db 1, POISON_FANG
 	db 20, MAGNITUDE
 	db 27, ACID
-	db 40, BONEMARANG
+	db 40, BONEMERANG
 	db 65, CRUNCH
 	db 80, THRASH
 	db 0 ; no more level-up moves
@@ -988,9 +987,8 @@ VictreebelEvosAttacks:
 	db 1, RAZOR_LEAF
 	db 28, ACID
 	db 33, STUN_SPORE
-	db 38, SLAM
+	db 38, BODY_SLAM
 	db 43, SYNTHESIS
-	db 48, BODY_SLAM
 	db 55, SLUDGE_BOMB
 	db 70, GIGA_DRAIN
 	db 85, PETAL_DANCE
@@ -3107,6 +3105,23 @@ PinecoEvosAttacks:
 	db 36, SPIKES
 	db 45, SELFDESTRUCT
 	db 55, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+ForretressEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, LEECH_SEED
+	db 1, PROTECT
+	db 8, SELFDESTRUCT
+	db 15, TAKE_DOWN
+	db 22, RAPID_SPIN
+	db 29, BIDE
+	db 31, SONICBOOM
+	db 33, SPIKES
+	db 35, SANDSTORM
+	db 37, FLASH_CANNON
+	db 39, SCREECH
+	db 49, AMNESIA
+	db 70, EXPLOSION
 	db 0 ; no more level-up moves
 
 DunsparceEvosAttacks:
