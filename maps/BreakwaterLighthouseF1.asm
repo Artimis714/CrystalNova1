@@ -23,3 +23,4 @@ BreakwaterLighthouseF1_MapEvents:
 	def_bg_events
 
 	def_object_events
+

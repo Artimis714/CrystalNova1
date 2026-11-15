@@ -73,4 +73,9 @@ TrainerClassDVs:
 	dn 15, 15, 15, 15 ; GIOVANNI
 	dn 12, 12, 12, 12 ; JESSIEJAMES
 	dn 14, 15, 14, 15 ; LORELEI
+	dn 15, 15, 15, 15 ; GREEN
+	dn 12, 12, 12, 12 ; VET_M
+	dn 13, 13, 13, 13 ; VET_F
+	dn 10, 10, 10, 10 ; ARCHAEOLOGIST
+	dn 14, 14, 14, 14 ; OFFICER_JENNY
 	assert_table_length NUM_TRAINER_CLASSES

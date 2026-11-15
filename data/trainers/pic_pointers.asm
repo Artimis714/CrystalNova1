@@ -74,4 +74,9 @@ TrainerPicPointers::
 	dba GiovanniPic
 	dba JessieJamesPic
 	dba LoreleiPic
+	dba GreenPic
+	dba VetMPic
+	dba VetFPic
+	dba ArchaeologistPic
+	dba OfficerJennyPic
 	assert_table_length NUM_TRAINER_CLASSES

@@ -75,4 +75,9 @@ TrainerEncounterMusic::
 	db MUSIC_ROCKET_ENCOUNTER      ; giovanni
 	db MUSIC_ROCKET_ENCOUNTER      ; jessiejames
 	db MUSIC_BEAUTY_ENCOUNTER      ; lorelei
+	db MUSIC_LASS_ENCOUNTER        ; green
+	db MUSIC_HIKER_ENCOUNTER       ; VetM
+	db MUSIC_HIKER_ENCOUNTER       ; VetF
+	db MUSIC_HIKER_ENCOUNTER       ; Archaeologist
+	db MUSIC_OFFICER_ENCOUNTER     ; OfficerJenny
 	assert_table_length NUM_TRAINER_CLASSES + 1

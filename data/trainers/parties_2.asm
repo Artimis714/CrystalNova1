@@ -1890,3 +1890,15 @@ LoreleiGroup:
 	db "LORELEI@", TRAINERTYPE_NORMAL
 	db 10, DEWGONG
 	db -1 ; end
+
+GreenGroup:
+	; GREEN_T (1)
+	db "GREEN@", TRAINERTYPE_NORMAL
+	db 10, BULBASAUR
+	db -1 ; end
+
+OfficerJennyGroup:
+	; OFFICER_JENNY (1)
+	db "JENNY@", TRAINERTYPE_NORMAL
+	db 10, NINETALES
+	db -1 ; end

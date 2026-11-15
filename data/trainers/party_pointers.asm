@@ -74,4 +74,9 @@ TrainerGroups:
 	dba GiovanniGroup
 	dba JessieJamesGroup
 	dba LoreleiGroup
+	dba GreenGroup
+	dba VeteranMGroup
+	dba VeteranFGroup
+	dba ArchaeologistGroup
+	dba OfficerJennyGroup
 	assert_table_length NUM_TRAINER_CLASSES

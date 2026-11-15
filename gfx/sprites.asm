@@ -122,5 +122,6 @@ GiovanniSpriteGFX::            INCBIN "gfx/sprites/giovanni.2bpp"
 RattataBackSpriteGFX::         INCBIN "gfx/sprites/Rattata_Back2.2bpp"
 OrbSpriteGFX::                 INCBIN "gfx/sprites/Orb.2bpp"
 FeatherSpriteGFX:: 	       INCBIN "gfx/sprites/Feather.2bpp"
-GreenSpriteGFX::               INCBIN "gfx/sprites/green.2bpp"
 OfficerJennySpriteGFX::        INCBIN "gfx/sprites/officer_jenny.2bpp"
+GreenSpriteGFX::               INCBIN "gfx/sprites/green.2bpp"
+

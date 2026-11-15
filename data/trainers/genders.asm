@@ -74,4 +74,9 @@ BTTrainerClassGenders:
 	db MALE   ; GIOVANNI
 	db FEMALE ; JESSIEJAMES
 	db FEMALE ; LORELEI
+	db FEMALE ; GREEN
+	db MALE   ; VET_M
+	db FEMALE ; VET_F
+	db MALE   ; ARCHAEOLOGIST
+	db FEMALE ; OFFICER_JENNY
 	assert_table_length NUM_TRAINER_CLASSES - 1 ; exclude MYSTICALMAN

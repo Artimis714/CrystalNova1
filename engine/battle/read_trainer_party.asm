@@ -279,7 +279,7 @@ GetTrainerName::
 CopyTrainerName:
 	ld de, wStringBuffer1
 	push de
-	ld bc, NAME_LENGTH
+	ld bc, TRAINER_NAME_LENGTH
 	ld a, [wTrainerGroupBank]
 	call FarCopyBytes
 	pop de

@@ -727,4 +727,19 @@ DEF KRIS EQU __trainer_class__
 	trainerclass LORELEI ; 47
 	const LORELEI1
 
+	trainerclass GREEN ; 48
+	const GREEN1
+
+	trainerclass VET_M ; 49
+	const RONAN
+
+	trainerclass VET_F ; 4a
+	const SUE
+
+	trainerclass ARCHAEOLOGIST ; 4b
+	const GEOFFREY
+
+	trainerclass OFFICER_JENNY ; 4c
+	const JENNY
+
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

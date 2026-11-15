@@ -717,6 +717,15 @@ GiovanniPic:         INCBIN "gfx/trainers/giovanni.2bpp.lz"
 JessieJamesPic:      INCBIN "gfx/trainers/jessie_james.2bpp.lz"
 LoreleiPic:          INCBIN "gfx/trainers/lorelei.2bpp.lz"
 OmastarBackpic:      INCBIN "gfx/pokemon/omastar/back.2bpp.lz"
+GreenPic:            INCBIN "gfx/trainers/greenFront.2bpp.lz"
+
+
+SECTION "Additional Trainers", ROMX
+
+VetMPic:             INCBIN "gfx/trainers/veteran_m.2bpp.lz"
+VetFPic:             INCBIN "gfx/trainers/veteran_f.2bpp.lz"
+ArchaeologistPic:    INCBIN "gfx/trainers/RuinManiac.2bpp.lz"
+OfficerJennyPic:     INCBIN "gfx/trainers/officer_f.2bpp.lz"
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,
 ; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).

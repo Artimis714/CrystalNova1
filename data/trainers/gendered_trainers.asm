@@ -26,6 +26,8 @@ MaleTrainers:
 	db SAGE
 	db BIKER
 	db SCIENTIST
+	db VET_M
+	db ARCHAEOLOGIST
 .End
 
 FemaleTrainers:
@@ -39,4 +41,6 @@ FemaleTrainers:
 	db KIMONO_GIRL
 	db POKEFANF
 	db COOLTRAINERF
+	db VET_F
+	db OFFICER_JENNY
 .End

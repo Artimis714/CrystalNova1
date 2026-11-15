@@ -2015,5 +2015,22 @@ RedGroup:
 	db 100, GENGAR, MIRACLE_SEED, SHADOW_BALL, DOUBLE_TEAM, FLAMETHROWER, GIGA_DRAIN
 	db -1 ; end
 
+VeteranMGroup:
+	; Vet_M (1)
+	db "RONAN@", TRAINERTYPE_NORMAL
+	db 10, HERACROSS
+	db -1 ; end
 
+VeteranFGroup:
+	; Vet_F (1)
+	db "SUE@", TRAINERTYPE_NORMAL
+	db 10, PONYTA
+	db -1 ; end
+
+ArchaeologistGroup:
+	; ARCHAEOLOGIST (1)
+	db "GEOFF@", TRAINERTYPE_NORMAL
+	db 10, CUBONE
+	db -1 ; end
+	
 

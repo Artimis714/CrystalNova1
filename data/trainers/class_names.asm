@@ -70,6 +70,11 @@ TrainerClassNames::
 	li "MYSTICALMAN"
 	li "ELITE FOUR"
 	li "LEADER"
-	li "ROCKETS"
+	li ""
 	li "ELITE FOUR"
+	li "<PKMN> TRAINER"
+	li "VETERAN"
+	li "VETERAN"
+	li "ARCHEOLOGIST"
+	li "OFFICER"
 	assert_list_length NUM_TRAINER_CLASSES
