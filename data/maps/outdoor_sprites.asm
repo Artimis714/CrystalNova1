@@ -57,23 +57,32 @@ PewterGroupSprites:
 	db 0 ; end
 
 CinnabarGroupSprites:
-; Route19, Route20, Route21, CinnabarIsland
+; Route19, Route20, Route21, CinnabarIsland, Thundersea, SouthernSea, BreakwaterIsle, TempestIsle
 	db SPRITE_BLUE
 	db SPRITE_OFFICER
+	db SPRITE_OFFICER_JENNY
 	db SPRITE_SWIMMER_GIRL
 	db SPRITE_SWIMMER_GUY
-	; max 4 of 9 walking sprites
+	db SPRITE_LASS
+	db SPRITE_SAILOR
+	db SPRITE_POKEFAN_M
+	db SPRITE_BLACK_BELT
+	; max 9 of 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_MOLTRES
 	db SPRITE_ZAPDOS
 	db SPRITE_ORB
+	db SPRITE_FISHER
+	db SPRITE_YOUNGSTER
+	db SPRITE_TEACHER
+	db SPRITE_GRANNY
 	db 0 ; end
 
 
 ; CeruleanCity and Route5 are connected
 CeruleanGroupSprites:
-; Route4, Route9, Route10North, Route24, Route25, CeruleanCity
+; Route4, Route9, Route10North, Route24, CeruleanCity
 SaffronGroupSprites:
 ; Route5, SaffronCity
 	db SPRITE_COOLTRAINER_M
@@ -99,7 +108,8 @@ CeladonGroupSprites:
 	db SPRITE_LASS
 	db SPRITE_BIKER
 	db SPRITE_OFFICER
-	; 7 of max 9 walking sprites
+	db SPRITE_OFFICER_JENNY
+	; 8 of max 9 walking sprites
 	db SPRITE_POLIWAG
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
@@ -121,7 +131,8 @@ FuchsiaGroupSprites:
 	db SPRITE_SUPER_NERD
 	db SPRITE_BIKER
 	db SPRITE_OFFICER
-	; 7 of max 9 walking sprites
+	db SPRITE_OFFICER_JENNY
+	; 8 of max 9 walking sprites
 	db SPRITE_BIG_SNORLAX
 	db SPRITE_MACHOP
 	db SPRITE_POKE_BALL
@@ -133,12 +144,13 @@ IndigoGroupSprites:
 ; Route23
 	db SPRITE_SWIMMER_GIRL
 	db SPRITE_SWIMMER_GUY
+	db SPRITE_OFFICER_JENNY
 	db SPRITE_OFFICER
 	db SPRITE_FISHER
 	db SPRITE_SCIENTIST
 	db SPRITE_LASS
 	db SPRITE_POKEFAN_F
-	; 7 of max 9 walking sprites
+	; 8 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_YOUNGSTER
@@ -152,7 +164,7 @@ IndigoGroupSprites:
 MossIsleGroupSprites:
 	db SPRITE_SWIMMER_GIRL
 	db SPRITE_SWIMMER_GUY
-	db SPRITE_OFFICER
+	db SPRITE_OFFICER_JENNY
 	db SPRITE_FISHER
 	db SPRITE_LASS
 	; 5 of max 9 walking sprites

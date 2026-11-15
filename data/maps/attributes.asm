@@ -739,3 +739,4 @@ ENDM
 	map_attributes BreakwaterLighthouseObservationDeck, BREAKWATER_LIGHTHOUSE_OBV, $24, 0
 	map_attributes BreakwaterGym, BREAKWATER_GYM, $00, 0
 	map_attributes CitrineLab, CITRINE_LAB, $00, 0
+	map_attributes BreakwaterSchoolhouse, BREAKWATER_SCHOOLHOUSE, $00, 0

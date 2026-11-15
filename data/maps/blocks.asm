@@ -369,6 +369,7 @@ BetaPewterMuseumOfScience1F_Blocks: ; unreferenced
 BetaPewterMuseumOfScience2F_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaPewterMuseumOfScience2F.blk"
 
+BreakwaterSchoolhouse_Blocks:
 EarlsPokemonAcademy_Blocks:
 	INCBIN "maps/EarlsPokemonAcademy.blk"
 

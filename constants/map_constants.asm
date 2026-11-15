@@ -230,6 +230,7 @@ ENDM
 	map_const BREAKWATER_LIGHTHOUSE_OBV,                   10,  8 ; 28
 	map_const BREAKWATER_GYM,                               7,  8 ; 29
 	map_const BILLS_HOUSE,                                  4,  4 ; 30
+	map_const BREAKWATER_SCHOOLHOUSE,                       4,  8 ; 31 
 	endgroup
 
 	newgroup CERULEAN                                             ;  7

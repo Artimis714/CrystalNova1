@@ -735,6 +735,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass VET_F ; 4a
 	const SUE
+	const BREAKWATER
 
 	trainerclass ARCHAEOLOGIST ; 4b
 	const GEOFFREY

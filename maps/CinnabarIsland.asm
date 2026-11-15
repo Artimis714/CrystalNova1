@@ -272,11 +272,25 @@ CinnabarIslandBlueText:
 	para "the project made"
 	line "it off CINNABAR."
 
-	para "If you find any-"
-	line "thing let me know."
+	para "..."
+	line "..."
+
+	para "No, I've just been"
+	line "inside the VOLCANO"
+
+	para "and I didn't find"
+	line "any trace of the"
+	cont "old lab."
+
+	para "..."
+	line "..."
+
+	para "Thanks, if you"
+	line "find anything let"
+	cont "me know."
 
 	para "I'll be back in my"
-	line "GYM in Cinnabar."
+	line "GYM in VIRIDIAN."
 	done
 
 CinnabarIslandGymSignText:
@@ -284,8 +298,8 @@ CinnabarIslandGymSignText:
 	line "here…"
 
 	para "CINNABAR GYM has"
-	line "relocated to SEA-"
-	cont "FOAM ISLANDS."
+	line "relocated to"
+	cont "BREAKWATER ISLE."
 
 	para "BLAINE"
 	done
@@ -293,13 +307,7 @@ CinnabarIslandGymSignText:
 CinnabarIslandSignText:
 	text "CINNABAR ISLAND"
 
-	para "The Fiery Town of"
-	line "Burning Desire"
-
-	para "Spray Paint"
-	line "Graffiti reads:"
-
-	para "FUCK JOHTO!"
+	para "Never forget."
 	done
 
 CinnabarIsland_MapEvents:
