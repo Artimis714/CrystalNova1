@@ -220,17 +220,16 @@ ENDM
 	map_const BREAKWATER_POKECENTER,                        5,  4 ; 18
 	map_const BREAKWATER_MART,                              6,  4 ; 19
 	map_const BREAKWATER_HOUSE1,                            4,  4 ; 20
-	map_const BREAKWATER_HOUSE2,                            4,  4 ; 21
-	map_const CORAL_SEA,				       10, 25 ; 22
-	map_const BREAKWATER_LIGHTHOUSEB1,                     11, 11 ; 23
-	map_const BREAKWATER_LIGHTHOUSEF1,                     10, 10 ; 24
-	map_const BREAKWATER_LIGHTHOUSEF2,                     10, 10 ; 25
-	map_const BREAKWATER_LIGHTHOUSEF3,                     10, 10 ; 26
-	map_const BREAKWATER_LIGHTHOUSEF4,                     10, 10 ; 27
-	map_const BREAKWATER_LIGHTHOUSE_OBV,                   10,  8 ; 28
-	map_const BREAKWATER_GYM,                               7,  8 ; 29
-	map_const BILLS_HOUSE,                                  4,  4 ; 30
-	map_const BREAKWATER_SCHOOLHOUSE,                       4,  8 ; 31 
+	map_const CORAL_SEA,				       10, 25 ; 21
+	map_const BREAKWATER_LIGHTHOUSEB1,                     11, 11 ; 22
+	map_const BREAKWATER_LIGHTHOUSEF1,                     10, 10 ; 23
+	map_const BREAKWATER_LIGHTHOUSEF2,                     10, 10 ; 24
+	map_const BREAKWATER_LIGHTHOUSEF3,                     10, 10 ; 25
+	map_const BREAKWATER_LIGHTHOUSEF4,                     10, 10 ; 26
+	map_const BREAKWATER_LIGHTHOUSE_OBV,                   10,  8 ; 27
+	map_const BREAKWATER_GYM,                               7,  8 ; 28
+	map_const BILLS_HOUSE,                                  4,  4 ; 29
+	map_const BREAKWATER_SCHOOLHOUSE,                       4,  8 ; 30 
 	endgroup
 
 	newgroup CERULEAN                                             ;  7
@@ -544,6 +543,7 @@ ENDM
 	map_const WHISPER_SEA,                                 30, 18 ;  9
 	map_const MOSS_HOUSE_1,                                 4,  4 ; 10
 	map_const MOSS_HOUSE_2,                                 4,  4 ; 11
+	map_const BREAKWATER_HOUSE2,                            4,  4 ; 12
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 27

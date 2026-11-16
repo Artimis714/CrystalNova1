@@ -11,8 +11,8 @@ BreakwaterLighthouseF1_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  8, 17, BREAKWATER_ISLE, 6
-	warp_event  9, 17, BREAKWATER_ISLE, 6
+	warp_event  8, 17, BREAKWATER_ISLE, 5
+	warp_event  9, 17, BREAKWATER_ISLE, 5
 	warp_event 17, 11, BREAKWATER_LIGHTHOUSEF2, 1
 	warp_event  5,  5, BREAKWATER_LIGHTHOUSEF2, 2
 	warp_event 11,  9, BREAKWATER_LIGHTHOUSEF2, 3

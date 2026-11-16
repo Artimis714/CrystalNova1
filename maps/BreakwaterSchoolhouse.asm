@@ -648,8 +648,8 @@ BreakwaterSchoolhouse_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3, 15, BREAKWATER_ISLE, 9
-	warp_event  4, 15, BREAKWATER_ISLE, 9
+	warp_event  3, 15, BREAKWATER_ISLE, 8
+	warp_event  4, 15, BREAKWATER_ISLE, 8
 
 	def_coord_events
 

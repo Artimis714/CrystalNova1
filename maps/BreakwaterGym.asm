@@ -11,8 +11,8 @@ BreakwaterGym_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  6, 15, BREAKWATER_ISLE, 7
-	warp_event  7, 15, BREAKWATER_ISLE, 7
+	warp_event  6, 15, BREAKWATER_ISLE, 6
+	warp_event  7, 15, BREAKWATER_ISLE, 6
 
 	def_coord_events
 

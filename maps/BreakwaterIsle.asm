@@ -68,20 +68,11 @@ BreakwaterBlackBelt:
 BreakwaterRuinedBuildingScript:
 	jumptext RuinedBuildingText
 
-BreakwaterGreenHouseScript:
-	jumptext GreenHouseText
-
 BreakwaterBillsHouseScript: 
 	jumptext BillshouseText
 
 BreakwaterSchoolhouseScript:
 	jumptext BreakwaterSchoolText
-
-
-GreenHouseText:
-	text "<PKMN> TRAINER"
-	line "GREEN."
-	done
 
 BillshouseText:
 	text "BILL's SUMMER"
@@ -288,9 +279,8 @@ BreakwaterIsle_MapEvents:
 	def_warp_events
 	warp_event 30,  5, BREAKWATER_CAVE_1, 2
 	warp_event 23,  7, BREAKWATER_POKECENTER, 1
-	warp_event 25, 15, BREAKWATER_MART, 1
+	warp_event 25, 17, BREAKWATER_MART, 1
 	warp_event 29, 11, BREAKWATER_HOUSE1, 1
-	warp_event 21, 19, BREAKWATER_HOUSE2, 1
 	warp_event  5, 23, BREAKWATER_LIGHTHOUSEF1, 1
 	warp_event 18, 13, BREAKWATER_GYM, 1
 	warp_event 25, 21, BILLS_HOUSE, 1
@@ -300,7 +290,7 @@ BreakwaterIsle_MapEvents:
 
 	def_bg_events
 	bg_event 24,  7, BGEVENT_READ, BreakwaterPokeSign
-	bg_event 26, 15, BGEVENT_READ, BreakwaterMartSign
+	bg_event 26, 17, BGEVENT_READ, BreakwaterMartSign
 	bg_event 29,  7, BGEVENT_READ, BreakwaterIsleSign
 	bg_event 17, 15, BGEVENT_READ, BreakwaterIsleGymSign
 	bg_event  7, 25, BGEVENT_READ, BreakwaterLighthouseSign
@@ -308,7 +298,6 @@ BreakwaterIsle_MapEvents:
 	bg_event 15,  7, BGEVENT_READ, BreakwaterRuinedBuildingScript
 	bg_event 16,  7, BGEVENT_READ, BreakwaterRuinedBuildingScript
 	bg_event 17,  7, BGEVENT_READ, BreakwaterRuinedBuildingScript
-	bg_event 22, 20, BGEVENT_READ, BreakwaterGreenHouseScript
 	bg_event 26, 22, BGEVENT_READ, BreakwaterBillsHouseScript
 	bg_event 32, 18, BGEVENT_READ, BreakwaterSchoolhouseScript
 
@@ -322,4 +311,4 @@ BreakwaterIsle_MapEvents:
 	object_event 30, 27, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BreakwaterFisher2, -1
 	object_event 18, 21, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BreakwaterGranny, -1
 	object_event 31, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, BreakwaterCamper, -1
-	object_event 20, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BreakwaterBlackBelt, -1
+	object_event 20, 16, SPRITE_BLACK_BELT, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BreakwaterBlackBelt, -1

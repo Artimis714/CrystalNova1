@@ -73,7 +73,7 @@ MossIsleSageText:
 	done
 
 MossCaveSignText:
-	text "MOSS CAVE"
+	text "<PKMN> TRAINER GREEN"
 	done
 
 MossIsle_MapEvents:
@@ -89,14 +89,15 @@ MossIsle_MapEvents:
 	warp_event 25, 19, MOSS_WHISPER_GATE, 2
 	warp_event  9,  7, MOSS_HOUSE_1, 1
 	warp_event  5,  5, MOSS_HOUSE_2, 1
+	warp_event 19, 17, BREAKWATER_HOUSE2, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event  8, 17, BGEVENT_READ, MossPokeCenterSign
-	bg_event 22, 16, BGEVENT_READ, MossCaveSign
+	bg_event 20, 18, BGEVENT_READ, MossCaveSign
 
 	def_object_events
-	object_event 24, 20, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MossIsleFisher, -1
-	object_event 17, 14, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MossIsleLass, -1
+	object_event 15,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MossIsleFisher, -1
+	object_event 18, 20, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MossIsleLass, -1
 	object_event 11, 17, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MossIsleSage, -1
