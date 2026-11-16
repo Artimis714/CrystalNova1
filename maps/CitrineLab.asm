@@ -58,8 +58,8 @@ CitrineLab_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  0, 11, CITRINE_CITY, 17
-	warp_event  1, 11, CITRINE_CITY, 17
+	warp_event  0, 11, CITRINE_CITY, 18
+	warp_event  1, 11, CITRINE_CITY, 18
 
 	def_coord_events
 

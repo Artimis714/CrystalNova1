@@ -14,13 +14,63 @@ CitrineCity_MapScripts:
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, CitrineCityFlypointCallback
+	callback MAPCALLBACK_TILES, CitrineCityCheckLabDoorCallback
 
 CitrineCityFlypointCallback:
 	setflag ENGINE_FLYPOINT_CITRINE
 	endcallback
 
+CitrineCityCheckLabDoorCallback:
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_8
+	iftrue .UnlockLabDoor
+	changeblock 23, 21, $1F ; locked door
+	endcallback
+
+.UnlockLabDoor:
+	changeblock 23, 21, $70 ; unlocked door
+	endcallback
+
 CitrineDoorBiomedicalScript:
-	jumptext CitrineDoorLockedText
+	opentext
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_8
+	iftrue .Open
+	checkitem KEY_CHAIN
+	iffalse .Locked
+	checkevent EVENT_GOT_LAB_KEY
+	iffalse .Locked
+
+.Ask
+	writetext CitrineDoorBiomedicalUnlockPromptText
+	yesorno
+	iffalse .Declined
+
+.Unlock
+	playsound SFX_TRANSACTION
+	writetext CitrineDoorBiomedicalOpenedText
+	waitbutton
+	closetext
+	changeblock 23, 21, $70 ; unlocked door
+	reloadmappart
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_8
+	end
+
+.Locked
+	writetext CitrineDoorLockedText
+	waitbutton
+	closetext
+	end
+
+.Declined
+	writetext CitrineDoorBiomedicalDeclinedText
+	waitbutton
+	closetext
+	end
+
+.Open
+	writetext CitrineDoorBiomedicalIsOpenText
+	waitbutton
+	closetext
+	end
 
 CitrineFloristSign:
 	jumptext CitrineFloristSignText
@@ -92,6 +142,11 @@ CitrineCityTrainerHouseNPCText:
 	para "I want to see how"
 	line "my team measures"
 	cont "up against itself!"
+	done
+
+CitrineDoorBiomedicalIsOpenText:
+	text "The door is"
+	line "already unlocked."
 	done
 
 CitrineCityMoveTutorNPCText:
@@ -256,6 +311,25 @@ CitrineMoveTutorText:
 	cont "potential!"
 	done
 
+CitrineDoorBiomedicalUnlockPromptText:
+	text "The door is"
+	line "locked."
+
+	para "Would you like to"
+	line "unlock it with the"
+	cont "LABORATORY KEY?"
+	done
+
+CitrineDoorBiomedicalDeclinedText:
+	text "Better not to"
+	line "go in."
+	done
+
+CitrineDoorBiomedicalOpenedText:
+	text "<PLAYER> unlocked"
+	line "the CITRINE LAB!"
+	done
+
 CitrineCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -277,6 +351,7 @@ CitrineCity_MapEvents:
 	warp_event 13, 11, MOVE_DELETERS_HOUSE, 1
 	warp_event 19, 29, TRAINER_HOUSE_1F, 1
 	warp_event 23, 21, CITRINE_LAB, 2
+	warp_event 23, 22, CITRINE_LAB, 2
 
 	def_coord_events
 
@@ -304,10 +379,10 @@ CitrineCity_MapEvents:
 	def_object_events
 	object_event 10, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC1, -1
 	object_event 18, 20, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC2, -1
-	object_event 15, 38, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC3, -1
+	object_event 15, 38, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC3, -1
 	object_event 32, 21, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC4, -1
 	object_event 21, 13, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC5, -1
 	object_event 22, 24, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC6, -1
 	object_event 26, 32, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CitrineCityNPC7, -1
 	object_event 19, 16, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 2, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, CitrineCityMoveTutorNPC, -1
-	object_event 15, 31, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CitrineCityTrainerHouseNPC, -1
+	object_event 15, 31, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CitrineCityTrainerHouseNPC, -1

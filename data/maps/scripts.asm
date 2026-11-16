@@ -218,6 +218,8 @@ INCLUDE "maps/RedsHouse2F.asm"
 INCLUDE "maps/OlivinePunishmentSpeechHouse.asm"
 INCLUDE "maps/ViridianGym.asm"
 INCLUDE "maps/SoulHouse.asm"
+INCLUDE "maps/MossIsleHouse1.asm"
+INCLUDE "maps/MossIsleHouse2.asm"
 
 
 
@@ -508,8 +510,6 @@ INCLUDE "maps/TanobyRuinsF2.asm"
 INCLUDE "maps/TanobyRuinsItemRoom.asm"
 INCLUDE "maps/MansionRuins1.asm"
 INCLUDE "maps/MansionRuins2.asm"
-INCLUDE "maps/MossIsleHouse1.asm"
-INCLUDE "maps/MossIsleHouse2.asm"
 
 
 SECTION "Map Scripts 34", ROMX
