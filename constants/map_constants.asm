@@ -227,7 +227,7 @@ ENDM
 	map_const BREAKWATER_LIGHTHOUSEF3,                     10, 10 ; 25
 	map_const BREAKWATER_LIGHTHOUSEF4,                     10, 10 ; 26
 	map_const BREAKWATER_LIGHTHOUSE_OBV,                   10,  8 ; 27
-	map_const BREAKWATER_GYM,                               7,  8 ; 28
+	map_const BREAKWATER_GYM,                               7,  9 ; 28
 	map_const BILLS_HOUSE,                                  4,  4 ; 29
 	map_const BREAKWATER_SCHOOLHOUSE,                       4,  8 ; 30 
 	endgroup

@@ -1121,6 +1121,24 @@ FirebreatherGroup:
 	db 74, SUNFLORA
 	db -1 ; end
 
+	; FIREBREATHER (8)
+	db "HUGO@", TRAINERTYPE_NORMAL
+	db 78, ARCANINE
+	db 75, FLAREON
+	db 81, TYPHLOSION
+	db 77, RAPIDASH
+	db 76, MAGMAR
+	db -1 ; end
+
+	; FIREBREATHER (9)
+	db "ZANE@", TRAINERTYPE_NORMAL
+	db 78, BELLOSSOM
+	db 79, PINSIR
+	db 80, STARMIE
+	db 76, SUNFLORA
+	db 77, CHARIZARD
+	db -1 ; end
+
 BlackbeltGroup:
 	; BLACKBELT_T (1)
 	db "KENJI@", TRAINERTYPE_NORMAL

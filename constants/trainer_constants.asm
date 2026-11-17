@@ -522,6 +522,8 @@ DEF KRIS EQU __trainer_class__
 	const RAY
 	const LYLE
 	const AZAR ; Ghost
+	const HUGO
+	const ZANE
 
 	trainerclass JUGGLER ; 31
 	const IRWIN1
@@ -732,10 +734,12 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass VET_M ; 49
 	const RONAN
+	const XAVIER
 
 	trainerclass VET_F ; 4a
 	const SUE
 	const BREAKWATER
+	const IMOGEN
 
 	trainerclass ARCHAEOLOGIST ; 4b
 	const GEOFFREY
