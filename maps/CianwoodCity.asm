@@ -565,9 +565,9 @@ CianwoodCity_MapEvents:
 	bg_event 24, 43, BGEVENT_READ, CianwoodPokecenterSign
 	bg_event 19, 47, BGEVENT_READ, CianwoodPharmacySign
 	bg_event  8, 32, BGEVENT_READ, CianwoodPhotoStudioSign
-	bg_event  8, 24, BGEVENT_READ, CianwoodPokeSeerSign
+	bg_event 10, 10, BGEVENT_READ, CianwoodPokeSeerSign
 	bg_event 11,  6, BGEVENT_ITEM, CianwoodCityHiddenRevive
-	bg_event  5, 29, BGEVENT_ITEM, CianwoodCityHiddenMaxEther
+	bg_event  5, 27, BGEVENT_ITEM, CianwoodCityHiddenMaxEther
 
 	def_object_events
 	object_event 21, 37, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CianwoodCityYoungster, -1

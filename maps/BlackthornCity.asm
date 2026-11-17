@@ -355,7 +355,7 @@ BlackthornCity_MapEvents:
 	warp_event 18, 11, BLACKTHORN_GYM_1F, 1
 	warp_event 13, 21, BLACKTHORN_DRAGON_SPEECH_HOUSE, 1
 	warp_event 29, 23, BLACKTHORN_EMYS_HOUSE, 1
-	warp_event 15, 29, BLACKTHORN_MART, 2
+	warp_event 15, 27, BLACKTHORN_MART, 2
 	warp_event 21, 29, BLACKTHORN_POKECENTER_1F, 1
 	warp_event 36,  9, ICE_PATH_1F, 2
 	warp_event 20,  1, DRAGONS_DEN_1F, 1
@@ -367,7 +367,7 @@ BlackthornCity_MapEvents:
 	bg_event 17, 13, BGEVENT_READ, BlackthornGymSign
 	bg_event 21,  3, BGEVENT_READ, DragonDensSign
 	bg_event  5, 25, BGEVENT_READ, BlackthornCityTrainerTips
-	bg_event 16, 29, BGEVENT_READ, BlackthornCityMartSign
+	bg_event 16, 27, BGEVENT_READ, BlackthornCityMartSign
 	bg_event 22, 29, BGEVENT_READ, BlackthornCityPokecenterSign
 
 	def_object_events
