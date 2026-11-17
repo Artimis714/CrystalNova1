@@ -531,7 +531,8 @@ INCLUDE "maps/BreakwaterHouse1.asm"
 INCLUDE "maps/BreakwaterHouse2.asm"
 INCLUDE "maps/BreakwaterPokecenter.asm"
 INCLUDE "maps/BreakwaterMart.asm"
-
+INCLUDE "maps/CitrineMayorF1.asm"
+INCLUDE "maps/CitrineMayorF2.asm"
 
 SECTION "Map Scripts 35", ROMX
 INCLUDE "maps/ViridianCityGate.asm"

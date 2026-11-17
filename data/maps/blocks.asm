@@ -1151,3 +1151,9 @@ BreakwaterGym_Blocks:
 
 CitrineLab_Blocks:
 	INCBIN "maps/CitrineLab.blk"
+
+CitrineMayorF1_Blocks:
+	INCBIN "maps/CitrineMayorF1.blk"
+
+CitrineMayorF2_Blocks:
+	INCBIN "maps/CitrineMayorF2.blk"

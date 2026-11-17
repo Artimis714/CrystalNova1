@@ -529,6 +529,8 @@ ENDM
 	map_const TRAINER_HOUSE_1F,                             5,  7 ; 15
 	map_const TRAINER_HOUSE_B1F,                            5,  8 ; 16
 	map_const CITRINE_LAB,                                  7,  6 ; 17
+	map_const CITRINE_MAYOR_1F,                             7,  7 ; 18
+	map_const CITRINE_MAYOR_2F,                             7,  7 ; 19
 	endgroup
 
 	newgroup MOSSISLEGROUP                                        ; 27

@@ -660,10 +660,10 @@ BreakwaterSchoolhouse_MapEvents:
 	bg_event  4,  0, BGEVENT_READ, BreakSchoolBlackboard
 
 	def_object_events
-	object_event  2,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BreakSchoolYoungster1Script, -1
-	object_event  3, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BreakSchoolGameboyKid1Script, -1
-	object_event  4, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BreakSchoolGameboyKid2Script, -1
-	object_event  4,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BreakSchoolYoungster2Script, -1
-	object_event  2,  6, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BreakSchoolNotebook, -1
-	object_event  3,  5, SPRITE_PIKACHU, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BreakSchoolPikachu, -1
-	object_event  3,  1, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, BreakwaterSchoolhouseTeacher, -1
+	object_event  2,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, DAY, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BreakSchoolYoungster1Script, -1
+	object_event  3, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, BreakSchoolGameboyKid1Script, -1
+	object_event  4, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BreakSchoolGameboyKid2Script, -1
+	object_event  4,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, BreakSchoolYoungster2Script, -1
+	object_event  2,  6, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, BreakSchoolNotebook, -1
+	object_event  3,  5, SPRITE_PIKACHU, SPRITEMOVEDATA_POKEMON, 0, 0, -1, DAY, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, BreakSchoolPikachu, -1
+	object_event  3,  1, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, MORN | DAY, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, BreakwaterSchoolhouseTeacher, -1

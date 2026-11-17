@@ -740,3 +740,5 @@ ENDM
 	map_attributes BreakwaterGym, BREAKWATER_GYM, $00, 0
 	map_attributes CitrineLab, CITRINE_LAB, $00, 0
 	map_attributes BreakwaterSchoolhouse, BREAKWATER_SCHOOLHOUSE, $00, 0
+	map_attributes CitrineMayorF1, CITRINE_MAYOR_1F, $00, 0
+	map_attributes CitrineMayorF2, CITRINE_MAYOR_2F, $00, 0

@@ -3,10 +3,10 @@
 	tilecoll WATER, WATER, WATER, WATER ; 02
 	tilecoll WALL, WALL, WALL, WALL ; 03
 	tilecoll WATER, WATER, WATER, FLOOR ; 04
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 05
+	tilecoll WALL, WALL, WALL, WALL ; 05
 	tilecoll WALL, WALL, WALL, WALL ; 06
 	tilecoll WALL, WALL, WALL, WALL ; 07
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 08
+	tilecoll WALL, WALL, WALL, WALL ; 08
 	tilecoll WALL, WALL, WALL, WALL ; 09
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0a
 	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 0b
